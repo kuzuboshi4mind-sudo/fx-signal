@@ -10,12 +10,12 @@
   "trades": []
  },
  "log": [],
- "lastEvalT": 1791918000000,
+ "lastEvalT": 1791921600000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791923670771,
- "lastBarT": 1791921600000,
- "price": 158.32797,
+ "lastRun": 1791925519234,
+ "lastBarT": 1791925200000,
+ "price": 158.36396,
  "equity": 100000,
  "unreal": 0,
  "config": {
