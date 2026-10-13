@@ -2,10 +2,10 @@
  "symbol": "USD/JPY",
  "interval": "1h",
  "paper": {
-  "start": 30000,
-  "balance": 30000,
+  "start": 100000,
+  "balance": 100000,
   "riskPct": 2,
-  "startT": 1791864105276,
+  "startT": 1791866315262,
   "pos": null,
   "trades": []
  },
@@ -13,10 +13,10 @@
  "lastEvalT": 1791860400000,
  "reportDay": "2026-10-13",
  "version": 1,
- "lastRun": 1791865553993,
+ "lastRun": 1791866315262,
  "lastBarT": 1791864000000,
- "price": 158.27221,
- "equity": 30000,
+ "price": 158.29916,
+ "equity": 100000,
  "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
@@ -29,7 +29,7 @@
   "minSamples": 15,
   "blackoutMin": 30,
   "paper": {
-   "start": 30000,
+   "start": 100000,
    "riskPct": 2
   },
   "bias": {
