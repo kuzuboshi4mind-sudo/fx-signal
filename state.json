@@ -13,9 +13,9 @@
  "lastEvalT": 1791910800000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791916324000,
+ "lastRun": 1791916832223,
  "lastBarT": 1791914400000,
- "price": 158.33708,
+ "price": 158.37542,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -39,7 +39,14 @@
    "GBP": 0,
    "AUD": 0
   },
-  "events": []
+  "events": [],
+  "adaptive": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2,
+   "lookMonths": 6,
+   "top": 3
+  }
  },
  "learned": {
   "bars": 5000,
@@ -64,5 +71,50 @@
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [],
+ "adaptive": {
+  "start": 100000,
+  "balance": 100000,
+  "startT": 1791916832223,
+  "positions": [],
+  "trades": [],
+  "picks": [
+   {
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "dir": "long",
+    "flip": true,
+    "tp": 3,
+    "sl": 1,
+    "n": 141,
+    "sumR": 51.56916704598225,
+    "winRate": 0.3900709219858156
+   },
+   {
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "dir": "long",
+    "flip": true,
+    "tp": 3,
+    "sl": 1,
+    "n": 42,
+    "sumR": 14.662393055710535,
+    "winRate": 0.42857142857142855
+   },
+   {
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "dir": "long",
+    "flip": true,
+    "tp": 2,
+    "sl": 1,
+    "n": 141,
+    "sumR": 37.97604391391638,
+    "winRate": 0.44680851063829785
+   }
+  ],
+  "pickMonth": "2026-10",
+  "pickTried": "2026-10-14",
+  "equity": 100000
+ }
 }
