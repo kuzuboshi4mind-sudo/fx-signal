@@ -10,12 +10,12 @@
   "trades": []
  },
  "log": [],
- "lastEvalT": 1791860400000,
+ "lastEvalT": 1791864000000,
  "reportDay": "2026-10-13",
  "version": 1,
- "lastRun": 1791867282291,
- "lastBarT": 1791864000000,
- "price": 158.27167,
+ "lastRun": 1791869026672,
+ "lastBarT": 1791867600000,
+ "price": 158.34191,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -59,10 +59,20 @@
     "key": "against|range",
     "n": 51,
     "winRate": 0.37254901960784315,
-    "avgR": 0.1209693994845737
+    "avgR": 0.12096939949211132
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }
