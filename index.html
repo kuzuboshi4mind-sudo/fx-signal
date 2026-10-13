@@ -394,10 +394,16 @@ function stop() {
 $('startBtn').onclick = () => (st.running ? stop() : start());
 
 async function tick(first) {
+  st.lastTick = Date.now();
   try {
     if (!first) {
       if (S.source === 'demo') mergeBars([st.gen()]);
-      else mergeBars(await fetchTwelve(10));
+      else {
+        // バックグラウンドで止まっていた分もまとめて取り戻す
+        const last = st.candles[st.candles.length - 1];
+        const gap = last ? Math.ceil((Date.now() - last.t) / (INTERVAL_MIN[S.interval] * 60000)) + 2 : 10;
+        mergeBars(await fetchTwelve(Math.min(5000, Math.max(10, gap))));
+      }
     }
     if (st.newBars >= 1) relearn(); // 新しい足が確定するたびに学習し直す
     process();
@@ -869,12 +875,18 @@ let wakeLock = null;
 async function requestWakeLock() {
   try { if ('wakeLock' in navigator && st.running && !wakeLock) { wakeLock = await navigator.wakeLock.request('screen'); wakeLock.addEventListener('release', () => (wakeLock = null)); } } catch {}
 }
-document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') requestWakeLock(); });
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState !== 'visible') return;
+  requestWakeLock();
+  if (st.running && S.source !== 'demo' && Date.now() - (st.lastTick || 0) > 30000) tick();
+});
 
 // ---------- 初期化 ----------
 renderBias(); renderEvents(); renderLog(); renderNotif(); renderPaper(); renderReview(); drawChart();
 try { const t = localStorage.getItem('fx.tab'); if (t) document.querySelector(`nav button[data-tab="${t}"]`)?.click(); } catch {}
 setInterval(() => { renderEvents(); renderPaper(); }, 60000);
+// 仮想運用の途中でアプリを開き直したら、自動で再開する
+if (paper && !paper.done && paper.src !== 'demo' && S.source === paper.src && S.tdKey) start();
 </script>
 </body>
 </html>
