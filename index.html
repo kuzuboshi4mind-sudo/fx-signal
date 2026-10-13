@@ -259,9 +259,10 @@
     <div class="card">
       <h2>通知</h2>
       <div class="row"><button id="notifBtn">通知を許可</button><span class="muted" id="notifState"></span></div>
+      <label class="f" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="notifyOn" style="width:auto">通知を受け取る</label>
       <label class="f" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="sound" style="width:auto">音を鳴らす</label>
       <label class="f" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="vibrate" style="width:auto">振動する（対応端末）</label>
-      <p class="muted" style="margin:0">通知はこのページを開いている間に届きます（スマホは画面を開いたまま、PCは別タブでも可）。</p>
+      <p class="muted" style="margin:0">通知はこのページを開いている間に届きます（スマホは画面を開いたまま、PCは別タブでも可）。一度許可した通知は「通知を受け取る」のチェックを外すと止まります。許可そのものを取り消すには、iPhoneの設定 → 通知 → FXシグナル で「通知を許可」をオフにしてください。</p>
     </div>
   </section>
 </main>
@@ -293,7 +294,7 @@ const store = {
 const DEFAULT_SETTINGS = {
   source: 'demo', tdKey: '', symbol: 'USD/JPY', interval: '1h', pollSec: 120,
   tpAtr: 2, slAtr: 1, maxBars: 24, spreadPips: 0.5, minWinRate: 35, minSamples: 15, blackoutMin: 30,
-  sound: true, vibrate: true, anthropicKey: '',
+  sound: true, vibrate: true, notifyOn: true, anthropicKey: '',
 };
 const S = Object.assign({}, DEFAULT_SETTINGS, store.get('settings', {}));
 let bias = Object.assign(Object.fromEntries(CCYS.map(c => [c, 0])), store.get('bias', {}));
@@ -336,7 +337,7 @@ for (const f of FIELDS) {
     if (['source', 'symbol', 'interval', 'tdKey'].includes(f) && st.running) { stop(); toast('データ設定を変えたので停止しました。もう一度「開始」してください'); }
   };
 }
-for (const f of ['sound', 'vibrate']) { $(f).checked = S[f]; $(f).onchange = () => { S[f] = $(f).checked; store.set('settings', S); }; }
+for (const f of ['sound', 'vibrate', 'notifyOn']) { $(f).checked = S[f]; $(f).onchange = () => { S[f] = $(f).checked; store.set('settings', S); }; }
 
 function engineOpts() {
   return { symbol: S.symbol, tpAtr: S.tpAtr, slAtr: S.slAtr, maxBars: S.maxBars, spreadPips: S.spreadPips, minSamples: S.minSamples };
@@ -520,7 +521,7 @@ async function notify(s) {
   toast(`${title}：${s.name}`);
   if (S.vibrate && navigator.vibrate) navigator.vibrate([200, 100, 200]);
   if (S.sound) beep(s.dir === 'long' ? 880 : 520);
-  if ('Notification' in window && Notification.permission === 'granted') {
+  if (S.notifyOn && 'Notification' in window && Notification.permission === 'granted') {
     try {
       const reg = navigator.serviceWorker && await navigator.serviceWorker.getRegistration();
       if (reg) reg.showNotification(title, { body, tag: 'fx-' + s.t + s.pattern });
@@ -542,6 +543,7 @@ function beep(freq) {
 $('notifBtn').onclick = async () => {
   if (!('Notification' in window)) { toast('このブラウザは通知に対応していません'); return; }
   const p = await Notification.requestPermission();
+  if (p === 'granted') { S.notifyOn = true; $('notifyOn').checked = true; store.set('settings', S); }
   if (audioCtx == null) beep(660); // 音声の再生許可もここで取る
   renderNotif(); if (p === 'granted') toast('通知を許可しました');
 };
@@ -832,7 +834,7 @@ function paperUpdate() {
 
 function paperNote(msg) {
   toast('仮想口座：' + msg);
-  if ('Notification' in window && Notification.permission === 'granted') {
+  if (S.notifyOn && 'Notification' in window && Notification.permission === 'granted') {
     navigator.serviceWorker?.getRegistration().then(reg => reg ? reg.showNotification('FX 仮想口座', { body: msg }) : new Notification('FX 仮想口座', { body: msg })).catch(() => {});
   }
 }
