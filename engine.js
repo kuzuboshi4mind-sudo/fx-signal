@@ -273,6 +273,21 @@
     return out;
   }
 
+  // ---------- 実績による見直し ----------
+  // results: そのパターンの実際の結果 'win' | 'loss'（新しい順）。
+  // 直近で連敗、または直近 window 回の大半が負けなら一時停止する。
+  // 停止中も結果は「様子見」として記録し続け、成績が戻れば自動で再開する。
+  const REVIEW = { window: 5, maxLoss: 4, streak: 3 };
+  function liveReview(results, o) {
+    o = Object.assign({}, REVIEW, o);
+    const recent = results.slice(0, o.window);
+    const losses = recent.filter(r => r === 'loss').length;
+    let streak = 0;
+    while (streak < results.length && results[streak] === 'loss') streak++;
+    const suspended = streak >= o.streak || (recent.length >= o.window && losses >= o.maxLoss);
+    return { n: results.length, wins: results.filter(r => r === 'win').length, recentLosses: losses, streak, suspended };
+  }
+
   // ---------- 情勢フィルタ ----------
   // bias: {USD: -2..2, ...}。events: [{t: ms, label, ccy}]
   function applyFilters(signals, f) {
@@ -283,6 +298,8 @@
       let blocked = false;
       const s = sg.dir === 'long' ? 1 : -1;
       if (sg.verdict === 'lose') { blocked = true; reasons.push('過去の負けパターン'); }
+      const suspendedNow = !!f.suspended?.has?.(sg.pattern);
+      if (suspendedNow) { blocked = true; reasons.push('直近の実績不振で一時停止'); }
       if (sg.verdict === 'few') { blocked = true; reasons.push('学習データ不足'); }
       if (sg.verdict === 'neutral') { blocked = true; reasons.push('優位性なし'); }
       if (sg.stat && sg.stat.all.winRate < (f.minWinRate || 0)) { blocked = true; reasons.push('勝率が基準未満'); }
@@ -292,7 +309,9 @@
         if (ev.ccy && ev.ccy !== base && ev.ccy !== quote) continue;
         if (Math.abs(ev.t - f.now) <= (f.blackoutMin || 30) * 60000) { blocked = true; reasons.push('指標前後: ' + ev.label); }
       }
-      return { ...sg, pairBias, blocked, reasons };
+      // 一時停止だけが理由なら、結果を追い続ける「様子見」シグナルにする
+      const shadow = suspendedNow && reasons.length === 1;
+      return { ...sg, pairBias, blocked, reasons, shadow };
     });
   }
 
@@ -367,7 +386,7 @@
   }
 
   return {
-    positionUnits, checkExit, positionPnl,
+    positionUnits, checkExit, positionPnl, liveReview, REVIEW,
     ema, sma, rsi, adx, computeIndicators, PATTERNS, context, ctxLabel, simulate, learn, evaluate, lookup,
     applyFilters, scheduledEvents, usDst, demoGenerator, pipSize, DEFAULTS, WARMUP,
   };

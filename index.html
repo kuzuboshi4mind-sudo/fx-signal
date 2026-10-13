@@ -182,6 +182,11 @@
       <div class="row" style="margin-top:8px"><button id="relearnBtn" disabled>再学習</button></div>
       <p class="muted" style="margin:8px 0 0">各パターンが出た直後に「次の足の始値でエントリー、損切り＝ATR×SL倍、利確＝ATR×TP倍」で売買したと仮定して集計しています。データの前半（学習）で優位性があり、後半（検証）でも崩れていないものだけを「勝ち」と判定します。</p>
     </div>
+    <div class="card">
+      <h2>実績による見直し</h2>
+      <p class="muted" style="margin:0 0 6px">実際に通知したシグナルの結果を見て、直近で3連敗、または直近5回中4回負けのパターンは自動で一時停止します。停止中も「様子見」として結果を追い、勝ちが戻れば自動で再開します。</p>
+      <div class="tbl" id="reviewTbl"></div>
+    </div>
     <div class="card"><h2>勝ちパターン</h2><div class="tbl" id="winTbl"><span class="muted">—</span></div></div>
     <div class="card"><h2>負けパターン（このパターンでは入らない）</h2><div class="tbl" id="loseTbl"><span class="muted">—</span></div></div>
     <div class="card"><details><summary>全パターン（相場環境別）</summary><div class="tbl" id="allTbl"></div></details></div>
@@ -394,7 +399,7 @@ async function tick(first) {
       if (S.source === 'demo') mergeBars([st.gen()]);
       else mergeBars(await fetchTwelve(10));
     }
-    if (st.newBars >= 100) relearn();
+    if (st.newBars >= 1) relearn(); // 新しい足が確定するたびに学習し直す
     process();
   } catch (e) { toast('更新エラー: ' + e.message); }
 }
@@ -403,6 +408,7 @@ function relearn() {
   if (st.candles.length < E.WARMUP + 300) { toast('学習にはもっと過去データが必要です'); return; }
   st.model = E.learn(st.candles, engineOpts());
   st.newBars = 0;
+  st.learnedBarT = st.candles[st.candles.length - 1].t;
   $('relearnBtn').disabled = false;
   renderLearn();
 }
@@ -425,12 +431,16 @@ function process() {
   const now = S.source === 'demo' ? Date.now() : c[c.length - 1].t;
   const sigs = E.applyFilters(E.evaluate(c, st.model, idx), {
     symbol: S.symbol, bias, events: allEvents(), now, blackoutMin: S.blackoutMin, minWinRate: S.minWinRate / 100,
+    suspended: suspendedSet(),
   });
   const go = sigs.filter(s => !s.blocked), skip = sigs.filter(s => s.blocked);
+  for (const s of sigs.filter(x => x.shadow)) {
+    log.unshift({ t: s.t, symbol: S.symbol, interval: S.interval, pattern: s.pattern, dir: s.dir, name: s.name, entry: s.entry, sl: s.sl, tp: s.tp, winRate: s.stat.all.winRate, status: 'open', src: S.source, shadow: true });
+  }
   $('signals').innerHTML = go.length ? go.map(sigCard).join('') : `<span class="muted">${tstr(c[idx].t)} の足：エントリー条件なし</span>`;
   $('skipped').innerHTML = skip.length ? skip.map(s => `<div class="sig ${s.dir}">${esc(s.name)}（${s.dir === 'long' ? '買い' : '売り'}）<br>${s.reasons.map(r => `<span class="badge bad">${esc(r)}</span>`).join('')}</div>`).join('') : 'なし';
   for (const s of go) {
-    log.unshift({ t: s.t, symbol: S.symbol, dir: s.dir, name: s.name, entry: s.entry, sl: s.sl, tp: s.tp, winRate: s.stat.all.winRate, status: 'open', src: S.source });
+    log.unshift({ t: s.t, symbol: S.symbol, interval: S.interval, pattern: s.pattern, dir: s.dir, name: s.name, entry: s.entry, sl: s.sl, tp: s.tp, winRate: s.stat.all.winRate, status: 'open', src: S.source });
     notify(s);
   }
   log = log.slice(0, 200); store.set('log', log);
@@ -448,6 +458,36 @@ function sigCard(s) {
   </div>`;
 }
 
+// ---------- 実績による見直し ----------
+const PATTERN_ID_BY_NAME = Object.fromEntries(E.PATTERNS.map(p => [p.name, p.id]));
+// 今の通貨ペア・時間足・データ元での、パターンごとの実際の結果（新しい順）
+function liveResults() {
+  const by = {};
+  for (const L of log) {
+    if (L.status === 'open' || L.symbol !== S.symbol || L.src !== S.source) continue;
+    if (L.interval && L.interval !== S.interval) continue;
+    const id = L.pattern || PATTERN_ID_BY_NAME[L.name];
+    if (id) (by[id] ||= []).push(L.status);
+  }
+  return by;
+}
+function suspendedSet() {
+  const out = new Set();
+  for (const [id, res] of Object.entries(liveResults())) if (E.liveReview(res).suspended) out.add(id);
+  return out;
+}
+function renderReview() {
+  const by = liveResults(), ids = Object.keys(by);
+  if (!ids.length) { $('reviewTbl').innerHTML = '<span class="muted">まだ決着したシグナルがありません。利確か損切りに届くとここに実績が出ます。</span>'; return; }
+  const P = Object.fromEntries(E.PATTERNS.map(p => [p.id, p]));
+  $('reviewTbl').innerHTML = `<table><thead><tr><th>パターン</th><th>実績</th><th>勝率</th><th>直近${E.REVIEW.window}回</th><th>状態</th></tr></thead><tbody>${ids.map(id => {
+    const r = E.liveReview(by[id]), p = P[id];
+    return `<tr><td><span style="color:var(--${p.dir === 'long' ? 'up' : 'down'})">${p.dir === 'long' ? '▲' : '▼'}</span> ${esc(p.name)}</td><td>${r.wins}勝${r.n - r.wins}敗</td><td>${pct(r.wins / r.n)}</td>
+      <td>${by[id].slice(0, E.REVIEW.window).map(x => x === 'win' ? '<span class="plus">○</span>' : '<span class="minus">●</span>').join('')}</td>
+      <td>${r.suspended ? '<span class="badge bad">一時停止</span>' : '<span class="badge good">稼働中</span>'}</td></tr>`;
+  }).join('')}</tbody></table>`;
+}
+
 // 通知済みシグナルのその後（利確/損切り）を追跡して実績にする
 function updateOutcomes() {
   const c = st.candles; let changed = false;
@@ -460,7 +500,7 @@ function updateOutcomes() {
       if (s > 0 ? b.h >= L.tp : b.l <= L.tp) { L.status = 'win'; changed = true; break; }
     }
   }
-  if (changed) { store.set('log', log); renderLog(); }
+  if (changed) { store.set('log', log); renderLog(); renderReview(); }
 }
 
 async function notify(s) {
@@ -512,10 +552,10 @@ function renderPrice() {
 }
 
 function renderLog() {
-  const mine = log.filter(L => L.src === S.source);
+  const all = log.filter(L => L.src === S.source), mine = all.filter(L => !L.shadow);
   const done = mine.filter(L => L.status !== 'open'), wins = done.filter(L => L.status === 'win').length;
   $('perf').innerHTML = `<div>通知数<b>${mine.length}</b></div><div>決着済み勝率<b>${done.length ? pct(wins / done.length) : '—'}</b></div><div>勝ち / 負け<b>${wins} / ${done.length - wins}</b></div>`;
-  $('log').innerHTML = mine.length ? mine.slice(0, 30).map(L => `<div class="log"><span>${tstr(L.t)} ${esc(L.symbol)} <b style="color:var(--${L.dir === 'long' ? 'up' : 'down'})">${L.dir === 'long' ? '買' : '売'}</b> ${esc(L.name)}</span><span>${L.status === 'win' ? '<span class="badge good">利確</span>' : L.status === 'loss' ? '<span class="badge bad">損切り</span>' : '<span class="badge">保有中</span>'}</span></div>`).join('') : 'まだありません';
+  $('log').innerHTML = all.length ? all.slice(0, 30).map(L => `<div class="log"><span>${tstr(L.t)} ${esc(L.symbol)} <b style="color:var(--${L.dir === 'long' ? 'up' : 'down'})">${L.dir === 'long' ? '買' : '売'}</b> ${esc(L.name)}${L.shadow ? ' <span class="badge">様子見</span>' : ''}</span><span>${L.status === 'win' ? '<span class="badge good">利確</span>' : L.status === 'loss' ? '<span class="badge bad">損切り</span>' : '<span class="badge">保有中</span>'}</span></div>`).join('') : 'まだありません';
 }
 
 function statTable(rows, showKey) {
@@ -530,7 +570,7 @@ function renderLearn() {
   const m = st.model; if (!m) return;
   const c = st.candles;
   const be = 1 / (1 + m.opts.tpAtr / m.opts.slAtr);
-  $('learnInfo').innerHTML = `${tstr(c[0].t)} 〜 ${tstr(c[c.length - 1].t)} の ${m.bars} 本から ${m.events.length} 回のパターン発生を検証。学習／検証の境目：${tstr(m.splitTime)}<br>利確 ATR×${m.opts.tpAtr}・損切り ATR×${m.opts.slAtr} → 損益分岐の勝率は約 ${pct(be)}`;
+  $('learnInfo').innerHTML = `${tstr(c[0].t)} 〜 ${tstr(c[c.length - 1].t)} の ${m.bars} 本から ${m.events.length} 回のパターン発生を検証。学習／検証の境目：${tstr(m.splitTime)}<br>利確 ATR×${m.opts.tpAtr}・損切り ATR×${m.opts.slAtr} → 損益分岐の勝率は約 ${pct(be)}<br>新しい足が確定するたびに自動で学習し直します（最終学習：${tstr(st.learnedBarT)} の足まで）`;
   const byExp = (a, b) => b.all.avgR - a.all.avgR;
   $('winTbl').innerHTML = statTable(m.rows.filter(r => r.verdict === 'win').sort(byExp), true);
   $('loseTbl').innerHTML = statTable(m.rows.filter(r => r.verdict === 'lose').sort((a, b) => a.all.avgR - b.all.avgR), true);
@@ -743,7 +783,8 @@ $('paperStart').onclick = async () => {
 
 function paperEnter(go) {
   if (!paperMatches() || paper.done || paper.pos || !go.length) return;
-  const c = st.candles, s = go[0], dir = s.dir === 'long' ? 1 : -1;
+  const c = st.candles;
+  const s = go.slice().sort((a, b) => b.stat.all.shrunkR - a.stat.all.shrunkR)[0], dir = s.dir === 'long' ? 1 : -1;
   const spread = S.spreadPips * E.pipSize(S.symbol);
   const entry = s.entry + dir * spread; // スプレッド分は不利な価格で約定したとみなす
   const units = E.positionUnits({ balance: paper.balance, riskPct: paper.riskPct, entry, sl: s.sl, leverage: LEVERAGE });
@@ -831,7 +872,7 @@ async function requestWakeLock() {
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') requestWakeLock(); });
 
 // ---------- 初期化 ----------
-renderBias(); renderEvents(); renderLog(); renderNotif(); renderPaper(); drawChart();
+renderBias(); renderEvents(); renderLog(); renderNotif(); renderPaper(); renderReview(); drawChart();
 try { const t = localStorage.getItem('fx.tab'); if (t) document.querySelector(`nav button[data-tab="${t}"]`)?.click(); } catch {}
 setInterval(() => { renderEvents(); renderPaper(); }, 60000);
 </script>

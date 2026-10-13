@@ -100,3 +100,21 @@ test('checkExit / positionPnl', () => {
   x = E.checkExit(pos, [], 10, 150.2);
   assert.deepStrictEqual([x.reason, x.price], ['time', 150.2]);
 });
+
+test('liveReview: 3連敗か直近5回中4敗で停止、勝てば再開', () => {
+  assert.strictEqual(E.liveReview(['loss', 'loss']).suspended, false);
+  assert.strictEqual(E.liveReview(['loss', 'loss', 'loss', 'win']).suspended, true);
+  assert.strictEqual(E.liveReview(['loss', 'win', 'loss', 'loss', 'loss']).suspended, true);
+  assert.strictEqual(E.liveReview(['win', 'loss', 'loss', 'loss', 'win']).suspended, false);
+  assert.strictEqual(E.liveReview(['win', 'loss', 'loss', 'loss']).suspended, false);
+});
+
+test('applyFilters: 一時停止中は見送りつつ様子見として追う', () => {
+  const sig = { pattern: 'macd_up', dir: 'long', verdict: 'win', stat: { all: { winRate: 0.5 } } };
+  const [a] = E.applyFilters([sig], { symbol: 'USD/JPY', bias: {}, events: [], now: 0, suspended: new Set(['macd_up']) });
+  assert.ok(a.blocked && a.shadow);
+  const [b] = E.applyFilters([{ ...sig, verdict: 'lose' }], { symbol: 'USD/JPY', bias: {}, events: [], now: 0, suspended: new Set(['macd_up']) });
+  assert.ok(b.blocked && !b.shadow);
+  const [c] = E.applyFilters([sig], { symbol: 'USD/JPY', bias: {}, events: [], now: 0 });
+  assert.ok(!c.blocked && !c.shadow);
+});
