@@ -148,6 +148,8 @@ return {
   rounds: ROUNDS.map(R => ({ n: R.n, testFrom: R.testFrom, testTo: R.testTo })),
   candidates: real.length,
   passedCount: passed.length,
+  pass3List: real.filter(x => x.pass3).sort((a, b) => b.testAll.sumR - a.testAll.sumR).map(x => ({ name: x.name, dir: x.dir, filterLabel: x.filterLabel, exit: x.exit, testAll: x.testAll, rounds: x.rounds.map(r => ({ train: r.train, test: r.test })), pass: x.pass })),
+  fakePassList: fake.filter(x => x.pass).map(x => ({ name: x.name, dir: x.dir === 'long' ? 'short' : 'long', filterLabel: x.filterLabel, exit: x.exit, n: x.testAll.n, sumR: x.testAll.sumR })),
   pass3Count: real.filter(x => x.pass3).length,
   fakePassedCount: fake.filter(x => x.pass).length,
   roundPassRates: [0, 1, 2].map(k => ({
