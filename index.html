@@ -146,7 +146,7 @@
     <div class="card" id="paperCard">
       <h2>自動売買（仮想口座）</h2>
       <div id="paperSetup">
-        <p class="muted" style="margin:0">仮想のお金で、シグナル通りに自動で売買します。実際のお金は動きません。円の通貨ペア（USD/JPY など）で使えます。</p>
+        <p class="muted" style="margin:0">このページを開いている間だけ動く仮想運用です（24時間動かし続けるのは上の「サーバー運用」）。仮想のお金で、シグナル通りに自動で売買します。実際のお金は動きません。円の通貨ペア（USD/JPY など）で使えます。</p>
         <div class="two">
           <label class="f">元手（円）<input id="paperBalance" type="number" min="10000" step="1000" value="30000"></label>
           <label class="f">1回のリスク（%）<input id="paperRisk" type="number" min="0.5" max="10" step="0.5" value="2"></label>
@@ -867,6 +867,7 @@ function renderPaper() {
         <div class="${cls(ret)}">${signedYen(ret)}（${(ret / p.start * 100).toFixed(2)}%）</div></div>
       <div class="muted" style="text-align:right">${esc(p.symbol)}${p.src === 'demo' ? '・デモ' : ''}<br>${leftStr}</div>
     </div>
+    ${p.src === 'demo' ? '<p class="muted" style="margin:6px 0 0">デモは模擬相場を早送りしています（2.5秒で1時間）。24時間の運用は約1分で終わります。実際のレートでの24時間運用は上の「サーバー運用」を見てください。</p>' : ''}
     ${!paperMatches() ? `<p class="muted">この運用は ${esc(p.symbol)}・${esc(p.interval)}・${p.src === 'demo' ? 'デモ' : 'ライブ'} の設定で動いています。設定を戻して「開始」すると再開します。</p>` : ''}
     <div class="grid3"><div>取引回数<b>${p.trades.length}</b></div><div>勝ち / 負け<b>${wins} / ${p.trades.length - wins}</b></div><div>確定損益<b class="${cls(p.balance - p.start)}">${signedYen(p.balance - p.start)}</b></div></div>
     ${p.pos ? `<div class="pos"><b style="color:var(--${p.pos.dir === 'long' ? 'up' : 'down'})">${p.pos.dir === 'long' ? '買い' : '売り'}保有中</b> ${p.pos.units.toLocaleString()}通貨 @${fmt(p.pos.entry)}　含み損益 <b class="${cls(unreal)}">${live ? signedYen(unreal) : '—'}</b><br>
