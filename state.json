@@ -1,0 +1,68 @@
+{
+ "symbol": "USD/JPY",
+ "interval": "1h",
+ "paper": {
+  "start": 30000,
+  "balance": 30000,
+  "riskPct": 2,
+  "startT": 1791864105276,
+  "pos": null,
+  "trades": []
+ },
+ "log": [],
+ "lastEvalT": 1791860400000,
+ "reportDay": "2026-10-13",
+ "version": 1,
+ "lastRun": 1791864105276,
+ "lastBarT": 1791864000000,
+ "price": 158.30636,
+ "equity": 30000,
+ "unreal": 0,
+ "config": {
+  "symbol": "USD/JPY",
+  "interval": "1h",
+  "tpAtr": 2,
+  "slAtr": 1,
+  "maxBars": 24,
+  "spreadPips": 0.5,
+  "minWinRate": 35,
+  "minSamples": 15,
+  "blackoutMin": 30,
+  "paper": {
+   "start": 30000,
+   "riskPct": 2
+  },
+  "bias": {
+   "USD": 0,
+   "JPY": 0,
+   "EUR": 0,
+   "GBP": 0,
+   "AUD": 0
+  },
+  "events": []
+ },
+ "learned": {
+  "bars": 5000,
+  "events": 2716,
+  "win": [
+   {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|range",
+    "n": 33,
+    "winRate": 0.36363636363636365,
+    "avgR": 0.3566291921166091
+   },
+   {
+    "name": "ボリバン上限から回帰",
+    "dir": "short",
+    "key": "against|range",
+    "n": 51,
+    "winRate": 0.37254901960784315,
+    "avgR": 0.1209693994845737
+   }
+  ]
+ },
+ "review": {},
+ "lastSignals": []
+}
