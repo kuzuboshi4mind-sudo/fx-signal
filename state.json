@@ -13,9 +13,9 @@
  "lastEvalT": 1791874800000,
  "reportDay": "2026-10-13",
  "version": 1,
- "lastRun": 1791879949181,
+ "lastRun": 1791881645883,
  "lastBarT": 1791878400000,
- "price": 158.18997,
+ "price": 157.9965,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -43,7 +43,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2710,
+  "events": 2713,
   "win": [
    {
     "name": "陽の包み足",
@@ -64,15 +64,5 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
