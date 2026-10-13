@@ -1,0 +1,55 @@
+name: Fetch history
+
+# 研究用に過去データを取得し、research-data ブランチに保存する（手動実行のみ）
+on:
+  workflow_dispatch:
+    inputs:
+      years:
+        description: '何年分さかのぼるか'
+        default: '8'
+      intervals:
+        description: '時間足（カンマ区切り）'
+        default: '1h,15min'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-history
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Prepare data branch
+        run: |
+          if git ls-remote --exit-code origin research-data >/dev/null; then
+            git fetch --depth 1 origin research-data:research-data
+            git worktree add out research-data
+          else
+            git worktree add --orphan -b research-data out
+          fi
+
+      - name: Fetch
+        env:
+          TWELVEDATA_KEY: ${{ secrets.TWELVEDATA_KEY }}
+          YEARS: ${{ inputs.years }}
+          INTERVALS: ${{ inputs.intervals }}
+          OUT_DIR: out
+        run: node research/fetch.js
+
+      - name: Save
+        working-directory: out
+        run: |
+          git config user.name 'fx-bot'
+          git config user.email 'fx-bot@users.noreply.github.com'
+          git add -A
+          git diff --cached --quiet || git commit -q -m "history $(date -u +%F)"
+          git push -q origin research-data
