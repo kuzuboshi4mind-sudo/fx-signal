@@ -10,5 +10,6 @@
   "blackoutMin": 30,
   "paper": { "start": 100000, "riskPct": 2 },
   "bias": { "USD": 0, "JPY": 0, "EUR": 0, "GBP": 0, "AUD": 0 },
-  "events": []
+  "events": [],
+  "adaptive": { "enabled": true, "start": 100000, "riskPct": 2, "lookMonths": 6, "top": 3 }
 }

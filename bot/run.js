@@ -106,7 +106,8 @@ async function main() {
   // 3) 最新の確定足を判定（最後の足は形成中なので1本前）
   const idx = c.length - 2;
   let signals = [];
-  if (c[idx].t !== state.lastEvalT) {
+  const signalsChecked = c[idx].t !== state.lastEvalT;
+  if (signalsChecked) {
     state.lastEvalT = c[idx].t;
     const by = liveResults(state.log);
     const suspended = new Set(Object.keys(by).filter(id => E.liveReview(by[id]).suspended));
@@ -129,12 +130,59 @@ async function main() {
     }
   }
 
+  // 3b) 適応型の仮想口座：毎月、直近6か月で成績のよい戦略（最大3つ）に入れ替えて売買する
+  const AD = CONFIG.adaptive;
+  if (AD && AD.enabled) {
+    const A = (state.adaptive ||= { start: AD.start, balance: AD.start, startT: now, positions: [], trades: [], picks: [], pickMonth: null });
+    if (RESET) Object.assign(A, { start: AD.start, balance: AD.start, startT: now, positions: [], trades: [], picks: [], pickMonth: null });
+    const month = jstDay(now).slice(0, 7);
+    if (A.pickMonth !== month || !A.picks.length && A.pickTried !== jstDay(now)) {
+      A.picks = E.adaptiveSelect(c, { lookMonths: AD.lookMonths, top: AD.top, maxBars: CONFIG.maxBars, spreadPips: CONFIG.spreadPips, symbol: CONFIG.symbol })
+        .map(x => ({ pattern: x.pattern, name: x.name, dir: x.dir, flip: x.flip, tp: x.tp, sl: x.sl, n: x.n, sumR: x.sumR, winRate: x.winRate }));
+      A.pickMonth = month; A.pickTried = jstDay(now);
+      note('FX 適応型：今月の戦略', A.picks.length ? A.picks.map(x => `${x.dir === 'long' ? '買' : '売'} ${x.name}${x.flip ? '（逆向き）' : ''} 利確${x.tp}/損切り${x.sl}・直近${x.n}回 ${x.sumR >= 0 ? '+' : ''}${x.sumR.toFixed(1)}R`).join('\n') : '直近で成績のよい戦略がないため、今月は様子見します');
+    }
+    // 決済
+    for (const pos of [...A.positions]) {
+      const x = E.checkExit(pos, c, now, price);
+      if (!x) continue;
+      const pnl = E.positionPnl(pos, x.price);
+      A.balance += pnl;
+      A.trades.unshift({ ...pos, exit: x.price, closeT: x.t, reason: x.reason, pnl });
+      A.positions = A.positions.filter(p => p !== pos);
+      note(`FX 適応型 決済 ${REASON[x.reason]} ${signedYen(pnl)}`, `${pos.dir === 'long' ? '買い' : '売り'} ${fmt(pos.entry)} → ${fmt(x.price)}（${pos.name}）\n残高 ${yen(A.balance)}`);
+    }
+    // エントリー（新しい確定足のときだけ。選んだ戦略ごとに1つまで、リスクは戦略数で割る）
+    if (signalsChecked) {
+      const d = E.computeIndicators(c);
+      const blocked = E.scheduledEvents(now, 3).concat((CONFIG.events || []).map(e => ({ ...e, t: Date.parse(e.time) })))
+        .some(ev => Math.abs(ev.t - now) <= CONFIG.blackoutMin * 60000);
+      for (const pk of A.picks) {
+        const key = `${pk.pattern}|${pk.dir}|${pk.tp}|${pk.sl}`;
+        if (blocked || A.positions.some(p => p.key === key)) continue;
+        const pat = E.PATTERNS.find(p => p.id === pk.pattern);
+        if (!pat || !pat.test(c, d, idx) || isNaN(d.atr[idx])) continue;
+        const s = pk.dir === 'long' ? 1 : -1;
+        const entry = price + s * CONFIG.spreadPips * E.pipSize(CONFIG.symbol);
+        const sl = entry - s * d.atr[idx] * pk.sl, tp = entry + s * d.atr[idx] * pk.tp;
+        const units = E.positionUnits({ balance: A.balance, riskPct: AD.riskPct / Math.max(1, A.picks.length), entry, sl, leverage: LEVERAGE });
+        if (!units) continue;
+        A.positions.push({ key, dir: pk.dir, pattern: pk.pattern, name: pk.name + (pk.flip ? '（逆向き）' : ''), units, entry, sl, tp, barT: c[c.length - 1].t, openT: now, deadline: now + CONFIG.maxBars * IV_MS });
+        note(`FX 適応型 ${pk.dir === 'long' ? '買い' : '売り'}エントリー`, `${CONFIG.symbol} ${units.toLocaleString()}通貨 @${fmt(entry)}\n利確 ${fmt(tp)} / 損切り ${fmt(sl)}\n${pk.name}${pk.flip ? '（逆向き）' : ''}`);
+      }
+    }
+    A.trades = A.trades.slice(0, 300);
+    A.equity = A.balance + A.positions.reduce((a, p) => a + E.positionPnl(p, price), 0);
+  }
+
   // 4) 日次レポート（日本時間で日付が変わって最初の実行）
   const day = jstDay(now);
   if (state.reportDay && state.reportDay !== day) {
     const since = now - 24 * 3600e3, recent = P.trades.filter(x => x.closeT >= since);
     const d = recent.reduce((a, x) => a + x.pnl, 0), r = P.balance - P.start;
-    note('FX 日次レポート', `直近24時間：${recent.length}回 ${signedYen(d)}\n累計：${signedYen(r)}（${(r / P.start * 100).toFixed(1)}%）残高 ${yen(P.balance)}`);
+    const A = state.adaptive;
+    const ad = A ? `\n適応型：累計 ${signedYen(A.equity - A.start)}（${((A.equity - A.start) / A.start * 100).toFixed(1)}%）評価額 ${yen(A.equity)}` : '';
+    note('FX 日次レポート', `直近24時間：${recent.length}回 ${signedYen(d)}\n累計：${signedYen(r)}（${(r / P.start * 100).toFixed(1)}%）残高 ${yen(P.balance)}${ad}`);
   }
   state.reportDay = day;
 

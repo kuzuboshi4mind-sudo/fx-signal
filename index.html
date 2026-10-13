@@ -923,7 +923,15 @@ async function loadBot() {
     <div class="grid3"><div>取引回数<b>${P.trades.length}</b></div><div>勝ち / 負け<b>${wins} / ${P.trades.length - wins}</b></div><div>現在値<b>${f(b.price)}</b></div></div>
     ${P.pos ? `<div class="pos"><b style="color:var(--${P.pos.dir === 'long' ? 'up' : 'down'})">${P.pos.dir === 'long' ? '買い' : '売り'}保有中</b> ${P.pos.units.toLocaleString()}通貨 @${f(P.pos.entry)}　含み損益 <b class="${cls(b.unreal)}">${signedYen(b.unreal)}</b><br><span class="muted">利確 ${f(P.pos.tp)}／損切り ${f(P.pos.sl)}・${esc(P.pos.name)}</span></div>` : '<div class="pos muted">ポジションなし。シグナルを待っています。</div>'}
     ${paused.length ? `<p class="muted" style="margin:8px 0 0">実績不振で一時停止中：${paused.map(esc).join('、')}</p>` : ''}
+    ${adaptiveHtml(b, f, cls)}
     ${P.trades.length ? `<details style="margin-top:8px"><summary>取引履歴</summary>${P.trades.slice(0, 30).map(x => `<div class="log"><span>${tstr(x.openT)} ${x.dir === 'long' ? '買' : '売'} ${x.units.toLocaleString()} ${f(x.entry)}→${f(x.exit)}<br><span class="muted">${esc(x.name)}・${{ tp: '利確', sl: '損切り', time: '時間切れ' }[x.reason] || ''}</span></span><b class="${cls(x.pnl)}">${signedYen(x.pnl)}</b></div>`).join('')}</details>` : ''}`;
+}
+function adaptiveHtml(b, f, cls) {
+  const A = b.adaptive; if (!A) return '';
+  const ret = A.equity - A.start, wins = A.trades.filter(x => x.pnl > 0).length;
+  return `<div class="pos" style="margin-top:10px"><b>適応型（毎月、直近6か月で成績のよい戦略に入れ替え）</b><br>
+    評価額 <b>${yen(A.equity)}</b> <span class="${cls(ret)}">${signedYen(ret)}（${(ret / A.start * 100).toFixed(2)}%）</span>・取引 ${A.trades.length}回（${wins}勝${A.trades.length - wins}敗）・保有 ${A.positions.length}
+    <br><span class="muted">今月の戦略：${A.picks.length ? A.picks.map(x => `${x.dir === 'long' ? '買' : '売'} ${esc(x.name)}${x.flip ? '（逆向き）' : ''} 利確${x.tp}/損切り${x.sl}`).join('、') : '様子見（成績のよい戦略なし）'}</span></div>`;
 }
 loadBot(); setInterval(loadBot, 5 * 60000);
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') loadBot(); });

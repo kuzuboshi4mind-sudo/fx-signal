@@ -385,7 +385,37 @@
     return (pos.dir === 'long' ? 1 : -1) * (price - pos.entry) * pos.units * jpyPerQuote;
   }
 
+  // ---------- 適応型の自己学習（毎月、直近の相場で成績のよい戦略に入れ替える） ----------
+  // 直近 lookMonths か月に出たパターン（元の向き・逆向き）×出口ルールの成績を集計し、
+  // 縮小推定の期待値が高い順に top 個を選ぶ。相場の性格が変わったら次の月には自動で入れ替わる。
+  const ADAPT_EXITS = [[1, 1], [1.5, 1], [2, 1], [3, 1], [2, 1.5], [1, 1.5]];
+  function adaptiveSelect(c, o) {
+    o = Object.assign({ lookMonths: 6, top: 3, minN: 10, prior: 10, maxBars: 24, spreadPips: 0.5, symbol: 'USD/JPY' }, o);
+    const d = computeIndicators(c);
+    const from = c[c.length - 1].t - o.lookMonths * 30.44 * 86400e3;
+    const acc = {};
+    for (let i = WARMUP; i < c.length - 1; i++) {
+      if (c[i].t < from) continue;
+      for (const p of PATTERNS) {
+        if (!p.test(c, d, i)) continue;
+        for (const dir of ['long', 'short']) {
+          for (const [tp, sl] of ADAPT_EXITS) {
+            const r = simulate(c, d, i, dir, { tpAtr: tp, slAtr: sl, maxBars: o.maxBars, spreadPips: o.spreadPips, symbol: o.symbol });
+            if (!r) continue;
+            const k = `${p.id}|${dir}|${tp}|${sl}`;
+            const a = (acc[k] ||= { pattern: p.id, name: p.name, dir, flip: dir !== p.dir, tp, sl, n: 0, sumR: 0, wins: 0 });
+            a.n++; a.sumR += r.r; if (r.r > 0) a.wins++;
+          }
+        }
+      }
+    }
+    return Object.values(acc).filter(a => a.n >= o.minN)
+      .map(a => ({ ...a, score: a.sumR / (a.n + o.prior), winRate: a.wins / a.n }))
+      .filter(a => a.score > 0).sort((a, b) => b.score - a.score).slice(0, o.top);
+  }
+
   return {
+    adaptiveSelect, ADAPT_EXITS,
     positionUnits, checkExit, positionPnl, liveReview, REVIEW,
     ema, sma, rsi, adx, computeIndicators, PATTERNS, context, ctxLabel, simulate, learn, evaluate, lookup,
     applyFilters, scheduledEvents, usDst, demoGenerator, pipSize, DEFAULTS, WARMUP,

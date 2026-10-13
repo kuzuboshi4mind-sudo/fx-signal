@@ -118,3 +118,14 @@ test('applyFilters: 一時停止中は見送りつつ様子見として追う', 
   const [c] = E.applyFilters([sig], { symbol: 'USD/JPY', bias: {}, events: [], now: 0 });
   assert.ok(!c.blocked && !c.shadow);
 });
+
+test('adaptiveSelect: 直近の成績上位を返し、期待値マイナスは選ばない', () => {
+  const next = E.demoGenerator(3, 150, 60, Date.UTC(2026, 0, 1));
+  const c = Array.from({ length: 5000 }, next);
+  const picks = E.adaptiveSelect(c, { lookMonths: 6, top: 3 });
+  assert.ok(picks.length <= 3);
+  for (let k = 0; k < picks.length; k++) {
+    assert.ok(picks[k].score > 0 && picks[k].n >= 10);
+    if (k) assert.ok(picks[k - 1].score >= picks[k].score);
+  }
+});
