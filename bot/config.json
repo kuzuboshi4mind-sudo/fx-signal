@@ -1,0 +1,14 @@
+{
+  "symbol": "USD/JPY",
+  "interval": "1h",
+  "tpAtr": 2,
+  "slAtr": 1,
+  "maxBars": 24,
+  "spreadPips": 0.5,
+  "minWinRate": 35,
+  "minSamples": 15,
+  "blackoutMin": 30,
+  "paper": { "start": 30000, "riskPct": 2 },
+  "bias": { "USD": 0, "JPY": 0, "EUR": 0, "GBP": 0, "AUD": 0 },
+  "events": []
+}

@@ -138,6 +138,11 @@
       </div>
     </div>
 
+    <div class="card" id="botCard">
+      <div class="row" style="justify-content:space-between"><h2 style="margin:0">サーバー運用（24時間）</h2><span class="pill" id="botStatus">確認中</span></div>
+      <div id="botView" class="muted" style="margin-top:8px">読み込み中…</div>
+    </div>
+
     <div class="card" id="paperCard">
       <h2>自動売買（仮想口座）</h2>
       <div id="paperSetup">
@@ -880,6 +885,45 @@ document.addEventListener('visibilitychange', () => {
   requestWakeLock();
   if (st.running && S.source !== 'demo' && Date.now() - (st.lastTick || 0) > 30000) tick();
 });
+
+// ---------- サーバー運用（GitHub Actions のボット）の表示 ----------
+const BOT_URL = (() => {
+  const owner = location.hostname.endsWith('.github.io') ? location.hostname.split('.')[0] : 'kuzuboshi4mind-sudo';
+  const repo = location.hostname.endsWith('.github.io') ? (location.pathname.split('/')[1] || 'fx-signal') : 'fx-signal';
+  return `https://raw.githubusercontent.com/${owner}/${repo}/bot-data/state.json`;
+})();
+async function loadBot() {
+  let b;
+  try {
+    const res = await fetch(BOT_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error(res.status);
+    b = await res.json();
+  } catch {
+    $('botStatus').textContent = '未設定'; $('botStatus').className = 'pill';
+    $('botView').innerHTML = 'まだサーバー運用のデータがありません。README の「24時間運用」の手順で設定すると、ここに結果が出ます。';
+    return;
+  }
+  const P = b.paper, dig = b.symbol.includes('JPY') ? 3 : 5, f = (v) => Number(v).toFixed(dig);
+  const ago = Math.round((Date.now() - b.lastRun) / 60000);
+  const ok = ago <= 45;
+  $('botStatus').textContent = ok ? '稼働中' : '停止？'; $('botStatus').className = 'pill ' + (ok ? 'live' : '');
+  const ret = b.equity - P.start, cls = (v) => (v >= 0 ? 'plus' : 'minus');
+  const wins = P.trades.filter(x => x.pnl > 0).length;
+  const paused = Object.entries(b.review || {}).filter(([, r]) => r.suspended).map(([id]) => E.PATTERNS.find(p => p.id === id)?.name || id);
+  $('botView').className = 'acct';
+  $('botView').innerHTML = `
+    <div class="row" style="justify-content:space-between;align-items:flex-end">
+      <div><div class="muted">評価額（元手 ${yen(P.start)}・${tstr(P.startT)}から）</div><div class="big">${yen(b.equity)}</div>
+        <div class="${cls(ret)}">${signedYen(ret)}（${(ret / P.start * 100).toFixed(2)}%）</div></div>
+      <div class="muted" style="text-align:right">${esc(b.symbol)}・${esc(b.interval)}<br>最終実行 ${ago}分前</div>
+    </div>
+    <div class="grid3"><div>取引回数<b>${P.trades.length}</b></div><div>勝ち / 負け<b>${wins} / ${P.trades.length - wins}</b></div><div>現在値<b>${f(b.price)}</b></div></div>
+    ${P.pos ? `<div class="pos"><b style="color:var(--${P.pos.dir === 'long' ? 'up' : 'down'})">${P.pos.dir === 'long' ? '買い' : '売り'}保有中</b> ${P.pos.units.toLocaleString()}通貨 @${f(P.pos.entry)}　含み損益 <b class="${cls(b.unreal)}">${signedYen(b.unreal)}</b><br><span class="muted">利確 ${f(P.pos.tp)}／損切り ${f(P.pos.sl)}・${esc(P.pos.name)}</span></div>` : '<div class="pos muted">ポジションなし。シグナルを待っています。</div>'}
+    ${paused.length ? `<p class="muted" style="margin:8px 0 0">実績不振で一時停止中：${paused.map(esc).join('、')}</p>` : ''}
+    ${P.trades.length ? `<details style="margin-top:8px"><summary>取引履歴</summary>${P.trades.slice(0, 30).map(x => `<div class="log"><span>${tstr(x.openT)} ${x.dir === 'long' ? '買' : '売'} ${x.units.toLocaleString()} ${f(x.entry)}→${f(x.exit)}<br><span class="muted">${esc(x.name)}・${{ tp: '利確', sl: '損切り', time: '時間切れ' }[x.reason] || ''}</span></span><b class="${cls(x.pnl)}">${signedYen(x.pnl)}</b></div>`).join('')}</details>` : ''}`;
+}
+loadBot(); setInterval(loadBot, 5 * 60000);
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') loadBot(); });
 
 // ---------- 初期化 ----------
 renderBias(); renderEvents(); renderLog(); renderNotif(); renderPaper(); renderReview(); drawChart();

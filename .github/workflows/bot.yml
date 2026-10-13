@@ -1,0 +1,57 @@
+name: FX bot
+
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'   # 15分ごと（混雑する00分を避ける）
+  workflow_dispatch:
+    inputs:
+      reset:
+        description: '仮想口座をリセットして最初から運用する'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fx-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # 運用データは bot-data ブランチに保存（main を汚さず、Pages の再ビルドも起こさない）
+      - name: Prepare data branch
+        run: |
+          if git ls-remote --exit-code origin bot-data >/dev/null; then
+            git fetch --depth 1 origin bot-data:bot-data
+            git worktree add data bot-data
+          else
+            git worktree add --orphan -b bot-data data
+          fi
+
+      - name: Run bot
+        env:
+          TWELVEDATA_KEY: ${{ secrets.TWELVEDATA_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          RESET: ${{ inputs.reset }}
+        run: node bot/run.js
+
+      - name: Save state
+        if: always()
+        working-directory: data
+        run: |
+          [ -f state.json ] || exit 0
+          git config user.name 'fx-bot'
+          git config user.email 'fx-bot@users.noreply.github.com'
+          git add state.json
+          git diff --cached --quiet || git commit -q -m "bot run $(date -u +%FT%TZ)"
+          git push -q origin bot-data

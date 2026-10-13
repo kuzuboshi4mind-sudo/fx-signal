@@ -45,3 +45,18 @@ APIキーはこの端末のブラウザ（localStorage）にのみ保存され�
 ```
 node --test test/*.test.js
 ```
+
+## 24時間運用（サーバー版）
+
+GitHub Actions が15分ごとに `bot/run.js` を実行し、ページを閉じていても仮想口座で自動売買を続けます（無料・実際のお金は動きません）。結果はアプリの「サーバー運用」カードに表示され、売買のたびにスマホへ通知できます。
+
+設定手順：
+1. リポジトリの Settings → Secrets and variables → Actions → New repository secret で次を登録
+   - `TWELVEDATA_KEY`：Twelve Data のAPIキー
+   - `NTFY_TOPIC`：通知用の合言葉（他人に推測されない英数字。例 `fx-kuzu-8f3k2q`）。スマホに無料アプリ「ntfy」を入れ、同じ名前を購読すると通知が届きます
+2. Actions タブ → 「FX bot」→ Run workflow で初回実行（以後は15分ごとに自動）
+
+- 運用条件は `bot/config.json`（通貨ペア・時間足・元手・リスク%・通貨の強弱・イベント）
+- 仮想口座を最初からやり直すときは Run workflow で「reset」にチェック
+- 運用データは `bot-data` ブランチの `state.json` に保存されます
+- 実行時刻は混雑で数分ずれることがあります。60日間リポジトリに動きがないと GitHub が定期実行を止めるので、その場合は Actions タブで再度有効にしてください
