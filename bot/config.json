@@ -8,7 +8,7 @@
   "minWinRate": 35,
   "minSamples": 15,
   "blackoutMin": 30,
-  "paper": { "start": 30000, "riskPct": 2 },
+  "paper": { "start": 100000, "riskPct": 2 },
   "bias": { "USD": 0, "JPY": 0, "EUR": 0, "GBP": 0, "AUD": 0 },
   "events": []
 }
