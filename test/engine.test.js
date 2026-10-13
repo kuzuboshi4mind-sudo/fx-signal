@@ -73,3 +73,30 @@ test('米雇用統計は第1金曜、夏時間 12:30 UTC / 冬時間 13:30 UTC',
   assert.ok(ev.includes('2026-11-06T13:30:00.000Z'));
   assert.ok(ev.includes('2026-12-04T13:30:00.000Z'));
 });
+
+test('positionUnits: リスク額と証拠金の小さいほうで1000通貨単位に丸める', () => {
+  // 30000円の2% = 600円、損切り幅0.3円 → 2000通貨
+  assert.strictEqual(E.positionUnits({ balance: 30000, riskPct: 2, entry: 150, sl: 149.7 }), 2000);
+  // 損切りが極端に狭くても レバレッジ25倍（30000*25/150 = 5000通貨）を超えない
+  assert.strictEqual(E.positionUnits({ balance: 30000, riskPct: 2, entry: 150, sl: 149.999 }), 5000);
+  // リスク額が1000通貨に満たなければ 0（取引しない）
+  assert.strictEqual(E.positionUnits({ balance: 30000, riskPct: 2, entry: 150, sl: 149 }), 0);
+});
+
+test('checkExit / positionPnl', () => {
+  const pos = { dir: 'long', units: 2000, entry: 150, sl: 149.7, tp: 150.6, barT: 0, deadline: 10 };
+  const b = (t, o, h, l, c) => ({ t, o, h, l, c });
+  // エントリー足の高値・安値は使わない
+  assert.strictEqual(E.checkExit(pos, [b(0, 150, 151, 149, 150)], 1, 150), null);
+  let x = E.checkExit(pos, [b(0, 150, 150, 150, 150), b(1, 150, 150.7, 149.9, 150.5)], 2, 150.5);
+  assert.deepStrictEqual([x.reason, x.price], ['tp', 150.6]);
+  assert.ok(Math.abs(E.positionPnl(pos, x.price) - 1200) < 1e-6);
+  // 同じ足で両方触れたら損切り、窓開けは始値
+  x = E.checkExit(pos, [b(1, 150, 150.7, 149.6, 150)], 2, 150);
+  assert.deepStrictEqual([x.reason, x.price], ['sl', 149.7]);
+  x = E.checkExit(pos, [b(1, 149.5, 149.6, 149.4, 149.5)], 2, 149.5);
+  assert.deepStrictEqual([x.reason, x.price], ['sl', 149.5]);
+  // 期限切れは現在値で決済
+  x = E.checkExit(pos, [], 10, 150.2);
+  assert.deepStrictEqual([x.reason, x.price], ['time', 150.2]);
+});

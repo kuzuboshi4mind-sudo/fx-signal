@@ -30,6 +30,7 @@
     --ema20: #d95926; --ema50: #9085e9;
   }
   * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   body {
     margin: 0; background: var(--bg); color: var(--text);
     font: 15px/1.5 "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
@@ -106,6 +107,10 @@
   }
   details summary { cursor: pointer; color: var(--text2); font-size: 13px; }
   .log { font-size: 13px; padding: 6px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 8px; }
+  .acct { font-variant-numeric: tabular-nums; }
+  .acct .big { font-size: 26px; font-weight: 700; }
+  .pos { background: var(--surface2); border-radius: 8px; padding: 8px 10px; margin-top: 8px; font-size: 13px; }
+  .plus { color: var(--up); } .minus { color: var(--down); }
   pre.ai { white-space: pre-wrap; font: inherit; font-size: 13px; margin: 8px 0 0; }
 </style>
 </head>
@@ -131,6 +136,21 @@
           <button class="primary" id="startBtn">開始</button>
         </div>
       </div>
+    </div>
+
+    <div class="card" id="paperCard">
+      <h2>自動売買（仮想口座）</h2>
+      <div id="paperSetup">
+        <p class="muted" style="margin:0">仮想のお金で、シグナル通りに自動で売買します。実際のお金は動きません。円の通貨ペア（USD/JPY など）で使えます。</p>
+        <div class="two">
+          <label class="f">元手（円）<input id="paperBalance" type="number" min="10000" step="1000" value="30000"></label>
+          <label class="f">1回のリスク（%）<input id="paperRisk" type="number" min="0.5" max="10" step="0.5" value="2"></label>
+          <label class="f">運用時間（時間）<input id="paperHours" type="number" min="1" max="720" value="24"></label>
+          <label class="f">レバレッジ<input value="25倍（国内上限）" disabled></label>
+        </div>
+        <button class="primary" id="paperStart">仮想運用を開始</button>
+      </div>
+      <div id="paperView" hidden></div>
     </div>
 
     <div class="card">
@@ -271,6 +291,7 @@ let userEvents = store.get('events', []);
 let log = store.get('log', []);
 
 const st = { candles: [], model: null, timer: null, running: false, lastEvalT: null, newBars: 0, gen: null };
+let paper = store.get('paper', null);
 
 // ---------- 表示ユーティリティ ----------
 const digits = () => (S.symbol.includes('JPY') ? 3 : 5);
@@ -340,6 +361,7 @@ async function start() {
     st.candles = []; st.lastEvalT = null; st.newBars = 0;
     if (S.source === 'demo') {
       log = log.filter(L => L.src !== 'demo'); // デモは毎回新しい模擬相場なので前回の記録は使えない
+      if (paper?.src === 'demo') { paper = null; store.set('paper', null); renderPaper(); }
       const iv = INTERVAL_MIN[S.interval];
       st.gen = E.demoGenerator(Date.now() & 0xffff, DEMO_START[S.symbol], iv, Date.now() - 3000 * iv * 60000);
       mergeBars(Array.from({ length: 3000 }, st.gen));
@@ -353,6 +375,7 @@ async function start() {
     $('startBtn').textContent = '停止';
     setStatus(S.source === 'demo' ? 'デモ' : 'ライブ', S.source === 'demo' ? 'demo' : 'live');
     tick(true);
+    requestWakeLock();
     st.timer = setInterval(tick, S.source === 'demo' ? 2500 : Math.max(15, S.pollSec) * 1000);
   } catch (e) {
     setStatus('エラー'); toast(e.message);
@@ -360,6 +383,7 @@ async function start() {
 }
 function stop() {
   clearInterval(st.timer); st.running = false;
+  wakeLock?.release().catch(() => {});
   $('startBtn').textContent = '開始'; setStatus('停止中');
 }
 $('startBtn').onclick = () => (st.running ? stop() : start());
@@ -395,6 +419,7 @@ function process() {
   const idx = S.source === 'demo' ? c.length - 1 : c.length - 2;
   renderPrice();
   updateOutcomes();
+  paperUpdate();
   if (!st.model || idx < 0 || c[idx].t === st.lastEvalT) { drawChart(); return; }
   st.lastEvalT = c[idx].t;
   const now = S.source === 'demo' ? Date.now() : c[c.length - 1].t;
@@ -409,6 +434,7 @@ function process() {
     notify(s);
   }
   log = log.slice(0, 200); store.set('log', log);
+  paperEnter(go);
   renderLog(); drawChart();
 }
 
@@ -689,10 +715,125 @@ bias は今後数日〜2週間の通貨の強さを -2(強い売り圧力)〜+2(
   throw new Error('分析が時間内に終わりませんでした');
 }
 
+
+// ---------- 自動売買（仮想口座） ----------
+const LEVERAGE = 25;
+const yen = (v) => Math.round(v).toLocaleString('ja-JP') + '円';
+const signedYen = (v) => (v >= 0 ? '+' : '−') + Math.abs(Math.round(v)).toLocaleString('ja-JP') + '円';
+// デモは模擬相場の時計（2.5秒で1本進む）、ライブは実際の時刻で動かす
+function nowT() {
+  const c = st.candles;
+  return S.source === 'demo' && c.length ? c[c.length - 1].t + INTERVAL_MIN[S.interval] * 60000 : Date.now();
+}
+function paperMatches() { return paper && paper.symbol === S.symbol && paper.src === S.source && paper.interval === S.interval; }
+function savePaper() { store.set('paper', paper); }
+
+$('paperStart').onclick = async () => {
+  if (!S.symbol.endsWith('/JPY')) { toast('自動売買は円の通貨ペア（USD/JPY など）で使えます。設定で通貨ペアを変えてください'); return; }
+  const bal = Number($('paperBalance').value), risk = Number($('paperRisk').value), hours = Number($('paperHours').value);
+  if (!(bal >= 10000) || !(risk > 0) || !(hours > 0)) { toast('元手は1万円以上、リスクと運用時間は0より大きくしてください'); return; }
+  if (!st.running) { await start(); if (!st.running) return; }
+  const t = nowT();
+  paper = { symbol: S.symbol, src: S.source, interval: S.interval, start: bal, balance: bal, riskPct: risk,
+    startT: t, endT: t + hours * 3600e3, pos: null, trades: [], done: false };
+  savePaper(); renderPaper();
+  toast(`仮想運用を開始しました（元手 ${yen(bal)}・${hours}時間）`);
+  requestWakeLock();
+};
+
+function paperEnter(go) {
+  if (!paperMatches() || paper.done || paper.pos || !go.length) return;
+  const c = st.candles, s = go[0], dir = s.dir === 'long' ? 1 : -1;
+  const spread = S.spreadPips * E.pipSize(S.symbol);
+  const entry = s.entry + dir * spread; // スプレッド分は不利な価格で約定したとみなす
+  const units = E.positionUnits({ balance: paper.balance, riskPct: paper.riskPct, entry, sl: s.sl, leverage: LEVERAGE });
+  if (!units) { paperNote(`見送り：${s.name}（損切り幅が広く、1000通貨でもリスク上限を超える）`); return; }
+  const t = nowT();
+  paper.pos = { dir: s.dir, name: s.name, units, entry, sl: s.sl, tp: s.tp, barT: c[c.length - 1].t, openT: t,
+    deadline: t + S.maxBars * INTERVAL_MIN[S.interval] * 60000 };
+  savePaper();
+  paperNote(`${s.dir === 'long' ? '買い' : '売り'} ${units.toLocaleString()}通貨 @${fmt(entry)}（${s.name}）`);
+}
+
+function paperUpdate() {
+  if (!paperMatches() || paper.done) { renderPaper(); return; }
+  const c = st.candles; if (!c.length) return;
+  const t = nowT(), price = c[c.length - 1].c;
+  if (paper.pos) {
+    let x = E.checkExit(paper.pos, c, t, price);
+    if (!x && t >= paper.endT) x = { price, reason: 'end', t };
+    if (x) {
+      const pnl = E.positionPnl(paper.pos, x.price);
+      paper.balance += pnl;
+      paper.trades.unshift({ ...paper.pos, exit: x.price, closeT: x.t, reason: x.reason, pnl });
+      paper.pos = null;
+      paperNote(`決済 ${{ tp: '利確', sl: '損切り', time: '時間切れ', end: '運用終了' }[x.reason]} ${signedYen(pnl)}（残高 ${yen(paper.balance)}）`);
+    }
+  }
+  if (t >= paper.endT && !paper.pos) {
+    paper.done = true;
+    const r = paper.balance - paper.start;
+    paperNote(`運用終了：${signedYen(r)}（${(r / paper.start * 100).toFixed(1)}%）`);
+  }
+  savePaper(); renderPaper();
+}
+
+function paperNote(msg) {
+  toast('仮想口座：' + msg);
+  if ('Notification' in window && Notification.permission === 'granted') {
+    navigator.serviceWorker?.getRegistration().then(reg => reg ? reg.showNotification('FX 仮想口座', { body: msg }) : new Notification('FX 仮想口座', { body: msg })).catch(() => {});
+  }
+}
+
+$('paperView').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b || !paper) return;
+  if (b.dataset.act === 'close') {
+    if (b.dataset.armed !== '1') { b.dataset.armed = '1'; b.textContent = 'もう一度押すと終了'; setTimeout(() => { b.dataset.armed = ''; b.textContent = '終了して決済'; }, 3000); return; }
+    paper.endT = nowT(); paperUpdate();
+  } else if (b.dataset.act === 'new') {
+    paper = null; store.set('paper', null); renderPaper();
+  }
+});
+
+function renderPaper() {
+  const on = !!paper;
+  $('paperSetup').hidden = on; $('paperView').hidden = !on;
+  if (!on) return;
+  const p = paper, c = st.candles, price = c.length ? c[c.length - 1].c : NaN;
+  const live = paperMatches() && !isNaN(price);
+  const unreal = p.pos && live ? E.positionPnl(p.pos, price) : 0;
+  const equity = p.balance + unreal, ret = equity - p.start;
+  const wins = p.trades.filter(x => x.pnl > 0).length;
+  const left = Math.max(0, p.endT - nowT());
+  const leftStr = p.done ? '終了' : `残り ${Math.floor(left / 3600e3)}時間${Math.floor(left / 60000) % 60}分`;
+  const cls = (v) => (v >= 0 ? 'plus' : 'minus');
+  $('paperView').innerHTML = `<div class="acct">
+    <div class="row" style="justify-content:space-between;align-items:flex-end">
+      <div><div class="muted">評価額（元手 ${yen(p.start)}）</div><div class="big">${yen(equity)}</div>
+        <div class="${cls(ret)}">${signedYen(ret)}（${(ret / p.start * 100).toFixed(2)}%）</div></div>
+      <div class="muted" style="text-align:right">${esc(p.symbol)}${p.src === 'demo' ? '・デモ' : ''}<br>${leftStr}</div>
+    </div>
+    ${!paperMatches() ? `<p class="muted">この運用は ${esc(p.symbol)}・${esc(p.interval)}・${p.src === 'demo' ? 'デモ' : 'ライブ'} の設定で動いています。設定を戻して「開始」すると再開します。</p>` : ''}
+    <div class="grid3"><div>取引回数<b>${p.trades.length}</b></div><div>勝ち / 負け<b>${wins} / ${p.trades.length - wins}</b></div><div>確定損益<b class="${cls(p.balance - p.start)}">${signedYen(p.balance - p.start)}</b></div></div>
+    ${p.pos ? `<div class="pos"><b style="color:var(--${p.pos.dir === 'long' ? 'up' : 'down'})">${p.pos.dir === 'long' ? '買い' : '売り'}保有中</b> ${p.pos.units.toLocaleString()}通貨 @${fmt(p.pos.entry)}　含み損益 <b class="${cls(unreal)}">${live ? signedYen(unreal) : '—'}</b><br>
+      <span class="muted">利確 ${fmt(p.pos.tp)}／損切り ${fmt(p.pos.sl)}・${esc(p.pos.name)}・証拠金 ${yen(p.pos.units * p.pos.entry / LEVERAGE)}</span></div>`
+      : p.done ? '' : '<div class="pos muted">ポジションなし。勝ちパターンのシグナルが出たら自動で入ります。</div>'}
+    ${p.trades.length ? `<details style="margin-top:8px"><summary>取引履歴</summary>${p.trades.map(x => `<div class="log"><span>${tstr(x.openT)} ${x.dir === 'long' ? '買' : '売'} ${x.units.toLocaleString()} ${fmt(x.entry)}→${fmt(x.exit)}<br><span class="muted">${esc(x.name)}・${{ tp: '利確', sl: '損切り', time: '時間切れ', end: '運用終了' }[x.reason]}</span></span><b class="${cls(x.pnl)}">${signedYen(x.pnl)}</b></div>`).join('')}</details>` : ''}
+    <div class="row" style="margin-top:10px">${p.done ? '<button data-act="new">新しく運用する</button>' : '<button data-act="close">終了して決済</button>'}</div>
+  </div>`;
+}
+
+// 画面を点けたままにする（スマホで自動売買を止めないため）。対応ブラウザのみ。
+let wakeLock = null;
+async function requestWakeLock() {
+  try { if ('wakeLock' in navigator && st.running && !wakeLock) { wakeLock = await navigator.wakeLock.request('screen'); wakeLock.addEventListener('release', () => (wakeLock = null)); } } catch {}
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') requestWakeLock(); });
+
 // ---------- 初期化 ----------
-renderBias(); renderEvents(); renderLog(); renderNotif(); drawChart();
+renderBias(); renderEvents(); renderLog(); renderNotif(); renderPaper(); drawChart();
 try { const t = localStorage.getItem('fx.tab'); if (t) document.querySelector(`nav button[data-tab="${t}"]`)?.click(); } catch {}
-setInterval(renderEvents, 60000);
+setInterval(() => { renderEvents(); renderPaper(); }, 60000);
 </script>
 </body>
 </html>

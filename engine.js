@@ -335,7 +335,39 @@
     };
   }
 
+
+  // ---------- 仮想口座（ペーパートレード） ----------
+  // 1回の損切りで失う額が残高の riskPct% になる数量。証拠金（レバレッジ）の上限も守る。
+  function positionUnits({ balance, riskPct, entry, sl, leverage = 25, lot = 1000, jpyPerQuote = 1 }) {
+    const perUnit = Math.abs(entry - sl) * jpyPerQuote;
+    if (!(perUnit > 0) || !(balance > 0)) return 0;
+    const byRisk = balance * riskPct / 100 / perUnit;
+    const byMargin = balance * leverage / (entry * jpyPerQuote);
+    return Math.floor(Math.min(byRisk, byMargin) / lot + 1e-9) * lot;
+  }
+
+  // 保有ポジションの決済判定。pos.barT（エントリーした足）より後の足の高値・安値で判定し、
+  // エントリーした足そのものは現在値だけで判定する。窓開けで損切りを飛び越えたら始値で決済。
+  function checkExit(pos, candles, nowT, price) {
+    const s = pos.dir === 'long' ? 1 : -1;
+    for (const b of candles) {
+      if (b.t <= pos.barT) continue;
+      if (s > 0 ? b.o <= pos.sl : b.o >= pos.sl) return { price: b.o, reason: 'sl', t: b.t };
+      if (s > 0 ? b.l <= pos.sl : b.h >= pos.sl) return { price: pos.sl, reason: 'sl', t: b.t };
+      if (s > 0 ? b.h >= pos.tp : b.l <= pos.tp) return { price: pos.tp, reason: 'tp', t: b.t };
+    }
+    if (s > 0 ? price <= pos.sl : price >= pos.sl) return { price, reason: 'sl', t: nowT };
+    if (s > 0 ? price >= pos.tp : price <= pos.tp) return { price, reason: 'tp', t: nowT };
+    if (nowT >= pos.deadline) return { price, reason: 'time', t: nowT };
+    return null;
+  }
+
+  function positionPnl(pos, price, jpyPerQuote = 1) {
+    return (pos.dir === 'long' ? 1 : -1) * (price - pos.entry) * pos.units * jpyPerQuote;
+  }
+
   return {
+    positionUnits, checkExit, positionPnl,
     ema, sma, rsi, adx, computeIndicators, PATTERNS, context, ctxLabel, simulate, learn, evaluate, lookup,
     applyFilters, scheduledEvents, usDst, demoGenerator, pipSize, DEFAULTS, WARMUP,
   };
