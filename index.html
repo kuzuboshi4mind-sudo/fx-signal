@@ -939,7 +939,7 @@ function adaptiveHtml(b, f, cls) {
 async function loadPairs() {
   const box = document.getElementById('otherPairs'); if (!box) return;
   const rows = [];
-  for (const file of ['state-EURJPY.json', 'state-GBPJPY.json']) {
+  for (const file of ['state-EURJPY.json', 'state-GBPJPY.json', 'state-AUDJPY.json', 'state-NZDJPY.json']) {
     try {
       const r = await fetch(BOT_URL.replace('state.json', file) + '?t=' + Date.now(), { cache: 'no-store' });
       if (!r.ok) continue;
