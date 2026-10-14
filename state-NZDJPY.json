@@ -50,7 +50,7 @@
    "entry": 88.42807,
    "sl": 88.55701198528968,
    "tp": 88.17018602942068,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -66,7 +66,7 @@
    "entry": 88.42807,
    "sl": 88.55701198528968,
    "tp": 88.17018602942068,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -82,7 +82,7 @@
    "entry": 88.42807,
    "sl": 88.55701198528968,
    "tp": 88.17018602942068,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -186,7 +186,7 @@
    ]
   }
  ],
- "lastEvalT": 1792004400000,
+ "lastEvalT": 1792008000000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -244,18 +244,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100049.49999999994
+  "equity": 99981.39999999992
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 3,
-  "wouldLose": 2,
+  "n": 6,
+  "wouldLose": 5,
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792009863721,
- "lastBarT": 1792008000000,
- "price": 88.51733,
+ "lastRun": 1792011774958,
+ "lastBarT": 1792011600000,
+ "price": 88.53095,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -317,7 +317,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2657,
+  "events": 2656,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -333,7 +333,7 @@
     "key": "with|range",
     "n": 52,
     "winRate": 0.38461538461538464,
-    "avgR": 0.12476281627326563
+    "avgR": 0.1247628162755711
    },
    {
     "name": "20本高値ブレイク",
@@ -346,24 +346,5 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }

@@ -251,7 +251,7 @@
    ]
   }
  ],
- "lastEvalT": 1792004400000,
+ "lastEvalT": 1792008000000,
  "adaptive": {
   "start": 100000,
   "balance": 100847.51293623153,
@@ -344,7 +344,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100827.51293623155
+  "equity": 100802.0129362316
  },
  "reportDay": "2026-10-15",
  "skipReview": {
@@ -353,9 +353,9 @@
   "wouldWin": 2
  },
  "version": 1,
- "lastRun": 1792009862587,
- "lastBarT": 1792008000000,
- "price": 208.82085,
+ "lastRun": 1792011774298,
+ "lastBarT": 1792011600000,
+ "price": 208.8336,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -425,38 +425,10 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360605826926
+    "avgR": 0.1691236060582714
    }
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }

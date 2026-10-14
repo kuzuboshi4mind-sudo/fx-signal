@@ -201,7 +201,7 @@
    ]
   }
  ],
- "lastEvalT": 1792004400000,
+ "lastEvalT": 1792008000000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -306,9 +306,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1792009862196,
- "lastBarT": 1792008000000,
- "price": 176.59797,
+ "lastRun": 1792011773951,
+ "lastBarT": 1792011600000,
+ "price": 176.60901,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -370,7 +370,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2667,
+  "events": 2666,
   "win": [
    {
     "name": "陽の包み足",
@@ -378,7 +378,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045027142
+    "avgR": 0.36119450450254853
    },
    {
     "name": "MACD売りクロス",
@@ -386,7 +386,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200880433
+    "avgR": 0.22933283200881438
    },
    {
     "name": "ボリバン下限から回帰",
@@ -394,29 +394,10 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690600553
+    "avgR": 0.17017190690600567
    }
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
