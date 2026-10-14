@@ -10,6 +10,9 @@ on:
       intervals:
         description: '時間足（カンマ区切り）'
         default: '1h,15min'
+      symbols:
+        description: '通貨ペア（カンマ区切り）'
+        default: 'USD/JPY'
 
 permissions:
   contents: write
@@ -43,7 +46,10 @@ jobs:
           YEARS: ${{ inputs.years }}
           INTERVALS: ${{ inputs.intervals }}
           OUT_DIR: out
-        run: node research/fetch.js
+        shell: bash
+        run: |
+          IFS=',' read -ra SYMS <<< "${{ inputs.symbols }}"
+          for s in "${SYMS[@]}"; do SYMBOL="$s" node research/fetch.js; done
 
       - name: Save
         working-directory: out
