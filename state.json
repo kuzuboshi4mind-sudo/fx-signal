@@ -6,10 +6,33 @@
   "balance": 100000,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "units": 12000,
+   "entry": 158.80492,
+   "sl": 158.96746206926184,
+   "tp": 158.49483586147633,
+   "barT": 1791993600000,
+   "openT": 1791994711557,
+   "deadline": 1792081111557
+  },
   "trades": []
  },
  "log": [
+  {
+   "t": 1791990000000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 158.80992,
+   "sl": 158.96746206926184,
+   "tp": 158.49483586147633,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1791986400000,
    "pattern": "rsi_fall",
@@ -34,7 +57,7 @@
    "entry": 158.85852,
    "sl": 158.71204481908094,
    "tp": 159.1514703618381,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -50,7 +73,7 @@
    "entry": 158.91295,
    "sl": 158.76689749747177,
    "tp": 159.20505500505644,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -66,7 +89,7 @@
    "entry": 158.91295,
    "sl": 158.76689749747177,
    "tp": 159.20505500505644,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -82,7 +105,7 @@
    "entry": 158.91295,
    "sl": 158.76689749747177,
    "tp": 159.20505500505644,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -155,14 +178,14 @@
    ]
   }
  ],
- "lastEvalT": 1791986400000,
+ "lastEvalT": 1791990000000,
  "reportDay": "2026-10-15",
  "version": 1,
- "lastRun": 1791992278293,
- "lastBarT": 1791990000000,
- "price": 158.87334,
- "equity": 100000,
- "unreal": 0,
+ "lastRun": 1791994711557,
+ "lastBarT": 1791993600000,
+ "price": 158.80992,
+ "equity": 99940.00000000006,
+ "unreal": -59.99999999994543,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -222,7 +245,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2716,
+  "events": 2717,
   "win": [
    {
     "name": "陽の包み足",
@@ -245,13 +268,10 @@
  "review": {},
  "lastSignals": [
   {
-   "name": "RSI買われすぎ反落",
+   "name": "ボリバン上限から回帰",
    "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
+   "blocked": false,
+   "reasons": []
   }
  ],
  "adaptive": {
@@ -300,8 +320,8 @@
   "equity": 100000
  },
  "skipReview": {
-  "n": 4,
-  "wouldLose": 2,
+  "n": 8,
+  "wouldLose": 6,
   "wouldWin": 2
  }
 }

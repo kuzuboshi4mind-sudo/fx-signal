@@ -138,7 +138,7 @@
    ]
   }
  ],
- "lastEvalT": 1791986400000,
+ "lastEvalT": 1791990000000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -222,7 +222,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99952
+  "equity": 99379.43999999993
  },
  "reportDay": "2026-10-15",
  "skipReview": {
@@ -231,9 +231,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791992279088,
- "lastBarT": 1791990000000,
- "price": 176.66228,
+ "lastRun": 1791994712775,
+ "lastBarT": 1791993600000,
+ "price": 176.59071,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -295,7 +295,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2666,
+  "events": 2664,
   "win": [
    {
     "name": "陽の包み足",
@@ -303,7 +303,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.36119450450284274
+    "avgR": 0.36119450450282536
    },
    {
     "name": "MACD売りクロス",
@@ -311,20 +311,10 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200879653
+    "avgR": 0.2293328320087976
    }
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }

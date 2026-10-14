@@ -50,7 +50,7 @@
    "entry": 88.68906,
    "sl": 88.80760259414242,
    "tp": 88.45197481171515,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -74,7 +74,7 @@
    ]
   }
  ],
- "lastEvalT": 1791986400000,
+ "lastEvalT": 1791990000000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -122,14 +122,14 @@
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 1,
+  "n": 2,
   "wouldLose": 1,
-  "wouldWin": 0
+  "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1791992281681,
- "lastBarT": 1791990000000,
- "price": 88.5187,
+ "lastRun": 1791994714080,
+ "lastBarT": 1791993600000,
+ "price": 88.48717,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -207,7 +207,7 @@
     "key": "with|range",
     "n": 52,
     "winRate": 0.38461538461538464,
-    "avgR": 0.12476281626897874
+    "avgR": 0.12476281625121272
    },
    {
     "name": "20本高値ブレイク",
@@ -220,15 +220,5 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
