@@ -200,12 +200,12 @@
    ]
   }
  ],
- "lastEvalT": 1792011600000,
+ "lastEvalT": 1792015200000,
  "reportDay": "2026-10-15",
  "version": 1,
- "lastRun": 1792018716864,
- "lastBarT": 1792015200000,
- "price": 158.05211,
+ "lastRun": 1792020520571,
+ "lastBarT": 1792018800000,
+ "price": 158.07668,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -267,7 +267,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2722,
+  "events": 2721,
   "win": [
    {
     "name": "陽の包み足",
