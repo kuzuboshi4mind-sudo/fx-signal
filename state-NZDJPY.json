@@ -18,7 +18,7 @@
    "entry": 88.48397,
    "sl": 88.36007093891882,
    "tp": 88.73176812216235,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -164,18 +164,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100216.29999999994
+  "equity": 100792.64999999992
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 2,
-  "wouldLose": 1,
+  "n": 3,
+  "wouldLose": 2,
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792001194136,
+ "lastRun": 1792003465127,
  "lastBarT": 1792000800000,
- "price": 88.48397,
+ "price": 88.3687,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -237,7 +237,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2655,
+  "events": 2656,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -266,15 +266,5 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
