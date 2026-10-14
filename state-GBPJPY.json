@@ -18,7 +18,7 @@
    "entry": 210.13189,
    "sl": 210.29475677756355,
    "tp": 209.8061564448729,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -34,7 +34,7 @@
    "entry": 210.23647,
    "sl": 210.06920193185465,
    "tp": 210.57100613629072,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -50,7 +50,7 @@
    "entry": 210.25514,
    "sl": 210.0857190035358,
    "tp": 210.5939819929285,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -66,7 +66,7 @@
    "entry": 210.02787,
    "sl": 209.86339508073084,
    "tp": 210.35681983853834,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -94,9 +94,10 @@
  "lastEvalT": 1791975600000,
  "adaptive": {
   "start": 100000,
-  "balance": 99342.10032292333,
+  "balance": 100847.51293623153,
   "startT": 1791953875407,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "bb_break_up|short|3|1",
     "dir": "short",
@@ -108,10 +109,12 @@
     "tp": 209.72466579556394,
     "barT": 1791972000000,
     "openT": 1791972461296,
-    "deadline": 1792058861296
-   }
-  ],
-  "trades": [
+    "deadline": 1792058861296,
+    "exit": 209.72466579556394,
+    "closeT": 1791979200000,
+    "reason": "tp",
+    "pnl": 1505.4126133082093
+   },
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -167,18 +170,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99296.47032292334
+  "equity": 100847.51293623153
  },
  "reportDay": "2026-10-14",
  "skipReview": {
-  "n": 1,
-  "wouldLose": 1,
+  "n": 5,
+  "wouldLose": 5,
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791979499012,
+ "lastRun": 1791981784703,
  "lastBarT": 1791979200000,
- "price": 210.24168,
+ "price": 209.89919,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -240,7 +243,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2699,
+  "events": 2703,
   "win": [
    {
     "name": "陰の包み足",

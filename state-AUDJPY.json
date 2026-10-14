@@ -3,22 +3,28 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 100000,
+  "balance": 98102.89719050525,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "long",
-   "pattern": "donchian_up",
-   "name": "20本高値ブレイク",
-   "units": 16000,
-   "entry": 111.04422,
-   "sl": 110.92565107440657,
-   "tp": 111.26335785118683,
-   "barT": 1791964800000,
-   "openT": 1791967922952,
-   "deadline": 1792054322952
-  },
-  "trades": []
+  "pos": null,
+  "trades": [
+   {
+    "dir": "long",
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク",
+    "units": 16000,
+    "entry": 111.04422,
+    "sl": 110.92565107440657,
+    "tp": 111.26335785118683,
+    "barT": 1791964800000,
+    "openT": 1791967922952,
+    "deadline": 1792054322952,
+    "exit": 110.92565107440657,
+    "closeT": 1791979200000,
+    "reason": "sl",
+    "pnl": -1897.1028094947542
+   }
+  ]
  },
  "log": [
   {
@@ -29,7 +35,7 @@
    "entry": 111.02083,
    "sl": 111.13451284603818,
    "tp": 110.79346430792367,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -45,7 +51,7 @@
    "entry": 111.02083,
    "sl": 111.13451284603818,
    "tp": 110.79346430792367,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -61,7 +67,7 @@
    "entry": 111.08213,
    "sl": 110.96772456909183,
    "tp": 111.31094086181635,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -73,7 +79,7 @@
    "entry": 111.03822,
    "sl": 110.92565107440657,
    "tp": 111.26335785118683,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -85,7 +91,7 @@
    "entry": 111.03822,
    "sl": 110.92565107440657,
    "tp": 111.26335785118683,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -142,16 +148,16 @@
  },
  "reportDay": "2026-10-14",
  "skipReview": {
-  "n": 0,
-  "wouldLose": 0,
-  "wouldWin": 0
+  "n": 3,
+  "wouldLose": 1,
+  "wouldWin": 2
  },
  "version": 1,
- "lastRun": 1791979499417,
+ "lastRun": 1791981785362,
  "lastBarT": 1791979200000,
- "price": 111.04608,
- "equity": 100029.76000000013,
- "unreal": 29.76000000012391,
+ "price": 110.84732,
+ "equity": 98102.89719050525,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -211,18 +217,17 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2790,
-  "win": [
-   {
-    "name": "20本高値ブレイク",
-    "dir": "long",
-    "key": "with|trend",
-    "n": 85,
-    "winRate": 0.35294117647058826,
-    "avgR": 0.10766590822433748
-   }
-  ]
+  "events": 2795,
+  "win": []
  },
- "review": {},
+ "review": {
+  "donchian_up": {
+   "n": 2,
+   "wins": 0,
+   "recentLosses": 2,
+   "streak": 2,
+   "suspended": false
+  }
+ },
  "lastSignals": []
 }

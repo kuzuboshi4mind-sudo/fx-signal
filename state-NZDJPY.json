@@ -18,7 +18,7 @@
    "entry": 88.94166,
    "sl": 89.03421200267405,
    "tp": 88.75655599465189,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -75,14 +75,14 @@
  },
  "reportDay": "2026-10-14",
  "skipReview": {
-  "n": 0,
-  "wouldLose": 0,
+  "n": 1,
+  "wouldLose": 1,
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791979499771,
+ "lastRun": 1791981786032,
  "lastBarT": 1791979200000,
- "price": 88.97811,
+ "price": 88.74797,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -144,7 +144,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2654,
+  "events": 2655,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
