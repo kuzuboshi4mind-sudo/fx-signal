@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1791993600000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 208.87267,
+   "sl": 209.11145365034906,
+   "tp": 208.39510269930187,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791990000000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -171,7 +187,7 @@
    ]
   }
  ],
- "lastEvalT": 1791990000000,
+ "lastEvalT": 1791993600000,
  "adaptive": {
   "start": 100000,
   "balance": 100847.51293623153,
@@ -259,9 +275,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791996963252,
- "lastBarT": 1791993600000,
- "price": 208.80548,
+ "lastRun": 1791999238040,
+ "lastBarT": 1791997200000,
+ "price": 208.87267,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -331,10 +347,20 @@
     "key": "with|range",
     "n": 31,
     "winRate": 0.3870967741935484,
-    "avgR": 0.1303425400355137
+    "avgR": 0.13034254005275106
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }
