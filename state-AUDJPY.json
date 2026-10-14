@@ -35,7 +35,7 @@
    "entry": 110.50561,
    "sl": 110.64475180129223,
    "tp": 110.22732639741557,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -180,14 +180,14 @@
  },
  "reportDay": "2026-10-14",
  "skipReview": {
-  "n": 4,
-  "wouldLose": 2,
+  "n": 5,
+  "wouldLose": 3,
   "wouldWin": 2
  },
  "version": 1,
- "lastRun": 1791986858670,
+ "lastRun": 1791989616493,
  "lastBarT": 1791986400000,
- "price": 110.50561,
+ "price": 110.60215,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -261,15 +261,5 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }

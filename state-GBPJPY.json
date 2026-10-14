@@ -18,7 +18,7 @@
    "entry": 209.15086,
    "sl": 209.3635857289749,
    "tp": 208.72540854205022,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -34,7 +34,7 @@
    "entry": 209.15086,
    "sl": 209.3635857289749,
    "tp": 208.72540854205022,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -222,14 +222,14 @@
  },
  "reportDay": "2026-10-14",
  "skipReview": {
-  "n": 6,
-  "wouldLose": 6,
+  "n": 8,
+  "wouldLose": 8,
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791986858082,
+ "lastRun": 1791989616043,
  "lastBarT": 1791986400000,
- "price": 209.15086,
+ "price": 209.16174,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -304,24 +304,5 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
