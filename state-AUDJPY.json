@@ -62,7 +62,7 @@
    ]
   }
  ],
- "lastEvalT": 1791964800000,
+ "lastEvalT": 1791968400000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -115,11 +115,11 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791970468970,
- "lastBarT": 1791968400000,
- "price": 111.08213,
- "equity": 100606.56000000017,
- "unreal": 606.5600000001723,
+ "lastRun": 1791972461820,
+ "lastBarT": 1791972000000,
+ "price": 111.10086,
+ "equity": 100906.24000000002,
+ "unreal": 906.2400000000252,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -179,7 +179,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2792,
+  "events": 2791,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -187,17 +187,10 @@
     "key": "with|trend",
     "n": 85,
     "winRate": 0.35294117647058826,
-    "avgR": 0.10766590822433734
+    "avgR": 0.10766590822433748
    }
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ]
+ "lastSignals": []
 }
