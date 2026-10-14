@@ -27,7 +27,7 @@
    ]
   }
  ],
- "lastEvalT": 1791954000000,
+ "lastEvalT": 1791957600000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -80,9 +80,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791960233177,
- "lastBarT": 1791957600000,
- "price": 177.50534,
+ "lastRun": 1791962814254,
+ "lastBarT": 1791961200000,
+ "price": 177.3358,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -134,7 +134,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2664,
+  "events": 2665,
   "win": [
    {
     "name": "陽の包み足",
@@ -142,7 +142,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045030733
+    "avgR": 0.3611945045030672
    },
    {
     "name": "MACD売りクロス",
@@ -150,7 +150,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200878252
+    "avgR": 0.22933283200878288
    }
   ]
  },
