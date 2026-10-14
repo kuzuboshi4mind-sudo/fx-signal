@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1791975600000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 158.44055,
+   "sl": 158.3241649972773,
+   "tp": 158.6733200054454,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791961200000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -59,12 +75,12 @@
    ]
   }
  ],
- "lastEvalT": 1791972000000,
+ "lastEvalT": 1791975600000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791977647066,
- "lastBarT": 1791975600000,
- "price": 158.4542,
+ "lastRun": 1791979497641,
+ "lastBarT": 1791979200000,
+ "price": 158.44055,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -147,7 +163,17 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100000,

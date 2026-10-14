@@ -91,7 +91,7 @@
    ]
   }
  ],
- "lastEvalT": 1791972000000,
+ "lastEvalT": 1791975600000,
  "adaptive": {
   "start": 100000,
   "balance": 99342.10032292333,
@@ -167,7 +167,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99625.84032292335
+  "equity": 99296.47032292334
  },
  "reportDay": "2026-10-14",
  "skipReview": {
@@ -176,9 +176,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791977648426,
- "lastBarT": 1791975600000,
- "price": 210.13189,
+ "lastRun": 1791979499012,
+ "lastBarT": 1791979200000,
+ "price": 210.24168,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -240,7 +240,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2700,
+  "events": 2699,
   "win": [
    {
     "name": "陰の包み足",
@@ -248,20 +248,10 @@
     "key": "with|range",
     "n": 31,
     "winRate": 0.3870967741935484,
-    "avgR": 0.1303425399331391
+    "avgR": 0.13034253995300887
    }
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }

@@ -94,7 +94,7 @@
    ]
   }
  ],
- "lastEvalT": 1791972000000,
+ "lastEvalT": 1791975600000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -147,11 +147,11 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791977649000,
- "lastBarT": 1791975600000,
- "price": 111.02083,
- "equity": 99625.76000000013,
- "unreal": -374.23999999987245,
+ "lastRun": 1791979499417,
+ "lastBarT": 1791979200000,
+ "price": 111.04608,
+ "equity": 100029.76000000013,
+ "unreal": 29.76000000012391,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -211,7 +211,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2791,
+  "events": 2790,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -219,29 +219,10 @@
     "key": "with|trend",
     "n": 85,
     "winRate": 0.35294117647058826,
-    "avgR": 0.10766590822433761
+    "avgR": 0.10766590822433748
    }
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
