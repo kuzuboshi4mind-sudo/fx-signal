@@ -96,9 +96,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791965323857,
+ "lastRun": 1791967922266,
  "lastBarT": 1791964800000,
- "price": 177.40862,
+ "price": 177.43464,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -145,12 +145,22 @@
     "symbol": "GBP/JPY",
     "file": "state-GBPJPY.json",
     "spreadPips": 1
+   },
+   {
+    "symbol": "AUD/JPY",
+    "file": "state-AUDJPY.json",
+    "spreadPips": 0.6
+   },
+   {
+    "symbol": "NZD/JPY",
+    "file": "state-NZDJPY.json",
+    "spreadPips": 1
    }
   ]
  },
  "learned": {
   "bars": 5000,
-  "events": 2664,
+  "events": 2665,
   "win": [
    {
     "name": "陽の包み足",
@@ -171,15 +181,5 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }

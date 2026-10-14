@@ -62,9 +62,9 @@
  "lastEvalT": 1791961200000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791965322710,
+ "lastRun": 1791967921729,
  "lastBarT": 1791964800000,
- "price": 158.36817,
+ "price": 158.45954,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -111,6 +111,16 @@
     "symbol": "GBP/JPY",
     "file": "state-GBPJPY.json",
     "spreadPips": 1
+   },
+   {
+    "symbol": "AUD/JPY",
+    "file": "state-AUDJPY.json",
+    "spreadPips": 0.6
+   },
+   {
+    "symbol": "NZD/JPY",
+    "file": "state-NZDJPY.json",
+    "spreadPips": 1
    }
   ]
  },
@@ -137,26 +147,7 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100000,

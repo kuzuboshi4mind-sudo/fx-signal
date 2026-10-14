@@ -1,0 +1,152 @@
+{
+ "symbol": "NZD/JPY",
+ "interval": "1h",
+ "paper": {
+  "start": 100000,
+  "balance": 100000,
+  "riskPct": 2,
+  "startT": 1791967923493,
+  "pos": null,
+  "trades": []
+ },
+ "log": [],
+ "lastEvalT": 1791961200000,
+ "adaptive": {
+  "start": 100000,
+  "balance": 100000,
+  "startT": 1791967923493,
+  "positions": [],
+  "trades": [],
+  "picks": [
+   {
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク",
+    "dir": "short",
+    "flip": true,
+    "tp": 3,
+    "sl": 1,
+    "n": 203,
+    "sumR": 40.15639573660632,
+    "winRate": 0.33497536945812806
+   },
+   {
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落",
+    "dir": "long",
+    "flip": true,
+    "tp": 3,
+    "sl": 1,
+    "n": 62,
+    "sumR": 8.95378072585069,
+    "winRate": 0.3225806451612903
+   },
+   {
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "dir": "short",
+    "flip": false,
+    "tp": 3,
+    "sl": 1,
+    "n": 42,
+    "sumR": 5.814251467164304,
+    "winRate": 0.30952380952380953
+   }
+  ],
+  "pickMonth": "2026-10",
+  "pickTried": "2026-10-14",
+  "equity": 100000
+ },
+ "reportDay": "2026-10-14",
+ "skipReview": {
+  "n": 0,
+  "wouldLose": 0,
+  "wouldWin": 0
+ },
+ "version": 1,
+ "lastRun": 1791967923493,
+ "lastBarT": 1791964800000,
+ "price": 89.03856,
+ "equity": 100000,
+ "unreal": 0,
+ "config": {
+  "symbol": "NZD/JPY",
+  "interval": "1h",
+  "tpAtr": 2,
+  "slAtr": 1,
+  "maxBars": 24,
+  "spreadPips": 1,
+  "minWinRate": 35,
+  "minSamples": 15,
+  "blackoutMin": 30,
+  "paper": {
+   "start": 100000,
+   "riskPct": 2
+  },
+  "bias": {
+   "USD": 0,
+   "JPY": 0,
+   "EUR": 0,
+   "GBP": 0,
+   "AUD": 0
+  },
+  "events": [],
+  "adaptive": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2,
+   "lookMonths": 6,
+   "top": 3
+  },
+  "pairs": [
+   {
+    "symbol": "USD/JPY",
+    "file": "state.json",
+    "spreadPips": 0.5
+   },
+   {
+    "symbol": "EUR/JPY",
+    "file": "state-EURJPY.json",
+    "spreadPips": 0.6
+   },
+   {
+    "symbol": "GBP/JPY",
+    "file": "state-GBPJPY.json",
+    "spreadPips": 1
+   },
+   {
+    "symbol": "AUD/JPY",
+    "file": "state-AUDJPY.json",
+    "spreadPips": 0.6
+   },
+   {
+    "symbol": "NZD/JPY",
+    "file": "state-NZDJPY.json",
+    "spreadPips": 1
+   }
+  ]
+ },
+ "learned": {
+  "bars": 5000,
+  "events": 2657,
+  "win": [
+   {
+    "name": "ゴールデンクロス(EMA20/50)",
+    "dir": "long",
+    "key": "*",
+    "n": 44,
+    "winRate": 0.36363636363636365,
+    "avgR": 0.17278075870440543
+   },
+   {
+    "name": "20本高値ブレイク",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 19,
+    "winRate": 0.3684210526315789,
+    "avgR": 0.06760282009291843
+   }
+  ]
+ },
+ "review": {},
+ "lastSignals": []
+}
