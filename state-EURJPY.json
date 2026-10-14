@@ -59,7 +59,7 @@
    ]
   }
  ],
- "lastEvalT": 1791968400000,
+ "lastEvalT": 1791972000000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -112,9 +112,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791975190415,
- "lastBarT": 1791972000000,
- "price": 177.32151,
+ "lastRun": 1791977647928,
+ "lastBarT": 1791975600000,
+ "price": 177.33168,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -184,7 +184,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.361194504503145
+    "avgR": 0.3611945045032026
    },
    {
     "name": "MACD売りクロス",
@@ -192,7 +192,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200877816
+    "avgR": 0.22933283200877463
    }
   ]
  },

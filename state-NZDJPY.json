@@ -9,8 +9,25 @@
   "pos": null,
   "trades": []
  },
- "log": [],
- "lastEvalT": 1791968400000,
+ "log": [
+  {
+   "t": 1791972000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 88.94166,
+   "sl": 89.03421200267405,
+   "tp": 88.75655599465189,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
+ "lastEvalT": 1791972000000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -63,9 +80,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791975191933,
- "lastBarT": 1791972000000,
- "price": 88.99318,
+ "lastRun": 1791977649466,
+ "lastBarT": 1791975600000,
+ "price": 88.94166,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -127,7 +144,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2656,
+  "events": 2654,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -148,5 +165,15 @@
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }

@@ -22,6 +22,38 @@
  },
  "log": [
   {
+   "t": 1791972000000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 111.02083,
+   "sl": 111.13451284603818,
+   "tp": 110.79346430792367,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1791972000000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 111.02083,
+   "sl": 111.13451284603818,
+   "tp": 110.79346430792367,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791964800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -62,7 +94,7 @@
    ]
   }
  ],
- "lastEvalT": 1791968400000,
+ "lastEvalT": 1791972000000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -115,11 +147,11 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791975191427,
- "lastBarT": 1791972000000,
- "price": 111.03649,
- "equity": 99876.32000000008,
- "unreal": -123.67999999992207,
+ "lastRun": 1791977649000,
+ "lastBarT": 1791975600000,
+ "price": 111.02083,
+ "equity": 99625.76000000013,
+ "unreal": -374.23999999987245,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -187,10 +219,29 @@
     "key": "with|trend",
     "n": 85,
     "winRate": 0.35294117647058826,
-    "avgR": 0.10766590822433748
+    "avgR": 0.10766590822433761
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }
