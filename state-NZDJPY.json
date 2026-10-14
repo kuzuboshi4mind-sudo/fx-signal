@@ -11,6 +11,21 @@
  },
  "log": [
   {
+   "t": 1791979200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 88.68906,
+   "sl": 88.80760259414242,
+   "tp": 88.45197481171515,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1791972000000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -27,7 +42,7 @@
    ]
   }
  ],
- "lastEvalT": 1791975600000,
+ "lastEvalT": 1791979200000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -80,9 +95,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791981786032,
- "lastBarT": 1791979200000,
- "price": 88.74797,
+ "lastRun": 1791984134696,
+ "lastBarT": 1791982800000,
+ "price": 88.68906,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -165,5 +180,14 @@
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ]
 }

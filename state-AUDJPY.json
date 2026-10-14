@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1791979200000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 110.61914,
+   "sl": 110.74828270908394,
+   "tp": 110.36085458183214,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791972000000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -100,7 +116,7 @@
    ]
   }
  ],
- "lastEvalT": 1791975600000,
+ "lastEvalT": 1791979200000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -153,9 +169,9 @@
   "wouldWin": 2
  },
  "version": 1,
- "lastRun": 1791981785362,
- "lastBarT": 1791979200000,
- "price": 110.84732,
+ "lastRun": 1791984134290,
+ "lastBarT": 1791982800000,
+ "price": 110.61914,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -229,5 +245,15 @@
    "suspended": false
   }
  },
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }

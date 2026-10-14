@@ -11,6 +11,54 @@
  },
  "log": [
   {
+   "t": 1791979200000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 158.91295,
+   "sl": 158.76689749747177,
+   "tp": 159.20505500505644,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1791979200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 158.91295,
+   "sl": 158.76689749747177,
+   "tp": 159.20505500505644,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1791979200000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 158.91295,
+   "sl": 158.76689749747177,
+   "tp": 159.20505500505644,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791975600000,
    "pattern": "ema_cross_up",
    "name": "ゴールデンクロス(EMA20/50)",
@@ -75,12 +123,12 @@
    ]
   }
  ],
- "lastEvalT": 1791975600000,
+ "lastEvalT": 1791979200000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791981783802,
- "lastBarT": 1791979200000,
- "price": 158.79989,
+ "lastRun": 1791984133000,
+ "lastBarT": 1791982800000,
+ "price": 158.91295,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -163,7 +211,35 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100000,
