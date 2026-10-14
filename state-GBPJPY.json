@@ -151,7 +151,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99312.10032292336
+  "equity": 99474.22032292331
  },
  "reportDay": "2026-10-14",
  "skipReview": {
@@ -160,9 +160,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791972461296,
+ "lastRun": 1791975190932,
  "lastBarT": 1791972000000,
- "price": 210.23647,
+ "price": 210.18243,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -237,15 +237,5 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
