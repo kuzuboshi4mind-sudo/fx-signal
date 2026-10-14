@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1791986400000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 158.87334,
+   "sl": 159.022388382282,
+   "tp": 158.57524323543606,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791982800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -139,12 +155,12 @@
    ]
   }
  ],
- "lastEvalT": 1791982800000,
- "reportDay": "2026-10-14",
+ "lastEvalT": 1791986400000,
+ "reportDay": "2026-10-15",
  "version": 1,
- "lastRun": 1791989615202,
- "lastBarT": 1791986400000,
- "price": 158.90256,
+ "lastRun": 1791992278293,
+ "lastBarT": 1791990000000,
+ "price": 158.87334,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -206,7 +222,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2717,
+  "events": 2716,
   "win": [
    {
     "name": "陽の包み足",
@@ -227,7 +243,17 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100000,
