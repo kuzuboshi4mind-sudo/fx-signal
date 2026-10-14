@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792000800000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 208.67281,
+   "sl": 208.92199110667852,
+   "tp": 208.17444778664293,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791993600000,
    "pattern": "ema_cross_dn",
    "name": "デッドクロス(EMA20/50)",
@@ -187,7 +203,7 @@
    ]
   }
  ],
- "lastEvalT": 1791997200000,
+ "lastEvalT": 1792000800000,
  "adaptive": {
   "start": 100000,
   "balance": 100847.51293623153,
@@ -275,9 +291,9 @@
   "wouldWin": 2
  },
  "version": 1,
- "lastRun": 1792003464402,
- "lastBarT": 1792000800000,
- "price": 208.47274,
+ "lastRun": 1792005634909,
+ "lastBarT": 1792004400000,
+ "price": 208.67281,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -339,18 +355,28 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2705,
+  "events": 2704,
   "win": [
    {
     "name": "陰の包み足",
     "dir": "short",
     "key": "with|range",
-    "n": 31,
-    "winRate": 0.3870967741935484,
-    "avgR": 0.13034254008927051
+    "n": 30,
+    "winRate": 0.4,
+    "avgR": 0.16912360605826068
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }

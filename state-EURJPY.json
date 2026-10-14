@@ -11,6 +11,21 @@
  },
  "log": [
   {
+   "t": 1792000800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 176.48784,
+   "sl": 176.70797309584054,
+   "tp": 176.04757380831896,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1791997200000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -154,7 +169,7 @@
    ]
   }
  ],
- "lastEvalT": 1791997200000,
+ "lastEvalT": 1792000800000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -259,9 +274,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1792003463651,
- "lastBarT": 1792000800000,
- "price": 176.40246,
+ "lastRun": 1792005634524,
+ "lastBarT": 1792004400000,
+ "price": 176.48784,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -331,7 +346,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045028068
+    "avgR": 0.3611945045027755
    },
    {
     "name": "MACD売りクロス",
@@ -339,10 +354,19 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.2293328320087987
+    "avgR": 0.22933283200880059
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ]
 }

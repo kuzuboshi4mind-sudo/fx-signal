@@ -11,6 +11,54 @@
  },
  "log": [
   {
+   "t": 1792000800000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 88.42807,
+   "sl": 88.55701198528968,
+   "tp": 88.17018602942068,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792000800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 88.42807,
+   "sl": 88.55701198528968,
+   "tp": 88.17018602942068,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792000800000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 88.42807,
+   "sl": 88.55701198528968,
+   "tp": 88.17018602942068,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791997200000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -106,7 +154,7 @@
    ]
   }
  ],
- "lastEvalT": 1791997200000,
+ "lastEvalT": 1792000800000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -164,7 +212,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100792.64999999992
+  "equity": 100495.79999999992
  },
  "reportDay": "2026-10-15",
  "skipReview": {
@@ -173,9 +221,9 @@
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792003465127,
- "lastBarT": 1792000800000,
- "price": 88.3687,
+ "lastRun": 1792005635769,
+ "lastBarT": 1792004400000,
+ "price": 88.42807,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -237,7 +285,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2656,
+  "events": 2655,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -253,7 +301,7 @@
     "key": "with|range",
     "n": 52,
     "winRate": 0.38461538461538464,
-    "avgR": 0.12476281626976922
+    "avgR": 0.12476281627121887
    },
    {
     "name": "20本高値ブレイク",
@@ -266,5 +314,33 @@
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }
