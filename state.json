@@ -13,9 +13,9 @@
  "lastEvalT": 1791946800000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791952477127,
+ "lastRun": 1791953874407,
  "lastBarT": 1791950400000,
- "price": 158.2256,
+ "price": 158.1977,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -46,7 +46,24 @@
    "riskPct": 2,
    "lookMonths": 6,
    "top": 3
-  }
+  },
+  "pairs": [
+   {
+    "symbol": "USD/JPY",
+    "file": "state.json",
+    "spreadPips": 0.5
+   },
+   {
+    "symbol": "EUR/JPY",
+    "file": "state-EURJPY.json",
+    "spreadPips": 0.6
+   },
+   {
+    "symbol": "GBP/JPY",
+    "file": "state-GBPJPY.json",
+    "spreadPips": 1
+   }
+  ]
  },
  "learned": {
   "bars": 5000,
@@ -116,5 +133,10 @@
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
   "equity": 100000
+ },
+ "skipReview": {
+  "n": 0,
+  "wouldLose": 0,
+  "wouldWin": 0
  }
 }

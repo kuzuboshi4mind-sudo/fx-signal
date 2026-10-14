@@ -1,0 +1,150 @@
+{
+ "symbol": "EUR/JPY",
+ "interval": "1h",
+ "paper": {
+  "start": 100000,
+  "balance": 100000,
+  "riskPct": 2,
+  "startT": 1791953874927,
+  "pos": null,
+  "trades": []
+ },
+ "log": [],
+ "lastEvalT": 1791946800000,
+ "adaptive": {
+  "start": 100000,
+  "balance": 100000,
+  "startT": 1791953874927,
+  "positions": [],
+  "trades": [],
+  "picks": [
+   {
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "dir": "long",
+    "flip": true,
+    "tp": 2,
+    "sl": 1.5,
+    "n": 43,
+    "sumR": 9.300106344522376,
+    "winRate": 0.5348837209302325
+   },
+   {
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "dir": "long",
+    "flip": true,
+    "tp": 3,
+    "sl": 1,
+    "n": 43,
+    "sumR": 8.197243020569669,
+    "winRate": 0.37209302325581395
+   },
+   {
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "dir": "long",
+    "flip": true,
+    "tp": 2,
+    "sl": 1,
+    "n": 43,
+    "sumR": 7.297541811501898,
+    "winRate": 0.3953488372093023
+   }
+  ],
+  "pickMonth": "2026-10",
+  "pickTried": "2026-10-14",
+  "equity": 100000
+ },
+ "reportDay": "2026-10-14",
+ "skipReview": {
+  "n": 0,
+  "wouldLose": 0,
+  "wouldWin": 0
+ },
+ "version": 1,
+ "lastRun": 1791953874927,
+ "lastBarT": 1791950400000,
+ "price": 177.32155,
+ "equity": 100000,
+ "unreal": 0,
+ "config": {
+  "symbol": "EUR/JPY",
+  "interval": "1h",
+  "tpAtr": 2,
+  "slAtr": 1,
+  "maxBars": 24,
+  "spreadPips": 0.6,
+  "minWinRate": 35,
+  "minSamples": 15,
+  "blackoutMin": 30,
+  "paper": {
+   "start": 100000,
+   "riskPct": 2
+  },
+  "bias": {
+   "USD": 0,
+   "JPY": 0,
+   "EUR": 0,
+   "GBP": 0,
+   "AUD": 0
+  },
+  "events": [],
+  "adaptive": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2,
+   "lookMonths": 6,
+   "top": 3
+  },
+  "pairs": [
+   {
+    "symbol": "USD/JPY",
+    "file": "state.json",
+    "spreadPips": 0.5
+   },
+   {
+    "symbol": "EUR/JPY",
+    "file": "state-EURJPY.json",
+    "spreadPips": 0.6
+   },
+   {
+    "symbol": "GBP/JPY",
+    "file": "state-GBPJPY.json",
+    "spreadPips": 1
+   }
+  ]
+ },
+ "learned": {
+  "bars": 5000,
+  "events": 2666,
+  "win": [
+   {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|range",
+    "n": 54,
+    "winRate": 0.37037037037037035,
+    "avgR": 0.3611945045029692
+   },
+   {
+    "name": "MACD売りクロス",
+    "dir": "short",
+    "key": "against|trend",
+    "n": 35,
+    "winRate": 0.4,
+    "avgR": 0.22933283200878885
+   },
+   {
+    "name": "ボリバン下限から回帰",
+    "dir": "long",
+    "key": "with|range",
+    "n": 24,
+    "winRate": 0.375,
+    "avgR": 0.24599792093551567
+   }
+  ]
+ },
+ "review": {},
+ "lastSignals": []
+}
