@@ -28,6 +28,38 @@
  },
  "log": [
   {
+   "t": 1792004400000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 110.35385,
+   "sl": 110.19469661614028,
+   "tp": 110.67215676771941,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792004400000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 110.35385,
+   "sl": 110.19469661614028,
+   "tp": 110.67215676771941,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792000800000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -35,7 +67,7 @@
    "entry": 110.24818,
    "sl": 110.40468595184892,
    "tp": 109.93516809630216,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -50,7 +82,7 @@
    "entry": 110.24818,
    "sl": 110.40468595184892,
    "tp": 109.93516809630216,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -179,7 +211,7 @@
    ]
   }
  ],
- "lastEvalT": 1792000800000,
+ "lastEvalT": 1792004400000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -227,14 +259,14 @@
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 6,
-  "wouldLose": 3,
+  "n": 8,
+  "wouldLose": 5,
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792007621090,
- "lastBarT": 1792004400000,
- "price": 110.33493,
+ "lastRun": 1792009863327,
+ "lastBarT": 1792008000000,
+ "price": 110.35385,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -308,5 +340,24 @@
    "suspended": false
   }
  },
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }
