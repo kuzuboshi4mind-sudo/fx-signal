@@ -311,7 +311,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99928
+  "equity": 99299.79999999994
  },
  "reportDay": "2026-10-15",
  "skipReview": {
@@ -320,9 +320,9 @@
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792020521600,
+ "lastRun": 1792022102309,
  "lastBarT": 1792018800000,
- "price": 110.27163,
+ "price": 110.21928,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -396,15 +396,5 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
