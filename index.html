@@ -924,6 +924,8 @@ async function loadBot() {
     ${P.pos ? `<div class="pos"><b style="color:var(--${P.pos.dir === 'long' ? 'up' : 'down'})">${P.pos.dir === 'long' ? '買い' : '売り'}保有中</b> ${P.pos.units.toLocaleString()}通貨 @${f(P.pos.entry)}　含み損益 <b class="${cls(b.unreal)}">${signedYen(b.unreal)}</b><br><span class="muted">利確 ${f(P.pos.tp)}／損切り ${f(P.pos.sl)}・${esc(P.pos.name)}</span></div>` : '<div class="pos muted">ポジションなし。シグナルを待っています。</div>'}
     ${paused.length ? `<p class="muted" style="margin:8px 0 0">実績不振で一時停止中：${paused.map(esc).join('、')}</p>` : ''}
     ${adaptiveHtml(b, f, cls)}
+    ${b.skipReview && b.skipReview.n ? `<p class="muted" style="margin:8px 0 0">見送りの答え合わせ：見送ったシグナル ${b.skipReview.n}件のうち、入っていたら負けだったもの ${b.skipReview.wouldLose}件（${Math.round(b.skipReview.wouldLose / b.skipReview.n * 100)}%）</p>` : ''}
+    <div id="otherPairs"></div>
     ${P.trades.length ? `<details style="margin-top:8px"><summary>取引履歴</summary>${P.trades.slice(0, 30).map(x => `<div class="log"><span>${tstr(x.openT)} ${x.dir === 'long' ? '買' : '売'} ${x.units.toLocaleString()} ${f(x.entry)}→${f(x.exit)}<br><span class="muted">${esc(x.name)}・${{ tp: '利確', sl: '損切り', time: '時間切れ' }[x.reason] || ''}</span></span><b class="${cls(x.pnl)}">${signedYen(x.pnl)}</b></div>`).join('')}</details>` : ''}`;
 }
 function adaptiveHtml(b, f, cls) {
@@ -933,6 +935,23 @@ function adaptiveHtml(b, f, cls) {
     評価額 <b>${yen(A.equity)}</b> <span class="${cls(ret)}">${signedYen(ret)}（${(ret / A.start * 100).toFixed(2)}%）</span>・取引 ${A.trades.length}回（${wins}勝${A.trades.length - wins}敗）・保有 ${A.positions.length}
     <br><span class="muted">今月の戦略：${A.picks.length ? A.picks.map(x => `${x.dir === 'long' ? '買' : '売'} ${esc(x.name)}${x.flip ? '（逆向き）' : ''} 利確${x.tp}/損切り${x.sl}`).join('、') : '様子見（成績のよい戦略なし）'}</span></div>`;
 }
+// ほかの通貨ペアの口座（EUR/JPY・GBP/JPY）
+async function loadPairs() {
+  const box = document.getElementById('otherPairs'); if (!box) return;
+  const rows = [];
+  for (const file of ['state-EURJPY.json', 'state-GBPJPY.json']) {
+    try {
+      const r = await fetch(BOT_URL.replace('state.json', file) + '?t=' + Date.now(), { cache: 'no-store' });
+      if (!r.ok) continue;
+      const b = await r.json(), P = b.paper, ret = b.equity - P.start, A = b.adaptive;
+      const aret = A ? A.equity - A.start : 0;
+      rows.push(`<div class="log"><span><b>${esc(b.symbol)}</b>　通常 ${P.trades.length}回 <span class="${ret >= 0 ? 'plus' : 'minus'}">${signedYen(ret)}</span>${A ? `　適応型 ${A.trades.length}回 <span class="${aret >= 0 ? 'plus' : 'minus'}">${signedYen(aret)}</span>` : ''}</span><span class="muted">${(P.pos ? 1 : 0) + (A ? A.positions.length : 0)}件保有</span></div>`);
+    } catch {}
+  }
+  box.innerHTML = rows.length ? `<div style="margin-top:10px"><div class="muted">ほかの通貨ペア（各 元手${yen(100000)}・仮想）</div>${rows.join('')}</div>` : '';
+}
+const _loadBot = loadBot;
+loadBot = async () => { await _loadBot(); await loadPairs(); };
 loadBot(); setInterval(loadBot, 5 * 60000);
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') loadBot(); });
 

@@ -43,15 +43,23 @@ jobs:
           TWELVEDATA_KEY: ${{ secrets.TWELVEDATA_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           RESET: ${{ inputs.reset }}
-        run: node bot/run.js
+        # 通貨ペアごとに順番に実行（1つ失敗しても他は続ける）
+        run: |
+          fail=0
+          while read sym file; do
+            echo "== $sym"
+            SYMBOL="$sym" STATE_FILE="data/$file" node bot/run.js || fail=1
+          done < <(node -e "for (const p of require('./bot/config.json').pairs) console.log(p.symbol + ' ' + p.file)")
+          exit $fail
+        shell: bash
 
       - name: Save state
         if: always()
         working-directory: data
         run: |
-          [ -f state.json ] || exit 0
+          ls *.json >/dev/null 2>&1 || exit 0
           git config user.name 'fx-bot'
           git config user.email 'fx-bot@users.noreply.github.com'
-          git add state.json
+          git add *.json
           git diff --cached --quiet || git commit -q -m "bot run $(date -u +%FT%TZ)"
           git push -q origin bot-data

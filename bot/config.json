@@ -8,8 +8,40 @@
   "minWinRate": 35,
   "minSamples": 15,
   "blackoutMin": 30,
-  "paper": { "start": 100000, "riskPct": 2 },
-  "bias": { "USD": 0, "JPY": 0, "EUR": 0, "GBP": 0, "AUD": 0 },
+  "paper": {
+    "start": 100000,
+    "riskPct": 2
+  },
+  "bias": {
+    "USD": 0,
+    "JPY": 0,
+    "EUR": 0,
+    "GBP": 0,
+    "AUD": 0
+  },
   "events": [],
-  "adaptive": { "enabled": true, "start": 100000, "riskPct": 2, "lookMonths": 6, "top": 3 }
+  "adaptive": {
+    "enabled": true,
+    "start": 100000,
+    "riskPct": 2,
+    "lookMonths": 6,
+    "top": 3
+  },
+  "pairs": [
+    {
+      "symbol": "USD/JPY",
+      "file": "state.json",
+      "spreadPips": 0.5
+    },
+    {
+      "symbol": "EUR/JPY",
+      "file": "state-EURJPY.json",
+      "spreadPips": 0.6
+    },
+    {
+      "symbol": "GBP/JPY",
+      "file": "state-GBPJPY.json",
+      "spreadPips": 1.0
+    }
+  ]
 }

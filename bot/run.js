@@ -11,6 +11,10 @@ const E = require('../engine.js');
 
 const ROOT = path.join(__dirname, '..');
 const CONFIG = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8'));
+// 通貨ペアは環境変数 SYMBOL で切り替える（ペアごとに別の仮想口座・別の状態ファイル）
+if (process.env.SYMBOL) CONFIG.symbol = process.env.SYMBOL;
+const PAIR = (CONFIG.pairs || []).find(p => p.symbol === CONFIG.symbol);
+if (PAIR && PAIR.spreadPips != null) CONFIG.spreadPips = PAIR.spreadPips;
 const STATE_FILE = process.env.STATE_FILE || path.join(ROOT, 'data', 'state.json');
 const KEY = process.env.TWELVEDATA_KEY;
 const TOPIC = process.env.NTFY_TOPIC;
@@ -26,7 +30,10 @@ const jst = (t) => new Date(t).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo',
 const jstDay = (t) => new Date(t + 9 * 3600e3).toISOString().slice(0, 10);
 
 const notes = [];
-function note(title, message) { notes.push({ title, message }); console.log(`[${title}] ${message}`); }
+function note(title, message) {
+  if (CONFIG.symbol !== 'USD/JPY') title = title.replace(/^FX/, `FX ${CONFIG.symbol}`);
+  notes.push({ title, message }); console.log(`[${title}] ${message}`);
+}
 
 async function fetchBars() {
   const u = new URL('https://api.twelvedata.com/time_series');
@@ -58,7 +65,8 @@ function newPaper(now) {
 
 function liveResults(log) {
   const by = {};
-  for (const L of log) if (L.status !== 'open') (by[L.pattern] ||= []).push(L.status);
+  // 見送ったシグナル（skipped）は答え合わせ用なので、パターンの停止判定には使わない
+  for (const L of log) if (L.status !== 'open' && L.status !== 'expired' && !L.skipped) (by[L.pattern] ||= []).push(L.status);
   return by;
 }
 
@@ -115,8 +123,10 @@ async function main() {
     signals = E.applyFilters(E.evaluate(c, model, idx), {
       symbol: CONFIG.symbol, bias: CONFIG.bias || {}, events, now, blackoutMin: CONFIG.blackoutMin, minWinRate: CONFIG.minWinRate / 100, suspended,
     });
-    for (const s of signals.filter(x => !x.blocked || x.shadow)) {
-      state.log.unshift({ t: s.t, pattern: s.pattern, name: s.name, dir: s.dir, entry: s.entry, sl: s.sl, tp: s.tp, status: 'open', shadow: !!s.shadow });
+    // 入ったもの・様子見に加えて、見送ったシグナルも記録して「入っていたらどうなったか」を答え合わせする
+    for (const s of signals) {
+      const skipped = s.blocked && !s.shadow;
+      state.log.unshift({ t: s.t, pattern: s.pattern, name: s.name, dir: s.dir, entry: s.entry, sl: s.sl, tp: s.tp, status: 'open', shadow: !!s.shadow, skipped, reasons: skipped ? s.reasons : undefined });
     }
     const go = signals.filter(x => !x.blocked).sort((a, b) => b.stat.all.shrunkR - a.stat.all.shrunkR);
     if (go.length && !P.pos) {
@@ -189,7 +199,10 @@ async function main() {
   // 5) 保存
   const unreal = P.pos ? E.positionPnl(P.pos, price) : 0;
   P.trades = P.trades.slice(0, 300);
-  state.log = state.log.slice(0, 500);
+  state.log = state.log.slice(0, 1500);
+  // 見送りの答え合わせ：決着した見送りシグナルのうち、入っていたら負けだった割合
+  const sk = state.log.filter(L => L.skipped && (L.status === 'win' || L.status === 'loss'));
+  state.skipReview = { n: sk.length, wouldLose: sk.filter(L => L.status === 'loss').length, wouldWin: sk.filter(L => L.status === 'win').length };
   const by = liveResults(state.log);
   Object.assign(state, {
     version: 1, lastRun: now, lastBarT: c[c.length - 1].t, price, equity: P.balance + unreal, unreal,
