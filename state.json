@@ -3,22 +3,28 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 100000,
+  "balance": 103721.00966228414,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_revert_dn",
-   "name": "ボリバン上限から回帰",
-   "units": 12000,
-   "entry": 158.80492,
-   "sl": 158.96746206926184,
-   "tp": 158.49483586147633,
-   "barT": 1791993600000,
-   "openT": 1791994711557,
-   "deadline": 1792081111557
-  },
-  "trades": []
+  "pos": null,
+  "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_revert_dn",
+    "name": "ボリバン上限から回帰",
+    "units": 12000,
+    "entry": 158.80492,
+    "sl": 158.96746206926184,
+    "tp": 158.49483586147633,
+    "barT": 1791993600000,
+    "openT": 1791994711557,
+    "deadline": 1792081111557,
+    "exit": 158.49483586147633,
+    "closeT": 1792000800000,
+    "reason": "tp",
+    "pnl": 3721.009662284132
+   }
+  ]
  },
  "log": [
   {
@@ -29,7 +35,7 @@
    "entry": 158.80992,
    "sl": 158.96746206926184,
    "tp": 158.49483586147633,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -178,14 +184,14 @@
    ]
   }
  ],
- "lastEvalT": 1791993600000,
+ "lastEvalT": 1791997200000,
  "reportDay": "2026-10-15",
  "version": 1,
- "lastRun": 1791999237185,
- "lastBarT": 1791997200000,
- "price": 158.58365,
- "equity": 102655.24000000005,
- "unreal": 2655.240000000049,
+ "lastRun": 1792001192100,
+ "lastBarT": 1792000800000,
+ "price": 158.4631,
+ "equity": 103721.00966228414,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -245,7 +251,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2720,
+  "events": 2722,
   "win": [
    {
     "name": "陽の包み足",
@@ -259,13 +265,21 @@
     "name": "ボリバン上限から回帰",
     "dir": "short",
     "key": "against|range",
-    "n": 49,
-    "winRate": 0.3673469387755102,
-    "avgR": 0.10610425858529607
+    "n": 50,
+    "winRate": 0.38,
+    "avgR": 0.14366479786917669
    }
   ]
  },
- "review": {},
+ "review": {
+  "bb_revert_dn": {
+   "n": 1,
+   "wins": 1,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
+  }
+ },
  "lastSignals": [],
  "adaptive": {
   "start": 100000,

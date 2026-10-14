@@ -187,7 +187,7 @@
    ]
   }
  ],
- "lastEvalT": 1791993600000,
+ "lastEvalT": 1791997200000,
  "adaptive": {
   "start": 100000,
   "balance": 100847.51293623153,
@@ -275,9 +275,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791999238040,
- "lastBarT": 1791997200000,
- "price": 208.87267,
+ "lastRun": 1792001193211,
+ "lastBarT": 1792000800000,
+ "price": 208.71116,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -347,20 +347,10 @@
     "key": "with|range",
     "n": 31,
     "winRate": 0.3870967741935484,
-    "avgR": 0.13034254005275106
+    "avgR": 0.13034254008927051
    }
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
