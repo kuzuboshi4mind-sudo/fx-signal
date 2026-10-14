@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1791982800000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 176.68338,
+   "sl": 176.9008258576578,
+   "tp": 176.2484882846844,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791979200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -18,7 +34,7 @@
    "entry": 176.63662,
    "sl": 176.84581861593915,
    "tp": 176.21822276812168,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -34,7 +50,7 @@
    "entry": 176.63662,
    "sl": 176.84581861593915,
    "tp": 176.21822276812168,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -49,7 +65,7 @@
    "entry": 176.63662,
    "sl": 176.84581861593915,
    "tp": 176.21822276812168,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -106,7 +122,7 @@
    ]
   }
  ],
- "lastEvalT": 1791979200000,
+ "lastEvalT": 1791982800000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -154,14 +170,14 @@
  },
  "reportDay": "2026-10-14",
  "skipReview": {
-  "n": 3,
-  "wouldLose": 3,
+  "n": 6,
+  "wouldLose": 6,
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791984133451,
- "lastBarT": 1791982800000,
- "price": 176.63662,
+ "lastRun": 1791986857619,
+ "lastBarT": 1791986400000,
+ "price": 176.68338,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -231,7 +247,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.36119450450302737
+    "avgR": 0.3611945045028893
    },
    {
     "name": "MACD売りクロス",
@@ -239,29 +255,12 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.2293328320087853
+    "avgR": 0.22933283200879367
    }
   ]
  },
  "review": {},
  "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
   {
    "name": "20本安値ブレイク",
    "dir": "short",

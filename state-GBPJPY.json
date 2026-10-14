@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1791982800000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 209.15086,
+   "sl": 209.3635857289749,
+   "tp": 208.72540854205022,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1791982800000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 209.15086,
+   "sl": 209.3635857289749,
+   "tp": 208.72540854205022,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791979200000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -18,7 +50,7 @@
    "entry": 209.56731,
    "sl": 209.7606423235114,
    "tp": 209.18064535297714,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -107,7 +139,7 @@
    ]
   }
  ],
- "lastEvalT": 1791979200000,
+ "lastEvalT": 1791982800000,
  "adaptive": {
   "start": 100000,
   "balance": 100847.51293623153,
@@ -190,14 +222,14 @@
  },
  "reportDay": "2026-10-14",
  "skipReview": {
-  "n": 5,
-  "wouldLose": 5,
+  "n": 6,
+  "wouldLose": 6,
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791984133862,
- "lastBarT": 1791982800000,
- "price": 209.56731,
+ "lastRun": 1791986858082,
+ "lastBarT": 1791986400000,
+ "price": 209.15086,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -267,14 +299,23 @@
     "key": "with|range",
     "n": 31,
     "winRate": 0.3870967741935484,
-    "avgR": 0.13034253998533524
+    "avgR": 0.13034254001893056
    }
   ]
  },
  "review": {},
  "lastSignals": [
   {
-   "name": "MACD売りクロス",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
    "dir": "short",
    "blocked": true,
    "reasons": [

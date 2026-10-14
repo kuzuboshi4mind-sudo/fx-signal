@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1791982800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 158.85852,
+   "sl": 158.71204481908094,
+   "tp": 159.1514703618381,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791979200000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -123,12 +139,12 @@
    ]
   }
  ],
- "lastEvalT": 1791979200000,
+ "lastEvalT": 1791982800000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791984133000,
- "lastBarT": 1791982800000,
- "price": 158.91295,
+ "lastRun": 1791986857104,
+ "lastBarT": 1791986400000,
+ "price": 158.85852,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -212,24 +228,6 @@
  },
  "review": {},
  "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
   {
    "name": "20本高値ブレイク",
    "dir": "long",
