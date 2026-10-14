@@ -130,7 +130,7 @@
    "entry": 88.5187,
    "sl": 88.64544856331668,
    "tp": 88.26520287336663,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -146,7 +146,7 @@
    "entry": 88.48262,
    "sl": 88.60914383741796,
    "tp": 88.22957232516406,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -189,9 +189,10 @@
  "lastEvalT": 1792008000000,
  "adaptive": {
   "start": 100000,
-  "balance": 100000,
+  "balance": 99367.47813263978,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|short|3|1",
     "dir": "short",
@@ -203,10 +204,13 @@
     "tp": 88.14771687958387,
     "barT": 1791997200000,
     "openT": 1791999239036,
-    "deadline": 1792085639036
+    "deadline": 1792085639036,
+    "exit": 88.65373437347203,
+    "closeT": 1792011600000,
+    "reason": "sl",
+    "pnl": -632.5218673602251
    }
   ],
-  "trades": [],
   "picks": [
    {
     "pattern": "donchian_up",
@@ -244,18 +248,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99981.39999999992
+  "equity": 99367.47813263978
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 6,
-  "wouldLose": 5,
+  "n": 8,
+  "wouldLose": 7,
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792011774958,
+ "lastRun": 1792013585528,
  "lastBarT": 1792011600000,
- "price": 88.53095,
+ "price": 88.54324,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -317,7 +321,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2656,
+  "events": 2657,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
