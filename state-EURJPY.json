@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1791961200000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 177.40862,
+   "sl": 177.56048728615642,
+   "tp": 177.10488542768724,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791954000000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -27,7 +43,7 @@
    ]
   }
  ],
- "lastEvalT": 1791957600000,
+ "lastEvalT": 1791961200000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -80,9 +96,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791962814254,
- "lastBarT": 1791961200000,
- "price": 177.3358,
+ "lastRun": 1791965323857,
+ "lastBarT": 1791964800000,
+ "price": 177.40862,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -134,7 +150,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2665,
+  "events": 2664,
   "win": [
    {
     "name": "陽の包み足",
@@ -142,7 +158,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045030672
+    "avgR": 0.3611945045030396
    },
    {
     "name": "MACD売りクロス",
@@ -150,10 +166,20 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200878288
+    "avgR": 0.22933283200878454
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }

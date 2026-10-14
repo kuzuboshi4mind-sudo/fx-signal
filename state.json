@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1791961200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 158.36817,
+   "sl": 158.2407699595744,
+   "tp": 158.62297008085113,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1791961200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 158.36817,
+   "sl": 158.2407699595744,
+   "tp": 158.62297008085113,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1791950400000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -27,12 +59,12 @@
    ]
   }
  ],
- "lastEvalT": 1791957600000,
+ "lastEvalT": 1791961200000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791962813837,
- "lastBarT": 1791961200000,
- "price": 158.25457,
+ "lastRun": 1791965322710,
+ "lastBarT": 1791964800000,
+ "price": 158.36817,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -105,7 +137,26 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100000,
