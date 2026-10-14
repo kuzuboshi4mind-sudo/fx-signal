@@ -10,7 +10,7 @@
   "trades": []
  },
  "log": [],
- "lastEvalT": 1791946800000,
+ "lastEvalT": 1791950400000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -63,9 +63,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791953875407,
- "lastBarT": 1791950400000,
- "price": 209.98836,
+ "lastRun": 1791954337078,
+ "lastBarT": 1791954000000,
+ "price": 209.92989,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -125,7 +125,7 @@
     "key": "with|range",
     "n": 31,
     "winRate": 0.3870967741935484,
-    "avgR": 0.13034253998882686
+    "avgR": 0.1303425399912991
    }
   ]
  },

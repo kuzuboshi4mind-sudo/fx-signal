@@ -9,13 +9,30 @@
   "pos": null,
   "trades": []
  },
- "log": [],
- "lastEvalT": 1791946800000,
+ "log": [
+  {
+   "t": 1791950400000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 158.14934,
+   "sl": 158.26963299996711,
+   "tp": 157.90875400006576,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
+ "lastEvalT": 1791950400000,
  "reportDay": "2026-10-14",
  "version": 1,
- "lastRun": 1791953874407,
- "lastBarT": 1791950400000,
- "price": 158.1977,
+ "lastRun": 1791954336314,
+ "lastBarT": 1791954000000,
+ "price": 158.14934,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -67,7 +84,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2716,
+  "events": 2715,
   "win": [
    {
     "name": "陽の包み足",
@@ -88,7 +105,17 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100000,

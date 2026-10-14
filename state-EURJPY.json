@@ -10,7 +10,7 @@
   "trades": []
  },
  "log": [],
- "lastEvalT": 1791946800000,
+ "lastEvalT": 1791950400000,
  "adaptive": {
   "start": 100000,
   "balance": 100000,
@@ -63,9 +63,9 @@
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1791953874927,
- "lastBarT": 1791950400000,
- "price": 177.32155,
+ "lastRun": 1791954336702,
+ "lastBarT": 1791954000000,
+ "price": 177.2605,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -117,7 +117,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2666,
+  "events": 2665,
   "win": [
    {
     "name": "陽の包み足",
@@ -125,7 +125,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045029692
+    "avgR": 0.3611945045029905
    },
    {
     "name": "MACD売りクロス",
@@ -133,15 +133,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200878885
-   },
-   {
-    "name": "ボリバン下限から回帰",
-    "dir": "long",
-    "key": "with|range",
-    "n": 24,
-    "winRate": 0.375,
-    "avgR": 0.24599792093551567
+    "avgR": 0.22933283200878754
    }
   ]
  },
