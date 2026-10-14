@@ -1,0 +1,25 @@
+name: Send to LINE
+
+# 毎朝の評価・週次レビューの報告を LINE に送る（Claude のルーティンから実行）
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: '送る本文'
+        required: true
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Send
+        env:
+          LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          MESSAGE: ${{ inputs.message }}
+        run: node bot/line.js
