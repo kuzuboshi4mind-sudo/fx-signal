@@ -924,9 +924,17 @@ async function loadBot() {
     ${P.pos ? `<div class="pos"><b style="color:var(--${P.pos.dir === 'long' ? 'up' : 'down'})">${P.pos.dir === 'long' ? '買い' : '売り'}保有中</b> ${P.pos.units.toLocaleString()}通貨 @${f(P.pos.entry)}　含み損益 <b class="${cls(b.unreal)}">${signedYen(b.unreal)}</b><br><span class="muted">利確 ${f(P.pos.tp)}／損切り ${f(P.pos.sl)}・${esc(P.pos.name)}</span></div>` : '<div class="pos muted">ポジションなし。シグナルを待っています。</div>'}
     ${paused.length ? `<p class="muted" style="margin:8px 0 0">実績不振で一時停止中：${paused.map(esc).join('、')}</p>` : ''}
     ${adaptiveHtml(b, f, cls)}
+    ${latestHtml(b, cls)}
     ${b.skipReview && b.skipReview.n ? `<p class="muted" style="margin:8px 0 0">見送りの答え合わせ：見送ったシグナル ${b.skipReview.n}件のうち、入っていたら負けだったもの ${b.skipReview.wouldLose}件（${Math.round(b.skipReview.wouldLose / b.skipReview.n * 100)}%）</p>` : ''}
     <div id="otherPairs"></div>
     ${P.trades.length ? `<details style="margin-top:8px"><summary>取引履歴</summary>${P.trades.slice(0, 30).map(x => `<div class="log"><span>${tstr(x.openT)} ${x.dir === 'long' ? '買' : '売'} ${x.units.toLocaleString()} ${f(x.entry)}→${f(x.exit)}<br><span class="muted">${esc(x.name)}・${{ tp: '利確', sl: '損切り', time: '時間切れ' }[x.reason] || ''}</span></span><b class="${cls(x.pnl)}">${signedYen(x.pnl)}</b></div>`).join('')}</details>` : ''}`;
+}
+function latestHtml(b, cls) {
+  const L = b.latest; if (!L) return '';
+  const ret = L.equity - L.start;
+  return `<div class="pos" style="margin-top:10px"><b>最新型（業界の手法のうち審査に合格したものだけ）</b><br>
+    評価額 <b>${yen(L.equity)}</b> <span class="${cls(ret)}">${signedYen(ret)}</span>・取引 ${L.trades.length}回
+    <br><span class="muted">使用中の手法：${L.strategies && L.strategies.length ? L.strategies.map(esc).join('、') : 'まだ合格した手法がないため待機中'}</span></div>`;
 }
 function adaptiveHtml(b, f, cls) {
   const A = b.adaptive; if (!A) return '';

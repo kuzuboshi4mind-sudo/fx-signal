@@ -185,6 +185,45 @@ async function main() {
     A.equity = A.balance + A.positions.reduce((a, p) => a + E.positionPnl(p, price), 0);
   }
 
+  // 3c) 最新型の仮想口座：業界の手法のうち、審査（3周＋シャッフル比較）に合格したものだけで売買する
+  const LT = CONFIG.latest;
+  if (LT && LT.enabled) {
+    const S = require('../strategies.js');
+    let approved = [];
+    try { approved = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'approved.json'), 'utf8')).approved.filter(a => a.symbol === CONFIG.symbol); } catch {}
+    const L = (state.latest ||= { start: LT.start, balance: LT.start, startT: now, positions: [], trades: [] });
+    L.strategies = approved.map(a => a.strategy);
+    for (const pos of [...L.positions]) {
+      const x = E.checkExit(pos, c, now, price);
+      if (!x) continue;
+      const pnl = E.positionPnl(pos, x.price);
+      L.balance += pnl;
+      L.trades.unshift({ ...pos, exit: x.price, closeT: x.t, reason: x.reason, pnl });
+      L.positions = L.positions.filter(p => p !== pos);
+      note(`FX 最新型 決済 ${REASON[x.reason]} ${signedYen(pnl)}`, `${pos.dir === 'long' ? '買い' : '売り'} ${fmt(pos.entry)} → ${fmt(x.price)}（${pos.name}）\n残高 ${yen(L.balance)}`);
+    }
+    if (signalsChecked && approved.length) {
+      const d = E.computeIndicators(c), xx = S.extras(c, d);
+      for (const a of approved) {
+        const st = S.STRATEGIES.find(s => s.id === a.strategy);
+        if (!st || L.positions.some(p => p.key === st.id)) continue;
+        const dir = st.signal(c, d, xx, idx);
+        if (!dir || isNaN(d.atr[idx])) continue;
+        const s = dir === 'long' ? 1 : -1, ex = st.exit;
+        const entry = price + s * CONFIG.spreadPips * E.pipSize(CONFIG.symbol);
+        const sl = entry - s * d.atr[idx] * ex.sl;
+        const tp = ex.type === 'atr' ? entry + s * d.atr[idx] * ex.tp : entry + s * d.atr[idx] * 100; // 時間決済の手法は利確なし
+        const bars = ex.type === 'atr' ? ex.maxBars : ex.bars;
+        const units = E.positionUnits({ balance: L.balance, riskPct: LT.riskPct / approved.length, entry, sl, leverage: LEVERAGE });
+        if (!units) continue;
+        L.positions.push({ key: st.id, dir, pattern: st.id, name: st.name, units, entry, sl, tp, barT: c[c.length - 1].t, openT: now, deadline: now + bars * IV_MS });
+        note(`FX 最新型 ${dir === 'long' ? '買い' : '売り'}エントリー`, `${CONFIG.symbol} ${units.toLocaleString()}通貨 @${fmt(entry)}\n損切り ${fmt(sl)}\n${st.name}`);
+      }
+    }
+    L.trades = L.trades.slice(0, 300);
+    L.equity = L.balance + L.positions.reduce((a, p) => a + E.positionPnl(p, price), 0);
+  }
+
   // 4) 日次レポート（日本時間で日付が変わって最初の実行）
   const day = jstDay(now);
   if (state.reportDay && state.reportDay !== day) {

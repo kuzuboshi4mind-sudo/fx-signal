@@ -53,5 +53,10 @@
       "file": "state-NZDJPY.json",
       "spreadPips": 1.0
     }
-  ]
+  ],
+  "latest": {
+    "enabled": true,
+    "start": 100000,
+    "riskPct": 2
+  }
 }
