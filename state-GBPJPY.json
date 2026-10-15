@@ -18,7 +18,7 @@
    "entry": 209.05429,
    "sl": 209.32749755439718,
    "tp": 208.50787489120566,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -82,7 +82,7 @@
    "entry": 208.82085,
    "sl": 208.5624468295128,
    "tp": 209.33765634097443,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -98,7 +98,7 @@
    "entry": 208.82085,
    "sl": 208.5624468295128,
    "tp": 209.33765634097443,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -114,7 +114,7 @@
    "entry": 208.82085,
    "sl": 208.5624468295128,
    "tp": 209.33765634097443,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -315,12 +315,13 @@
    ]
   }
  ],
- "lastEvalT": 1792040400000,
+ "lastEvalT": 1792044000000,
  "adaptive": {
   "start": 100000,
-  "balance": 100330.70659525711,
+  "balance": 99785.497529016,
   "startT": 1791953875407,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -332,10 +333,12 @@
     "tp": 208.63942320031921,
     "barT": 1792033200000,
     "openT": 1792033739249,
-    "deadline": 1792120139249
-   }
-  ],
-  "trades": [
+    "deadline": 1792120139249,
+    "exit": 209.32093453312058,
+    "closeT": 1792047600000,
+    "reason": "sl",
+    "pnl": -545.2090662411138
+   },
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -425,18 +428,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100161.48659525717
+  "equity": 99785.497529016
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 13,
-  "wouldLose": 11,
-  "wouldWin": 2
+  "n": 17,
+  "wouldLose": 12,
+  "wouldWin": 5
  },
  "version": 1,
- "lastRun": 1792046515332,
- "lastBarT": 1792044000000,
- "price": 209.13294,
+ "lastRun": 1792049184660,
+ "lastBarT": 1792047600000,
+ "price": 209.30126,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -503,7 +506,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2697,
+  "events": 2701,
   "win": [
    {
     "name": "陰の包み足",
@@ -511,7 +514,7 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.169123606058238
+    "avgR": 0.16912360605818055
    }
   ]
  },
