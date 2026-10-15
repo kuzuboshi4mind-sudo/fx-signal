@@ -423,11 +423,11 @@
   "wouldWin": 4
  },
  "version": 1,
- "lastRun": 1792106826231,
+ "lastRun": 1792108478550,
  "lastBarT": 1792105200000,
- "price": 88.86808,
- "equity": 99869.99999999993,
- "unreal": -130.0000000000665,
+ "price": 88.90012,
+ "equity": 100286.51999999987,
+ "unreal": 286.519999999868,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -521,14 +521,7 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
