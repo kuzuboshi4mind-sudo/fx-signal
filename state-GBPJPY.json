@@ -50,7 +50,7 @@
    "entry": 209.25006,
    "sl": 209.52363251484647,
    "tp": 208.70291497030706,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -82,7 +82,7 @@
    "entry": 208.94652,
    "sl": 208.67457650495948,
    "tp": 209.490406990081,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -98,7 +98,7 @@
    "entry": 209.05833,
    "sl": 208.78572546687946,
    "tp": 209.6035390662411,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -480,14 +480,14 @@
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 18,
-  "wouldLose": 13,
-  "wouldWin": 5
+  "n": 21,
+  "wouldLose": 14,
+  "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792073606994,
+ "lastRun": 1792075970045,
  "lastBarT": 1792072800000,
- "price": 209.42472,
+ "price": 209.4925,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -554,7 +554,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2695,
+  "events": 2698,
   "win": [
    {
     "name": "陰の包み足",
@@ -567,17 +567,7 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
