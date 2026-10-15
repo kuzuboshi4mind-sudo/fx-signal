@@ -273,9 +273,9 @@
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792030629568,
+ "lastRun": 1792032776967,
  "lastBarT": 1792029600000,
- "price": 88.67444,
+ "price": 88.74963,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -337,7 +337,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2657,
+  "events": 2658,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
