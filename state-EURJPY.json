@@ -536,11 +536,11 @@
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792091627836,
+ "lastRun": 1792093661021,
  "lastBarT": 1792090800000,
- "price": 177.29041,
- "equity": 100552.08999999997,
- "unreal": 552.0899999999642,
+ "price": 177.30715,
+ "equity": 100669.26999999996,
+ "unreal": 669.2699999999547,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -634,17 +634,7 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
