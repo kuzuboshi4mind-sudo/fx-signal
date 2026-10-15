@@ -18,7 +18,7 @@
    "entry": 88.57168,
    "sl": 88.71110350455244,
    "tp": 88.29283299089514,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -66,7 +66,7 @@
    "entry": 88.62072,
    "sl": 88.77344239261826,
    "tp": 88.3152752147635,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -281,7 +281,7 @@
    ]
   }
  ],
- "lastEvalT": 1792065600000,
+ "lastEvalT": 1792069200000,
  "adaptive": {
   "start": 100000,
   "balance": 99367.47813263978,
@@ -347,14 +347,14 @@
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 14,
+  "n": 16,
   "wouldLose": 12,
-  "wouldWin": 2
+  "wouldWin": 4
  },
  "version": 1,
- "lastRun": 1792070812201,
- "lastBarT": 1792069200000,
- "price": 88.3649,
+ "lastRun": 1792073608053,
+ "lastBarT": 1792072800000,
+ "price": 88.53458,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -429,15 +429,15 @@
     "key": "*",
     "n": 44,
     "winRate": 0.36363636363636365,
-    "avgR": 0.17278075870440524
+    "avgR": 0.1727807587044052
    },
    {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "with|range",
-    "n": 51,
-    "winRate": 0.39215686274509803,
-    "avgR": 0.14782743752834585
+    "n": 50,
+    "winRate": 0.38,
+    "avgR": 0.11131136712375816
    },
    {
     "name": "20本高値ブレイク",

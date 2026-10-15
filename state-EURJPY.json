@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792069200000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 177.05089,
+   "sl": 177.291459473201,
+   "tp": 176.56975105359805,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792065600000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -18,7 +34,7 @@
    "entry": 176.8228,
    "sl": 177.05852097113953,
    "tp": 176.35135805772097,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -328,7 +344,7 @@
    ]
   }
  ],
- "lastEvalT": 1792065600000,
+ "lastEvalT": 1792069200000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -428,14 +444,14 @@
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 18,
-  "wouldLose": 15,
+  "n": 19,
+  "wouldLose": 16,
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792070811175,
- "lastBarT": 1792069200000,
- "price": 176.8228,
+ "lastRun": 1792073606495,
+ "lastBarT": 1792072800000,
+ "price": 177.05089,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -510,7 +526,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045059556
+    "avgR": 0.36119450450658164
    },
    {
     "name": "MACD売りクロス",
@@ -518,7 +534,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.2293328320086074
+    "avgR": 0.2293328320085694
    },
    {
     "name": "ボリバン下限から回帰",
@@ -526,7 +542,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.1701719069060035
+    "avgR": 0.17017190690600312
    }
   ]
  },
