@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792026000000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 177.00998,
+   "sl": 177.22342220539878,
+   "tp": 176.58309558920246,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792022400000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -18,7 +34,7 @@
    "entry": 176.79739,
    "sl": 177.00918775966022,
    "tp": 176.37379448067958,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -248,7 +264,7 @@
    ]
   }
  ],
- "lastEvalT": 1792022400000,
+ "lastEvalT": 1792026000000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -348,14 +364,14 @@
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 11,
-  "wouldLose": 11,
+  "n": 12,
+  "wouldLose": 12,
   "wouldWin": 0
  },
  "version": 1,
- "lastRun": 1792029113173,
- "lastBarT": 1792026000000,
- "price": 176.65711,
+ "lastRun": 1792030627909,
+ "lastBarT": 1792029600000,
+ "price": 177.00998,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -417,7 +433,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2668,
+  "events": 2670,
   "win": [
    {
     "name": "陽の包み足",
@@ -425,7 +441,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045029546
+    "avgR": 0.3611945045028823
    },
    {
     "name": "MACD売りクロス",
@@ -433,7 +449,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200878973
+    "avgR": 0.2293328320087941
    },
    {
     "name": "ボリバン下限から回帰",
@@ -441,10 +457,20 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.1701719069060054
+    "avgR": 0.17017190690600542
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }
