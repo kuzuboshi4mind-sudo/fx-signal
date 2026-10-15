@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1792090800000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 209.88802,
+   "sl": 210.1621882998044,
+   "tp": 209.3396834003912,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792090800000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 209.88802,
+   "sl": 209.61385170019562,
+   "tp": 210.4363565996088,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792083600000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -459,7 +491,7 @@
    ]
   }
  ],
- "lastEvalT": 1792087200000,
+ "lastEvalT": 1792090800000,
  "adaptive": {
   "start": 100000,
   "balance": 98522.3483967242,
@@ -615,9 +647,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792093661329,
- "lastBarT": 1792090800000,
- "price": 209.90942,
+ "lastRun": 1792095091385,
+ "lastBarT": 1792094400000,
+ "price": 209.88802,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -692,12 +724,31 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.169123606058113
+    "avgR": 0.1691236060581202
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
