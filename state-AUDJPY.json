@@ -35,7 +35,7 @@
    "entry": 110.27163,
    "sl": 110.42806419983229,
    "tp": 109.95876160033544,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -51,7 +51,7 @@
    "entry": 110.35385,
    "sl": 110.19469661614028,
    "tp": 110.67215676771941,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -67,7 +67,7 @@
    "entry": 110.35385,
    "sl": 110.19469661614028,
    "tp": 110.67215676771941,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -227,24 +227,29 @@
    ]
   }
  ],
- "lastEvalT": 1792015200000,
+ "lastEvalT": 1792018800000,
  "adaptive": {
   "start": 100000,
-  "balance": 100000,
+  "balance": 98122.78960201253,
   "startT": 1791967922952,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
-    "key": "ema_cross_dn|long|2|1",
+    "key": "ema_cross_dn|long|1.5|1",
     "dir": "long",
     "pattern": "ema_cross_dn",
     "name": "デッドクロス(EMA20/50)（逆向き）",
     "units": 4000,
     "entry": 110.27763,
     "sl": 110.12119580016771,
-    "tp": 110.59049839966457,
+    "tp": 110.51228129974842,
     "barT": 1792018800000,
     "openT": 1792020521600,
-    "deadline": 1792106921600
+    "deadline": 1792106921600,
+    "exit": 110.12119580016771,
+    "closeT": 1792022400000,
+    "reason": "sl",
+    "pnl": -625.7367993291609
    },
    {
     "key": "ema_cross_dn|long|3|1",
@@ -257,23 +262,30 @@
     "tp": 110.74693259949686,
     "barT": 1792018800000,
     "openT": 1792020521600,
-    "deadline": 1792106921600
+    "deadline": 1792106921600,
+    "exit": 110.12119580016771,
+    "closeT": 1792022400000,
+    "reason": "sl",
+    "pnl": -625.7367993291609
    },
    {
-    "key": "ema_cross_dn|long|1.5|1",
+    "key": "ema_cross_dn|long|2|1",
     "dir": "long",
     "pattern": "ema_cross_dn",
     "name": "デッドクロス(EMA20/50)（逆向き）",
     "units": 4000,
     "entry": 110.27763,
     "sl": 110.12119580016771,
-    "tp": 110.51228129974842,
+    "tp": 110.59049839966457,
     "barT": 1792018800000,
     "openT": 1792020521600,
-    "deadline": 1792106921600
+    "deadline": 1792106921600,
+    "exit": 110.12119580016771,
+    "closeT": 1792022400000,
+    "reason": "sl",
+    "pnl": -625.7367993291609
    }
   ],
-  "trades": [],
   "picks": [
    {
     "pattern": "ema_cross_dn",
@@ -311,18 +323,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99299.79999999994
+  "equity": 98122.78960201253
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 8,
-  "wouldLose": 5,
-  "wouldWin": 3
+  "n": 11,
+  "wouldLose": 7,
+  "wouldWin": 4
  },
  "version": 1,
- "lastRun": 1792022102309,
- "lastBarT": 1792018800000,
- "price": 110.21928,
+ "lastRun": 1792024820660,
+ "lastBarT": 1792022400000,
+ "price": 109.81874,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {

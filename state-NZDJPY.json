@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792018800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 88.58771,
+   "sl": 88.45253651928111,
+   "tp": 88.85805696143778,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792004400000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -186,7 +202,7 @@
    ]
   }
  ],
- "lastEvalT": 1792015200000,
+ "lastEvalT": 1792018800000,
  "adaptive": {
   "start": 100000,
   "balance": 99367.47813263978,
@@ -257,9 +273,9 @@
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792022102826,
- "lastBarT": 1792018800000,
- "price": 88.59821,
+ "lastRun": 1792024821275,
+ "lastBarT": 1792022400000,
+ "price": 88.58771,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -321,7 +337,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2657,
+  "events": 2656,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -337,7 +353,7 @@
     "key": "with|range",
     "n": 52,
     "winRate": 0.38461538461538464,
-    "avgR": 0.12476281624470564
+    "avgR": 0.1247628162250657
    },
    {
     "name": "20本高値ブレイク",
@@ -350,5 +366,15 @@
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ]
 }
