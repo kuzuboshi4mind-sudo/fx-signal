@@ -22,6 +22,54 @@
  },
  "log": [
   {
+   "t": 1792083600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 177.3088,
+   "sl": 177.06137771699048,
+   "tp": 177.80364456601902,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792083600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 177.3088,
+   "sl": 177.06137771699048,
+   "tp": 177.80364456601902,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792083600000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 177.3088,
+   "sl": 177.06137771699048,
+   "tp": 177.80364456601902,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792072800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -367,7 +415,7 @@
    ]
   }
  ],
- "lastEvalT": 1792080000000,
+ "lastEvalT": 1792083600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -472,11 +520,11 @@
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792087288282,
- "lastBarT": 1792083600000,
- "price": 177.36497,
- "equity": 101074.00999999991,
- "unreal": 1074.0099999999018,
+ "lastRun": 1792089415894,
+ "lastBarT": 1792087200000,
+ "price": 177.3088,
+ "equity": 100680.81999999985,
+ "unreal": 680.8199999998408,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -549,7 +597,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.36119450450612345
+    "avgR": 0.3611945045059406
    },
    {
     "name": "MACD売りクロス",
@@ -557,7 +605,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200859722
+    "avgR": 0.22933283200860832
    },
    {
     "name": "ボリバン下限から回帰",
@@ -565,12 +613,40 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690600345
+    "avgR": 0.1701719069060035
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792083600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 209.85476,
+   "sl": 209.55500268188365,
+   "tp": 210.4542746362327,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792080000000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -443,7 +459,7 @@
    ]
   }
  ],
- "lastEvalT": 1792080000000,
+ "lastEvalT": 1792083600000,
  "adaptive": {
   "start": 100000,
   "balance": 98522.3483967242,
@@ -599,9 +615,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792087288847,
- "lastBarT": 1792083600000,
- "price": 209.90805,
+ "lastRun": 1792089416209,
+ "lastBarT": 1792087200000,
+ "price": 209.85476,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -676,12 +692,22 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360605808535
+    "avgR": 0.16912360605809848
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
