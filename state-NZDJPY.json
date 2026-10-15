@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792058400000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 88.57168,
+   "sl": 88.71110350455244,
+   "tp": 88.29283299089514,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792047600000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -265,7 +281,7 @@
    ]
   }
  ],
- "lastEvalT": 1792054800000,
+ "lastEvalT": 1792058400000,
  "adaptive": {
   "start": 100000,
   "balance": 99367.47813263978,
@@ -336,9 +352,9 @@
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792061641994,
- "lastBarT": 1792058400000,
- "price": 88.48798,
+ "lastRun": 1792063979460,
+ "lastBarT": 1792062000000,
+ "price": 88.57168,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -405,7 +421,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2651,
+  "events": 2650,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -421,7 +437,7 @@
     "key": "with|range",
     "n": 51,
     "winRate": 0.39215686274509803,
-    "avgR": 0.1478274375231473
+    "avgR": 0.14782743752486943
    },
    {
     "name": "20本高値ブレイク",
@@ -434,7 +450,17 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
