@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792029600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 177.13865,
+   "sl": 176.90460152355828,
+   "tp": 177.60674695288344,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792026000000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -18,7 +34,7 @@
    "entry": 177.00998,
    "sl": 177.22342220539878,
    "tp": 176.58309558920246,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -50,7 +66,7 @@
    "entry": 176.79739,
    "sl": 176.5855922403398,
    "tp": 177.22098551932044,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -264,7 +280,7 @@
    ]
   }
  ],
- "lastEvalT": 1792026000000,
+ "lastEvalT": 1792029600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -364,14 +380,14 @@
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 14,
-  "wouldLose": 12,
-  "wouldWin": 2
+  "n": 16,
+  "wouldLose": 13,
+  "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792032775782,
- "lastBarT": 1792029600000,
- "price": 177.10972,
+ "lastRun": 1792033738402,
+ "lastBarT": 1792033200000,
+ "price": 177.13865,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -429,11 +445,16 @@
     "file": "state-NZDJPY.json",
     "spreadPips": 1
    }
-  ]
+  ],
+  "latest": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2
+  }
  },
  "learned": {
   "bars": 5000,
-  "events": 2672,
+  "events": 2673,
   "win": [
    {
     "name": "陽の包み足",
@@ -441,7 +462,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045028823
+    "avgR": 0.3611945045031427
    },
    {
     "name": "MACD売りクロス",
@@ -449,7 +470,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.2293328320087941
+    "avgR": 0.2293328320087783
    },
    {
     "name": "ボリバン下限から回帰",
@@ -457,10 +478,29 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690600542
+    "avgR": 0.17017190690600528
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
+ "latest": {
+  "start": 100000,
+  "balance": 100000,
+  "startT": 1792033738402,
+  "positions": [],
+  "trades": [],
+  "strategies": [],
+  "equity": 100000
+ }
 }

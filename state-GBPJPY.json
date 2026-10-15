@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792029600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 209.05833,
+   "sl": 208.78572546687946,
+   "tp": 209.6035390662411,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792018800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -267,12 +283,27 @@
    ]
   }
  ],
- "lastEvalT": 1792026000000,
+ "lastEvalT": 1792029600000,
  "adaptive": {
   "start": 100000,
-  "balance": 100847.51293623153,
+  "balance": 100330.70659525711,
   "startT": 1791953875407,
   "positions": [
+   {
+    "key": "engulf_up|short|1.5|1",
+    "dir": "short",
+    "pattern": "engulf_up",
+    "name": "陽の包み足（逆向き）",
+    "units": 2000,
+    "entry": 209.04833000000002,
+    "sl": 209.32093453312058,
+    "tp": 208.63942320031921,
+    "barT": 1792033200000,
+    "openT": 1792033739249,
+    "deadline": 1792120139249
+   }
+  ],
+  "trades": [
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -284,10 +315,12 @@
     "tp": 208.4232452442692,
     "barT": 1792008000000,
     "openT": 1792009862587,
-    "deadline": 1792096262587
-   }
-  ],
-  "trades": [
+    "deadline": 1792096262587,
+    "exit": 209.06925317048723,
+    "closeT": 1792029600000,
+    "reason": "sl",
+    "pnl": -516.8063409744263
+   },
    {
     "key": "bb_break_up|short|3|1",
     "dir": "short",
@@ -360,7 +393,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100489.75293623155
+  "equity": 100310.70659525713
  },
  "reportDay": "2026-10-15",
  "skipReview": {
@@ -369,9 +402,9 @@
   "wouldWin": 2
  },
  "version": 1,
- "lastRun": 1792032776201,
- "lastBarT": 1792029600000,
- "price": 208.98973,
+ "lastRun": 1792033739249,
+ "lastBarT": 1792033200000,
+ "price": 209.05833,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -429,11 +462,16 @@
     "file": "state-NZDJPY.json",
     "spreadPips": 1
    }
-  ]
+  ],
+  "latest": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2
+  }
  },
  "learned": {
   "bars": 5000,
-  "events": 2701,
+  "events": 2703,
   "win": [
    {
     "name": "陰の包み足",
@@ -441,10 +479,29 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.1691236060582529
+    "avgR": 0.16912360605825222
    }
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
+ "latest": {
+  "start": 100000,
+  "balance": 100000,
+  "startT": 1792033739249,
+  "positions": [],
+  "trades": [],
+  "strategies": [],
+  "equity": 100000
+ }
 }

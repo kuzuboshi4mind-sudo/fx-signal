@@ -11,6 +11,21 @@
  },
  "log": [
   {
+   "t": 1792029600000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 88.78373,
+   "sl": 88.62474687057603,
+   "tp": 89.10169625884797,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1792018800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -202,7 +217,7 @@
    ]
   }
  ],
- "lastEvalT": 1792026000000,
+ "lastEvalT": 1792029600000,
  "adaptive": {
   "start": 100000,
   "balance": 99367.47813263978,
@@ -273,9 +288,9 @@
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792032776967,
- "lastBarT": 1792029600000,
- "price": 88.74963,
+ "lastRun": 1792033740820,
+ "lastBarT": 1792033200000,
+ "price": 88.78373,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -333,7 +348,12 @@
     "file": "state-NZDJPY.json",
     "spreadPips": 1
    }
-  ]
+  ],
+  "latest": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2
+  }
  },
  "learned": {
   "bars": 5000,
@@ -345,7 +365,7 @@
     "key": "*",
     "n": 44,
     "winRate": 0.36363636363636365,
-    "avgR": 0.1727807587044054
+    "avgR": 0.17278075870440535
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -353,7 +373,7 @@
     "key": "with|range",
     "n": 51,
     "winRate": 0.39215686274509803,
-    "avgR": 0.14782743755612557
+    "avgR": 0.14782743755154365
    },
    {
     "name": "20本高値ブレイク",
@@ -366,5 +386,23 @@
   ]
  },
  "review": {},
- "lastSignals": []
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
+ "latest": {
+  "start": 100000,
+  "balance": 100000,
+  "startT": 1792033740820,
+  "positions": [],
+  "trades": [],
+  "strategies": [],
+  "equity": 100000
+ }
 }

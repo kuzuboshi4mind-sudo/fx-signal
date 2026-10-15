@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792029600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 157.75767,
+   "sl": 157.55409687126212,
+   "tp": 158.16481625747574,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792026000000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -264,12 +280,12 @@
    ]
   }
  ],
- "lastEvalT": 1792026000000,
+ "lastEvalT": 1792029600000,
  "reportDay": "2026-10-15",
  "version": 1,
- "lastRun": 1792032775341,
- "lastBarT": 1792029600000,
- "price": 157.76328,
+ "lastRun": 1792033735611,
+ "lastBarT": 1792033200000,
+ "price": 157.75767,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -327,7 +343,12 @@
     "file": "state-NZDJPY.json",
     "spreadPips": 1
    }
-  ]
+  ],
+  "latest": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2
+  }
  },
  "learned": {
   "bars": 5000,
@@ -360,7 +381,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 99425.59093501583,
@@ -428,5 +459,14 @@
   "n": 10,
   "wouldLose": 6,
   "wouldWin": 4
+ },
+ "latest": {
+  "start": 100000,
+  "balance": 100000,
+  "startT": 1792033735611,
+  "positions": [],
+  "trades": [],
+  "strategies": [],
+  "equity": 100000
  }
 }
