@@ -6,10 +6,33 @@
   "balance": 100000,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "units": 13000,
+   "entry": 88.87808000000001,
+   "sl": 88.73411268396042,
+   "tp": 89.13601463207918,
+   "barT": 1792105200000,
+   "openT": 1792106826231,
+   "deadline": 1792193226231
+  },
   "trades": []
  },
  "log": [
+  {
+   "t": 1792101600000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 88.86808,
+   "sl": 88.73411268396042,
+   "tp": 89.13601463207918,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792083600000,
    "pattern": "engulf_up",
@@ -329,7 +352,7 @@
    ]
   }
  ],
- "lastEvalT": 1792098000000,
+ "lastEvalT": 1792101600000,
  "adaptive": {
   "start": 100000,
   "balance": 99367.47813263978,
@@ -400,11 +423,11 @@
   "wouldWin": 4
  },
  "version": 1,
- "lastRun": 1792105022842,
- "lastBarT": 1792101600000,
- "price": 88.87579,
- "equity": 100000,
- "unreal": 0,
+ "lastRun": 1792106826231,
+ "lastBarT": 1792105200000,
+ "price": 88.86808,
+ "equity": 99869.99999999993,
+ "unreal": -130.0000000000665,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -469,7 +492,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2644,
+  "events": 2643,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -477,7 +500,7 @@
     "key": "*",
     "n": 44,
     "winRate": 0.36363636363636365,
-    "avgR": 0.17278075870440526
+    "avgR": 0.17278075870440535
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -485,7 +508,7 @@
     "key": "with|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.11131136712462641
+    "avgR": 0.11131136712528057
    },
    {
     "name": "20本高値ブレイク",
@@ -498,7 +521,14 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
