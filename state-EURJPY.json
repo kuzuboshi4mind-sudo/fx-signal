@@ -6,10 +6,33 @@
   "balance": 100000,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 7000,
+   "entry": 177.21154,
+   "sl": 176.9453097748848,
+   "tp": 177.7260004502304,
+   "barT": 1792076400000,
+   "openT": 1792078622685,
+   "deadline": 1792165022685
+  },
   "trades": []
  },
  "log": [
+  {
+   "t": 1792072800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 177.20554,
+   "sl": 176.9453097748848,
+   "tp": 177.7260004502304,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792069200000,
    "pattern": "pullback_dn",
@@ -344,7 +367,7 @@
    ]
   }
  ],
- "lastEvalT": 1792069200000,
+ "lastEvalT": 1792072800000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -442,18 +465,18 @@
   "pickTried": "2026-10-14",
   "equity": 98089.25747528837
  },
- "reportDay": "2026-10-15",
+ "reportDay": "2026-10-16",
  "skipReview": {
   "n": 20,
   "wouldLose": 17,
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792075969661,
- "lastBarT": 1792072800000,
- "price": 177.11707,
- "equity": 100000,
- "unreal": 0,
+ "lastRun": 1792078622685,
+ "lastBarT": 1792076400000,
+ "price": 177.20554,
+ "equity": 99958,
+ "unreal": -42.00000000000159,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -518,7 +541,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2671,
+  "events": 2670,
   "win": [
    {
     "name": "陽の包み足",
@@ -526,7 +549,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.36119450450658164
+    "avgR": 0.3611945045062977
    },
    {
     "name": "MACD売りクロス",
@@ -534,7 +557,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.2293328320085694
+    "avgR": 0.22933283200858665
    },
    {
     "name": "ボリバン下限から回帰",
@@ -542,12 +565,19 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690600312
+    "avgR": 0.1701719069060033
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

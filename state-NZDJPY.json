@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1792072800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 88.67856,
+   "sl": 88.51235934028733,
+   "tp": 89.01096131942535,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792072800000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 88.67856,
+   "sl": 88.51235934028733,
+   "tp": 89.01096131942535,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792058400000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -281,7 +313,7 @@
    ]
   }
  ],
- "lastEvalT": 1792069200000,
+ "lastEvalT": 1792072800000,
  "adaptive": {
   "start": 100000,
   "balance": 99367.47813263978,
@@ -345,16 +377,16 @@
   "pickTried": "2026-10-14",
   "equity": 99367.47813263978
  },
- "reportDay": "2026-10-15",
+ "reportDay": "2026-10-16",
  "skipReview": {
   "n": 17,
   "wouldLose": 13,
   "wouldWin": 4
  },
  "version": 1,
- "lastRun": 1792075970837,
- "lastBarT": 1792072800000,
- "price": 88.72131,
+ "lastRun": 1792078624328,
+ "lastBarT": 1792076400000,
+ "price": 88.67856,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -421,7 +453,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2650,
+  "events": 2649,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -429,7 +461,7 @@
     "key": "*",
     "n": 44,
     "winRate": 0.36363636363636365,
-    "avgR": 0.1727807587044052
+    "avgR": 0.17278075870440524
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -437,7 +469,7 @@
     "key": "with|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.11131136712375816
+    "avgR": 0.11131136712392489
    },
    {
     "name": "20本高値ブレイク",
@@ -450,7 +482,26 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
