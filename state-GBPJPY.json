@@ -491,7 +491,7 @@
    ]
   }
  ],
- "lastEvalT": 1792094400000,
+ "lastEvalT": 1792098000000,
  "adaptive": {
   "start": 100000,
   "balance": 98522.3483967242,
@@ -647,9 +647,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792101678418,
- "lastBarT": 1792098000000,
- "price": 209.70291,
+ "lastRun": 1792103450196,
+ "lastBarT": 1792101600000,
+ "price": 209.80249,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -716,7 +716,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2698,
+  "events": 2697,
   "win": [
    {
     "name": "陰の包み足",
@@ -724,7 +724,7 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.1691236060581349
+    "avgR": 0.16912360605815244
    }
   ]
  },
