@@ -232,12 +232,12 @@
    ]
   }
  ],
- "lastEvalT": 1792018800000,
+ "lastEvalT": 1792022400000,
  "reportDay": "2026-10-15",
  "version": 1,
- "lastRun": 1792024818818,
- "lastBarT": 1792022400000,
- "price": 157.84678,
+ "lastRun": 1792027201901,
+ "lastBarT": 1792026000000,
+ "price": 157.65979,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -328,31 +328,13 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 100000,
+  "balance": 99425.59093501583,
   "startT": 1791916832223,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -364,10 +346,13 @@
     "tp": 158.42618906498416,
     "barT": 1792022400000,
     "openT": 1792024818818,
-    "deadline": 1792111218818
+    "deadline": 1792111218818,
+    "exit": 157.66031031167194,
+    "closeT": 1792026000000,
+    "reason": "sl",
+    "pnl": -574.4090649841667
    }
   ],
-  "trades": [],
   "picks": [
    {
     "pattern": "pullback_dn",
@@ -405,7 +390,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99985.00000000001
+  "equity": 99425.59093501583
  },
  "skipReview": {
   "n": 10,

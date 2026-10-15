@@ -18,7 +18,7 @@
    "entry": 88.58771,
    "sl": 88.45253651928111,
    "tp": 88.85805696143778,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -202,7 +202,7 @@
    ]
   }
  ],
- "lastEvalT": 1792018800000,
+ "lastEvalT": 1792022400000,
  "adaptive": {
   "start": 100000,
   "balance": 99367.47813263978,
@@ -268,14 +268,14 @@
  },
  "reportDay": "2026-10-15",
  "skipReview": {
-  "n": 8,
-  "wouldLose": 7,
+  "n": 9,
+  "wouldLose": 8,
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792024821275,
- "lastBarT": 1792022400000,
- "price": 88.58771,
+ "lastRun": 1792027207191,
+ "lastBarT": 1792026000000,
+ "price": 88.47749,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -337,7 +337,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2656,
+  "events": 2657,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -353,7 +353,7 @@
     "key": "with|range",
     "n": 52,
     "winRate": 0.38461538461538464,
-    "avgR": 0.1247628162250657
+    "avgR": 0.1247628162167412
    },
    {
     "name": "20本高値ブレイク",
@@ -366,15 +366,5 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ]
+ "lastSignals": []
 }
