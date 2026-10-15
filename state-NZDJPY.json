@@ -281,7 +281,7 @@
    ]
   }
  ],
- "lastEvalT": 1792058400000,
+ "lastEvalT": 1792062000000,
  "adaptive": {
   "start": 100000,
   "balance": 99367.47813263978,
@@ -352,9 +352,9 @@
   "wouldWin": 1
  },
  "version": 1,
- "lastRun": 1792063979460,
- "lastBarT": 1792062000000,
- "price": 88.57168,
+ "lastRun": 1792065864312,
+ "lastBarT": 1792065600000,
+ "price": 88.47399,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -421,7 +421,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2650,
+  "events": 2648,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -437,7 +437,7 @@
     "key": "with|range",
     "n": 51,
     "winRate": 0.39215686274509803,
-    "avgR": 0.14782743752486943
+    "avgR": 0.1478274375255823
    },
    {
     "name": "20本高値ブレイク",
@@ -450,17 +450,7 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
