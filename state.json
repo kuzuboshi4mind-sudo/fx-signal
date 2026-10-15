@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792036800000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 157.99888,
+   "sl": 157.7900540369556,
+   "tp": 158.4165319260888,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792029600000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -280,12 +296,12 @@
    ]
   }
  ],
- "lastEvalT": 1792033200000,
+ "lastEvalT": 1792036800000,
  "reportDay": "2026-10-15",
  "version": 1,
- "lastRun": 1792038887838,
- "lastBarT": 1792036800000,
- "price": 157.84241,
+ "lastRun": 1792040648330,
+ "lastBarT": 1792040400000,
+ "price": 157.99888,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -352,7 +368,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2720,
+  "events": 2721,
   "win": [
    {
     "name": "陽の包み足",
@@ -381,7 +397,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 99425.59093501583,
