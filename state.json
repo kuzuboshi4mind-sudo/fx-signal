@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792065600000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 157.74136,
+   "sl": 157.96054030758,
+   "tp": 157.30299938483998,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792036800000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -296,12 +312,12 @@
    ]
   }
  ],
- "lastEvalT": 1792062000000,
+ "lastEvalT": 1792065600000,
  "reportDay": "2026-10-15",
  "version": 1,
- "lastRun": 1792068234419,
- "lastBarT": 1792065600000,
- "price": 157.88143,
+ "lastRun": 1792070810644,
+ "lastBarT": 1792069200000,
+ "price": 157.74136,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -397,12 +413,49 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 99425.59093501583,
   "startT": 1791916832223,
-  "positions": [],
+  "positions": [
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 3000,
+    "entry": 157.74635999999998,
+    "sl": 157.52717969241996,
+    "tp": 158.40390092274,
+    "barT": 1792069200000,
+    "openT": 1792070810644,
+    "deadline": 1792157210644
+   },
+   {
+    "key": "pullback_dn|long|2|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 3000,
+    "entry": 157.74635999999998,
+    "sl": 157.52717969241996,
+    "tp": 158.18472061516,
+    "barT": 1792069200000,
+    "openT": 1792070810644,
+    "deadline": 1792157210644
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_dn|long|3|1",
@@ -459,7 +512,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99425.59093501583
+  "equity": 99395.59093501586
  },
  "skipReview": {
   "n": 16,
