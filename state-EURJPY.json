@@ -22,6 +22,54 @@
  },
  "log": [
   {
+   "t": 1792119600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 177.43273,
+   "sl": 177.24026938007046,
+   "tp": 177.8176512398591,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792119600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 177.43273,
+   "sl": 177.24026938007046,
+   "tp": 177.8176512398591,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792119600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.43273,
+   "sl": 177.24026938007046,
+   "tp": 177.8176512398591,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792087200000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -431,7 +479,7 @@
    ]
   }
  ],
- "lastEvalT": 1792116000000,
+ "lastEvalT": 1792119600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -536,11 +584,11 @@
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792121505779,
- "lastBarT": 1792119600000,
- "price": 177.20875,
- "equity": 99980.46999999997,
- "unreal": -19.530000000031578,
+ "lastRun": 1792123544018,
+ "lastBarT": 1792123200000,
+ "price": 177.43273,
+ "equity": 101548.32999999986,
+ "unreal": 1548.3299999998508,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -605,7 +653,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2666,
+  "events": 2665,
   "win": [
    {
     "name": "陽の包み足",
@@ -613,7 +661,7 @@
     "key": "against|range",
     "n": 54,
     "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045058633
+    "avgR": 0.36119450450553175
    },
    {
     "name": "MACD売りクロス",
@@ -621,7 +669,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200861304
+    "avgR": 0.22933283200863314
    },
    {
     "name": "ボリバン下限から回帰",
@@ -629,12 +677,40 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.1701719069060036
+    "avgR": 0.17017190690600378
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

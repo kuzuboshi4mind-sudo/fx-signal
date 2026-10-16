@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1792119600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 210.02851,
+   "sl": 209.8009546579206,
+   "tp": 210.48362068415878,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792119600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 210.02851,
+   "sl": 209.8009546579206,
+   "tp": 210.48362068415878,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792090800000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -491,12 +523,26 @@
    ]
   }
  ],
- "lastEvalT": 1792116000000,
+ "lastEvalT": 1792119600000,
  "adaptive": {
   "start": 100000,
   "balance": 98522.3483967242,
   "startT": 1791953875407,
-  "positions": [],
+  "positions": [
+   {
+    "key": "engulf_up|short|1.5|1",
+    "dir": "short",
+    "pattern": "engulf_up",
+    "name": "陽の包み足（逆向き）",
+    "units": 2000,
+    "entry": 210.01851000000002,
+    "sl": 210.24606534207942,
+    "tp": 209.67717698688094,
+    "barT": 1792123200000,
+    "openT": 1792123544434,
+    "deadline": 1792209944434
+   }
+  ],
   "trades": [
    {
     "key": "engulf_up|short|1.5|1",
@@ -638,7 +684,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98522.3483967242
+  "equity": 98502.34839672422
  },
  "reportDay": "2026-10-16",
  "skipReview": {
@@ -647,9 +693,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792121506109,
- "lastBarT": 1792119600000,
- "price": 209.83015,
+ "lastRun": 1792123544434,
+ "lastBarT": 1792123200000,
+ "price": 210.02851,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -716,7 +762,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2688,
+  "events": 2687,
   "win": [
    {
     "name": "陰の包み足",
@@ -724,12 +770,31 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360605813112
+    "avgR": 0.16912360605806
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
