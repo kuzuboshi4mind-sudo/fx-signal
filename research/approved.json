@@ -1,4 +1,10 @@
 {
- "updated": "2026-10-15",
- "approved": []
+ "updated": "2026-10-16",
+ "approved": [
+  {
+   "symbol": "USD/JPY",
+   "strategy": "vol_breakout",
+   "note": "3周 +25.7/+18.6/+39.5R・t=2.67・シャッフル合格0%・閾値40〜80%/コスト2倍でも頑健"
+  }
+ ]
 }

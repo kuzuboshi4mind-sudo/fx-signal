@@ -25,7 +25,22 @@
     const bbW = d.bbUp.map((u, i) => u - d.bbLo[i]);
     const bbWMin120 = new Array(n).fill(NaN);
     for (let i = 140; i < n; i++) { let m = Infinity; for (let j = i - 120; j < i; j++) m = Math.min(m, bbW[j]); bbWMin120[i] = m; }
-    return { hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120 };
+    // 24本（約1日）の値動きの荒さと、その長期平均（約120日）
+    const lr = close.map((v, i) => (i ? Math.log(v / close[i - 1]) : 0));
+    const rv24 = new Array(n).fill(NaN);
+    let acc = 0;
+    for (let i = 0; i < n; i++) { acc += lr[i] * lr[i]; if (i >= 24) acc -= lr[i - 24] * lr[i - 24]; if (i >= 24) rv24[i] = Math.sqrt(acc / 24); }
+    const rvMean = E.sma(rv24.map(v => (isNaN(v) ? 0 : v)), 2880);
+    // FXの1日（日本時間7時始まり）ごとの始値・前日の値幅
+    const dayKey = c.map(b => Math.floor((b.t + 2 * 3600e3) / 86400e3));
+    const dayOpen = new Array(n).fill(NaN), prevRange = new Array(n).fill(NaN);
+    let curKey = null, curOpen = NaN, curH = -Infinity, curL = Infinity, lastRange = NaN;
+    for (let i = 0; i < n; i++) {
+      if (dayKey[i] !== curKey) { if (curKey !== null) lastRange = curH - curL; curKey = dayKey[i]; curOpen = c[i].o; curH = -Infinity; curL = Infinity; }
+      curH = Math.max(curH, c[i].h); curL = Math.min(curL, c[i].l);
+      dayOpen[i] = curOpen; prevRange[i] = lastRange;
+    }
+    return { hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
   }
 
   // 五十日（ごとおび）：5・10・15・20・25日と月末。土日なら直前の金曜
@@ -38,6 +53,14 @@
       return dt.getUTCDate();
     });
     return targets.includes(d.getUTCDate()) && d.getUTCDay() >= 1 && d.getUTCDay() <= 5;
+  }
+
+  // ロンドン時間（夏時間：3月最終日曜〜10月最終日曜）
+  function londonHour(t) {
+    const d = new Date(t), y = d.getUTCFullYear();
+    const lastSun = (m) => { const x = new Date(Date.UTC(y, m + 1, 0)); return x.getUTCDate() - x.getUTCDay(); };
+    const start = Date.UTC(y, 2, lastSun(2), 1), end = Date.UTC(y, 9, lastSun(9), 1);
+    return (d.getUTCHours() + (t >= start && t < end ? 1 : 0)) % 24;
   }
 
   const STRATEGIES = [
@@ -121,6 +144,42 @@
       exit: { type: 'atr', tp: 2, sl: 1, maxBars: 24 },
       signal: (c, d, x, i) => (d.macd[i - 1] <= 0 && d.macd[i] > 0 && c[i].c > d.ema200[i] ? 'long'
         : d.macd[i - 1] >= 0 && d.macd[i] < 0 && c[i].c < d.ema200[i] ? 'short' : null) },
+    // ---------- 第2弾（2026-10-16）研究・実務の知見から ----------
+    { id: 'tsmom20', name: '時系列モメンタム（20日）', source: 'Moskowitz・Ooi・Pedersen「Time Series Momentum」(2012)：過去の自分の値動きの方向が続きやすい。20日と60日の方向が一致したら、その方向に1日持つ',
+      exit: { type: 'time', bars: 24, sl: 3 },
+      signal: (c, d, x, i) => {
+        if (jst(c[i].t).getUTCHours() !== 6 || i < 1440) return null; // 日本時間7時（NYクローズ）に1日1回判断
+        const r20 = c[i].c - c[i - 480].c, r60 = c[i].c - c[i - 1440].c;
+        return r20 > 0 && r60 > 0 ? 'long' : r20 < 0 && r60 < 0 ? 'short' : null;
+      } },
+    { id: 'carry_lowvol', name: '低ボラ時のキャリー（円売り）', source: 'Brunnermeier・Nagel・Pedersen「Carry Trades and Currency Crashes」ほか：円を売るキャリー取引は、値動きが落ち着いている時に勝ちやすく、荒れると急落しやすい',
+      exit: { type: 'time', bars: 24, sl: 3 },
+      signal: (c, d, x, i) => {
+        if (jst(c[i].t).getUTCHours() !== 6 || isNaN(x.sma480[i]) || !x.rvMean[i]) return null;
+        return x.rv24[i] < x.rvMean[i] * 0.8 && c[i].c > x.sma480[i] ? 'long' : null;
+      } },
+    { id: 'fix_reversal', name: 'ロンドン16時フィキシング後の反転', source: 'Marsh・Panagiotou・Payne、英FCA（2018）など：16時の基準レート決定の前に動いた分が、決定後に戻りやすい（2015年の方式変更後は弱まったとの報告もある）',
+      exit: { type: 'time', bars: 3, sl: 1.5 },
+      signal: (c, d, x, i) => {
+        if (londonHour(c[i].t) !== 15 || i < 2) return null; // ロンドン15時台の足（16時に確定）
+        const mv = c[i].c - c[i - 1].o;
+        return mv > d.atr[i] * 0.7 ? 'short' : mv < -d.atr[i] * 0.7 ? 'long' : null;
+      } },
+    { id: 'vol_breakout', name: 'ボラティリティ・ブレイクアウト', source: 'L.ウィリアムズ：その日の始値から前日の値幅の一定割合（ここでは60%）を抜けた方向に、その日のうちだけ乗る',
+      exit: { type: 'time', bars: 8, sl: 1.5 },
+      signal: (c, d, x, i) => {
+        if (isNaN(x.prevRange[i]) || x.dayKey[i - 1] !== x.dayKey[i]) return null;
+        const up = x.dayOpen[i] + x.prevRange[i] * 0.6, dn = x.dayOpen[i] - x.prevRange[i] * 0.6;
+        for (let k = i - 1; k >= 0 && x.dayKey[k] === x.dayKey[i]; k--) if (c[k].c > up || c[k].c < dn) return null; // その日の最初の抜けだけ
+        return c[i].c > up ? 'long' : c[i].c < dn ? 'short' : null;
+      } },
+    { id: 'overreaction', name: '急変動の行き過ぎ戻り', source: '行動ファイナンスの「過剰反応」：1時間で値幅の3倍以上動いた足は、その後いくらか戻りやすい',
+      exit: { type: 'time', bars: 6, sl: 1.5 },
+      signal: (c, d, x, i) => {
+        const a = d.atr[i - 1], b = c[i];
+        if (isNaN(a) || b.h - b.l < a * 3) return null;
+        return b.c > b.o ? 'short' : 'long';
+      } },
   ];
 
   // 手法ごとの出口ルールで1回分の取引を模擬（i 本目確定でシグナル → 次の足の始値で入る）
@@ -136,5 +195,5 @@
     return { r, outcome: r > 0 ? 'win' : 'loss', bars: exit.bars };
   }
 
-  return { STRATEGIES, extras, simulateStrategy, isGotobi };
+  return { STRATEGIES, extras, simulateStrategy, isGotobi, londonHour };
 });
