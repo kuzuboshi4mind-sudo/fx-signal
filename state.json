@@ -28,6 +28,38 @@
  },
  "log": [
   {
+   "t": 1792166400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 158.20772,
+   "sl": 158.01052473921777,
+   "tp": 158.60211052156444,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792166400000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 158.20772,
+   "sl": 158.01052473921777,
+   "tp": 158.60211052156444,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792162800000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -51,7 +83,7 @@
    "entry": 157.89643,
    "sl": 157.71115383956618,
    "tp": 158.26698232086767,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -259,7 +291,7 @@
    "entry": 158.00226,
    "sl": 158.2134577727481,
    "tp": 157.57986445450385,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -616,12 +648,12 @@
    ]
   }
  ],
- "lastEvalT": 1792162800000,
+ "lastEvalT": 1792166400000,
  "reportDay": "2026-10-17",
  "version": 1,
- "lastRun": 1792168567195,
- "lastBarT": 1792166400000,
- "price": 158.19643,
+ "lastRun": 1792170465953,
+ "lastBarT": 1792170000000,
+ "price": 158.20772,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -688,7 +720,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2726,
+  "events": 2728,
   "win": [
    {
     "name": "陽の包み足",
@@ -704,7 +736,7 @@
     "key": "against|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.14366479786917719
+    "avgR": 0.14366479786917746
    }
   ]
  },
@@ -717,7 +749,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 98899.13658772343,
@@ -878,12 +929,12 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100050.47658772345
+  "equity": 100084.34658772344
  },
  "skipReview": {
-  "n": 33,
-  "wouldLose": 28,
-  "wouldWin": 5
+  "n": 35,
+  "wouldLose": 29,
+  "wouldWin": 6
  },
  "latest": {
   "start": 100000,
