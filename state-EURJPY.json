@@ -584,11 +584,11 @@
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792123544018,
+ "lastRun": 1792125315670,
  "lastBarT": 1792123200000,
- "price": 177.43273,
- "equity": 101548.32999999986,
- "unreal": 1548.3299999998508,
+ "price": 177.30262,
+ "equity": 100637.55999999984,
+ "unreal": 637.5599999998371,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -682,35 +682,7 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
