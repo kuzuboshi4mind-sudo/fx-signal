@@ -66,7 +66,7 @@
    "entry": 210.38536,
    "sl": 210.15613313901295,
    "tp": 210.84381372197404,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -590,9 +590,10 @@
  "lastEvalT": 1792144800000,
  "adaptive": {
   "start": 100000,
-  "balance": 98067.23771256542,
+  "balance": 97588.74884004699,
   "startT": 1791953875407,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "bb_break_up|short|3|1",
     "dir": "short",
@@ -604,10 +605,12 @@
     "tp": 209.87436669122235,
     "barT": 1792141200000,
     "openT": 1792143190831,
-    "deadline": 1792229590831
-   }
-  ],
-  "trades": [
+    "deadline": 1792229590831,
+    "exit": 210.83134443625923,
+    "closeT": 1792148400000,
+    "reason": "sl",
+    "pnl": -478.488872518426
+   },
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -765,18 +768,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97817.69771256545
+  "equity": 97588.74884004699
  },
  "reportDay": "2026-10-16",
  "skipReview": {
-  "n": 32,
+  "n": 33,
   "wouldLose": 18,
-  "wouldWin": 14
+  "wouldWin": 15
  },
  "version": 1,
- "lastRun": 1792149260094,
+ "lastRun": 1792151497206,
  "lastBarT": 1792148400000,
- "price": 210.71687,
+ "price": 210.79721,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -843,7 +846,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2694,
+  "events": 2695,
   "win": [
    {
     "name": "陰の包み足",
