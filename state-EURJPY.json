@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792173600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.5545,
+   "sl": 177.3483229162659,
+   "tp": 177.96685416746823,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792166400000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -673,7 +689,7 @@
    ]
   }
  ],
- "lastEvalT": 1792170000000,
+ "lastEvalT": 1792173600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -778,9 +794,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792177039362,
- "lastBarT": 1792173600000,
- "price": 177.5394,
+ "lastRun": 1792179030831,
+ "lastBarT": 1792177200000,
+ "price": 177.5545,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -855,7 +871,7 @@
     "key": "against|range",
     "n": 55,
     "winRate": 0.38181818181818183,
-    "avgR": 0.3907813634167545
+    "avgR": 0.39078136340355923
    },
    {
     "name": "MACD売りクロス",
@@ -863,7 +879,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283201076002
+    "avgR": 0.22933283201157642
    },
    {
     "name": "ボリバン下限から回帰",
@@ -871,7 +887,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.1701719069060254
+    "avgR": 0.1701719069060337
    }
   ]
  },
@@ -891,7 +907,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
