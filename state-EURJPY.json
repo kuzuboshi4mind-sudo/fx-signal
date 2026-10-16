@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 103601.22315161272,
+  "balance": 101655.59361592878,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "short",
-   "pattern": "macd_dn",
-   "name": "MACD売りクロス",
-   "units": 9000,
-   "entry": 177.41483,
-   "sl": 177.63101105952043,
-   "tp": 177.00046788095912,
-   "barT": 1792166400000,
-   "openT": 1792166721607,
-   "deadline": 1792253121607
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "macd_dn",
+    "name": "MACD売りクロス",
+    "units": 9000,
+    "entry": 177.41483,
+    "sl": 177.63101105952043,
+    "tp": 177.00046788095912,
+    "barT": 1792166400000,
+    "openT": 1792166721607,
+    "deadline": 1792253121607,
+    "exit": 177.63101105952043,
+    "closeT": 1792170000000,
+    "reason": "sl",
+    "pnl": -1945.6295356839348
+   },
    {
     "dir": "long",
     "pattern": "engulf_up",
@@ -62,7 +67,7 @@
    "entry": 177.42083,
    "sl": 177.63101105952043,
    "tp": 177.00046788095912,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -773,11 +778,11 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792170466560,
+ "lastRun": 1792172945338,
  "lastBarT": 1792170000000,
- "price": 177.50354,
- "equity": 102802.8331516128,
- "unreal": -798.3899999999267,
+ "price": 177.56569,
+ "equity": 101655.59361592878,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -871,6 +876,13 @@
   ]
  },
  "review": {
+  "macd_dn": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "engulf_up": {
    "n": 1,
    "wins": 1,
@@ -879,17 +891,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
