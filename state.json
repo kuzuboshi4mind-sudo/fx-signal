@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792162800000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 158.01748,
+   "sl": 157.83150356531146,
+   "tp": 158.38943286937712,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792159200000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -51,7 +67,7 @@
    "entry": 157.80765,
    "sl": 157.98884124969797,
    "tp": 157.44526750060407,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -67,7 +83,7 @@
    "entry": 157.80765,
    "sl": 157.98884124969797,
    "tp": 157.44526750060407,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -83,7 +99,7 @@
    "entry": 157.80765,
    "sl": 157.98884124969797,
    "tp": 157.44526750060407,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -99,7 +115,7 @@
    "entry": 157.80765,
    "sl": 157.98884124969797,
    "tp": 157.44526750060407,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -600,12 +616,12 @@
    ]
   }
  ],
- "lastEvalT": 1792159200000,
+ "lastEvalT": 1792162800000,
  "reportDay": "2026-10-17",
  "version": 1,
- "lastRun": 1792164732114,
- "lastBarT": 1792162800000,
- "price": 157.89643,
+ "lastRun": 1792166721267,
+ "lastBarT": 1792166400000,
+ "price": 158.01748,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -672,7 +688,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2718,
+  "events": 2722,
   "win": [
    {
     "name": "陽の包み足",
@@ -688,7 +704,7 @@
     "key": "against|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.14366479786917702
+    "avgR": 0.14366479786917719
    }
   ]
  },
@@ -703,7 +719,7 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下限から回帰",
+   "name": "MACD買いクロス",
    "dir": "long",
    "blocked": true,
    "reasons": [
@@ -868,11 +884,11 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98314.66908953579
+  "equity": 99040.96908953578
  },
  "skipReview": {
-  "n": 26,
-  "wouldLose": 21,
+  "n": 30,
+  "wouldLose": 25,
   "wouldWin": 5
  },
  "latest": {

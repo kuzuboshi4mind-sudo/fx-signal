@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792162800000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 210.55662,
+   "sl": 210.7934682801266,
+   "tp": 210.08292343974682,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792159200000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -635,7 +651,7 @@
    ]
   }
  ],
- "lastEvalT": 1792159200000,
+ "lastEvalT": 1792162800000,
  "adaptive": {
   "start": 100000,
   "balance": 97588.74884004699,
@@ -830,7 +846,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98074.02884004703
+  "equity": 98239.368840047
  },
  "reportDay": "2026-10-17",
  "skipReview": {
@@ -839,9 +855,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792164733267,
- "lastBarT": 1792162800000,
- "price": 210.63929,
+ "lastRun": 1792166721975,
+ "lastBarT": 1792166400000,
+ "price": 210.55662,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -908,7 +924,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2695,
+  "events": 2696,
   "win": [
    {
     "name": "陰の包み足",
@@ -916,15 +932,15 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.169123606058276
+    "avgR": 0.16912360605844512
    }
   ]
  },
  "review": {},
  "lastSignals": [
   {
-   "name": "20本高値ブレイク",
-   "dir": "long",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
    "blocked": true,
    "reasons": [
     "優位性なし",
