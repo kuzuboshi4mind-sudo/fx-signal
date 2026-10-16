@@ -67,7 +67,7 @@
    "entry": 177.79968,
    "sl": 177.6009324953448,
    "tp": 178.1971750093104,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -629,7 +629,7 @@
    ]
   }
  ],
- "lastEvalT": 1792152000000,
+ "lastEvalT": 1792155600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -729,14 +729,14 @@
  },
  "reportDay": "2026-10-16",
  "skipReview": {
-  "n": 30,
-  "wouldLose": 23,
+  "n": 31,
+  "wouldLose": 24,
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792158269560,
- "lastBarT": 1792155600000,
- "price": 177.65851,
+ "lastRun": 1792160262083,
+ "lastBarT": 1792159200000,
+ "price": 177.62936,
  "equity": 103601.22315161272,
  "unreal": 0,
  "config": {
@@ -811,7 +811,7 @@
     "key": "against|range",
     "n": 55,
     "winRate": 0.38181818181818183,
-    "avgR": 0.3907813634523849
+    "avgR": 0.39078136344768977
    },
    {
     "name": "MACD売りクロス",
@@ -819,7 +819,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.2293328320085555
+    "avgR": 0.229332832008846
    },
    {
     "name": "ボリバン下限から回帰",
@@ -827,7 +827,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.170171906906003
+    "avgR": 0.17017190690600595
    }
   ]
  },
