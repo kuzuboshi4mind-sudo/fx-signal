@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792130400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 109.86186,
+   "sl": 109.69489210391404,
+   "tp": 110.1957957921719,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792112400000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -51,7 +67,7 @@
    "entry": 109.37483,
    "sl": 109.13323438781532,
    "tp": 109.85802122436937,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -67,7 +83,7 @@
    "entry": 109.38009,
    "sl": 109.13471241764726,
    "tp": 109.87084516470546,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -83,7 +99,7 @@
    "entry": 109.36465,
    "sl": 109.10617156129506,
    "tp": 109.88160687740988,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -99,7 +115,7 @@
    "entry": 109.36465,
    "sl": 109.10617156129506,
    "tp": 109.88160687740988,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -460,7 +476,7 @@
    ]
   }
  ],
- "lastEvalT": 1792126800000,
+ "lastEvalT": 1792130400000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -560,14 +576,14 @@
  },
  "reportDay": "2026-10-16",
  "skipReview": {
-  "n": 22,
+  "n": 26,
   "wouldLose": 16,
-  "wouldWin": 6
+  "wouldWin": 10
  },
  "version": 1,
- "lastRun": 1792132991384,
- "lastBarT": 1792130400000,
- "price": 109.67793,
+ "lastRun": 1792135445131,
+ "lastBarT": 1792134000000,
+ "price": 109.86186,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -634,7 +650,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2788,
+  "events": 2790,
   "win": []
  },
  "review": {
@@ -646,7 +662,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

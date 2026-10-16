@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792130400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 210.38536,
+   "sl": 210.15613313901295,
+   "tp": 210.84381372197404,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792119600000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -114,7 +130,7 @@
    "entry": 209.61078,
    "sl": 209.29856180857513,
    "tp": 210.23521638284976,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -130,7 +146,7 @@
    "entry": 209.59407,
    "sl": 209.27828271692704,
    "tp": 210.22564456614586,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -146,7 +162,7 @@
    "entry": 209.59407,
    "sl": 209.27828271692704,
    "tp": 210.22564456614586,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -162,7 +178,7 @@
    "entry": 209.59407,
    "sl": 209.27828271692704,
    "tp": 210.22564456614586,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -523,12 +539,13 @@
    ]
   }
  ],
- "lastEvalT": 1792126800000,
+ "lastEvalT": 1792130400000,
  "adaptive": {
   "start": 100000,
-  "balance": 98522.3483967242,
+  "balance": 98067.23771256542,
   "startT": 1791953875407,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -540,10 +557,12 @@
     "tp": 209.67717698688094,
     "barT": 1792123200000,
     "openT": 1792123544434,
-    "deadline": 1792209944434
-   }
-  ],
-  "trades": [
+    "deadline": 1792209944434,
+    "exit": 210.24606534207942,
+    "closeT": 1792130400000,
+    "reason": "sl",
+    "pnl": -455.11068415879663
+   },
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -684,18 +703,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98275.96839672427
+  "equity": 98067.23771256542
  },
  "reportDay": "2026-10-16",
  "skipReview": {
-  "n": 25,
+  "n": 29,
   "wouldLose": 18,
-  "wouldWin": 7
+  "wouldWin": 11
  },
  "version": 1,
- "lastRun": 1792132991124,
- "lastBarT": 1792130400000,
- "price": 210.1417,
+ "lastRun": 1792135441559,
+ "lastBarT": 1792134000000,
+ "price": 210.38536,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -762,7 +781,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2690,
+  "events": 2692,
   "win": [
    {
     "name": "陰の包み足",
@@ -770,12 +789,22 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360605799553
+    "avgR": 0.16912360605796362
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
