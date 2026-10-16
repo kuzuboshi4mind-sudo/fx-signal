@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792152000000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 89.40443,
+   "sl": 89.54057932338793,
+   "tp": 89.13213135322417,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792141200000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -51,7 +67,7 @@
    "entry": 89.51966,
    "sl": 89.37983626003046,
    "tp": 89.7993074799391,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -66,7 +82,7 @@
    "entry": 89.55766,
    "sl": 89.41442366464818,
    "tp": 89.84413267070364,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -81,7 +97,7 @@
    "entry": 89.55766,
    "sl": 89.41442366464818,
    "tp": 89.84413267070364,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -532,7 +548,7 @@
    ]
   }
  ],
- "lastEvalT": 1792148400000,
+ "lastEvalT": 1792152000000,
  "adaptive": {
   "start": 100000,
   "balance": 99747.06522207432,
@@ -550,6 +566,19 @@
     "barT": 1792137600000,
     "openT": 1792138104272,
     "deadline": 1792224504272
+   },
+   {
+    "key": "rsi_fall|long|3|1",
+    "dir": "long",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落（逆向き）",
+    "units": 4000,
+    "entry": 89.41443000000001,
+    "sl": 89.27828067661208,
+    "tp": 89.82287797016377,
+    "barT": 1792155600000,
+    "openT": 1792155950461,
+    "deadline": 1792242350461
    }
   ],
   "trades": [
@@ -659,18 +688,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99997.58522207431
+  "equity": 100279.98522207426
  },
  "reportDay": "2026-10-16",
  "skipReview": {
-  "n": 27,
-  "wouldLose": 15,
+  "n": 30,
+  "wouldLose": 18,
   "wouldWin": 12
  },
  "version": 1,
- "lastRun": 1792152900030,
- "lastBarT": 1792152000000,
- "price": 89.48503,
+ "lastRun": 1792155950461,
+ "lastBarT": 1792155600000,
+ "price": 89.40443,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -737,7 +766,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2646,
+  "events": 2649,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -745,7 +774,7 @@
     "key": "*",
     "n": 45,
     "winRate": 0.37777777777777777,
-    "avgR": 0.2125562410402781
+    "avgR": 0.212556241040278
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -753,7 +782,7 @@
     "key": "with|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.11131136712153569
+    "avgR": 0.11131136712021795
    },
    {
     "name": "20本高値ブレイク",
@@ -774,7 +803,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

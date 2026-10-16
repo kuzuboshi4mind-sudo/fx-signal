@@ -28,6 +28,38 @@
  },
  "log": [
   {
+   "t": 1792152000000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 177.75271,
+   "sl": 177.95886396783072,
+   "tp": 177.34040206433858,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792152000000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 177.75271,
+   "sl": 177.95886396783072,
+   "tp": 177.34040206433858,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792141200000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -597,7 +629,7 @@
    ]
   }
  ],
- "lastEvalT": 1792148400000,
+ "lastEvalT": 1792152000000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -702,9 +734,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792152898396,
- "lastBarT": 1792152000000,
- "price": 177.78073,
+ "lastRun": 1792155946858,
+ "lastBarT": 1792155600000,
+ "price": 177.75271,
  "equity": 103601.22315161272,
  "unreal": 0,
  "config": {
@@ -779,7 +811,7 @@
     "key": "against|range",
     "n": 55,
     "winRate": 0.38181818181818183,
-    "avgR": 0.3907813634533813
+    "avgR": 0.3907813634523849
    },
    {
     "name": "MACD売りクロス",
@@ -787,7 +819,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200849383
+    "avgR": 0.2293328320085555
    },
    {
     "name": "ボリバン下限から回帰",
@@ -795,7 +827,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690600237
+    "avgR": 0.170171906906003
    }
   ]
  },
@@ -808,7 +840,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
