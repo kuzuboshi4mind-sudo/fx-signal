@@ -51,7 +51,7 @@
    "entry": 158.20772,
    "sl": 158.01052473921777,
    "tp": 158.60211052156444,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -67,7 +67,7 @@
    "entry": 158.20772,
    "sl": 158.01052473921777,
    "tp": 158.60211052156444,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -667,9 +667,9 @@
  "lastEvalT": 1792170000000,
  "reportDay": "2026-10-17",
  "version": 1,
- "lastRun": 1792174313562,
+ "lastRun": 1792177038897,
  "lastBarT": 1792173600000,
- "price": 158.05722,
+ "price": 158.05632,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -765,17 +765,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 98899.13658772343,
@@ -936,11 +926,11 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99632.84658772347
+  "equity": 99630.14658772346
  },
  "skipReview": {
-  "n": 35,
-  "wouldLose": 29,
+  "n": 37,
+  "wouldLose": 31,
   "wouldWin": 6
  },
  "latest": {
