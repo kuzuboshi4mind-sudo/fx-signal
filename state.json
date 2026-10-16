@@ -147,7 +147,7 @@
    "entry": 158.02059,
    "sl": 158.19254783758362,
    "tp": 157.67667432483276,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -227,7 +227,7 @@
    "entry": 157.93246,
    "sl": 158.12107679145743,
    "tp": 157.55522641708512,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -243,7 +243,7 @@
    "entry": 157.96907,
    "sl": 158.15293577541567,
    "tp": 157.6013384491686,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -619,9 +619,9 @@
  "lastEvalT": 1792162800000,
  "reportDay": "2026-10-17",
  "version": 1,
- "lastRun": 1792166721267,
+ "lastRun": 1792168567195,
  "lastBarT": 1792166400000,
- "price": 158.01748,
+ "price": 158.19643,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -688,7 +688,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2722,
+  "events": 2726,
   "win": [
    {
     "name": "陽の包み足",
@@ -717,20 +717,10 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 97811.98908953568,
+  "balance": 98899.13658772343,
   "startT": 1791916832223,
   "positions": [
    {
@@ -745,7 +735,9 @@
     "barT": 1792159200000,
     "openT": 1792160260867,
     "deadline": 1792246660867
-   },
+   }
+  ],
+  "trades": [
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -757,10 +749,12 @@
     "tp": 158.1750324993959,
     "barT": 1792159200000,
     "openT": 1792160260867,
-    "deadline": 1792246660867
-   }
-  ],
-  "trades": [
+    "deadline": 1792246660867,
+    "exit": 158.1750324993959,
+    "closeT": 1792166400000,
+    "reason": "tp",
+    "pnl": 1087.1474981877611
+   },
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -884,11 +878,11 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99040.96908953578
+  "equity": 100050.47658772345
  },
  "skipReview": {
-  "n": 30,
-  "wouldLose": 25,
+  "n": 33,
+  "wouldLose": 28,
   "wouldWin": 5
  },
  "latest": {
