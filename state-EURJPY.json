@@ -22,6 +22,38 @@
  },
  "log": [
   {
+   "t": 1792134000000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 177.67034,
+   "sl": 177.46621851531114,
+   "tp": 178.07858296937775,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792134000000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 177.67034,
+   "sl": 177.46621851531114,
+   "tp": 178.07858296937775,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792130400000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -511,7 +543,7 @@
    ]
   }
  ],
- "lastEvalT": 1792130400000,
+ "lastEvalT": 1792134000000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -616,11 +648,11 @@
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792135441062,
- "lastBarT": 1792134000000,
- "price": 177.50022,
- "equity": 102020.76,
- "unreal": 2020.7599999999957,
+ "lastRun": 1792138102966,
+ "lastBarT": 1792137600000,
+ "price": 177.67034,
+ "equity": 103211.59999999998,
+ "unreal": 3211.599999999976,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -685,15 +717,15 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2664,
+  "events": 2666,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 54,
-    "winRate": 0.37037037037037035,
-    "avgR": 0.3611945045075402
+    "n": 55,
+    "winRate": 0.38181818181818183,
+    "avgR": 0.39078136345316805
    },
    {
     "name": "MACD売りクロス",
@@ -701,7 +733,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200851115
+    "avgR": 0.22933283200850701
    },
    {
     "name": "ボリバン下限から回帰",
@@ -709,14 +741,23 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690600256
+    "avgR": 0.1701719069060025
    }
   ]
  },
  "review": {},
  "lastSignals": [
   {
-   "name": "上昇トレンドの押し目",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
    "dir": "long",
    "blocked": true,
    "reasons": [

@@ -28,6 +28,37 @@
  },
  "log": [
   {
+   "t": 1792134000000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 89.55766,
+   "sl": 89.41442366464818,
+   "tp": 89.84413267070364,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1792134000000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 89.55766,
+   "sl": 89.41442366464818,
+   "tp": 89.84413267070364,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792126800000,
    "pattern": "rsi_fall",
    "name": "RSI買われすぎ反落",
@@ -67,7 +98,7 @@
    "entry": 89.25525,
    "sl": 89.11712495049629,
    "tp": 89.53150009900743,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -83,7 +114,7 @@
    "entry": 89.25525,
    "sl": 89.11712495049629,
    "tp": 89.53150009900743,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -470,7 +501,7 @@
    ]
   }
  ],
- "lastEvalT": 1792130400000,
+ "lastEvalT": 1792134000000,
  "adaptive": {
   "start": 100000,
   "balance": 98165.63338333182,
@@ -488,6 +519,19 @@
     "barT": 1792130400000,
     "openT": 1792130708084,
     "deadline": 1792217108084
+   },
+   {
+    "key": "donchian_up|short|3|1",
+    "dir": "short",
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク（逆向き）",
+    "units": 4000,
+    "entry": 89.54766,
+    "sl": 89.69089633535181,
+    "tp": 89.11795099394453,
+    "barT": 1792137600000,
+    "openT": 1792138104272,
+    "deadline": 1792224504272
    }
   ],
   "trades": [
@@ -580,18 +624,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98931.91338333176
+  "equity": 99604.15338333175
  },
  "reportDay": "2026-10-16",
  "skipReview": {
-  "n": 25,
+  "n": 27,
   "wouldLose": 15,
-  "wouldWin": 10
+  "wouldWin": 12
  },
  "version": 1,
- "lastRun": 1792135445610,
- "lastBarT": 1792134000000,
- "price": 89.3796,
+ "lastRun": 1792138104272,
+ "lastBarT": 1792137600000,
+ "price": 89.55766,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -658,7 +702,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2646,
+  "events": 2648,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -674,7 +718,7 @@
     "key": "with|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.11131136712652481
+    "avgR": 0.11131136712670195
    },
    {
     "name": "20本高値ブレイク",
@@ -695,7 +739,25 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

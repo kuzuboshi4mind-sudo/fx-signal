@@ -28,6 +28,38 @@
  },
  "log": [
   {
+   "t": 1792134000000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 110.0037,
+   "sl": 109.82963195363448,
+   "tp": 110.35183609273105,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792134000000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 110.0037,
+   "sl": 109.82963195363448,
+   "tp": 110.35183609273105,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792130400000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -476,7 +508,7 @@
    ]
   }
  ],
- "lastEvalT": 1792130400000,
+ "lastEvalT": 1792134000000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -581,9 +613,9 @@
   "wouldWin": 10
  },
  "version": 1,
- "lastRun": 1792135445131,
- "lastBarT": 1792134000000,
- "price": 109.86186,
+ "lastRun": 1792138103856,
+ "lastBarT": 1792137600000,
+ "price": 110.0037,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -650,8 +682,17 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2790,
-  "win": []
+  "events": 2792,
+  "win": [
+   {
+    "name": "20本高値ブレイク",
+    "dir": "long",
+    "key": "with|trend",
+    "n": 87,
+    "winRate": 0.3448275862068966,
+    "avgR": 0.08159458998798338
+   }
+  ]
  },
  "review": {
   "donchian_up": {
@@ -663,6 +704,15 @@
   }
  },
  "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
   {
    "name": "20本高値ブレイク",
    "dir": "long",
