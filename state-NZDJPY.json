@@ -596,7 +596,7 @@
    ]
   }
  ],
- "lastEvalT": 1792177200000,
+ "lastEvalT": 1792180800000,
  "adaptive": {
   "start": 100000,
   "balance": 99202.46792852262,
@@ -740,7 +740,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100168.22792852261
+  "equity": 100130.9879285226
  },
  "reportDay": "2026-10-17",
  "skipReview": {
@@ -749,9 +749,9 @@
   "wouldWin": 13
  },
  "version": 1,
- "lastRun": 1792182602644,
- "lastBarT": 1792180800000,
- "price": 89.30622,
+ "lastRun": 1792184524424,
+ "lastBarT": 1792184400000,
+ "price": 89.31553,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -826,7 +826,7 @@
     "key": "*",
     "n": 45,
     "winRate": 0.37777777777777777,
-    "avgR": 0.21255624104028045
+    "avgR": 0.21255624104028095
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -834,7 +834,7 @@
     "key": "with|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.11131136714850634
+    "avgR": 0.11131136715405923
    },
    {
     "name": "20本高値ブレイク",
@@ -855,26 +855,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
