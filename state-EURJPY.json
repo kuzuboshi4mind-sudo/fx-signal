@@ -29,7 +29,7 @@
    "entry": 177.16643,
    "sl": 177.35801976922497,
    "tp": 176.78325046155007,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -595,16 +595,16 @@
  },
  "reportDay": "2026-10-16",
  "skipReview": {
-  "n": 24,
-  "wouldLose": 21,
+  "n": 25,
+  "wouldLose": 22,
   "wouldWin": 3
  },
  "version": 1,
- "lastRun": 1792130706561,
+ "lastRun": 1792132990813,
  "lastBarT": 1792130400000,
- "price": 177.16643,
- "equity": 99684.22999999984,
- "unreal": -315.77000000015687,
+ "price": 177.38415,
+ "equity": 101208.26999999995,
+ "unreal": 1208.269999999942,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -669,7 +669,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2664,
+  "events": 2665,
   "win": [
    {
     "name": "陽の包み足",
@@ -698,17 +698,7 @@
   ]
  },
  "review": {},
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
