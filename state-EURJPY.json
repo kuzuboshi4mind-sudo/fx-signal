@@ -3,24 +3,62 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 100000,
+  "balance": 103601.22315161272,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 7000,
-   "entry": 177.21154,
-   "sl": 176.9453097748848,
-   "tp": 177.7260004502304,
-   "barT": 1792076400000,
-   "openT": 1792078622685,
-   "deadline": 1792165022685
-  },
-  "trades": []
+  "pos": null,
+  "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 7000,
+    "entry": 177.21154,
+    "sl": 176.9453097748848,
+    "tp": 177.7260004502304,
+    "barT": 1792076400000,
+    "openT": 1792078622685,
+    "deadline": 1792165022685,
+    "exit": 177.7260004502304,
+    "closeT": 1792141200000,
+    "reason": "tp",
+    "pnl": 3601.2231516127144
+   }
+  ]
  },
  "log": [
+  {
+   "t": 1792137600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 177.734,
+   "sl": 177.53176576421748,
+   "tp": 178.13846847156506,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792137600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 177.734,
+   "sl": 177.53176576421748,
+   "tp": 178.13846847156506,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
   {
    "t": 1792134000000,
    "pattern": "donchian_up",
@@ -157,7 +195,7 @@
    "entry": 177.3088,
    "sl": 177.06137771699048,
    "tp": 177.80364456601902,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -173,7 +211,7 @@
    "entry": 177.3088,
    "sl": 177.06137771699048,
    "tp": 177.80364456601902,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -189,7 +227,7 @@
    "entry": 177.3088,
    "sl": 177.06137771699048,
    "tp": 177.80364456601902,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -205,7 +243,7 @@
    "entry": 177.20554,
    "sl": 176.9453097748848,
    "tp": 177.7260004502304,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -543,7 +581,7 @@
    ]
   }
  ],
- "lastEvalT": 1792134000000,
+ "lastEvalT": 1792137600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -643,16 +681,16 @@
  },
  "reportDay": "2026-10-16",
  "skipReview": {
-  "n": 26,
+  "n": 29,
   "wouldLose": 23,
-  "wouldWin": 3
+  "wouldWin": 6
  },
  "version": 1,
- "lastRun": 1792140921414,
- "lastBarT": 1792137600000,
- "price": 177.69869,
- "equity": 103410.0499999999,
- "unreal": 3410.049999999899,
+ "lastRun": 1792143190297,
+ "lastBarT": 1792141200000,
+ "price": 177.734,
+ "equity": 103601.22315161272,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -717,7 +755,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2666,
+  "events": 2665,
   "win": [
    {
     "name": "陽の包み足",
@@ -725,7 +763,7 @@
     "key": "against|range",
     "n": 55,
     "winRate": 0.38181818181818183,
-    "avgR": 0.39078136345316805
+    "avgR": 0.39078136345442144
    },
    {
     "name": "MACD売りクロス",
@@ -733,7 +771,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.22933283200850701
+    "avgR": 0.22933283200842947
    },
    {
     "name": "ボリバン下限から回帰",
@@ -741,12 +779,39 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.1701719069060025
+    "avgR": 0.1701719069060017
    }
   ]
  },
- "review": {},
- "lastSignals": [],
+ "review": {
+  "engulf_up": {
+   "n": 1,
+   "wins": 1,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
+  }
+ },
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
