@@ -683,7 +683,7 @@
    ]
   }
  ],
- "lastEvalT": 1792202400000,
+ "lastEvalT": 1792206000000,
  "adaptive": {
   "start": 100000,
   "balance": 98264.93060758803,
@@ -895,7 +895,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98117.430607588
+  "equity": 98139.51060758802
  },
  "reportDay": "2026-10-17",
  "skipReview": {
@@ -904,9 +904,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792209096317,
- "lastBarT": 1792206000000,
- "price": 210.6374,
+ "lastRun": 1792210413069,
+ "lastBarT": 1792209600000,
+ "price": 210.62636,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -973,7 +973,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2691,
+  "events": 2690,
   "win": [
    {
     "name": "陰の包み足",
@@ -981,7 +981,7 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.1691236060605359
+    "avgR": 0.16912360605999446
    }
   ]
  },
