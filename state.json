@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792263600000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 158.02591,
+   "sl": 158.08031870128062,
+   "tp": 157.91709259743882,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792238400000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -712,12 +728,12 @@
    ]
   }
  ],
- "lastEvalT": 1792260000000,
+ "lastEvalT": 1792263600000,
  "reportDay": "2026-10-18",
  "version": 1,
- "lastRun": 1792266869645,
- "lastBarT": 1792263600000,
- "price": 158.02948,
+ "lastRun": 1792268863472,
+ "lastBarT": 1792267200000,
+ "price": 158.02591,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -784,7 +800,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2718,
+  "events": 2719,
   "win": [
    {
     "name": "陽の包み足",
@@ -792,7 +808,7 @@
     "key": "against|range",
     "n": 32,
     "winRate": 0.375,
-    "avgR": 0.3642154571128178
+    "avgR": 0.36421545711281783
    },
    {
     "name": "ボリバン上限から回帰",
@@ -800,7 +816,7 @@
     "key": "against|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.1436647978691976
+    "avgR": 0.14366479786918185
    }
   ]
  },
@@ -813,7 +829,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 99552.74658772345,
@@ -831,6 +857,19 @@
     "barT": 1792180800000,
     "openT": 1792182600079,
     "deadline": 1792269000079
+   },
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 12000,
+    "entry": 158.03091,
+    "sl": 157.9765012987194,
+    "tp": 158.1941361038418,
+    "barT": 1792267200000,
+    "openT": 1792268863472,
+    "deadline": 1792355263472
    }
   ],
   "trades": [
@@ -991,7 +1030,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99653.15658772351
+  "equity": 99582.44658772358
  },
  "skipReview": {
   "n": 37,
