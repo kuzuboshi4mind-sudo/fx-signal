@@ -44,6 +44,53 @@
  },
  "log": [
   {
+   "t": 1792270800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 177.60164,
+   "sl": 177.52701007484163,
+   "tp": 177.75089985031676,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792270800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.60164,
+   "sl": 177.52701007484163,
+   "tp": 177.75089985031676,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792270800000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 177.60164,
+   "sl": 177.52701007484163,
+   "tp": 177.75089985031676,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792267200000,
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
@@ -977,7 +1024,7 @@
    ]
   }
  ],
- "lastEvalT": 1792267200000,
+ "lastEvalT": 1792270800000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1082,9 +1129,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792274162384,
- "lastBarT": 1792270800000,
- "price": 177.61031,
+ "lastRun": 1792275972373,
+ "lastBarT": 1792274400000,
+ "price": 177.60164,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1151,8 +1198,16 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2660,
+  "events": 2657,
   "win": [
+   {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|range",
+    "n": 51,
+    "winRate": 0.3333333333333333,
+    "avgR": 0.26567391416829916
+   },
    {
     "name": "MACD売りクロス",
     "dir": "short",
@@ -1167,7 +1222,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690593104
+    "avgR": 0.17017190690591052
    }
   ]
  },
@@ -1187,7 +1242,34 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

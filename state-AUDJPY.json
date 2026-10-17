@@ -28,6 +28,54 @@
  },
  "log": [
   {
+   "t": 1792270800000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 109.77365,
+   "sl": 109.8662811403558,
+   "tp": 109.5883877192884,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792270800000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 109.77365,
+   "sl": 109.8662811403558,
+   "tp": 109.5883877192884,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792270800000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 109.77365,
+   "sl": 109.8662811403558,
+   "tp": 109.5883877192884,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792267200000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -748,7 +796,7 @@
    ]
   }
  ],
- "lastEvalT": 1792267200000,
+ "lastEvalT": 1792270800000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -853,9 +901,9 @@
   "wouldWin": 10
  },
  "version": 1,
- "lastRun": 1792274162969,
- "lastBarT": 1792270800000,
- "price": 109.7769,
+ "lastRun": 1792275973813,
+ "lastBarT": 1792274400000,
+ "price": 109.77365,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -934,7 +982,35 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

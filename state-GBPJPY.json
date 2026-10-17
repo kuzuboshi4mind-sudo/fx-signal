@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792270800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 210.65256,
+   "sl": 210.57452285083886,
+   "tp": 210.80863429832223,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792260000000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -731,12 +747,27 @@
    ]
   }
  ],
- "lastEvalT": 1792267200000,
+ "lastEvalT": 1792270800000,
  "adaptive": {
   "start": 100000,
-  "balance": 98117.03060758804,
+  "balance": 97531.2848264834,
   "startT": 1791953875407,
   "positions": [
+   {
+    "key": "pullback_up|short|3|1",
+    "dir": "short",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目（逆向き）",
+    "units": 8000,
+    "entry": 210.64256,
+    "sl": 210.72059714916114,
+    "tp": 210.40844855251663,
+    "barT": 1792274400000,
+    "openT": 1792275972828,
+    "deadline": 1792362372828
+   }
+  ],
+  "trades": [
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -748,10 +779,12 @@
     "tp": 210.49917304690618,
     "barT": 1792263600000,
     "openT": 1792265144198,
-    "deadline": 1792351544198
-   }
-  ],
-  "trades": [
+    "deadline": 1792351544198,
+    "exit": 210.70836796872925,
+    "closeT": 1792274400000,
+    "reason": "sl",
+    "pnl": -585.7457811046345
+   },
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -960,7 +993,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98074.40060758824
+  "equity": 97451.28482648348
  },
  "reportDay": "2026-10-18",
  "skipReview": {
@@ -969,9 +1002,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792274162696,
- "lastBarT": 1792270800000,
- "price": 210.63078,
+ "lastRun": 1792275972828,
+ "lastBarT": 1792274400000,
+ "price": 210.65256,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1046,12 +1079,22 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360605555357
+    "avgR": 0.16912360605439716
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
