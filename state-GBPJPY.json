@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1792260000000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 210.63469,
+   "sl": 210.55101203127077,
+   "tp": 210.80204593745844,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792260000000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 210.63469,
+   "sl": 210.55101203127077,
+   "tp": 210.80204593745844,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792252800000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -699,7 +731,7 @@
    ]
   }
  ],
- "lastEvalT": 1792256400000,
+ "lastEvalT": 1792260000000,
  "adaptive": {
   "start": 100000,
   "balance": 98264.93060758803,
@@ -717,6 +749,19 @@
     "barT": 1792177200000,
     "openT": 1792179031323,
     "deadline": 1792265431323
+   },
+   {
+    "key": "engulf_up|short|1.5|1",
+    "dir": "short",
+    "pattern": "engulf_up",
+    "name": "陽の包み足（逆向き）",
+    "units": 7000,
+    "entry": 210.62469000000002,
+    "sl": 210.70836796872925,
+    "tp": 210.49917304690618,
+    "barT": 1792263600000,
+    "openT": 1792265144198,
+    "deadline": 1792351544198
    }
   ],
   "trades": [
@@ -911,7 +956,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98119.090607588
+  "equity": 98052.85060758807
  },
  "reportDay": "2026-10-18",
  "skipReview": {
@@ -920,9 +965,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792263639188,
- "lastBarT": 1792260000000,
- "price": 210.63657,
+ "lastRun": 1792265144198,
+ "lastBarT": 1792263600000,
+ "price": 210.63469,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -997,12 +1042,31 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.1691236060726122
+    "avgR": 0.1691236060752749
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
