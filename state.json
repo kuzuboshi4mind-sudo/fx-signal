@@ -699,9 +699,9 @@
  "lastEvalT": 1792198800000,
  "reportDay": "2026-10-17",
  "version": 1,
- "lastRun": 1792203216107,
+ "lastRun": 1792205431096,
  "lastBarT": 1792202400000,
- "price": 158.02624,
+ "price": 158.02992,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -971,7 +971,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99630.59658772351
+  "equity": 99652.67658772353
  },
  "skipReview": {
   "n": 37,
