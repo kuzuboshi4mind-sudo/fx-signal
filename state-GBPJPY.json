@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1792274400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 210.6323,
+   "sl": 210.54797979006466,
+   "tp": 210.80094041987064,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792274400000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 210.6323,
+   "sl": 210.54797979006466,
+   "tp": 210.80094041987064,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792270800000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -747,7 +779,7 @@
    ]
   }
  ],
- "lastEvalT": 1792270800000,
+ "lastEvalT": 1792274400000,
  "adaptive": {
   "start": 100000,
   "balance": 97531.2848264834,
@@ -765,6 +797,19 @@
     "barT": 1792274400000,
     "openT": 1792275972828,
     "deadline": 1792362372828
+   },
+   {
+    "key": "bb_break_up|short|3|1",
+    "dir": "short",
+    "pattern": "bb_break_up",
+    "name": "ボリバン上抜けブレイク（逆向き）",
+    "units": 7000,
+    "entry": 210.6223,
+    "sl": 210.70662020993532,
+    "tp": 210.369339370194,
+    "barT": 1792278000000,
+    "openT": 1792279457579,
+    "deadline": 1792365857579
    }
   ],
   "trades": [
@@ -993,7 +1038,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97501.04482648335
+  "equity": 97543.3648264836
  },
  "reportDay": "2026-10-18",
  "skipReview": {
@@ -1002,9 +1047,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792277683872,
- "lastBarT": 1792274400000,
- "price": 210.64634,
+ "lastRun": 1792279457579,
+ "lastBarT": 1792278000000,
+ "price": 210.6323,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1079,12 +1124,31 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360605439716
+    "avgR": 0.16912360604784685
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
