@@ -911,7 +911,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98124.21060758804
+  "equity": 98119.090607588
  },
  "reportDay": "2026-10-18",
  "skipReview": {
@@ -920,9 +920,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792261821611,
+ "lastRun": 1792263639188,
  "lastBarT": 1792260000000,
- "price": 210.63401,
+ "price": 210.63657,
  "equity": 100000,
  "unreal": 0,
  "config": {
