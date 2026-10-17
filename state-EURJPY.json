@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792249200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.60945,
+   "sl": 177.52238724697887,
+   "tp": 177.78357550604233,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792245600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -881,7 +897,7 @@
    ]
   }
  ],
- "lastEvalT": 1792245600000,
+ "lastEvalT": 1792249200000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -986,9 +1002,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792251906808,
- "lastBarT": 1792249200000,
- "price": 177.60807,
+ "lastRun": 1792253192571,
+ "lastBarT": 1792252800000,
+ "price": 177.60945,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1063,7 +1079,7 @@
     "key": "against|trend",
     "n": 36,
     "winRate": 0.3888888888888889,
-    "avgR": 0.20358368110233677
+    "avgR": 0.20369205327600096
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1071,7 +1087,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690617223
+    "avgR": 0.1701719069061974
    }
   ]
  },
@@ -1091,7 +1107,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
