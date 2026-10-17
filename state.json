@@ -811,9 +811,9 @@
  "lastEvalT": 1792274400000,
  "reportDay": "2026-10-18",
  "version": 1,
- "lastRun": 1792279455982,
+ "lastRun": 1792281173151,
  "lastBarT": 1792278000000,
- "price": 158.02724,
+ "price": 158.04792,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -880,7 +880,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2710,
+  "events": 2711,
   "win": [
    {
     "name": "陽の包み足",
@@ -909,29 +909,10 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 99651.2065877235,
+  "balance": 99029.209630597,
   "startT": 1791916832223,
   "positions": [
    {
@@ -946,7 +927,9 @@
     "barT": 1792267200000,
     "openT": 1792268863472,
     "deadline": 1792355263472
-   },
+   }
+  ],
+  "trades": [
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -958,10 +941,12 @@
     "tp": 158.1381761595211,
     "barT": 1792270800000,
     "openT": 1792272422237,
-    "deadline": 1792358822237
-   }
-  ],
-  "trades": [
+    "deadline": 1792358822237,
+    "exit": 157.98267692023944,
+    "closeT": 1792278000000,
+    "reason": "sl",
+    "pnl": -621.9969571264983
+   },
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -1136,7 +1121,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99519.92658772378
+  "equity": 99233.329630597
  },
  "skipReview": {
   "n": 37,
