@@ -683,7 +683,7 @@
    ]
   }
  ],
- "lastEvalT": 1792224000000,
+ "lastEvalT": 1792227600000,
  "adaptive": {
   "start": 100000,
   "balance": 98264.93060758803,
@@ -895,7 +895,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98120.37060758802
+  "equity": 98124.91060758804
  },
  "reportDay": "2026-10-17",
  "skipReview": {
@@ -904,9 +904,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792231090557,
- "lastBarT": 1792227600000,
- "price": 210.63593,
+ "lastRun": 1792232863062,
+ "lastBarT": 1792231200000,
+ "price": 210.63366,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -981,7 +981,7 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360606181476
+    "avgR": 0.1691236060626706
    }
   ]
  },
