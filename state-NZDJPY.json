@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792245600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 89.31641,
+   "sl": 89.26750408400235,
+   "tp": 89.4142218319953,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792209600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -628,7 +644,7 @@
    ]
   }
  ],
- "lastEvalT": 1792242000000,
+ "lastEvalT": 1792245600000,
  "adaptive": {
   "start": 100000,
   "balance": 100129.22792852261,
@@ -777,16 +793,16 @@
   "pickTried": "2026-10-14",
   "equity": 100129.22792852261
  },
- "reportDay": "2026-10-17",
+ "reportDay": "2026-10-18",
  "skipReview": {
   "n": 31,
   "wouldLose": 18,
   "wouldWin": 13
  },
  "version": 1,
- "lastRun": 1792248298708,
- "lastBarT": 1792245600000,
- "price": 89.31532,
+ "lastRun": 1792249635023,
+ "lastBarT": 1792249200000,
+ "price": 89.31641,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -853,7 +869,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2638,
+  "events": 2639,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -861,7 +877,7 @@
     "key": "*",
     "n": 45,
     "winRate": 0.37777777777777777,
-    "avgR": 0.21255624104029858
+    "avgR": 0.2125562410403013
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -869,7 +885,7 @@
     "key": "with|range",
     "n": 49,
     "winRate": 0.3877551020408163,
-    "avgR": 0.13454721715575105
+    "avgR": 0.13454721716145224
    },
    {
     "name": "20本高値ブレイク",
@@ -890,7 +906,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

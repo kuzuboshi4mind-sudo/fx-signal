@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792245600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.60545,
+   "sl": 177.51543703520798,
+   "tp": 177.785475929584,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792242000000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -865,7 +881,7 @@
    ]
   }
  ],
- "lastEvalT": 1792242000000,
+ "lastEvalT": 1792245600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -963,16 +979,16 @@
   "pickTried": "2026-10-14",
   "equity": 98089.25747528837
  },
- "reportDay": "2026-10-17",
+ "reportDay": "2026-10-18",
  "skipReview": {
   "n": 35,
   "wouldLose": 28,
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792248297854,
- "lastBarT": 1792245600000,
- "price": 177.60567,
+ "lastRun": 1792249633689,
+ "lastBarT": 1792249200000,
+ "price": 177.60545,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1039,15 +1055,15 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2659,
+  "events": 2657,
   "win": [
    {
     "name": "MACD売りクロス",
     "dir": "short",
     "key": "against|trend",
-    "n": 35,
-    "winRate": 0.4,
-    "avgR": 0.22933283202273066
+    "n": 36,
+    "winRate": 0.3888888888888889,
+    "avgR": 0.20392994340562917
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1055,7 +1071,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.17017190690614717
+    "avgR": 0.17017190690617223
    }
   ]
  },
@@ -1075,7 +1091,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
