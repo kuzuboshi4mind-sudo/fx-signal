@@ -35,7 +35,7 @@
    "entry": 109.86334,
    "sl": 109.77587261807837,
    "tp": 110.03827476384325,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -51,7 +51,7 @@
    "entry": 109.86334,
    "sl": 109.77587261807837,
    "tp": 110.03827476384325,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -115,7 +115,7 @@
    "entry": 109.78476,
    "sl": 109.87231115105128,
    "tp": 109.60965769789746,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -131,7 +131,7 @@
    "entry": 109.78048,
    "sl": 109.88092116386665,
    "tp": 109.5795976722667,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -147,7 +147,7 @@
    "entry": 109.78076,
    "sl": 109.88953040306427,
    "tp": 109.56321919387145,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -195,7 +195,7 @@
    "entry": 109.71599,
    "sl": 109.89666386644282,
    "tp": 109.35464226711437,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -211,7 +211,7 @@
    "entry": 109.71599,
    "sl": 109.89666386644282,
    "tp": 109.35464226711437,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -848,14 +848,14 @@
  },
  "reportDay": "2026-10-18",
  "skipReview": {
-  "n": 31,
-  "wouldLose": 21,
+  "n": 38,
+  "wouldLose": 28,
   "wouldWin": 10
  },
  "version": 1,
- "lastRun": 1792272423628,
+ "lastRun": 1792274162969,
  "lastBarT": 1792270800000,
- "price": 109.86334,
+ "price": 109.7769,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -922,7 +922,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2781,
+  "events": 2785,
   "win": []
  },
  "review": {
@@ -934,26 +934,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
