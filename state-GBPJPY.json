@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1792278000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 210.63336,
+   "sl": 210.71868090922567,
+   "tp": 210.4627181815487,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792278000000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 210.63336,
+   "sl": 210.71868090922567,
+   "tp": 210.4627181815487,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792274400000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -779,7 +811,7 @@
    ]
   }
  ],
- "lastEvalT": 1792274400000,
+ "lastEvalT": 1792278000000,
  "adaptive": {
   "start": 100000,
   "balance": 97531.2848264834,
@@ -1038,7 +1070,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98079.16482648357
+  "equity": 97527.46482648324
  },
  "reportDay": "2026-10-18",
  "skipReview": {
@@ -1047,9 +1079,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792281174373,
- "lastBarT": 1792278000000,
- "price": 210.59658,
+ "lastRun": 1792284058145,
+ "lastBarT": 1792281600000,
+ "price": 210.63336,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1116,7 +1148,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2685,
+  "events": 2689,
   "win": [
    {
     "name": "陰の包み足",
@@ -1124,12 +1156,31 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360604784685
+    "avgR": 0.16912360604347315
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
