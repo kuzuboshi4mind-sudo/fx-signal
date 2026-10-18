@@ -6,7 +6,18 @@
   "balance": 104898.93194490719,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 16000,
+   "entry": 158.05308,
+   "sl": 157.99869891519086,
+   "tp": 158.1468421696183,
+   "barT": 1792324800000,
+   "openT": 1792326797228,
+   "deadline": 1792413197228
+  },
   "trades": [
    {
     "dir": "long",
@@ -43,6 +54,66 @@
   ]
  },
  "log": [
+  {
+   "t": 1792321200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 158.04808,
+   "sl": 157.99869891519086,
+   "tp": 158.1468421696183,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1792321200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 158.04808,
+   "sl": 157.99869891519086,
+   "tp": 158.1468421696183,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792321200000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 158.04808,
+   "sl": 157.99869891519086,
+   "tp": 158.1468421696183,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792321200000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 158.04808,
+   "sl": 157.99869891519086,
+   "tp": 158.1468421696183,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
   {
    "t": 1792317600000,
    "pattern": "pullback_dn",
@@ -964,14 +1035,14 @@
    ]
   }
  ],
- "lastEvalT": 1792317600000,
+ "lastEvalT": 1792321200000,
  "reportDay": "2026-10-18",
  "version": 1,
- "lastRun": 1792324579525,
- "lastBarT": 1792321200000,
- "price": 158.05109,
- "equity": 104898.93194490719,
- "unreal": 0,
+ "lastRun": 1792326797228,
+ "lastBarT": 1792324800000,
+ "price": 158.04808,
+ "equity": 104818.93194490726,
+ "unreal": -79.99999999992724,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -1036,7 +1107,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2716,
+  "events": 2715,
   "win": [
    {
     "name": "陽の包み足",
@@ -1044,7 +1115,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.35294117647058826,
-    "avgR": 0.3148578354751248
+    "avgR": 0.31485783547512475
    },
    {
     "name": "ボリバン上限から回帰",
@@ -1052,7 +1123,7 @@
     "key": "against|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.1436647978691564
+    "avgR": 0.1436647978691597
    }
   ]
  },
@@ -1072,7 +1143,41 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100235.76085733072,

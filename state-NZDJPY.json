@@ -28,6 +28,70 @@
  },
  "log": [
   {
+   "t": 1792321200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 89.32575,
+   "sl": 89.29043990970357,
+   "tp": 89.39637018059287,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792321200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 89.32575,
+   "sl": 89.29043990970357,
+   "tp": 89.39637018059287,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792321200000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 89.32575,
+   "sl": 89.29043990970357,
+   "tp": 89.39637018059287,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792321200000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 89.32575,
+   "sl": 89.29043990970357,
+   "tp": 89.39637018059287,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792314000000,
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
@@ -307,7 +371,7 @@
    "entry": 89.40443,
    "sl": 89.54057932338793,
    "tp": 89.13213135322417,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -820,7 +884,7 @@
    ]
   }
  ],
- "lastEvalT": 1792317600000,
+ "lastEvalT": 1792321200000,
  "adaptive": {
   "start": 100000,
   "balance": 100129.22792852261,
@@ -976,9 +1040,9 @@
   "wouldWin": 15
  },
  "version": 1,
- "lastRun": 1792324580998,
- "lastBarT": 1792321200000,
- "price": 89.32597,
+ "lastRun": 1792326799642,
+ "lastBarT": 1792324800000,
+ "price": 89.32575,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -1045,7 +1109,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2638,
+  "events": 2637,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -1053,7 +1117,7 @@
     "key": "*",
     "n": 45,
     "winRate": 0.37777777777777777,
-    "avgR": 0.21255624104025717
+    "avgR": 0.21255624104026524
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1061,7 +1125,7 @@
     "key": "with|range",
     "n": 49,
     "winRate": 0.3877551020408163,
-    "avgR": 0.13454721706885286
+    "avgR": 0.13454721708581494
    },
    {
     "name": "20本高値ブレイク",
@@ -1082,7 +1146,44 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
