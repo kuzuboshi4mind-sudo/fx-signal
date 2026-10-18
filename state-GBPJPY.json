@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792288800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 210.62757,
+   "sl": 210.54786709272275,
+   "tp": 210.7869758145545,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792285200000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -859,7 +875,7 @@
    ]
   }
  ],
- "lastEvalT": 1792285200000,
+ "lastEvalT": 1792288800000,
  "adaptive": {
   "start": 100000,
   "balance": 97531.2848264834,
@@ -1118,7 +1134,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97530.46482648334
+  "equity": 97614.31482648352
  },
  "reportDay": "2026-10-18",
  "skipReview": {
@@ -1127,9 +1143,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792291786426,
- "lastBarT": 1792288800000,
- "price": 210.63316,
+ "lastRun": 1792293143698,
+ "lastBarT": 1792292400000,
+ "price": 210.62757,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1204,12 +1220,22 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.1691236060421879
+    "avgR": 0.1691236060421714
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
