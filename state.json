@@ -443,7 +443,7 @@
    "entry": 158.05722,
    "sl": 158.2551055992978,
    "tp": 157.66144880140445,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1075,7 +1075,7 @@
  "lastEvalT": 1792177200000,
  "reportDay": "2026-10-19",
  "version": 1,
- "lastRun": 1792341273187,
+ "lastRun": 1792342856498,
  "lastBarT": 1792180800000,
  "price": 157.99549,
  "equity": 103977.49194490712,
