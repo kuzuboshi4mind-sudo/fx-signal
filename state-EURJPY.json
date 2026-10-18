@@ -51,7 +51,7 @@
    "entry": 176.73249,
    "sl": 176.54318078178156,
    "tp": 177.11110843643692,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1347,14 +1347,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 66,
+  "n": 67,
   "wouldLose": 57,
-  "wouldWin": 9
+  "wouldWin": 10
  },
  "version": 1,
- "lastRun": 1792358847933,
+ "lastRun": 1792360621054,
  "lastBarT": 1792357200000,
- "price": 176.73249,
+ "price": 176.72857,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1489,17 +1489,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
