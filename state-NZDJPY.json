@@ -976,9 +976,9 @@
   "wouldWin": 13
  },
  "version": 1,
- "lastRun": 1792319280266,
+ "lastRun": 1792321031136,
  "lastBarT": 1792317600000,
- "price": 89.28059,
+ "price": 89.2924,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -1082,17 +1082,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
