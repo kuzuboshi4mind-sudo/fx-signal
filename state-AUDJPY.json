@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792299600000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 109.81896,
+   "sl": 109.90241177565352,
+   "tp": 109.65205644869299,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792296000000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -892,7 +908,7 @@
    ]
   }
  ],
- "lastEvalT": 1792296000000,
+ "lastEvalT": 1792299600000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -997,9 +1013,9 @@
   "wouldWin": 10
  },
  "version": 1,
- "lastRun": 1792302455201,
- "lastBarT": 1792299600000,
- "price": 109.76925,
+ "lastRun": 1792303728930,
+ "lastBarT": 1792303200000,
+ "price": 109.81896,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -1078,7 +1094,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
