@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1792314000000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 210.54782,
+   "sl": 210.61124751975257,
+   "tp": 210.4209649604949,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792314000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 210.54782,
+   "sl": 210.61124751975257,
+   "tp": 210.4209649604949,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792310400000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -50,7 +82,7 @@
    "entry": 210.59982,
    "sl": 210.53478876913925,
    "tp": 210.72988246172144,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -66,7 +98,7 @@
    "entry": 210.62757,
    "sl": 210.54786709272275,
    "tp": 210.7869758145545,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -82,7 +114,7 @@
    "entry": 210.63229,
    "sl": 210.54844686908606,
    "tp": 210.79997626182794,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -98,7 +130,7 @@
    "entry": 210.63214,
    "sl": 210.54731201286188,
    "tp": 210.80179597427622,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -114,7 +146,7 @@
    "entry": 210.63214,
    "sl": 210.54731201286188,
    "tp": 210.80179597427622,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -162,7 +194,7 @@
    "entry": 210.6323,
    "sl": 210.54797979006466,
    "tp": 210.80094041987064,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -178,7 +210,7 @@
    "entry": 210.6323,
    "sl": 210.54797979006466,
    "tp": 210.80094041987064,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -210,7 +242,7 @@
    "entry": 210.63469,
    "sl": 210.55101203127077,
    "tp": 210.80204593745844,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -226,7 +258,7 @@
    "entry": 210.63469,
    "sl": 210.55101203127077,
    "tp": 210.80204593745844,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -242,7 +274,7 @@
    "entry": 210.63614,
    "sl": 210.54368673449156,
    "tp": 210.82104653101692,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -923,7 +955,7 @@
    ]
   }
  ],
- "lastEvalT": 1792310400000,
+ "lastEvalT": 1792314000000,
  "adaptive": {
   "start": 100000,
   "balance": 97531.2848264834,
@@ -1182,18 +1214,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98208.9148264834
+  "equity": 98810.56482648337
  },
  "reportDay": "2026-10-18",
  "skipReview": {
-  "n": 39,
-  "wouldLose": 23,
+  "n": 49,
+  "wouldLose": 33,
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792317503808,
- "lastBarT": 1792314000000,
- "price": 210.58793,
+ "lastRun": 1792319279419,
+ "lastBarT": 1792317600000,
+ "price": 210.54782,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1260,7 +1292,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2684,
+  "events": 2688,
   "win": [
    {
     "name": "陰の包み足",
@@ -1268,12 +1300,31 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.1691236060410274
+    "avgR": 0.16912360604145302
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

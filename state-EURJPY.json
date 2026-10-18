@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792314000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 177.52707,
+   "sl": 177.59082354776695,
+   "tp": 177.39956290446617,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792303200000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -51,7 +67,7 @@
    "entry": 177.57578,
    "sl": 177.50988823619826,
    "tp": 177.7075635276035,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -67,7 +83,7 @@
    "entry": 177.57578,
    "sl": 177.50988823619826,
    "tp": 177.7075635276035,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -99,7 +115,7 @@
    "entry": 177.57903,
    "sl": 177.50799559790593,
    "tp": 177.72109880418807,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -194,7 +210,7 @@
    "entry": 177.60164,
    "sl": 177.52701007484163,
    "tp": 177.75089985031676,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -210,7 +226,7 @@
    "entry": 177.60164,
    "sl": 177.52701007484163,
    "tp": 177.75089985031676,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -226,7 +242,7 @@
    "entry": 177.60164,
    "sl": 177.52701007484163,
    "tp": 177.75089985031676,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -257,7 +273,7 @@
    "entry": 177.60704,
    "sl": 177.52931813413585,
    "tp": 177.7624837317283,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -273,7 +289,7 @@
    "entry": 177.61035,
    "sl": 177.53053337522323,
    "tp": 177.76998324955358,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -289,7 +305,7 @@
    "entry": 177.60827,
    "sl": 177.5262559425481,
    "tp": 177.77229811490383,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -305,7 +321,7 @@
    "entry": 177.60607,
    "sl": 177.52167101505177,
    "tp": 177.7748679698964,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -321,7 +337,7 @@
    "entry": 177.60945,
    "sl": 177.52238724697887,
    "tp": 177.78357550604233,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -337,7 +353,7 @@
    "entry": 177.60545,
    "sl": 177.51543703520798,
    "tp": 177.785475929584,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -353,7 +369,7 @@
    "entry": 177.61061,
    "sl": 177.51746680714706,
    "tp": 177.79689638570588,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -369,7 +385,7 @@
    "entry": 177.60706,
    "sl": 177.5071737526676,
    "tp": 177.8068324946648,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1167,7 +1183,7 @@
    ]
   }
  ],
- "lastEvalT": 1792310400000,
+ "lastEvalT": 1792314000000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1267,14 +1283,14 @@
  },
  "reportDay": "2026-10-18",
  "skipReview": {
-  "n": 38,
-  "wouldLose": 31,
+  "n": 52,
+  "wouldLose": 45,
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792317503421,
- "lastBarT": 1792314000000,
- "price": 177.55809,
+ "lastRun": 1792319279048,
+ "lastBarT": 1792317600000,
+ "price": 177.52707,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1341,7 +1357,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2660,
+  "events": 2670,
   "win": [
    {
     "name": "陽の包み足",
@@ -1349,7 +1365,7 @@
     "key": "against|range",
     "n": 51,
     "winRate": 0.3333333333333333,
-    "avgR": 0.26909879691346905
+    "avgR": 0.26909879687688854
    },
    {
     "name": "MACD売りクロス",
@@ -1357,15 +1373,7 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.37142857142857144,
-    "avgR": 0.15275342425241284
-   },
-   {
-    "name": "ボリバン下限から回帰",
-    "dir": "long",
-    "key": "with|range",
-    "n": 24,
-    "winRate": 0.3333333333333333,
-    "avgR": 0.11973981278533304
+    "avgR": 0.1527534242524129
    },
    {
     "name": "20本高値ブレイク",
@@ -1393,7 +1401,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

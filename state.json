@@ -39,6 +39,38 @@
  },
  "log": [
   {
+   "t": 1792314000000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 157.9677,
+   "sl": 158.00871149480827,
+   "tp": 157.8856770103835,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792314000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 157.9677,
+   "sl": 158.00871149480827,
+   "tp": 157.8856770103835,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792310400000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -911,14 +943,14 @@
    ]
   }
  ],
- "lastEvalT": 1792310400000,
+ "lastEvalT": 1792314000000,
  "reportDay": "2026-10-18",
  "version": 1,
- "lastRun": 1792317502965,
- "lastBarT": 1792314000000,
- "price": 157.9995,
- "equity": 103923.24966228422,
- "unreal": 202.24000000007436,
+ "lastRun": 1792319278265,
+ "lastBarT": 1792317600000,
+ "price": 157.9677,
+ "equity": 103414.44966228414,
+ "unreal": -306.5599999999904,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -999,7 +1031,7 @@
     "key": "against|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.14366479786915573
+    "avgR": 0.14366479786915548
    }
   ]
  },
@@ -1012,12 +1044,58 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 97159.8987467117,
   "startT": 1791916832223,
-  "positions": [],
+  "positions": [
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 15000,
+    "entry": 157.9727,
+    "sl": 157.93168850519174,
+    "tp": 158.09573448442475,
+    "barT": 1792317600000,
+    "openT": 1792319278265,
+    "deadline": 1792405678265
+   },
+   {
+    "key": "pullback_dn|long|2|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 15000,
+    "entry": 157.9727,
+    "sl": 157.93168850519174,
+    "tp": 158.05472298961652,
+    "barT": 1792317600000,
+    "openT": 1792319278265,
+    "deadline": 1792405678265
+   }
+  ],
   "trades": [
    {
     "key": "pullback_dn|long|2|1",
@@ -1261,7 +1339,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97159.8987467117
+  "equity": 97009.89874671183
  },
  "skipReview": {
   "n": 39,
