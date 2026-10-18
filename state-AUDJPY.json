@@ -988,7 +988,7 @@
    ]
   }
  ],
- "lastEvalT": 1792324800000,
+ "lastEvalT": 1792177200000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1093,9 +1093,9 @@
   "wouldWin": 10
  },
  "version": 1,
- "lastRun": 1792328891673,
- "lastBarT": 1792328400000,
- "price": 109.7928,
+ "lastRun": 1792331177072,
+ "lastBarT": 1792180800000,
+ "price": 109.74092,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -1161,9 +1161,50 @@
   }
  },
  "learned": {
-  "bars": 5000,
-  "events": 2783,
-  "win": []
+  "bars": 3568,
+  "events": 1877,
+  "win": [
+   {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "against|range",
+    "n": 23,
+    "winRate": 0.5217391304347826,
+    "avgR": 0.5401632157400573
+   },
+   {
+    "name": "ゴールデンクロス(EMA20/50)",
+    "dir": "long",
+    "key": "*",
+    "n": 25,
+    "winRate": 0.48,
+    "avgR": 0.4181819985526049
+   },
+   {
+    "name": "ボリバン上抜けブレイク",
+    "dir": "long",
+    "key": "with|range",
+    "n": 60,
+    "winRate": 0.4166666666666667,
+    "avgR": 0.34077816032749464
+   },
+   {
+    "name": "上昇トレンドの押し目",
+    "dir": "long",
+    "key": "with|trend",
+    "n": 32,
+    "winRate": 0.4375,
+    "avgR": 0.36719640252413077
+   },
+   {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 36,
+    "winRate": 0.3888888888888889,
+    "avgR": 0.2406377798705475
+   }
+  ]
  },
  "review": {
   "donchian_up": {
@@ -1174,17 +1215,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

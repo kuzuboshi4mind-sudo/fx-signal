@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792177200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.58109,
+   "sl": 177.3830300726878,
+   "tp": 177.97720985462436,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792321200000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -1215,7 +1231,7 @@
    ]
   }
  ],
- "lastEvalT": 1792324800000,
+ "lastEvalT": 1792177200000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1320,9 +1336,9 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792328890640,
- "lastBarT": 1792328400000,
- "price": 177.62358,
+ "lastRun": 1792331176575,
+ "lastBarT": 1792180800000,
+ "price": 177.58109,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1388,32 +1404,48 @@
   }
  },
  "learned": {
-  "bars": 5000,
-  "events": 2673,
+  "bars": 3568,
+  "events": 1823,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 51,
-    "winRate": 0.3333333333333333,
-    "avgR": 0.26909879652965407
+    "n": 34,
+    "winRate": 0.5588235294117647,
+    "avgR": 0.6593303909060428
    },
    {
-    "name": "MACD売りクロス",
+    "name": "ボリバン下抜けブレイク",
     "dir": "short",
-    "key": "against|trend",
-    "n": 35,
-    "winRate": 0.37142857142857144,
-    "avgR": 0.15275342425241303
+    "key": "against|range",
+    "n": 23,
+    "winRate": 0.4782608695652174,
+    "avgR": 0.4131650548931244
    },
    {
-    "name": "20本高値ブレイク",
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "with|trend",
+    "n": 44,
+    "winRate": 0.38636363636363635,
+    "avgR": 0.23845196948239386
+   },
+   {
+    "name": "ボリバン下限から回帰",
+    "dir": "long",
+    "key": "with|range",
+    "n": 19,
+    "winRate": 0.3684210526315789,
+    "avgR": 0.16679430979708745
+   },
+   {
+    "name": "MACD買いクロス",
     "dir": "long",
     "key": "against|range",
-    "n": 25,
-    "winRate": 0.32,
-    "avgR": 0.11722218944391673
+    "n": 18,
+    "winRate": 0.3333333333333333,
+    "avgR": 0.11573349227088024
    }
   ]
  },
@@ -1433,7 +1465,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
