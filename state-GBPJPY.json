@@ -11,6 +11,38 @@
  },
  "log": [
   {
+   "t": 1792281600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 210.63214,
+   "sl": 210.54731201286188,
+   "tp": 210.80179597427622,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792281600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 210.63214,
+   "sl": 210.54731201286188,
+   "tp": 210.80179597427622,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792278000000,
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
@@ -811,7 +843,7 @@
    ]
   }
  ],
- "lastEvalT": 1792278000000,
+ "lastEvalT": 1792281600000,
  "adaptive": {
   "start": 100000,
   "balance": 97531.2848264834,
@@ -1070,7 +1102,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97527.46482648324
+  "equity": 97545.76482648352
  },
  "reportDay": "2026-10-18",
  "skipReview": {
@@ -1079,9 +1111,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792284058145,
- "lastBarT": 1792281600000,
- "price": 210.63336,
+ "lastRun": 1792286426153,
+ "lastBarT": 1792285200000,
+ "price": 210.63214,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1148,7 +1180,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2689,
+  "events": 2688,
   "win": [
    {
     "name": "陰の包み足",
@@ -1156,15 +1188,15 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360604347315
+    "avgR": 0.16912360604147114
    }
   ]
  },
  "review": {},
  "lastSignals": [
   {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
    "blocked": true,
    "reasons": [
     "過去の負けパターン",
@@ -1172,11 +1204,11 @@
    ]
   },
   {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
    "blocked": true,
    "reasons": [
-    "過去の負けパターン",
+    "優位性なし",
     "勝率が基準未満"
    ]
   }

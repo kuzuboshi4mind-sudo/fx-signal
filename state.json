@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792281600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 158.02899,
+   "sl": 157.97820736877756,
+   "tp": 158.13055526244486,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792278000000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -840,12 +856,12 @@
    ]
   }
  ],
- "lastEvalT": 1792278000000,
+ "lastEvalT": 1792281600000,
  "reportDay": "2026-10-18",
  "version": 1,
- "lastRun": 1792284057223,
- "lastBarT": 1792281600000,
- "price": 158.02607,
+ "lastRun": 1792286425121,
+ "lastBarT": 1792285200000,
+ "price": 158.02899,
  "equity": 103721.00966228414,
  "unreal": 0,
  "config": {
@@ -928,7 +944,7 @@
     "key": "against|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.14366479786917094
+    "avgR": 0.14366479786916983
    }
   ]
  },
@@ -943,17 +959,8 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
    "blocked": true,
    "reasons": [
     "過去の負けパターン",
@@ -1202,7 +1209,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98256.30521522983
+  "equity": 98326.38521522956
  },
  "skipReview": {
   "n": 38,
