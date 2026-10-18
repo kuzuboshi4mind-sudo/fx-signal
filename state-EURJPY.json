@@ -51,7 +51,7 @@
    "entry": 177.58109,
    "sl": 177.3830300726878,
    "tp": 177.97720985462436,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -577,7 +577,7 @@
    "entry": 177.561,
    "sl": 177.36293627938977,
    "tp": 177.9571274412205,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1336,7 +1336,7 @@
   "wouldWin": 7
  },
  "version": 1,
- "lastRun": 1792348260870,
+ "lastRun": 1792350004556,
  "lastBarT": 1792180800000,
  "price": 177.58109,
  "equity": 101655.59361592878,

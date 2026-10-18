@@ -35,7 +35,7 @@
    "entry": 89.31504,
    "sl": 89.18730952413274,
    "tp": 89.5705009517345,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -51,7 +51,7 @@
    "entry": 89.31504,
    "sl": 89.18730952413274,
    "tp": 89.5705009517345,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -354,7 +354,7 @@
    "entry": 89.30622,
    "sl": 89.1784760036188,
    "tp": 89.5617079927624,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -370,7 +370,7 @@
    "entry": 89.30622,
    "sl": 89.1784760036188,
    "tp": 89.5617079927624,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1071,7 +1071,7 @@
   "wouldWin": 15
  },
  "version": 1,
- "lastRun": 1792348261695,
+ "lastRun": 1792350005464,
  "lastBarT": 1792180800000,
  "price": 89.31504,
  "equity": 103353.15021702921,

@@ -67,7 +67,7 @@
    "entry": 157.99549,
    "sl": 158.1824242848438,
    "tp": 157.62162143031236,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -427,7 +427,7 @@
    "entry": 157.99101,
    "sl": 158.17794294021084,
    "tp": 157.6171441195783,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1075,7 +1075,7 @@
  "lastEvalT": 1792177200000,
  "reportDay": "2026-10-19",
  "version": 1,
- "lastRun": 1792348260179,
+ "lastRun": 1792350004195,
  "lastBarT": 1792180800000,
  "price": 157.99549,
  "equity": 103977.49194490712,
