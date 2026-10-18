@@ -18,7 +18,7 @@
    "entry": 210.54782,
    "sl": 210.61124751975257,
    "tp": 210.4209649604949,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -34,7 +34,7 @@
    "entry": 210.54782,
    "sl": 210.61124751975257,
    "tp": 210.4209649604949,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -955,7 +955,7 @@
    ]
   }
  ],
- "lastEvalT": 1792314000000,
+ "lastEvalT": 1792317600000,
  "adaptive": {
   "start": 100000,
   "balance": 97531.2848264834,
@@ -1214,18 +1214,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98308.9648264836
+  "equity": 97777.51482648331
  },
  "reportDay": "2026-10-18",
  "skipReview": {
-  "n": 50,
-  "wouldLose": 34,
+  "n": 52,
+  "wouldLose": 36,
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792321030116,
- "lastBarT": 1792317600000,
- "price": 210.58126,
+ "lastRun": 1792322843678,
+ "lastBarT": 1792321200000,
+ "price": 210.61669,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1300,7 +1300,7 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360604145302
+    "avgR": 0.16912360604111462
    }
   ]
  },

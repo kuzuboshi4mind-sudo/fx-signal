@@ -39,6 +39,22 @@
  },
  "log": [
   {
+   "t": 1792317600000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 158.01864,
+   "sl": 158.06219424517909,
+   "tp": 157.93153150964181,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792314000000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -943,14 +959,14 @@
    ]
   }
  ],
- "lastEvalT": 1792314000000,
+ "lastEvalT": 1792317600000,
  "reportDay": "2026-10-18",
  "version": 1,
- "lastRun": 1792321028978,
- "lastBarT": 1792317600000,
- "price": 157.99011,
- "equity": 103773.00966228382,
- "unreal": 51.99999999967986,
+ "lastRun": 1792322842606,
+ "lastBarT": 1792321200000,
+ "price": 158.01864,
+ "equity": 104229.4896622841,
+ "unreal": 508.4799999999632,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -1015,7 +1031,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2706,
+  "events": 2705,
   "win": [
    {
     "name": "陽の包み足",
@@ -1023,7 +1039,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.35294117647058826,
-    "avgR": 0.31485783547512486
+    "avgR": 0.3148578354751248
    },
    {
     "name": "ボリバン上限から回帰",
@@ -1031,7 +1047,7 @@
     "key": "against|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.14366479786915548
+    "avgR": 0.1436647978691564
    }
   ]
  },
@@ -1044,7 +1060,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 97159.8987467117,
@@ -1320,7 +1346,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97682.19874671122
+  "equity": 98538.09874671175
  },
  "skipReview": {
   "n": 41,
