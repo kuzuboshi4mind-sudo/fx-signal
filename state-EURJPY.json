@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792180800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 176.73249,
+   "sl": 176.54318078178156,
+   "tp": 177.11110843643692,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792177200000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -67,7 +83,7 @@
    "entry": 177.61209,
    "sl": 177.54253474707852,
    "tp": 177.75120050584295,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -83,7 +99,7 @@
    "entry": 177.59325,
    "sl": 177.52826741993073,
    "tp": 177.72321516013858,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -305,7 +321,7 @@
    "entry": 177.59838,
    "sl": 177.6740953040167,
    "tp": 177.44694939196657,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -449,7 +465,7 @@
    "entry": 177.60681,
    "sl": 177.5031448105651,
    "tp": 177.81414037886978,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -465,7 +481,7 @@
    "entry": 177.61182,
    "sl": 177.50395287291627,
    "tp": 177.82755425416747,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -481,7 +497,7 @@
    "entry": 177.6069,
    "sl": 177.49451309390983,
    "tp": 177.83167381218033,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -497,7 +513,7 @@
    "entry": 177.61184,
    "sl": 177.47798319057287,
    "tp": 177.8795536188543,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -513,7 +529,7 @@
    "entry": 177.59634,
    "sl": 177.45231056421468,
    "tp": 177.88439887157062,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -529,7 +545,7 @@
    "entry": 177.60688,
    "sl": 177.76198603203503,
    "tp": 177.2966679359299,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -545,7 +561,7 @@
    "entry": 177.60969,
    "sl": 177.44699196550073,
    "tp": 177.93508606899857,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1231,7 +1247,7 @@
    ]
   }
  ],
- "lastEvalT": 1792177200000,
+ "lastEvalT": 1792180800000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1331,14 +1347,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 56,
-  "wouldLose": 49,
-  "wouldWin": 7
+  "n": 66,
+  "wouldLose": 57,
+  "wouldWin": 9
  },
  "version": 1,
- "lastRun": 1792357067590,
- "lastBarT": 1792180800000,
- "price": 177.58109,
+ "lastRun": 1792358847933,
+ "lastBarT": 1792357200000,
+ "price": 176.73249,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1405,7 +1421,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1820,
+  "events": 1829,
   "win": [
    {
     "name": "陽の包み足",
@@ -1429,7 +1445,7 @@
     "key": "with|trend",
     "n": 44,
     "winRate": 0.38636363636363635,
-    "avgR": 0.23845196949199335
+    "avgR": 0.23845196949134434
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1473,7 +1489,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

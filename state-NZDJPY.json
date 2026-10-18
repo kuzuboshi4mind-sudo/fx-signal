@@ -66,7 +66,7 @@
    "entry": 89.32575,
    "sl": 89.29043990970357,
    "tp": 89.39637018059287,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -82,7 +82,7 @@
    "entry": 89.32575,
    "sl": 89.29043990970357,
    "tp": 89.39637018059287,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -98,7 +98,7 @@
    "entry": 89.32575,
    "sl": 89.29043990970357,
    "tp": 89.39637018059287,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -114,7 +114,7 @@
    "entry": 89.32575,
    "sl": 89.29043990970357,
    "tp": 89.39637018059287,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -178,7 +178,7 @@
    "entry": 89.30322,
    "sl": 89.26921652276344,
    "tp": 89.37122695447309,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -194,7 +194,7 @@
    "entry": 89.31407,
    "sl": 89.27434543393021,
    "tp": 89.39351913213957,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -210,7 +210,7 @@
    "entry": 89.3152,
    "sl": 89.27362600621493,
    "tp": 89.39834798757016,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -226,7 +226,7 @@
    "entry": 89.3152,
    "sl": 89.27362600621493,
    "tp": 89.39834798757016,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -258,7 +258,7 @@
    "entry": 89.31299,
    "sl": 89.26908903420353,
    "tp": 89.40079193159292,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -274,7 +274,7 @@
    "entry": 89.31275,
    "sl": 89.26849819068073,
    "tp": 89.40125361863852,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -290,7 +290,7 @@
    "entry": 89.31307,
    "sl": 89.26446091936937,
    "tp": 89.41028816126125,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -306,7 +306,7 @@
    "entry": 89.31641,
    "sl": 89.26750408400235,
    "tp": 89.4142218319953,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -915,7 +915,7 @@
    ]
   }
  ],
- "lastEvalT": 1792177200000,
+ "lastEvalT": 1792180800000,
  "adaptive": {
   "start": 100000,
   "balance": 100129.22792852261,
@@ -1066,14 +1066,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 35,
-  "wouldLose": 20,
+  "n": 47,
+  "wouldLose": 32,
   "wouldWin": 15
  },
  "version": 1,
- "lastRun": 1792357068393,
- "lastBarT": 1792180800000,
- "price": 89.31504,
+ "lastRun": 1792358849703,
+ "lastBarT": 1792357200000,
+ "price": 89.38629,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -1140,7 +1140,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1871,
+  "events": 1870,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -1148,7 +1148,7 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.5714285714285714,
-    "avgR": 0.6802555467129349
+    "avgR": 0.6802555467128177
    },
    {
     "name": "MACD買いクロス",
@@ -1156,7 +1156,7 @@
     "key": "against|range",
     "n": 31,
     "winRate": 0.4838709677419355,
-    "avgR": 0.4105988907600675
+    "avgR": 0.41059889076006295
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1180,7 +1180,7 @@
     "key": "*",
     "n": 32,
     "winRate": 0.40625,
-    "avgR": 0.17763568731890617
+    "avgR": 0.17763568731887008
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1188,7 +1188,7 @@
     "key": "*",
     "n": 93,
     "winRate": 0.3870967741935484,
-    "avgR": 0.13901874156336874
+    "avgR": 0.1390187415633637
    },
    {
     "name": "上昇トレンドの押し目",
@@ -1196,7 +1196,7 @@
     "key": "with|trend",
     "n": 32,
     "winRate": 0.28125,
-    "avgR": 0.05393508645812327
+    "avgR": 0.05393508645812316
    },
    {
     "name": "20本安値ブレイク",

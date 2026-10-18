@@ -18,7 +18,7 @@
    "entry": 210.62327,
    "sl": 210.55187591409089,
    "tp": 210.76605817181817,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -34,7 +34,7 @@
    "entry": 210.62327,
    "sl": 210.55187591409089,
    "tp": 210.76605817181817,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -98,7 +98,7 @@
    "entry": 210.62127,
    "sl": 210.68648185722782,
    "tp": 210.49084628554436,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -194,7 +194,7 @@
    "entry": 210.63336,
    "sl": 210.71868090922567,
    "tp": 210.4627181815487,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -210,7 +210,7 @@
    "entry": 210.63336,
    "sl": 210.71868090922567,
    "tp": 210.4627181815487,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -987,25 +987,13 @@
    ]
   }
  ],
- "lastEvalT": 1792177200000,
+ "lastEvalT": 1792180800000,
  "adaptive": {
   "start": 100000,
-  "balance": 97531.2848264834,
+  "balance": 101174.90081499226,
   "startT": 1791953875407,
-  "positions": [
-   {
-    "key": "pullback_up|short|3|1",
-    "dir": "short",
-    "pattern": "pullback_up",
-    "name": "上昇トレンドの押し目（逆向き）",
-    "units": 8000,
-    "entry": 210.64256,
-    "sl": 210.72059714916114,
-    "tp": 210.40844855251663,
-    "barT": 1792274400000,
-    "openT": 1792275972828,
-    "deadline": 1792362372828
-   },
+  "positions": [],
+  "trades": [
    {
     "key": "bb_break_up|short|3|1",
     "dir": "short",
@@ -1017,10 +1005,29 @@
     "tp": 210.369339370194,
     "barT": 1792278000000,
     "openT": 1792279457579,
-    "deadline": 1792365857579
-   }
-  ],
-  "trades": [
+    "deadline": 1792365857579,
+    "exit": 210.369339370194,
+    "closeT": 1792357200000,
+    "reason": "tp",
+    "pnl": 1770.7244086418825
+   },
+   {
+    "key": "pullback_up|short|3|1",
+    "dir": "short",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目（逆向き）",
+    "units": 8000,
+    "entry": 210.64256,
+    "sl": 210.72059714916114,
+    "tp": 210.40844855251663,
+    "barT": 1792274400000,
+    "openT": 1792275972828,
+    "deadline": 1792362372828,
+    "exit": 210.40844855251663,
+    "closeT": 1792357200000,
+    "reason": "tp",
+    "pnl": 1872.8915798669732
+   },
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -1246,18 +1253,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97916.71482648359
+  "equity": 101174.90081499226
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 52,
-  "wouldLose": 36,
-  "wouldWin": 16
+  "n": 57,
+  "wouldLose": 38,
+  "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792357067834,
- "lastBarT": 1792180800000,
- "price": 210.60741,
+ "lastRun": 1792358848362,
+ "lastBarT": 1792357200000,
+ "price": 210.34426,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1324,7 +1331,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1798,
+  "events": 1802,
   "win": [
    {
     "name": "陽の包み足",
@@ -1340,7 +1347,7 @@
     "key": "with|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.28718863797836164
+    "avgR": 0.2871886379802516
    },
    {
     "name": "MACD売りクロス",
@@ -1348,7 +1355,7 @@
     "key": "against|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.24375137143155048
+    "avgR": 0.24375137143164166
    },
    {
     "name": "MACD買いクロス",
@@ -1356,7 +1363,7 @@
     "key": "with|trend",
     "n": 23,
     "winRate": 0.391304347826087,
-    "avgR": 0.23910291874537937
+    "avgR": 0.23910291874644873
    },
    {
     "name": "20本高値ブレイク",
@@ -1364,7 +1371,7 @@
     "key": "against|trend",
     "n": 22,
     "winRate": 0.36363636363636365,
-    "avgR": 0.21380340245863463
+    "avgR": 0.2138034024614159
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1394,9 +1401,9 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|trend",
-    "n": 29,
-    "winRate": 0.3793103448275862,
-    "avgR": 0.11144829151045584
+    "n": 30,
+    "winRate": 0.36666666666666664,
+    "avgR": 0.07370178139417378
    },
    {
     "name": "ボリバン下限から回帰",

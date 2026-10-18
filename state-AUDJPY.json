@@ -35,7 +35,7 @@
    "entry": 109.7928,
    "sl": 109.71896608429851,
    "tp": 109.94046783140297,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -51,7 +51,7 @@
    "entry": 109.79057,
    "sl": 109.71224578309071,
    "tp": 109.94721843381859,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -67,7 +67,7 @@
    "entry": 109.77321,
    "sl": 109.85299915667156,
    "tp": 109.61363168665692,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -83,7 +83,7 @@
    "entry": 109.77321,
    "sl": 109.85299915667156,
    "tp": 109.61363168665692,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -99,7 +99,7 @@
    "entry": 109.77176,
    "sl": 109.85381719431349,
    "tp": 109.60764561137303,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -115,7 +115,7 @@
    "entry": 109.81896,
    "sl": 109.90241177565352,
    "tp": 109.65205644869299,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -131,7 +131,7 @@
    "entry": 109.76794,
    "sl": 109.85272191224223,
    "tp": 109.59837617551551,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -147,7 +147,7 @@
    "entry": 109.80533,
    "sl": 109.89302233609159,
    "tp": 109.62994532781681,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -163,7 +163,7 @@
    "entry": 109.77482,
    "sl": 109.68370551553875,
    "tp": 109.95704896892252,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -179,7 +179,7 @@
    "entry": 109.77482,
    "sl": 109.68370551553875,
    "tp": 109.95704896892252,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -195,7 +195,7 @@
    "entry": 109.77556,
    "sl": 109.86807098326597,
    "tp": 109.59053803346806,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -211,7 +211,7 @@
    "entry": 109.77556,
    "sl": 109.86807098326597,
    "tp": 109.59053803346806,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -227,7 +227,7 @@
    "entry": 109.77365,
    "sl": 109.8662811403558,
    "tp": 109.5883877192884,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -243,7 +243,7 @@
    "entry": 109.77365,
    "sl": 109.8662811403558,
    "tp": 109.5883877192884,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -259,7 +259,7 @@
    "entry": 109.77365,
    "sl": 109.8662811403558,
    "tp": 109.5883877192884,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -307,7 +307,7 @@
    "entry": 109.79758,
    "sl": 109.71099838598408,
    "tp": 109.97074322803181,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -339,7 +339,7 @@
    "entry": 109.7796,
    "sl": 109.69197321688097,
    "tp": 109.95485356623809,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -403,7 +403,7 @@
    "entry": 109.78713,
    "sl": 109.91145122713172,
    "tp": 109.53848754573659,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -419,7 +419,7 @@
    "entry": 109.77892,
    "sl": 109.92406733147448,
    "tp": 109.48862533705105,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -988,7 +988,7 @@
    ]
   }
  ],
- "lastEvalT": 1792177200000,
+ "lastEvalT": 1792180800000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1088,14 +1088,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 38,
-  "wouldLose": 28,
-  "wouldWin": 10
+  "n": 57,
+  "wouldLose": 41,
+  "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792357068098,
- "lastBarT": 1792180800000,
- "price": 109.74092,
+ "lastRun": 1792358849252,
+ "lastBarT": 1792357200000,
+ "price": 110.0659,
  "equity": 98102.89719050525,
  "unreal": 0,
  "config": {
@@ -1162,7 +1162,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1874,
+  "events": 1877,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -1181,20 +1181,20 @@
     "avgR": 0.4181819985526049
    },
    {
-    "name": "ボリバン上抜けブレイク",
-    "dir": "long",
-    "key": "with|range",
-    "n": 60,
-    "winRate": 0.4166666666666667,
-    "avgR": 0.3407781617968239
-   },
-   {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|trend",
     "n": 32,
     "winRate": 0.4375,
-    "avgR": 0.3671964024952823
+    "avgR": 0.36719640249103525
+   },
+   {
+    "name": "ボリバン上抜けブレイク",
+    "dir": "long",
+    "key": "with|range",
+    "n": 59,
+    "winRate": 0.423728813559322,
+    "avgR": 0.3201461038743959
    },
    {
     "name": "陽の包み足",
