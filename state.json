@@ -55,6 +55,22 @@
  },
  "log": [
   {
+   "t": 1792324800000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 158.05208,
+   "sl": 158.09861100732277,
+   "tp": 157.95901798535442,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792321200000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -1035,14 +1051,14 @@
    ]
   }
  ],
- "lastEvalT": 1792321200000,
+ "lastEvalT": 1792324800000,
  "reportDay": "2026-10-18",
  "version": 1,
- "lastRun": 1792326797228,
- "lastBarT": 1792324800000,
- "price": 158.04808,
- "equity": 104818.93194490726,
- "unreal": -79.99999999992724,
+ "lastRun": 1792328890043,
+ "lastBarT": 1792328400000,
+ "price": 158.05208,
+ "equity": 104882.93194490712,
+ "unreal": -16.000000000076398,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -1107,7 +1123,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2715,
+  "events": 2714,
   "win": [
    {
     "name": "陽の包み足",
@@ -1123,7 +1139,7 @@
     "key": "against|range",
     "n": 50,
     "winRate": 0.38,
-    "avgR": 0.1436647978691597
+    "avgR": 0.14366479786916694
    }
   ]
  },
@@ -1145,37 +1161,13 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
    "blocked": true,
    "reasons": [
     "過去の負けパターン",
     "勝率が基準未満"
    ]
-  },
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
   }
  ],
  "adaptive": {
