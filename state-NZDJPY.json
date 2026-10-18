@@ -28,6 +28,38 @@
  },
  "log": [
   {
+   "t": 1792310400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 89.2904,
+   "sl": 89.2579655221787,
+   "tp": 89.35526895564263,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792310400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 89.2904,
+   "sl": 89.2579655221787,
+   "tp": 89.35526895564263,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792303200000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -772,7 +804,7 @@
    ]
   }
  ],
- "lastEvalT": 1792306800000,
+ "lastEvalT": 1792310400000,
  "adaptive": {
   "start": 100000,
   "balance": 100129.22792852261,
@@ -928,9 +960,9 @@
   "wouldWin": 13
  },
  "version": 1,
- "lastRun": 1792313965473,
- "lastBarT": 1792310400000,
- "price": 89.31116,
+ "lastRun": 1792315706939,
+ "lastBarT": 1792314000000,
+ "price": 89.2904,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -997,7 +1029,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2633,
+  "events": 2632,
   "win": [
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -1005,7 +1037,7 @@
     "key": "*",
     "n": 45,
     "winRate": 0.37777777777777777,
-    "avgR": 0.21255624104026008
+    "avgR": 0.21255624104025403
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1013,7 +1045,7 @@
     "key": "with|range",
     "n": 49,
     "winRate": 0.3877551020408163,
-    "avgR": 0.13454721707495212
+    "avgR": 0.13454721706233505
    },
    {
     "name": "20本高値ブレイク",
@@ -1034,7 +1066,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

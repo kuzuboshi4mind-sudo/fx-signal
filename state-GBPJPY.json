@@ -11,6 +11,22 @@
  },
  "log": [
   {
+   "t": 1792310400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 210.57946,
+   "sl": 210.51737113257417,
+   "tp": 210.70363773485167,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792306800000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -907,7 +923,7 @@
    ]
   }
  ],
- "lastEvalT": 1792306800000,
+ "lastEvalT": 1792310400000,
  "adaptive": {
   "start": 100000,
   "balance": 97531.2848264834,
@@ -1166,7 +1182,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97627.6648264835
+  "equity": 98335.96482648322
  },
  "reportDay": "2026-10-18",
  "skipReview": {
@@ -1175,9 +1191,9 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792313964481,
- "lastBarT": 1792310400000,
- "price": 210.62668,
+ "lastRun": 1792315706274,
+ "lastBarT": 1792314000000,
+ "price": 210.57946,
  "equity": 100000,
  "unreal": 0,
  "config": {
@@ -1244,7 +1260,7 @@
  },
  "learned": {
   "bars": 5000,
-  "events": 2681,
+  "events": 2684,
   "win": [
    {
     "name": "陰の包み足",
@@ -1252,12 +1268,22 @@
     "key": "with|range",
     "n": 30,
     "winRate": 0.4,
-    "avgR": 0.16912360604649557
+    "avgR": 0.1691236060410274
    }
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
