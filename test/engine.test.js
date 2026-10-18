@@ -129,3 +129,12 @@ test('adaptiveSelect: 直近の成績上位を返し、期待値マイナスは�
     if (k) assert.ok(picks[k - 1].score >= picks[k].score);
   }
 });
+
+test('isMarketOpen: 週末（金曜21時UTC〜日曜21時UTC）は休場', () => {
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 9, 16, 12)), true);  // 金 12時
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 9, 16, 21)), false); // 金 21時
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 9, 17, 10)), false); // 土
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 9, 18, 20)), false); // 日 20時
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 9, 18, 21)), true);  // 日 21時（週明け）
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 9, 19, 3)), true);   // 月
+});

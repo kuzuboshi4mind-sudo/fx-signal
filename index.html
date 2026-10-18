@@ -353,7 +353,7 @@ async function fetchTwelve(size) {
   return j.values.map(v => ({
     t: Date.parse(v.datetime.replace(' ', 'T') + (v.datetime.length > 10 ? 'Z' : 'T00:00:00Z')),
     o: +v.open, h: +v.high, l: +v.low, c: +v.close,
-  })).reverse();
+  })).reverse().filter(b => E.isMarketOpen(b.t)); // 休場中の足（週末）は使わない
 }
 function mergeBars(bars) {
   const c = st.candles;

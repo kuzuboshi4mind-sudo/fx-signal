@@ -160,6 +160,12 @@
   };
   function ctxLabel(key) { return key.split('|').map(k => CTX_LABEL[k] || k).join('・'); }
 
+  // FX市場が開いている時間か（UTC）。土曜・日曜21時前・金曜21時以降は休場とみなす
+  // データ提供元が休場中の足を返すことがある（2026年〜）ため、その足は使わない
+  function isMarketOpen(t) {
+    const d = new Date(t), dow = d.getUTCDay(), h = d.getUTCHours();
+    return !(dow === 6 || (dow === 0 && h < 21) || (dow === 5 && h >= 21));
+  }
   function pipSize(symbol) { return /JPY/.test(symbol || '') ? 0.01 : 0.0001; }
 
   // ---------- トレードの模擬 ----------
@@ -418,6 +424,6 @@
     adaptiveSelect, ADAPT_EXITS,
     positionUnits, checkExit, positionPnl, liveReview, REVIEW,
     ema, sma, rsi, adx, computeIndicators, PATTERNS, context, ctxLabel, simulate, learn, evaluate, lookup,
-    applyFilters, scheduledEvents, usDst, demoGenerator, pipSize, DEFAULTS, WARMUP,
+    applyFilters, scheduledEvents, usDst, demoGenerator, pipSize, isMarketOpen, DEFAULTS, WARMUP,
   };
 });

@@ -14,7 +14,8 @@ const YEAR = 365.25 * 86400e3, MONTH = 30.44 * 86400e3;
 
 function load(file) {
   return zlib.gunzipSync(fs.readFileSync(file)).toString().trim().split('\n').slice(1)
-    .map(l => { const [t, o, h, lo, cl] = l.split(',').map(Number); return { t, o, h, l: lo, c: cl }; });
+    .map(l => { const [t, o, h, lo, cl] = l.split(',').map(Number); return { t, o, h, l: lo, c: cl }; })
+    .filter(b => E.isMarketOpen(b.t)); // 休場中の足（週末）は除く
 }
 function shuffled(c, seed) {
   let s = seed >>> 0; const rnd = () => ((s = (s * 1664525 + 1013904223) >>> 0) / 4294967296);
