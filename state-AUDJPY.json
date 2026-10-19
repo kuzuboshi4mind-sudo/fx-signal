@@ -39,6 +39,21 @@
  },
  "log": [
   {
+   "t": 1792382400000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 110.28896,
+   "sl": 110.46140608627933,
+   "tp": 109.94406782744136,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1792378800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -1103,7 +1118,7 @@
    ]
   }
  ],
- "lastEvalT": 1792378800000,
+ "lastEvalT": 1792382400000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1208,11 +1223,11 @@
   "wouldWin": 17
  },
  "version": 1,
- "lastRun": 1792385867942,
- "lastBarT": 1792382400000,
- "price": 110.25955,
- "equity": 100288.19719050526,
- "unreal": 2185.300000000012,
+ "lastRun": 1792388040305,
+ "lastBarT": 1792386000000,
+ "price": 110.28896,
+ "equity": 100582.29719050524,
+ "unreal": 2479.3999999999983,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1301,7 +1316,7 @@
     "key": "with|trend",
     "n": 32,
     "winRate": 0.4375,
-    "avgR": 0.36719640245132124
+    "avgR": 0.36719640240362705
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -1309,7 +1324,7 @@
     "key": "with|range",
     "n": 59,
     "winRate": 0.423728813559322,
-    "avgR": 0.32014610387430387
+    "avgR": 0.3201461038741933
    },
    {
     "name": "陽の包み足",
@@ -1337,7 +1352,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
