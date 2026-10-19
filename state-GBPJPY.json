@@ -1331,7 +1331,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100723.22988067646
+  "equity": 100538.74988067645
  },
  "reportDay": "2026-10-19",
  "skipReview": {
@@ -1340,11 +1340,11 @@
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792379191141,
+ "lastRun": 1792381070244,
  "lastBarT": 1792378800000,
- "price": 210.63084,
- "equity": 101617.49000000012,
- "unreal": 1617.4900000001173,
+ "price": 210.72308,
+ "equity": 102263.17000000014,
+ "unreal": 2263.1700000001447,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
