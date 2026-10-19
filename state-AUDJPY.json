@@ -39,6 +39,34 @@
  },
  "log": [
   {
+   "t": 1792375200000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 110.23073,
+   "sl": 110.047551107037,
+   "tp": 110.59708778592599,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792375200000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 110.23073,
+   "sl": 110.047551107037,
+   "tp": 110.59708778592599,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1792371600000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -1059,7 +1087,7 @@
    ]
   }
  ],
- "lastEvalT": 1792371600000,
+ "lastEvalT": 1792375200000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1164,11 +1192,11 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792377311062,
- "lastBarT": 1792375200000,
- "price": 110.12984,
- "equity": 98991.09719050523,
- "unreal": 888.1999999999834,
+ "lastRun": 1792379191530,
+ "lastBarT": 1792378800000,
+ "price": 110.23073,
+ "equity": 99999.99719050515,
+ "unreal": 1897.0999999999094,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1233,7 +1261,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1876,
+  "events": 1875,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -1257,7 +1285,7 @@
     "key": "with|trend",
     "n": 32,
     "winRate": 0.4375,
-    "avgR": 0.3671964024617266
+    "avgR": 0.36719640244900653
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -1265,7 +1293,7 @@
     "key": "with|range",
     "n": 59,
     "winRate": 0.423728813559322,
-    "avgR": 0.320146103874328
+    "avgR": 0.3201461038742985
    },
    {
     "name": "陽の包み足",
@@ -1293,7 +1321,23 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
