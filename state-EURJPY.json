@@ -67,7 +67,7 @@
    "entry": 177.22541,
    "sl": 177.45547632790172,
    "tp": 176.7652773441966,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1389,7 +1389,7 @@
    ]
   }
  ],
- "lastEvalT": 1792396800000,
+ "lastEvalT": 1792400400000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1489,14 +1489,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 74,
-  "wouldLose": 63,
+  "n": 75,
+  "wouldLose": 64,
   "wouldWin": 11
  },
  "version": 1,
- "lastRun": 1792402679998,
- "lastBarT": 1792400400000,
- "price": 177.36425,
+ "lastRun": 1792405174145,
+ "lastBarT": 1792404000000,
+ "price": 177.34758,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1579,7 +1579,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.4782608695652174,
-    "avgR": 0.4131650548931239
+    "avgR": 0.413165054893124
    },
    {
     "name": "陽の包み足",
@@ -1587,7 +1587,7 @@
     "key": "with|trend",
     "n": 44,
     "winRate": 0.38636363636363635,
-    "avgR": 0.2384519694417819
+    "avgR": 0.2384519694491554
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1595,7 +1595,7 @@
     "key": "with|range",
     "n": 19,
     "winRate": 0.3684210526315789,
-    "avgR": 0.16679430979708698
+    "avgR": 0.16679430979708706
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -1631,17 +1631,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

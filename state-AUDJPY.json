@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792400400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 110.44012,
+   "sl": 110.28660579155465,
+   "tp": 110.74714841689068,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792396800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -67,7 +83,7 @@
    "entry": 110.28896,
    "sl": 110.46140608627933,
    "tp": 109.94406782744136,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1139,7 +1155,7 @@
    ]
   }
  ],
- "lastEvalT": 1792396800000,
+ "lastEvalT": 1792400400000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1239,14 +1255,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 58,
-  "wouldLose": 41,
+  "n": 59,
+  "wouldLose": 42,
   "wouldWin": 17
  },
  "version": 1,
- "lastRun": 1792402680671,
- "lastBarT": 1792400400000,
- "price": 110.37669,
+ "lastRun": 1792405175122,
+ "lastBarT": 1792404000000,
+ "price": 110.44012,
  "equity": 101629.21825804951,
  "unreal": 0,
  "config": {
@@ -1337,7 +1353,7 @@
     "key": "with|trend",
     "n": 31,
     "winRate": 0.45161290322580644,
-    "avgR": 0.41204448216704337
+    "avgR": 0.41204448215808065
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -1345,7 +1361,7 @@
     "key": "with|range",
     "n": 59,
     "winRate": 0.423728813559322,
-    "avgR": 0.3201461038741057
+    "avgR": 0.3201461038740531
    },
    {
     "name": "陽の包み足",
