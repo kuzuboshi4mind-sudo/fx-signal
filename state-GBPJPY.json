@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792447200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 211.03861,
+   "sl": 210.87360653395388,
+   "tp": 211.3686169320923,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792425600000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -1168,7 +1184,7 @@
    ]
   }
  ],
- "lastEvalT": 1792443600000,
+ "lastEvalT": 1792447200000,
  "adaptive": {
   "start": 100000,
   "balance": 100213.36126894488,
@@ -1199,6 +1215,19 @@
     "barT": 1792411200000,
     "openT": 1792411742391,
     "deadline": 1792498142391
+   },
+   {
+    "key": "engulf_up|short|1.5|1",
+    "dir": "short",
+    "pattern": "engulf_up",
+    "name": "陽の包み足（逆向き）",
+    "units": 4000,
+    "entry": 211.02861000000001,
+    "sl": 211.19361346604614,
+    "tp": 210.78110480093082,
+    "barT": 1792450800000,
+    "openT": 1792452693561,
+    "deadline": 1792539093561
    }
   ],
   "trades": [
@@ -1495,7 +1524,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100148.59126894493
+  "equity": 99581.04126894491
  },
  "reportDay": "2026-10-20",
  "skipReview": {
@@ -1504,9 +1533,9 @@
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792450816628,
- "lastBarT": 1792447200000,
- "price": 210.9331,
+ "lastRun": 1792452693561,
+ "lastBarT": 1792450800000,
+ "price": 211.03861,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1573,7 +1602,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1792,
+  "events": 1789,
   "win": [
    {
     "name": "陽の包み足",
@@ -1597,7 +1626,7 @@
     "key": "against|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.19692586325200076
+    "avgR": 0.19692586324890207
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1642,7 +1671,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
