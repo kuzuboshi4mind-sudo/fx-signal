@@ -39,6 +39,38 @@
  },
  "log": [
   {
+   "t": 1792371600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 110.16851,
+   "sl": 109.98072580757831,
+   "tp": 110.54407838484339,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792371600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 110.16851,
+   "sl": 109.98072580757831,
+   "tp": 110.54407838484339,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792368000000,
    "pattern": "ema_cross_up",
    "name": "ゴールデンクロス(EMA20/50)",
@@ -46,7 +78,7 @@
    "entry": 110.03502,
    "sl": 109.8557039466228,
    "tp": 110.39365210675443,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -1027,7 +1059,7 @@
    ]
   }
  ],
- "lastEvalT": 1792368000000,
+ "lastEvalT": 1792371600000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1132,11 +1164,11 @@
   "wouldWin": 16
  },
  "version": 1,
- "lastRun": 1792372995869,
- "lastBarT": 1792371600000,
- "price": 110.03502,
- "equity": 98042.89719050525,
- "unreal": -60.000000000002274,
+ "lastRun": 1792375567857,
+ "lastBarT": 1792375200000,
+ "price": 110.16851,
+ "equity": 99377.7971905052,
+ "unreal": 1274.8999999999455,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1225,7 +1257,7 @@
     "key": "with|trend",
     "n": 32,
     "winRate": 0.4375,
-    "avgR": 0.367196402478971
+    "avgR": 0.3671964024617266
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -1233,7 +1265,7 @@
     "key": "with|range",
     "n": 59,
     "winRate": 0.423728813559322,
-    "avgR": 0.320146103874368
+    "avgR": 0.320146103874328
    },
    {
     "name": "陽の包み足",
@@ -1246,6 +1278,13 @@
   ]
  },
  "review": {
+  "ema_cross_up": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "donchian_up": {
    "n": 2,
    "wins": 0,
@@ -1256,10 +1295,22 @@
  },
  "lastSignals": [
   {
-   "name": "ゴールデンクロス(EMA20/50)",
+   "name": "上昇トレンドの押し目",
    "dir": "long",
-   "blocked": false,
-   "reasons": []
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
   }
  ],
  "latest": {
