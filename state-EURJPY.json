@@ -1447,9 +1447,9 @@
   "wouldWin": 11
  },
  "version": 1,
- "lastRun": 1792383569695,
+ "lastRun": 1792385867256,
  "lastBarT": 1792382400000,
- "price": 177.53072,
+ "price": 177.55693,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1516,7 +1516,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1825,
+  "events": 1826,
   "win": [
    {
     "name": "陽の包み足",
@@ -1584,26 +1584,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

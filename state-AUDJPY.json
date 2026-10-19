@@ -1208,11 +1208,11 @@
   "wouldWin": 17
  },
  "version": 1,
- "lastRun": 1792383570739,
+ "lastRun": 1792385867942,
  "lastBarT": 1792382400000,
- "price": 110.28154,
- "equity": 100508.09719050529,
- "unreal": 2405.200000000036,
+ "price": 110.25955,
+ "equity": 100288.19719050526,
+ "unreal": 2185.300000000012,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1337,17 +1337,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
