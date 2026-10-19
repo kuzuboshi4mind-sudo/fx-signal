@@ -6,10 +6,33 @@
   "balance": 100000,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "units": 7000,
+   "entry": 210.39977,
+   "sl": 210.14830453284208,
+   "tp": 210.87270093431587,
+   "barT": 1792368000000,
+   "openT": 1792370528511,
+   "deadline": 1792456928511
+  },
   "trades": []
  },
  "log": [
+  {
+   "t": 1792364400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 210.38977,
+   "sl": 210.14830453284208,
+   "tp": 210.87270093431587,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792321200000,
    "pattern": "pullback_up",
@@ -987,12 +1010,26 @@
    ]
   }
  ],
- "lastEvalT": 1792360800000,
+ "lastEvalT": 1792364400000,
  "adaptive": {
   "start": 100000,
   "balance": 101174.90081499226,
   "startT": 1791953875407,
-  "positions": [],
+  "positions": [
+   {
+    "key": "pullback_up|short|3|1",
+    "dir": "short",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目（逆向き）",
+    "units": 2000,
+    "entry": 210.37977,
+    "sl": 210.62123546715793,
+    "tp": 209.6553735985262,
+    "barT": 1792368000000,
+    "openT": 1792370528511,
+    "deadline": 1792456928511
+   }
+  ],
   "trades": [
    {
     "key": "bb_break_up|short|3|1",
@@ -1253,7 +1290,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101174.90081499226
+  "equity": 101154.90081499227
  },
  "reportDay": "2026-10-19",
  "skipReview": {
@@ -1262,11 +1299,11 @@
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792367600975,
- "lastBarT": 1792364400000,
- "price": 210.46124,
- "equity": 100000,
- "unreal": 0,
+ "lastRun": 1792370528511,
+ "lastBarT": 1792368000000,
+ "price": 210.38977,
+ "equity": 99930.00000000006,
+ "unreal": -69.99999999993634,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -1331,7 +1368,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1801,
+  "events": 1799,
   "win": [
    {
     "name": "陽の包み足",
@@ -1347,7 +1384,7 @@
     "key": "with|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.28718863794930133
+    "avgR": 0.28718863794545213
    },
    {
     "name": "MACD売りクロス",
@@ -1355,7 +1392,7 @@
     "key": "against|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.24375137143014858
+    "avgR": 0.2437513714299629
    },
    {
     "name": "20本高値ブレイク",
@@ -1363,7 +1400,7 @@
     "key": "against|trend",
     "n": 22,
     "winRate": 0.36363636363636365,
-    "avgR": 0.2138034024158715
+    "avgR": 0.21380340241020734
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1395,7 +1432,7 @@
     "key": "with|trend",
     "n": 30,
     "winRate": 0.36666666666666664,
-    "avgR": 0.07370178139385143
+    "avgR": 0.07370178139381141
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1408,7 +1445,14 @@
   ]
  },
  "review": {},
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
