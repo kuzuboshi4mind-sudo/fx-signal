@@ -1118,7 +1118,7 @@
    ]
   }
  ],
- "lastEvalT": 1792382400000,
+ "lastEvalT": 1792386000000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1223,11 +1223,11 @@
   "wouldWin": 17
  },
  "version": 1,
- "lastRun": 1792388040305,
- "lastBarT": 1792386000000,
- "price": 110.28896,
- "equity": 100582.29719050524,
- "unreal": 2479.3999999999983,
+ "lastRun": 1792390006002,
+ "lastBarT": 1792389600000,
+ "price": 110.26637,
+ "equity": 100356.39719050516,
+ "unreal": 2253.4999999999172,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1316,7 +1316,7 @@
     "key": "with|trend",
     "n": 32,
     "winRate": 0.4375,
-    "avgR": 0.36719640240362705
+    "avgR": 0.367196402391905
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -1324,7 +1324,7 @@
     "key": "with|range",
     "n": 59,
     "winRate": 0.423728813559322,
-    "avgR": 0.3201461038741933
+    "avgR": 0.3201461038741661
    },
    {
     "name": "陽の包み足",
@@ -1352,16 +1352,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

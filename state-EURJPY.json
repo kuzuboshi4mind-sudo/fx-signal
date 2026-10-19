@@ -44,6 +44,21 @@
  },
  "log": [
   {
+   "t": 1792386000000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 177.43996,
+   "sl": 177.21126241610585,
+   "tp": 177.89735516778833,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1792378800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -1342,7 +1357,7 @@
    ]
   }
  ],
- "lastEvalT": 1792382400000,
+ "lastEvalT": 1792386000000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1447,9 +1462,9 @@
   "wouldWin": 11
  },
  "version": 1,
- "lastRun": 1792388039256,
- "lastBarT": 1792386000000,
- "price": 177.59539,
+ "lastRun": 1792390005433,
+ "lastBarT": 1792389600000,
+ "price": 177.43996,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1532,7 +1547,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.4782608695652174,
-    "avgR": 0.41316505489312405
+    "avgR": 0.413165054893124
    },
    {
     "name": "陽の包み足",
@@ -1540,7 +1555,7 @@
     "key": "with|trend",
     "n": 44,
     "winRate": 0.38636363636363635,
-    "avgR": 0.23845196945372427
+    "avgR": 0.23845196944397876
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1548,7 +1563,7 @@
     "key": "with|range",
     "n": 19,
     "winRate": 0.3684210526315789,
-    "avgR": 0.16679430979708718
+    "avgR": 0.16679430979708706
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -1584,7 +1599,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
