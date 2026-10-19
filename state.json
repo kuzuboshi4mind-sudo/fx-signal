@@ -1230,9 +1230,9 @@
  "lastEvalT": 1792411200000,
  "reportDay": "2026-10-19",
  "version": 1,
- "lastRun": 1792415219995,
+ "lastRun": 1792417901006,
  "lastBarT": 1792414800000,
- "price": 158.30454,
+ "price": 158.38831,
  "equity": 101952.59848969028,
  "unreal": 0,
  "config": {
@@ -1398,31 +1398,13 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 100246.6432178055,
+  "balance": 101945.3753221119,
   "startT": 1791916832223,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -1434,10 +1416,12 @@
     "tp": 158.4076640347688,
     "barT": 1792364400000,
     "openT": 1792365917478,
-    "deadline": 1792452317478
-   }
-  ],
-  "trades": [
+    "deadline": 1792452317478,
+    "exit": 158.4076640347688,
+    "closeT": 1792414800000,
+    "reason": "tp",
+    "pnl": 1698.7321043064014
+   },
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -1765,7 +1749,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101636.00321780551
+  "equity": 101945.3753221119
  },
  "skipReview": {
   "n": 60,
@@ -1795,6 +1779,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 101245.72000000009
+  "equity": 101832.11
  }
 }

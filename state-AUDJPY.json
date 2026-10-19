@@ -114,7 +114,7 @@
    "entry": 110.28154,
    "sl": 110.1023495993915,
    "tp": 110.63992080121702,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -130,7 +130,7 @@
    "entry": 110.23073,
    "sl": 110.047551107037,
    "tp": 110.59708778592599,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -146,7 +146,7 @@
    "entry": 110.23073,
    "sl": 110.047551107037,
    "tp": 110.59708778592599,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -1271,14 +1271,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 61,
+  "n": 63,
   "wouldLose": 42,
-  "wouldWin": 19
+  "wouldWin": 21
  },
  "version": 1,
- "lastRun": 1792415221217,
+ "lastRun": 1792417902837,
  "lastBarT": 1792414800000,
- "price": 110.57087,
+ "price": 110.64672,
  "equity": 101629.21825804951,
  "unreal": 0,
  "config": {
@@ -1398,6 +1398,13 @@
   ]
  },
  "review": {
+  "bb_break_up": {
+   "n": 1,
+   "wins": 1,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
+  },
   "ema_cross_up": {
    "n": 1,
    "wins": 0,
