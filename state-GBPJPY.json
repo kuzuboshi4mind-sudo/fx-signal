@@ -3,24 +3,46 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 100000,
+  "balance": 103310.51654021119,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 7000,
-   "entry": 210.39977,
-   "sl": 210.14830453284208,
-   "tp": 210.87270093431587,
-   "barT": 1792368000000,
-   "openT": 1792370528511,
-   "deadline": 1792456928511
-  },
-  "trades": []
+  "pos": null,
+  "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 7000,
+    "entry": 210.39977,
+    "sl": 210.14830453284208,
+    "tp": 210.87270093431587,
+    "barT": 1792368000000,
+    "openT": 1792370528511,
+    "deadline": 1792456928511,
+    "exit": 210.87270093431587,
+    "closeT": 1792400400000,
+    "reason": "tp",
+    "pnl": 3310.5165402111825
+   }
+  ]
  },
  "log": [
+  {
+   "t": 1792396800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 210.88262,
+   "sl": 210.64564783845682,
+   "tp": 211.3565643230864,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
   {
    "t": 1792371600000,
    "pattern": "pullback_up",
@@ -53,7 +75,7 @@
    "entry": 210.38977,
    "sl": 210.14830453284208,
    "tp": 210.87270093431587,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -1034,12 +1056,27 @@
    ]
   }
  ],
- "lastEvalT": 1792393200000,
+ "lastEvalT": 1792396800000,
  "adaptive": {
   "start": 100000,
-  "balance": 100691.96988067642,
+  "balance": 100213.36126894488,
   "startT": 1791953875407,
   "positions": [
+   {
+    "key": "pullback_up|short|3|1",
+    "dir": "short",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目（逆向き）",
+    "units": 2000,
+    "entry": 210.87262,
+    "sl": 211.1095921615432,
+    "tp": 210.16170351537045,
+    "barT": 1792400400000,
+    "openT": 1792402680310,
+    "deadline": 1792489080310
+   }
+  ],
+  "trades": [
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -1051,10 +1088,12 @@
     "tp": 209.9285570824027,
     "barT": 1792375200000,
     "openT": 1792375566878,
-    "deadline": 1792461966878
-   }
-  ],
-  "trades": [
+    "deadline": 1792461966878,
+    "exit": 210.8857743058658,
+    "closeT": 1792400400000,
+    "reason": "sl",
+    "pnl": -478.6086117315449
+   },
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -1331,7 +1370,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100251.70988067646
+  "equity": 100193.3612689449
  },
  "reportDay": "2026-10-19",
  "skipReview": {
@@ -1340,11 +1379,11 @@
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792400387241,
- "lastBarT": 1792396800000,
- "price": 210.8666,
- "equity": 103267.81000000011,
- "unreal": 3267.810000000111,
+ "lastRun": 1792402680310,
+ "lastBarT": 1792400400000,
+ "price": 210.88262,
+ "equity": 103310.51654021119,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -1433,7 +1472,7 @@
     "key": "against|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.19692586325540873
+    "avgR": 0.19692586325448305
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1465,7 +1504,7 @@
     "key": "with|trend",
     "n": 30,
     "winRate": 0.36666666666666664,
-    "avgR": 0.0737017813937529
+    "avgR": 0.07370178139354554
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1477,8 +1516,26 @@
    }
   ]
  },
- "review": {},
- "lastSignals": [],
+ "review": {
+  "pullback_up": {
+   "n": 1,
+   "wins": 1,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
+  }
+ },
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
