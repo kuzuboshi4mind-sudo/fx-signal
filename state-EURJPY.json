@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792389600000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 177.22541,
+   "sl": 177.45547632790172,
+   "tp": 176.7652773441966,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792386000000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -51,7 +67,7 @@
    "entry": 177.43996,
    "sl": 177.21126241610585,
    "tp": 177.89735516778833,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -66,7 +82,7 @@
    "entry": 177.53072,
    "sl": 177.28896966601624,
    "tp": 178.01422066796752,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -82,7 +98,7 @@
    "entry": 177.53072,
    "sl": 177.28896966601624,
    "tp": 178.01422066796752,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -98,7 +114,7 @@
    "entry": 177.46065,
    "sl": 177.21478842922593,
    "tp": 177.9523731415481,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1357,7 +1373,7 @@
    ]
   }
  ],
- "lastEvalT": 1792386000000,
+ "lastEvalT": 1792389600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1457,14 +1473,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 70,
-  "wouldLose": 59,
+  "n": 74,
+  "wouldLose": 63,
   "wouldWin": 11
  },
  "version": 1,
- "lastRun": 1792392577865,
- "lastBarT": 1792389600000,
- "price": 177.34073,
+ "lastRun": 1792395291490,
+ "lastBarT": 1792393200000,
+ "price": 177.22541,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1531,7 +1547,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1825,
+  "events": 1829,
   "win": [
    {
     "name": "陽の包み足",
@@ -1547,7 +1563,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.4782608695652174,
-    "avgR": 0.413165054893124
+    "avgR": 0.41316505489312405
    },
    {
     "name": "陽の包み足",
@@ -1555,7 +1571,7 @@
     "key": "with|trend",
     "n": 44,
     "winRate": 0.38636363636363635,
-    "avgR": 0.23845196944397876
+    "avgR": 0.2384519694503264
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1599,7 +1615,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
