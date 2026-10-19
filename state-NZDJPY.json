@@ -1058,9 +1058,10 @@
  "lastEvalT": 1792400400000,
  "adaptive": {
   "start": 100000,
-  "balance": 100129.22792852261,
+  "balance": 99523.34156061598,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -1072,10 +1073,12 @@
     "tp": 89.18285817925602,
     "barT": 1792400400000,
     "openT": 1792402680967,
-    "deadline": 1792489080967
-   }
-  ],
-  "trades": [
+    "deadline": 1792489080967,
+    "exit": 89.66756727358131,
+    "closeT": 1792404000000,
+    "reason": "sl",
+    "pnl": -605.8863679066206
+   },
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -1216,7 +1219,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99837.47792852252
+  "equity": 99523.34156061598
  },
  "reportDay": "2026-10-19",
  "skipReview": {
@@ -1225,9 +1228,9 @@
   "wouldWin": 17
  },
  "version": 1,
- "lastRun": 1792405175577,
+ "lastRun": 1792407239548,
  "lastBarT": 1792404000000,
- "price": 89.60474,
+ "price": 89.67373,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -1371,17 +1374,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
