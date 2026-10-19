@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792414800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 110.72539,
+   "sl": 110.58070546133362,
+   "tp": 111.01475907733276,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792404000000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -67,7 +83,7 @@
    "entry": 110.44012,
    "sl": 110.28660579155465,
    "tp": 110.74714841689068,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -83,7 +99,7 @@
    "entry": 110.37669,
    "sl": 110.21961316013578,
    "tp": 110.69084367972843,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1171,7 +1187,7 @@
    ]
   }
  ],
- "lastEvalT": 1792411200000,
+ "lastEvalT": 1792414800000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1271,14 +1287,14 @@
  },
  "reportDay": "2026-10-19",
  "skipReview": {
-  "n": 63,
+  "n": 65,
   "wouldLose": 42,
-  "wouldWin": 21
+  "wouldWin": 23
  },
  "version": 1,
- "lastRun": 1792417902837,
- "lastBarT": 1792414800000,
- "price": 110.64672,
+ "lastRun": 1792419968176,
+ "lastBarT": 1792418400000,
+ "price": 110.72539,
  "equity": 101629.21825804951,
  "unreal": 0,
  "config": {
@@ -1345,7 +1361,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1879,
+  "events": 1881,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -1367,9 +1383,9 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|trend",
-    "n": 31,
-    "winRate": 0.45161290322580644,
-    "avgR": 0.4120444821727825
+    "n": 30,
+    "winRate": 0.4666666666666667,
+    "avgR": 0.4600091126414059
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -1377,7 +1393,7 @@
     "key": "with|range",
     "n": 60,
     "winRate": 0.43333333333333335,
-    "avgR": 0.347870711597136
+    "avgR": 0.34787071159720734
    },
    {
     "name": "陽の包み足",
@@ -1390,10 +1406,18 @@
    {
     "name": "20本高値ブレイク",
     "dir": "long",
+    "key": "*",
+    "n": 247,
+    "winRate": 0.3603238866396761,
+    "avgR": 0.1103372939570349
+   },
+   {
+    "name": "20本高値ブレイク",
+    "dir": "long",
     "key": "with|range",
-    "n": 126,
-    "winRate": 0.3492063492063492,
-    "avgR": 0.07488996710842007
+    "n": 127,
+    "winRate": 0.3543307086614173,
+    "avgR": 0.08991648730246185
    }
   ]
  },
@@ -1420,7 +1444,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792414800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 210.99293,
+   "sl": 210.7744627902142,
+   "tp": 211.42986441957166,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792411200000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -1136,7 +1152,7 @@
    ]
   }
  ],
- "lastEvalT": 1792411200000,
+ "lastEvalT": 1792414800000,
  "adaptive": {
   "start": 100000,
   "balance": 100213.36126894488,
@@ -1463,7 +1479,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99475.59126894489
+  "equity": 99849.4412689449
  },
  "reportDay": "2026-10-19",
  "skipReview": {
@@ -1472,9 +1488,9 @@
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792417902317,
- "lastBarT": 1792414800000,
- "price": 211.0677,
+ "lastRun": 1792419967643,
+ "lastBarT": 1792418400000,
+ "price": 210.99293,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1541,7 +1557,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1798,
+  "events": 1797,
   "win": [
    {
     "name": "陽の包み足",
@@ -1565,7 +1581,7 @@
     "key": "against|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.19692586325864256
+    "avgR": 0.19692586325980838
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1610,7 +1626,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
