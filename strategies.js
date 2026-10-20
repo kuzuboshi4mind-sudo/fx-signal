@@ -109,7 +109,7 @@
         if (d.ema50[i] < d.ema200[i] && c[i].c < d.ema200[i] && x.stoch[i - 1] > 80 && x.stoch[i] <= 80) return 'short';
         return null;
       } },
-    { id: 'gotobi', name: '五十日の仲値前の円売り', source: '日本の実需（輸入企業のドル買い）で、五十日の9:55の仲値に向けて円安になりやすいアノマリー',
+    { id: 'gotobi', jpyOnly: true, name: '五十日の仲値前の円売り', source: '日本の実需（輸入企業のドル買い）で、五十日の9:55の仲値に向けて円安になりやすいアノマリー',
       exit: { type: 'time', bars: 2, sl: 1.5 },
       signal: (c, d, x, i) => (jst(c[i].t).getUTCHours() === 7 && isGotobi(c[i].t + 3600e3) ? 'long' : null) },
     { id: 'inside_bar', name: 'インサイドバー・ブレイク', source: 'プライスアクション：はらみ足の後の放れに、長期の流れの方向だけ乗る',
@@ -160,7 +160,7 @@
         const r20 = c[i].c - c[i - 480].c, r60 = c[i].c - c[i - 1440].c;
         return r20 > 0 && r60 > 0 ? 'long' : r20 < 0 && r60 < 0 ? 'short' : null;
       } },
-    { id: 'carry_lowvol', name: '低ボラ時のキャリー（円売り）', source: 'Brunnermeier・Nagel・Pedersen「Carry Trades and Currency Crashes」ほか：円を売るキャリー取引は、値動きが落ち着いている時に勝ちやすく、荒れると急落しやすい',
+    { id: 'carry_lowvol', jpyOnly: true, name: '低ボラ時のキャリー（円売り）', source: 'Brunnermeier・Nagel・Pedersen「Carry Trades and Currency Crashes」ほか：円を売るキャリー取引は、値動きが落ち着いている時に勝ちやすく、荒れると急落しやすい',
       exit: { type: 'time', bars: 24, sl: 3 },
       signal: (c, d, x, i) => {
         if (jst(c[i].t).getUTCHours() !== 6 || isNaN(x.sma480[i]) || !x.rvMean[i]) return null;
@@ -189,7 +189,7 @@
         return b.c > b.o ? 'short' : 'long';
       } },
     // ---- 2026-10-20 追加（第3弾）----
-    { id: 'tokyo_yen_weak', name: '東京時間の円安（自国通貨安）', source: 'Breedon・Ranaldo「Intraday Patterns in FX Returns and Order Flow」(2013)：通貨は自国の市場時間に売られやすい。円は東京時間に安くなりやすいとして、日本時間9時に円売り、16時に手じまい',
+    { id: 'tokyo_yen_weak', jpyOnly: true, name: '東京時間の円安（自国通貨安）', source: 'Breedon・Ranaldo「Intraday Patterns in FX Returns and Order Flow」(2013)：通貨は自国の市場時間に売られやすい。円は東京時間に安くなりやすいとして、日本時間9時に円売り、16時に手じまい',
       exit: { type: 'time', bars: 7, sl: 2 },
       signal: (c, d, x, i) => (new Date(c[i].t).getUTCHours() === 23 && new Date(c[i].t).getUTCDay() !== 5 ? 'long' : null) },
     { id: 'ichimoku_4h', name: '一目均衡表の雲抜け（4時間足相当）', source: '細田悟一の一目均衡表。雲を抜け、転換線が基準線の上（下）なら順張り。学術検証（Deng ほか 2021）では為替で安定した成果は確認されていない',
@@ -201,7 +201,7 @@
         if (p >= x.cloudBot[i - 1] && q < x.cloudBot[i] && x.tenkan[i] < x.kijun[i]) return 'short';
         return null;
       } },
-    { id: 'round_number', name: 'キリ番（50銭）抜けの加速', source: 'C.Osler「Currency Orders and Exchange-Rate Dynamics」(NY連銀 2003)：損切り注文はキリの良い価格のすぐ外側に集まるため、抜けると値動きが加速しやすい',
+    { id: 'round_number', jpyOnly: true, name: 'キリ番（50銭）抜けの加速', source: 'C.Osler「Currency Orders and Exchange-Rate Dynamics」(NY連銀 2003)：損切り注文はキリの良い価格のすぐ外側に集まるため、抜けると値動きが加速しやすい',
       exit: { type: 'time', bars: 4, sl: 1 },
       signal: (c, d, x, i) => {
         const step = 0.5, p = c[i - 1].c, q = c[i].c;

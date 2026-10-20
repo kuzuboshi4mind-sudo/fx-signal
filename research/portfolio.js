@@ -9,7 +9,7 @@ const S = require('../strategies.js');
 
 const [id, out, ...pairArgs] = process.argv.slice(2);
 const NULLS = Number(process.env.NULLS || 10);
-const SPREADS = { 'USD/JPY': 0.5, 'EUR/JPY': 0.6, 'GBP/JPY': 1.0, 'AUD/JPY': 0.6, 'NZD/JPY': 1.0 };
+const SPREADS = { 'USD/JPY': 0.5, 'EUR/JPY': 0.6, 'GBP/JPY': 1.0, 'AUD/JPY': 0.6, 'NZD/JPY': 1.0, 'EUR/USD': 0.4, 'GBP/USD': 0.9, 'AUD/USD': 0.6 };
 const YEAR = 365.25 * 86400e3;
 const st = S.STRATEGIES.find(s => s.id === id);
 

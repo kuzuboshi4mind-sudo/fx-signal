@@ -13,7 +13,7 @@ const S = require('../strategies.js');
 
 const [out, ...pairArgs] = process.argv.slice(2);
 const NULLS = Number(process.env.NULLS || 10);
-const SPREADS = { 'USD/JPY': 0.5, 'EUR/JPY': 0.6, 'GBP/JPY': 1.0, 'AUD/JPY': 0.6, 'NZD/JPY': 1.0 };
+const SPREADS = { 'USD/JPY': 0.5, 'EUR/JPY': 0.6, 'GBP/JPY': 1.0, 'AUD/JPY': 0.6, 'NZD/JPY': 1.0, 'EUR/USD': 0.4, 'GBP/USD': 0.9, 'AUD/USD': 0.6 };
 const YEAR = 365.25 * 86400e3;
 
 function load(file) {
@@ -72,6 +72,7 @@ for (const arg of pairArgs) {
   const nulls = Array.from({ length: NULLS }, (_, k) => shuffled(c, 7000 + k));
   result.pairs[symbol] = { from: c[0].t, to: lastT, bars: c.length, strategies: {} };
   for (const st of S.STRATEGIES) {
+    if (st.jpyOnly && !/JPY/.test(symbol)) continue; // 円特有の手法は円のペアだけで審査
     const j = judge(trades(c, symbol, st), lastT);
     const nullPass = nulls.filter(nc => judge(trades(nc, symbol, st), lastT).passT).length / (NULLS || 1);
     const pass = j.passT && nullPass < 0.1;
