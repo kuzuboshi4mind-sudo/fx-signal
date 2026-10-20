@@ -94,7 +94,7 @@
    "entry": 110.94786,
    "sl": 110.82080425754775,
    "tp": 111.20197148490452,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -1505,11 +1505,11 @@
   "wouldWin": 25
  },
  "version": 1,
- "lastRun": 1792533972514,
+ "lastRun": 1792535690053,
  "lastBarT": 1792533600000,
- "price": 110.94786,
- "equity": 99719.99059332807,
- "unreal": 1909.080000000074,
+ "price": 110.97829,
+ "equity": 100085.15059332801,
+ "unreal": 2274.2400000000202,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1643,6 +1643,13 @@
   ]
  },
  "review": {
+  "donchian_up": {
+   "n": 3,
+   "wins": 0,
+   "recentLosses": 3,
+   "streak": 3,
+   "suspended": true
+  },
   "pullback_up": {
    "n": 2,
    "wins": 0,
@@ -1663,23 +1670,9 @@
    "recentLosses": 1,
    "streak": 1,
    "suspended": false
-  },
-  "donchian_up": {
-   "n": 2,
-   "wins": 0,
-   "recentLosses": 2,
-   "streak": 2,
-   "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
