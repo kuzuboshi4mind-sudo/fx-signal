@@ -35,7 +35,7 @@
    "entry": 211.70155,
    "sl": 211.4823573555378,
    "tp": 212.1399352889244,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -51,7 +51,7 @@
    "entry": 211.70155,
    "sl": 211.4823573555378,
    "tp": 212.1399352889244,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1360,7 +1360,7 @@
    ]
   }
  ],
- "lastEvalT": 1792501200000,
+ "lastEvalT": 1792504800000,
  "adaptive": {
   "start": 100000,
   "balance": 96526.14637585758,
@@ -1764,16 +1764,16 @@
   "pickTried": "2026-10-14",
   "equity": 96526.14637585758
  },
- "reportDay": "2026-10-20",
+ "reportDay": "2026-10-21",
  "skipReview": {
-  "n": 72,
-  "wouldLose": 47,
+  "n": 74,
+  "wouldLose": 49,
   "wouldWin": 25
  },
  "version": 1,
- "lastRun": 1792508102414,
- "lastBarT": 1792504800000,
- "price": 211.49597,
+ "lastRun": 1792510495788,
+ "lastBarT": 1792508400000,
+ "price": 211.52369,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1840,7 +1840,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1792,
+  "events": 1790,
   "win": [
    {
     "name": "陽の包み足",
@@ -1856,7 +1856,7 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.24692266196616966
+    "avgR": 0.24692266196710877
    },
    {
     "name": "20本高値ブレイク",
@@ -1872,7 +1872,7 @@
     "key": "against|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.1969258632721846
+    "avgR": 0.1969258632767925
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1888,7 +1888,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.19801538746927425
+    "avgR": 0.19801538746927427
    },
    {
     "name": "RSI売られすぎ反発",

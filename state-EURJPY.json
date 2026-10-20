@@ -60,6 +60,22 @@
  },
  "log": [
   {
+   "t": 1792504800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.65872,
+   "sl": 177.45657167730718,
+   "tp": 178.0630166453856,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792494000000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -1544,7 +1560,7 @@
    ]
   }
  ],
- "lastEvalT": 1792501200000,
+ "lastEvalT": 1792504800000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1642,16 +1658,16 @@
   "pickTried": "2026-10-14",
   "equity": 98089.25747528837
  },
- "reportDay": "2026-10-20",
+ "reportDay": "2026-10-21",
  "skipReview": {
   "n": 84,
   "wouldLose": 70,
   "wouldWin": 14
  },
  "version": 1,
- "lastRun": 1792508101668,
- "lastBarT": 1792504800000,
- "price": 177.61523,
+ "lastRun": 1792510494858,
+ "lastBarT": 1792508400000,
+ "price": 177.65872,
  "equity": 105286.52480151838,
  "unreal": 0,
  "config": {
@@ -1718,7 +1734,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1822,
+  "events": 1820,
   "win": [
    {
     "name": "陽の包み足",
@@ -1734,7 +1750,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4583333333333333,
-    "avgR": 0.3535393173980949
+    "avgR": 0.3535393173980945
    },
    {
     "name": "陽の包み足",
@@ -1742,7 +1758,7 @@
     "key": "with|trend",
     "n": 42,
     "winRate": 0.35714285714285715,
-    "avgR": 0.15570948166185986
+    "avgR": 0.1557094816609035
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -1758,7 +1774,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.10752255540896272
+    "avgR": 0.10752255540896227
    },
    {
     "name": "MACD買いクロス",
@@ -1793,7 +1809,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
