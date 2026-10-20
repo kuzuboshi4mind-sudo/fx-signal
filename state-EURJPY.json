@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792468800000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 177.70061,
+   "sl": 177.86245984717297,
+   "tp": 177.3769103056541,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792454400000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -1468,7 +1484,7 @@
    ]
   }
  ],
- "lastEvalT": 1792465200000,
+ "lastEvalT": 1792468800000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1573,9 +1589,9 @@
   "wouldWin": 12
  },
  "version": 1,
- "lastRun": 1792471962514,
- "lastBarT": 1792468800000,
- "price": 177.69805,
+ "lastRun": 1792474362888,
+ "lastBarT": 1792472400000,
+ "price": 177.70061,
  "equity": 101655.59361592878,
  "unreal": 0,
  "config": {
@@ -1642,7 +1658,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1819,
+  "events": 1818,
   "win": [
    {
     "name": "陽の包み足",
@@ -1658,7 +1674,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.4782608695652174,
-    "avgR": 0.4131650548931219
+    "avgR": 0.4131650548931222
    },
    {
     "name": "陽の包み足",
@@ -1666,7 +1682,7 @@
     "key": "with|trend",
     "n": 42,
     "winRate": 0.35714285714285715,
-    "avgR": 0.15570948165244797
+    "avgR": 0.15570948165306936
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1674,7 +1690,7 @@
     "key": "with|range",
     "n": 19,
     "winRate": 0.3684210526315789,
-    "avgR": 0.16679430979708473
+    "avgR": 0.166794309797085
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -1710,7 +1726,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
