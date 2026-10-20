@@ -1375,7 +1375,7 @@
    ]
   }
  ],
- "lastEvalT": 1792512000000,
+ "lastEvalT": 1792515600000,
  "adaptive": {
   "start": 100000,
   "balance": 96526.14637585758,
@@ -1786,9 +1786,9 @@
   "wouldWin": 25
  },
  "version": 1,
- "lastRun": 1792517864376,
- "lastBarT": 1792515600000,
- "price": 211.55568,
+ "lastRun": 1792519477499,
+ "lastBarT": 1792519200000,
+ "price": 211.60552,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1871,7 +1871,7 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.2469226619687739
+    "avgR": 0.24692266197006
    },
    {
     "name": "20本高値ブレイク",
@@ -1887,7 +1887,7 @@
     "key": "against|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.1969258632849629
+    "avgR": 0.1969258632912739
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1932,16 +1932,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
