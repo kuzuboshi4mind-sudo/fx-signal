@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 101629.21825804951,
+  "balance": 99693.67227901296,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 15000,
-   "entry": 110.62234,
-   "sl": 110.49330360139756,
-   "tp": 110.86241279720488,
-   "barT": 1792461600000,
-   "openT": 1792463473318,
-   "deadline": 1792549873318
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 15000,
+    "entry": 110.62234,
+    "sl": 110.49330360139756,
+    "tp": 110.86241279720488,
+    "barT": 1792461600000,
+    "openT": 1792463473318,
+    "deadline": 1792549873318,
+    "exit": 110.49330360139756,
+    "closeT": 1792468800000,
+    "reason": "sl",
+    "pnl": -1935.5459790365614
+   },
    {
     "dir": "long",
     "pattern": "ema_cross_up",
@@ -62,7 +67,7 @@
    "entry": 110.61634,
    "sl": 110.49330360139756,
    "tp": 110.86241279720488,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -1346,11 +1351,11 @@
   "wouldWin": 23
  },
  "version": 1,
- "lastRun": 1792469428268,
+ "lastRun": 1792471963586,
  "lastBarT": 1792468800000,
- "price": 110.52828,
- "equity": 100218.31825804953,
- "unreal": -1410.8999999999837,
+ "price": 110.46148,
+ "equity": 99693.67227901296,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1468,6 +1473,13 @@
   ]
  },
  "review": {
+  "pullback_up": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "bb_break_up": {
    "n": 1,
    "wins": 1,
