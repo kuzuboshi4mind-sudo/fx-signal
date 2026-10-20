@@ -6,7 +6,18 @@
   "balance": 101655.59361592878,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 11000,
+   "entry": 177.53961,
+   "sl": 177.71365232661773,
+   "tp": 177.2095253467646,
+   "barT": 1792483200000,
+   "openT": 1792483846723,
+   "deadline": 1792570246723
+  },
   "trades": [
    {
     "dir": "short",
@@ -43,6 +54,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1792479600000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 177.54561,
+   "sl": 177.71365232661773,
+   "tp": 177.2095253467646,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792468800000,
    "pattern": "macd_dn",
@@ -1484,7 +1507,7 @@
    ]
   }
  ],
- "lastEvalT": 1792476000000,
+ "lastEvalT": 1792479600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1589,11 +1612,11 @@
   "wouldWin": 12
  },
  "version": 1,
- "lastRun": 1792481248499,
- "lastBarT": 1792479600000,
- "price": 177.61489,
- "equity": 101655.59361592878,
- "unreal": 0,
+ "lastRun": 1792483846723,
+ "lastBarT": 1792483200000,
+ "price": 177.54561,
+ "equity": 101589.59361592878,
+ "unreal": -66.0000000000025,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -1674,7 +1697,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.4782608695652174,
-    "avgR": 0.41316505489312244
+    "avgR": 0.41316505489312333
    },
    {
     "name": "陽の包み足",
@@ -1682,7 +1705,7 @@
     "key": "with|trend",
     "n": 42,
     "winRate": 0.35714285714285715,
-    "avgR": 0.1557094816536734
+    "avgR": 0.15570948165577456
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1690,7 +1713,7 @@
     "key": "with|range",
     "n": 19,
     "winRate": 0.3684210526315789,
-    "avgR": 0.1667943097970853
+    "avgR": 0.16679430979708643
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -1726,7 +1749,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
