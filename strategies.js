@@ -40,7 +40,15 @@
       curH = Math.max(curH, c[i].h); curL = Math.min(curL, c[i].l);
       dayOpen[i] = curOpen; prevRange[i] = lastRange;
     }
-    return { hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
+    // 一目均衡表（4時間足相当：標準の 9/26/52 を1時間足で4倍にする）
+    const mid = (len) => { const H = hh(len), L = ll(len); return H.map((v, i) => (v + L[i]) / 2); };
+    const tenkan = mid(36), kijun = mid(104), spanB0 = mid(208), K = 104;
+    const cloudTop = new Array(n).fill(NaN), cloudBot = new Array(n).fill(NaN);
+    for (let i = K; i < n; i++) {
+      const a = (tenkan[i - K] + kijun[i - K]) / 2, b = spanB0[i - K];
+      cloudTop[i] = Math.max(a, b); cloudBot[i] = Math.min(a, b);
+    }
+    return { hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
   }
 
   // 五十日（ごとおび）：5・10・15・20・25日と月末。土日なら直前の金曜
@@ -179,6 +187,37 @@
         const a = d.atr[i - 1], b = c[i];
         if (isNaN(a) || b.h - b.l < a * 3) return null;
         return b.c > b.o ? 'short' : 'long';
+      } },
+    // ---- 2026-10-20 追加（第3弾）----
+    { id: 'tokyo_yen_weak', name: '東京時間の円安（自国通貨安）', source: 'Breedon・Ranaldo「Intraday Patterns in FX Returns and Order Flow」(2013)：通貨は自国の市場時間に売られやすい。円は東京時間に安くなりやすいとして、日本時間9時に円売り、16時に手じまい',
+      exit: { type: 'time', bars: 7, sl: 2 },
+      signal: (c, d, x, i) => (new Date(c[i].t).getUTCHours() === 23 && new Date(c[i].t).getUTCDay() !== 5 ? 'long' : null) },
+    { id: 'ichimoku_4h', name: '一目均衡表の雲抜け（4時間足相当）', source: '細田悟一の一目均衡表。雲を抜け、転換線が基準線の上（下）なら順張り。学術検証（Deng ほか 2021）では為替で安定した成果は確認されていない',
+      exit: { type: 'atr', tp: 4, sl: 2, maxBars: 120 },
+      signal: (c, d, x, i) => {
+        if (isNaN(x.cloudTop[i - 1]) || isNaN(x.kijun[i])) return null;
+        const p = c[i - 1].c, q = c[i].c;
+        if (p <= x.cloudTop[i - 1] && q > x.cloudTop[i] && x.tenkan[i] > x.kijun[i]) return 'long';
+        if (p >= x.cloudBot[i - 1] && q < x.cloudBot[i] && x.tenkan[i] < x.kijun[i]) return 'short';
+        return null;
+      } },
+    { id: 'round_number', name: 'キリ番（50銭）抜けの加速', source: 'C.Osler「Currency Orders and Exchange-Rate Dynamics」(NY連銀 2003)：損切り注文はキリの良い価格のすぐ外側に集まるため、抜けると値動きが加速しやすい',
+      exit: { type: 'time', bars: 4, sl: 1 },
+      signal: (c, d, x, i) => {
+        const step = 0.5, p = c[i - 1].c, q = c[i].c;
+        const lv = Math.floor(q / step) * step;
+        if (p < lv && q >= lv + 0.02) return 'long';
+        const lv2 = Math.ceil(q / step) * step;
+        if (p > lv2 && q <= lv2 - 0.02) return 'short';
+        return null;
+      } },
+    { id: 'swing_donchian', name: 'スイング：4時間足20本ブレイク', source: 'R.ドンチャンの価格チャネル（タートルズのシステム1）を4時間足相当（80時間）に当て、20日線の向きに数日持つスイング型',
+      exit: { type: 'atr', tp: 4, sl: 2, maxBars: 120 },
+      signal: (c, d, x, i) => {
+        if (isNaN(x.hh80[i]) || isNaN(x.sma480[i])) return null;
+        if (c[i].c > x.hh80[i] && c[i - 1].c <= x.hh80[i - 1] && c[i].c > x.sma480[i]) return 'long';
+        if (c[i].c < x.ll80[i] && c[i - 1].c >= x.ll80[i - 1] && c[i].c < x.sma480[i]) return 'short';
+        return null;
       } },
   ];
 
