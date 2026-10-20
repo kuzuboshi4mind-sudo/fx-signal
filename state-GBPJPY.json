@@ -51,7 +51,7 @@
    "entry": 210.88644,
    "sl": 211.09154359325782,
    "tp": 210.47623281348436,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -179,7 +179,7 @@
    "entry": 210.65647,
    "sl": 210.41716569413424,
    "tp": 211.13507861173156,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -1184,25 +1184,12 @@
    ]
   }
  ],
- "lastEvalT": 1792447200000,
+ "lastEvalT": 1792450800000,
  "adaptive": {
   "start": 100000,
-  "balance": 100213.36126894488,
+  "balance": 99739.41694585852,
   "startT": 1791953875407,
   "positions": [
-   {
-    "key": "pullback_up|short|3|1",
-    "dir": "short",
-    "pattern": "pullback_up",
-    "name": "上昇トレンドの押し目（逆向き）",
-    "units": 2000,
-    "entry": 210.87262,
-    "sl": 211.1095921615432,
-    "tp": 210.16170351537045,
-    "barT": 1792400400000,
-    "openT": 1792402680310,
-    "deadline": 1792489080310
-   },
    {
     "key": "bb_break_up|short|3|1",
     "dir": "short",
@@ -1231,6 +1218,23 @@
    }
   ],
   "trades": [
+   {
+    "key": "pullback_up|short|3|1",
+    "dir": "short",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目（逆向き）",
+    "units": 2000,
+    "entry": 210.87262,
+    "sl": 211.1095921615432,
+    "tp": 210.16170351537045,
+    "barT": 1792400400000,
+    "openT": 1792402680310,
+    "deadline": 1792489080310,
+    "exit": 211.1095921615432,
+    "closeT": 1792454400000,
+    "reason": "sl",
+    "pnl": -473.94432308635714
+   },
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -1524,18 +1528,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99690.48126894486
+  "equity": 98684.61694585861
  },
  "reportDay": "2026-10-20",
  "skipReview": {
-  "n": 57,
-  "wouldLose": 38,
+  "n": 58,
+  "wouldLose": 39,
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792454351817,
- "lastBarT": 1792450800000,
- "price": 211.02645,
+ "lastRun": 1792456974281,
+ "lastBarT": 1792454400000,
+ "price": 211.14639,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1602,7 +1606,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1789,
+  "events": 1790,
   "win": [
    {
     "name": "陽の包み足",
@@ -1611,6 +1615,14 @@
     "n": 27,
     "winRate": 0.5555555555555556,
     "avgR": 0.6440438657068293
+   },
+   {
+    "name": "上昇トレンドの押し目",
+    "dir": "long",
+    "key": "with|trend",
+    "n": 33,
+    "winRate": 0.42424242424242425,
+    "avgR": 0.24692266196046206
    },
    {
     "name": "20本高値ブレイク",
@@ -1626,7 +1638,7 @@
     "key": "against|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.19692586324890207
+    "avgR": 0.19692586324417857
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1664,8 +1676,8 @@
  },
  "review": {
   "pullback_up": {
-   "n": 2,
-   "wins": 2,
+   "n": 3,
+   "wins": 3,
    "recentLosses": 0,
    "streak": 0,
    "suspended": false
