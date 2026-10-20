@@ -1348,11 +1348,11 @@
  "lastEvalT": 1792472400000,
  "reportDay": "2026-10-20",
  "version": 1,
- "lastRun": 1792476287017,
+ "lastRun": 1792478525986,
  "lastBarT": 1792476000000,
- "price": 158.13596,
- "equity": 101877.59848969035,
- "unreal": -74.99999999993179,
+ "price": 158.10226,
+ "equity": 102383.0984896905,
+ "unreal": 430.50000000022237,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -1524,14 +1524,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 101945.3753221119,
