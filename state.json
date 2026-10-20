@@ -1412,11 +1412,11 @@
  "lastEvalT": 1792490400000,
  "reportDay": "2026-10-20",
  "version": 1,
- "lastRun": 1792494907332,
+ "lastRun": 1792497129010,
  "lastBarT": 1792494000000,
- "price": 158.13175,
- "equity": 101940.74848969036,
- "unreal": -11.849999999924421,
+ "price": 158.17849,
+ "equity": 101239.64848969036,
+ "unreal": -712.9499999999211,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -1580,17 +1580,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 101945.3753221119,
