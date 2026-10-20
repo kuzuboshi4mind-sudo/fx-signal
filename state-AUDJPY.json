@@ -6,7 +6,18 @@
   "balance": 101629.21825804951,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "units": 15000,
+   "entry": 110.62234,
+   "sl": 110.49330360139756,
+   "tp": 110.86241279720488,
+   "barT": 1792461600000,
+   "openT": 1792463473318,
+   "deadline": 1792549873318
+  },
   "trades": [
    {
     "dir": "long",
@@ -43,6 +54,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1792458000000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 110.61634,
+   "sl": 110.49330360139756,
+   "tp": 110.86241279720488,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792440000000,
    "pattern": "macd_dn",
@@ -1218,7 +1241,7 @@
    ]
   }
  ],
- "lastEvalT": 1792454400000,
+ "lastEvalT": 1792458000000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1323,11 +1346,11 @@
   "wouldWin": 23
  },
  "version": 1,
- "lastRun": 1792461326002,
- "lastBarT": 1792458000000,
- "price": 110.66063,
- "equity": 101629.21825804951,
- "unreal": 0,
+ "lastRun": 1792463473318,
+ "lastBarT": 1792461600000,
+ "price": 110.61634,
+ "equity": 101539.21825804951,
+ "unreal": -90.00000000000341,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1392,7 +1415,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1874,
+  "events": 1871,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -1416,7 +1439,7 @@
     "key": "with|range",
     "n": 60,
     "winRate": 0.43333333333333335,
-    "avgR": 0.3478707115967647
+    "avgR": 0.34787071159677885
    },
    {
     "name": "上昇トレンドの押し目",
@@ -1424,7 +1447,7 @@
     "key": "with|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.29162466059276604
+    "avgR": 0.2916246605846636
    },
    {
     "name": "陽の包み足",
@@ -1440,7 +1463,7 @@
     "key": "with|range",
     "n": 127,
     "winRate": 0.3543307086614173,
-    "avgR": 0.08991648730174845
+    "avgR": 0.08991648730177125
    }
   ]
  },
@@ -1467,7 +1490,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
