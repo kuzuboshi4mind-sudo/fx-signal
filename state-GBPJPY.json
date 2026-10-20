@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792465200000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 210.95905,
+   "sl": 211.12755757457583,
+   "tp": 210.62203485084834,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792461600000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -35,7 +51,7 @@
    "entry": 211.1756,
    "sl": 211.01018645814912,
    "tp": 211.5064270837018,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -51,7 +67,7 @@
    "entry": 211.1756,
    "sl": 211.01018645814912,
    "tp": 211.5064270837018,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -67,7 +83,7 @@
    "entry": 211.13483,
    "sl": 210.9678621644806,
    "tp": 211.46876567103874,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1232,7 +1248,7 @@
    ]
   }
  ],
- "lastEvalT": 1792461600000,
+ "lastEvalT": 1792465200000,
  "adaptive": {
   "start": 100000,
   "balance": 98412.4274050227,
@@ -1587,14 +1603,14 @@
  },
  "reportDay": "2026-10-20",
  "skipReview": {
-  "n": 58,
-  "wouldLose": 39,
+  "n": 61,
+  "wouldLose": 42,
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792467345419,
- "lastBarT": 1792465200000,
- "price": 211.1402,
+ "lastRun": 1792469427694,
+ "lastBarT": 1792468800000,
+ "price": 210.95905,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1661,7 +1677,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1789,
+  "events": 1791,
   "win": [
    {
     "name": "陽の包み足",
@@ -1677,7 +1693,7 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.2469226619590302
+    "avgR": 0.2469226619595136
    },
    {
     "name": "20本高値ブレイク",
@@ -1693,7 +1709,7 @@
     "key": "against|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.19692586323715272
+    "avgR": 0.19692586323952455
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1738,7 +1754,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
