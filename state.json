@@ -1472,11 +1472,11 @@
  "lastEvalT": 1792533600000,
  "reportDay": "2026-10-21",
  "version": 1,
- "lastRun": 1792538987681,
+ "lastRun": 1792540629378,
  "lastBarT": 1792537200000,
- "price": 158.29367,
- "equity": 107169.35437509062,
- "unreal": 1507.519999999829,
+ "price": 158.30558,
+ "equity": 107336.09437509063,
+ "unreal": 1674.2599999998333,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -2012,7 +2012,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 102419.01532211182
+  "equity": 102466.65532211182
  },
  "skipReview": {
   "n": 74,
@@ -2021,9 +2021,10 @@
  },
  "latest": {
   "start": 100000,
-  "balance": 102790.06000000007,
+  "balance": 101527.1800000003,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -2035,10 +2036,12 @@
     "tp": 143.2730457110952,
     "barT": 1792508400000,
     "openT": 1792510493495,
-    "deadline": 1792539293495
-   }
-  ],
-  "trades": [
+    "deadline": 1792539293495,
+    "exit": 158.30558,
+    "closeT": 1792540629378,
+    "reason": "time",
+    "pnl": -1262.8799999997682
+   },
    {
     "key": "vol_breakout",
     "dir": "long",
@@ -2060,6 +2063,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 101634.3700000003
+  "equity": 101527.1800000003
  }
 }

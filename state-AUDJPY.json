@@ -1529,11 +1529,11 @@
   "wouldWin": 25
  },
  "version": 1,
- "lastRun": 1792538989140,
+ "lastRun": 1792540630431,
  "lastBarT": 1792537200000,
- "price": 110.93985,
- "equity": 99623.87059332809,
- "unreal": 1812.9600000000892,
+ "price": 110.91349,
+ "equity": 99307.55059332795,
+ "unreal": 1496.6399999999567,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
