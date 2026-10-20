@@ -6,5 +6,6 @@
 - `validate.js`：strategies.js の手法 × 通貨ペアを3周＋シャッフル比較で審査（最新型口座の合格判定）
 - `pairs.js`：通貨ペアの値動き・コストの比較
 - `adaptive.js`：適応型口座のルール改善案（パターン重複の禁止・損切り後のクールダウン）を3年分再現して比較
+- `portfolio.js`：1つの手法を5ペアに分散して同時に運用した場合を、3周＋シャッフル比較で審査
 - `ml.py`：負け要因の分析・負け回避ルール・LightGBM・ウォークフォワード評価（`pip install lightgbm scikit-learn pandas`）
 - `results/`：結果のJSON
