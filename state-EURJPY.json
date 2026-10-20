@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 101655.59361592878,
+  "balance": 105286.52480151838,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 11000,
-   "entry": 177.53961,
-   "sl": 177.71365232661773,
-   "tp": 177.2095253467646,
-   "barT": 1792483200000,
-   "openT": 1792483846723,
-   "deadline": 1792570246723
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 11000,
+    "entry": 177.53961,
+    "sl": 177.71365232661773,
+    "tp": 177.2095253467646,
+    "barT": 1792483200000,
+    "openT": 1792483846723,
+    "deadline": 1792570246723,
+    "exit": 177.2095253467646,
+    "closeT": 1792486800000,
+    "reason": "tp",
+    "pnl": 3630.9311855895885
+   },
    {
     "dir": "short",
     "pattern": "macd_dn",
@@ -74,7 +79,7 @@
    "entry": 177.70061,
    "sl": 177.86245984717297,
    "tp": 177.3769103056541,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -138,7 +143,7 @@
    "entry": 177.64372,
    "sl": 177.39632432566117,
    "tp": 178.13851134867767,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -153,7 +158,7 @@
    "entry": 177.55287,
    "sl": 177.30306619686587,
    "tp": 178.05247760626827,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1507,7 +1512,7 @@
    ]
   }
  ],
- "lastEvalT": 1792479600000,
+ "lastEvalT": 1792483200000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1607,16 +1612,16 @@
  },
  "reportDay": "2026-10-20",
  "skipReview": {
-  "n": 79,
-  "wouldLose": 67,
-  "wouldWin": 12
+  "n": 82,
+  "wouldLose": 69,
+  "wouldWin": 13
  },
  "version": 1,
- "lastRun": 1792486541013,
- "lastBarT": 1792483200000,
- "price": 177.48667,
- "equity": 102237.93361592885,
- "unreal": 582.3400000000731,
+ "lastRun": 1792488857663,
+ "lastBarT": 1792486800000,
+ "price": 177.36259,
+ "equity": 105286.52480151838,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -1681,7 +1686,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1820,
+  "events": 1823,
   "win": [
    {
     "name": "陽の包み足",
@@ -1697,7 +1702,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4583333333333333,
-    "avgR": 0.3535393173980923
+    "avgR": 0.35353931739809236
    },
    {
     "name": "陽の包み足",
@@ -1705,7 +1710,7 @@
     "key": "with|trend",
     "n": 42,
     "winRate": 0.35714285714285715,
-    "avgR": 0.15570948165577456
+    "avgR": 0.1557094816559561
    },
    {
     "name": "ボリバン下限から回帰",
@@ -1713,7 +1718,7 @@
     "key": "with|range",
     "n": 19,
     "winRate": 0.3684210526315789,
-    "avgR": 0.16679430979708643
+    "avgR": 0.1667943097970865
    },
    {
     "name": "デッドクロス(EMA20/50)",
