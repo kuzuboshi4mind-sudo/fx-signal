@@ -1235,9 +1235,10 @@
  "lastEvalT": 1792461600000,
  "adaptive": {
   "start": 100000,
-  "balance": 99072.44126920722,
+  "balance": 98412.4274050227,
   "startT": 1791953875407,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -1249,10 +1250,12 @@
     "tp": 210.78110480093082,
     "barT": 1792450800000,
     "openT": 1792452693561,
-    "deadline": 1792539093561
-   }
-  ],
-  "trades": [
+    "deadline": 1792539093561,
+    "exit": 211.19361346604614,
+    "closeT": 1792465200000,
+    "reason": "sl",
+    "pnl": -660.0138641845206
+   },
    {
     "key": "bb_break_up|short|3|1",
     "dir": "short",
@@ -1580,7 +1583,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98484.48126920727
+  "equity": 98412.4274050227
  },
  "reportDay": "2026-10-20",
  "skipReview": {
@@ -1589,9 +1592,9 @@
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792465514678,
+ "lastRun": 1792467345419,
  "lastBarT": 1792465200000,
- "price": 211.1756,
+ "price": 211.1402,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1735,26 +1738,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
