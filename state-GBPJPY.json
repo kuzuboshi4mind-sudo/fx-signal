@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792476000000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 211.11723,
+   "sl": 210.92768965694495,
+   "tp": 211.49631068611012,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792465200000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -1248,12 +1264,26 @@
    ]
   }
  ],
- "lastEvalT": 1792472400000,
+ "lastEvalT": 1792476000000,
  "adaptive": {
   "start": 100000,
   "balance": 98412.4274050227,
   "startT": 1791953875407,
-  "positions": [],
+  "positions": [
+   {
+    "key": "pullback_up|short|3|1",
+    "dir": "short",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目（逆向き）",
+    "units": 3000,
+    "entry": 211.10723000000002,
+    "sl": 211.29677034305507,
+    "tp": 210.53860897083482,
+    "barT": 1792479600000,
+    "openT": 1792481248974,
+    "deadline": 1792567648974
+   }
+  ],
   "trades": [
    {
     "key": "engulf_up|short|1.5|1",
@@ -1599,7 +1629,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98412.4274050227
+  "equity": 98382.42740502272
  },
  "reportDay": "2026-10-20",
  "skipReview": {
@@ -1608,9 +1638,9 @@
   "wouldWin": 19
  },
  "version": 1,
- "lastRun": 1792478526935,
- "lastBarT": 1792476000000,
- "price": 211.15464,
+ "lastRun": 1792481248974,
+ "lastBarT": 1792479600000,
+ "price": 211.11723,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1677,7 +1707,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1793,
+  "events": 1795,
   "win": [
    {
     "name": "陽の包み足",
@@ -1693,7 +1723,7 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.24692266195978693
+    "avgR": 0.24692266195997942
    },
    {
     "name": "20本高値ブレイク",
@@ -1709,7 +1739,7 @@
     "key": "against|trend",
     "n": 27,
     "winRate": 0.4074074074074074,
-    "avgR": 0.1969258632408659
+    "avgR": 0.19692586324181072
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1754,7 +1784,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

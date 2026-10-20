@@ -28,6 +28,36 @@
  },
  "log": [
   {
+   "t": 1792476000000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 89.90847,
+   "sl": 89.81290708818072,
+   "tp": 90.09959582363854,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1792476000000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 89.90847,
+   "sl": 89.81290708818072,
+   "tp": 90.09959582363854,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792465200000,
    "pattern": "rsi_fall",
    "name": "RSI買われすぎ反落",
@@ -35,7 +65,7 @@
    "entry": 89.8206,
    "sl": 89.91230941285029,
    "tp": 89.63718117429943,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -51,7 +81,7 @@
    "entry": 89.81042,
    "sl": 89.90134896401571,
    "tp": 89.62856207196856,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -160,7 +190,7 @@
    "entry": 89.67661,
    "sl": 89.55937729982018,
    "tp": 89.91107540035962,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1196,25 +1226,12 @@
    ]
   }
  ],
- "lastEvalT": 1792472400000,
+ "lastEvalT": 1792476000000,
  "adaptive": {
   "start": 100000,
-  "balance": 98937.17805971693,
+  "balance": 98360.7970308805,
   "startT": 1791967923493,
   "positions": [
-   {
-    "key": "donchian_up|short|3|1",
-    "dir": "short",
-    "pattern": "donchian_up",
-    "name": "20本高値ブレイク（逆向き）",
-    "units": 5000,
-    "entry": 89.80109999999999,
-    "sl": 89.91637620576728,
-    "tp": 89.45527138269813,
-    "barT": 1792414800000,
-    "openT": 1792415221621,
-    "deadline": 1792501621621
-   },
    {
     "key": "rsi_fall|long|3|1",
     "dir": "long",
@@ -1227,9 +1244,39 @@
     "barT": 1792425600000,
     "openT": 1792427778021,
     "deadline": 1792514178021
+   },
+   {
+    "key": "donchian_up|short|3|1",
+    "dir": "short",
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク（逆向き）",
+    "units": 6000,
+    "entry": 89.89846999999999,
+    "sl": 89.99403291181926,
+    "tp": 89.61178126454217,
+    "barT": 1792479600000,
+    "openT": 1792481250503,
+    "deadline": 1792567650503
    }
   ],
   "trades": [
+   {
+    "key": "donchian_up|short|3|1",
+    "dir": "short",
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク（逆向き）",
+    "units": 5000,
+    "entry": 89.80109999999999,
+    "sl": 89.91637620576728,
+    "tp": 89.45527138269813,
+    "barT": 1792414800000,
+    "openT": 1792415221621,
+    "deadline": 1792501621621,
+    "exit": 89.91637620576728,
+    "closeT": 1792476000000,
+    "reason": "sl",
+    "pnl": -576.3810288364368
+   },
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -1404,18 +1451,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99147.27805971683
+  "equity": 99047.74703088037
  },
  "reportDay": "2026-10-20",
  "skipReview": {
-  "n": 62,
-  "wouldLose": 40,
-  "wouldWin": 22
+  "n": 65,
+  "wouldLose": 42,
+  "wouldWin": 23
  },
  "version": 1,
- "lastRun": 1792478527825,
- "lastBarT": 1792476000000,
- "price": 89.87083,
+ "lastRun": 1792481250503,
+ "lastBarT": 1792479600000,
+ "price": 89.90847,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
@@ -1482,7 +1529,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1876,
+  "events": 1879,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -1491,14 +1538,6 @@
     "n": 19,
     "winRate": 0.631578947368421,
     "avgR": 0.8614916529008197
-   },
-   {
-    "name": "MACD買いクロス",
-    "dir": "long",
-    "key": "against|range",
-    "n": 31,
-    "winRate": 0.4838709677419355,
-    "avgR": 0.41059889071630556
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1522,7 +1561,7 @@
     "key": "against|range",
     "n": 21,
     "winRate": 0.42857142857142855,
-    "avgR": 0.2405020751956047
+    "avgR": 0.24050207519560468
    },
    {
     "name": "上昇トレンドの押し目",
@@ -1530,7 +1569,7 @@
     "key": "with|trend",
     "n": 36,
     "winRate": 0.3333333333333333,
-    "avgR": 0.1825229669824519
+    "avgR": 0.18252296698241993
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1538,7 +1577,7 @@
     "key": "*",
     "n": 92,
     "winRate": 0.391304347826087,
-    "avgR": 0.15188175807303028
+    "avgR": 0.151881758073029
    },
    {
     "name": "20本安値ブレイク",
@@ -1554,7 +1593,7 @@
     "key": "with|trend",
     "n": 30,
     "winRate": 0.3333333333333333,
-    "avgR": 0.040435822321704964
+    "avgR": 0.04043582233442448
    }
   ]
  },
@@ -1567,7 +1606,24 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
