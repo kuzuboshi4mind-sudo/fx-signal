@@ -1275,22 +1275,9 @@
  "lastEvalT": 1792508400000,
  "adaptive": {
   "start": 100000,
-  "balance": 98360.7970308805,
+  "balance": 99149.94703088044,
   "startT": 1791967923493,
   "positions": [
-   {
-    "key": "rsi_fall|long|3|1",
-    "dir": "long",
-    "pattern": "rsi_fall",
-    "name": "RSI買われすぎ反落（逆向き）",
-    "units": 5000,
-    "entry": 89.75908000000001,
-    "sl": 89.6450502171754,
-    "tp": 90.10116934847385,
-    "barT": 1792425600000,
-    "openT": 1792427778021,
-    "deadline": 1792514178021
-   },
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -1306,6 +1293,23 @@
    }
   ],
   "trades": [
+   {
+    "key": "rsi_fall|long|3|1",
+    "dir": "long",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落（逆向き）",
+    "units": 5000,
+    "entry": 89.75908000000001,
+    "sl": 89.6450502171754,
+    "tp": 90.10116934847385,
+    "barT": 1792425600000,
+    "openT": 1792427778021,
+    "deadline": 1792514178021,
+    "exit": 89.91691,
+    "closeT": 1792515236834,
+    "reason": "time",
+    "pnl": 789.1499999999496
+   },
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -1497,7 +1501,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99052.79703088038
+  "equity": 99039.30703088037
  },
  "reportDay": "2026-10-21",
  "skipReview": {
@@ -1506,9 +1510,9 @@
   "wouldWin": 25
  },
  "version": 1,
- "lastRun": 1792512704020,
+ "lastRun": 1792515236834,
  "lastBarT": 1792512000000,
- "price": 89.90342,
+ "price": 89.91691,
  "equity": 103353.15021702921,
  "unreal": 0,
  "config": {
