@@ -142,7 +142,7 @@
    "entry": 111.04987,
    "sl": 111.18000684796132,
    "tp": 110.78959630407735,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -154,7 +154,7 @@
    "entry": 111.04987,
    "sl": 111.18000684796132,
    "tp": 110.78959630407735,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1843,16 +1843,16 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 81,
-  "wouldLose": 55,
+  "n": 82,
+  "wouldLose": 56,
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792616705371,
+ "lastRun": 1792618579019,
  "lastBarT": 1792616400000,
- "price": 111.04987,
- "equity": 102691.78030426207,
- "unreal": -90.00000000000341,
+ "price": 111.12004,
+ "equity": 101639.23030426199,
+ "unreal": -1142.5500000000711,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1987,10 +1987,10 @@
  },
  "review": {
   "engulf_dn": {
-   "n": 1,
+   "n": 2,
    "wins": 0,
-   "recentLosses": 1,
-   "streak": 1,
+   "recentLosses": 2,
+   "streak": 2,
    "suspended": false
   },
   "pullback_up": {
@@ -2029,23 +2029,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
