@@ -126,7 +126,7 @@
    "entry": 158.347,
    "sl": 158.219470203806,
    "tp": 158.60205959238803,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -142,7 +142,7 @@
    "entry": 158.347,
    "sl": 158.219470203806,
    "tp": 158.60205959238803,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1535,11 +1535,11 @@
  "lastEvalT": 1792544400000,
  "reportDay": "2026-10-21",
  "version": 1,
- "lastRun": 1792548466373,
+ "lastRun": 1792551170418,
  "lastBarT": 1792548000000,
- "price": 158.28841,
- "equity": 107095.71437509073,
- "unreal": 1433.879999999931,
+ "price": 158.24524,
+ "equity": 106491.33437509068,
+ "unreal": 829.4999999998822,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -1604,7 +1604,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1884,
+  "events": 1886,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -1710,17 +1710,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 101945.3753221119,
@@ -2085,11 +2075,11 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 102397.97532211186
+  "equity": 102225.29532211184
  },
  "skipReview": {
-  "n": 75,
-  "wouldLose": 63,
+  "n": 77,
+  "wouldLose": 65,
   "wouldWin": 12
  },
  "latest": {
