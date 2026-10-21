@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 105286.52480151838,
+  "balance": 103211.10015103193,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "short",
-   "pattern": "ema_cross_dn",
-   "name": "デッドクロス(EMA20/50)",
-   "units": 13000,
-   "entry": 177.37311,
-   "sl": 177.53275805003742,
-   "tp": 177.07181389992516,
-   "barT": 1792584000000,
-   "openT": 1792584419601,
-   "deadline": 1792670819601
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "units": 13000,
+    "entry": 177.37311,
+    "sl": 177.53275805003742,
+    "tp": 177.07181389992516,
+    "barT": 1792584000000,
+    "openT": 1792584419601,
+    "deadline": 1792670819601,
+    "exit": 177.53275805003742,
+    "closeT": 1792598400000,
+    "reason": "sl",
+    "pnl": -2075.4246504864395
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -94,7 +99,7 @@
    "entry": 177.37911,
    "sl": 177.53275805003742,
    "tp": 177.07181389992516,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -109,7 +114,7 @@
    "entry": 177.37911,
    "sl": 177.53275805003742,
    "tp": 177.07181389992516,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -1829,20 +1834,20 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98760.45747528825
+  "equity": 99603.75747528848
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 88,
-  "wouldLose": 73,
+  "n": 89,
+  "wouldLose": 74,
   "wouldWin": 15
  },
  "version": 1,
- "lastRun": 1792599128854,
+ "lastRun": 1792601681302,
  "lastBarT": 1792598400000,
- "price": 177.45223,
- "equity": 104257.96480151852,
- "unreal": -1028.5599999998567,
+ "price": 177.53656,
+ "equity": 103211.10015103193,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -1960,6 +1965,13 @@
   ]
  },
  "review": {
+  "ema_cross_dn": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "bb_break_dn": {
    "n": 1,
    "wins": 0,
