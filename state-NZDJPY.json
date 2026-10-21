@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 103353.15021702921,
+  "balance": 101371.6916725888,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 18000,
-   "entry": 89.69851,
-   "sl": 89.80859103024669,
-   "tp": 89.50834793950663,
-   "barT": 1792555200000,
-   "openT": 1792555741078,
-   "deadline": 1792642141078
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 18000,
+    "entry": 89.69851,
+    "sl": 89.80859103024669,
+    "tp": 89.50834793950663,
+    "barT": 1792555200000,
+    "openT": 1792555741078,
+    "deadline": 1792642141078,
+    "exit": 89.80859103024669,
+    "closeT": 1792562400000,
+    "reason": "sl",
+    "pnl": -1981.4585444404145
+   },
    {
     "dir": "long",
     "pattern": "ema_cross_up",
@@ -78,7 +83,7 @@
    "entry": 89.75046,
    "sl": 89.84863167094335,
    "tp": 89.5541166581133,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -94,7 +99,7 @@
    "entry": 89.70851,
    "sl": 89.80859103024669,
    "tp": 89.50834793950663,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -110,7 +115,7 @@
    "entry": 89.70851,
    "sl": 89.80859103024669,
    "tp": 89.50834793950663,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -1436,12 +1441,13 @@
    ]
   }
  ],
- "lastEvalT": 1792558800000,
+ "lastEvalT": 1792562400000,
  "adaptive": {
   "start": 100000,
-  "balance": 99149.94703088044,
+  "balance": 99329.2270308804,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -1453,10 +1459,12 @@
     "tp": 89.61178126454217,
     "barT": 1792479600000,
     "openT": 1792481250503,
-    "deadline": 1792567650503
-   }
-  ],
-  "trades": [
+    "deadline": 1792567650503,
+    "exit": 89.86859,
+    "closeT": 1792567833568,
+    "reason": "time",
+    "pnl": 179.2799999999488
+   },
    {
     "key": "rsi_fall|long|3|1",
     "dir": "long",
@@ -1665,20 +1673,20 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99808.9870308804
+  "equity": 99329.2270308804
  },
  "reportDay": "2026-10-21",
  "skipReview": {
-  "n": 77,
-  "wouldLose": 51,
+  "n": 79,
+  "wouldLose": 53,
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792565039877,
- "lastBarT": 1792562400000,
- "price": 89.78863,
- "equity": 101730.99021702923,
- "unreal": -1622.1599999999796,
+ "lastRun": 1792567833568,
+ "lastBarT": 1792566000000,
+ "price": 89.86859,
+ "equity": 101371.6916725888,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -1743,7 +1751,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1877,
+  "events": 1879,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -1775,15 +1783,15 @@
     "key": "against|range",
     "n": 21,
     "winRate": 0.42857142857142855,
-    "avgR": 0.24050207519560238
+    "avgR": 0.2405020751956004
    },
    {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 92,
-    "winRate": 0.391304347826087,
-    "avgR": 0.15188175807289192
+    "n": 93,
+    "winRate": 0.3870967741935484,
+    "avgR": 0.13895873360231917
    },
    {
     "name": "20本高値ブレイク",
@@ -1791,7 +1799,7 @@
     "key": "with|trend",
     "n": 84,
     "winRate": 0.36904761904761907,
-    "avgR": 0.07691290053440547
+    "avgR": 0.07691290052211341
    },
    {
     "name": "20本安値ブレイク",
@@ -1799,11 +1807,18 @@
     "key": "against|range",
     "n": 30,
     "winRate": 0.36666666666666664,
-    "avgR": 0.05373213148303012
+    "avgR": 0.05373213148302775
    }
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "ema_cross_up": {
    "n": 1,
    "wins": 1,
