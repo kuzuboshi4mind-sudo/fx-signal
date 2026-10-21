@@ -1841,11 +1841,11 @@
   "wouldWin": 28
  },
  "version": 1,
- "lastRun": 1792555740518,
+ "lastRun": 1792558428590,
  "lastBarT": 1792555200000,
- "price": 211.43549,
- "equity": 105232.98654021145,
- "unreal": 1922.47000000026,
+ "price": 211.45037,
+ "equity": 105069.30654021139,
+ "unreal": 1758.7900000002037,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
