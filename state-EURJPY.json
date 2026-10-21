@@ -6,7 +6,18 @@
   "balance": 105286.52480151838,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "units": 13000,
+   "entry": 177.37311,
+   "sl": 177.53275805003742,
+   "tp": 177.07181389992516,
+   "barT": 1792584000000,
+   "openT": 1792584419601,
+   "deadline": 1792670819601
+  },
   "trades": [
    {
     "dir": "short",
@@ -59,6 +70,33 @@
   ]
  },
  "log": [
+  {
+   "t": 1792580400000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 177.37911,
+   "sl": 177.53275805003742,
+   "tp": 177.07181389992516,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1792580400000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 177.37911,
+   "sl": 177.53275805003742,
+   "tp": 177.07181389992516,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792576800000,
    "pattern": "engulf_up",
@@ -1639,12 +1677,52 @@
    ]
   }
  ],
- "lastEvalT": 1792576800000,
+ "lastEvalT": 1792580400000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
   "startT": 1791953874927,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_dn|long|2|1.5",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 2000,
+    "entry": 177.38511,
+    "sl": 177.15463792494387,
+    "tp": 177.69240610007483,
+    "barT": 1792584000000,
+    "openT": 1792584419601,
+    "deadline": 1792670819601
+   },
+   {
+    "key": "ema_cross_dn|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 4000,
+    "entry": 177.38511,
+    "sl": 177.23146194996258,
+    "tp": 177.84605415011222,
+    "barT": 1792584000000,
+    "openT": 1792584419601,
+    "deadline": 1792670819601
+   },
+   {
+    "key": "ema_cross_dn|long|2|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 4000,
+    "entry": 177.38511,
+    "sl": 177.23146194996258,
+    "tp": 177.69240610007483,
+    "barT": 1792584000000,
+    "openT": 1792584419601,
+    "deadline": 1792670819601
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_dn|long|2|1.5",
@@ -1735,7 +1813,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98089.25747528837
+  "equity": 98029.25747528837
  },
  "reportDay": "2026-10-21",
  "skipReview": {
@@ -1744,11 +1822,11 @@
   "wouldWin": 15
  },
  "version": 1,
- "lastRun": 1792582462865,
- "lastBarT": 1792580400000,
- "price": 177.38446,
- "equity": 105286.52480151838,
- "unreal": 0,
+ "lastRun": 1792584419601,
+ "lastBarT": 1792584000000,
+ "price": 177.37911,
+ "equity": 105208.52480151838,
+ "unreal": -78.00000000000296,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -1829,7 +1907,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4583333333333333,
-    "avgR": 0.3535393173980801
+    "avgR": 0.3535393173980806
    },
    {
     "name": "陽の包み足",
@@ -1837,7 +1915,7 @@
     "key": "with|trend",
     "n": 41,
     "winRate": 0.36585365853658536,
-    "avgR": 0.18425338516332534
+    "avgR": 0.18425338516364223
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -1853,7 +1931,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.10752255540894615
+    "avgR": 0.10752255540894673
    },
    {
     "name": "MACD買いクロス",
@@ -1890,12 +1968,17 @@
  },
  "lastSignals": [
   {
-   "name": "陽の包み足",
-   "dir": "long",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
    "blocked": true,
    "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
+    "優位性なし"
    ]
   }
  ],
