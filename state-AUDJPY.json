@@ -1712,11 +1712,11 @@
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792584420308,
+ "lastRun": 1792586765988,
  "lastBarT": 1792584000000,
- "price": 111.05046,
- "equity": 100356.90122515157,
- "unreal": 1035.2399999999875,
+ "price": 111.09197,
+ "equity": 100855.02122515159,
+ "unreal": 1533.360000000016,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1894,14 +1894,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

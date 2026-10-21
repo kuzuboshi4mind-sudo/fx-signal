@@ -1813,7 +1813,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98029.25747528837
+  "equity": 97876.85747528831
  },
  "reportDay": "2026-10-21",
  "skipReview": {
@@ -1822,11 +1822,11 @@
   "wouldWin": 15
  },
  "version": 1,
- "lastRun": 1792584419601,
+ "lastRun": 1792586765111,
  "lastBarT": 1792584000000,
- "price": 177.37911,
- "equity": 105208.52480151838,
- "unreal": -78.00000000000296,
+ "price": 177.36387,
+ "equity": 105406.64480151844,
+ "unreal": 120.12000000007106,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -1966,22 +1966,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
