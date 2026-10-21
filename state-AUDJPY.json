@@ -6,7 +6,18 @@
   "balance": 102781.78030426207,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 15000,
+   "entry": 111.04387,
+   "sl": 111.18000684796132,
+   "tp": 110.78959630407735,
+   "barT": 1792616400000,
+   "openT": 1792616705371,
+   "deadline": 1792703105371
+  },
   "trades": [
    {
     "dir": "long",
@@ -124,6 +135,34 @@
  },
  "log": [
   {
+   "t": 1792612800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 111.04987,
+   "sl": 111.18000684796132,
+   "tp": 110.78959630407735,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1792612800000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 111.04987,
+   "sl": 111.18000684796132,
+   "tp": 110.78959630407735,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792609200000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -163,7 +202,7 @@
    "entry": 111.21505,
    "sl": 111.08094302193633,
    "tp": 111.48326395612735,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1704,7 +1743,7 @@
    ]
   }
  ],
- "lastEvalT": 1792609200000,
+ "lastEvalT": 1792612800000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1804,16 +1843,16 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 80,
-  "wouldLose": 54,
+  "n": 81,
+  "wouldLose": 55,
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792614747392,
- "lastBarT": 1792612800000,
- "price": 111.16143,
- "equity": 102781.78030426207,
- "unreal": 0,
+ "lastRun": 1792616705371,
+ "lastBarT": 1792616400000,
+ "price": 111.04987,
+ "equity": 102691.78030426207,
+ "unreal": -90.00000000000341,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1878,7 +1917,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1869,
+  "events": 1871,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -1886,7 +1925,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.5217391304347826,
-    "avgR": 0.5401632157400577
+    "avgR": 0.5401632157400578
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -1902,7 +1941,7 @@
     "key": "with|range",
     "n": 63,
     "winRate": 0.42857142857142855,
-    "avgR": 0.3302683966024136
+    "avgR": 0.33026839660696466
    },
    {
     "name": "陽の包み足",
@@ -1918,7 +1957,7 @@
     "key": "against|trend",
     "n": 40,
     "winRate": 0.375,
-    "avgR": 0.1527151312599087
+    "avgR": 0.1527151312664759
    },
    {
     "name": "上昇トレンドの押し目",
@@ -1926,7 +1965,7 @@
     "key": "with|trend",
     "n": 26,
     "winRate": 0.38461538461538464,
-    "avgR": 0.12928547446160502
+    "avgR": 0.1292854744667969
    },
    {
     "name": "20本高値ブレイク",
@@ -1934,7 +1973,7 @@
     "key": "with|range",
     "n": 132,
     "winRate": 0.3560606060606061,
-    "avgR": 0.09324777429562803
+    "avgR": 0.09324777430303802
    },
    {
     "name": "MACD買いクロス",
@@ -1942,7 +1981,7 @@
     "key": "with|range",
     "n": 49,
     "winRate": 0.3469387755102041,
-    "avgR": 0.09038649185771074
+    "avgR": 0.09038649186351032
    }
   ]
  },
@@ -1992,8 +2031,8 @@
  },
  "lastSignals": [
   {
-   "name": "MACD買いクロス",
-   "dir": "long",
+   "name": "MACD売りクロス",
+   "dir": "short",
    "blocked": true,
    "reasons": [
     "過去の負けパターン",
@@ -2001,13 +2040,10 @@
    ]
   },
   {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
   }
  ],
  "latest": {
