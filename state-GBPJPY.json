@@ -6,7 +6,18 @@
   "balance": 103310.51654021119,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "units": 11000,
+   "entry": 211.61026,
+   "sl": 211.7965976970109,
+   "tp": 211.26758460597821,
+   "barT": 1792551600000,
+   "openT": 1792553603968,
+   "deadline": 1792640003968
+  },
   "trades": [
    {
     "dir": "long",
@@ -27,6 +38,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1792548000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 211.62026,
+   "sl": 211.7965976970109,
+   "tp": 211.26758460597821,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792540800000,
    "pattern": "donchian_up",
@@ -1407,7 +1430,7 @@
    ]
   }
  ],
- "lastEvalT": 1792544400000,
+ "lastEvalT": 1792548000000,
  "adaptive": {
   "start": 100000,
   "balance": 96526.14637585758,
@@ -1818,11 +1841,11 @@
   "wouldWin": 28
  },
  "version": 1,
- "lastRun": 1792551171396,
- "lastBarT": 1792548000000,
- "price": 211.63816,
- "equity": 103310.51654021119,
- "unreal": 0,
+ "lastRun": 1792553603968,
+ "lastBarT": 1792551600000,
+ "price": 211.62026,
+ "equity": 103200.51654021129,
+ "unreal": -109.99999999989996,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -1887,7 +1910,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1789,
+  "events": 1787,
   "win": [
    {
     "name": "陽の包み足",
@@ -1903,7 +1926,7 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.2469226619662037
+    "avgR": 0.24692266196879908
    },
    {
     "name": "20本高値ブレイク",
@@ -1919,7 +1942,7 @@
     "key": "against|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.24368390176890106
+    "avgR": 0.24368390177417895
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1935,7 +1958,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.19801538746927425
+    "avgR": 0.19801538746927427
    },
    {
     "name": "RSI売られすぎ反発",
@@ -1964,7 +1987,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
