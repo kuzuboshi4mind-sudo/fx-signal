@@ -6,7 +6,18 @@
   "balance": 103353.15021702921,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 18000,
+   "entry": 89.69851,
+   "sl": 89.80859103024669,
+   "tp": 89.50834793950663,
+   "barT": 1792555200000,
+   "openT": 1792555741078,
+   "deadline": 1792642141078
+  },
   "trades": [
    {
     "dir": "long",
@@ -28,6 +39,34 @@
  },
  "log": [
   {
+   "t": 1792551600000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 89.70851,
+   "sl": 89.80859103024669,
+   "tp": 89.50834793950663,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792551600000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 89.70851,
+   "sl": 89.80859103024669,
+   "tp": 89.50834793950663,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1792548000000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -35,7 +74,7 @@
    "entry": 89.83355,
    "sl": 89.73890658281127,
    "tp": 90.02283683437747,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -66,7 +105,7 @@
    "entry": 89.85621,
    "sl": 89.76336325580479,
    "tp": 90.04190348839045,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -112,7 +151,7 @@
    "entry": 89.84123,
    "sl": 89.74225344071598,
    "tp": 90.039183118568,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -128,7 +167,7 @@
    "entry": 89.84123,
    "sl": 89.74225344071598,
    "tp": 90.039183118568,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1349,7 +1388,7 @@
    ]
   }
  ],
- "lastEvalT": 1792548000000,
+ "lastEvalT": 1792551600000,
  "adaptive": {
   "start": 100000,
   "balance": 99149.94703088044,
@@ -1578,20 +1617,20 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99539.46703088036
+  "equity": 100289.70703088035
  },
  "reportDay": "2026-10-21",
  "skipReview": {
-  "n": 71,
-  "wouldLose": 46,
+  "n": 75,
+  "wouldLose": 50,
   "wouldWin": 25
  },
  "version": 1,
- "lastRun": 1792553605109,
- "lastBarT": 1792551600000,
- "price": 89.83355,
- "equity": 103353.15021702921,
- "unreal": 0,
+ "lastRun": 1792555741078,
+ "lastBarT": 1792555200000,
+ "price": 89.70851,
+ "equity": 103173.15021702912,
+ "unreal": -180.0000000000921,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -1656,7 +1695,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1874,
+  "events": 1877,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -1672,7 +1711,7 @@
     "key": "with|range",
     "n": 36,
     "winRate": 0.4444444444444444,
-    "avgR": 0.3285184172885873
+    "avgR": 0.3285184172885874
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -1688,7 +1727,7 @@
     "key": "against|range",
     "n": 21,
     "winRate": 0.42857142857142855,
-    "avgR": 0.24050207519561223
+    "avgR": 0.24050207519561304
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1696,15 +1735,7 @@
     "key": "*",
     "n": 92,
     "winRate": 0.391304347826087,
-    "avgR": 0.1518817580734773
-   },
-   {
-    "name": "上昇トレンドの押し目",
-    "dir": "long",
-    "key": "with|trend",
-    "n": 38,
-    "winRate": 0.3157894736842105,
-    "avgR": 0.1174495985022996
+    "avgR": 0.15188175807352353
    },
    {
     "name": "20本高値ブレイク",
@@ -1712,7 +1743,7 @@
     "key": "with|trend",
     "n": 84,
     "winRate": 0.36904761904761907,
-    "avgR": 0.07691290059574277
+    "avgR": 0.07691290060058609
    },
    {
     "name": "20本安値ブレイク",
@@ -1720,7 +1751,7 @@
     "key": "against|range",
     "n": 30,
     "winRate": 0.36666666666666664,
-    "avgR": 0.05373213148304196
+    "avgR": 0.05373213148304291
    }
   ]
  },
@@ -1735,10 +1766,17 @@
  },
  "lastSignals": [
   {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
    "blocked": true,
    "reasons": [
+    "優位性なし",
     "勝率が基準未満"
    ]
   }

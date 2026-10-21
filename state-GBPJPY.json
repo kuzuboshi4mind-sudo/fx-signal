@@ -58,7 +58,7 @@
    "entry": 211.75338,
    "sl": 211.5740717241767,
    "tp": 212.11199655164657,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -74,7 +74,7 @@
    "entry": 211.64547,
    "sl": 211.45074470575423,
    "tp": 212.03492058849147,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1430,7 +1430,7 @@
    ]
   }
  ],
- "lastEvalT": 1792548000000,
+ "lastEvalT": 1792551600000,
  "adaptive": {
   "start": 100000,
   "balance": 96526.14637585758,
@@ -1836,16 +1836,16 @@
  },
  "reportDay": "2026-10-21",
  "skipReview": {
-  "n": 78,
-  "wouldLose": 50,
+  "n": 80,
+  "wouldLose": 52,
   "wouldWin": 28
  },
  "version": 1,
- "lastRun": 1792553603968,
- "lastBarT": 1792551600000,
- "price": 211.62026,
- "equity": 103200.51654021129,
- "unreal": -109.99999999989996,
+ "lastRun": 1792555740518,
+ "lastBarT": 1792555200000,
+ "price": 211.43549,
+ "equity": 105232.98654021145,
+ "unreal": 1922.47000000026,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -1926,7 +1926,7 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.24692266196879908
+    "avgR": 0.24692266197070023
    },
    {
     "name": "20本高値ブレイク",
@@ -1942,7 +1942,7 @@
     "key": "against|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.24368390177417895
+    "avgR": 0.24368390177804486
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1958,7 +1958,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.19801538746927427
+    "avgR": 0.1980153874692743
    },
    {
     "name": "RSI売られすぎ反発",
@@ -1987,14 +1987,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

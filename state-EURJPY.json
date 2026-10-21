@@ -60,6 +60,22 @@
  },
  "log": [
   {
+   "t": 1792551600000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 177.49027,
+   "sl": 177.64353268567373,
+   "tp": 177.1837446286526,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792544400000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -83,7 +99,7 @@
    "entry": 177.67895,
    "sl": 177.4856641503312,
    "tp": 178.06552169933758,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1591,7 +1607,7 @@
    ]
   }
  ],
- "lastEvalT": 1792548000000,
+ "lastEvalT": 1792551600000,
  "adaptive": {
   "start": 100000,
   "balance": 98089.25747528837,
@@ -1691,14 +1707,14 @@
  },
  "reportDay": "2026-10-21",
  "skipReview": {
-  "n": 84,
-  "wouldLose": 70,
+  "n": 85,
+  "wouldLose": 71,
   "wouldWin": 14
  },
  "version": 1,
- "lastRun": 1792553603515,
- "lastBarT": 1792551600000,
- "price": 177.66199,
+ "lastRun": 1792555740201,
+ "lastBarT": 1792555200000,
+ "price": 177.49027,
  "equity": 105286.52480151838,
  "unreal": 0,
  "config": {
@@ -1765,7 +1781,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1814,
+  "events": 1815,
   "win": [
    {
     "name": "陽の包み足",
@@ -1781,7 +1797,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4583333333333333,
-    "avgR": 0.3535393173981054
+    "avgR": 0.3535393173981089
    },
    {
     "name": "陽の包み足",
@@ -1789,7 +1805,7 @@
     "key": "with|trend",
     "n": 41,
     "winRate": 0.36585365853658536,
-    "avgR": 0.18425338517962997
+    "avgR": 0.18425338518188178
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -1805,7 +1821,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.1075225554089744
+    "avgR": 0.1075225554089783
    },
    {
     "name": "MACD買いクロス",
@@ -1840,7 +1856,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
