@@ -28,6 +28,22 @@
  },
  "log": [
   {
+   "t": 1792540800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 211.75338,
+   "sl": 211.5740717241767,
+   "tp": 212.11199655164657,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792522800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -1391,7 +1407,7 @@
    ]
   }
  ],
- "lastEvalT": 1792537200000,
+ "lastEvalT": 1792540800000,
  "adaptive": {
   "start": 100000,
   "balance": 96526.14637585758,
@@ -1802,9 +1818,9 @@
   "wouldWin": 28
  },
  "version": 1,
- "lastRun": 1792543264181,
- "lastBarT": 1792540800000,
- "price": 211.74559,
+ "lastRun": 1792545800393,
+ "lastBarT": 1792544400000,
+ "price": 211.75338,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1887,7 +1903,7 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.2469226619698705
+    "avgR": 0.24692266196989526
    },
    {
     "name": "20本高値ブレイク",
@@ -1903,7 +1919,7 @@
     "key": "against|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.24368390177635765
+    "avgR": 0.24368390177640795
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1948,7 +1964,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
