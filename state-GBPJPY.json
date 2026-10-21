@@ -51,7 +51,7 @@
    "entry": 211.55568,
    "sl": 211.7689530575377,
    "tp": 211.12913388492458,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -98,7 +98,7 @@
    "entry": 211.3831,
    "sl": 211.17287869057918,
    "tp": 211.80354261884167,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -114,7 +114,7 @@
    "entry": 211.3831,
    "sl": 211.17287869057918,
    "tp": 211.80354261884167,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -130,7 +130,7 @@
    "entry": 211.3831,
    "sl": 211.17287869057918,
    "tp": 211.80354261884167,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1391,7 +1391,7 @@
    ]
   }
  ],
- "lastEvalT": 1792533600000,
+ "lastEvalT": 1792537200000,
  "adaptive": {
   "start": 100000,
   "balance": 96526.14637585758,
@@ -1797,14 +1797,14 @@
  },
  "reportDay": "2026-10-21",
  "skipReview": {
-  "n": 74,
-  "wouldLose": 49,
-  "wouldWin": 25
+  "n": 78,
+  "wouldLose": 50,
+  "wouldWin": 28
  },
  "version": 1,
- "lastRun": 1792540630170,
- "lastBarT": 1792537200000,
- "price": 211.70017,
+ "lastRun": 1792543264181,
+ "lastBarT": 1792540800000,
+ "price": 211.74559,
  "equity": 103310.51654021119,
  "unreal": 0,
  "config": {
@@ -1871,7 +1871,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1792,
+  "events": 1791,
   "win": [
    {
     "name": "陽の包み足",
@@ -1887,7 +1887,7 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.2469226619717806
+    "avgR": 0.2469226619698705
    },
    {
     "name": "20本高値ブレイク",
@@ -1903,7 +1903,7 @@
     "key": "against|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.24368390178024174
+    "avgR": 0.24368390177635765
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1919,7 +1919,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.1980153874692743
+    "avgR": 0.19801538746927427
    },
    {
     "name": "RSI売られすぎ反発",
