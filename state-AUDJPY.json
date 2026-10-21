@@ -170,7 +170,7 @@
    "entry": 111.03308,
    "sl": 111.17634067730768,
    "tp": 110.74655864538464,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -182,7 +182,7 @@
    "entry": 111.03308,
    "sl": 111.17634067730768,
    "tp": 110.74655864538464,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1679,16 +1679,16 @@
  },
  "reportDay": "2026-10-21",
  "skipReview": {
-  "n": 76,
-  "wouldLose": 50,
+  "n": 77,
+  "wouldLose": 51,
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792577362831,
+ "lastRun": 1792580019646,
  "lastBarT": 1792576800000,
- "price": 111.08876,
- "equity": 100816.50122515147,
- "unreal": 1494.839999999897,
+ "price": 111.17839,
+ "equity": 101892.06122515147,
+ "unreal": 2570.3999999998928,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -1830,6 +1830,13 @@
   ]
  },
  "review": {
+  "bb_revert_dn": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "donchian_up": {
    "n": 7,
    "wins": 2,
