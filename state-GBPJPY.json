@@ -55,6 +55,37 @@
  },
  "log": [
   {
+   "t": 1792569600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 211.77869,
+   "sl": 211.5808721149907,
+   "tp": 212.17432577001864,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792569600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 211.77869,
+   "sl": 211.5808721149907,
+   "tp": 212.17432577001864,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1792566000000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -1470,12 +1501,27 @@
    ]
   }
  ],
- "lastEvalT": 1792566000000,
+ "lastEvalT": 1792569600000,
  "adaptive": {
   "start": 100000,
-  "balance": 96003.86604386094,
+  "balance": 95431.08749229237,
   "startT": 1791953875407,
   "positions": [
+   {
+    "key": "bb_break_up|short|3|1",
+    "dir": "short",
+    "pattern": "bb_break_up",
+    "name": "ボリバン上抜けブレイク（逆向き）",
+    "units": 3000,
+    "entry": 211.76869000000002,
+    "sl": 211.96650788500932,
+    "tp": 211.1752363449721,
+    "barT": 1792573200000,
+    "openT": 1792575263675,
+    "deadline": 1792661663675
+   }
+  ],
+  "trades": [
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -1487,10 +1533,12 @@
     "tp": 211.18677144843147,
     "barT": 1792569600000,
     "openT": 1792570403637,
-    "deadline": 1792656803637
-   }
-  ],
-  "trades": [
+    "deadline": 1792656803637,
+    "exit": 211.9504761838562,
+    "closeT": 1792573200000,
+    "reason": "sl",
+    "pnl": -572.7785515685753
+   },
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -1903,7 +1951,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 95510.75604386097
+  "equity": 95401.0874922924
  },
  "reportDay": "2026-10-21",
  "skipReview": {
@@ -1912,11 +1960,11 @@
   "wouldWin": 28
  },
  "version": 1,
- "lastRun": 1792573010625,
- "lastBarT": 1792569600000,
- "price": 211.92392,
- "equity": 102704.50187309156,
- "unreal": 1443.7000000000921,
+ "lastRun": 1792575263675,
+ "lastBarT": 1792573200000,
+ "price": 211.77869,
+ "equity": 101252.20187309157,
+ "unreal": -8.599999999887586,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -1981,7 +2029,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1788,
+  "events": 1790,
   "win": [
    {
     "name": "陽の包み足",
@@ -1997,7 +2045,7 @@
     "key": "with|trend",
     "n": 34,
     "winRate": 0.4411764705882353,
-    "avgR": 0.29763904812106906
+    "avgR": 0.29763904810752495
    },
    {
     "name": "20本高値ブレイク",
@@ -2013,7 +2061,7 @@
     "key": "against|trend",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.24330671893335523
+    "avgR": 0.24330671892800831
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2021,7 +2069,7 @@
     "key": "*",
     "n": 88,
     "winRate": 0.38636363636363635,
-    "avgR": 0.15595290082366198
+    "avgR": 0.15595290082366195
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2029,15 +2077,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.19801538746927416
-   },
-   {
-    "name": "RSI売られすぎ反発",
-    "dir": "long",
-    "key": "against|trend",
-    "n": 32,
-    "winRate": 0.34375,
-    "avgR": 0.1257334982095091
+    "avgR": 0.198015387469274
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2065,7 +2105,25 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
