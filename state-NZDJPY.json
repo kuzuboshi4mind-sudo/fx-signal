@@ -44,6 +44,22 @@
  },
  "log": [
   {
+   "t": 1792566000000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 89.96515,
+   "sl": 89.8645752036944,
+   "tp": 90.16629959261117,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792558800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -51,7 +67,7 @@
    "entry": 89.7763,
    "sl": 89.6782505912669,
    "tp": 89.97239881746623,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -67,7 +83,7 @@
    "entry": 89.7763,
    "sl": 89.6782505912669,
    "tp": 89.97239881746623,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1441,7 +1457,7 @@
    ]
   }
  ],
- "lastEvalT": 1792562400000,
+ "lastEvalT": 1792566000000,
  "adaptive": {
   "start": 100000,
   "balance": 99329.2270308804,
@@ -1677,14 +1693,14 @@
  },
  "reportDay": "2026-10-21",
  "skipReview": {
-  "n": 79,
+  "n": 81,
   "wouldLose": 53,
-  "wouldWin": 26
+  "wouldWin": 28
  },
  "version": 1,
- "lastRun": 1792567833568,
- "lastBarT": 1792566000000,
- "price": 89.86859,
+ "lastRun": 1792570404693,
+ "lastBarT": 1792569600000,
+ "price": 89.96515,
  "equity": 101371.6916725888,
  "unreal": 0,
  "config": {
@@ -1751,7 +1767,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1879,
+  "events": 1882,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -1767,7 +1783,7 @@
     "key": "with|range",
     "n": 36,
     "winRate": 0.4444444444444444,
-    "avgR": 0.3285184172885871
+    "avgR": 0.3285184172885872
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -1783,7 +1799,7 @@
     "key": "against|range",
     "n": 21,
     "winRate": 0.42857142857142855,
-    "avgR": 0.2405020751956004
+    "avgR": 0.2405020751956031
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -1791,7 +1807,7 @@
     "key": "*",
     "n": 93,
     "winRate": 0.3870967741935484,
-    "avgR": 0.13895873360231917
+    "avgR": 0.13895873360247712
    },
    {
     "name": "20本高値ブレイク",
@@ -1799,7 +1815,7 @@
     "key": "with|trend",
     "n": 84,
     "winRate": 0.36904761904761907,
-    "avgR": 0.07691290052211341
+    "avgR": 0.07691290053884339
    },
    {
     "name": "20本安値ブレイク",
@@ -1807,7 +1823,7 @@
     "key": "against|range",
     "n": 30,
     "winRate": 0.36666666666666664,
-    "avgR": 0.05373213148302775
+    "avgR": 0.05373213148303098
    }
   ]
  },
@@ -1827,7 +1843,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
