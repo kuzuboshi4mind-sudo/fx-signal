@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 104095.48414850961,
+  "balance": 107952.0967793714,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 7000,
-   "entry": 210.44002,
-   "sl": 210.73049233077583,
-   "tp": 209.88907533844832,
-   "barT": 1792659600000,
-   "openT": 1792661745450,
-   "deadline": 1792748145450
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 7000,
+    "entry": 210.44002,
+    "sl": 210.73049233077583,
+    "tp": 209.88907533844832,
+    "barT": 1792659600000,
+    "openT": 1792661745450,
+    "deadline": 1792748145450,
+    "exit": 209.88907533844832,
+    "closeT": 1792663200000,
+    "reason": "tp",
+    "pnl": 3856.6126308617754
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -141,7 +146,7 @@
    "entry": 210.45002,
    "sl": 210.73049233077583,
    "tp": 209.88907533844832,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -153,7 +158,7 @@
    "entry": 210.45002,
    "sl": 210.73049233077583,
    "tp": 209.88907533844832,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2300,16 +2305,16 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 92,
+  "n": 93,
   "wouldLose": 60,
-  "wouldWin": 32
+  "wouldWin": 33
  },
  "version": 1,
- "lastRun": 1792663980077,
+ "lastRun": 1792666382240,
  "lastBarT": 1792663200000,
- "price": 210.08568,
- "equity": 106575.86414850966,
- "unreal": 2480.3800000000538,
+ "price": 209.98916,
+ "equity": 107952.0967793714,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2420,8 +2425,8 @@
  },
  "review": {
   "bb_break_dn": {
-   "n": 2,
-   "wins": 2,
+   "n": 3,
+   "wins": 3,
    "recentLosses": 0,
    "streak": 0,
    "suspended": false
@@ -2441,16 +2446,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
