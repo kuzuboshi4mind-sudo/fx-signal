@@ -1975,11 +1975,11 @@
   "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1792642208541,
+ "lastRun": 1792644815683,
  "lastBarT": 1792641600000,
- "price": 89.62514,
- "equity": 101251.69167258874,
- "unreal": -120.00000000006139,
+ "price": 89.73987,
+ "equity": 99874.9316725888,
+ "unreal": -1496.7599999999948,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2044,7 +2044,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1888,
+  "events": 1890,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2074,25 +2074,25 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "against|range",
-    "n": 21,
-    "winRate": 0.42857142857142855,
-    "avgR": 0.2405020751956325
+    "n": 22,
+    "winRate": 0.4090909090909091,
+    "avgR": 0.18262111706376336
    },
    {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 93,
-    "winRate": 0.3870967741935484,
-    "avgR": 0.13895873360419703
+    "n": 94,
+    "winRate": 0.3829787234042553,
+    "avgR": 0.1264923746966472
    },
    {
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "against|range",
-    "n": 30,
-    "winRate": 0.36666666666666664,
-    "avgR": 0.05373213148306621
+    "n": 31,
+    "winRate": 0.3548387096774194,
+    "avgR": 0.018680159380209598
    }
   ]
  },
@@ -2112,20 +2112,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
