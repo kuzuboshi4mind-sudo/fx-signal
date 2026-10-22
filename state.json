@@ -140,6 +140,22 @@
  },
  "log": [
   {
+   "t": 1792706400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 156.65107,
+   "sl": 156.86418187639288,
+   "tp": 156.22484624721426,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792695600000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -147,7 +163,7 @@
    "entry": 156.89266,
    "sl": 156.6647925813282,
    "tp": 157.34839483734368,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1960,12 +1976,12 @@
    ]
   }
  ],
- "lastEvalT": 1792702800000,
+ "lastEvalT": 1792706400000,
  "reportDay": "2026-10-23",
  "version": 1,
- "lastRun": 1792708400806,
- "lastBarT": 1792706400000,
- "price": 156.74136,
+ "lastRun": 1792710200847,
+ "lastBarT": 1792710000000,
+ "price": 156.65107,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2031,8 +2047,8 @@
   }
  },
  "learned": {
-  "bars": 3578,
-  "events": 1898,
+  "bars": 3579,
+  "events": 1899,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2081,14 +2097,6 @@
     "n": 19,
     "winRate": 0.42105263157894735,
     "avgR": 0.2468316393902342
-   },
-   {
-    "name": "RSI売られすぎ反発",
-    "dir": "long",
-    "key": "*",
-    "n": 34,
-    "winRate": 0.35294117647058826,
-    "avgR": 0.17199100680721946
    },
    {
     "name": "MACD買いクロス",
@@ -2145,7 +2153,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 98790.57730798508,
@@ -2584,8 +2602,8 @@
   "equity": 98790.57730798508
  },
  "skipReview": {
-  "n": 101,
-  "wouldLose": 79,
+  "n": 102,
+  "wouldLose": 80,
   "wouldWin": 22
  },
  "latest": {
