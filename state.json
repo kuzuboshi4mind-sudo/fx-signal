@@ -1963,9 +1963,9 @@
  "lastEvalT": 1792695600000,
  "reportDay": "2026-10-23",
  "version": 1,
- "lastRun": 1792699662247,
+ "lastRun": 1792702382462,
  "lastBarT": 1792699200000,
- "price": 156.89266,
+ "price": 156.81936,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2145,17 +2145,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 98790.57730798508,
