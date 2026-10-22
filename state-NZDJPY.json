@@ -55,6 +55,22 @@
  },
  "log": [
   {
+   "t": 1792652400000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 89.44136,
+   "sl": 89.2712672199325,
+   "tp": 89.78154556013503,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792645200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -1739,7 +1755,7 @@
    ]
   }
  ],
- "lastEvalT": 1792648800000,
+ "lastEvalT": 1792652400000,
  "adaptive": {
   "start": 100000,
   "balance": 100601.85520512416,
@@ -2014,11 +2030,11 @@
   "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1792654259607,
- "lastBarT": 1792652400000,
- "price": 89.49511,
- "equity": 102812.0516725888,
- "unreal": 1440.3599999999983,
+ "lastRun": 1792656876033,
+ "lastBarT": 1792656000000,
+ "price": 89.44136,
+ "equity": 103457.05167258873,
+ "unreal": 2085.3599999999233,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2082,7 +2098,7 @@
   }
  },
  "learned": {
-  "bars": 3563,
+  "bars": 3564,
   "events": 1890,
   "win": [
    {
@@ -2151,7 +2167,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
