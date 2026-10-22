@@ -1652,9 +1652,10 @@
  "lastEvalT": 1792630800000,
  "adaptive": {
   "start": 100000,
-  "balance": 98721.58265136615,
+  "balance": 100601.85520512416,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -1666,10 +1667,12 @@
     "tp": 89.9016854892484,
     "barT": 1792630800000,
     "openT": 1792631018743,
-    "deadline": 1792717418743
-   }
-  ],
-  "trades": [
+    "deadline": 1792717418743,
+    "exit": 89.9016854892484,
+    "closeT": 1792634400000,
+    "reason": "tp",
+    "pnl": 1880.2725537580045
+   },
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -1912,7 +1915,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100246.38265136612
+  "equity": 100601.85520512416
  },
  "reportDay": "2026-10-22",
  "skipReview": {
@@ -1921,9 +1924,9 @@
   "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1792635330222,
+ "lastRun": 1792637634044,
  "lastBarT": 1792634400000,
- "price": 89.97278,
+ "price": 89.88605,
  "equity": 101371.6916725888,
  "unreal": 0,
  "config": {

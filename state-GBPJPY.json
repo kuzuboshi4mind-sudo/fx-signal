@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 99251.54003452964,
+  "balance": 97358.86142865205,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 9000,
-   "entry": 211.7355,
-   "sl": 211.5252023771247,
-   "tp": 212.1260952457506,
-   "barT": 1792594800000,
-   "openT": 1792596956315,
-   "deadline": 1792683356315
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 9000,
+    "entry": 211.7355,
+    "sl": 211.5252023771247,
+    "tp": 212.1260952457506,
+    "barT": 1792594800000,
+    "openT": 1792596956315,
+    "deadline": 1792683356315,
+    "exit": 211.5252023771247,
+    "closeT": 1792634400000,
+    "reason": "sl",
+    "pnl": -1892.6786058775917
+   },
    {
     "dir": "long",
     "pattern": "pullback_up",
@@ -149,7 +154,7 @@
    "entry": 211.7255,
    "sl": 211.5252023771247,
    "tp": 212.1260952457506,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -2095,11 +2100,11 @@
   "wouldWin": 29
  },
  "version": 1,
- "lastRun": 1792635329068,
+ "lastRun": 1792637632911,
  "lastBarT": 1792634400000,
- "price": 211.54369,
- "equity": 97525.2500345296,
- "unreal": -1726.2900000000343,
+ "price": 211.49922,
+ "equity": 97358.86142865205,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2164,7 +2169,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1789,
+  "events": 1790,
   "win": [
    {
     "name": "陽の包み足",
@@ -2183,14 +2188,6 @@
     "avgR": 0.2728399737159931
    },
    {
-    "name": "上昇トレンドの押し目",
-    "dir": "long",
-    "key": "with|trend",
-    "n": 34,
-    "winRate": 0.4117647058823529,
-    "avgR": 0.20927465938987688
-   },
-   {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
@@ -2205,6 +2202,14 @@
     "n": 22,
     "winRate": 0.4090909090909091,
     "avgR": 0.19801538746927372
+   },
+   {
+    "name": "上昇トレンドの押し目",
+    "dir": "long",
+    "key": "with|trend",
+    "n": 35,
+    "winRate": 0.4,
+    "avgR": 0.17399785419277555
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2225,24 +2230,14 @@
    "suspended": false
   },
   "pullback_up": {
-   "n": 6,
+   "n": 7,
    "wins": 4,
-   "recentLosses": 2,
-   "streak": 2,
-   "suspended": false
+   "recentLosses": 3,
+   "streak": 3,
+   "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
