@@ -6,7 +6,18 @@
   "balance": 104095.48414850961,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 7000,
+   "entry": 210.44002,
+   "sl": 210.73049233077583,
+   "tp": 209.88907533844832,
+   "barT": 1792659600000,
+   "openT": 1792661745450,
+   "deadline": 1792748145450
+  },
   "trades": [
    {
     "dir": "short",
@@ -107,6 +118,34 @@
   ]
  },
  "log": [
+  {
+   "t": 1792656000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 210.45002,
+   "sl": 210.73049233077583,
+   "tp": 209.88907533844832,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1792656000000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 210.45002,
+   "sl": 210.73049233077583,
+   "tp": 209.88907533844832,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
   {
    "t": 1792652400000,
    "pattern": "bb_revert_up",
@@ -1772,7 +1811,7 @@
    ]
   }
  ],
- "lastEvalT": 1792652400000,
+ "lastEvalT": 1792656000000,
  "adaptive": {
   "start": 100000,
   "balance": 94236.74096863858,
@@ -2251,11 +2290,11 @@
   "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1792659513065,
- "lastBarT": 1792656000000,
- "price": 210.54028,
- "equity": 104095.48414850961,
- "unreal": 0,
+ "lastRun": 1792661745450,
+ "lastBarT": 1792659600000,
+ "price": 210.45002,
+ "equity": 104025.48414850967,
+ "unreal": -69.99999999993634,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2319,7 +2358,7 @@
   }
  },
  "learned": {
-  "bars": 3564,
+  "bars": 3565,
   "events": 1795,
   "win": [
    {
@@ -2387,7 +2426,23 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

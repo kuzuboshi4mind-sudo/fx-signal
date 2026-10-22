@@ -6,7 +6,18 @@
   "balance": 104901.43729976445,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 11000,
+   "entry": 89.29535999999999,
+   "sl": 89.47953615291982,
+   "tp": 88.95700769416032,
+   "barT": 1792659600000,
+   "openT": 1792661747249,
+   "deadline": 1792748147249
+  },
   "trades": [
    {
     "dir": "short",
@@ -60,6 +71,50 @@
  },
  "log": [
   {
+   "t": 1792656000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 89.30536,
+   "sl": 89.47953615291982,
+   "tp": 88.95700769416032,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792656000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 89.30536,
+   "sl": 89.47953615291982,
+   "tp": 88.95700769416032,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1792656000000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 89.30536,
+   "sl": 89.47953615291982,
+   "tp": 88.95700769416032,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792652400000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -83,7 +138,7 @@
    "entry": 89.58104,
    "sl": 89.74283878635049,
    "tp": 89.25744242729903,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -95,7 +150,7 @@
    "entry": 89.58104,
    "sl": 89.74283878635049,
    "tp": 89.25744242729903,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -1760,12 +1815,26 @@
    ]
   }
  ],
- "lastEvalT": 1792652400000,
+ "lastEvalT": 1792656000000,
  "adaptive": {
   "start": 100000,
   "balance": 100601.85520512416,
   "startT": 1791967923493,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_dn|short|3|1",
+    "dir": "short",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "units": 3000,
+    "entry": 89.29535999999999,
+    "sl": 89.46953615291982,
+    "tp": 88.77283154124049,
+    "barT": 1792659600000,
+    "openT": 1792661747249,
+    "deadline": 1792748147249
+   }
+  ],
   "trades": [
    {
     "key": "donchian_up|short|3|1",
@@ -2026,7 +2095,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100601.85520512416
+  "equity": 100571.85520512414
  },
  "reportDay": "2026-10-22",
  "skipReview": {
@@ -2035,11 +2104,11 @@
   "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1792659514065,
- "lastBarT": 1792656000000,
- "price": 89.28328,
- "equity": 104901.43729976445,
- "unreal": 0,
+ "lastRun": 1792661747249,
+ "lastBarT": 1792659600000,
+ "price": 89.30536,
+ "equity": 104791.4372997644,
+ "unreal": -110.00000000005627,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2103,7 +2172,7 @@
   }
  },
  "learned": {
-  "bars": 3564,
+  "bars": 3565,
   "events": 1891,
   "win": [
    {
@@ -2158,15 +2227,15 @@
  },
  "review": {
   "donchian_dn": {
-   "n": 1,
-   "wins": 1,
+   "n": 2,
+   "wins": 2,
    "recentLosses": 0,
    "streak": 0,
    "suspended": false
   },
   "bb_break_dn": {
-   "n": 2,
-   "wins": 1,
+   "n": 3,
+   "wins": 2,
    "recentLosses": 1,
    "streak": 0,
    "suspended": false
@@ -2179,7 +2248,32 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
