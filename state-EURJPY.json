@@ -92,6 +92,22 @@
  },
  "log": [
   {
+   "t": 1792681200000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 176.14371,
+   "sl": 175.8737704860613,
+   "tp": 176.68358902787742,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792670400000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -2055,7 +2071,7 @@
    ]
   }
  ],
- "lastEvalT": 1792677600000,
+ "lastEvalT": 1792681200000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2245,9 +2261,9 @@
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792684411688,
- "lastBarT": 1792681200000,
- "price": 176.10386,
+ "lastRun": 1792686978852,
+ "lastBarT": 1792684800000,
+ "price": 176.14371,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2313,7 +2329,7 @@
   }
  },
  "learned": {
-  "bars": 3571,
+  "bars": 3572,
   "events": 1830,
   "win": [
    {
@@ -2396,7 +2412,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
