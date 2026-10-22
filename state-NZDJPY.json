@@ -83,7 +83,7 @@
    "entry": 89.05268,
    "sl": 88.90315541346591,
    "tp": 89.35172917306818,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -114,7 +114,7 @@
    "entry": 89.11868,
    "sl": 88.9363468762159,
    "tp": 89.48334624756822,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2210,18 +2210,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101433.45520512413
+  "equity": 101679.51520512413
  },
  "reportDay": "2026-10-23",
  "skipReview": {
-  "n": 102,
-  "wouldLose": 68,
+  "n": 104,
+  "wouldLose": 70,
   "wouldWin": 34
  },
  "version": 1,
- "lastRun": 1792711916248,
+ "lastRun": 1792713508422,
  "lastBarT": 1792710000000,
- "price": 89.01816,
+ "price": 88.93614,
  "equity": 108623.31266400075,
  "unreal": 0,
  "config": {
@@ -2288,7 +2288,7 @@
  },
  "learned": {
   "bars": 3579,
-  "events": 1898,
+  "events": 1901,
   "win": [
    {
     "name": "20本高値ブレイク",
