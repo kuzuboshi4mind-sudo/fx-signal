@@ -6,7 +6,18 @@
   "balance": 97358.86142865205,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 9000,
+   "entry": 211.252,
+   "sl": 211.45332602905842,
+   "tp": 210.87934794188317,
+   "barT": 1792641600000,
+   "openT": 1792642207642,
+   "deadline": 1792728607642
+  },
   "trades": [
    {
     "dir": "long",
@@ -75,6 +86,34 @@
   ]
  },
  "log": [
+  {
+   "t": 1792638000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 211.262,
+   "sl": 211.45332602905842,
+   "tp": 210.87934794188317,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792638000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 211.262,
+   "sl": 211.45332602905842,
+   "tp": 210.87934794188317,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792630800000,
    "pattern": "engulf_dn",
@@ -1621,7 +1660,7 @@
    ]
   }
  ],
- "lastEvalT": 1792634400000,
+ "lastEvalT": 1792638000000,
  "adaptive": {
   "start": 100000,
   "balance": 94236.74096863858,
@@ -2100,11 +2139,11 @@
   "wouldWin": 29
  },
  "version": 1,
- "lastRun": 1792639971305,
- "lastBarT": 1792638000000,
- "price": 211.38606,
- "equity": 97358.86142865205,
- "unreal": 0,
+ "lastRun": 1792642207642,
+ "lastBarT": 1792641600000,
+ "price": 211.262,
+ "equity": 97268.86142865213,
+ "unreal": -89.99999999991815,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2169,7 +2208,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1791,
+  "events": 1789,
   "win": [
    {
     "name": "陽の包み足",
@@ -2193,7 +2232,7 @@
     "key": "*",
     "n": 88,
     "winRate": 0.38636363636363635,
-    "avgR": 0.15595290082366195
+    "avgR": 0.15595290082366206
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2201,7 +2240,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.19801538746927394
+    "avgR": 0.19801538746927438
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2209,7 +2248,7 @@
     "key": "with|trend",
     "n": 36,
     "winRate": 0.3888888888888889,
-    "avgR": 0.14069339012163395
+    "avgR": 0.1406933901244401
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2237,7 +2276,23 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

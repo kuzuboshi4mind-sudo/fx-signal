@@ -6,7 +6,18 @@
   "balance": 101371.6916725888,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 12000,
+   "entry": 89.61514,
+   "sl": 89.77721273446565,
+   "tp": 89.32099453106869,
+   "barT": 1792641600000,
+   "openT": 1792642208541,
+   "deadline": 1792728608541
+  },
   "trades": [
    {
     "dir": "short",
@@ -44,6 +55,30 @@
  },
  "log": [
   {
+   "t": 1792638000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 89.62514,
+   "sl": 89.77721273446565,
+   "tp": 89.32099453106869,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1792638000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 89.62514,
+   "sl": 89.77721273446565,
+   "tp": 89.32099453106869,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1792634400000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -51,7 +86,7 @@
    "entry": 89.73159,
    "sl": 89.87034986788609,
    "tp": 89.45407026422782,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1665,7 +1700,7 @@
    ]
   }
  ],
- "lastEvalT": 1792634400000,
+ "lastEvalT": 1792638000000,
  "adaptive": {
   "start": 100000,
   "balance": 100601.85520512416,
@@ -1935,16 +1970,16 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 94,
-  "wouldLose": 62,
+  "n": 95,
+  "wouldLose": 63,
   "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1792639972021,
- "lastBarT": 1792638000000,
- "price": 89.73159,
- "equity": 101371.6916725888,
- "unreal": 0,
+ "lastRun": 1792642208541,
+ "lastBarT": 1792641600000,
+ "price": 89.62514,
+ "equity": 101251.69167258874,
+ "unreal": -120.00000000006139,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2009,7 +2044,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1890,
+  "events": 1888,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2025,7 +2060,7 @@
     "key": "with|range",
     "n": 36,
     "winRate": 0.4444444444444444,
-    "avgR": 0.3285184172885874
+    "avgR": 0.32851841728858777
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -2033,7 +2068,7 @@
     "key": "*",
     "n": 31,
     "winRate": 0.41935483870967744,
-    "avgR": 0.21706344700540567
+    "avgR": 0.21706344700540572
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2041,7 +2076,7 @@
     "key": "against|range",
     "n": 21,
     "winRate": 0.42857142857142855,
-    "avgR": 0.24050207519561626
+    "avgR": 0.2405020751956325
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2049,7 +2084,7 @@
     "key": "*",
     "n": 93,
     "winRate": 0.3870967741935484,
-    "avgR": 0.13895873360324926
+    "avgR": 0.13895873360419703
    },
    {
     "name": "20本安値ブレイク",
@@ -2057,7 +2092,7 @@
     "key": "against|range",
     "n": 30,
     "winRate": 0.36666666666666664,
-    "avgR": 0.053732131483046786
+    "avgR": 0.05373213148306621
    }
   ]
  },
@@ -2079,13 +2114,16 @@
  },
  "lastSignals": [
   {
-   "name": "MACD売りクロス",
+   "name": "ボリバン下抜けブレイク",
    "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
   }
  ],
  "latest": {

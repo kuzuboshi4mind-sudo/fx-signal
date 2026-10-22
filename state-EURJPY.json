@@ -6,7 +6,18 @@
   "balance": 103211.10015103193,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "units": 12000,
+   "entry": 177.27796,
+   "sl": 177.44331528164605,
+   "tp": 176.96524943670792,
+   "barT": 1792641600000,
+   "openT": 1792642207055,
+   "deadline": 1792728607055
+  },
   "trades": [
    {
     "dir": "short",
@@ -75,6 +86,81 @@
   ]
  },
  "log": [
+  {
+   "t": 1792638000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 177.28396,
+   "sl": 177.44331528164605,
+   "tp": 176.96524943670792,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792638000000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 177.28396,
+   "sl": 177.44331528164605,
+   "tp": 176.96524943670792,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792638000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 177.28396,
+   "sl": 177.44331528164605,
+   "tp": 176.96524943670792,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792638000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 177.28396,
+   "sl": 177.44331528164605,
+   "tp": 176.96524943670792,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1792638000000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 177.28396,
+   "sl": 177.44331528164605,
+   "tp": 176.96524943670792,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1792623600000,
    "pattern": "pullback_up",
@@ -1809,7 +1895,7 @@
    ]
   }
  ],
- "lastEvalT": 1792634400000,
+ "lastEvalT": 1792638000000,
  "adaptive": {
   "start": 100000,
   "balance": 99933.03407573739,
@@ -1827,6 +1913,32 @@
     "barT": 1792584000000,
     "openT": 1792584419601,
     "deadline": 1792670819601
+   },
+   {
+    "key": "ema_cross_dn|long|2|1.5",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 2000,
+    "entry": 177.28996,
+    "sl": 177.05092707753096,
+    "tp": 177.6086705632921,
+    "barT": 1792641600000,
+    "openT": 1792642207055,
+    "deadline": 1792728607055
+   },
+   {
+    "key": "ema_cross_dn|long|2|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 4000,
+    "entry": 177.28996,
+    "sl": 177.13060471835396,
+    "tp": 177.6086705632921,
+    "barT": 1792641600000,
+    "openT": 1792642207055,
+    "deadline": 1792728607055
    }
   ],
   "trades": [
@@ -1953,7 +2065,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99978.23407573742
+  "equity": 99492.43407573743
  },
  "reportDay": "2026-10-22",
  "skipReview": {
@@ -1962,11 +2074,11 @@
   "wouldWin": 17
  },
  "version": 1,
- "lastRun": 1792639970972,
- "lastBarT": 1792638000000,
- "price": 177.39641,
- "equity": 103211.10015103193,
- "unreal": 0,
+ "lastRun": 1792642207055,
+ "lastBarT": 1792641600000,
+ "price": 177.28396,
+ "equity": 103139.10015103193,
+ "unreal": -72.00000000000273,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -2047,7 +2159,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4583333333333333,
-    "avgR": 0.3535393173981071
+    "avgR": 0.3535393173981403
    },
    {
     "name": "陽の包み足",
@@ -2055,7 +2167,7 @@
     "key": "with|trend",
     "n": 41,
     "winRate": 0.36585365853658536,
-    "avgR": 0.18425338518074846
+    "avgR": 0.18425338520217954
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2063,7 +2175,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.10752255540897634
+    "avgR": 0.10752255540901348
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -2071,7 +2183,7 @@
     "key": "*",
     "n": 36,
     "winRate": 0.3611111111111111,
-    "avgR": 0.0658976272908381
+    "avgR": 0.06589762729083826
    },
    {
     "name": "MACD買いクロス",
@@ -2113,7 +2225,49 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
