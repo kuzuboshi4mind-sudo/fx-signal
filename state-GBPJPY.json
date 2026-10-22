@@ -78,7 +78,7 @@
    "entry": 211.74694,
    "sl": 211.9249285182576,
    "tp": 211.39096296348484,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -1600,7 +1600,7 @@
    ]
   }
  ],
- "lastEvalT": 1792623600000,
+ "lastEvalT": 1792627200000,
  "adaptive": {
   "start": 100000,
   "balance": 94236.74096863858,
@@ -2079,11 +2079,11 @@
   "wouldWin": 29
  },
  "version": 1,
- "lastRun": 1792627682175,
- "lastBarT": 1792627200000,
- "price": 211.91933,
- "equity": 100906.01003452964,
- "unreal": 1654.4700000000034,
+ "lastRun": 1792631017711,
+ "lastBarT": 1792630800000,
+ "price": 211.85785,
+ "equity": 100352.69003452975,
+ "unreal": 1101.1500000001035,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2167,20 +2167,12 @@
     "avgR": 0.2728399737159931
    },
    {
-    "name": "MACD売りクロス",
-    "dir": "short",
-    "key": "against|trend",
-    "n": 26,
-    "winRate": 0.4230769230769231,
-    "avgR": 0.24330671893318956
-   },
-   {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|trend",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.20927465939256798
+    "avgR": 0.20927465938951892
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2188,7 +2180,7 @@
     "key": "*",
     "n": 88,
     "winRate": 0.38636363636363635,
-    "avgR": 0.15595290082366198
+    "avgR": 0.15595290082366187
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2196,7 +2188,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.1980153874692741
+    "avgR": 0.19801538746927366
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2209,16 +2201,16 @@
   ]
  },
  "review": {
+  "macd_dn": {
+   "n": 2,
+   "wins": 0,
+   "recentLosses": 2,
+   "streak": 2,
+   "suspended": false
+  },
   "pullback_up": {
    "n": 5,
    "wins": 4,
-   "recentLosses": 1,
-   "streak": 1,
-   "suspended": false
-  },
-  "macd_dn": {
-   "n": 1,
-   "wins": 0,
    "recentLosses": 1,
    "streak": 1,
    "suspended": false
