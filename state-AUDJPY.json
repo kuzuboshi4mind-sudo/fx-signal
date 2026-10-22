@@ -156,6 +156,37 @@
  },
  "log": [
   {
+   "t": 1792663200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 109.83807,
+   "sl": 110.04918518435606,
+   "tp": 109.41583963128788,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1792663200000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 109.83807,
+   "sl": 109.62695481564394,
+   "tp": 110.26030036871212,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792659600000,
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
@@ -178,7 +209,7 @@
    "entry": 110.14089,
    "sl": 110.35338636765555,
    "tp": 109.71589726468889,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -194,7 +225,7 @@
    "entry": 110.14089,
    "sl": 109.92839363234445,
    "tp": 110.5658827353111,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -209,7 +240,7 @@
    "entry": 110.30591,
    "sl": 110.52011301132136,
    "tp": 109.87750397735728,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -225,7 +256,7 @@
    "entry": 110.25977,
    "sl": 110.45723862757686,
    "tp": 109.8648327448463,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1945,7 +1976,7 @@
    ]
   }
  ],
- "lastEvalT": 1792659600000,
+ "lastEvalT": 1792663200000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -2096,14 +2127,14 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 91,
-  "wouldLose": 62,
-  "wouldWin": 29
+  "n": 95,
+  "wouldLose": 63,
+  "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1792666382574,
- "lastBarT": 1792663200000,
- "price": 110.01083,
+ "lastRun": 1792668886342,
+ "lastBarT": 1792666800000,
+ "price": 109.83807,
  "equity": 104488.48359253748,
  "unreal": 0,
  "config": {
@@ -2169,8 +2200,8 @@
   }
  },
  "learned": {
-  "bars": 3566,
-  "events": 1874,
+  "bars": 3567,
+  "events": 1879,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -2257,7 +2288,25 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
