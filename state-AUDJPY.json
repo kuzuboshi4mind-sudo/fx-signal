@@ -156,6 +156,22 @@
  },
  "log": [
   {
+   "t": 1792641600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 110.58291,
+   "sl": 110.41698058576885,
+   "tp": 110.91476882846229,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792638000000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -1822,7 +1838,7 @@
    ]
   }
  ],
- "lastEvalT": 1792638000000,
+ "lastEvalT": 1792641600000,
  "adaptive": {
   "start": 100000,
   "balance": 98122.78960201253,
@@ -1927,9 +1943,9 @@
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792644815215,
- "lastBarT": 1792641600000,
- "price": 110.66748,
+ "lastRun": 1792647174043,
+ "lastBarT": 1792645200000,
+ "price": 110.58291,
  "equity": 104488.48359253748,
  "unreal": 0,
  "config": {
@@ -1996,7 +2012,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1872,
+  "events": 1871,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -2004,7 +2020,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.5416666666666666,
-    "avgR": 0.6001404651098501
+    "avgR": 0.6001404651098502
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -2020,7 +2036,7 @@
     "key": "with|range",
     "n": 62,
     "winRate": 0.41935483870967744,
-    "avgR": 0.3036921997828052
+    "avgR": 0.3036921997828193
    },
    {
     "name": "陽の包み足",
@@ -2083,7 +2099,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

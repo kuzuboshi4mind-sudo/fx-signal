@@ -87,6 +87,21 @@
  },
  "log": [
   {
+   "t": 1792641600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 211.16486,
+   "sl": 210.97719154444576,
+   "tp": 211.5401969111085,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792638000000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -122,7 +137,7 @@
    "entry": 211.54369,
    "sl": 211.72243764316832,
    "tp": 211.18619471366333,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1660,7 +1675,7 @@
    ]
   }
  ],
- "lastEvalT": 1792638000000,
+ "lastEvalT": 1792641600000,
  "adaptive": {
   "start": 100000,
   "balance": 94236.74096863858,
@@ -2134,16 +2149,16 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 85,
+  "n": 86,
   "wouldLose": 56,
-  "wouldWin": 29
+  "wouldWin": 30
  },
  "version": 1,
- "lastRun": 1792644814708,
- "lastBarT": 1792641600000,
- "price": 211.31409,
- "equity": 96800.0514286522,
- "unreal": -558.8099999998519,
+ "lastRun": 1792647173700,
+ "lastBarT": 1792645200000,
+ "price": 211.16486,
+ "equity": 98143.1214286521,
+ "unreal": 784.2600000000459,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2208,7 +2223,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1789,
+  "events": 1787,
   "win": [
    {
     "name": "陽の包み足",
@@ -2232,7 +2247,7 @@
     "key": "*",
     "n": 88,
     "winRate": 0.38636363636363635,
-    "avgR": 0.15595290082366206
+    "avgR": 0.15595290082366214
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2240,7 +2255,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.19801538746927438
+    "avgR": 0.19801538746927475
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2248,7 +2263,7 @@
     "key": "with|trend",
     "n": 36,
     "winRate": 0.3888888888888889,
-    "avgR": 0.1406933901244401
+    "avgR": 0.14069339012654863
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2276,7 +2291,16 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
