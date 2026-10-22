@@ -2372,9 +2372,9 @@
   "wouldWin": 33
  },
  "version": 1,
- "lastRun": 1792695762662,
+ "lastRun": 1792697708344,
  "lastBarT": 1792695600000,
- "price": 210.09887,
+ "price": 210.12801,
  "equity": 107952.0967793714,
  "unreal": 0,
  "config": {
@@ -2508,16 +2508,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
