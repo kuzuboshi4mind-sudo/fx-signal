@@ -2071,7 +2071,7 @@
    ]
   }
  ],
- "lastEvalT": 1792692000000,
+ "lastEvalT": 1792695600000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2261,9 +2261,9 @@
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792697707924,
- "lastBarT": 1792695600000,
- "price": 175.94142,
+ "lastRun": 1792699663098,
+ "lastBarT": 1792699200000,
+ "price": 175.94405,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2329,7 +2329,7 @@
   }
  },
  "learned": {
-  "bars": 3575,
+  "bars": 3576,
   "events": 1830,
   "win": [
    {

@@ -140,6 +140,22 @@
  },
  "log": [
   {
+   "t": 1792695600000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 156.89266,
+   "sl": 156.6647925813282,
+   "tp": 157.34839483734368,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792666800000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -1944,12 +1960,12 @@
    ]
   }
  ],
- "lastEvalT": 1792692000000,
+ "lastEvalT": 1792695600000,
  "reportDay": "2026-10-23",
  "version": 1,
- "lastRun": 1792697707413,
- "lastBarT": 1792695600000,
- "price": 156.82486,
+ "lastRun": 1792699662247,
+ "lastBarT": 1792699200000,
+ "price": 156.89266,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2015,7 +2031,7 @@
   }
  },
  "learned": {
-  "bars": 3575,
+  "bars": 3576,
   "events": 1898,
   "win": [
    {
@@ -2129,7 +2145,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 98790.57730798508,
