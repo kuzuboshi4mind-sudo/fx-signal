@@ -3,22 +3,38 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 97358.86142865205,
+  "balance": 100712.72995170362,
   "riskPct": 2,
   "startT": 1791953875407,
   "pos": {
    "dir": "short",
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
-   "units": 9000,
-   "entry": 211.252,
-   "sl": 211.45332602905842,
-   "tp": 210.87934794188317,
-   "barT": 1792641600000,
-   "openT": 1792642207642,
-   "deadline": 1792728607642
+   "units": 8000,
+   "entry": 210.95023,
+   "sl": 211.17665213730035,
+   "tp": 210.52738572539926,
+   "barT": 1792648800000,
+   "openT": 1792649178409,
+   "deadline": 1792735578409
   },
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 9000,
+    "entry": 211.252,
+    "sl": 211.45332602905842,
+    "tp": 210.87934794188317,
+    "barT": 1792641600000,
+    "openT": 1792642207642,
+    "deadline": 1792728607642,
+    "exit": 210.87934794188317,
+    "closeT": 1792645200000,
+    "reason": "tp",
+    "pnl": 3353.868523051574
+   },
    {
     "dir": "long",
     "pattern": "pullback_up",
@@ -87,6 +103,34 @@
  },
  "log": [
   {
+   "t": 1792645200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 210.96023,
+   "sl": 211.17665213730035,
+   "tp": 210.52738572539926,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792645200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 210.96023,
+   "sl": 211.17665213730035,
+   "tp": 210.52738572539926,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1792641600000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -94,7 +138,7 @@
    "entry": 211.16486,
    "sl": 210.97719154444576,
    "tp": 211.5401969111085,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -109,7 +153,7 @@
    "entry": 211.262,
    "sl": 211.45332602905842,
    "tp": 210.87934794188317,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -125,7 +169,7 @@
    "entry": 211.262,
    "sl": 211.45332602905842,
    "tp": 210.87934794188317,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -1675,7 +1719,7 @@
    ]
   }
  ],
- "lastEvalT": 1792641600000,
+ "lastEvalT": 1792645200000,
  "adaptive": {
   "start": 100000,
   "balance": 94236.74096863858,
@@ -2149,16 +2193,16 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 86,
-  "wouldLose": 56,
-  "wouldWin": 30
+  "n": 88,
+  "wouldLose": 57,
+  "wouldWin": 31
  },
  "version": 1,
- "lastRun": 1792647173700,
- "lastBarT": 1792645200000,
- "price": 211.16486,
- "equity": 98143.1214286521,
- "unreal": 784.2600000000459,
+ "lastRun": 1792649178409,
+ "lastBarT": 1792648800000,
+ "price": 210.96023,
+ "equity": 100632.72995170369,
+ "unreal": -79.99999999992724,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2222,8 +2266,8 @@
   }
  },
  "learned": {
-  "bars": 3561,
-  "events": 1787,
+  "bars": 3562,
+  "events": 1790,
   "win": [
    {
     "name": "陽の包み足",
@@ -2232,6 +2276,14 @@
     "n": 27,
     "winRate": 0.5555555555555556,
     "avgR": 0.6440438657068293
+   },
+   {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "against|range",
+    "n": 23,
+    "winRate": 0.43478260869565216,
+    "avgR": 0.27522630967318185
    },
    {
     "name": "20本高値ブレイク",
@@ -2245,17 +2297,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 88,
-    "winRate": 0.38636363636363635,
-    "avgR": 0.15595290082366214
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "against|range",
-    "n": 22,
-    "winRate": 0.4090909090909091,
-    "avgR": 0.19801538746927475
+    "n": 89,
+    "winRate": 0.39325842696629215,
+    "avgR": 0.17637889742293714
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2264,18 +2308,17 @@
     "n": 36,
     "winRate": 0.3888888888888889,
     "avgR": 0.14069339012654863
-   },
-   {
-    "name": "ボリバン下限から回帰",
-    "dir": "long",
-    "key": "with|range",
-    "n": 22,
-    "winRate": 0.3181818181818182,
-    "avgR": -0.07322767263348405
    }
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 1,
+   "wins": 1,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
+  },
   "macd_dn": {
    "n": 2,
    "wins": 0,
@@ -2293,10 +2336,17 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
    "blocked": true,
    "reasons": [
+    "優位性なし",
     "勝率が基準未満"
    ]
   }

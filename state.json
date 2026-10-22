@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 101621.82213265423,
+  "balance": 98671.99213265454,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "rsi_rebound",
-   "name": "RSI売られすぎ反発",
-   "units": 13000,
-   "entry": 157.62369999999999,
-   "sl": 157.4774728719951,
-   "tp": 157.90115425600973,
-   "barT": 1792645200000,
-   "openT": 1792647172604,
-   "deadline": 1792733572604
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "rsi_rebound",
+    "name": "RSI売られすぎ反発",
+    "units": 13000,
+    "entry": 157.62369999999999,
+    "sl": 157.4774728719951,
+    "tp": 157.90115425600973,
+    "barT": 1792645200000,
+    "openT": 1792647172604,
+    "deadline": 1792733572604,
+    "exit": 157.39679,
+    "closeT": 1792648800000,
+    "reason": "sl",
+    "pnl": -2949.829999999679
+   },
    {
     "dir": "long",
     "pattern": "macd_up",
@@ -135,6 +140,22 @@
  },
  "log": [
   {
+   "t": 1792645200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 157.39487,
+   "sl": 157.55708590457596,
+   "tp": 157.07043819084808,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792641600000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -142,7 +163,7 @@
    "entry": 157.6187,
    "sl": 157.4774728719951,
    "tp": 157.90115425600973,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -154,7 +175,7 @@
    "entry": 157.69051,
    "sl": 157.8315461378514,
    "tp": 157.4084377242972,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1860,14 +1881,14 @@
    ]
   }
  ],
- "lastEvalT": 1792641600000,
+ "lastEvalT": 1792645200000,
  "reportDay": "2026-10-22",
  "version": 1,
- "lastRun": 1792647172604,
- "lastBarT": 1792645200000,
- "price": 157.6187,
- "equity": 101556.82213265428,
- "unreal": -64.99999999994088,
+ "lastRun": 1792649176649,
+ "lastBarT": 1792648800000,
+ "price": 157.39487,
+ "equity": 98671.99213265454,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -1931,8 +1952,8 @@
   }
  },
  "learned": {
-  "bars": 3561,
-  "events": 1891,
+  "bars": 3562,
+  "events": 1893,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -1959,14 +1980,6 @@
     "avgR": 0.22975223712656062
    },
    {
-    "name": "RSI売られすぎ反発",
-    "dir": "long",
-    "key": "*",
-    "n": 32,
-    "winRate": 0.375,
-    "avgR": 0.2461334477800668
-   },
-   {
     "name": "MACD買いクロス",
     "dir": "long",
     "key": "with|range",
@@ -1991,6 +2004,14 @@
     "avgR": 0.2468316393902342
    },
    {
+    "name": "RSI売られすぎ反発",
+    "dir": "long",
+    "key": "*",
+    "n": 33,
+    "winRate": 0.36363636363636365,
+    "avgR": 0.20783540447010318
+   },
+   {
     "name": "MACD買いクロス",
     "dir": "long",
     "key": "*",
@@ -2009,6 +2030,13 @@
   ]
  },
  "review": {
+  "rsi_rebound": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "macd_up": {
    "n": 3,
    "wins": 0,
@@ -2040,10 +2068,13 @@
  },
  "lastSignals": [
   {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
   }
  ],
  "adaptive": {
@@ -2484,9 +2515,9 @@
   "equity": 98790.57730798508
  },
  "skipReview": {
-  "n": 95,
+  "n": 96,
   "wouldLose": 75,
-  "wouldWin": 20
+  "wouldWin": 21
  },
  "latest": {
   "start": 100000,
@@ -2546,6 +2577,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 102128.47000000034
+  "equity": 104142.94000000026
  }
 }
