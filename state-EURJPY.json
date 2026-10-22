@@ -92,6 +92,21 @@
  },
  "log": [
   {
+   "t": 1792702800000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 175.91291,
+   "sl": 175.67230806673282,
+   "tp": 176.3941138665344,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1792681200000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -2071,7 +2086,7 @@
    ]
   }
  ],
- "lastEvalT": 1792699200000,
+ "lastEvalT": 1792702800000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2261,9 +2276,9 @@
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792704723609,
- "lastBarT": 1792702800000,
- "price": 175.85882,
+ "lastRun": 1792706681275,
+ "lastBarT": 1792706400000,
+ "price": 175.91291,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2329,7 +2344,7 @@
   }
  },
  "learned": {
-  "bars": 3577,
+  "bars": 3578,
   "events": 1831,
   "win": [
    {
@@ -2412,7 +2427,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
