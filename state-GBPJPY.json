@@ -1862,7 +1862,7 @@
    ]
   }
  ],
- "lastEvalT": 1792666800000,
+ "lastEvalT": 1792670400000,
  "adaptive": {
   "start": 100000,
   "balance": 94236.74096863858,
@@ -2341,9 +2341,9 @@
   "wouldWin": 33
  },
  "version": 1,
- "lastRun": 1792670929780,
- "lastBarT": 1792670400000,
- "price": 210.00403,
+ "lastRun": 1792674493606,
+ "lastBarT": 1792674000000,
+ "price": 210.09514,
  "equity": 107952.0967793714,
  "unreal": 0,
  "config": {
@@ -2409,8 +2409,8 @@
   }
  },
  "learned": {
-  "bars": 3568,
-  "events": 1797,
+  "bars": 3569,
+  "events": 1798,
   "win": [
    {
     "name": "陽の包み足",
@@ -2477,17 +2477,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

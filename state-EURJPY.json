@@ -92,6 +92,38 @@
  },
  "log": [
   {
+   "t": 1792670400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 176.00433,
+   "sl": 175.72750065714712,
+   "tp": 176.5579886857058,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792670400000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 176.00433,
+   "sl": 175.72750065714712,
+   "tp": 176.5579886857058,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792666800000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -114,7 +146,7 @@
    "entry": 175.73146,
    "sl": 175.9865236757347,
    "tp": 175.22133264853056,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2023,7 +2055,7 @@
    ]
   }
  ],
- "lastEvalT": 1792666800000,
+ "lastEvalT": 1792670400000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2208,14 +2240,14 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 109,
-  "wouldLose": 83,
+  "n": 110,
+  "wouldLose": 84,
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792670929279,
- "lastBarT": 1792670400000,
- "price": 175.94481,
+ "lastRun": 1792674493166,
+ "lastBarT": 1792674000000,
+ "price": 176.00433,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2281,8 +2313,8 @@
   }
  },
  "learned": {
-  "bars": 3568,
-  "events": 1827,
+  "bars": 3569,
+  "events": 1829,
   "win": [
    {
     "name": "陽の包み足",
@@ -2366,11 +2398,21 @@
  },
  "lastSignals": [
   {
-   "name": "20本安値ブレイク",
-   "dir": "short",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
    "blocked": true,
    "reasons": [
-    "優位性なし"
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
    ]
   }
  ],

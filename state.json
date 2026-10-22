@@ -178,7 +178,7 @@
    "entry": 156.91052,
    "sl": 157.12559866203128,
    "tp": 156.4803626759374,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1944,12 +1944,12 @@
    ]
   }
  ],
- "lastEvalT": 1792666800000,
+ "lastEvalT": 1792670400000,
  "reportDay": "2026-10-22",
  "version": 1,
- "lastRun": 1792670928699,
- "lastBarT": 1792670400000,
- "price": 157.0056,
+ "lastRun": 1792674491329,
+ "lastBarT": 1792674000000,
+ "price": 157.09356,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2015,7 +2015,7 @@
   }
  },
  "learned": {
-  "bars": 3568,
+  "bars": 3569,
   "events": 1896,
   "win": [
    {
@@ -2129,17 +2129,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 98790.57730798508,
@@ -2578,15 +2568,16 @@
   "equity": 98790.57730798508
  },
  "skipReview": {
-  "n": 99,
-  "wouldLose": 77,
+  "n": 100,
+  "wouldLose": 78,
   "wouldWin": 22
  },
  "latest": {
   "start": 100000,
-  "balance": 101527.1800000003,
+  "balance": 106854.73000000027,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -2598,10 +2589,12 @@
     "tp": 143.58189621485943,
     "barT": 1792641600000,
     "openT": 1792642206077,
-    "deadline": 1792671006077
-   }
-  ],
-  "trades": [
+    "deadline": 1792671006077,
+    "exit": 157.09356,
+    "closeT": 1792674491329,
+    "reason": "time",
+    "pnl": 5327.549999999974
+   },
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -2640,6 +2633,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 107646.37000000036
+  "equity": 106854.73000000027
  }
 }
