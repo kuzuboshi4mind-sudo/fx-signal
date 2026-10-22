@@ -83,7 +83,7 @@
    "entry": 177.71127,
    "sl": 177.56420670880874,
    "tp": 178.00539658238256,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -131,7 +131,7 @@
    "entry": 177.66424,
    "sl": 177.50343313348958,
    "tp": 177.98585373302083,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -147,7 +147,7 @@
    "entry": 177.66424,
    "sl": 177.50343313348958,
    "tp": 177.98585373302083,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1809,7 +1809,7 @@
    ]
   }
  ],
- "lastEvalT": 1792627200000,
+ "lastEvalT": 1792630800000,
  "adaptive": {
   "start": 100000,
   "balance": 99933.03407573739,
@@ -1953,18 +1953,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100828.55407573743
+  "equity": 100408.03407573742
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 94,
-  "wouldLose": 77,
+  "n": 97,
+  "wouldLose": 80,
   "wouldWin": 17
  },
  "version": 1,
- "lastRun": 1792633084279,
- "lastBarT": 1792630800000,
- "price": 177.60899,
+ "lastRun": 1792635328462,
+ "lastBarT": 1792634400000,
+ "price": 177.50386,
  "equity": 103211.10015103193,
  "unreal": 0,
  "config": {
@@ -2031,7 +2031,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1817,
+  "events": 1819,
   "win": [
    {
     "name": "陽の包み足",
@@ -2047,7 +2047,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4583333333333333,
-    "avgR": 0.35353931739809114
+    "avgR": 0.3535393173980938
    },
    {
     "name": "陽の包み足",
@@ -2055,7 +2055,7 @@
     "key": "with|trend",
     "n": 41,
     "winRate": 0.36585365853658536,
-    "avgR": 0.18425338517043666
+    "avgR": 0.18425338517217124
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2063,7 +2063,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.1075225554089585
+    "avgR": 0.10752255540896152
    },
    {
     "name": "デッドクロス(EMA20/50)",

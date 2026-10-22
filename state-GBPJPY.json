@@ -71,6 +71,22 @@
  },
  "log": [
   {
+   "t": 1792630800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 211.54369,
+   "sl": 211.72243764316832,
+   "tp": 211.18619471366333,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792616400000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -106,7 +122,7 @@
    "entry": 211.84606,
    "sl": 211.65688111784306,
    "tp": 212.2244177643139,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -121,7 +137,7 @@
    "entry": 211.74025,
    "sl": 211.54350435018722,
    "tp": 212.13374129962554,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -1600,7 +1616,7 @@
    ]
   }
  ],
- "lastEvalT": 1792627200000,
+ "lastEvalT": 1792630800000,
  "adaptive": {
   "start": 100000,
   "balance": 94236.74096863858,
@@ -2074,16 +2090,16 @@
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 84,
-  "wouldLose": 55,
+  "n": 85,
+  "wouldLose": 56,
   "wouldWin": 29
  },
  "version": 1,
- "lastRun": 1792633084585,
- "lastBarT": 1792630800000,
- "price": 211.74997,
- "equity": 99381.77003452953,
- "unreal": 130.22999999989793,
+ "lastRun": 1792635329068,
+ "lastBarT": 1792634400000,
+ "price": 211.54369,
+ "equity": 97525.2500345296,
+ "unreal": -1726.2900000000343,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2172,7 +2188,7 @@
     "key": "with|trend",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.20927465938951892
+    "avgR": 0.20927465938987688
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2188,7 +2204,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.19801538746927366
+    "avgR": 0.19801538746927372
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2209,14 +2225,24 @@
    "suspended": false
   },
   "pullback_up": {
-   "n": 5,
+   "n": 6,
    "wins": 4,
-   "recentLosses": 1,
-   "streak": 1,
+   "recentLosses": 2,
+   "streak": 2,
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
