@@ -1878,7 +1878,7 @@
    ]
   }
  ],
- "lastEvalT": 1792674000000,
+ "lastEvalT": 1792677600000,
  "adaptive": {
   "start": 100000,
   "balance": 94236.74096863858,
@@ -2350,16 +2350,16 @@
   "pickTried": "2026-10-14",
   "equity": 94236.74096863858
  },
- "reportDay": "2026-10-22",
+ "reportDay": "2026-10-23",
  "skipReview": {
   "n": 95,
   "wouldLose": 62,
   "wouldWin": 33
  },
  "version": 1,
- "lastRun": 1792679805937,
- "lastBarT": 1792677600000,
- "price": 210.06464,
+ "lastRun": 1792682017269,
+ "lastBarT": 1792681200000,
+ "price": 210.12116,
  "equity": 107952.0967793714,
  "unreal": 0,
  "config": {
@@ -2425,8 +2425,8 @@
   }
  },
  "learned": {
-  "bars": 3570,
-  "events": 1799,
+  "bars": 3571,
+  "events": 1800,
   "win": [
    {
     "name": "陽の包み足",
@@ -2493,17 +2493,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
