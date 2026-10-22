@@ -140,6 +140,22 @@
  },
  "log": [
   {
+   "t": 1792666800000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 157.0056,
+   "sl": 156.7756962556975,
+   "tp": 157.46540748860497,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792663200000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -147,7 +163,7 @@
    "entry": 156.90398,
    "sl": 156.68916981382807,
    "tp": 157.3336003723438,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1928,12 +1944,12 @@
    ]
   }
  ],
- "lastEvalT": 1792663200000,
+ "lastEvalT": 1792666800000,
  "reportDay": "2026-10-22",
  "version": 1,
- "lastRun": 1792668884456,
- "lastBarT": 1792666800000,
- "price": 156.90398,
+ "lastRun": 1792670928699,
+ "lastBarT": 1792670400000,
+ "price": 157.0056,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -1999,8 +2015,8 @@
   }
  },
  "learned": {
-  "bars": 3567,
-  "events": 1895,
+  "bars": 3568,
+  "events": 1896,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2016,7 +2032,7 @@
     "key": "with|range",
     "n": 204,
     "winRate": 0.38235294117647056,
-    "avgR": 0.2395915542652117
+    "avgR": 0.23959155426521164
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2115,11 +2131,12 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下限から回帰",
+   "name": "RSI売られすぎ反発",
    "dir": "long",
    "blocked": true,
    "reasons": [
-    "優位性なし"
+    "優位性なし",
+    "勝率が基準未満"
    ]
   }
  ],
@@ -2561,8 +2578,8 @@
   "equity": 98790.57730798508
  },
  "skipReview": {
-  "n": 98,
-  "wouldLose": 76,
+  "n": 99,
+  "wouldLose": 77,
   "wouldWin": 22
  },
  "latest": {
@@ -2623,6 +2640,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 108560.95000000033
+  "equity": 107646.37000000036
  }
 }
