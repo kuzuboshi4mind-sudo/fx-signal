@@ -2014,11 +2014,11 @@
   "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1792649179689,
+ "lastRun": 1792651497562,
  "lastBarT": 1792648800000,
- "price": 89.58104,
- "equity": 101780.89167258874,
- "unreal": 409.1999999999416,
+ "price": 89.50733,
+ "equity": 102665.4116725888,
+ "unreal": 1293.7200000000075,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2151,20 +2151,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
