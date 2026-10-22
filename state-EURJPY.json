@@ -76,6 +76,22 @@
  },
  "log": [
   {
+   "t": 1792623600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.71127,
+   "sl": 177.56420670880874,
+   "tp": 178.00539658238256,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792620000000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -99,7 +115,7 @@
    "entry": 177.54842,
    "sl": 177.70672351890252,
    "tp": 177.23181296219494,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1793,7 +1809,7 @@
    ]
   }
  ],
- "lastEvalT": 1792620000000,
+ "lastEvalT": 1792623600000,
  "adaptive": {
   "start": 100000,
   "balance": 99933.03407573739,
@@ -1937,18 +1953,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101074.71407573746
+  "equity": 101237.67407573745
  },
  "reportDay": "2026-10-22",
  "skipReview": {
-  "n": 93,
-  "wouldLose": 76,
+  "n": 94,
+  "wouldLose": 77,
   "wouldWin": 17
  },
  "version": 1,
- "lastRun": 1792626509248,
- "lastBarT": 1792623600000,
- "price": 177.67053,
+ "lastRun": 1792627681701,
+ "lastBarT": 1792627200000,
+ "price": 177.71127,
  "equity": 103211.10015103193,
  "unreal": 0,
  "config": {
@@ -2031,7 +2047,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4583333333333333,
-    "avgR": 0.35353931739810757
+    "avgR": 0.35353931739810246
    },
    {
     "name": "陽の包み足",
@@ -2039,7 +2055,7 @@
     "key": "with|trend",
     "n": 41,
     "winRate": 0.36585365853658536,
-    "avgR": 0.18425338518103102
+    "avgR": 0.18425338517774761
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2047,7 +2063,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.10752255540897684
+    "avgR": 0.10752255540897115
    },
    {
     "name": "デッドクロス(EMA20/50)",
@@ -2097,7 +2113,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
