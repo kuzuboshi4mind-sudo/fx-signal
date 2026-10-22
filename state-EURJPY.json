@@ -2071,7 +2071,7 @@
    ]
   }
  ],
- "lastEvalT": 1792681200000,
+ "lastEvalT": 1792684800000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2261,9 +2261,9 @@
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792686978852,
- "lastBarT": 1792684800000,
- "price": 176.14371,
+ "lastRun": 1792688978808,
+ "lastBarT": 1792688400000,
+ "price": 176.10401,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2329,7 +2329,7 @@
   }
  },
  "learned": {
-  "bars": 3572,
+  "bars": 3573,
   "events": 1830,
   "win": [
    {
@@ -2412,17 +2412,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

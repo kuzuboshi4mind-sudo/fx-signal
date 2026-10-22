@@ -156,6 +156,22 @@
  },
  "log": [
   {
+   "t": 1792684800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 110.12607,
+   "sl": 110.35890082017491,
+   "tp": 109.66040835965018,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792670400000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -1992,7 +2008,7 @@
    ]
   }
  ],
- "lastEvalT": 1792681200000,
+ "lastEvalT": 1792684800000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -2148,9 +2164,9 @@
   "wouldWin": 33
  },
  "version": 1,
- "lastRun": 1792686979634,
- "lastBarT": 1792684800000,
- "price": 110.21417,
+ "lastRun": 1792688979524,
+ "lastBarT": 1792688400000,
+ "price": 110.12607,
  "equity": 104488.48359253748,
  "unreal": 0,
  "config": {
@@ -2216,7 +2232,7 @@
   }
  },
  "learned": {
-  "bars": 3572,
+  "bars": 3573,
   "events": 1881,
   "win": [
    {
@@ -2304,7 +2320,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
