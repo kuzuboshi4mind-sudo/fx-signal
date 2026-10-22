@@ -76,6 +76,22 @@
  },
  "log": [
   {
+   "t": 1792674000000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 89.11868,
+   "sl": 88.9363468762159,
+   "tp": 89.48334624756822,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792666800000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -1883,7 +1899,7 @@
    ]
   }
  ],
- "lastEvalT": 1792670400000,
+ "lastEvalT": 1792674000000,
  "adaptive": {
   "start": 100000,
   "balance": 100601.85520512416,
@@ -2163,7 +2179,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100904.79520512413
+  "equity": 101131.89520512412
  },
  "reportDay": "2026-10-22",
  "skipReview": {
@@ -2172,9 +2188,9 @@
   "wouldWin": 34
  },
  "version": 1,
- "lastRun": 1792677556821,
- "lastBarT": 1792674000000,
- "price": 89.19438,
+ "lastRun": 1792679806567,
+ "lastBarT": 1792677600000,
+ "price": 89.11868,
  "equity": 108623.31266400075,
  "unreal": 0,
  "config": {
@@ -2240,7 +2256,7 @@
   }
  },
  "learned": {
-  "bars": 3569,
+  "bars": 3570,
   "events": 1897,
   "win": [
    {
@@ -2316,7 +2332,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
