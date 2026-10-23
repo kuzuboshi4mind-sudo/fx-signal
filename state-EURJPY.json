@@ -92,6 +92,38 @@
  },
  "log": [
   {
+   "t": 1792756800000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 175.15543,
+   "sl": 175.44854817938761,
+   "tp": 174.56919364122476,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792756800000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 175.15543,
+   "sl": 175.44854817938761,
+   "tp": 174.56919364122476,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792749600000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -2197,7 +2229,7 @@
    ]
   }
  ],
- "lastEvalT": 1792753200000,
+ "lastEvalT": 1792756800000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2387,9 +2419,9 @@
   "wouldWin": 27
  },
  "version": 1,
- "lastRun": 1792759055558,
- "lastBarT": 1792756800000,
- "price": 175.39764,
+ "lastRun": 1792761961553,
+ "lastBarT": 1792760400000,
+ "price": 175.15543,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2455,8 +2487,8 @@
   }
  },
  "learned": {
-  "bars": 3592,
-  "events": 1838,
+  "bars": 3593,
+  "events": 1840,
   "win": [
    {
     "name": "陽の包み足",
@@ -2481,14 +2513,6 @@
     "n": 41,
     "winRate": 0.36585365853658536,
     "avgR": 0.18425338521819606
-   },
-   {
-    "name": "デッドクロス(EMA20/50)",
-    "dir": "short",
-    "key": "*",
-    "n": 37,
-    "winRate": 0.3783783783783784,
-    "avgR": 0.11766185740180034
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2538,7 +2562,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
