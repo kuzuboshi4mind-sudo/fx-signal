@@ -99,7 +99,7 @@
    "entry": 175.70996,
    "sl": 175.41670258485223,
    "tp": 176.29647483029552,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2197,7 +2197,7 @@
    ]
   }
  ],
- "lastEvalT": 1792749600000,
+ "lastEvalT": 1792753200000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2382,14 +2382,14 @@
  },
  "reportDay": "2026-10-23",
  "skipReview": {
-  "n": 121,
-  "wouldLose": 94,
+  "n": 122,
+  "wouldLose": 95,
   "wouldWin": 27
  },
  "version": 1,
- "lastRun": 1792756437399,
- "lastBarT": 1792753200000,
- "price": 175.58856,
+ "lastRun": 1792759055558,
+ "lastBarT": 1792756800000,
+ "price": 175.39764,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2455,7 +2455,7 @@
   }
  },
  "learned": {
-  "bars": 3591,
+  "bars": 3592,
   "events": 1838,
   "win": [
    {
@@ -2496,7 +2496,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.10752255540904124
+    "avgR": 0.10752255540904125
    },
    {
     "name": "MACD買いクロス",
