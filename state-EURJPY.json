@@ -92,6 +92,38 @@
  },
  "log": [
   {
+   "t": 1792760400000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 175.65219,
+   "sl": 175.34937669056865,
+   "tp": 176.2578166188627,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792760400000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 175.65219,
+   "sl": 175.34937669056865,
+   "tp": 176.2578166188627,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792756800000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -99,7 +131,7 @@
    "entry": 175.15543,
    "sl": 175.44854817938761,
    "tp": 174.56919364122476,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -115,7 +147,7 @@
    "entry": 175.15543,
    "sl": 175.44854817938761,
    "tp": 174.56919364122476,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2229,7 +2261,7 @@
    ]
   }
  ],
- "lastEvalT": 1792756800000,
+ "lastEvalT": 1792760400000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2414,14 +2446,14 @@
  },
  "reportDay": "2026-10-23",
  "skipReview": {
-  "n": 122,
-  "wouldLose": 95,
+  "n": 124,
+  "wouldLose": 97,
   "wouldWin": 27
  },
  "version": 1,
- "lastRun": 1792761961553,
- "lastBarT": 1792760400000,
- "price": 175.15543,
+ "lastRun": 1792764934888,
+ "lastBarT": 1792764000000,
+ "price": 175.65219,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2487,8 +2519,8 @@
   }
  },
  "learned": {
-  "bars": 3593,
-  "events": 1840,
+  "bars": 3594,
+  "events": 1842,
   "win": [
    {
     "name": "陽の包み足",
@@ -2564,8 +2596,8 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
    "blocked": true,
    "reasons": [
     "優位性なし",
@@ -2573,8 +2605,8 @@
    ]
   },
   {
-   "name": "MACD売りクロス",
-   "dir": "short",
+   "name": "MACD買いクロス",
+   "dir": "long",
    "blocked": true,
    "reasons": [
     "優位性なし",

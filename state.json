@@ -140,6 +140,21 @@
  },
  "log": [
   {
+   "t": 1792760400000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 156.78799,
+   "sl": 156.50869458918388,
+   "tp": 157.3465808216323,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1792756800000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -147,7 +162,7 @@
    "entry": 156.40823,
    "sl": 156.6815373654943,
    "tp": 155.86161526901137,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -163,7 +178,7 @@
    "entry": 156.40823,
    "sl": 156.6815373654943,
    "tp": 155.86161526901137,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2167,12 +2182,12 @@
    ]
   }
  ],
- "lastEvalT": 1792756800000,
+ "lastEvalT": 1792760400000,
  "reportDay": "2026-10-23",
  "version": 1,
- "lastRun": 1792761960744,
- "lastBarT": 1792760400000,
- "price": 156.40823,
+ "lastRun": 1792764934220,
+ "lastBarT": 1792764000000,
+ "price": 156.78799,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2238,8 +2253,8 @@
   }
  },
  "learned": {
-  "bars": 3593,
-  "events": 1909,
+  "bars": 3594,
+  "events": 1911,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2346,21 +2361,11 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
    "blocked": true,
    "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
+    "優位性なし"
    ]
   }
  ],
@@ -2894,11 +2899,11 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 96693.4486207195
+  "equity": 98212.48862071952
  },
  "skipReview": {
-  "n": 113,
-  "wouldLose": 89,
+  "n": 115,
+  "wouldLose": 91,
   "wouldWin": 24
  },
  "latest": {

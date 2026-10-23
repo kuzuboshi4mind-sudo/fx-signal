@@ -6,7 +6,18 @@
   "balance": 100684.99065845163,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 8000,
+   "entry": 110.18031,
+   "sl": 109.93454147968889,
+   "tp": 110.65384704062222,
+   "barT": 1792764000000,
+   "openT": 1792764936344,
+   "deadline": 1792851336344
+  },
   "trades": [
    {
     "dir": "long",
@@ -188,6 +199,18 @@
  },
  "log": [
   {
+   "t": 1792760400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 110.17431,
+   "sl": 109.93454147968889,
+   "tp": 110.65384704062222,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1792756800000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -195,7 +218,7 @@
    "entry": 109.89329,
    "sl": 110.12320456033504,
    "tp": 109.43346087932991,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2176,7 +2199,7 @@
    ]
   }
  ],
- "lastEvalT": 1792756800000,
+ "lastEvalT": 1792760400000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -2327,16 +2350,16 @@
  },
  "reportDay": "2026-10-23",
  "skipReview": {
-  "n": 106,
-  "wouldLose": 71,
+  "n": 107,
+  "wouldLose": 72,
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1792761962493,
- "lastBarT": 1792760400000,
- "price": 109.89329,
- "equity": 100684.99065845163,
- "unreal": 0,
+ "lastRun": 1792764936344,
+ "lastBarT": 1792764000000,
+ "price": 110.17431,
+ "equity": 100636.99065845163,
+ "unreal": -48.00000000000182,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -2400,8 +2423,8 @@
   }
  },
  "learned": {
-  "bars": 3593,
-  "events": 1887,
+  "bars": 3594,
+  "events": 1889,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -2497,13 +2520,10 @@
  },
  "lastSignals": [
   {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
   }
  ],
  "latest": {
