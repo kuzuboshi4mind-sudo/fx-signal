@@ -2267,11 +2267,11 @@
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1792728554687,
+ "lastRun": 1792731186851,
  "lastBarT": 1792728000000,
- "price": 110.08724,
- "equity": 104162.96359253739,
- "unreal": -325.52000000009684,
+ "price": 109.98822,
+ "equity": 103370.80359253741,
+ "unreal": -1117.680000000064,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -2423,17 +2423,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
