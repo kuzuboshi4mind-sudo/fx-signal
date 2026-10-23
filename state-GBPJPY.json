@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 107952.0967793714,
+  "balance": 105833.56852591083,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 6000,
-   "entry": 209.52782000000002,
-   "sl": 209.88090804224345,
-   "tp": 208.8516439155131,
-   "barT": 1792749600000,
-   "openT": 1792750145888,
-   "deadline": 1792836545888
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 6000,
+    "entry": 209.52782000000002,
+    "sl": 209.88090804224345,
+    "tp": 208.8516439155131,
+    "barT": 1792749600000,
+    "openT": 1792750145888,
+    "deadline": 1792836545888,
+    "exit": 209.88090804224345,
+    "closeT": 1792753200000,
+    "reason": "sl",
+    "pnl": -2118.5282534605676
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -135,6 +140,22 @@
  },
  "log": [
   {
+   "t": 1792749600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 209.88695,
+   "sl": 209.54842110363109,
+   "tp": 210.56400779273784,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792746000000,
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
@@ -142,7 +163,7 @@
    "entry": 209.53782,
    "sl": 209.88090804224345,
    "tp": 208.8516439155131,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -2075,7 +2096,7 @@
    ]
   }
  ],
- "lastEvalT": 1792746000000,
+ "lastEvalT": 1792749600000,
  "adaptive": {
   "start": 100000,
   "balance": 94763.03156653995,
@@ -2571,11 +2592,11 @@
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1792752713147,
- "lastBarT": 1792749600000,
- "price": 209.74792,
- "equity": 106631.49677937155,
- "unreal": -1320.5999999998426,
+ "lastRun": 1792754273944,
+ "lastBarT": 1792753200000,
+ "price": 209.88695,
+ "equity": 105833.56852591083,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2639,7 +2660,7 @@
   }
  },
  "learned": {
-  "bars": 3590,
+  "bars": 3591,
   "events": 1809,
   "win": [
    {
@@ -2686,10 +2707,10 @@
  },
  "review": {
   "bb_break_dn": {
-   "n": 3,
+   "n": 4,
    "wins": 3,
-   "recentLosses": 0,
-   "streak": 0,
+   "recentLosses": 1,
+   "streak": 1,
    "suspended": false
   },
   "macd_dn": {
@@ -2707,7 +2728,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

@@ -6,7 +6,18 @@
   "balance": 102571.39794014006,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 8000,
+   "entry": 110.14898,
+   "sl": 109.91317908978894,
+   "tp": 110.6025818204221,
+   "barT": 1792753200000,
+   "openT": 1792754274509,
+   "deadline": 1792840674509
+  },
   "trades": [
    {
     "dir": "long",
@@ -172,6 +183,18 @@
  },
  "log": [
   {
+   "t": 1792749600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 110.14298,
+   "sl": 109.91317908978894,
+   "tp": 110.6025818204221,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1792742400000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -179,7 +202,7 @@
    "entry": 109.8552,
    "sl": 110.09106655858797,
    "tp": 109.38346688282405,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2132,7 +2155,7 @@
    ]
   }
  ],
- "lastEvalT": 1792746000000,
+ "lastEvalT": 1792749600000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -2283,16 +2306,16 @@
  },
  "reportDay": "2026-10-23",
  "skipReview": {
-  "n": 105,
-  "wouldLose": 70,
+  "n": 106,
+  "wouldLose": 71,
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1792752713546,
- "lastBarT": 1792749600000,
- "price": 110.03619,
- "equity": 102571.39794014006,
- "unreal": 0,
+ "lastRun": 1792754274509,
+ "lastBarT": 1792753200000,
+ "price": 110.14298,
+ "equity": 102523.39794014006,
+ "unreal": -48.00000000000182,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -2356,7 +2379,7 @@
   }
  },
  "learned": {
-  "bars": 3590,
+  "bars": 3591,
   "events": 1887,
   "win": [
    {
@@ -2451,7 +2474,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
