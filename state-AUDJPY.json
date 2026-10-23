@@ -2246,7 +2246,7 @@
    ]
   }
  ],
- "lastEvalT": 1792771200000,
+ "lastEvalT": 1792774800000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -2402,11 +2402,11 @@
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1792776708763,
- "lastBarT": 1792774800000,
- "price": 110.261,
- "equity": 101330.51065845155,
- "unreal": 645.5199999999195,
+ "lastRun": 1792778491286,
+ "lastBarT": 1792778400000,
+ "price": 110.36897,
+ "equity": 102194.27065845161,
+ "unreal": 1509.2799999999897,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -2470,7 +2470,7 @@
   }
  },
  "learned": {
-  "bars": 3597,
+  "bars": 3598,
   "events": 1889,
   "win": [
    {
@@ -2565,16 +2565,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
