@@ -140,6 +140,22 @@
  },
  "log": [
   {
+   "t": 1792782000000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 156.85894,
+   "sl": 157.09630425265462,
+   "tp": 156.38421149469073,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792778400000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -2198,12 +2214,12 @@
    ]
   }
  ],
- "lastEvalT": 1792778400000,
+ "lastEvalT": 1792782000000,
  "reportDay": "2026-10-24",
  "version": 1,
- "lastRun": 1792784912371,
- "lastBarT": 1792782000000,
- "price": 156.9034,
+ "lastRun": 1792786236149,
+ "lastBarT": 1792785600000,
+ "price": 156.85894,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2269,7 +2285,7 @@
   }
  },
  "learned": {
-  "bars": 3599,
+  "bars": 3600,
   "events": 1912,
   "win": [
    {
@@ -2375,7 +2391,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 97806.67808269676,
@@ -2923,7 +2949,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98849.53808269677
+  "equity": 98671.69808269672
  },
  "skipReview": {
   "n": 115,
