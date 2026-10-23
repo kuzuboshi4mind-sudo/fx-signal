@@ -140,6 +140,22 @@
  },
  "log": [
   {
+   "t": 1792724400000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 156.93699,
+   "sl": 157.2004518842624,
+   "tp": 156.4100662314752,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792717200000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -2071,12 +2087,12 @@
    ]
   }
  ],
- "lastEvalT": 1792720800000,
+ "lastEvalT": 1792724400000,
  "reportDay": "2026-10-23",
  "version": 1,
- "lastRun": 1792726412247,
- "lastBarT": 1792724400000,
- "price": 156.90058,
+ "lastRun": 1792728552585,
+ "lastBarT": 1792728000000,
+ "price": 156.93699,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2142,7 +2158,7 @@
   }
  },
  "learned": {
-  "bars": 3583,
+  "bars": 3584,
   "events": 1902,
   "win": [
    {
@@ -2248,12 +2264,49 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 98790.57730798508,
   "startT": 1791916832223,
-  "positions": [],
+  "positions": [
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 2000,
+    "entry": 156.94199,
+    "sl": 156.6785281157376,
+    "tp": 157.73237565278717,
+    "barT": 1792728000000,
+    "openT": 1792728552585,
+    "deadline": 1792814952585
+   },
+   {
+    "key": "pullback_dn|long|2|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 2000,
+    "entry": 156.94199,
+    "sl": 156.6785281157376,
+    "tp": 157.4689137685248,
+    "barT": 1792728000000,
+    "openT": 1792728552585,
+    "deadline": 1792814952585
+   }
+  ],
   "trades": [
    {
     "key": "pullback_dn|long|2|1",
@@ -2684,7 +2737,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98790.57730798508
+  "equity": 98770.57730798509
  },
  "skipReview": {
   "n": 105,
