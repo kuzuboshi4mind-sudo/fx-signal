@@ -76,6 +76,21 @@
  },
  "log": [
   {
+   "t": 1792710000000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 88.81114,
+   "sl": 88.96368640178164,
+   "tp": 88.50604719643668,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1792706400000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -99,7 +114,7 @@
    "entry": 89.12583,
    "sl": 89.29523083772604,
    "tp": 88.7870283245479,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -177,7 +192,7 @@
    "entry": 89.17712,
    "sl": 89.35432785628271,
    "tp": 88.82270428743459,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1930,12 +1945,13 @@
    ]
   }
  ],
- "lastEvalT": 1792706400000,
+ "lastEvalT": 1792710000000,
  "adaptive": {
   "start": 100000,
-  "balance": 100601.85520512416,
+  "balance": 102169.44058140264,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|short|3|1",
     "dir": "short",
@@ -1947,10 +1963,12 @@
     "tp": 88.77283154124049,
     "barT": 1792659600000,
     "openT": 1792661747249,
-    "deadline": 1792748147249
-   }
-  ],
-  "trades": [
+    "deadline": 1792748147249,
+    "exit": 88.77283154124049,
+    "closeT": 1792713600000,
+    "reason": "tp",
+    "pnl": 1567.5853762784868
+   },
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -2210,18 +2228,18 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101679.51520512413
+  "equity": 102169.44058140264
  },
  "reportDay": "2026-10-23",
  "skipReview": {
-  "n": 104,
+  "n": 106,
   "wouldLose": 70,
-  "wouldWin": 34
+  "wouldWin": 36
  },
  "version": 1,
- "lastRun": 1792713508422,
- "lastBarT": 1792710000000,
- "price": 88.93614,
+ "lastRun": 1792716212576,
+ "lastBarT": 1792713600000,
+ "price": 88.81114,
  "equity": 108623.31266400075,
  "unreal": 0,
  "config": {
@@ -2287,8 +2305,8 @@
   }
  },
  "learned": {
-  "bars": 3579,
-  "events": 1901,
+  "bars": 3580,
+  "events": 1903,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2363,7 +2381,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
