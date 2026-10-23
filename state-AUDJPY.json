@@ -199,6 +199,38 @@
  },
  "log": [
   {
+   "t": 1792767600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 110.3821,
+   "sl": 110.14232188809909,
+   "tp": 110.8616562238018,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792767600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 110.3821,
+   "sl": 110.14232188809909,
+   "tp": 110.8616562238018,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792760400000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -2199,7 +2231,7 @@
    ]
   }
  ],
- "lastEvalT": 1792764000000,
+ "lastEvalT": 1792767600000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -2355,11 +2387,11 @@
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1792769779598,
- "lastBarT": 1792767600000,
- "price": 110.39784,
- "equity": 102425.2306584516,
- "unreal": 1740.2399999999716,
+ "lastRun": 1792772045824,
+ "lastBarT": 1792771200000,
+ "price": 110.3821,
+ "equity": 102299.31065845153,
+ "unreal": 1614.319999999907,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -2423,7 +2455,7 @@
   }
  },
  "learned": {
-  "bars": 3595,
+  "bars": 3596,
   "events": 1889,
   "win": [
    {
@@ -2518,7 +2550,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
