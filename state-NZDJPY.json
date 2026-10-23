@@ -83,7 +83,7 @@
    "entry": 88.81114,
    "sl": 88.96368640178164,
    "tp": 88.50604719643668,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -1945,7 +1945,7 @@
    ]
   }
  ],
- "lastEvalT": 1792710000000,
+ "lastEvalT": 1792713600000,
  "adaptive": {
   "start": 100000,
   "balance": 102169.44058140264,
@@ -2232,14 +2232,14 @@
  },
  "reportDay": "2026-10-23",
  "skipReview": {
-  "n": 106,
-  "wouldLose": 70,
+  "n": 107,
+  "wouldLose": 71,
   "wouldWin": 36
  },
  "version": 1,
- "lastRun": 1792716212576,
- "lastBarT": 1792713600000,
- "price": 88.81114,
+ "lastRun": 1792718734845,
+ "lastBarT": 1792717200000,
+ "price": 88.99546,
  "equity": 108623.31266400075,
  "unreal": 0,
  "config": {
@@ -2305,7 +2305,7 @@
   }
  },
  "learned": {
-  "bars": 3580,
+  "bars": 3581,
   "events": 1903,
   "win": [
    {
@@ -2381,16 +2381,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
