@@ -48,7 +48,25 @@
       const a = (tenkan[i - K] + kijun[i - K]) / 2, b = spanB0[i - K];
       cloudTop[i] = Math.max(a, b); cloudBot[i] = Math.min(a, b);
     }
-    return { hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
+    // カウフマンの効率レシオ（24本）：0に近いほどもみ合い、1に近いほど一方向の流れ
+    const er24 = new Array(n).fill(NaN);
+    for (let i = 24; i < n; i++) {
+      let path = 0; for (let j = i - 23; j <= i; j++) path += Math.abs(close[j] - close[j - 1]);
+      er24[i] = path ? Math.abs(close[i] - close[i - 24]) / path : 0;
+    }
+    // 前日の高値・安値と、前日が「直近7日で最も値幅の狭い日（NR7）」か
+    const prevHigh = new Array(n).fill(NaN), prevLow = new Array(n).fill(NaN), prevNR7 = new Array(n).fill(false);
+    { const days = []; let cur = null;
+      for (let i = 0; i < n; i++) {
+        if (!cur || cur.key !== dayKey[i]) { if (cur) days.push(cur); cur = { key: dayKey[i], h: -Infinity, l: Infinity }; }
+        const last = days[days.length - 1];
+        if (last) {
+          prevHigh[i] = last.h; prevLow[i] = last.l;
+          if (days.length >= 7) { const r = last.h - last.l; prevNR7[i] = days.slice(-7, -1).every(dd => dd.h - dd.l > r); }
+        }
+        cur.h = Math.max(cur.h, c[i].h); cur.l = Math.min(cur.l, c[i].l);
+      } }
+    return { er24, prevHigh, prevLow, prevNR7, hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
   }
 
   // 五十日（ごとおび）：5・10・15・20・25日と月末。土日なら直前の金曜
@@ -218,6 +236,38 @@
         if (c[i].c > x.hh80[i] && c[i - 1].c <= x.hh80[i - 1] && c[i].c > x.sma480[i]) return 'long';
         if (c[i].c < x.ll80[i] && c[i - 1].c >= x.ll80[i - 1] && c[i].c < x.sma480[i]) return 'short';
         return null;
+      } },
+    // ---- 2026-10-23 追加（第4弾：流れの強さで使い分ける）----
+    { id: 'er_breakout', name: '効率レシオが高い時だけブレイク', source: 'P.カウフマン『Trading Systems and Methods』の効率レシオ（値動きの「まっすぐさ」）：流れが素直な時だけ順張りの抜けに乗る',
+      exit: { type: 'atr', tp: 3, sl: 1.5, maxBars: 24 },
+      signal: (c, d, x, i) => {
+        if (!(x.er24[i] > 0.4) || isNaN(x.hh24[i])) return null;
+        if (c[i].c > x.hh24[i] && c[i - 1].c <= x.hh24[i - 1]) return 'long';
+        if (c[i].c < x.ll24[i] && c[i - 1].c >= x.ll24[i - 1]) return 'short';
+        return null;
+      } },
+    { id: 'er_revert', name: '効率レシオが低い時だけ逆張り', source: 'カウフマンの効率レシオ：もみ合い（低い時）は行き過ぎが戻りやすいとして、ボリンジャーバンドの外から内へ戻った所で逆張り',
+      exit: { type: 'atr', tp: 1.5, sl: 1.5, maxBars: 12 },
+      signal: (c, d, x, i) => {
+        if (!(x.er24[i] < 0.2) || isNaN(d.bbUp[i - 1])) return null;
+        if (c[i - 1].c > d.bbUp[i - 1] && c[i].c < d.bbUp[i]) return 'short';
+        if (c[i - 1].c < d.bbLo[i - 1] && c[i].c > d.bbLo[i]) return 'long';
+        return null;
+      } },
+    { id: 'holy_grail', name: 'ホーリーグレイル（ADX30超の押し目）', source: 'L.ラシュキ／L.コナーズ『Street Smarts』(1995)：ADXが30を超える強い流れで、20EMAまでの最初の押し・戻りに流れの方向で入る',
+      exit: { type: 'atr', tp: 2, sl: 1.5, maxBars: 24 },
+      signal: (c, d, x, i) => {
+        if (!(d.adx[i] > 30) || isNaN(d.ema50[i])) return null;
+        if (c[i].c > d.ema50[i] && c[i].l <= d.ema20[i] && c[i - 1].l > d.ema20[i - 1] && c[i].c > d.ema20[i]) return 'long';
+        if (c[i].c < d.ema50[i] && c[i].h >= d.ema20[i] && c[i - 1].h < d.ema20[i - 1] && c[i].c < d.ema20[i]) return 'short';
+        return null;
+      } },
+    { id: 'nr7_breakout', name: 'NR7（値幅の縮んだ翌日）の抜け', source: 'T.クラベル『Day Trading with Short Term Price Patterns and Opening Range Breakout』(1990)：直近7日で最も値幅の狭い日の翌日は、前日の高値・安値を抜けた方向に動きやすい',
+      exit: { type: 'time', bars: 12, sl: 1.5 },
+      signal: (c, d, x, i) => {
+        if (!x.prevNR7[i] || x.dayKey[i - 1] !== x.dayKey[i]) return null;
+        for (let k = i - 1; k >= 0 && x.dayKey[k] === x.dayKey[i]; k--) if (c[k].c > x.prevHigh[i] || c[k].c < x.prevLow[i]) return null; // その日の最初の抜けだけ
+        return c[i].c > x.prevHigh[i] ? 'long' : c[i].c < x.prevLow[i] ? 'short' : null;
       } },
   ];
 
