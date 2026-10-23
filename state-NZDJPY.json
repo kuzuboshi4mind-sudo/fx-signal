@@ -76,6 +76,22 @@
  },
  "log": [
   {
+   "t": 1792720800000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 89.38961,
+   "sl": 89.20424143049772,
+   "tp": 89.7603471390046,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792710000000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -1945,7 +1961,7 @@
    ]
   }
  ],
- "lastEvalT": 1792717200000,
+ "lastEvalT": 1792720800000,
  "adaptive": {
   "start": 100000,
   "balance": 102169.44058140264,
@@ -2237,9 +2253,9 @@
   "wouldWin": 36
  },
  "version": 1,
- "lastRun": 1792724048338,
- "lastBarT": 1792720800000,
- "price": 89.41382,
+ "lastRun": 1792726414687,
+ "lastBarT": 1792724400000,
+ "price": 89.38961,
  "equity": 108623.31266400075,
  "unreal": 0,
  "config": {
@@ -2305,7 +2321,7 @@
   }
  },
  "learned": {
-  "bars": 3582,
+  "bars": 3583,
   "events": 1904,
   "win": [
    {
@@ -2381,7 +2397,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
