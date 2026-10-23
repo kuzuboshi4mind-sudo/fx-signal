@@ -2267,11 +2267,11 @@
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1792735502437,
+ "lastRun": 1792737790178,
  "lastBarT": 1792735200000,
- "price": 109.98063,
- "equity": 103310.08359253747,
- "unreal": -1178.4000000000106,
+ "price": 110.26551,
+ "equity": 105589.12359253748,
+ "unreal": 1100.6399999999985,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -2336,7 +2336,7 @@
  },
  "learned": {
   "bars": 3586,
-  "events": 1886,
+  "events": 1887,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
