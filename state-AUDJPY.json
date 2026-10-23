@@ -6,7 +6,18 @@
   "balance": 104488.48359253748,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 8000,
+   "entry": 110.12793,
+   "sl": 109.88829429345033,
+   "tp": 110.58920141309935,
+   "barT": 1792720800000,
+   "openT": 1792721322519,
+   "deadline": 1792807722519
+  },
   "trades": [
    {
     "dir": "short",
@@ -155,6 +166,34 @@
   ]
  },
  "log": [
+  {
+   "t": 1792717200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 110.12193,
+   "sl": 109.88829429345033,
+   "tp": 110.58920141309935,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1792717200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 110.12193,
+   "sl": 109.88829429345033,
+   "tp": 110.58920141309935,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
   {
    "t": 1792710000000,
    "pattern": "macd_dn",
@@ -2056,7 +2095,7 @@
    ]
   }
  ],
- "lastEvalT": 1792713600000,
+ "lastEvalT": 1792717200000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -2212,11 +2251,11 @@
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1792718734387,
- "lastBarT": 1792717200000,
- "price": 109.80802,
- "equity": 104488.48359253748,
- "unreal": 0,
+ "lastRun": 1792721322519,
+ "lastBarT": 1792720800000,
+ "price": 110.12193,
+ "equity": 104440.48359253748,
+ "unreal": -48.00000000000182,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -2280,8 +2319,8 @@
   }
  },
  "learned": {
-  "bars": 3581,
-  "events": 1885,
+  "bars": 3582,
+  "events": 1886,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -2368,7 +2407,23 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

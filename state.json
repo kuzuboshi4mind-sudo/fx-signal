@@ -140,6 +140,69 @@
  },
  "log": [
   {
+   "t": 1792717200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 157.01655,
+   "sl": 156.75108491529332,
+   "tp": 157.54748016941335,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792717200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 157.01655,
+   "sl": 156.75108491529332,
+   "tp": 157.54748016941335,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792717200000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 157.01655,
+   "sl": 156.75108491529332,
+   "tp": 157.54748016941335,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1792717200000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 157.01655,
+   "sl": 156.75108491529332,
+   "tp": 157.54748016941335,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792713600000,
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
@@ -147,7 +210,7 @@
    "entry": 156.36815,
    "sl": 156.60763932199183,
    "tp": 155.8891713560164,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2008,12 +2071,12 @@
    ]
   }
  ],
- "lastEvalT": 1792713600000,
+ "lastEvalT": 1792717200000,
  "reportDay": "2026-10-23",
  "version": 1,
- "lastRun": 1792718732821,
- "lastBarT": 1792717200000,
- "price": 156.36815,
+ "lastRun": 1792721320510,
+ "lastBarT": 1792720800000,
+ "price": 157.01655,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2079,8 +2142,8 @@
   }
  },
  "learned": {
-  "bars": 3581,
-  "events": 1900,
+  "bars": 3582,
+  "events": 1902,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2187,8 +2250,34 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
    "blocked": true,
    "reasons": [
     "優位性なし",
@@ -2634,8 +2723,8 @@
   "equity": 98790.57730798508
  },
  "skipReview": {
-  "n": 104,
-  "wouldLose": 81,
+  "n": 105,
+  "wouldLose": 82,
   "wouldWin": 23
  },
  "latest": {

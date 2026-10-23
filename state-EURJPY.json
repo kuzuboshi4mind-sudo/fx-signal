@@ -92,6 +92,54 @@
  },
  "log": [
   {
+   "t": 1792717200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 176.00724,
+   "sl": 175.72561365509048,
+   "tp": 176.57049268981905,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792717200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 176.00724,
+   "sl": 175.72561365509048,
+   "tp": 176.57049268981905,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792717200000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 176.00724,
+   "sl": 175.72561365509048,
+   "tp": 176.57049268981905,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792713600000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -99,7 +147,7 @@
    "entry": 175.45951,
    "sl": 175.72016452528717,
    "tp": 174.93820094942564,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2102,7 +2150,7 @@
    ]
   }
  ],
- "lastEvalT": 1792713600000,
+ "lastEvalT": 1792717200000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2287,14 +2335,14 @@
  },
  "reportDay": "2026-10-23",
  "skipReview": {
-  "n": 115,
-  "wouldLose": 89,
+  "n": 116,
+  "wouldLose": 90,
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792718733351,
- "lastBarT": 1792717200000,
- "price": 175.45951,
+ "lastRun": 1792721321400,
+ "lastBarT": 1792720800000,
+ "price": 176.00724,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2360,8 +2408,8 @@
   }
  },
  "learned": {
-  "bars": 3581,
-  "events": 1834,
+  "bars": 3582,
+  "events": 1835,
   "win": [
    {
     "name": "陽の包み足",
@@ -2445,8 +2493,26 @@
  },
  "lastSignals": [
   {
-   "name": "MACD売りクロス",
-   "dir": "short",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
    "blocked": true,
    "reasons": [
     "優位性なし",
