@@ -2074,9 +2074,9 @@
  "lastEvalT": 1792717200000,
  "reportDay": "2026-10-23",
  "version": 1,
- "lastRun": 1792721320510,
+ "lastRun": 1792724046350,
  "lastBarT": 1792720800000,
- "price": 157.01655,
+ "price": 156.92336,
  "equity": 98671.99213265454,
  "unreal": 0,
  "config": {
@@ -2248,43 +2248,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 98790.57730798508,

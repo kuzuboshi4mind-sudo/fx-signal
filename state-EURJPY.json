@@ -2340,9 +2340,9 @@
   "wouldWin": 26
  },
  "version": 1,
- "lastRun": 1792721321400,
+ "lastRun": 1792724047085,
  "lastBarT": 1792720800000,
- "price": 176.00724,
+ "price": 176.00453,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2491,35 +2491,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
