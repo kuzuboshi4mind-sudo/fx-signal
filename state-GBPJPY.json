@@ -2652,9 +2652,9 @@
   "wouldWin": 38
  },
  "version": 1,
- "lastRun": 1792764935508,
+ "lastRun": 1792767445036,
  "lastBarT": 1792764000000,
- "price": 209.68784,
+ "price": 209.94967,
  "equity": 103990.66852591092,
  "unreal": 0,
  "config": {
@@ -2721,7 +2721,7 @@
  },
  "learned": {
   "bars": 3594,
-  "events": 1815,
+  "events": 1816,
   "win": [
    {
     "name": "陽の包み足",
@@ -2751,9 +2751,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 92,
-    "winRate": 0.40217391304347827,
-    "avgR": 0.20263455896225127
+    "n": 93,
+    "winRate": 0.3978494623655914,
+    "avgR": 0.18954630006263776
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2796,17 +2796,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
