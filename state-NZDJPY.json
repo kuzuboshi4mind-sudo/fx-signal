@@ -1992,7 +1992,7 @@
    ]
   }
  ],
- "lastEvalT": 1792742400000,
+ "lastEvalT": 1792746000000,
  "adaptive": {
   "start": 100000,
   "balance": 102169.44058140264,
@@ -2284,9 +2284,9 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1792748061290,
- "lastBarT": 1792746000000,
- "price": 89.07167,
+ "lastRun": 1792750146982,
+ "lastBarT": 1792749600000,
+ "price": 89.05833,
  "equity": 108623.31266400075,
  "unreal": 0,
  "config": {
@@ -2352,7 +2352,7 @@
   }
  },
  "learned": {
-  "bars": 3589,
+  "bars": 3590,
   "events": 1905,
   "win": [
    {
@@ -2420,17 +2420,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
