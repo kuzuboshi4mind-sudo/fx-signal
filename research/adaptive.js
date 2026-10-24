@@ -33,6 +33,8 @@ const VARIANTS = {
   cool12: { dedupe: false, cool: 12 },
   cool24: { dedupe: false, cool: 24 },
   dedupe_cool24: { dedupe: true, cool: 24 },
+  streak3: { dedupe: false, cool: 0, streak: 3 }, // 同じ戦略が3連敗したら停止し、様子見で勝ったら再開（通常口座の liveReview と同じ考え方）
+  with24: { dedupe: false, cool: 0, with24: true }, // 直近24時間の値動きと逆向きには入らない
 };
 
 function run(c, symbol) {
@@ -52,18 +54,27 @@ function run(c, symbol) {
         picks.push(x);
       }
       if (!picks.length) continue;
-      const w = 1 / picks.length, busy = {}, lossExits = {};
+      const w = 1 / picks.length, busy = {}, lossExits = {}, streakHist = {};
       for (let i = i0; i < c.length - 1 && c[i].t < mEnd; i++) {
         for (const pk of picks) {
           const key = `${pk.pattern}|${pk.dir}|${pk.tp}|${pk.sl}`, ck = `${pk.pattern}|${pk.dir}`;
           if ((busy[key] ?? -1) >= i) continue;
           // 損切りが「確定した後」の N 本だけ休む（未来の損切りを先回りしないこと）
           if (v.cool && (lossExits[ck] || []).some(e => e < i && i <= e + v.cool)) continue;
+          if (v.with24 && Math.sign(d.close[i] - d.close[i - 24]) !== (pk.dir === 'long' ? 1 : -1)) continue;
           const pat = E.PATTERNS.find(p => p.id === pk.pattern);
           if (!pat.test(c, d, i)) continue;
           const r = E.simulate(c, d, i, pk.dir, { tpAtr: pk.tp, slAtr: pk.sl, ...o });
           if (!r) continue;
           busy[key] = i + r.bars;
+          if (v.streak) {
+            // 決着済み（i より前に終わった）取引だけで連敗を数える（未来の結果は使わない）
+            const hist = (streakHist[key] ||= []);
+            const done = hist.filter(h => h.exit < i).sort((a, b) => b.exit - a.exit);
+            let st = 0; while (st < done.length && done[st].loss) st++;
+            hist.push({ exit: i + r.bars, loss: r.outcome === 'loss' });
+            if (st >= v.streak) continue; // 停止中：結果は記録するが損益には入れない（様子見）
+          }
           if (v.cool && r.outcome === 'loss') (lossExits[ck] ||= []).push(i + r.bars);
           trades[vk].push({ t: c[i].t, r: r.r * w });
         }
