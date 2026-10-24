@@ -2217,7 +2217,7 @@
  "lastEvalT": 1792782000000,
  "reportDay": "2026-10-25",
  "version": 1,
- "lastRun": 1792868643922,
+ "lastRun": 1792870136651,
  "lastBarT": 1792785600000,
  "price": 156.84327,
  "equity": 98671.99213265454,
@@ -2394,9 +2394,10 @@
  "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 98666.75808269675,
+  "balance": 98609.01808269673,
   "startT": 1791916832223,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -2408,10 +2409,12 @@
     "tp": 157.3712522364869,
     "barT": 1792782000000,
     "openT": 1792782828842,
-    "deadline": 1792869228842
-   }
-  ],
-  "trades": [
+    "deadline": 1792869228842,
+    "exit": 156.84327,
+    "closeT": 1792870136651,
+    "reason": "time",
+    "pnl": -57.74000000002388
+   },
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
