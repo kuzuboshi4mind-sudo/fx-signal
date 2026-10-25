@@ -134,7 +134,7 @@ async function main() {
       const entry = s.entry + dir * CONFIG.spreadPips * E.pipSize(CONFIG.symbol);
       const units = E.positionUnits({ balance: P.balance, riskPct: P.riskPct, entry, sl: s.sl, leverage: LEVERAGE });
       if (units) {
-        P.pos = { dir: s.dir, pattern: s.pattern, name: s.name, units, entry, sl: s.sl, tp: s.tp, barT: c[c.length - 1].t, openT: now, deadline: now + CONFIG.maxBars * IV_MS };
+        P.pos = { dir: s.dir, pattern: s.pattern, name: s.name, units, entry, sl: s.sl, tp: s.tp, barT: c[c.length - 1].t, openT: now, deadline: E.addMarketTime(now, CONFIG.maxBars * IV_MS) };
         note(`FX ${s.dir === 'long' ? '買い' : '売り'}エントリー`, `${CONFIG.symbol} ${units.toLocaleString()}通貨 @${fmt(entry)}\n利確 ${fmt(s.tp)} / 損切り ${fmt(s.sl)}\n${s.name}（過去勝率 ${(s.stat.all.winRate * 100).toFixed(0)}%・${s.stat.all.n}回）`);
       }
     }
@@ -177,7 +177,7 @@ async function main() {
         const sl = entry - s * d.atr[idx] * pk.sl, tp = entry + s * d.atr[idx] * pk.tp;
         const units = E.positionUnits({ balance: A.balance, riskPct: AD.riskPct / Math.max(1, A.picks.length), entry, sl, leverage: LEVERAGE });
         if (!units) continue;
-        A.positions.push({ key, dir: pk.dir, pattern: pk.pattern, name: pk.name + (pk.flip ? '（逆向き）' : ''), units, entry, sl, tp, barT: c[c.length - 1].t, openT: now, deadline: now + CONFIG.maxBars * IV_MS });
+        A.positions.push({ key, dir: pk.dir, pattern: pk.pattern, name: pk.name + (pk.flip ? '（逆向き）' : ''), units, entry, sl, tp, barT: c[c.length - 1].t, openT: now, deadline: E.addMarketTime(now, CONFIG.maxBars * IV_MS) });
         note(`FX 適応型 ${pk.dir === 'long' ? '買い' : '売り'}エントリー`, `${CONFIG.symbol} ${units.toLocaleString()}通貨 @${fmt(entry)}\n利確 ${fmt(tp)} / 損切り ${fmt(sl)}\n${pk.name}${pk.flip ? '（逆向き）' : ''}`);
       }
     }
@@ -216,7 +216,7 @@ async function main() {
         const bars = ex.type === 'atr' ? ex.maxBars : ex.bars;
         const units = E.positionUnits({ balance: L.balance, riskPct: LT.riskPct / approved.length, entry, sl, leverage: LEVERAGE });
         if (!units) continue;
-        L.positions.push({ key: st.id, dir, pattern: st.id, name: st.name, units, entry, sl, tp, barT: c[c.length - 1].t, openT: now, deadline: now + bars * IV_MS });
+        L.positions.push({ key: st.id, dir, pattern: st.id, name: st.name, units, entry, sl, tp, barT: c[c.length - 1].t, openT: now, deadline: E.addMarketTime(now, bars * IV_MS) });
         note(`FX 最新型 ${dir === 'long' ? '買い' : '売り'}エントリー`, `${CONFIG.symbol} ${units.toLocaleString()}通貨 @${fmt(entry)}\n損切り ${fmt(sl)}\n${st.name}`);
       }
     }

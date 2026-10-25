@@ -138,3 +138,13 @@ test('isMarketOpen: 週末（金曜21時UTC〜日曜21時UTC）は休場', () =>
   assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 9, 18, 21)), true);  // 日 21時（週明け）
   assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 9, 19, 3)), true);   // 月
 });
+
+test('addMarketTime: 週末をまたぐ期限は休場時間を数えない', () => {
+  const fri = Date.UTC(2026, 9, 23, 12); // 金 12時UTC
+  assert.strictEqual(E.addMarketTime(fri, 3 * 3600e3), Date.UTC(2026, 9, 23, 15));
+  // 金12時から24時間：金21時までの9時間＋日21時から15時間 → 月12時UTC
+  assert.strictEqual(E.addMarketTime(fri, 24 * 3600e3), Date.UTC(2026, 9, 26, 12));
+  const pos = { dir: 'long', entry: 100, sl: 99, tp: 102, barT: 0, deadline: Date.UTC(2026, 9, 24, 0) };
+  assert.strictEqual(E.checkExit(pos, [], Date.UTC(2026, 9, 24, 3), 100.5), null); // 土曜は手じまいしない
+  assert.strictEqual(E.checkExit(pos, [], Date.UTC(2026, 9, 26, 3), 100.5).reason, 'time');
+});

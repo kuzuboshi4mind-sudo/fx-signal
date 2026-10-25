@@ -166,6 +166,17 @@
     const d = new Date(t), dow = d.getUTCDay(), h = d.getUTCHours();
     return !(dow === 6 || (dow === 0 && h < 21) || (dow === 5 && h >= 21));
   }
+  // 市場が開いている時間だけを数えて ms 進めた時刻（週末をまたぐ保有期限を、過去検証の「足の本数」と同じ数え方にする）
+  function addMarketTime(t, ms) {
+    const H = 3600e3;
+    let left = ms;
+    for (let k = 0; left > 0 && k < 24 * 400; k++) {
+      const next = (Math.floor(t / H) + 1) * H;
+      if (isMarketOpen(t)) { const step = Math.min(left, next - t); left -= step; t += step; }
+      else t = next;
+    }
+    return t;
+  }
   function pipSize(symbol) { return /JPY/.test(symbol || '') ? 0.01 : 0.0001; }
 
   // ---------- トレードの模擬 ----------
@@ -383,7 +394,7 @@
     }
     if (s > 0 ? price <= pos.sl : price >= pos.sl) return { price, reason: 'sl', t: nowT };
     if (s > 0 ? price >= pos.tp : price <= pos.tp) return { price, reason: 'tp', t: nowT };
-    if (nowT >= pos.deadline) return { price, reason: 'time', t: nowT };
+    if (nowT >= pos.deadline && isMarketOpen(nowT)) return { price, reason: 'time', t: nowT }; // 休場中は古い値で決済しない
     return null;
   }
 
@@ -424,6 +435,6 @@
     adaptiveSelect, ADAPT_EXITS,
     positionUnits, checkExit, positionPnl, liveReview, REVIEW,
     ema, sma, rsi, adx, computeIndicators, PATTERNS, context, ctxLabel, simulate, learn, evaluate, lookup,
-    applyFilters, scheduledEvents, usDst, demoGenerator, pipSize, isMarketOpen, DEFAULTS, WARMUP,
+    applyFilters, scheduledEvents, usDst, demoGenerator, pipSize, isMarketOpen, addMarketTime, DEFAULTS, WARMUP,
   };
 });
