@@ -2484,7 +2484,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101791.76058140265
+  "equity": 101818.24058140263
  },
  "reportDay": "2026-10-27",
  "skipReview": {
@@ -2493,11 +2493,11 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793035138757,
+ "lastRun": 1793037412009,
  "lastBarT": 1793034000000,
- "price": 89.55524,
- "equity": 107044.67660243706,
- "unreal": 491.8199999999331,
+ "price": 89.54862,
+ "equity": 106951.99660243708,
+ "unreal": 399.1399999999601,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2562,7 +2562,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1888,
+  "events": 1889,
   "win": [
    {
     "name": "20本高値ブレイク",
