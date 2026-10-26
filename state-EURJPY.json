@@ -92,6 +92,21 @@
  },
  "log": [
   {
+   "t": 1793016000000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 176.08826,
+   "sl": 176.32682684560703,
+   "tp": 175.61112630878594,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1792976400000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -2324,7 +2339,7 @@
    ]
   }
  ],
- "lastEvalT": 1793008800000,
+ "lastEvalT": 1793016000000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2514,9 +2529,9 @@
   "wouldWin": 27
  },
  "version": 1,
- "lastRun": 1793013221105,
- "lastBarT": 1793012400000,
- "price": 176.23956,
+ "lastRun": 1793021886899,
+ "lastBarT": 1793019600000,
+ "price": 176.08826,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2583,7 +2598,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1813,
+  "events": 1810,
   "win": [
    {
     "name": "陽の包み足",
@@ -2599,15 +2614,15 @@
     "key": "against|range",
     "n": 26,
     "winRate": 0.46153846153846156,
-    "avgR": 0.36301307411527695
+    "avgR": 0.363013074117882
    },
    {
     "name": "ボリバン上限から回帰",
     "dir": "short",
     "key": "against|trend",
-    "n": 23,
-    "winRate": 0.34782608695652173,
-    "avgR": 0.24627405101580518
+    "n": 22,
+    "winRate": 0.36363636363636365,
+    "avgR": 0.23767202647955402
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2615,7 +2630,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.10752255541200999
+    "avgR": 0.10752255541516209
    }
   ]
  },
@@ -2649,7 +2664,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
