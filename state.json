@@ -151,6 +151,18 @@
  },
  "log": [
   {
+   "t": 1793005200000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 157.31493,
+   "sl": 157.09582502316513,
+   "tp": 157.75313995366974,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1793001600000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -230,7 +242,7 @@
    "entry": 156.88244,
    "sl": 156.6434625443623,
    "tp": 157.36039491127542,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2361,14 +2373,14 @@
    ]
   }
  ],
- "lastEvalT": 1793001600000,
+ "lastEvalT": 1793005200000,
  "reportDay": "2026-10-26",
  "version": 1,
- "lastRun": 1793007881881,
- "lastBarT": 1793005200000,
- "price": 157.3239,
- "equity": 99038.5521326547,
- "unreal": 366.5600000001632,
+ "lastRun": 1793010311482,
+ "lastBarT": 1793008800000,
+ "price": 157.31493,
+ "equity": 98966.79213265466,
+ "unreal": 294.80000000012296,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -2433,7 +2445,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1899,
+  "events": 1898,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2481,7 +2493,7 @@
     "key": "*",
     "n": 131,
     "winRate": 0.3511450381679389,
-    "avgR": 0.12677655881887084
+    "avgR": 0.12677655881885322
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -2489,7 +2501,7 @@
     "key": "*",
     "n": 99,
     "winRate": 0.35353535353535354,
-    "avgR": 0.08782238289508311
+    "avgR": 0.08782238289508229
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -2497,7 +2509,7 @@
     "key": "with|trend",
     "n": 24,
     "winRate": 0.375,
-    "avgR": 0.1022741038555993
+    "avgR": 0.10227410385559589
    }
   ]
  },
@@ -2538,7 +2550,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 98717.47569377677,
@@ -3158,12 +3177,12 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99917.17569377678
+  "equity": 99899.23569377676
  },
  "skipReview": {
-  "n": 119,
+  "n": 120,
   "wouldLose": 94,
-  "wouldWin": 25
+  "wouldWin": 26
  },
  "latest": {
   "start": 100000,
