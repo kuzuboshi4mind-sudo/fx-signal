@@ -278,7 +278,7 @@
    "entry": 110.32026,
    "sl": 110.13595924816748,
    "tp": 110.68886150366505,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -342,7 +342,7 @@
    "entry": 110.47108,
    "sl": 110.66321133501243,
    "tp": 110.08681732997512,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2581,16 +2581,16 @@
  },
  "reportDay": "2026-10-26",
  "skipReview": {
-  "n": 111,
-  "wouldLose": 76,
-  "wouldWin": 35
+  "n": 113,
+  "wouldLose": 77,
+  "wouldWin": 36
  },
  "version": 1,
- "lastRun": 1793005450907,
+ "lastRun": 1793007883070,
  "lastBarT": 1793005200000,
- "price": 110.6276,
- "equity": 101999.79065845156,
- "unreal": -60.000000000002274,
+ "price": 110.73858,
+ "equity": 103109.59065845153,
+ "unreal": 1049.7999999999763,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -2655,7 +2655,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1866,
+  "events": 1868,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -2674,20 +2674,20 @@
     "avgR": 0.4783776818157902
    },
    {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 39,
+    "winRate": 0.4358974358974359,
+    "avgR": 0.3749885314320151
+   },
+   {
     "name": "ボリバン上抜けブレイク",
     "dir": "long",
     "key": "with|range",
     "n": 61,
     "winRate": 0.4262295081967213,
     "avgR": 0.32535573789299227
-   },
-   {
-    "name": "陽の包み足",
-    "dir": "long",
-    "key": "against|trend",
-    "n": 38,
-    "winRate": 0.42105263157894735,
-    "avgR": 0.3325543366768904
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2757,29 +2757,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
