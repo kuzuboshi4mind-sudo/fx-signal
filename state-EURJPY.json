@@ -92,6 +92,38 @@
  },
  "log": [
   {
+   "t": 1792972800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 176.02375,
+   "sl": 175.7366272047733,
+   "tp": 176.59799559045342,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1792972800000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 176.02375,
+   "sl": 175.7366272047733,
+   "tp": 176.59799559045342,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1792771200000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -2276,7 +2308,7 @@
    ]
   }
  ],
- "lastEvalT": 1792969200000,
+ "lastEvalT": 1792972800000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2466,9 +2498,9 @@
   "wouldWin": 27
  },
  "version": 1,
- "lastRun": 1792975923041,
- "lastBarT": 1792972800000,
- "price": 176.2635,
+ "lastRun": 1792978358017,
+ "lastBarT": 1792976400000,
+ "price": 176.02375,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2535,7 +2567,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1820,
+  "events": 1821,
   "win": [
    {
     "name": "陽の包み足",
@@ -2551,7 +2583,7 @@
     "key": "against|range",
     "n": 25,
     "winRate": 0.44,
-    "avgR": 0.2986535994249884
+    "avgR": 0.29865359942318553
    },
    {
     "name": "ボリバン上限から回帰",
@@ -2559,7 +2591,7 @@
     "key": "against|trend",
     "n": 23,
     "winRate": 0.34782608695652173,
-    "avgR": 0.24627405163377464
+    "avgR": 0.24627405205209793
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2567,7 +2599,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.10752255540891117
+    "avgR": 0.10752255540681352
    }
   ]
  },
@@ -2601,7 +2633,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
