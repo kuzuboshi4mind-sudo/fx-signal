@@ -103,6 +103,54 @@
  },
  "log": [
   {
+   "t": 1793055600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 89.59846,
+   "sl": 89.48444579868156,
+   "tp": 89.82648840263687,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793055600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 89.59846,
+   "sl": 89.48444579868156,
+   "tp": 89.82648840263687,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793055600000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 89.59846,
+   "sl": 89.48444579868156,
+   "tp": 89.82648840263687,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793052000000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -2235,12 +2283,27 @@
    ]
   }
  ],
- "lastEvalT": 1793052000000,
+ "lastEvalT": 1793055600000,
  "adaptive": {
   "start": 100000,
-  "balance": 102169.44058140264,
+  "balance": 101600.34740123247,
   "startT": 1791967923493,
   "positions": [
+   {
+    "key": "donchian_up|short|3|1",
+    "dir": "short",
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク（逆向き）",
+    "units": 5000,
+    "entry": 89.58846,
+    "sl": 89.70247420131844,
+    "tp": 89.24641739604469,
+    "barT": 1793059200000,
+    "openT": 1793059280436,
+    "deadline": 1793145680436
+   }
+  ],
+  "trades": [
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -2252,10 +2315,12 @@
     "tp": 89.03400011487236,
     "barT": 1792976400000,
     "openT": 1792978359765,
-    "deadline": 1793064759765
-   }
-  ],
-  "trades": [
+    "deadline": 1793064759765,
+    "exit": 89.60309329504254,
+    "closeT": 1793055600000,
+    "reason": "sl",
+    "pnl": -569.0931801701709
+   },
    {
     "key": "ema_cross_dn|short|3|1",
     "dir": "short",
@@ -2532,7 +2597,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101810.96058140266
+  "equity": 101550.34740123244
  },
  "reportDay": "2026-10-27",
  "skipReview": {
@@ -2541,11 +2606,11 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793057419174,
- "lastBarT": 1793055600000,
- "price": 89.55044,
- "equity": 106977.47660243702,
- "unreal": 424.61999999989075,
+ "lastRun": 1793059280436,
+ "lastBarT": 1793059200000,
+ "price": 89.59846,
+ "equity": 107649.75660243713,
+ "unreal": 1096.900000000005,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2610,7 +2675,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1884,
+  "events": 1885,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2626,7 +2691,7 @@
     "key": "with|range",
     "n": 37,
     "winRate": 0.43243243243243246,
-    "avgR": 0.2915230472077717
+    "avgR": 0.2915230472077673
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2634,7 +2699,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.43478260869565216,
-    "avgR": 0.2602939997816408
+    "avgR": 0.2602939997814391
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2642,7 +2707,7 @@
     "key": "*",
     "n": 96,
     "winRate": 0.3958333333333333,
-    "avgR": 0.16485876795807022
+    "avgR": 0.16485876795802024
    },
    {
     "name": "MACD売りクロス",
@@ -2650,7 +2715,7 @@
     "key": "against|trend",
     "n": 22,
     "winRate": 0.36363636363636365,
-    "avgR": 0.04482287540070659
+    "avgR": 0.044822875397229775
    }
   ]
  },
@@ -2679,11 +2744,29 @@
  },
  "lastSignals": [
   {
-   "name": "MACD売りクロス",
-   "dir": "short",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
    "blocked": true,
    "reasons": [
     "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
     "勝率が基準未満"
    ]
   }
