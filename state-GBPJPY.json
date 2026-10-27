@@ -167,6 +167,22 @@
  },
  "log": [
   {
+   "t": 1793088000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 210.10352,
+   "sl": 210.30979150728555,
+   "tp": 209.6909769854289,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793084400000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -174,7 +190,7 @@
    "entry": 210.33953,
    "sl": 210.13874760753862,
    "tp": 210.74109478492272,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2351,7 +2367,7 @@
    ]
   }
  ],
- "lastEvalT": 1793084400000,
+ "lastEvalT": 1793088000000,
  "adaptive": {
   "start": 100000,
   "balance": 93909.38091801348,
@@ -2886,20 +2902,20 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 94332.7709180135
+  "equity": 94587.4109180135
  },
  "reportDay": "2026-10-27",
  "skipReview": {
-  "n": 117,
-  "wouldLose": 79,
+  "n": 118,
+  "wouldLose": 80,
   "wouldWin": 38
  },
  "version": 1,
- "lastRun": 1793090577889,
- "lastBarT": 1793088000000,
- "price": 210.1884,
- "equity": 105411.59852591091,
- "unreal": 1420.9299999999985,
+ "lastRun": 1793092993187,
+ "lastBarT": 1793091600000,
+ "price": 210.10352,
+ "equity": 104817.43852591093,
+ "unreal": 826.7700000000104,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -2964,15 +2980,15 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1784,
+  "events": 1786,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 27,
-    "winRate": 0.5555555555555556,
-    "avgR": 0.6440438657068293
+    "n": 28,
+    "winRate": 0.5357142857142857,
+    "avgR": 0.6333826144564153
    },
    {
     "name": "RSI買われすぎ反落",
@@ -2988,7 +3004,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.43478260869565216,
-    "avgR": 0.2752263096732533
+    "avgR": 0.27522630967325545
    },
    {
     "name": "20本高値ブレイク",
@@ -3004,7 +3020,7 @@
     "key": "*",
     "n": 93,
     "winRate": 0.3978494623655914,
-    "avgR": 0.1895463000626554
+    "avgR": 0.189546300062656
    },
    {
     "name": "ボリバン下限から回帰",
@@ -3039,7 +3055,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
