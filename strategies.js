@@ -66,7 +66,15 @@
         }
         cur.h = Math.max(cur.h, c[i].h); cur.l = Math.min(cur.l, c[i].l);
       } }
-    return { er24, prevHigh, prevLow, prevNR7, hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
+    // 4時間足相当のストキャスティクス（56本）と、日足13本相当のEMA（312本）
+    const stoch56 = new Array(n).fill(NaN);
+    for (let i = 55; i < n; i++) {
+      let h = -Infinity, l = Infinity;
+      for (let j = i - 55; j <= i; j++) { h = Math.max(h, c[j].h); l = Math.min(l, c[j].l); }
+      stoch56[i] = h === l ? 50 : 100 * (c[i].c - l) / (h - l);
+    }
+    const ema312 = E.ema(close, 312);
+    return { stoch56, ema312, er24, prevHigh, prevLow, prevNR7, hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
   }
 
   // 五十日（ごとおび）：5・10・15・20・25日と月末。土日なら直前の金曜
@@ -268,6 +276,41 @@
         if (!x.prevNR7[i] || x.dayKey[i - 1] !== x.dayKey[i]) return null;
         for (let k = i - 1; k >= 0 && x.dayKey[k] === x.dayKey[i]; k--) if (c[k].c > x.prevHigh[i] || c[k].c < x.prevLow[i]) return null; // その日の最初の抜けだけ
         return c[i].c > x.prevHigh[i] ? 'long' : c[i].c < x.prevLow[i] ? 'short' : null;
+      } },
+    // ---- 2026-10-27 追加（第5弾：長い流れ＋短い足での入り方）----
+    { id: 'elder_triple', name: 'エルダーのトリプルスクリーン', source: 'A.エルダー『Trading for a Living』(1993)：長い足の流れ（日足13EMAの向き）の方向だけ、中くらいの足の押し・戻り（4時間足ストキャス）の後、前の足の高値・安値を抜けたら入る',
+      exit: { type: 'atr', tp: 3, sl: 1.5, maxBars: 48 },
+      signal: (c, d, x, i) => {
+        if (isNaN(x.ema312[i - 24]) || isNaN(x.stoch56[i - 1])) return null;
+        const up = x.ema312[i] > x.ema312[i - 24], dn = x.ema312[i] < x.ema312[i - 24];
+        if (up && x.stoch56[i - 1] < 30 && c[i].c > c[i - 1].h) return 'long';
+        if (dn && x.stoch56[i - 1] > 70 && c[i].c < c[i - 1].l) return 'short';
+        return null;
+      } },
+    { id: 'volman_tsmom', name: '値動きの落ち着いた時だけのモメンタム', source: 'Moreira・Muir「Volatility-Managed Portfolios」(2017)：直近の値動きが荒い時は持ち高を減らすと成績が安定する。時系列モメンタム（20日・60日の向きが一致）を、値動きが平均より小さい時だけ行う',
+      exit: { type: 'time', bars: 24, sl: 3 },
+      signal: (c, d, x, i) => {
+        if (jst(c[i].t).getUTCHours() !== 6 || i < 1440 || !(x.rv24[i] < x.rvMean[i])) return null;
+        const r20 = c[i].c - c[i - 480].c, r60 = c[i].c - c[i - 1440].c;
+        return r20 > 0 && r60 > 0 ? 'long' : r20 < 0 && r60 < 0 ? 'short' : null;
+      } },
+    { id: 'week_pullback', name: '5日の流れ＋1時間足の押し目', source: '週次レビュー（2026-10-24）の仮説「24時間より長い流れの向き」を検証するため：直近5日（120本）の向きに、1時間足RSIが35（65）から戻った所で入る。長い足の方向に短い足の押し目で入る定番の考え方',
+      exit: { type: 'atr', tp: 2, sl: 1.5, maxBars: 24 },
+      signal: (c, d, x, i) => {
+        if (i < 121 || isNaN(d.rsi[i - 1])) return null;
+        const w = Math.sign(c[i].c - c[i - 120].c);
+        if (w > 0 && d.rsi[i - 1] < 35 && d.rsi[i] >= 35) return 'long';
+        if (w < 0 && d.rsi[i - 1] > 65 && d.rsi[i] <= 65) return 'short';
+        return null;
+      } },
+    { id: 'keltner_bo', name: 'ケルトナーチャネル抜け', source: 'C.ケルトナー（1960）を L.ラシュキが EMA＋ATR 幅に改良したチャネル：20EMA±2ATR を終値で抜けた方向に乗る（勢いの強い流れで有効とされる）',
+      exit: { type: 'atr', tp: 3, sl: 1.5, maxBars: 48 },
+      signal: (c, d, x, i) => {
+        if (isNaN(d.atr[i - 1]) || isNaN(d.ema20[i - 1])) return null;
+        const up = (k) => d.ema20[k] + 2 * d.atr[k], dn = (k) => d.ema20[k] - 2 * d.atr[k];
+        if (c[i - 1].c <= up(i - 1) && c[i].c > up(i)) return 'long';
+        if (c[i - 1].c >= dn(i - 1) && c[i].c < dn(i)) return 'short';
+        return null;
       } },
   ];
 
