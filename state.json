@@ -2565,9 +2565,9 @@
  "lastEvalT": 1793091600000,
  "reportDay": "2026-10-27",
  "version": 1,
- "lastRun": 1793096075380,
+ "lastRun": 1793098624054,
  "lastBarT": 1793095200000,
- "price": 157.7754,
+ "price": 157.70844,
  "equity": 100219.57557688555,
  "unreal": 0,
  "config": {
@@ -2634,7 +2634,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1892,
+  "events": 1894,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2704,17 +2704,17 @@
     "name": "ボリバン上抜けブレイク",
     "dir": "long",
     "key": "*",
-    "n": 101,
-    "winRate": 0.36633663366336633,
-    "avgR": 0.1254577185202938
+    "n": 102,
+    "winRate": 0.3627450980392157,
+    "avgR": 0.11427343521402966
    },
    {
     "name": "ボリバン上抜けブレイク",
     "dir": "long",
     "key": "with|trend",
-    "n": 24,
-    "winRate": 0.375,
-    "avgR": 0.10227410385305889
+    "n": 25,
+    "winRate": 0.36,
+    "avgR": 0.05756957255019067
    }
   ]
  },
@@ -2769,16 +2769,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
