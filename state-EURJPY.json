@@ -92,6 +92,37 @@
  },
  "log": [
   {
+   "t": 1793091600000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 175.78649,
+   "sl": 175.98765350511815,
+   "tp": 175.3841629897637,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793091600000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 175.78649,
+   "sl": 175.98765350511815,
+   "tp": 175.3841629897637,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793088000000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -99,7 +130,7 @@
    "entry": 175.77872,
    "sl": 175.96457839012723,
    "tp": 175.40700321974552,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -115,7 +146,7 @@
    "entry": 175.77872,
    "sl": 175.96457839012723,
    "tp": 175.40700321974552,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -195,7 +226,7 @@
    "entry": 176.05227,
    "sl": 176.25069520567467,
    "tp": 175.65541958865063,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -242,7 +273,7 @@
    "entry": 176.03006,
    "sl": 176.24506061646395,
    "tp": 175.60005876707206,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -258,7 +289,7 @@
    "entry": 176.03006,
    "sl": 176.24506061646395,
    "tp": 175.60005876707206,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -274,7 +305,7 @@
    "entry": 176.08826,
    "sl": 176.32682684560703,
    "tp": 175.61112630878594,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2514,7 +2545,7 @@
    ]
   }
  ],
- "lastEvalT": 1793088000000,
+ "lastEvalT": 1793091600000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2699,14 +2730,14 @@
  },
  "reportDay": "2026-10-27",
  "skipReview": {
-  "n": 133,
-  "wouldLose": 106,
-  "wouldWin": 27
+  "n": 139,
+  "wouldLose": 108,
+  "wouldWin": 31
  },
  "version": 1,
- "lastRun": 1793092992707,
- "lastBarT": 1793091600000,
- "price": 175.77872,
+ "lastRun": 1793096076053,
+ "lastBarT": 1793095200000,
+ "price": 175.78649,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2773,7 +2804,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1810,
+  "events": 1813,
   "win": [
    {
     "name": "陽の包み足",
@@ -2781,7 +2812,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.5588235294117647,
-    "avgR": 0.6593303909060428
+    "avgR": 0.6593303909060426
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2789,7 +2820,7 @@
     "key": "against|range",
     "n": 26,
     "winRate": 0.46153846153846156,
-    "avgR": 0.36301307411418554
+    "avgR": 0.36301307410374173
    },
    {
     "name": "ボリバン上限から回帰",
@@ -2805,7 +2836,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.1075225554106894
+    "avgR": 0.10752255539805218
    }
   ]
  },
@@ -2841,20 +2872,19 @@
  },
  "lastSignals": [
   {
-   "name": "MACD売りクロス",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
    "dir": "short",
    "blocked": true,
    "reasons": [
     "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
     "勝率が基準未満"
    ]
   }
