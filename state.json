@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 98671.99213265454,
+  "balance": 102235.35173350152,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "donchian_up",
-   "name": "20本高値ブレイク",
-   "units": 8000,
-   "entry": 157.27808,
-   "sl": 157.04787002494706,
-   "tp": 157.72349995010586,
-   "barT": 1793005200000,
-   "openT": 1793005448779,
-   "deadline": 1793091848779
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク",
+    "units": 8000,
+    "entry": 157.27808,
+    "sl": 157.04787002494706,
+    "tp": 157.72349995010586,
+    "barT": 1793005200000,
+    "openT": 1793005448779,
+    "deadline": 1793091848779,
+    "exit": 157.72349995010586,
+    "closeT": 1793062800000,
+    "reason": "tp",
+    "pnl": 3563.3596008469794
+   },
    {
     "dir": "long",
     "pattern": "rsi_rebound",
@@ -170,7 +175,7 @@
    "entry": 157.47657,
    "sl": 157.68662601461597,
    "tp": 157.05645797076807,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -202,7 +207,7 @@
    "entry": 157.31493,
    "sl": 157.09582502316513,
    "tp": 157.75313995366974,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -214,7 +219,7 @@
    "entry": 157.27308,
    "sl": 157.04787002494706,
    "tp": 157.72349995010586,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -226,7 +231,7 @@
    "entry": 157.27308,
    "sl": 157.04787002494706,
    "tp": 157.72349995010586,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -2417,14 +2422,14 @@
    ]
   }
  ],
- "lastEvalT": 1793055600000,
+ "lastEvalT": 1793059200000,
  "reportDay": "2026-10-27",
  "version": 1,
- "lastRun": 1793061726393,
- "lastBarT": 1793059200000,
- "price": 157.61347,
- "equity": 101355.11213265469,
- "unreal": 2683.1200000001445,
+ "lastRun": 1793064504531,
+ "lastBarT": 1793062800000,
+ "price": 157.7544,
+ "equity": 102235.35173350152,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -2489,15 +2494,15 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1891,
+  "events": 1892,
   "win": [
    {
     "name": "20本高値ブレイク",
     "dir": "long",
     "key": "against|range",
-    "n": 21,
-    "winRate": 0.5238095238095238,
-    "avgR": 0.5560427809839946
+    "n": 22,
+    "winRate": 0.5454545454545454,
+    "avgR": 0.621172620410161
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2505,7 +2510,7 @@
     "key": "with|range",
     "n": 204,
     "winRate": 0.38235294117647056,
-    "avgR": 0.23959155426521134
+    "avgR": 0.23959155426521145
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2513,7 +2518,7 @@
     "key": "*",
     "n": 257,
     "winRate": 0.38132295719844356,
-    "avgR": 0.23460595927862582
+    "avgR": 0.23460595927862588
    },
    {
     "name": "MACD買いクロス",
@@ -2521,7 +2526,7 @@
     "key": "with|range",
     "n": 63,
     "winRate": 0.36507936507936506,
-    "avgR": 0.22426749776263696
+    "avgR": 0.22426749776263707
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2529,7 +2534,7 @@
     "key": "with|trend",
     "n": 53,
     "winRate": 0.37735849056603776,
-    "avgR": 0.21541612197176827
+    "avgR": 0.21541612197176832
    },
    {
     "name": "MACD買いクロス",
@@ -2537,15 +2542,15 @@
     "key": "*",
     "n": 131,
     "winRate": 0.3511450381679389,
-    "avgR": 0.12677655881495473
+    "avgR": 0.1267765588156325
    },
    {
     "name": "ボリバン上抜けブレイク",
     "dir": "long",
     "key": "*",
-    "n": 99,
-    "winRate": 0.35353535353535354,
-    "avgR": 0.08782238289489619
+    "n": 100,
+    "winRate": 0.36,
+    "avgR": 0.10683315154957543
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -2553,11 +2558,25 @@
     "key": "with|trend",
     "n": 24,
     "winRate": 0.375,
-    "avgR": 0.10227410385484191
+    "avgR": 0.10227410385497299
    }
   ]
  },
  "review": {
+  "donchian_up": {
+   "n": 2,
+   "wins": 2,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
+  },
+  "bb_break_up": {
+   "n": 1,
+   "wins": 1,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
+  },
   "rsi_rebound": {
    "n": 1,
    "wins": 0,
@@ -3220,8 +3239,8 @@
   "equity": 100227.25437518684
  },
  "skipReview": {
-  "n": 122,
-  "wouldLose": 95,
+  "n": 123,
+  "wouldLose": 96,
   "wouldWin": 27
  },
  "latest": {
