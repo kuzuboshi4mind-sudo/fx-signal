@@ -99,7 +99,7 @@
    "entry": 175.97977,
    "sl": 176.1564567674496,
    "tp": 175.62639646510078,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -115,7 +115,7 @@
    "entry": 175.97977,
    "sl": 176.1564567674496,
    "tp": 175.62639646510078,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2466,7 +2466,7 @@
    ]
   }
  ],
- "lastEvalT": 1793073600000,
+ "lastEvalT": 1793077200000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2651,14 +2651,14 @@
  },
  "reportDay": "2026-10-27",
  "skipReview": {
-  "n": 126,
-  "wouldLose": 99,
+  "n": 128,
+  "wouldLose": 101,
   "wouldWin": 27
  },
  "version": 1,
- "lastRun": 1793079248849,
- "lastBarT": 1793077200000,
- "price": 175.97977,
+ "lastRun": 1793081370237,
+ "lastBarT": 1793080800000,
+ "price": 176.13975,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2733,7 +2733,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.5588235294117647,
-    "avgR": 0.6593303909060431
+    "avgR": 0.6593303909060426
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2741,7 +2741,7 @@
     "key": "against|range",
     "n": 26,
     "winRate": 0.46153846153846156,
-    "avgR": 0.3630130741146273
+    "avgR": 0.36301307410802186
    },
    {
     "name": "ボリバン上限から回帰",
@@ -2757,7 +2757,7 @@
     "key": "with|range",
     "n": 20,
     "winRate": 0.35,
-    "avgR": 0.10752255541122391
+    "avgR": 0.10752255540323123
    }
   ]
  },
@@ -2791,26 +2791,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
