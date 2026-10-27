@@ -2781,7 +2781,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 99975.3043822707
+  "equity": 100193.1543822707
  },
  "reportDay": "2026-10-28",
  "skipReview": {
@@ -2790,9 +2790,9 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793113592500,
+ "lastRun": 1793116146248,
  "lastBarT": 1793113200000,
- "price": 89.93458,
+ "price": 89.89101,
  "equity": 110124.90074712012,
  "unreal": 0,
  "config": {
@@ -2859,7 +2859,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1894,
+  "events": 1895,
   "win": [
    {
     "name": "20本高値ブレイク",
