@@ -227,7 +227,7 @@
    "entry": 158.24889,
    "sl": 158.11278155231773,
    "tp": 158.52110689536454,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -243,7 +243,7 @@
    "entry": 158.24889,
    "sl": 158.11278155231773,
    "tp": 158.52110689536454,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -275,7 +275,7 @@
    "entry": 158.24015,
    "sl": 158.10371416718507,
    "tp": 158.51302166562988,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -291,7 +291,7 @@
    "entry": 158.22404,
    "sl": 158.08465141081467,
    "tp": 158.50281717837063,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -307,7 +307,7 @@
    "entry": 158.13331,
    "sl": 157.99317998087736,
    "tp": 158.4135700382453,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -323,7 +323,7 @@
    "entry": 158.13331,
    "sl": 157.99317998087736,
    "tp": 158.4135700382453,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -335,7 +335,7 @@
    "entry": 158.13331,
    "sl": 157.99317998087736,
    "tp": 158.4135700382453,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2954,9 +2954,9 @@
  "lastEvalT": 1793206800000,
  "reportDay": "2026-10-29",
  "version": 1,
- "lastRun": 1793212620937,
+ "lastRun": 1793213520841,
  "lastBarT": 1793210400000,
- "price": 158.1832,
+ "price": 157.88741,
  "equity": 99403.23095481566,
  "unreal": 0,
  "config": {
@@ -3023,7 +3023,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1901,
+  "events": 1908,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3069,9 +3069,9 @@
     "name": "MACD買いクロス",
     "dir": "long",
     "key": "with|range",
-    "n": 64,
-    "winRate": 0.359375,
-    "avgR": 0.20486994257078184
+    "n": 65,
+    "winRate": 0.35384615384615387,
+    "avgR": 0.1860590115439568
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -3085,17 +3085,17 @@
     "name": "MACD買いクロス",
     "dir": "long",
     "key": "*",
-    "n": 132,
-    "winRate": 0.3560606060606061,
-    "avgR": 0.1408432534807491
+    "n": 133,
+    "winRate": 0.3533834586466165,
+    "avgR": 0.13213134500215065
    },
    {
     "name": "ボリバン上抜けブレイク",
     "dir": "long",
     "key": "*",
-    "n": 102,
-    "winRate": 0.3627450980392157,
-    "avgR": 0.11427343521200631
+    "n": 104,
+    "winRate": 0.3557692307692308,
+    "avgR": 0.09249694337589279
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -3108,19 +3108,19 @@
   ]
  },
  "review": {
+  "macd_up": {
+   "n": 5,
+   "wins": 0,
+   "recentLosses": 5,
+   "streak": 5,
+   "suspended": true
+  },
   "pullback_up": {
    "n": 4,
    "wins": 2,
    "recentLosses": 2,
    "streak": 0,
    "suspended": false
-  },
-  "macd_up": {
-   "n": 4,
-   "wins": 0,
-   "recentLosses": 4,
-   "streak": 4,
-   "suspended": true
   },
   "bb_break_up": {
    "n": 2,
@@ -3791,15 +3791,16 @@
   "equity": 100227.25437518684
  },
  "skipReview": {
-  "n": 141,
-  "wouldLose": 109,
+  "n": 147,
+  "wouldLose": 115,
   "wouldWin": 32
  },
  "latest": {
   "start": 100000,
-  "balance": 106854.73000000027,
+  "balance": 103189.93000000031,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "long",
@@ -3811,10 +3812,12 @@
     "tp": 171.86473476822684,
     "barT": 1793210400000,
     "openT": 1793210820805,
-    "deadline": 1793239620805
-   }
-  ],
-  "trades": [
+    "deadline": 1793239620805,
+    "exit": 157.88741,
+    "closeT": 1793213520841,
+    "reason": "sl",
+    "pnl": -3664.799999999957
+   },
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -3870,6 +3873,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 106147.83000000042
+  "equity": 103189.93000000031
  }
 }
