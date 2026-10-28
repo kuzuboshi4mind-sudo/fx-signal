@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 104066.758525911,
+  "balance": 107712.7052925355,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 10000,
-   "entry": 209.86521,
-   "sl": 209.66791266166877,
-   "tp": 210.22980467666244,
-   "barT": 1793188800000,
-   "openT": 1793189221522,
-   "deadline": 1793275621522
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 10000,
+    "entry": 209.86521,
+    "sl": 209.66791266166877,
+    "tp": 210.22980467666244,
+    "barT": 1793188800000,
+    "openT": 1793189221522,
+    "deadline": 1793275621522,
+    "exit": 210.22980467666244,
+    "closeT": 1793192400000,
+    "reason": "tp",
+    "pnl": 3645.9467666244905
+   },
    {
     "dir": "long",
     "pattern": "engulf_up",
@@ -190,7 +195,7 @@
    "entry": 209.85521,
    "sl": 209.66791266166877,
    "tp": 210.22980467666244,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -3134,11 +3139,11 @@
   "wouldWin": 42
  },
  "version": 1,
- "lastRun": 1793194621685,
+ "lastRun": 1793195521968,
  "lastBarT": 1793192400000,
- "price": 210.17129,
- "equity": 107127.5585259111,
- "unreal": 3060.8000000000857,
+ "price": 210.20066,
+ "equity": 107712.7052925355,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -3203,15 +3208,15 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1788,
+  "events": 1789,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 28,
-    "winRate": 0.5357142857142857,
-    "avgR": 0.6255565892882993
+    "n": 29,
+    "winRate": 0.5517241379310345,
+    "avgR": 0.6720306544560491
    },
    {
     "name": "RSI買われすぎ反落",
@@ -3257,10 +3262,10 @@
  },
  "review": {
   "engulf_up": {
-   "n": 1,
-   "wins": 0,
+   "n": 2,
+   "wins": 1,
    "recentLosses": 1,
-   "streak": 1,
+   "streak": 0,
    "suspended": false
   },
   "bb_break_dn": {
