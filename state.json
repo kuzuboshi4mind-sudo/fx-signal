@@ -301,7 +301,7 @@
    "entry": 157.90825,
    "sl": 157.76269835956157,
    "tp": 158.19935328087686,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -313,7 +313,7 @@
    "entry": 157.91456,
    "sl": 157.76244592568167,
    "tp": 158.2187881486366,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2715,9 +2715,9 @@
  "lastEvalT": 1793160000000,
  "reportDay": "2026-10-28",
  "version": 1,
- "lastRun": 1793165833507,
+ "lastRun": 1793166720476,
  "lastBarT": 1793163600000,
- "price": 157.80003,
+ "price": 157.79436,
  "equity": 98253.80432231711,
  "unreal": 0,
  "config": {
@@ -2876,6 +2876,13 @@
    "streak": 1,
    "suspended": false
   },
+  "macd_up": {
+   "n": 4,
+   "wins": 0,
+   "recentLosses": 4,
+   "streak": 4,
+   "suspended": true
+  },
   "bb_break_up": {
    "n": 2,
    "wins": 1,
@@ -2896,13 +2903,6 @@
    "recentLosses": 1,
    "streak": 1,
    "suspended": false
-  },
-  "macd_up": {
-   "n": 3,
-   "wins": 0,
-   "recentLosses": 3,
-   "streak": 3,
-   "suspended": true
   },
   "bb_break_dn": {
    "n": 1,
@@ -3552,8 +3552,8 @@
   "equity": 100227.25437518684
  },
  "skipReview": {
-  "n": 132,
-  "wouldLose": 104,
+  "n": 133,
+  "wouldLose": 105,
   "wouldWin": 28
  },
  "latest": {
