@@ -2922,9 +2922,9 @@
  "lastEvalT": 1793203200000,
  "reportDay": "2026-10-29",
  "version": 1,
- "lastRun": 1793209920799,
+ "lastRun": 1793210442795,
  "lastBarT": 1793206800000,
- "price": 158.24771,
+ "price": 158.28173,
  "equity": 99403.23095481566,
  "unreal": 0,
  "config": {
@@ -2991,7 +2991,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1901,
+  "events": 1902,
   "win": [
    {
     "name": "20本高値ブレイク",
