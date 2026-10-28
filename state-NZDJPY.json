@@ -6,7 +6,18 @@
   "balance": 110124.90074712012,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 19000,
+   "entry": 88.65378,
+   "sl": 88.76945158298143,
+   "tp": 88.45243683403713,
+   "barT": 1793149200000,
+   "openT": 1793152491824,
+   "deadline": 1793238891824
+  },
   "trades": [
    {
     "dir": "long",
@@ -108,6 +119,33 @@
  },
  "log": [
   {
+   "t": 1793145600000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 88.66378,
+   "sl": 88.76945158298143,
+   "tp": 88.45243683403713,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1793145600000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 88.66378,
+   "sl": 88.76945158298143,
+   "tp": 88.45243683403713,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1793131200000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -115,7 +153,7 @@
    "entry": 89.74545,
    "sl": 89.85328699456655,
    "tp": 89.52977601086693,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -131,7 +169,7 @@
    "entry": 89.77958,
    "sl": 89.90414101968656,
    "tp": 89.53045796062686,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2448,12 +2486,13 @@
    ]
   }
  ],
- "lastEvalT": 1793142000000,
+ "lastEvalT": 1793145600000,
  "adaptive": {
   "start": 100000,
-  "balance": 99707.8043822707,
+  "balance": 101661.07425847212,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -2465,10 +2504,12 @@
     "tp": 89.59742602475971,
     "barT": 1793106000000,
     "openT": 1793106636440,
-    "deadline": 1793193036440
-   }
-  ],
-  "trades": [
+    "deadline": 1793193036440,
+    "exit": 89.59742602475971,
+    "closeT": 1793145600000,
+    "reason": "tp",
+    "pnl": 1953.269876201418
+   },
    {
     "key": "donchian_up|short|3|1",
     "dir": "short",
@@ -2813,20 +2854,20 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101461.55438227065
+  "equity": 101661.07425847212
  },
  "reportDay": "2026-10-28",
  "skipReview": {
-  "n": 133,
-  "wouldLose": 87,
+  "n": 135,
+  "wouldLose": 89,
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793148758096,
- "lastBarT": 1793145600000,
- "price": 89.63733,
- "equity": 110124.90074712012,
- "unreal": 0,
+ "lastRun": 1793152491824,
+ "lastBarT": 1793149200000,
+ "price": 88.66378,
+ "equity": 109934.90074712002,
+ "unreal": -190.0000000000972,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2891,7 +2932,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1896,
+  "events": 1898,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2907,15 +2948,7 @@
     "key": "with|range",
     "n": 37,
     "winRate": 0.43243243243243246,
-    "avgR": 0.29152304720707306
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "against|range",
-    "n": 23,
-    "winRate": 0.43478260869565216,
-    "avgR": 0.26029399974951667
+    "avgR": 0.291523047206887
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -2923,15 +2956,7 @@
     "key": "*",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.23188480499511632
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "*",
-    "n": 96,
-    "winRate": 0.3958333333333333,
-    "avgR": 0.16485876795010454
+    "avgR": 0.23188480499508735
    },
    {
     "name": "ボリバン上限から回帰",
@@ -2939,7 +2964,23 @@
     "key": "against|trend",
     "n": 29,
     "winRate": 0.41379310344827586,
-    "avgR": 0.19804777376111654
+    "avgR": 0.19804777374375185
+   },
+   {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "against|range",
+    "n": 24,
+    "winRate": 0.4166666666666667,
+    "avgR": 0.20581023264700807
+   },
+   {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "*",
+    "n": 97,
+    "winRate": 0.3917525773195876,
+    "avgR": 0.1523621166236336
    },
    {
     "name": "20本高値ブレイク",
@@ -2947,7 +2988,7 @@
     "key": "with|trend",
     "n": 73,
     "winRate": 0.3698630136986301,
-    "avgR": 0.08074450684536785
+    "avgR": 0.08074450683804173
    },
    {
     "name": "MACD売りクロス",
@@ -2955,7 +2996,7 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.38095238095238093,
-    "avgR": 0.0967297438497855
+    "avgR": 0.09672974383077866
    }
   ]
  },
@@ -2982,7 +3023,22 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

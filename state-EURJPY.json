@@ -92,6 +92,36 @@
  },
  "log": [
   {
+   "t": 1793145600000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 175.68821,
+   "sl": 175.84941836756138,
+   "tp": 175.36579326487725,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1793145600000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 175.68821,
+   "sl": 175.84941836756138,
+   "tp": 175.36579326487725,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793109600000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -115,7 +145,7 @@
    "entry": 175.9677,
    "sl": 176.1587342836235,
    "tp": 175.58563143275305,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2593,7 +2623,7 @@
    ]
   }
  ],
- "lastEvalT": 1793142000000,
+ "lastEvalT": 1793145600000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2778,14 +2808,14 @@
  },
  "reportDay": "2026-10-28",
  "skipReview": {
-  "n": 142,
+  "n": 143,
   "wouldLose": 111,
-  "wouldWin": 31
+  "wouldWin": 32
  },
  "version": 1,
- "lastRun": 1793148757101,
- "lastBarT": 1793145600000,
- "price": 175.59666,
+ "lastRun": 1793152490287,
+ "lastBarT": 1793149200000,
+ "price": 175.68821,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2852,7 +2882,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1812,
+  "events": 1813,
   "win": [
    {
     "name": "陽の包み足",
@@ -2860,7 +2890,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.5588235294117647,
-    "avgR": 0.6593303909060388
+    "avgR": 0.659330390906038
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2868,7 +2898,7 @@
     "key": "against|range",
     "n": 25,
     "winRate": 0.48,
-    "avgR": 0.418401779078785
+    "avgR": 0.4184017790785346
    },
    {
     "name": "ボリバン上限から回帰",
@@ -2910,7 +2940,24 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
