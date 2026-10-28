@@ -38,8 +38,14 @@ function note(title, message) {
 async function fetchBars() {
   const u = new URL('https://api.twelvedata.com/time_series');
   u.search = new URLSearchParams({ symbol: CONFIG.symbol, interval: CONFIG.interval, outputsize: 5000, timezone: 'UTC', apikey: KEY });
-  const res = await fetch(u);
-  const j = await res.json();
+  let res, j;
+  for (let attempt = 0; ; attempt++) {
+    res = await fetch(u);
+    j = await res.json();
+    // 無料プランの「1分8回まで」に当たったら、1分待ってやり直す（2回まで）
+    if (j.status !== 'ok' && attempt < 2 && /current minute/i.test(j.message || '')) { await new Promise(r => setTimeout(r, 61000)); continue; }
+    break;
+  }
   if (j.status !== 'ok') throw new Error('Twelve Data: ' + (j.message || res.status));
   return j.values.map(v => ({
     t: Date.parse(v.datetime.replace(' ', 'T') + (v.datetime.length > 10 ? 'Z' : 'T00:00:00Z')),

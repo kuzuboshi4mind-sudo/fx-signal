@@ -37,7 +37,10 @@ wait_next() {
 git -C data config user.name 'fx-bot'
 git -C data config user.email 'fx-bot@users.noreply.github.com'
 
-run_once
+# 前の起動が終わった直後（直近6分以内に実行済み）なら、すぐには回さず次の時刻を待つ
+# （同じ1分に2回分のデータ取得が重なると、無料プランの「1分8回まで」を超えるため）
+last=$(node -e "let m=0;for(const f of require('fs').readdirSync('data').filter(f=>f.endsWith('.json'))){try{m=Math.max(m,require('./data/'+f).lastRun||0)}catch{}}console.log(Math.floor(m/1000))")
+if (( $(date +%s) - last > 360 )); then run_once; else echo "直前に実行済みのため、次の時刻から開始"; fi
 while :; do
   w=$(wait_next)
   (( $(date +%s) + w > END )) && break
