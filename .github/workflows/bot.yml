@@ -2,7 +2,9 @@ name: FX bot
 
 on:
   schedule:
-    - cron: '7,22,37,52 * * * *'   # 15分ごと（混雑する00分を避ける）
+    # 15分ごとに起動を試みる（混雑する00分を避ける）。1回の起動で約55分間、15分ごとに回し続けるので、
+    # 起動が遅れたり飛ばされたりしても止まりにくい。実行中に来た起動は待機し、終わったらすぐ次が始まる
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
     inputs:
       reset:
@@ -20,7 +22,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v5
 
@@ -38,28 +40,11 @@ jobs:
             git worktree add --orphan -b bot-data data
           fi
 
-      - name: Run bot
+      - name: Run bot (about 55 minutes, every 15 minutes)
         env:
           TWELVEDATA_KEY: ${{ secrets.TWELVEDATA_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           RESET: ${{ inputs.reset }}
-        # 通貨ペアごとに順番に実行（1つ失敗しても他は続ける）
-        run: |
-          fail=0
-          while read sym file; do
-            echo "== $sym"
-            SYMBOL="$sym" STATE_FILE="data/$file" node bot/run.js || fail=1
-          done < <(node -e "for (const p of require('./bot/config.json').pairs) console.log(p.symbol + ' ' + p.file)")
-          exit $fail
+        # 通貨ペアごとに順番に実行し、毎回 bot-data に保存する（1つ失敗しても他は続ける）
+        run: bash bot/loop.sh 55
         shell: bash
-
-      - name: Save state
-        if: always()
-        working-directory: data
-        run: |
-          ls *.json >/dev/null 2>&1 || exit 0
-          git config user.name 'fx-bot'
-          git config user.email 'fx-bot@users.noreply.github.com'
-          git add *.json
-          git diff --cached --quiet || git commit -q -m "bot run $(date -u +%FT%TZ)"
-          git push -q origin bot-data
