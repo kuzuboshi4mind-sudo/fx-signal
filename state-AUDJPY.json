@@ -236,6 +236,22 @@
  },
  "log": [
   {
+   "t": 1793196000000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 111.331,
+   "sl": 111.19534063579971,
+   "tp": 111.60231872840059,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793192400000,
    "pattern": "bb_break_up",
    "name": "ボリバン上抜けブレイク",
@@ -2907,7 +2923,7 @@
    ]
   }
  ],
- "lastEvalT": 1793192400000,
+ "lastEvalT": 1793196000000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -3056,16 +3072,16 @@
   "pickTried": "2026-10-14",
   "equity": 96194.9625001203
  },
- "reportDay": "2026-10-28",
+ "reportDay": "2026-10-29",
  "skipReview": {
   "n": 142,
   "wouldLose": 96,
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793199121779,
- "lastBarT": 1793196000000,
- "price": 111.23631,
+ "lastRun": 1793200022198,
+ "lastBarT": 1793199600000,
+ "price": 111.331,
  "equity": 103860.00613653667,
  "unreal": 0,
  "config": {
@@ -3132,7 +3148,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1868,
+  "events": 1865,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -3140,7 +3156,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.5416666666666666,
-    "avgR": 0.6001404651068482
+    "avgR": 0.600140465106891
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -3148,7 +3164,7 @@
     "key": "*",
     "n": 27,
     "winRate": 0.48148148148148145,
-    "avgR": 0.42301596951361636
+    "avgR": 0.4230159695136212
    },
    {
     "name": "陽の包み足",
@@ -3164,7 +3180,7 @@
     "key": "with|range",
     "n": 61,
     "winRate": 0.4098360655737705,
-    "avgR": 0.27638843793553336
+    "avgR": 0.2763884379355911
    }
   ]
  },
@@ -3226,7 +3242,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
