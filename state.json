@@ -2813,7 +2813,7 @@
  "lastEvalT": 1793178000000,
  "reportDay": "2026-10-28",
  "version": 1,
- "lastRun": 1793182020811,
+ "lastRun": 1793182033265,
  "lastBarT": 1793181600000,
  "price": 157.86058,
  "equity": 95908.3043223175,
@@ -3024,32 +3024,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
