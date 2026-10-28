@@ -92,6 +92,54 @@
  },
  "log": [
   {
+   "t": 1793206800000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 176.26815,
+   "sl": 176.4338046477467,
+   "tp": 175.93684070450658,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793206800000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 176.26815,
+   "sl": 176.4338046477467,
+   "tp": 175.93684070450658,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793206800000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 176.26815,
+   "sl": 176.10249535225327,
+   "tp": 176.5994592954934,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793203200000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -2782,7 +2830,7 @@
    ]
   }
  ],
- "lastEvalT": 1793203200000,
+ "lastEvalT": 1793206800000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -2972,9 +3020,9 @@
   "wouldWin": 35
  },
  "version": 1,
- "lastRun": 1793210443266,
- "lastBarT": 1793206800000,
- "price": 176.28165,
+ "lastRun": 1793210821919,
+ "lastBarT": 1793210400000,
+ "price": 176.26815,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -3041,7 +3089,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1813,
+  "events": 1812,
   "win": [
    {
     "name": "陽の包み足",
@@ -3049,7 +3097,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.5588235294117647,
-    "avgR": 0.6593303909060428
+    "avgR": 0.6593303909060451
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -3057,7 +3105,7 @@
     "key": "against|range",
     "n": 25,
     "winRate": 0.48,
-    "avgR": 0.4184017790799786
+    "avgR": 0.41840177908066845
    },
    {
     "name": "ボリバン上限から回帰",
@@ -3107,7 +3155,35 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

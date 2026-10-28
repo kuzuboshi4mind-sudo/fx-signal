@@ -236,6 +236,36 @@
  },
  "log": [
   {
+   "t": 1793206800000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 111.35674,
+   "sl": 111.48759644794025,
+   "tp": 111.09502710411951,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1793206800000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 111.35674,
+   "sl": 111.48759644794025,
+   "tp": 111.09502710411951,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793196000000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -2923,7 +2953,7 @@
    ]
   }
  ],
- "lastEvalT": 1793203200000,
+ "lastEvalT": 1793206800000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -3079,9 +3109,9 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793210443974,
- "lastBarT": 1793206800000,
- "price": 111.36514,
+ "lastRun": 1793210823808,
+ "lastBarT": 1793210400000,
+ "price": 111.35674,
  "equity": 103860.00613653667,
  "unreal": 0,
  "config": {
@@ -3148,7 +3178,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1864,
+  "events": 1863,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -3156,7 +3186,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.5416666666666666,
-    "avgR": 0.600140465107667
+    "avgR": 0.6001404651082405
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -3164,7 +3194,7 @@
     "key": "*",
     "n": 27,
     "winRate": 0.48148148148148145,
-    "avgR": 0.42301596951370873
+    "avgR": 0.4230159695137735
    },
    {
     "name": "陽の包み足",
@@ -3180,7 +3210,7 @@
     "key": "with|range",
     "n": 61,
     "winRate": 0.4098360655737705,
-    "avgR": 0.2763884379366391
+    "avgR": 0.27638843793741336
    }
   ]
  },
@@ -3242,7 +3272,24 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
