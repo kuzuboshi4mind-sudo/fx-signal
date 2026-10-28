@@ -6,7 +6,18 @@
   "balance": 103860.00613653667,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "units": 13000,
+   "entry": 111.32386,
+   "sl": 111.47459274640113,
+   "tp": 111.04039450719772,
+   "barT": 1793221200000,
+   "openT": 1793221624951,
+   "deadline": 1793308024951
+  },
   "trades": [
    {
     "dir": "long",
@@ -235,6 +246,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793217600000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 111.32986,
+   "sl": 111.47459274640113,
+   "tp": 111.04039450719772,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793206800000,
    "pattern": "bb_revert_dn",
@@ -2953,7 +2976,7 @@
    ]
   }
  ],
- "lastEvalT": 1793214000000,
+ "lastEvalT": 1793217600000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -3109,11 +3132,11 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793220722551,
- "lastBarT": 1793217600000,
- "price": 111.33212,
- "equity": 103860.00613653667,
- "unreal": 0,
+ "lastRun": 1793221624951,
+ "lastBarT": 1793221200000,
+ "price": 111.32986,
+ "equity": 103782.00613653667,
+ "unreal": -78.00000000000296,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3178,7 +3201,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1866,
+  "events": 1865,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -3186,7 +3209,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.5416666666666666,
-    "avgR": 0.6001404651105746
+    "avgR": 0.6001404651097151
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -3194,7 +3217,7 @@
     "key": "*",
     "n": 27,
     "winRate": 0.48148148148148145,
-    "avgR": 0.42301596951403686
+    "avgR": 0.4230159695139399
    },
    {
     "name": "陽の包み足",
@@ -3210,7 +3233,15 @@
     "key": "with|range",
     "n": 61,
     "winRate": 0.4098360655737705,
-    "avgR": 0.27638843794056506
+    "avgR": 0.2763884379394045
+   },
+   {
+    "name": "RSI買われすぎ反落",
+    "dir": "short",
+    "key": "against|trend",
+    "n": 28,
+    "winRate": 0.39285714285714285,
+    "avgR": 0.1545199818622491
    }
   ]
  },
@@ -3272,7 +3303,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
