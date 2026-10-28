@@ -202,7 +202,7 @@
    "entry": 209.68971,
    "sl": 209.50163089755668,
    "tp": 210.0658682048866,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -234,7 +234,7 @@
    "entry": 209.82567,
    "sl": 210.01012585201718,
    "tp": 209.45675829596567,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -250,7 +250,7 @@
    "entry": 209.78753,
    "sl": 209.96924399448002,
    "tp": 209.42410201103996,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2573,9 +2573,10 @@
  "lastEvalT": 1793188800000,
  "adaptive": {
   "start": 100000,
-  "balance": 95716.4224501658,
+  "balance": 95154.5304351721,
   "startT": 1791953875407,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -2587,10 +2588,12 @@
     "tp": 209.5642639925032,
     "barT": 1793188800000,
     "openT": 1793189221522,
-    "deadline": 1793275621522
-   }
-  ],
-  "trades": [
+    "deadline": 1793275621522,
+    "exit": 210.03250733833124,
+    "closeT": 1793192400000,
+    "reason": "sl",
+    "pnl": -561.8920149937026
+   },
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -3122,20 +3125,20 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 95485.54245016584
+  "equity": 95154.5304351721
  },
  "reportDay": "2026-10-28",
  "skipReview": {
-  "n": 127,
-  "wouldLose": 86,
-  "wouldWin": 41
+  "n": 130,
+  "wouldLose": 88,
+  "wouldWin": 42
  },
  "version": 1,
- "lastRun": 1793193721788,
+ "lastRun": 1793194621685,
  "lastBarT": 1793192400000,
- "price": 209.92217,
- "equity": 104636.35852591104,
- "unreal": 569.6000000000367,
+ "price": 210.17129,
+ "equity": 107127.5585259111,
+ "unreal": 3060.8000000000857,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -3200,7 +3203,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1786,
+  "events": 1788,
   "win": [
    {
     "name": "陽の包み足",
@@ -3238,9 +3241,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 94,
-    "winRate": 0.39361702127659576,
-    "avgR": 0.17664801412546327
+    "n": 95,
+    "winRate": 0.3894736842105263,
+    "avgR": 0.16397260589919438
    },
    {
     "name": "ボリバン下限から回帰",

@@ -115,7 +115,7 @@
    "entry": 175.60262,
    "sl": 175.44086655498404,
    "tp": 175.92612689003192,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2903,14 +2903,14 @@
  },
  "reportDay": "2026-10-28",
  "skipReview": {
-  "n": 150,
+  "n": 151,
   "wouldLose": 117,
-  "wouldWin": 33
+  "wouldWin": 34
  },
  "version": 1,
- "lastRun": 1793193721353,
+ "lastRun": 1793194621198,
  "lastBarT": 1793192400000,
- "price": 175.84762,
+ "price": 175.93453,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -2977,7 +2977,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1811,
+  "events": 1813,
   "win": [
    {
     "name": "陽の包み足",
@@ -3002,6 +3002,14 @@
     "n": 22,
     "winRate": 0.36363636363636365,
     "avgR": 0.23767202647955402
+   },
+   {
+    "name": "MACD買いクロス",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 44,
+    "winRate": 0.36363636363636365,
+    "avgR": 0.1983519428301996
    }
   ]
  },
