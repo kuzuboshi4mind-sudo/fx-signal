@@ -2738,11 +2738,11 @@
  "lastEvalT": 1793167200000,
  "reportDay": "2026-10-28",
  "version": 1,
- "lastRun": 1793171220903,
+ "lastRun": 1793172479225,
  "lastBarT": 1793170800000,
- "price": 157.97776,
- "equity": 98183.80432231717,
- "unreal": -69.99999999993634,
+ "price": 157.92914,
+ "equity": 97503.12432231718,
+ "unreal": -750.6799999999316,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -2949,14 +2949,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
