@@ -2758,9 +2758,9 @@
  "lastEvalT": 1793174400000,
  "reportDay": "2026-10-28",
  "version": 1,
- "lastRun": 1793178420298,
+ "lastRun": 1793178768645,
  "lastBarT": 1793178000000,
- "price": 157.74502,
+ "price": 157.73685,
  "equity": 95968.30432231745,
  "unreal": 0,
  "config": {
@@ -2969,16 +2969,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
