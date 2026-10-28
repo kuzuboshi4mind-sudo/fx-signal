@@ -3132,11 +3132,11 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793221624951,
+ "lastRun": 1793222521801,
  "lastBarT": 1793221200000,
- "price": 111.32986,
- "equity": 103782.00613653667,
- "unreal": -78.00000000000296,
+ "price": 111.35366,
+ "equity": 103472.60613653656,
+ "unreal": -387.4000000001132,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3303,14 +3303,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
