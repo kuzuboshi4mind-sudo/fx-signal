@@ -227,7 +227,7 @@
    "entry": 157.89335,
    "sl": 158.05211998713352,
    "tp": 157.57581002573292,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2970,9 +2970,9 @@
  "lastEvalT": 1793210400000,
  "reportDay": "2026-10-29",
  "version": 1,
- "lastRun": 1793214420375,
+ "lastRun": 1793215320172,
  "lastBarT": 1793214000000,
- "price": 157.89335,
+ "price": 157.89472,
  "equity": 99403.23095481566,
  "unreal": 0,
  "config": {
@@ -3181,17 +3181,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
@@ -3817,8 +3807,8 @@
   "equity": 100227.25437518684
  },
  "skipReview": {
-  "n": 147,
-  "wouldLose": 115,
+  "n": 148,
+  "wouldLose": 116,
   "wouldWin": 32
  },
  "latest": {
