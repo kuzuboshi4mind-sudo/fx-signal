@@ -179,7 +179,7 @@
    "entry": 157.99199,
    "sl": 157.86616735169252,
    "tp": 158.24363529661488,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -195,7 +195,7 @@
    "entry": 157.98746,
    "sl": 157.85937791720735,
    "tp": 158.24362416558526,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -211,7 +211,7 @@
    "entry": 157.94549,
    "sl": 157.80763225900972,
    "tp": 158.22120548198058,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2672,9 +2672,9 @@
  "lastEvalT": 1793142000000,
  "reportDay": "2026-10-28",
  "version": 1,
- "lastRun": 1793145739806,
+ "lastRun": 1793148756567,
  "lastBarT": 1793145600000,
- "price": 157.99199,
+ "price": 157.84007,
  "equity": 100219.57557688555,
  "unreal": 0,
  "config": {
@@ -2741,7 +2741,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1897,
+  "events": 1901,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2776,20 +2776,20 @@
     "avgR": 0.2346059592786225
    },
    {
-    "name": "MACD買いクロス",
-    "dir": "long",
-    "key": "with|range",
-    "n": 63,
-    "winRate": 0.36507936507936506,
-    "avgR": 0.2242674977626343
-   },
-   {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|trend",
     "n": 53,
     "winRate": 0.37735849056603776,
     "avgR": 0.21541612197176746
+   },
+   {
+    "name": "MACD買いクロス",
+    "dir": "long",
+    "key": "with|range",
+    "n": 64,
+    "winRate": 0.359375,
+    "avgR": 0.20486994257078395
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -2803,9 +2803,9 @@
     "name": "MACD買いクロス",
     "dir": "long",
     "key": "*",
-    "n": 131,
-    "winRate": 0.35877862595419846,
-    "avgR": 0.14968309537518945
+    "n": 132,
+    "winRate": 0.3560606060606061,
+    "avgR": 0.140843253482076
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -2876,17 +2876,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
@@ -3512,8 +3502,8 @@
   "equity": 100227.25437518684
  },
  "skipReview": {
-  "n": 129,
-  "wouldLose": 101,
+  "n": 132,
+  "wouldLose": 104,
   "wouldWin": 28
  },
  "latest": {

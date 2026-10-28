@@ -243,7 +243,7 @@
    "entry": 111.068,
    "sl": 110.95332057064213,
    "tp": 111.29735885871573,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -259,7 +259,7 @@
    "entry": 111.04754,
    "sl": 110.93428292223,
    "tp": 111.27405415554,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -291,7 +291,7 @@
    "entry": 111.00439,
    "sl": 111.13821617197698,
    "tp": 110.73673765604603,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -307,7 +307,7 @@
    "entry": 111.03373,
    "sl": 110.89753412248633,
    "tp": 111.30612175502735,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -323,7 +323,7 @@
    "entry": 111.05258,
    "sl": 110.91296751652374,
    "tp": 111.33180496695253,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -339,7 +339,7 @@
    "entry": 110.97407,
    "sl": 110.82763504874941,
    "tp": 111.26693990250115,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2886,14 +2886,14 @@
  },
  "reportDay": "2026-10-28",
  "skipReview": {
-  "n": 126,
-  "wouldLose": 86,
-  "wouldWin": 40
+  "n": 132,
+  "wouldLose": 87,
+  "wouldWin": 45
  },
  "version": 1,
- "lastRun": 1793145741553,
+ "lastRun": 1793148757780,
  "lastBarT": 1793145600000,
- "price": 111.068,
+ "price": 111.19189,
  "equity": 103860.00613653667,
  "unreal": 0,
  "config": {
@@ -2960,7 +2960,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1865,
+  "events": 1869,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -3062,17 +3062,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
