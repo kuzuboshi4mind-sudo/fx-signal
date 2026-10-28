@@ -179,7 +179,7 @@
    "entry": 88.52417,
    "sl": 88.29835128285475,
    "tp": 88.9758074342905,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2991,14 +2991,14 @@
  },
  "reportDay": "2026-10-29",
  "skipReview": {
-  "n": 140,
+  "n": 141,
   "wouldLose": 94,
-  "wouldWin": 46
+  "wouldWin": 47
  },
  "version": 1,
- "lastRun": 1793205422430,
+ "lastRun": 1793206322789,
  "lastBarT": 1793203200000,
- "price": 88.96874,
+ "price": 88.96883,
  "equity": 113950.42090041461,
  "unreal": 0,
  "config": {
