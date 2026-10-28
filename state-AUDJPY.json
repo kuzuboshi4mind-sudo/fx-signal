@@ -259,7 +259,7 @@
    "entry": 111.0767,
    "sl": 110.94032914639709,
    "tp": 111.34944170720583,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3058,14 +3058,14 @@
  },
  "reportDay": "2026-10-28",
  "skipReview": {
-  "n": 141,
+  "n": 142,
   "wouldLose": 96,
-  "wouldWin": 45
+  "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793196422782,
+ "lastRun": 1793196988932,
  "lastBarT": 1793196000000,
- "price": 111.30962,
+ "price": 111.3588,
  "equity": 103860.00613653667,
  "unreal": 0,
  "config": {
@@ -3132,7 +3132,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1867,
+  "events": 1868,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -3226,17 +3226,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

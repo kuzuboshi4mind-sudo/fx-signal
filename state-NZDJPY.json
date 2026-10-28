@@ -210,7 +210,7 @@
    "entry": 88.62317,
    "sl": 88.86244309961154,
    "tp": 88.14462380077691,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2991,14 +2991,14 @@
  },
  "reportDay": "2026-10-28",
  "skipReview": {
-  "n": 139,
-  "wouldLose": 93,
+  "n": 140,
+  "wouldLose": 94,
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793196423201,
+ "lastRun": 1793196989289,
  "lastBarT": 1793196000000,
- "price": 88.84948,
+ "price": 88.83389,
  "equity": 113950.42090041461,
  "unreal": 0,
  "config": {
@@ -3065,7 +3065,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1889,
+  "events": 1890,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3140,17 +3140,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
