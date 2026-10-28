@@ -6,7 +6,18 @@
   "balance": 104066.758525911,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 10000,
+   "entry": 209.86521,
+   "sl": 209.66791266166877,
+   "tp": 210.22980467666244,
+   "barT": 1793188800000,
+   "openT": 1793189221522,
+   "deadline": 1793275621522
+  },
   "trades": [
    {
     "dir": "long",
@@ -171,6 +182,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793185200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 209.85521,
+   "sl": 209.66791266166877,
+   "tp": 210.22980467666244,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793178000000,
    "pattern": "bb_revert_up",
@@ -2547,12 +2570,26 @@
    ]
   }
  ],
- "lastEvalT": 1793181600000,
+ "lastEvalT": 1793185200000,
  "adaptive": {
   "start": 100000,
   "balance": 95716.4224501658,
   "startT": 1791953875407,
-  "positions": [],
+  "positions": [
+   {
+    "key": "engulf_up|short|1.5|1",
+    "dir": "short",
+    "pattern": "engulf_up",
+    "name": "陽の包み足（逆向き）",
+    "units": 3000,
+    "entry": 209.84521,
+    "sl": 210.03250733833124,
+    "tp": 209.5642639925032,
+    "barT": 1793188800000,
+    "openT": 1793189221522,
+    "deadline": 1793275621522
+   }
+  ],
   "trades": [
    {
     "key": "pullback_up|short|3|1",
@@ -3085,7 +3122,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 95716.4224501658
+  "equity": 95686.42245016583
  },
  "reportDay": "2026-10-28",
  "skipReview": {
@@ -3094,11 +3131,11 @@
   "wouldWin": 41
  },
  "version": 1,
- "lastRun": 1793188321412,
- "lastBarT": 1793185200000,
- "price": 209.80178,
- "equity": 104066.758525911,
- "unreal": 0,
+ "lastRun": 1793189221522,
+ "lastBarT": 1793188800000,
+ "price": 209.85521,
+ "equity": 103966.7585259111,
+ "unreal": -99.99999999990905,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -3187,7 +3224,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.43478260869565216,
-    "avgR": 0.2752263096710808
+    "avgR": 0.27522630967126804
    },
    {
     "name": "20本高値ブレイク",
@@ -3203,7 +3240,7 @@
     "key": "*",
     "n": 94,
     "winRate": 0.39361702127659576,
-    "avgR": 0.1766480141253817
+    "avgR": 0.17664801412542752
    },
    {
     "name": "ボリバン下限から回帰",
@@ -3211,7 +3248,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.30434782608695654,
-    "avgR": -0.11468050121677135
+    "avgR": -0.11468050121677005
    }
   ]
  },
@@ -3245,7 +3282,14 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
