@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 95968.30432231745,
+  "balance": 99403.23095481566,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 12000,
-   "entry": 157.86558,
-   "sl": 157.71495805697924,
-   "tp": 158.1518238860415,
-   "barT": 1793181600000,
-   "openT": 1793182020811,
-   "deadline": 1793268420811
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 12000,
+    "entry": 157.86558,
+    "sl": 157.71495805697924,
+    "tp": 158.1518238860415,
+    "barT": 1793181600000,
+    "openT": 1793182020811,
+    "deadline": 1793268420811,
+    "exit": 158.1518238860415,
+    "closeT": 1793196000000,
+    "reason": "tp",
+    "pnl": 3434.926632498218
+   },
    {
     "dir": "long",
     "pattern": "pullback_up",
@@ -215,6 +220,50 @@
  },
  "log": [
   {
+   "t": 1793192400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 158.13331,
+   "sl": 157.99317998087736,
+   "tp": 158.4135700382453,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793192400000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 158.13331,
+   "sl": 157.99317998087736,
+   "tp": 158.4135700382453,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
+  {
+   "t": 1793192400000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 158.13331,
+   "sl": 157.99317998087736,
+   "tp": 158.4135700382453,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793181600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -234,7 +283,7 @@
    "entry": 157.86058,
    "sl": 157.71495805697924,
    "tp": 158.1518238860415,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -250,7 +299,7 @@
    "entry": 157.86058,
    "sl": 157.71495805697924,
    "tp": 158.1518238860415,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -262,7 +311,7 @@
    "entry": 157.86058,
    "sl": 157.71495805697924,
    "tp": 158.1518238860415,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -2822,14 +2871,14 @@
    ]
   }
  ],
- "lastEvalT": 1793188800000,
+ "lastEvalT": 1793192400000,
  "reportDay": "2026-10-28",
  "version": 1,
- "lastRun": 1793195521037,
- "lastBarT": 1793192400000,
- "price": 158.03976,
- "equity": 98058.46432231752,
- "unreal": 2090.1600000000826,
+ "lastRun": 1793196420562,
+ "lastBarT": 1793196000000,
+ "price": 158.13331,
+ "equity": 99403.23095481566,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -2894,7 +2943,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1902,
+  "events": 1905,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2902,7 +2951,7 @@
     "key": "against|range",
     "n": 25,
     "winRate": 0.56,
-    "avgR": 0.7490911323423771
+    "avgR": 0.7490911323423817
    },
    {
     "name": "ボリバン下限から回帰",
@@ -2910,23 +2959,23 @@
     "key": "against|trend",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.3270167031884608
+    "avgR": 0.32701670319005743
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|range",
-    "n": 206,
-    "winRate": 0.3786407766990291,
-    "avgR": 0.2273763851403986
+    "n": 207,
+    "winRate": 0.38164251207729466,
+    "avgR": 0.23585684829256232
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 259,
-    "winRate": 0.3783783783783784,
-    "avgR": 0.2249289181599449
+    "n": 260,
+    "winRate": 0.38076923076923075,
+    "avgR": 0.23169008485024623
    },
    {
     "name": "上昇トレンドの押し目",
@@ -2934,7 +2983,7 @@
     "key": "with|trend",
     "n": 53,
     "winRate": 0.37735849056603776,
-    "avgR": 0.21541612197176652
+    "avgR": 0.21541612197176657
    },
    {
     "name": "MACD買いクロス",
@@ -2942,7 +2991,7 @@
     "key": "with|range",
     "n": 64,
     "winRate": 0.359375,
-    "avgR": 0.20486994257078084
+    "avgR": 0.20486994257078103
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -2950,7 +2999,7 @@
     "key": "*",
     "n": 37,
     "winRate": 0.40540540540540543,
-    "avgR": 0.19778321042095734
+    "avgR": 0.1977832104211776
    },
    {
     "name": "MACD買いクロス",
@@ -2958,7 +3007,7 @@
     "key": "*",
     "n": 132,
     "winRate": 0.3560606060606061,
-    "avgR": 0.14084325348011378
+    "avgR": 0.1408432534802308
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -2966,7 +3015,7 @@
     "key": "*",
     "n": 102,
     "winRate": 0.3627450980392157,
-    "avgR": 0.11427343521148842
+    "avgR": 0.11427343521158381
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -2974,16 +3023,16 @@
     "key": "with|trend",
     "n": 25,
     "winRate": 0.36,
-    "avgR": 0.057569572540005325
+    "avgR": 0.057569572540387595
    }
   ]
  },
  "review": {
   "pullback_up": {
-   "n": 2,
-   "wins": 0,
+   "n": 3,
+   "wins": 1,
    "recentLosses": 2,
-   "streak": 2,
+   "streak": 0,
    "suspended": false
   },
   "macd_up": {
@@ -3036,7 +3085,34 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
@@ -3662,9 +3738,9 @@
   "equity": 100227.25437518684
  },
  "skipReview": {
-  "n": 138,
+  "n": 140,
   "wouldLose": 108,
-  "wouldWin": 30
+  "wouldWin": 32
  },
  "latest": {
   "start": 100000,
