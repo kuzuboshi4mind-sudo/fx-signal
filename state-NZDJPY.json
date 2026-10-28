@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 110124.90074712012,
+  "balance": 113950.42090041461,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 19000,
-   "entry": 88.65378,
-   "sl": 88.76945158298143,
-   "tp": 88.45243683403713,
-   "barT": 1793149200000,
-   "openT": 1793152491824,
-   "deadline": 1793238891824
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 19000,
+    "entry": 88.65378,
+    "sl": 88.76945158298143,
+    "tp": 88.45243683403713,
+    "barT": 1793149200000,
+    "openT": 1793152491824,
+    "deadline": 1793238891824,
+    "exit": 88.45243683403713,
+    "closeT": 1793152800000,
+    "reason": "tp",
+    "pnl": 3825.520153294491
+   },
    {
     "dir": "long",
     "pattern": "ema_cross_up",
@@ -119,6 +124,22 @@
  },
  "log": [
   {
+   "t": 1793149200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 88.49743,
+   "sl": 88.73195718419704,
+   "tp": 88.0283756316059,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793145600000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -126,7 +147,7 @@
    "entry": 88.66378,
    "sl": 88.76945158298143,
    "tp": 88.45243683403713,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -141,7 +162,7 @@
    "entry": 88.66378,
    "sl": 88.76945158298143,
    "tp": 88.45243683403713,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -2486,7 +2507,7 @@
    ]
   }
  ],
- "lastEvalT": 1793145600000,
+ "lastEvalT": 1793149200000,
  "adaptive": {
   "start": 100000,
   "balance": 101661.07425847212,
@@ -2858,16 +2879,16 @@
  },
  "reportDay": "2026-10-28",
  "skipReview": {
-  "n": 135,
-  "wouldLose": 89,
+  "n": 136,
+  "wouldLose": 90,
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793152491824,
- "lastBarT": 1793149200000,
- "price": 88.66378,
- "equity": 109934.90074712002,
- "unreal": -190.0000000000972,
+ "lastRun": 1793154491797,
+ "lastBarT": 1793152800000,
+ "price": 88.49743,
+ "equity": 113950.42090041461,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -2932,7 +2953,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1898,
+  "events": 1897,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -2948,7 +2969,7 @@
     "key": "with|range",
     "n": 37,
     "winRate": 0.43243243243243246,
-    "avgR": 0.291523047206887
+    "avgR": 0.2915230472068267
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -2956,7 +2977,7 @@
     "key": "*",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.23188480499508735
+    "avgR": 0.231884804995078
    },
    {
     "name": "ボリバン上限から回帰",
@@ -2964,7 +2985,7 @@
     "key": "against|trend",
     "n": 29,
     "winRate": 0.41379310344827586,
-    "avgR": 0.19804777374375185
+    "avgR": 0.19804777373813104
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2972,7 +2993,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4166666666666667,
-    "avgR": 0.20581023264700807
+    "avgR": 0.20581023264435352
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -2980,7 +3001,7 @@
     "key": "*",
     "n": 97,
     "winRate": 0.3917525773195876,
-    "avgR": 0.1523621166236336
+    "avgR": 0.15236211662295387
    },
    {
     "name": "20本高値ブレイク",
@@ -2988,7 +3009,7 @@
     "key": "with|trend",
     "n": 73,
     "winRate": 0.3698630136986301,
-    "avgR": 0.08074450683804173
+    "avgR": 0.08074450683567032
    },
    {
     "name": "MACD売りクロス",
@@ -2996,21 +3017,21 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.38095238095238093,
-    "avgR": 0.09672974383077866
+    "avgR": 0.09672974382462629
    }
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 5,
+   "wins": 3,
+   "recentLosses": 2,
+   "streak": 1,
+   "suspended": false
+  },
   "ema_cross_up": {
    "n": 3,
    "wins": 2,
-   "recentLosses": 1,
-   "streak": 0,
-   "suspended": false
-  },
-  "bb_break_dn": {
-   "n": 4,
-   "wins": 3,
    "recentLosses": 1,
    "streak": 0,
    "suspended": false
@@ -3025,17 +3046,12 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
    "name": "20本安値ブレイク",
    "dir": "short",
    "blocked": true,
    "reasons": [
-    "優位性なし"
+    "過去の負けパターン",
+    "勝率が基準未満"
    ]
   }
  ],
