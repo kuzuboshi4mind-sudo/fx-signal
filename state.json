@@ -252,6 +252,22 @@
  },
  "log": [
   {
+   "t": 1793304000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 157.66779,
+   "sl": 157.8395421133281,
+   "tp": 157.32428577334377,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793300400000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -259,7 +275,7 @@
    "entry": 157.79045,
    "sl": 157.63031695487743,
    "tp": 158.11071609024515,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -3146,12 +3162,12 @@
    ]
   }
  ],
- "lastEvalT": 1793300400000,
+ "lastEvalT": 1793304000000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793307120692,
- "lastBarT": 1793304000000,
- "price": 157.68011,
+ "lastRun": 1793308020953,
+ "lastBarT": 1793307600000,
+ "price": 157.66779,
  "equity": 95063.4694301976,
  "unreal": 0,
  "config": {
@@ -3217,7 +3233,7 @@
   }
  },
  "learned": {
-  "bars": 3576,
+  "bars": 3577,
   "events": 1912,
   "win": [
    {
@@ -3280,10 +3296,10 @@
  },
  "review": {
   "pullback_up": {
-   "n": 9,
+   "n": 10,
    "wins": 2,
    "recentLosses": 5,
-   "streak": 5,
+   "streak": 6,
    "suspended": true
   },
   "macd_up": {
@@ -3336,7 +3352,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
