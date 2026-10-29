@@ -252,6 +252,34 @@
  },
  "log": [
   {
+   "t": 1793296800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 157.92617,
+   "sl": 157.7607551821757,
+   "tp": 158.25699963564864,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
+  {
+   "t": 1793296800000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 157.92617,
+   "sl": 157.7607551821757,
+   "tp": 158.25699963564864,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793293200000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -3106,12 +3134,12 @@
    ]
   }
  ],
- "lastEvalT": 1793293200000,
+ "lastEvalT": 1793296800000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793299920286,
- "lastBarT": 1793296800000,
- "price": 157.94341,
+ "lastRun": 1793300820342,
+ "lastBarT": 1793300400000,
+ "price": 157.92617,
  "equity": 95063.4694301976,
  "unreal": 0,
  "config": {
@@ -3177,7 +3205,7 @@
   }
  },
  "learned": {
-  "bars": 3574,
+  "bars": 3575,
   "events": 1908,
   "win": [
    {
@@ -3304,7 +3332,25 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
