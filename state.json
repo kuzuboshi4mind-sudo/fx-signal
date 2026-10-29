@@ -6,7 +6,18 @@
   "balance": 96921.52095481579,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "units": 11000,
+   "entry": 157.98305,
+   "sl": 157.8141362250347,
+   "tp": 158.30587754993056,
+   "barT": 1793268000000,
+   "openT": 1793268420706,
+   "deadline": 1793354820706
+  },
   "trades": [
    {
     "dir": "long",
@@ -235,6 +246,30 @@
   ]
  },
  "log": [
+  {
+   "t": 1793264400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 157.97805,
+   "sl": 157.8141362250347,
+   "tp": 158.30587754993056,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1793264400000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 157.97805,
+   "sl": 157.8141362250347,
+   "tp": 158.30587754993056,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
   {
    "t": 1793232000000,
    "pattern": "pullback_up",
@@ -3011,14 +3046,14 @@
    ]
   }
  ],
- "lastEvalT": 1793260800000,
+ "lastEvalT": 1793264400000,
  "reportDay": "2026-10-29",
  "version": 1,
- "lastRun": 1793267520536,
- "lastBarT": 1793264400000,
- "price": 157.94923,
- "equity": 96921.52095481579,
- "unreal": 0,
+ "lastRun": 1793268420706,
+ "lastBarT": 1793268000000,
+ "price": 157.97805,
+ "equity": 96866.52095481583,
+ "unreal": -54.99999999994998,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -3082,7 +3117,7 @@
   }
  },
  "learned": {
-  "bars": 3565,
+  "bars": 3566,
   "events": 1905,
   "win": [
    {
@@ -3209,7 +3244,22 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,

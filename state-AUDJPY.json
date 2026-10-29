@@ -252,6 +252,21 @@
  },
  "log": [
   {
+   "t": 1793264400000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 111.07862,
+   "sl": 111.22661180763275,
+   "tp": 110.7826363847345,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793246400000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -3061,7 +3076,7 @@
    ]
   }
  ],
- "lastEvalT": 1793260800000,
+ "lastEvalT": 1793264400000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -3217,9 +3232,9 @@
   "wouldWin": 47
  },
  "version": 1,
- "lastRun": 1793267522173,
- "lastBarT": 1793264400000,
- "price": 111.08234,
+ "lastRun": 1793268422626,
+ "lastBarT": 1793268000000,
+ "price": 111.07862,
  "equity": 101900.48043332195,
  "unreal": 0,
  "config": {
@@ -3285,7 +3300,7 @@
   }
  },
  "learned": {
-  "bars": 3565,
+  "bars": 3566,
   "events": 1868,
   "win": [
    {
@@ -3395,7 +3410,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
