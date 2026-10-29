@@ -3367,11 +3367,11 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793315220594,
+ "lastRun": 1793316121061,
  "lastBarT": 1793314800000,
- "price": 176.52185,
- "equity": 109164.10691053692,
- "unreal": 2200.4799999999705,
+ "price": 176.4693,
+ "equity": 108743.70691053696,
+ "unreal": 1780.079999999998,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3436,7 +3436,7 @@
  },
  "learned": {
   "bars": 3579,
-  "events": 1822,
+  "events": 1823,
   "win": [
    {
     "name": "陽の包み足",
@@ -3502,26 +3502,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
