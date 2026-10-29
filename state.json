@@ -271,7 +271,7 @@
    "entry": 157.92617,
    "sl": 157.7607551821757,
    "tp": 158.25699963564864,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -283,7 +283,7 @@
    "entry": 157.92617,
    "sl": 157.7607551821757,
    "tp": 158.25699963564864,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -299,7 +299,7 @@
    "entry": 157.89338,
    "sl": 157.72579711926613,
    "tp": 158.22854576146776,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -3149,9 +3149,9 @@
  "lastEvalT": 1793300400000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793304420106,
+ "lastRun": 1793305320936,
  "lastBarT": 1793304000000,
- "price": 157.79045,
+ "price": 157.69296,
  "equity": 95063.4694301976,
  "unreal": 0,
  "config": {
@@ -3218,7 +3218,7 @@
  },
  "learned": {
   "bars": 3576,
-  "events": 1911,
+  "events": 1912,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3240,17 +3240,17 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 266,
-    "winRate": 0.37593984962406013,
-    "avgR": 0.21483025356690114
+    "n": 267,
+    "winRate": 0.37453183520599254,
+    "avgR": 0.21022445489602254
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|range",
-    "n": 213,
-    "winRate": 0.3755868544600939,
-    "avgR": 0.21468447410465544
+    "n": 214,
+    "winRate": 0.37383177570093457,
+    "avgR": 0.20893866819034546
    },
    {
     "name": "上昇トレンドの押し目",
@@ -3280,10 +3280,10 @@
  },
  "review": {
   "pullback_up": {
-   "n": 7,
+   "n": 9,
    "wins": 2,
-   "recentLosses": 3,
-   "streak": 3,
+   "recentLosses": 5,
+   "streak": 5,
    "suspended": true
   },
   "macd_up": {
@@ -3336,16 +3336,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
@@ -3971,8 +3962,8 @@
   "equity": 100227.25437518684
  },
  "skipReview": {
-  "n": 149,
-  "wouldLose": 117,
+  "n": 150,
+  "wouldLose": 118,
   "wouldWin": 32
  },
  "latest": {
