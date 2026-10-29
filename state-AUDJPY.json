@@ -275,7 +275,7 @@
    "entry": 111.44193,
    "sl": 111.29205536303087,
    "tp": 111.74167927393826,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -291,7 +291,7 @@
    "entry": 111.44193,
    "sl": 111.29205536303087,
    "tp": 111.74167927393826,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3196,14 +3196,14 @@
  },
  "reportDay": "2026-10-29",
  "skipReview": {
-  "n": 146,
-  "wouldLose": 100,
+  "n": 148,
+  "wouldLose": 102,
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793239621970,
+ "lastRun": 1793240522011,
  "lastBarT": 1793239200000,
- "price": 111.36454,
+ "price": 111.23941,
  "equity": 101900.48043332195,
  "unreal": 0,
  "config": {
@@ -3270,7 +3270,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1864,
+  "events": 1866,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -3379,17 +3379,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
