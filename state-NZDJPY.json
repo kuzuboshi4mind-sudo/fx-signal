@@ -124,6 +124,22 @@
  },
  "log": [
   {
+   "t": 1793293200000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 88.86964,
+   "sl": 89.01723218762571,
+   "tp": 88.57445562474861,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793289600000,
    "pattern": "bb_break_up",
    "name": "ボリバン上抜けブレイク",
@@ -2746,7 +2762,7 @@
    ]
   }
  ],
- "lastEvalT": 1793289600000,
+ "lastEvalT": 1793293200000,
  "adaptive": {
   "start": 100000,
   "balance": 101182.52805924905,
@@ -3140,9 +3156,9 @@
   "wouldWin": 49
  },
  "version": 1,
- "lastRun": 1793296321688,
- "lastBarT": 1793293200000,
- "price": 88.893,
+ "lastRun": 1793297222283,
+ "lastBarT": 1793296800000,
+ "price": 88.86964,
  "equity": 113950.42090041461,
  "unreal": 0,
  "config": {
@@ -3208,8 +3224,8 @@
   }
  },
  "learned": {
-  "bars": 3573,
-  "events": 1889,
+  "bars": 3574,
+  "events": 1890,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3316,7 +3332,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
