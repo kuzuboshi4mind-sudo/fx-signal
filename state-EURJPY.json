@@ -92,6 +92,22 @@
  },
  "log": [
   {
+   "t": 1793260800000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 175.85929,
+   "sl": 176.03584949422728,
+   "tp": 175.50617101154543,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793253600000,
    "pattern": "ema_cross_dn",
    "name": "デッドクロス(EMA20/50)",
@@ -2861,7 +2877,7 @@
    ]
   }
  ],
- "lastEvalT": 1793257200000,
+ "lastEvalT": 1793260800000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -3082,7 +3098,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98096.63490406534
+  "equity": 98053.43490406527
  },
  "reportDay": "2026-10-29",
  "skipReview": {
@@ -3091,9 +3107,9 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793263920539,
- "lastBarT": 1793260800000,
- "price": 175.86469,
+ "lastRun": 1793264820752,
+ "lastBarT": 1793264400000,
+ "price": 175.85929,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -3159,7 +3175,7 @@
   }
  },
  "learned": {
-  "bars": 3564,
+  "bars": 3565,
   "events": 1814,
   "win": [
    {
@@ -3226,7 +3242,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
