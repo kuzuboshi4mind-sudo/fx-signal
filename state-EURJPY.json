@@ -2912,9 +2912,10 @@
  "lastEvalT": 1793275200000,
  "adaptive": {
   "start": 100000,
-  "balance": 97154.46232885073,
+  "balance": 96630.21604124337,
   "startT": 1791953874927,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|long|2|1.5",
     "dir": "long",
@@ -2926,10 +2927,12 @@
     "tp": 176.22747752507158,
     "barT": 1793257200000,
     "openT": 1793257620792,
-    "deadline": 1793344020792
-   }
-  ],
-  "trades": [
+    "deadline": 1793344020792,
+    "exit": 175.61585685619633,
+    "closeT": 1793278800000,
+    "reason": "sl",
+    "pnl": -524.2462876073546
+   },
    {
     "key": "ema_cross_dn|long|2|1",
     "dir": "long",
@@ -3138,7 +3141,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 97183.7223288507
+  "equity": 96630.21604124337
  },
  "reportDay": "2026-10-29",
  "skipReview": {
@@ -3147,9 +3150,9 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793279221809,
+ "lastRun": 1793280121100,
  "lastBarT": 1793278800000,
- "price": 175.89261,
+ "price": 175.64513,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
