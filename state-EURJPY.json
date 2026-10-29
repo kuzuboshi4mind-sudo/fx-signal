@@ -92,6 +92,22 @@
  },
  "log": [
   {
+   "t": 1793232000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 175.94889,
+   "sl": 176.13761742417995,
+   "tp": 175.5714351516401,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793206800000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -2830,7 +2846,7 @@
    ]
   }
  ],
- "lastEvalT": 1793228400000,
+ "lastEvalT": 1793232000000,
  "adaptive": {
   "start": 100000,
   "balance": 98202.95490406544,
@@ -3020,9 +3036,9 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793235121356,
- "lastBarT": 1793232000000,
- "price": 175.91564,
+ "lastRun": 1793236021142,
+ "lastBarT": 1793235600000,
+ "price": 175.94889,
  "equity": 106963.62691053696,
  "unreal": 0,
  "config": {
@@ -3097,7 +3113,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.5588235294117647,
-    "avgR": 0.6593303909060455
+    "avgR": 0.6593303909060497
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -3105,7 +3121,7 @@
     "key": "against|range",
     "n": 25,
     "winRate": 0.48,
-    "avgR": 0.4184017790807971
+    "avgR": 0.4184017790820911
    },
    {
     "name": "ボリバン上限から回帰",
@@ -3155,7 +3171,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
