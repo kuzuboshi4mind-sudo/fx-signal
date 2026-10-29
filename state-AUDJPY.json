@@ -6,7 +6,18 @@
   "balance": 101900.48043332195,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 11000,
+   "entry": 110.82189,
+   "sl": 110.9922245303467,
+   "tp": 110.49922093930658,
+   "barT": 1793282400000,
+   "openT": 1793282822404,
+   "deadline": 1793369222404
+  },
   "trades": [
    {
     "dir": "short",
@@ -251,6 +262,33 @@
   ]
  },
  "log": [
+  {
+   "t": 1793278800000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 110.82789,
+   "sl": 110.9922245303467,
+   "tp": 110.49922093930658,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1793278800000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 110.82789,
+   "sl": 110.9922245303467,
+   "tp": 110.49922093930658,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793275200000,
    "pattern": "donchian_dn",
@@ -3123,7 +3161,7 @@
    ]
   }
  ],
- "lastEvalT": 1793275200000,
+ "lastEvalT": 1793278800000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -3279,11 +3317,11 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793282419493,
- "lastBarT": 1793278800000,
- "price": 110.73918,
- "equity": 101900.48043332195,
- "unreal": 0,
+ "lastRun": 1793282822404,
+ "lastBarT": 1793282400000,
+ "price": 110.82789,
+ "equity": 101834.48043332195,
+ "unreal": -66.0000000000025,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3347,7 +3385,7 @@
   }
  },
  "learned": {
-  "bars": 3569,
+  "bars": 3570,
   "events": 1872,
   "win": [
    {
@@ -3457,7 +3495,22 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
