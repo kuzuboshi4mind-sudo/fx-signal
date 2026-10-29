@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 101900.48043332195,
+  "balance": 100026.80059950816,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 11000,
-   "entry": 110.82189,
-   "sl": 110.9922245303467,
-   "tp": 110.49922093930658,
-   "barT": 1793282400000,
-   "openT": 1793282822404,
-   "deadline": 1793369222404
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 11000,
+    "entry": 110.82189,
+    "sl": 110.9922245303467,
+    "tp": 110.49922093930658,
+    "barT": 1793282400000,
+    "openT": 1793282822404,
+    "deadline": 1793369222404,
+    "exit": 110.9922245303467,
+    "closeT": 1793286000000,
+    "reason": "sl",
+    "pnl": -1873.6798338137817
+   },
    {
     "dir": "short",
     "pattern": "rsi_fall",
@@ -3333,11 +3338,11 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793287321781,
+ "lastRun": 1793288222235,
  "lastBarT": 1793286000000,
- "price": 110.96098,
- "equity": 100370.49043332184,
- "unreal": -1529.9900000001116,
+ "price": 111.13164,
+ "equity": 100026.80059950816,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
