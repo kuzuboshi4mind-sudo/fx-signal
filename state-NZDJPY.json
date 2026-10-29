@@ -2762,7 +2762,7 @@
    ]
   }
  ],
- "lastEvalT": 1793296800000,
+ "lastEvalT": 1793300400000,
  "adaptive": {
   "start": 100000,
   "balance": 101182.52805924905,
@@ -3156,9 +3156,9 @@
   "wouldWin": 49
  },
  "version": 1,
- "lastRun": 1793303522394,
- "lastBarT": 1793300400000,
- "price": 88.93803,
+ "lastRun": 1793304422143,
+ "lastBarT": 1793304000000,
+ "price": 88.83743,
  "equity": 113950.42090041461,
  "unreal": 0,
  "config": {
@@ -3224,8 +3224,8 @@
   }
  },
  "learned": {
-  "bars": 3575,
-  "events": 1890,
+  "bars": 3576,
+  "events": 1891,
   "win": [
    {
     "name": "20本高値ブレイク",

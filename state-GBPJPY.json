@@ -188,6 +188,22 @@
  },
  "log": [
   {
+   "t": 1793300400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 210.97763,
+   "sl": 210.74072358357077,
+   "tp": 211.45144283285848,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793296800000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -2899,24 +2915,43 @@
    ]
   }
  ],
- "lastEvalT": 1793296800000,
+ "lastEvalT": 1793300400000,
  "adaptive": {
   "start": 100000,
-  "balance": 94861.7799056959,
+  "balance": 93314.5710465527,
   "startT": 1791953875407,
   "positions": [
    {
-    "key": "pullback_up|short|3|1",
+    "key": "engulf_up|short|1.5|1",
     "dir": "short",
-    "pattern": "pullback_up",
-    "name": "上昇トレンドの押し目（逆向き）",
+    "pattern": "engulf_up",
+    "name": "陽の包み足（逆向き）",
+    "units": 2000,
+    "entry": 210.96763,
+    "sl": 211.20453641642925,
+    "tp": 210.61227037535616,
+    "barT": 1793304000000,
+    "openT": 1793304420933,
+    "deadline": 1793390820933
+   }
+  ],
+  "trades": [
+   {
+    "key": "engulf_up|short|1.5|1",
+    "dir": "short",
+    "pattern": "engulf_up",
+    "name": "陽の包み足（逆向き）",
     "units": 2000,
     "entry": 210.93067000000002,
     "sl": 211.18853814319056,
-    "tp": 210.15706557042844,
+    "tp": 210.54386778521425,
     "barT": 1793286000000,
     "openT": 1793286421748,
-    "deadline": 1793372821748
+    "deadline": 1793372821748,
+    "exit": 211.18853814319056,
+    "closeT": 1793304000000,
+    "reason": "sl",
+    "pnl": -515.7362863810704
    },
    {
     "key": "bb_break_up|short|3|1",
@@ -2929,23 +2964,29 @@
     "tp": 210.15706557042844,
     "barT": 1793286000000,
     "openT": 1793286421748,
-    "deadline": 1793372821748
+    "deadline": 1793372821748,
+    "exit": 211.18853814319056,
+    "closeT": 1793304000000,
+    "reason": "sl",
+    "pnl": -515.7362863810704
    },
    {
-    "key": "engulf_up|short|1.5|1",
+    "key": "pullback_up|short|3|1",
     "dir": "short",
-    "pattern": "engulf_up",
-    "name": "陽の包み足（逆向き）",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目（逆向き）",
     "units": 2000,
     "entry": 210.93067000000002,
     "sl": 211.18853814319056,
-    "tp": 210.54386778521425,
+    "tp": 210.15706557042844,
     "barT": 1793286000000,
     "openT": 1793286421748,
-    "deadline": 1793372821748
-   }
-  ],
-  "trades": [
+    "deadline": 1793372821748,
+    "exit": 211.18853814319056,
+    "closeT": 1793304000000,
+    "reason": "sl",
+    "pnl": -515.7362863810704
+   },
    {
     "key": "bb_break_up|short|3|1",
     "dir": "short",
@@ -3545,7 +3586,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 93757.71990569607
+  "equity": 93294.57104655271
  },
  "reportDay": "2026-10-30",
  "skipReview": {
@@ -3554,9 +3595,9 @@
   "wouldWin": 45
  },
  "version": 1,
- "lastRun": 1793303521739,
- "lastBarT": 1793300400000,
- "price": 211.11468,
+ "lastRun": 1793304420933,
+ "lastBarT": 1793304000000,
+ "price": 210.97763,
  "equity": 107712.7052925355,
  "unreal": 0,
  "config": {
@@ -3622,7 +3663,7 @@
   }
  },
  "learned": {
-  "bars": 3575,
+  "bars": 3576,
   "events": 1795,
   "win": [
    {
@@ -3705,7 +3746,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
