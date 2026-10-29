@@ -3318,7 +3318,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 96607.07043517212
+  "equity": 96713.03043517217
  },
  "reportDay": "2026-10-29",
  "skipReview": {
@@ -3327,9 +3327,9 @@
   "wouldWin": 43
  },
  "version": 1,
- "lastRun": 1793243221737,
+ "lastRun": 1793244121053,
  "lastBarT": 1793242800000,
- "price": 210.22172,
+ "price": 210.20406,
  "equity": 107712.7052925355,
  "unreal": 0,
  "config": {
@@ -3478,27 +3478,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
