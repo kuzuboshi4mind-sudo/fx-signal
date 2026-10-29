@@ -3317,11 +3317,11 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793282822404,
+ "lastRun": 1793283722055,
  "lastBarT": 1793282400000,
- "price": 110.82789,
- "equity": 101834.48043332195,
- "unreal": -66.0000000000025,
+ "price": 110.93431,
+ "equity": 100663.86043332196,
+ "unreal": -1236.6200000000022,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3386,15 +3386,15 @@
  },
  "learned": {
   "bars": 3570,
-  "events": 1872,
+  "events": 1874,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "against|range",
-    "n": 24,
-    "winRate": 0.5416666666666666,
-    "avgR": 0.6001404651178952
+    "n": 25,
+    "winRate": 0.52,
+    "avgR": 0.5354046287083952
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -3495,22 +3495,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
