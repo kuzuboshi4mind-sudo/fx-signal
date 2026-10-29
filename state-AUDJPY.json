@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 103860.00613653667,
+  "balance": 101900.48043332195,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "short",
-   "pattern": "rsi_fall",
-   "name": "RSI買われすぎ反落",
-   "units": 13000,
-   "entry": 111.32386,
-   "sl": 111.47459274640113,
-   "tp": 111.04039450719772,
-   "barT": 1793221200000,
-   "openT": 1793221624951,
-   "deadline": 1793308024951
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落",
+    "units": 13000,
+    "entry": 111.32386,
+    "sl": 111.47459274640113,
+    "tp": 111.04039450719772,
+    "barT": 1793221200000,
+    "openT": 1793221624951,
+    "deadline": 1793308024951,
+    "exit": 111.47459274640113,
+    "closeT": 1793235600000,
+    "reason": "sl",
+    "pnl": -1959.525703214723
+   },
    {
     "dir": "long",
     "pattern": "bb_break_up",
@@ -302,7 +307,7 @@
    "entry": 111.32986,
    "sl": 111.47459274640113,
    "tp": 111.04039450719772,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -3180,11 +3185,11 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793236022160,
+ "lastRun": 1793236922201,
  "lastBarT": 1793235600000,
- "price": 111.39638,
- "equity": 102917.2461365367,
- "unreal": -942.7599999999643,
+ "price": 111.52874,
+ "equity": 101900.48043332195,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3294,6 +3299,13 @@
   ]
  },
  "review": {
+  "rsi_fall": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "bb_break_up": {
    "n": 6,
    "wins": 4,
