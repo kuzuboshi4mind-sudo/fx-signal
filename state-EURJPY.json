@@ -103,6 +103,38 @@
  },
  "log": [
   {
+   "t": 1793311200000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 176.52185,
+   "sl": 176.30162056353709,
+   "tp": 176.9623088729258,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793311200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 176.52185,
+   "sl": 176.30162056353709,
+   "tp": 176.9623088729258,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793296800000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -110,7 +142,7 @@
    "entry": 176.29705,
    "sl": 176.52619240436817,
    "tp": 175.8387651912637,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3043,7 +3075,7 @@
    ]
   }
  ],
- "lastEvalT": 1793307600000,
+ "lastEvalT": 1793311200000,
  "adaptive": {
   "start": 100000,
   "balance": 99235.4034578733,
@@ -3330,16 +3362,16 @@
  },
  "reportDay": "2026-10-30",
  "skipReview": {
-  "n": 167,
-  "wouldLose": 130,
+  "n": 168,
+  "wouldLose": 131,
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793314321346,
- "lastBarT": 1793311200000,
- "price": 176.44469,
- "equity": 108546.826910537,
- "unreal": 1583.2000000000335,
+ "lastRun": 1793315220594,
+ "lastBarT": 1793314800000,
+ "price": 176.52185,
+ "equity": 109164.10691053692,
+ "unreal": 2200.4799999999705,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3403,7 +3435,7 @@
   }
  },
  "learned": {
-  "bars": 3578,
+  "bars": 3579,
   "events": 1822,
   "win": [
    {
@@ -3470,7 +3502,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
