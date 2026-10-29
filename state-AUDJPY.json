@@ -263,6 +263,22 @@
  },
  "log": [
   {
+   "t": 1793282400000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 110.9272,
+   "sl": 110.75500293610664,
+   "tp": 111.27159412778674,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793278800000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -3161,7 +3177,7 @@
    ]
   }
  ],
- "lastEvalT": 1793278800000,
+ "lastEvalT": 1793282400000,
  "adaptive": {
   "start": 100000,
   "balance": 96194.9625001203,
@@ -3310,18 +3326,18 @@
   "pickTried": "2026-10-14",
   "equity": 96194.9625001203
  },
- "reportDay": "2026-10-29",
+ "reportDay": "2026-10-30",
  "skipReview": {
   "n": 156,
   "wouldLose": 108,
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793285522370,
- "lastBarT": 1793282400000,
- "price": 110.92074,
- "equity": 100813.13043332196,
- "unreal": -1087.3499999999865,
+ "lastRun": 1793286422325,
+ "lastBarT": 1793286000000,
+ "price": 110.9272,
+ "equity": 100742.07043332192,
+ "unreal": -1158.410000000032,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3385,7 +3401,7 @@
   }
  },
  "learned": {
-  "bars": 3570,
+  "bars": 3571,
   "events": 1874,
   "win": [
    {
@@ -3495,7 +3511,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
