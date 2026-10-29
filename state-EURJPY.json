@@ -3043,7 +3043,7 @@
    ]
   }
  ],
- "lastEvalT": 1793304000000,
+ "lastEvalT": 1793307600000,
  "adaptive": {
   "start": 100000,
   "balance": 99235.4034578733,
@@ -3335,11 +3335,11 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793310720810,
- "lastBarT": 1793307600000,
- "price": 176.29305,
- "equity": 107333.70691053687,
- "unreal": 370.07999999991625,
+ "lastRun": 1793311621039,
+ "lastBarT": 1793311200000,
+ "price": 176.26976,
+ "equity": 107147.38691053685,
+ "unreal": 183.7599999998929,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3403,7 +3403,7 @@
   }
  },
  "learned": {
-  "bars": 3577,
+  "bars": 3578,
   "events": 1822,
   "win": [
    {
