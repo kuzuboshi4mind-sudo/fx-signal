@@ -291,7 +291,7 @@
    "entry": 111.07862,
    "sl": 111.22661180763275,
    "tp": 110.7826363847345,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3259,14 +3259,14 @@
  },
  "reportDay": "2026-10-29",
  "skipReview": {
-  "n": 151,
-  "wouldLose": 104,
+  "n": 152,
+  "wouldLose": 105,
   "wouldWin": 47
  },
  "version": 1,
- "lastRun": 1793272021522,
+ "lastRun": 1793272666836,
  "lastBarT": 1793271600000,
- "price": 111.1898,
+ "price": 111.22146,
  "equity": 101900.48043332195,
  "unreal": 0,
  "config": {
@@ -3442,26 +3442,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
