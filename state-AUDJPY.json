@@ -3180,11 +3180,11 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793232422823,
+ "lastRun": 1793233322001,
  "lastBarT": 1793232000000,
- "price": 111.44193,
- "equity": 102325.09613653664,
- "unreal": -1534.910000000039,
+ "price": 111.39369,
+ "equity": 102952.21613653653,
+ "unreal": -907.7900000001335,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3249,7 +3249,7 @@
  },
  "learned": {
   "bars": 3561,
-  "events": 1865,
+  "events": 1866,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -3287,9 +3287,9 @@
     "name": "RSI買われすぎ反落",
     "dir": "short",
     "key": "against|trend",
-    "n": 28,
-    "winRate": 0.39285714285714285,
-    "avgR": 0.15451998186224913
+    "n": 29,
+    "winRate": 0.3793103448275862,
+    "avgR": 0.11399419423679985
    }
   ]
  },
@@ -3351,26 +3351,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
