@@ -12,9 +12,14 @@ const E = require('../engine.js');
 const S = require('../strategies.js');
 
 const [out, ...pairArgs] = process.argv.slice(2);
+// TF=4h / 1day など1時間足以外のときは、時刻・日付に依存する手法を除く。PATTERNS=1 で engine の16パターンも審査する
+const TF = process.env.TF || '1h';
+const LIST = S.STRATEGIES.filter(st => TF === '1h' || !S.isIntraday(st))
+  .concat(process.env.PATTERNS ? E.PATTERNS.map(S.patternStrategy) : []);
 const NULLS = Number(process.env.NULLS || 10);
 const SPREADS = { 'USD/JPY': 0.5, 'EUR/JPY': 0.6, 'GBP/JPY': 1.0, 'AUD/JPY': 0.6, 'NZD/JPY': 1.0, 'EUR/USD': 0.4, 'GBP/USD': 0.9, 'AUD/USD': 0.6 };
-const YEAR = 365.25 * 86400e3;
+// 1周の長さ（年）。日足など取引の少ない時間足では長くする（例 ROUND_YEARS=5 で、直近15年を5年×3周）
+const YEAR = 365.25 * 86400e3 * Number(process.env.ROUND_YEARS || 1);
 
 function load(file) {
   return zlib.gunzipSync(fs.readFileSync(file)).toString().trim().split('\n').slice(1)
@@ -71,7 +76,7 @@ for (const arg of pairArgs) {
   const c = load(file), lastT = c[c.length - 1].t;
   const nulls = Array.from({ length: NULLS }, (_, k) => shuffled(c, 7000 + k));
   result.pairs[symbol] = { from: c[0].t, to: lastT, bars: c.length, strategies: {} };
-  for (const st of S.STRATEGIES) {
+  for (const st of LIST) {
     if (st.jpyOnly && !/JPY/.test(symbol)) continue; // 円特有の手法は円のペアだけで審査
     const j = judge(trades(c, symbol, st), lastT);
     const nullPass = nulls.filter(nc => judge(trades(nc, symbol, st), lastT).passT).length / (NULLS || 1);
@@ -81,5 +86,10 @@ for (const arg of pairArgs) {
     console.log(`${symbol.padEnd(8)} ${st.name.padEnd(18)} 全期間 ${String(j.all.n).padStart(4)}回 ${j.all.sumR.toFixed(1).padStart(7)}R | 各周 ${j.rounds.map(r => (r.sel ? '' : '×') + r.test.sumR.toFixed(1)).join(' / ')} | 検証3年 t=${j.testAll.t.toFixed(2)} | シャッフル合格率 ${(nullPass * 100).toFixed(0)}% ${pass ? '★合格' : ''}`);
   }
 }
+// たくさん試すと偶然の合格が混じる：各手法のシャッフル合格率を足すと「運だけで期待される合格数」になる
+let tests = 0, expected = 0;
+for (const p of Object.values(result.pairs)) for (const r of Object.values(p.strategies)) { tests++; expected += r.nullPass; }
+Object.assign(result, { tf: TF, tests, expectedChancePasses: expected });
+console.log(`時間足 ${TF}：試した数 ${tests}、運だけで期待される合格数 ${expected.toFixed(1)}`);
 fs.writeFileSync(out, JSON.stringify(result, null, 1));
 console.log(`合格：${result.approved.length}件`, result.approved.map(a => `${a.symbol} ${a.name}`).join('、'));

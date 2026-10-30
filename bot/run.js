@@ -35,9 +35,9 @@ function note(title, message) {
   notes.push({ title, message }); console.log(`[${title}] ${message}`);
 }
 
-async function fetchBars() {
+async function fetchBars(interval = CONFIG.interval, outputsize = 5000) {
   const u = new URL('https://api.twelvedata.com/time_series');
-  u.search = new URLSearchParams({ symbol: CONFIG.symbol, interval: CONFIG.interval, outputsize: 5000, timezone: 'UTC', apikey: KEY });
+  u.search = new URLSearchParams({ symbol: CONFIG.symbol, interval, outputsize, timezone: 'UTC', apikey: KEY });
   let res, j;
   for (let attempt = 0; ; attempt++) {
     res = await fetch(u);
@@ -228,6 +228,52 @@ async function main() {
     }
     L.trades = L.trades.slice(0, 300);
     L.equity = L.balance + L.positions.reduce((a, p) => a + E.positionPnl(p, price), 0);
+  }
+
+  // 3d) スイング口座（日足）：日足の審査（5年×3周＋シャッフル比較）に合格した手法だけで売買する。1日1回（UTC 0時の後の最初の実行）判定し、
+  //     決済は1時間足で確認する。保有期限は日足の本数 × 24時間（市場が開いている時間で数える）
+  const SW = CONFIG.swing;
+  if (SW && SW.enabled) {
+    const S = require('../strategies.js');
+    let list = [];
+    try { list = (JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'approved.json'), 'utf8')).swing || []).filter(a => a.symbol === CONFIG.symbol); } catch {}
+    if (list.length || state.swing) {
+      const W = (state.swing ||= { start: SW.start, balance: SW.start, startT: now, positions: [], trades: [], lastDay: null });
+      W.strategies = list.map(a => a.strategy);
+      for (const pos of [...W.positions]) {
+        const x = E.checkExit(pos, c, now, price);
+        if (!x) continue;
+        const pnl = E.positionPnl(pos, x.price);
+        W.balance += pnl;
+        W.trades.unshift({ ...pos, exit: x.price, closeT: x.t, reason: x.reason, pnl });
+        W.positions = W.positions.filter(p => p !== pos);
+        note(`FX スイング 決済 ${REASON[x.reason]} ${signedYen(pnl)}`, `${pos.dir === 'long' ? '買い' : '売り'} ${fmt(pos.entry)} → ${fmt(x.price)}（${pos.name}）\n残高 ${yen(W.balance)}`);
+      }
+      const today = new Date(now).toISOString().slice(0, 10);
+      if (list.length && W.lastDay !== today && E.isMarketOpen(now)) {
+        const dc = await fetchBars('1day', 800);
+        W.lastDay = today;
+        const dd = E.computeIndicators(dc), dx = S.extras(dc, dd);
+        const di = dc[dc.length - 1].t >= Date.parse(today) ? dc.length - 2 : dc.length - 1; // 前日の確定した日足
+        for (const a of list) {
+          const st = S.getStrategy(a.strategy);
+          if (!st || W.positions.some(p => p.key === st.id)) continue;
+          const dir = st.signal(dc, dd, dx, di);
+          if (!dir || isNaN(dd.atr[di])) continue;
+          const s = dir === 'long' ? 1 : -1, ex = st.exit;
+          const entry = price + s * CONFIG.spreadPips * E.pipSize(CONFIG.symbol);
+          const sl = entry - s * dd.atr[di] * ex.sl;
+          const tp = ex.type === 'atr' ? entry + s * dd.atr[di] * ex.tp : entry + s * dd.atr[di] * 100;
+          const bars = ex.type === 'atr' ? ex.maxBars : ex.bars;
+          const units = E.positionUnits({ balance: W.balance, riskPct: SW.riskPct / list.length, entry, sl, leverage: LEVERAGE });
+          if (!units) continue;
+          W.positions.push({ key: st.id, dir, pattern: st.id, name: st.name + '（日足）', units, entry, sl, tp, barT: c[c.length - 1].t, openT: now, deadline: E.addMarketTime(now, bars * 24 * 3600e3) });
+          note(`FX スイング ${dir === 'long' ? '買い' : '売り'}エントリー`, `${CONFIG.symbol} ${units.toLocaleString()}通貨 @${fmt(entry)}\n利確 ${fmt(tp)} / 損切り ${fmt(sl)}\n${st.name}（日足）`);
+        }
+      }
+      W.trades = W.trades.slice(0, 300);
+      W.equity = W.balance + W.positions.reduce((a, p) => a + E.positionPnl(p, price), 0);
+    }
   }
 
   // 4) 日次レポート（日本時間で日付が変わって最初の実行）

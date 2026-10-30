@@ -58,5 +58,10 @@
     "enabled": true,
     "start": 100000,
     "riskPct": 2
+  },
+  "swing": {
+    "enabled": true,
+    "start": 100000,
+    "riskPct": 2
   }
 }

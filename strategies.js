@@ -352,5 +352,20 @@
     return { r, outcome: r > 0 ? 'win' : 'loss', bars: exit.bars };
   }
 
-  return { STRATEGIES, extras, simulateStrategy, isGotobi, londonHour };
+  // 時刻・日付に依存する手法か（1時間足専用。4時間足・日足の審査では除く）
+  function isIntraday(st) {
+    return /jst\(|getUTCHours|londonHour|dayKey|isGotobi|getUTCDay|dayOpen|prevRange|prevHigh|prevClose|prevNR7/.test(st.signal.toString());
+  }
+
+  // engine の基本パターンを手法の形にする（id は 'pat_' + パターンid。出口は通常口座と同じ 利確2・損切り1 ATR・24本）
+  function patternStrategy(p) {
+    return { id: 'pat_' + p.id, name: 'パターン:' + p.name, exit: { type: 'atr', tp: 2, sl: 1, maxBars: 24 },
+      signal: (c, d, x, i) => (p.test(c, d, i) ? p.dir : null) };
+  }
+  function getStrategy(id) {
+    if (id.startsWith('pat_')) { const p = E.PATTERNS.find(q => 'pat_' + q.id === id); return p ? patternStrategy(p) : null; }
+    return STRATEGIES.find(s => s.id === id) || null;
+  }
+
+  return { STRATEGIES, extras, simulateStrategy, isGotobi, londonHour, isIntraday, patternStrategy, getStrategy };
 });
