@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 102881.0109469248,
+  "balance": 106577.23575392368,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 7000,
-   "entry": 175.893,
-   "sl": 176.16601605764276,
-   "tp": 175.36496788471445,
-   "barT": 1793361600000,
-   "openT": 1793362021194,
-   "deadline": 1793621221194
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 7000,
+    "entry": 175.893,
+    "sl": 176.16601605764276,
+    "tp": 175.36496788471445,
+    "barT": 1793361600000,
+    "openT": 1793362021194,
+    "deadline": 1793621221194,
+    "exit": 175.36496788471445,
+    "closeT": 1793365200000,
+    "reason": "tp",
+    "pnl": 3696.2248069988846
+   },
    {
     "dir": "long",
     "pattern": "engulf_up",
@@ -158,7 +163,7 @@
    "entry": 175.899,
    "sl": 176.16601605764276,
    "tp": 175.36496788471445,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -174,7 +179,7 @@
    "entry": 175.899,
    "sl": 176.16601605764276,
    "tp": 175.36496788471445,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -3514,16 +3519,16 @@
  },
  "reportDay": "2026-10-30",
  "skipReview": {
-  "n": 177,
+  "n": 178,
   "wouldLose": 139,
-  "wouldWin": 38
+  "wouldWin": 39
  },
  "version": 1,
- "lastRun": 1793367420791,
+ "lastRun": 1793368701800,
  "lastBarT": 1793365200000,
- "price": 175.5728,
- "equity": 105122.41094692479,
- "unreal": 2241.3999999999987,
+ "price": 175.34654,
+ "equity": 106577.23575392368,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3638,6 +3643,13 @@
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 2,
+   "wins": 1,
+   "recentLosses": 1,
+   "streak": 0,
+   "suspended": false
+  },
   "engulf_up": {
    "n": 3,
    "wins": 1,
@@ -3650,13 +3662,6 @@
    "wins": 1,
    "recentLosses": 1,
    "streak": 0,
-   "suspended": false
-  },
-  "bb_break_dn": {
-   "n": 1,
-   "wins": 0,
-   "recentLosses": 1,
-   "streak": 1,
    "suspended": false
   },
   "macd_dn": {
