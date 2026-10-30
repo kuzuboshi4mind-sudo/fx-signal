@@ -307,7 +307,7 @@
    "entry": 110.63218,
    "sl": 110.85570816940606,
    "tp": 110.18512366118792,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -323,7 +323,7 @@
    "entry": 110.6737,
    "sl": 110.90164418243728,
    "tp": 110.21781163512543,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3725,14 +3725,14 @@
  },
  "reportDay": "2026-10-31",
  "skipReview": {
-  "n": 172,
-  "wouldLose": 122,
+  "n": 174,
+  "wouldLose": 124,
   "wouldWin": 50
  },
  "version": 1,
- "lastRun": 1793392621547,
+ "lastRun": 1793393521651,
  "lastBarT": 1793390400000,
- "price": 110.80927,
+ "price": 110.89883,
  "equity": 95931.70619622874,
  "unreal": 0,
  "config": {
@@ -3804,7 +3804,7 @@
  },
  "learned": {
   "bars": 3600,
-  "events": 1893,
+  "events": 1895,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
