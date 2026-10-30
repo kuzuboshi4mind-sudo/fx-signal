@@ -6,7 +6,18 @@
   "balance": 95063.4694301976,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "units": 7000,
+   "entry": 157.29424,
+   "sl": 157.04654113123152,
+   "tp": 157.77463773753698,
+   "barT": 1793365200000,
+   "openT": 1793365620825,
+   "deadline": 1793624820825
+  },
   "trades": [
    {
     "dir": "long",
@@ -251,6 +262,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793361600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 157.28924,
+   "sl": 157.04654113123152,
+   "tp": 157.77463773753698,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793358000000,
    "pattern": "donchian_dn",
@@ -3305,14 +3328,14 @@
    ]
   }
  ],
- "lastEvalT": 1793358000000,
+ "lastEvalT": 1793361600000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793364720232,
- "lastBarT": 1793361600000,
- "price": 157.24764,
- "equity": 95063.4694301976,
- "unreal": 0,
+ "lastRun": 1793365620825,
+ "lastBarT": 1793365200000,
+ "price": 157.28924,
+ "equity": 95028.46943019763,
+ "unreal": -34.99999999996817,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -3381,7 +3404,7 @@
   }
  },
  "learned": {
-  "bars": 3592,
+  "bars": 3593,
   "events": 1924,
   "win": [
    {
@@ -3500,7 +3523,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 99677.33437518678,

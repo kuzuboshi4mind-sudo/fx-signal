@@ -3005,7 +3005,7 @@
    ]
   }
  ],
- "lastEvalT": 1793358000000,
+ "lastEvalT": 1793361600000,
  "adaptive": {
   "start": 100000,
   "balance": 101182.52805924905,
@@ -3399,11 +3399,11 @@
   "wouldWin": 51
  },
  "version": 1,
- "lastRun": 1793364721948,
- "lastBarT": 1793361600000,
- "price": 88.62868,
- "equity": 111645.29018499925,
- "unreal": -90.22000000018693,
+ "lastRun": 1793365622479,
+ "lastBarT": 1793365200000,
+ "price": 88.60065,
+ "equity": 112009.68018499926,
+ "unreal": 274.1699999998275,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -3472,7 +3472,7 @@
   }
  },
  "learned": {
-  "bars": 3592,
+  "bars": 3593,
   "events": 1902,
   "win": [
    {
