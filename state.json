@@ -259,7 +259,7 @@
    "entry": 157.27598,
    "sl": 157.47898504109654,
    "tp": 156.86996991780697,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -275,7 +275,7 @@
    "entry": 157.27598,
    "sl": 157.47898504109654,
    "tp": 156.86996991780697,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -291,7 +291,7 @@
    "entry": 157.27598,
    "sl": 157.47898504109654,
    "tp": 156.86996991780697,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -307,7 +307,7 @@
    "entry": 157.27598,
    "sl": 157.47898504109654,
    "tp": 156.86996991780697,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3245,9 +3245,9 @@
  "lastEvalT": 1793318400000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793324220930,
+ "lastRun": 1793325365462,
  "lastBarT": 1793322000000,
- "price": 157.46159,
+ "price": 157.47041,
  "equity": 95063.4694301976,
  "unreal": 0,
  "config": {
@@ -3314,7 +3314,7 @@
  },
  "learned": {
   "bars": 3581,
-  "events": 1916,
+  "events": 1920,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4095,11 +4095,11 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 101852.74437518686
+  "equity": 101932.12437518672
  },
  "skipReview": {
-  "n": 154,
-  "wouldLose": 120,
+  "n": 158,
+  "wouldLose": 124,
   "wouldWin": 34
  },
  "latest": {
@@ -4194,6 +4194,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 102046.27000000035
+  "equity": 101993.35000000044
  }
 }
