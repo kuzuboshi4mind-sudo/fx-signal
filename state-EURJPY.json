@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 104958.22327167071,
+  "balance": 102881.0109469248,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 8000,
-   "entry": 176.30378,
-   "sl": 176.04412845940675,
-   "tp": 176.8050830811865,
-   "barT": 1793340000000,
-   "openT": 1793340420623,
-   "deadline": 1793599620623
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 8000,
+    "entry": 176.30378,
+    "sl": 176.04412845940675,
+    "tp": 176.8050830811865,
+    "barT": 1793340000000,
+    "openT": 1793340420623,
+    "deadline": 1793599620623,
+    "exit": 176.04412845940675,
+    "closeT": 1793347200000,
+    "reason": "sl",
+    "pnl": -2077.212324745915
+   },
    {
     "dir": "long",
     "pattern": "engulf_up",
@@ -126,7 +131,7 @@
    "entry": 176.29778,
    "sl": 176.04412845940675,
    "tp": 176.8050830811865,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -3443,11 +3448,11 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793348520911,
+ "lastRun": 1793349421578,
  "lastBarT": 1793347200000,
- "price": 176.13515,
- "equity": 103609.18327167087,
- "unreal": -1349.0399999998317,
+ "price": 176.00189,
+ "equity": 102881.0109469248,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3517,15 +3522,15 @@
  },
  "learned": {
   "bars": 3588,
-  "events": 1829,
+  "events": 1830,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 34,
-    "winRate": 0.5588235294117647,
-    "avgR": 0.6593303909060637
+    "n": 35,
+    "winRate": 0.5428571428571428,
+    "avgR": 0.6115830297579865
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -3555,10 +3560,10 @@
  },
  "review": {
   "engulf_up": {
-   "n": 2,
+   "n": 3,
    "wins": 1,
-   "recentLosses": 1,
-   "streak": 1,
+   "recentLosses": 2,
+   "streak": 2,
    "suspended": false
   },
   "ema_cross_dn": {
