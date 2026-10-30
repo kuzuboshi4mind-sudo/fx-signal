@@ -3344,9 +3344,9 @@
   "wouldWin": 51
  },
  "version": 1,
- "lastRun": 1793360222046,
+ "lastRun": 1793361122138,
  "lastBarT": 1793358000000,
- "price": 88.71936,
+ "price": 88.67984,
  "equity": 111735.51018499944,
  "unreal": 0,
  "config": {
@@ -3418,7 +3418,7 @@
  },
  "learned": {
   "bars": 3591,
-  "events": 1900,
+  "events": 1901,
   "win": [
    {
     "name": "20本高値ブレイク",

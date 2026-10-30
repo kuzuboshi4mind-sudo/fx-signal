@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 100026.80059950816,
+  "balance": 97877.6905995082,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 9000,
-   "entry": 110.63239,
-   "sl": 110.42581255003493,
-   "tp": 111.02754489993012,
-   "barT": 1793358000000,
-   "openT": 1793358421001,
-   "deadline": 1793617621001
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 9000,
+    "entry": 110.63239,
+    "sl": 110.42581255003493,
+    "tp": 111.02754489993012,
+    "barT": 1793358000000,
+    "openT": 1793358421001,
+    "deadline": 1793617621001,
+    "exit": 110.3936,
+    "closeT": 1793361121665,
+    "reason": "sl",
+    "pnl": -2149.1099999999506
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -286,7 +291,7 @@
    "entry": 110.62639,
    "sl": 110.42581255003493,
    "tp": 111.02754489993012,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -3602,11 +3607,11 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793360221683,
+ "lastRun": 1793361121665,
  "lastBarT": 1793358000000,
- "price": 110.50366,
- "equity": 98868.23059950813,
- "unreal": -1158.5700000000402,
+ "price": 110.3936,
+ "equity": 97877.6905995082,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3676,7 +3681,7 @@
  },
  "learned": {
   "bars": 3591,
-  "events": 1885,
+  "events": 1886,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -3698,9 +3703,9 @@
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|trend",
-    "n": 39,
-    "winRate": 0.4358974358974359,
-    "avgR": 0.3749885314320151
+    "n": 40,
+    "winRate": 0.425,
+    "avgR": 0.3402398977478197
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -3729,6 +3734,13 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 3,
+   "wins": 0,
+   "recentLosses": 3,
+   "streak": 3,
+   "suspended": true
+  },
   "bb_break_dn": {
    "n": 2,
    "wins": 1,
@@ -3751,13 +3763,6 @@
    "suspended": false
   },
   "ema_cross_up": {
-   "n": 2,
-   "wins": 0,
-   "recentLosses": 2,
-   "streak": 2,
-   "suspended": false
-  },
-  "engulf_up": {
    "n": 2,
    "wins": 0,
    "recentLosses": 2,
