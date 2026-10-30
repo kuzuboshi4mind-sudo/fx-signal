@@ -252,6 +252,70 @@
  },
  "log": [
   {
+   "t": 1793318400000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 157.27598,
+   "sl": 157.47898504109654,
+   "tp": 156.86996991780697,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793318400000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 157.27598,
+   "sl": 157.47898504109654,
+   "tp": 156.86996991780697,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793318400000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 157.27598,
+   "sl": 157.47898504109654,
+   "tp": 156.86996991780697,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793318400000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 157.27598,
+   "sl": 157.47898504109654,
+   "tp": 156.86996991780697,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793314800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -3178,12 +3242,12 @@
    ]
   }
  ],
- "lastEvalT": 1793314800000,
+ "lastEvalT": 1793318400000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793321520316,
- "lastBarT": 1793318400000,
- "price": 157.55626,
+ "lastRun": 1793322420612,
+ "lastBarT": 1793322000000,
+ "price": 157.27598,
  "equity": 95063.4694301976,
  "unreal": 0,
  "config": {
@@ -3249,8 +3313,8 @@
   }
  },
  "learned": {
-  "bars": 3580,
-  "events": 1914,
+  "bars": 3581,
+  "events": 1916,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3368,12 +3432,89 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
   "startT": 1791916832223,
-  "positions": [],
+  "positions": [
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 3000,
+    "entry": 157.28098,
+    "sl": 157.07797495890347,
+    "tp": 157.88999512328957,
+    "barT": 1793322000000,
+    "openT": 1793322420612,
+    "deadline": 1793581620612
+   },
+   {
+    "key": "ema_cross_dn|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 157.28098,
+    "sl": 157.07797495890347,
+    "tp": 157.88999512328957,
+    "barT": 1793322000000,
+    "openT": 1793322420612,
+    "deadline": 1793581620612
+   },
+   {
+    "key": "pullback_dn|long|2|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 3000,
+    "entry": 157.28098,
+    "sl": 157.07797495890347,
+    "tp": 157.68699008219303,
+    "barT": 1793322000000,
+    "openT": 1793322420612,
+    "deadline": 1793581620612
+   }
+  ],
   "trades": [
    {
     "key": "pullback_dn|long|3|1",
@@ -3991,7 +4132,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100227.25437518684
+  "equity": 100182.25437518688
  },
  "skipReview": {
   "n": 154,
@@ -4002,7 +4143,21 @@
   "start": 100000,
   "balance": 103189.93000000031,
   "startT": 1792033735611,
-  "positions": [],
+  "positions": [
+   {
+    "key": "vol_breakout",
+    "dir": "short",
+    "pattern": "vol_breakout",
+    "name": "ボラティリティ・ブレイクアウト",
+    "units": 6000,
+    "entry": 157.27098,
+    "sl": 157.5754875616448,
+    "tp": 136.9704758903477,
+    "barT": 1793322000000,
+    "openT": 1793322420612,
+    "deadline": 1793351220612
+   }
+  ],
   "trades": [
    {
     "key": "vol_breakout",
@@ -4076,6 +4231,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 103189.93000000031
+  "equity": 103159.93000000034
  }
 }

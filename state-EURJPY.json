@@ -103,6 +103,22 @@
  },
  "log": [
   {
+   "t": 1793318400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 176.16719,
+   "sl": 176.3995754834808,
+   "tp": 175.70241903303847,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793314800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -3091,7 +3107,7 @@
    ]
   }
  ],
- "lastEvalT": 1793314800000,
+ "lastEvalT": 1793318400000,
  "adaptive": {
   "start": 100000,
   "balance": 99235.4034578733,
@@ -3383,11 +3399,11 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793321520684,
- "lastBarT": 1793318400000,
- "price": 176.32409,
- "equity": 107582.02691053702,
- "unreal": 618.4000000000651,
+ "lastRun": 1793322422038,
+ "lastBarT": 1793322000000,
+ "price": 176.16719,
+ "equity": 106326.82691053697,
+ "unreal": -636.7999999999938,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3451,8 +3467,8 @@
   }
  },
  "learned": {
-  "bars": 3580,
-  "events": 1824,
+  "bars": 3581,
+  "events": 1826,
   "win": [
    {
     "name": "陽の包み足",
@@ -3518,7 +3534,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
