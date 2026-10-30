@@ -3364,11 +3364,11 @@
  "lastEvalT": 1793379600000,
  "reportDay": "2026-10-31",
  "version": 1,
- "lastRun": 1793385420521,
+ "lastRun": 1793386320222,
  "lastBarT": 1793383200000,
- "price": 157.31327,
- "equity": 95196.6794301975,
- "unreal": 133.2099999999059,
+ "price": 157.4026,
+ "equity": 95821.98943019763,
+ "unreal": 758.5200000000327,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4274,7 +4274,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 98924.5743751867
+  "equity": 99281.89437518678
  },
  "skipReview": {
   "n": 162,
