@@ -55,13 +55,13 @@
       er24[i] = path ? Math.abs(close[i] - close[i - 24]) / path : 0;
     }
     // 前日の高値・安値と、前日が「直近7日で最も値幅の狭い日（NR7）」か
-    const prevHigh = new Array(n).fill(NaN), prevLow = new Array(n).fill(NaN), prevNR7 = new Array(n).fill(false);
+    const prevHigh = new Array(n).fill(NaN), prevLow = new Array(n).fill(NaN), prevClose = new Array(n).fill(NaN), prevNR7 = new Array(n).fill(false);
     { const days = []; let cur = null;
       for (let i = 0; i < n; i++) {
-        if (!cur || cur.key !== dayKey[i]) { if (cur) days.push(cur); cur = { key: dayKey[i], h: -Infinity, l: Infinity }; }
+        if (!cur || cur.key !== dayKey[i]) { if (cur) { cur.c = c[i - 1].c; days.push(cur); } cur = { key: dayKey[i], h: -Infinity, l: Infinity }; }
         const last = days[days.length - 1];
         if (last) {
-          prevHigh[i] = last.h; prevLow[i] = last.l;
+          prevHigh[i] = last.h; prevLow[i] = last.l; prevClose[i] = last.c;
           if (days.length >= 7) { const r = last.h - last.l; prevNR7[i] = days.slice(-7, -1).every(dd => dd.h - dd.l > r); }
         }
         cur.h = Math.max(cur.h, c[i].h); cur.l = Math.min(cur.l, c[i].l);
@@ -74,7 +74,7 @@
       stoch56[i] = h === l ? 50 : 100 * (c[i].c - l) / (h - l);
     }
     const ema312 = E.ema(close, 312);
-    return { stoch56, ema312, er24, prevHigh, prevLow, prevNR7, hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
+    return { stoch56, ema312, er24, prevClose, prevHigh, prevLow, prevNR7, hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
   }
 
   // 五十日（ごとおび）：5・10・15・20・25日と月末。土日なら直前の金曜
@@ -310,6 +310,31 @@
         const up = (k) => d.ema20[k] + 2 * d.atr[k], dn = (k) => d.ema20[k] - 2 * d.atr[k];
         if (c[i - 1].c <= up(i - 1) && c[i].c > up(i)) return 'long';
         if (c[i - 1].c >= dn(i - 1) && c[i].c < dn(i)) return 'short';
+        return null;
+      } },
+    // ---- 2026-10-30 追加（第6弾：東京仲値・カマリラ）----
+    { id: 'nakane_daily', jpyOnly: true, name: '毎日の仲値前の円売り', source: 'Ito・Yamada「Puzzles in the Tokyo Fixing in the Forex Market」(2017)：9:55の仲値（銀行の基準レート）の前は輸入企業などのドル買い・円売りが多く、値動きが予測しやすい。五十日に限らず毎営業日、日本時間8時に円売り、10時に手じまい',
+      exit: { type: 'time', bars: 2, sl: 1.5 },
+      signal: (c, d, x, i) => { const t = jst(c[i].t); return t.getUTCHours() === 7 && t.getUTCDay() >= 1 && t.getUTCDay() <= 5 ? 'long' : null; } },
+    { id: 'nakane_fade', jpyOnly: true, name: '仲値後の反落（円の買い戻し）', source: 'Ito・Yamada (2017) ほか：仲値に向けた一方的な注文が終わると、値動きが戻りやすい。日本時間10時に円買い、15時に手じまい',
+      exit: { type: 'time', bars: 5, sl: 1.5 },
+      signal: (c, d, x, i) => { const t = jst(c[i].t); return t.getUTCHours() === 9 && t.getUTCDay() >= 1 && t.getUTCDay() <= 5 ? 'short' : null; } },
+    { id: 'camarilla_rev', name: 'カマリラ・ピボットの反転（H3/L3）', source: 'N.スコット考案とされるカマリラ式（前日の高値・安値・終値から計算）：その日の値が H3（終値＋前日値幅×1.1/4）まで上がって押し戻されたら売り、L3 で買い。個人トレーダーに人気の日中の逆張り',
+      exit: { type: 'atr', tp: 1.5, sl: 1.5, maxBars: 12 },
+      signal: (c, d, x, i) => {
+        if (isNaN(x.prevClose[i])) return null;
+        const r = x.prevHigh[i] - x.prevLow[i], h3 = x.prevClose[i] + r * 1.1 / 4, l3 = x.prevClose[i] - r * 1.1 / 4;
+        if (c[i].h >= h3 && c[i].c < h3 && c[i - 1].h < h3) return 'short';
+        if (c[i].l <= l3 && c[i].c > l3 && c[i - 1].l > l3) return 'long';
+        return null;
+      } },
+    { id: 'camarilla_bo', name: 'カマリラ・ピボットの抜け（H4/L4）', source: 'カマリラ式：H4（終値＋前日値幅×1.1/2）を終値で上に抜けたら勢いがあるとして順張り、L4 は売り',
+      exit: { type: 'atr', tp: 2, sl: 1, maxBars: 12 },
+      signal: (c, d, x, i) => {
+        if (isNaN(x.prevClose[i])) return null;
+        const r = x.prevHigh[i] - x.prevLow[i], h4 = x.prevClose[i] + r * 1.1 / 2, l4 = x.prevClose[i] - r * 1.1 / 2;
+        if (c[i].c > h4 && c[i - 1].c <= h4 && x.dayKey[i - 1] === x.dayKey[i]) return 'long';
+        if (c[i].c < l4 && c[i - 1].c >= l4 && x.dayKey[i - 1] === x.dayKey[i]) return 'short';
         return null;
       } },
   ];
