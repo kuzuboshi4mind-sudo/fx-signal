@@ -302,7 +302,7 @@
    "entry": 110.45571,
    "sl": 110.24521383140767,
    "tp": 110.87670233718464,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -373,7 +373,7 @@
    "entry": 110.67069,
    "sl": 110.87782907269191,
    "tp": 110.25641185461618,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -389,7 +389,7 @@
    "entry": 110.67069,
    "sl": 110.87782907269191,
    "tp": 110.25641185461618,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3672,16 +3672,16 @@
  },
  "reportDay": "2026-10-30",
  "skipReview": {
-  "n": 167,
-  "wouldLose": 119,
-  "wouldWin": 48
+  "n": 170,
+  "wouldLose": 120,
+  "wouldWin": 50
  },
  "version": 1,
- "lastRun": 1793369221703,
+ "lastRun": 1793370121650,
  "lastBarT": 1793368800000,
- "price": 110.42526,
- "equity": 97876.43059950831,
- "unreal": -1.2599999998883504,
+ "price": 110.28013,
+ "equity": 99182.60059950827,
+ "unreal": 1304.9100000000635,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3751,7 +3751,7 @@
  },
  "learned": {
   "bars": 3594,
-  "events": 1889,
+  "events": 1892,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
