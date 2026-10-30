@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 113950.42090041461,
+  "balance": 111735.51018499944,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "long",
-   "pattern": "macd_up",
-   "name": "MACD買いクロス",
-   "units": 13000,
-   "entry": 88.82690000000001,
-   "sl": 88.65652225266038,
-   "tp": 89.13765549467925,
-   "barT": 1793325600000,
-   "openT": 1793326021726,
-   "deadline": 1793585221726
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "macd_up",
+    "name": "MACD買いクロス",
+    "units": 13000,
+    "entry": 88.82690000000001,
+    "sl": 88.65652225266038,
+    "tp": 89.13765549467925,
+    "barT": 1793325600000,
+    "openT": 1793326021726,
+    "deadline": 1793585221726,
+    "exit": 88.65652225266038,
+    "closeT": 1793329200000,
+    "reason": "sl",
+    "pnl": -2214.910715415172
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -3275,11 +3280,11 @@
   "wouldWin": 51
  },
  "version": 1,
- "lastRun": 1793329622056,
+ "lastRun": 1793330521784,
  "lastBarT": 1793329200000,
- "price": 88.73673,
- "equity": 112778.21090041441,
- "unreal": -1172.2100000001915,
+ "price": 88.73172,
+ "equity": 111735.51018499944,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
