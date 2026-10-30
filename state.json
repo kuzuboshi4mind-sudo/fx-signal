@@ -3276,9 +3276,9 @@
  "lastEvalT": 1793343600000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793347620910,
+ "lastRun": 1793348520247,
  "lastBarT": 1793347200000,
- "price": 157.53991,
+ "price": 157.26995,
  "equity": 95063.4694301976,
  "unreal": 0,
  "config": {
@@ -3468,20 +3468,10 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 101445.28462176594,
+  "balance": 100895.36462176596,
   "startT": 1791916832223,
   "positions": [
    {
@@ -3509,7 +3499,9 @@
     "barT": 1793322000000,
     "openT": 1793322420612,
     "deadline": 1793581620612
-   },
+   }
+  ],
+  "trades": [
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -3521,10 +3513,12 @@
     "tp": 158.01207741935093,
     "barT": 1793347200000,
     "openT": 1793347620910,
-    "deadline": 1793606820910
-   }
-  ],
-  "trades": [
+    "deadline": 1793606820910,
+    "exit": 157.26995,
+    "closeT": 1793348520247,
+    "reason": "sl",
+    "pnl": -549.919999999986
+   },
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -4158,7 +4152,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 102988.8646217659
+  "equity": 100829.18462176592
  },
  "skipReview": {
   "n": 159,
