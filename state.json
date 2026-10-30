@@ -3245,9 +3245,9 @@
  "lastEvalT": 1793318400000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793322420612,
+ "lastRun": 1793323320986,
  "lastBarT": 1793322000000,
- "price": 157.27598,
+ "price": 157.29735,
  "equity": 95063.4694301976,
  "unreal": 0,
  "config": {
@@ -3432,44 +3432,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 100227.25437518684,
@@ -4132,7 +4095,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100182.25437518688
+  "equity": 100374.5843751868
  },
  "skipReview": {
   "n": 154,
@@ -4231,6 +4194,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 103159.93000000034
+  "equity": 103031.7100000004
  }
 }

@@ -3646,9 +3646,9 @@
   "wouldWin": 45
  },
  "version": 1,
- "lastRun": 1793322422606,
+ "lastRun": 1793323322044,
  "lastBarT": 1793322000000,
- "price": 210.69448,
+ "price": 210.88424,
  "equity": 107712.7052925355,
  "unreal": 0,
  "config": {
@@ -3797,26 +3797,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
