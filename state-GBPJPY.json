@@ -211,7 +211,7 @@
    "entry": 211.08962,
    "sl": 210.80339869435576,
    "tp": 211.6620626112885,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3013,7 +3013,7 @@
    ]
   }
  ],
- "lastEvalT": 1793354400000,
+ "lastEvalT": 1793358000000,
  "adaptive": {
   "start": 100000,
   "balance": 92304.15447869692,
@@ -3708,14 +3708,14 @@
  },
  "reportDay": "2026-10-30",
  "skipReview": {
-  "n": 155,
-  "wouldLose": 110,
+  "n": 156,
+  "wouldLose": 111,
   "wouldWin": 45
  },
  "version": 1,
- "lastRun": 1793361121235,
- "lastBarT": 1793358000000,
- "price": 210.92592,
+ "lastRun": 1793362021691,
+ "lastBarT": 1793361600000,
+ "price": 210.96454,
  "equity": 107712.7052925355,
  "unreal": 0,
  "config": {
@@ -3786,7 +3786,7 @@
   }
  },
  "learned": {
-  "bars": 3591,
+  "bars": 3592,
   "events": 1807,
   "win": [
    {

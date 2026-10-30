@@ -6,7 +6,18 @@
   "balance": 102881.0109469248,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 7000,
+   "entry": 175.893,
+   "sl": 176.16601605764276,
+   "tp": 175.36496788471445,
+   "barT": 1793361600000,
+   "openT": 1793362021194,
+   "deadline": 1793621221194
+  },
   "trades": [
    {
     "dir": "long",
@@ -123,6 +134,34 @@
   ]
  },
  "log": [
+  {
+   "t": 1793358000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 175.899,
+   "sl": 176.16601605764276,
+   "tp": 175.36496788471445,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793358000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 175.899,
+   "sl": 176.16601605764276,
+   "tp": 175.36496788471445,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793347200000,
    "pattern": "engulf_dn",
@@ -3172,7 +3211,7 @@
    ]
   }
  ],
- "lastEvalT": 1793354400000,
+ "lastEvalT": 1793358000000,
  "adaptive": {
   "start": 100000,
   "balance": 99235.4034578733,
@@ -3464,11 +3503,11 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793361120892,
- "lastBarT": 1793358000000,
- "price": 175.82955,
- "equity": 102881.0109469248,
- "unreal": 0,
+ "lastRun": 1793362021194,
+ "lastBarT": 1793361600000,
+ "price": 175.899,
+ "equity": 102839.0109469248,
+ "unreal": -42.00000000000159,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3537,7 +3576,7 @@
   }
  },
  "learned": {
-  "bars": 3591,
+  "bars": 3592,
   "events": 1833,
   "win": [
    {
@@ -3612,7 +3651,23 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

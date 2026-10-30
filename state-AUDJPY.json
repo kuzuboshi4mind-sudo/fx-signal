@@ -6,7 +6,18 @@
   "balance": 97877.6905995082,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 9000,
+   "entry": 110.42512,
+   "sl": 110.64134048925328,
+   "tp": 110.01067902149346,
+   "barT": 1793361600000,
+   "openT": 1793362022055,
+   "deadline": 1793621222055
+  },
   "trades": [
    {
     "dir": "long",
@@ -283,6 +294,49 @@
   ]
  },
  "log": [
+  {
+   "t": 1793358000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 110.43112,
+   "sl": 110.64134048925328,
+   "tp": 110.01067902149346,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1793358000000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 110.43112,
+   "sl": 110.64134048925328,
+   "tp": 110.01067902149346,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793358000000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 110.43112,
+   "sl": 110.64134048925328,
+   "tp": 110.01067902149346,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793354400000,
    "pattern": "engulf_up",
@@ -3400,7 +3454,7 @@
    ]
   }
  ],
- "lastEvalT": 1793354400000,
+ "lastEvalT": 1793358000000,
  "adaptive": {
   "start": 100000,
   "balance": 94702.87127822843,
@@ -3607,11 +3661,11 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793361121665,
- "lastBarT": 1793358000000,
- "price": 110.3936,
- "equity": 97877.6905995082,
- "unreal": 0,
+ "lastRun": 1793362022055,
+ "lastBarT": 1793361600000,
+ "price": 110.43112,
+ "equity": 97823.6905995082,
+ "unreal": -54.000000000002046,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3680,7 +3734,7 @@
   }
  },
  "learned": {
-  "bars": 3591,
+  "bars": 3592,
   "events": 1886,
   "win": [
    {
@@ -3798,7 +3852,31 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
