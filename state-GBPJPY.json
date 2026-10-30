@@ -199,6 +199,37 @@
  },
  "log": [
   {
+   "t": 1793368800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 210.58525,
+   "sl": 210.2615300260245,
+   "tp": 211.23268994795097,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793368800000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 210.58525,
+   "sl": 210.2615300260245,
+   "tp": 211.23268994795097,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793365200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -3051,12 +3082,26 @@
    ]
   }
  ],
- "lastEvalT": 1793365200000,
+ "lastEvalT": 1793368800000,
  "adaptive": {
   "start": 100000,
   "balance": 92304.15447869692,
   "startT": 1791953875407,
-  "positions": [],
+  "positions": [
+   {
+    "key": "engulf_up|short|1.5|1",
+    "dir": "short",
+    "pattern": "engulf_up",
+    "name": "陽の包み足（逆向き）",
+    "units": 1000,
+    "entry": 210.57525,
+    "sl": 210.8989699739755,
+    "tp": 210.08967003903678,
+    "barT": 1793372400000,
+    "openT": 1793372823016,
+    "deadline": 1793632023016
+   }
+  ],
   "trades": [
    {
     "key": "pullback_up|short|3|1",
@@ -3742,20 +3787,20 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 92304.15447869692
+  "equity": 92294.15447869693
  },
- "reportDay": "2026-10-30",
+ "reportDay": "2026-10-31",
  "skipReview": {
   "n": 157,
   "wouldLose": 111,
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793371921234,
- "lastBarT": 1793368800000,
- "price": 210.60442,
- "equity": 106666.90529253556,
- "unreal": -1045.7999999999288,
+ "lastRun": 1793372823016,
+ "lastBarT": 1793372400000,
+ "price": 210.58525,
+ "equity": 106781.92529253558,
+ "unreal": -930.7799999999133,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -3824,7 +3869,7 @@
   }
  },
  "learned": {
-  "bars": 3594,
+  "bars": 3595,
   "events": 1808,
   "win": [
    {
@@ -3907,7 +3952,25 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

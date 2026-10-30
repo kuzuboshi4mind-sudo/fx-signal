@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 97877.6905995082,
+  "balance": 95931.70619622874,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 9000,
-   "entry": 110.42512,
-   "sl": 110.64134048925328,
-   "tp": 110.01067902149346,
-   "barT": 1793361600000,
-   "openT": 1793362022055,
-   "deadline": 1793621222055
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 9000,
+    "entry": 110.42512,
+    "sl": 110.64134048925328,
+    "tp": 110.01067902149346,
+    "barT": 1793361600000,
+    "openT": 1793362022055,
+    "deadline": 1793621222055,
+    "exit": 110.64134048925328,
+    "closeT": 1793368800000,
+    "reason": "sl",
+    "pnl": -1945.9844032794676
+   },
    {
     "dir": "long",
     "pattern": "engulf_up",
@@ -318,7 +323,7 @@
    "entry": 110.43112,
    "sl": 110.64134048925328,
    "tp": 110.01067902149346,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -333,7 +338,7 @@
    "entry": 110.43112,
    "sl": 110.64134048925328,
    "tp": 110.01067902149346,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -349,7 +354,7 @@
    "entry": 110.43112,
    "sl": 110.64134048925328,
    "tp": 110.01067902149346,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -3470,7 +3475,7 @@
    ]
   }
  ],
- "lastEvalT": 1793365200000,
+ "lastEvalT": 1793368800000,
  "adaptive": {
   "start": 100000,
   "balance": 94702.87127822843,
@@ -3670,18 +3675,18 @@
   "pickTried": "2026-10-14",
   "equity": 94702.87127822843
  },
- "reportDay": "2026-10-30",
+ "reportDay": "2026-10-31",
  "skipReview": {
-  "n": 170,
-  "wouldLose": 120,
+  "n": 172,
+  "wouldLose": 122,
   "wouldWin": 50
  },
  "version": 1,
- "lastRun": 1793371921521,
- "lastBarT": 1793368800000,
- "price": 110.60868,
- "equity": 96225.65059950821,
- "unreal": -1652.0399999999995,
+ "lastRun": 1793372823729,
+ "lastBarT": 1793372400000,
+ "price": 110.5963,
+ "equity": 95931.70619622874,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3750,7 +3755,7 @@
   }
  },
  "learned": {
-  "bars": 3594,
+  "bars": 3595,
   "events": 1892,
   "win": [
    {
@@ -3804,19 +3809,19 @@
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 3,
+   "wins": 1,
+   "recentLosses": 2,
+   "streak": 2,
+   "suspended": false
+  },
   "engulf_up": {
    "n": 3,
    "wins": 0,
    "recentLosses": 3,
    "streak": 3,
    "suspended": true
-  },
-  "bb_break_dn": {
-   "n": 2,
-   "wins": 1,
-   "recentLosses": 1,
-   "streak": 1,
-   "suspended": false
   },
   "rsi_fall": {
    "n": 1,
