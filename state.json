@@ -3328,14 +3328,14 @@
    ]
   }
  ],
- "lastEvalT": 1793361600000,
+ "lastEvalT": 1793365200000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793368701390,
- "lastBarT": 1793365200000,
- "price": 157.25805,
- "equity": 94810.13943019757,
- "unreal": -253.3300000000338,
+ "lastRun": 1793369220602,
+ "lastBarT": 1793368800000,
+ "price": 157.31802,
+ "equity": 95229.92943019752,
+ "unreal": 166.45999999991545,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -3404,7 +3404,7 @@
   }
  },
  "learned": {
-  "bars": 3593,
+  "bars": 3594,
   "events": 1924,
   "win": [
    {

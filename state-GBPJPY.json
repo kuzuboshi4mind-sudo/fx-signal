@@ -6,7 +6,18 @@
   "balance": 107712.7052925355,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 6000,
+   "entry": 210.43012000000002,
+   "sl": 210.7551799719736,
+   "tp": 209.81000005605281,
+   "barT": 1793368800000,
+   "openT": 1793369221352,
+   "deadline": 1793628421352
+  },
   "trades": [
    {
     "dir": "long",
@@ -187,6 +198,33 @@
   ]
  },
  "log": [
+  {
+   "t": 1793365200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 210.44012,
+   "sl": 210.7551799719736,
+   "tp": 209.81000005605281,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン"
+   ]
+  },
+  {
+   "t": 1793365200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 210.44012,
+   "sl": 210.7551799719736,
+   "tp": 209.81000005605281,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793347200000,
    "pattern": "engulf_dn",
@@ -3013,7 +3051,7 @@
    ]
   }
  ],
- "lastEvalT": 1793361600000,
+ "lastEvalT": 1793365200000,
  "adaptive": {
   "start": 100000,
   "balance": 92304.15447869692,
@@ -3713,11 +3751,11 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793368702418,
- "lastBarT": 1793365200000,
- "price": 210.46888,
- "equity": 107712.7052925355,
- "unreal": 0,
+ "lastRun": 1793369221352,
+ "lastBarT": 1793368800000,
+ "price": 210.44012,
+ "equity": 107652.70529253555,
+ "unreal": -59.99999999994543,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -3786,7 +3824,7 @@
   }
  },
  "learned": {
-  "bars": 3593,
+  "bars": 3594,
   "events": 1808,
   "win": [
    {
@@ -3869,7 +3907,22 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

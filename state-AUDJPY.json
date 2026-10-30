@@ -3470,7 +3470,7 @@
    ]
   }
  ],
- "lastEvalT": 1793361600000,
+ "lastEvalT": 1793365200000,
  "adaptive": {
   "start": 100000,
   "balance": 94702.87127822843,
@@ -3677,11 +3677,11 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793368702744,
- "lastBarT": 1793365200000,
- "price": 110.43308,
- "equity": 97806.05059950823,
- "unreal": -71.63999999997372,
+ "lastRun": 1793369221703,
+ "lastBarT": 1793368800000,
+ "price": 110.42526,
+ "equity": 97876.43059950831,
+ "unreal": -1.2599999998883504,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3750,7 +3750,7 @@
   }
  },
  "learned": {
-  "bars": 3593,
+  "bars": 3594,
   "events": 1889,
   "win": [
    {
