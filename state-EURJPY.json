@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 106963.62691053696,
+  "balance": 104958.22327167071,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 8000,
-   "entry": 176.24679,
-   "sl": 175.99611454514172,
-   "tp": 176.73014090971654,
-   "barT": 1793286000000,
-   "openT": 1793286421227,
-   "deadline": 1793372821227
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 8000,
+    "entry": 176.24679,
+    "sl": 175.99611454514172,
+    "tp": 176.73014090971654,
+    "barT": 1793286000000,
+    "openT": 1793286421227,
+    "deadline": 1793372821227,
+    "exit": 175.99611454514172,
+    "closeT": 1793332800000,
+    "reason": "sl",
+    "pnl": -2005.4036388662553
+   },
    {
     "dir": "short",
     "pattern": "ema_cross_dn",
@@ -222,7 +227,7 @@
    "entry": 176.24079,
    "sl": 175.99611454514172,
    "tp": 176.73014090971654,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -234,7 +239,7 @@
    "entry": 176.24079,
    "sl": 175.99611454514172,
    "tp": 176.73014090971654,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -250,7 +255,7 @@
    "entry": 176.24079,
    "sl": 175.99611454514172,
    "tp": 176.73014090971654,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3410,16 +3415,16 @@
  },
  "reportDay": "2026-10-30",
  "skipReview": {
-  "n": 173,
-  "wouldLose": 136,
+  "n": 175,
+  "wouldLose": 138,
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793335020827,
+ "lastRun": 1793335921229,
  "lastBarT": 1793332800000,
- "price": 176.00696,
- "equity": 105044.98691053686,
- "unreal": -1918.6400000000958,
+ "price": 176.11836,
+ "equity": 104958.22327167071,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3526,6 +3531,13 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 2,
+   "wins": 1,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "ema_cross_dn": {
    "n": 2,
    "wins": 1,
@@ -3545,13 +3557,6 @@
    "wins": 0,
    "recentLosses": 1,
    "streak": 1,
-   "suspended": false
-  },
-  "engulf_up": {
-   "n": 1,
-   "wins": 1,
-   "recentLosses": 0,
-   "streak": 0,
    "suspended": false
   }
  },
