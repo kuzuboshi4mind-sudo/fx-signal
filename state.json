@@ -263,6 +263,23 @@
  },
  "log": [
   {
+   "t": 1793372400000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 157.43302,
+   "sl": 157.1810467147652,
+   "tp": 157.93696657046965,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793361600000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -282,7 +299,7 @@
    "entry": 157.17583,
    "sl": 157.41509108944297,
    "tp": 156.69730782111404,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -298,7 +315,7 @@
    "entry": 157.17583,
    "sl": 157.41509108944297,
    "tp": 156.69730782111404,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3328,14 +3345,14 @@
    ]
   }
  ],
- "lastEvalT": 1793368800000,
+ "lastEvalT": 1793372400000,
  "reportDay": "2026-10-31",
  "version": 1,
- "lastRun": 1793375520534,
- "lastBarT": 1793372400000,
- "price": 157.31799,
- "equity": 95229.71943019764,
- "unreal": 166.25000000004775,
+ "lastRun": 1793376420995,
+ "lastBarT": 1793376000000,
+ "price": 157.43302,
+ "equity": 96034.92943019758,
+ "unreal": 971.4599999999791,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -3404,7 +3421,7 @@
   }
  },
  "learned": {
-  "bars": 3595,
+  "bars": 3596,
   "events": 1924,
   "win": [
    {
@@ -3523,7 +3540,18 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 99677.33437518678,
@@ -4217,8 +4245,8 @@
   "equity": 99677.33437518678
  },
  "skipReview": {
-  "n": 160,
-  "wouldLose": 125,
+  "n": 162,
+  "wouldLose": 127,
   "wouldWin": 35
  },
  "latest": {

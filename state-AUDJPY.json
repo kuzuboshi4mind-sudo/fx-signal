@@ -300,6 +300,22 @@
  },
  "log": [
   {
+   "t": 1793372400000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 110.7541,
+   "sl": 110.52075059314966,
+   "tp": 111.22079881370067,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793361600000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -3475,7 +3491,7 @@
    ]
   }
  ],
- "lastEvalT": 1793368800000,
+ "lastEvalT": 1793372400000,
  "adaptive": {
   "start": 100000,
   "balance": 94702.87127822843,
@@ -3682,9 +3698,9 @@
   "wouldWin": 50
  },
  "version": 1,
- "lastRun": 1793375521654,
- "lastBarT": 1793372400000,
- "price": 110.62285,
+ "lastRun": 1793376422962,
+ "lastBarT": 1793376000000,
+ "price": 110.7541,
  "equity": 95931.70619622874,
  "unreal": 0,
  "config": {
@@ -3755,7 +3771,7 @@
   }
  },
  "learned": {
-  "bars": 3595,
+  "bars": 3596,
   "events": 1892,
   "win": [
    {
@@ -3873,7 +3889,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

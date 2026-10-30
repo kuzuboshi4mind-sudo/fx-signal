@@ -140,6 +140,22 @@
  },
  "log": [
   {
+   "t": 1793372400000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 175.84798,
+   "sl": 175.5314762301558,
+   "tp": 176.48098753968844,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793365200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -3263,25 +3279,12 @@
    ]
   }
  ],
- "lastEvalT": 1793368800000,
+ "lastEvalT": 1793372400000,
  "adaptive": {
   "start": 100000,
-  "balance": 99235.4034578733,
+  "balance": 100945.18898057626,
   "startT": 1791953874927,
   "positions": [
-   {
-    "key": "ema_cross_dn|long|2|1.5",
-    "dir": "long",
-    "pattern": "ema_cross_dn",
-    "name": "デッドクロス(EMA20/50)（逆向き）",
-    "units": 1000,
-    "entry": 175.27062,
-    "sl": 174.84317361932426,
-    "tp": 175.84054850756766,
-    "barT": 1793368800000,
-    "openT": 1793369220979,
-    "deadline": 1793628420979
-   },
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -3294,7 +3297,9 @@
     "barT": 1793368800000,
     "openT": 1793369220979,
     "deadline": 1793628420979
-   },
+   }
+  ],
+  "trades": [
    {
     "key": "ema_cross_dn|long|2|1",
     "dir": "long",
@@ -3306,10 +3311,29 @@
     "tp": 175.84054850756766,
     "barT": 1793368800000,
     "openT": 1793369220979,
-    "deadline": 1793628420979
-   }
-  ],
-  "trades": [
+    "deadline": 1793628420979,
+    "exit": 175.84054850756766,
+    "closeT": 1793376000000,
+    "reason": "tp",
+    "pnl": 1139.8570151353056
+   },
+   {
+    "key": "ema_cross_dn|long|2|1.5",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 1000,
+    "entry": 175.27062,
+    "sl": 174.84317361932426,
+    "tp": 175.84054850756766,
+    "barT": 1793368800000,
+    "openT": 1793369220979,
+    "deadline": 1793628420979,
+    "exit": 175.84054850756766,
+    "closeT": 1793376000000,
+    "reason": "tp",
+    "pnl": 569.9285075676528
+   },
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -3586,7 +3610,7 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100433.55345787332
+  "equity": 102099.90898057626
  },
  "reportDay": "2026-10-31",
  "skipReview": {
@@ -3595,9 +3619,9 @@
   "wouldWin": 40
  },
  "version": 1,
- "lastRun": 1793375520917,
- "lastBarT": 1793372400000,
- "price": 175.51025,
+ "lastRun": 1793376421437,
+ "lastBarT": 1793376000000,
+ "price": 175.84798,
  "equity": 106577.23575392368,
  "unreal": 0,
  "config": {
@@ -3668,8 +3692,8 @@
   }
  },
  "learned": {
-  "bars": 3595,
-  "events": 1837,
+  "bars": 3596,
+  "events": 1839,
   "win": [
    {
     "name": "陽の包み足",
@@ -3743,7 +3767,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
