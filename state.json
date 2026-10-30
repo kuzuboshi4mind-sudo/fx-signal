@@ -259,7 +259,7 @@
    "entry": 157.53991,
    "sl": 157.77349370967548,
    "tp": 157.07274258064905,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3276,9 +3276,9 @@
  "lastEvalT": 1793354400000,
  "reportDay": "2026-10-30",
  "version": 1,
- "lastRun": 1793358420072,
+ "lastRun": 1793359320314,
  "lastBarT": 1793358000000,
- "price": 157.21112,
+ "price": 157.13051,
  "equity": 95063.4694301976,
  "unreal": 0,
  "config": {
@@ -3350,7 +3350,7 @@
  },
  "learned": {
   "bars": 3591,
-  "events": 1921,
+  "events": 1922,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3471,22 +3471,10 @@
  "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 100895.36462176596,
+  "balance": 99677.33437518678,
   "startT": 1791916832223,
-  "positions": [
-   {
-    "key": "pullback_dn|long|3|1",
-    "dir": "long",
-    "pattern": "pullback_dn",
-    "name": "下降トレンドの戻り（逆向き）",
-    "units": 3000,
-    "entry": 157.28098,
-    "sl": 157.07797495890347,
-    "tp": 157.88999512328957,
-    "barT": 1793322000000,
-    "openT": 1793322420612,
-    "deadline": 1793581620612
-   },
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -3498,10 +3486,29 @@
     "tp": 157.88999512328957,
     "barT": 1793322000000,
     "openT": 1793322420612,
-    "deadline": 1793581620612
-   }
-  ],
-  "trades": [
+    "deadline": 1793581620612,
+    "exit": 157.07797495890347,
+    "closeT": 1793358000000,
+    "reason": "sl",
+    "pnl": -609.0151232895948
+   },
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 3000,
+    "entry": 157.28098,
+    "sl": 157.07797495890347,
+    "tp": 157.88999512328957,
+    "barT": 1793322000000,
+    "openT": 1793322420612,
+    "deadline": 1793581620612,
+    "exit": 157.07797495890347,
+    "closeT": 1793358000000,
+    "reason": "sl",
+    "pnl": -609.0151232895948
+   },
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -4152,12 +4159,12 @@
   ],
   "pickMonth": "2026-10",
   "pickTried": "2026-10-14",
-  "equity": 100476.20462176592
+  "equity": 99677.33437518678
  },
  "skipReview": {
-  "n": 159,
+  "n": 160,
   "wouldLose": 125,
-  "wouldWin": 34
+  "wouldWin": 35
  },
  "latest": {
   "start": 100000,
