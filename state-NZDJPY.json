@@ -3280,9 +3280,9 @@
   "wouldWin": 51
  },
  "version": 1,
- "lastRun": 1793331421644,
+ "lastRun": 1793332321641,
  "lastBarT": 1793329200000,
- "price": 88.76508,
+ "price": 88.77847,
  "equity": 111735.51018499944,
  "unreal": 0,
  "config": {
@@ -3342,6 +3342,11 @@
    }
   ],
   "latest": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2
+  },
+  "swing": {
    "enabled": true,
    "start": 100000,
    "riskPct": 2
@@ -3471,6 +3476,18 @@
   "positions": [],
   "trades": [],
   "strategies": [],
+  "equity": 100000
+ },
+ "swing": {
+  "start": 100000,
+  "balance": 100000,
+  "startT": 1793332321641,
+  "positions": [],
+  "trades": [],
+  "lastDay": "2026-10-30",
+  "strategies": [
+   "trend_stoch"
+  ],
   "equity": 100000
  }
 }

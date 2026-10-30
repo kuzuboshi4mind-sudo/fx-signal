@@ -3531,9 +3531,9 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793331421369,
+ "lastRun": 1793332321321,
  "lastBarT": 1793329200000,
- "price": 110.80864,
+ "price": 110.81891,
  "equity": 100026.80059950816,
  "unreal": 0,
  "config": {
@@ -3593,6 +3593,11 @@
    }
   ],
   "latest": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2
+  },
+  "swing": {
    "enabled": true,
    "start": 100000,
    "riskPct": 2
