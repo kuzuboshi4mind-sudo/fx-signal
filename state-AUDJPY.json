@@ -6,7 +6,18 @@
   "balance": 100026.80059950816,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 9000,
+   "entry": 110.63239,
+   "sl": 110.42581255003493,
+   "tp": 111.02754489993012,
+   "barT": 1793358000000,
+   "openT": 1793358421001,
+   "deadline": 1793617621001
+  },
   "trades": [
    {
     "dir": "short",
@@ -267,6 +278,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793354400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 110.62639,
+   "sl": 110.42581255003493,
+   "tp": 111.02754489993012,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793343600000,
    "pattern": "pullback_dn",
@@ -3372,7 +3395,7 @@
    ]
   }
  ],
- "lastEvalT": 1793350800000,
+ "lastEvalT": 1793354400000,
  "adaptive": {
   "start": 100000,
   "balance": 94702.87127822843,
@@ -3579,11 +3602,11 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793357521156,
- "lastBarT": 1793354400000,
- "price": 110.66649,
- "equity": 100026.80059950816,
- "unreal": 0,
+ "lastRun": 1793358421001,
+ "lastBarT": 1793358000000,
+ "price": 110.62639,
+ "equity": 99972.80059950816,
+ "unreal": -54.000000000002046,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -3652,7 +3675,7 @@
   }
  },
  "learned": {
-  "bars": 3590,
+  "bars": 3591,
   "events": 1885,
   "win": [
    {
@@ -3770,7 +3793,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
