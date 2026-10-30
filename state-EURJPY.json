@@ -124,6 +124,22 @@
  },
  "log": [
   {
+   "t": 1793347200000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 176.10058,
+   "sl": 176.36765356949104,
+   "tp": 175.56643286101797,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793336400000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -3156,7 +3172,7 @@
    ]
   }
  ],
- "lastEvalT": 1793343600000,
+ "lastEvalT": 1793347200000,
  "adaptive": {
   "start": 100000,
   "balance": 99235.4034578733,
@@ -3448,9 +3464,9 @@
   "wouldWin": 37
  },
  "version": 1,
- "lastRun": 1793350321281,
- "lastBarT": 1793347200000,
- "price": 176.049,
+ "lastRun": 1793351220840,
+ "lastBarT": 1793350800000,
+ "price": 176.10058,
  "equity": 102881.0109469248,
  "unreal": 0,
  "config": {
@@ -3521,7 +3537,7 @@
   }
  },
  "learned": {
-  "bars": 3588,
+  "bars": 3589,
   "events": 1830,
   "win": [
    {
@@ -3588,7 +3604,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
