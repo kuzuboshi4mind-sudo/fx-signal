@@ -3825,51 +3825,51 @@
   ],
   "picks": [
    {
-    "pattern": "pullback_up",
-    "name": "上昇トレンドの押し目",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "dir": "long",
+    "flip": true,
+    "tp": 2,
+    "sl": 1,
+    "n": 110,
+    "sumR": 31.695008591528715,
+    "winRate": 0.4636363636363636
+   },
+   {
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
     "dir": "short",
+    "flip": false,
+    "tp": 2,
+    "sl": 1.5,
+    "n": 34,
+    "sumR": 10.802643586572323,
+    "winRate": 0.5588235294117647
+   },
+   {
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "dir": "long",
     "flip": true,
     "tp": 3,
     "sl": 1,
-    "n": 345,
-    "sumR": 52.09936094824399,
-    "winRate": 0.3565217391304348
-   },
-   {
-    "pattern": "bb_break_up",
-    "name": "ボリバン上抜けブレイク",
-    "dir": "short",
-    "flip": true,
-    "tp": 3,
-    "sl": 1,
-    "n": 128,
-    "sumR": 15.817252900876392,
-    "winRate": 0.3046875
-   },
-   {
-    "pattern": "engulf_up",
-    "name": "陽の包み足",
-    "dir": "short",
-    "flip": true,
-    "tp": 1.5,
-    "sl": 1,
-    "n": 290,
-    "sumR": 31.265439366370334,
-    "winRate": 0.46206896551724136
+    "n": 110,
+    "sumR": 28.3780178171449,
+    "winRate": 0.4090909090909091
    }
   ],
-  "pickMonth": "2026-10",
-  "pickTried": "2026-10-14",
+  "pickMonth": "2026-11",
+  "pickTried": "2026-11-01",
   "equity": 91876.6744786969
  },
- "reportDay": "2026-10-31",
+ "reportDay": "2026-11-01",
  "skipReview": {
   "n": 158,
   "wouldLose": 112,
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793458321039,
+ "lastRun": 1793459221698,
  "lastBarT": 1793390400000,
  "price": 211.01612,
  "equity": 105762.34546069396,
@@ -3942,7 +3942,7 @@
   }
  },
  "learned": {
-  "bars": 3590,
+  "bars": 3589,
   "events": 1804,
   "win": [
    {
@@ -3975,7 +3975,7 @@
     "key": "against|range",
     "n": 24,
     "winRate": 0.4166666666666667,
-    "avgR": 0.22143063034204216
+    "avgR": 0.22143063032659002
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -3983,7 +3983,7 @@
     "key": "*",
     "n": 96,
     "winRate": 0.3854166666666667,
-    "avgR": 0.15168257881447875
+    "avgR": 0.1516825788106157
    },
    {
     "name": "ボリバン下限から回帰",
@@ -3991,7 +3991,7 @@
     "key": "with|range",
     "n": 23,
     "winRate": 0.30434782608695654,
-    "avgR": -0.11468050121671135
+    "avgR": -0.11468050121682094
    }
   ]
  },
