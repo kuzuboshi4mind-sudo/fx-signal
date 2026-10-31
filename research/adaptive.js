@@ -6,6 +6,7 @@
 const fs = require('fs');
 const zlib = require('zlib');
 const E = require('../engine.js');
+const EV = require('./events-lib.js');
 
 const [out, ...pairArgs] = process.argv.slice(2);
 const NULLS = Number(process.env.NULLS || 2);
@@ -35,11 +36,14 @@ const VARIANTS = {
   dedupe_cool24: { dedupe: true, cool: 24 },
   streak3: { dedupe: false, cool: 0, streak: 3 }, // 同じ戦略が3連敗したら停止し、様子見で勝ったら再開（通常口座の liveReview と同じ考え方）
   with24: { dedupe: false, cool: 0, with24: true }, // 直近24時間の値動きと逆向きには入らない
+  evskip: { dedupe: false, cool: 0, ev: 'skip' }, // 重要発表の前後2時間は入らない
+  evflat: { dedupe: false, cool: 0, ev: 'flat' }, // 上に加え、保有中に発表が来るなら1時間前に手じまう
 };
 
 function run(c, symbol) {
   const o = { maxBars: 24, spreadPips: SPREADS[symbol] ?? 1, symbol };
   const d = E.computeIndicators(c), lastT = c[c.length - 1].t, start = lastT - 3 * YEAR;
+  const events = EV.loadEvents(c[0].t, lastT);
   const trades = Object.fromEntries(Object.keys(VARIANTS).map(k => [k, []]));
   for (let mStart = start; mStart < lastT; mStart += MONTH) {
     const i0 = c.findIndex(b => b.t >= mStart); if (i0 < 0) break;
@@ -64,7 +68,9 @@ function run(c, symbol) {
           if (v.with24 && Math.sign(d.close[i] - d.close[i - 24]) !== (pk.dir === 'long' ? 1 : -1)) continue;
           const pat = E.PATTERNS.find(p => p.id === pk.pattern);
           if (!pat.test(c, d, i)) continue;
-          const r = E.simulate(c, d, i, pk.dir, { tpAtr: pk.tp, slAtr: pk.sl, ...o });
+          if (v.ev && EV.nearEvent(events, c[i + 1] ? c[i + 1].t : c[i].t)) continue;
+          const cut = v.ev === 'flat' ? EV.barsUntilEvent(events, c, i, o.maxBars) : null;
+          const r = E.simulate(c, d, i, pk.dir, { tpAtr: pk.tp, slAtr: pk.sl, ...o, ...(cut ? { maxBars: Math.min(o.maxBars, cut) } : {}) });
           if (!r) continue;
           busy[key] = i + r.bars;
           if (v.streak) {

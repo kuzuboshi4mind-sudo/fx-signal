@@ -6,6 +6,7 @@
 const fs = require('fs');
 const zlib = require('zlib');
 const E = require('../engine.js');
+const EV = require('./events-lib.js');
 
 const [out, ...pairArgs] = process.argv.slice(2);
 const NULLS = Number(process.env.NULLS || 2);
@@ -42,10 +43,13 @@ const VARIANTS = {
   er02: { tp: 2, sl: 1, maxBars: 24, minER: 0.2 },
   er03: { tp: 2, sl: 1, maxBars: 24, minER: 0.3 },
   with24: { tp: 2, sl: 1, maxBars: 24, minER: 0, with24: true }, // 直近24時間の値動きと同じ向きだけ
+  evskip: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip' }, // 重要発表の前後2時間は入らない
+  evflat: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'flat' }, // 上に加え、保有中に発表が来るなら1時間前に手じまう
 };
 
 function run(c, symbol) {
   const d = E.computeIndicators(c), er = er24(d.close), lastT = c[c.length - 1].t, start = lastT - 3 * YEAR;
+  const events = EV.loadEvents(c[0].t, lastT);
   const res = {};
   for (const [vk, v] of Object.entries(VARIANTS)) {
     const o = { symbol, tpAtr: v.tp, slAtr: v.sl, maxBars: v.maxBars, spreadPips: SPREADS[symbol] ?? 1, minSamples: 15 };
@@ -64,7 +68,9 @@ function run(c, symbol) {
           if (!best || st.all.shrunkR > best.st.all.shrunkR) best = { p, st };
         }
         if (!best) continue;
-        const r = E.simulate(c, d, i, best.p.dir, o);
+        if (v.ev && EV.nearEvent(events, c[i + 1] ? c[i + 1].t : c[i].t)) continue;
+        const cut = v.ev === 'flat' ? EV.barsUntilEvent(events, c, i, o.maxBars) : null;
+        const r = E.simulate(c, d, i, best.p.dir, cut ? { ...o, maxBars: Math.min(o.maxBars, cut) } : o);
         if (!r) continue;
         tr.push({ t: c[i].t, r: r.r }); busy = i + r.bars;
       }
