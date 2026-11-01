@@ -140,6 +140,38 @@
  },
  "log": [
   {
+   "t": 1793566800000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 175.81686,
+   "sl": 176.0941692123868,
+   "tp": 175.2622415752264,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793566800000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 175.81686,
+   "sl": 175.5395507876132,
+   "tp": 176.37147842477358,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793390400000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -3311,7 +3343,7 @@
    ]
   }
  ],
- "lastEvalT": 1793390400000,
+ "lastEvalT": 1793566800000,
  "adaptive": {
   "start": 100000,
   "balance": 100945.18898057626,
@@ -3668,7 +3700,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 102254.5689805763
+  "equity": 101895.3489805762
  },
  "reportDay": "2026-11-02",
  "skipReview": {
@@ -3677,9 +3709,9 @@
   "wouldWin": 40
  },
  "version": 1,
- "lastRun": 1793569920604,
- "lastBarT": 1793566800000,
- "price": 175.87673,
+ "lastRun": 1793570821159,
+ "lastBarT": 1793570400000,
+ "price": 175.81686,
  "equity": 106577.23575392368,
  "unreal": 0,
  "config": {
@@ -3759,7 +3791,7 @@
     "key": "against|range",
     "n": 36,
     "winRate": 0.5277777777777778,
-    "avgR": 0.5664762472659259
+    "avgR": 0.5664762472658001
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -3767,7 +3799,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.45454545454545453,
-    "avgR": 0.34195289358362435
+    "avgR": 0.34195289358329795
    },
    {
     "name": "ボリバン上限から回帰",
@@ -3791,7 +3823,7 @@
     "key": "*",
     "n": 101,
     "winRate": 0.38613861386138615,
-    "avgR": 0.1423505886640294
+    "avgR": 0.1423505886639007
    }
   ]
  },
@@ -3825,7 +3857,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
