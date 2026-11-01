@@ -160,11 +160,13 @@
   };
   function ctxLabel(key) { return key.split('|').map(k => CTX_LABEL[k] || k).join('・'); }
 
-  // FX市場が開いている時間か（UTC）。土曜・日曜21時前・金曜21時以降は休場とみなす
+  // FX市場が開いている時間か。ニューヨーク17時に週が終わり・始まる（米国の夏時間は UTC21時、冬時間は UTC22時）。
+  // 土曜・日曜の開始前・金曜の終了後は休場とみなす
   // データ提供元が休場中の足を返すことがある（2026年〜）ため、その足は使わない
   function isMarketOpen(t) {
     const d = new Date(t), dow = d.getUTCDay(), h = d.getUTCHours();
-    return !(dow === 6 || (dow === 0 && h < 21) || (dow === 5 && h >= 21));
+    const edge = usDst(d) ? 21 : 22;
+    return !(dow === 6 || (dow === 0 && h < edge) || (dow === 5 && h >= edge));
   }
   // 市場が開いている時間だけを数えて ms 進めた時刻（週末をまたぐ保有期限を、過去検証の「足の本数」と同じ数え方にする）
   function addMarketTime(t, ms) {

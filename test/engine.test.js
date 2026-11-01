@@ -148,3 +148,10 @@ test('addMarketTime: 週末をまたぐ期限は休場時間を数えない', ()
   assert.strictEqual(E.checkExit(pos, [], Date.UTC(2026, 9, 24, 3), 100.5), null); // 土曜は手じまいしない
   assert.strictEqual(E.checkExit(pos, [], Date.UTC(2026, 9, 26, 3), 100.5).reason, 'time');
 });
+
+test('isMarketOpen: 米国の冬時間は UTC22時が区切り', () => {
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 10, 1, 21)), false); // 日 21時（冬時間の開始前）
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 10, 1, 22)), true);  // 日 22時（週明け）
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 10, 6, 21)), true);  // 金 21時（冬時間はまだ開いている）
+  assert.strictEqual(E.isMarketOpen(Date.UTC(2026, 10, 6, 22)), false); // 金 22時（週末）
+});
