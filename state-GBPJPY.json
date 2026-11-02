@@ -3190,9 +3190,10 @@
  "lastEvalT": 1793577600000,
  "adaptive": {
   "start": 100000,
-  "balance": 91902.38447869691,
+  "balance": 91562.18378857682,
   "startT": 1791953875407,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -3204,10 +3205,12 @@
     "tp": 209.9698079296397,
     "barT": 1793376000000,
     "openT": 1793376422322,
-    "deadline": 1793635622322
-   }
-  ],
-  "trades": [
+    "deadline": 1793635622322,
+    "exit": 211.3306106901201,
+    "closeT": 1793581200000,
+    "reason": "sl",
+    "pnl": -340.2006901200991
+   },
    {
     "key": "engulf_up|short|1.5|1",
     "dir": "short",
@@ -3909,7 +3912,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91625.3244786969
+  "equity": 91562.18378857682
  },
  "reportDay": "2026-11-02",
  "skipReview": {
@@ -3918,9 +3921,9 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793581621410,
+ "lastRun": 1793582521497,
  "lastBarT": 1793581200000,
- "price": 211.26747,
+ "price": 211.36929,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -3992,7 +3995,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1785,
+  "events": 1787,
   "win": [
    {
     "name": "陽の包み足",
@@ -4033,14 +4036,6 @@
     "n": 23,
     "winRate": 0.391304347826087,
     "avgR": 0.14502460765108016
-   },
-   {
-    "name": "ボリバン下限から回帰",
-    "dir": "long",
-    "key": "with|range",
-    "n": 23,
-    "winRate": 0.30434782608695654,
-    "avgR": -0.1146805012145927
    }
   ]
  },
@@ -4074,17 +4069,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
