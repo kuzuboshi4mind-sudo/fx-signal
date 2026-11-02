@@ -3843,9 +3843,9 @@
   "wouldWin": 50
  },
  "version": 1,
- "lastRun": 1793630221496,
+ "lastRun": 1793631121957,
  "lastBarT": 1793628000000,
- "price": 110.63345,
+ "price": 110.68841,
  "equity": 95931.70619622874,
  "unreal": 0,
  "config": {
@@ -3917,7 +3917,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1861,
+  "events": 1862,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
