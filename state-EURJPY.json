@@ -156,6 +156,21 @@
  },
  "log": [
   {
+   "t": 1793642400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 176.78885,
+   "sl": 177.0132294419513,
+   "tp": 176.3400911160974,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793638800000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -3530,7 +3545,7 @@
    ]
   }
  ],
- "lastEvalT": 1793638800000,
+ "lastEvalT": 1793642400000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -3907,9 +3922,9 @@
   "wouldWin": 45
  },
  "version": 1,
- "lastRun": 1793645520757,
- "lastBarT": 1793642400000,
- "price": 176.75375,
+ "lastRun": 1793646421023,
+ "lastBarT": 1793646000000,
+ "price": 176.78885,
  "equity": 110510.00980066622,
  "unreal": 0,
  "config": {
@@ -3989,7 +4004,7 @@
     "key": "against|range",
     "n": 39,
     "winRate": 0.5384615384615384,
-    "avgR": 0.5984137229592787
+    "avgR": 0.5984137229589113
    },
    {
     "name": "ボリバン上限から回帰",
@@ -4021,7 +4036,7 @@
     "key": "*",
     "n": 101,
     "winRate": 0.38613861386138615,
-    "avgR": 0.14235058866197112
+    "avgR": 0.1423505886617038
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4063,7 +4078,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
