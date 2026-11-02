@@ -3937,9 +3937,9 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793592422252,
+ "lastRun": 1793593953812,
  "lastBarT": 1793592000000,
- "price": 211.4268,
+ "price": 211.49384,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -4085,17 +4085,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
