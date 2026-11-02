@@ -3876,9 +3876,9 @@
   "wouldWin": 50
  },
  "version": 1,
- "lastRun": 1793639222477,
+ "lastRun": 1793640097519,
  "lastBarT": 1793638800000,
- "price": 110.78531,
+ "price": 110.7781,
  "equity": 95931.70619622874,
  "unreal": 0,
  "config": {
@@ -4075,17 +4075,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
