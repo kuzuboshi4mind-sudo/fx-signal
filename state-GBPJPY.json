@@ -204,6 +204,22 @@
  },
  "log": [
   {
+   "t": 1793602800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 211.58809,
+   "sl": 211.336391452803,
+   "tp": 212.09148709439393,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793599200000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -3219,7 +3235,7 @@
    ]
   }
  ],
- "lastEvalT": 1793599200000,
+ "lastEvalT": 1793602800000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -3953,9 +3969,9 @@
   "wouldWin": 46
  },
  "version": 1,
- "lastRun": 1793606173904,
- "lastBarT": 1793602800000,
- "price": 211.59256,
+ "lastRun": 1793606821698,
+ "lastBarT": 1793606400000,
+ "price": 211.58809,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -4027,7 +4043,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1790,
+  "events": 1788,
   "win": [
    {
     "name": "陽の包み足",
@@ -4059,7 +4075,7 @@
     "key": "*",
     "n": 95,
     "winRate": 0.37894736842105264,
-    "avgR": 0.13245008856809512
+    "avgR": 0.1324500885676587
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4067,7 +4083,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.391304347826087,
-    "avgR": 0.14502460765165578
+    "avgR": 0.14502460764985334
    }
   ]
  },
@@ -4101,7 +4117,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
