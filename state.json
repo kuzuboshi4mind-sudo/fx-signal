@@ -286,7 +286,7 @@
    "entry": 157.6728,
    "sl": 157.85454274841814,
    "tp": 157.30931450316373,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3484,11 +3484,11 @@
  "lastEvalT": 1793628000000,
  "reportDay": "2026-11-03",
  "version": 1,
- "lastRun": 1793633820931,
+ "lastRun": 1793634720677,
  "lastBarT": 1793631600000,
- "price": 157.76239,
- "equity": 98572.77359295664,
- "unreal": 146.52000000020848,
+ "price": 157.90371,
+ "equity": 99844.65359295646,
+ "unreal": 1418.4000000000196,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -3558,7 +3558,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1904,
+  "events": 1905,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4394,11 +4394,11 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100721.05437518678
+  "equity": 101286.3343751867
  },
  "skipReview": {
-  "n": 164,
-  "wouldLose": 129,
+  "n": 165,
+  "wouldLose": 130,
   "wouldWin": 35
  },
  "latest": {
