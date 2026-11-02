@@ -204,6 +204,53 @@
  },
  "log": [
   {
+   "t": 1793613600000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 211.81024,
+   "sl": 212.07926968592994,
+   "tp": 211.27218062814012,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793613600000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 211.81024,
+   "sl": 212.07926968592994,
+   "tp": 211.27218062814012,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793613600000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 211.81024,
+   "sl": 212.07926968592994,
+   "tp": 211.27218062814012,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793610000000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -3283,7 +3330,7 @@
    ]
   }
  ],
- "lastEvalT": 1793610000000,
+ "lastEvalT": 1793613600000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4017,9 +4064,9 @@
   "wouldWin": 52
  },
  "version": 1,
- "lastRun": 1793617119579,
- "lastBarT": 1793613600000,
- "price": 211.73879,
+ "lastRun": 1793617621358,
+ "lastBarT": 1793617200000,
+ "price": 211.81024,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -4123,7 +4170,7 @@
     "key": "*",
     "n": 95,
     "winRate": 0.37894736842105264,
-    "avgR": 0.13245008856768092
+    "avgR": 0.13245008856792134
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4131,7 +4178,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.391304347826087,
-    "avgR": 0.14502460764994507
+    "avgR": 0.14502460765093805
    }
   ]
  },
@@ -4165,7 +4212,34 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
