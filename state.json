@@ -286,7 +286,7 @@
    "entry": 157.94946,
    "sl": 157.7491859198928,
    "tp": 158.35000816021434,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -3468,11 +3468,11 @@
  "lastEvalT": 1793624400000,
  "reportDay": "2026-11-02",
  "version": 1,
- "lastRun": 1793629320697,
+ "lastRun": 1793630220285,
  "lastBarT": 1793628000000,
- "price": 157.7918,
- "equity": 98837.4635929565,
- "unreal": 411.210000000068,
+ "price": 157.74639,
+ "equity": 98428.77359295647,
+ "unreal": 2.5200000000324962,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -3542,7 +3542,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1903,
+  "events": 1904,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3556,17 +3556,17 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 268,
-    "winRate": 0.376865671641791,
-    "avgR": 0.2168335774113407
+    "n": 269,
+    "winRate": 0.3754646840148699,
+    "avgR": 0.21226362770558796
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|range",
-    "n": 215,
-    "winRate": 0.3767441860465116,
-    "avgR": 0.21718299665915747
+    "n": 216,
+    "winRate": 0.375,
+    "avgR": 0.21149009901982738
    },
    {
     "name": "上昇トレンドの押し目",
@@ -3604,10 +3604,10 @@
  },
  "review": {
   "pullback_up": {
-   "n": 10,
+   "n": 11,
    "wins": 2,
    "recentLosses": 5,
-   "streak": 6,
+   "streak": 7,
    "suspended": true
   },
   "macd_up": {
@@ -4378,7 +4378,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100838.69437518672
+  "equity": 100657.05437518671
  },
  "skipReview": {
   "n": 164,
