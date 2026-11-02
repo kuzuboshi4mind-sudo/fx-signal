@@ -3743,7 +3743,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 104410.3345032792
+  "equity": 104550.4145032792
  },
  "reportDay": "2026-11-02",
  "skipReview": {
@@ -3752,11 +3752,11 @@
   "wouldWin": 40
  },
  "version": 1,
- "lastRun": 1793585220973,
+ "lastRun": 1793586120978,
  "lastBarT": 1793584800000,
- "price": 176.29128,
- "equity": 108490.68575392364,
- "unreal": 1913.4499999999548,
+ "price": 176.3263,
+ "equity": 108735.82575392367,
+ "unreal": 2158.5899999999756,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3826,7 +3826,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1810,
+  "events": 1811,
   "win": [
    {
     "name": "陽の包み足",
