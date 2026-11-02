@@ -3615,11 +3615,11 @@
   "wouldWin": 54
  },
  "version": 1,
- "lastRun": 1793599622771,
+ "lastRun": 1793600521966,
  "lastBarT": 1793599200000,
- "price": 88.60523,
- "equity": 108180.93674766221,
- "unreal": -1379.8199999999524,
+ "price": 88.63592,
+ "equity": 108579.90674766211,
+ "unreal": -980.8500000000464,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -3779,17 +3779,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
