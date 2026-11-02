@@ -186,7 +186,7 @@
    "entry": 175.81686,
    "sl": 176.0941692123868,
    "tp": 175.2622415752264,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3385,22 +3385,9 @@
  "lastEvalT": 1793574000000,
  "adaptive": {
   "start": 100000,
-  "balance": 100945.18898057626,
+  "balance": 102654.9745032792,
   "startT": 1791953874927,
   "positions": [
-   {
-    "key": "ema_cross_dn|long|3|1",
-    "dir": "long",
-    "pattern": "ema_cross_dn",
-    "name": "デッドクロス(EMA20/50)（逆向き）",
-    "units": 2000,
-    "entry": 175.27062,
-    "sl": 174.9856557462162,
-    "tp": 176.12551276135147,
-    "barT": 1793368800000,
-    "openT": 1793369220979,
-    "deadline": 1793628420979
-   },
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -3429,6 +3416,23 @@
    }
   ],
   "trades": [
+   {
+    "key": "ema_cross_dn|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 2000,
+    "entry": 175.27062,
+    "sl": 174.9856557462162,
+    "tp": 176.12551276135147,
+    "barT": 1793368800000,
+    "openT": 1793369220979,
+    "deadline": 1793628420979,
+    "exit": 176.12551276135147,
+    "closeT": 1793577600000,
+    "reason": "tp",
+    "pnl": 1709.78552270293
+   },
    {
     "key": "ema_cross_dn|long|2|1",
     "dir": "long",
@@ -3739,20 +3743,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 103065.76898057628
+  "equity": 103783.97450327921
  },
  "reportDay": "2026-11-02",
  "skipReview": {
-  "n": 181,
-  "wouldLose": 141,
+  "n": 182,
+  "wouldLose": 142,
   "wouldWin": 40
  },
  "version": 1,
- "lastRun": 1793578020915,
+ "lastRun": 1793578921145,
  "lastBarT": 1793577600000,
- "price": 176.01193,
- "equity": 106535.23575392368,
- "unreal": -42.00000000000159,
+ "price": 176.13469,
+ "equity": 107394.55575392368,
+ "unreal": 817.3199999999952,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -3822,7 +3826,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1809,
+  "events": 1810,
   "win": [
    {
     "name": "陽の包み足",
@@ -3896,23 +3900,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

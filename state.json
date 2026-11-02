@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 95063.4694301976,
+  "balance": 98426.25359295643,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "bb_revert_up",
-   "name": "ボリバン下限から回帰",
-   "units": 7000,
-   "entry": 157.29424,
-   "sl": 157.04654113123152,
-   "tp": 157.77463773753698,
-   "barT": 1793365200000,
-   "openT": 1793365620825,
-   "deadline": 1793624820825
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "bb_revert_up",
+    "name": "ボリバン下限から回帰",
+    "units": 7000,
+    "entry": 157.29424,
+    "sl": 157.04654113123152,
+    "tp": 157.77463773753698,
+    "barT": 1793365200000,
+    "openT": 1793365620825,
+    "deadline": 1793624820825,
+    "exit": 157.77463773753698,
+    "closeT": 1793577600000,
+    "reason": "tp",
+    "pnl": 3362.784162758828
+   },
    {
     "dir": "long",
     "pattern": "pullback_up",
@@ -3396,11 +3401,11 @@
  "lastEvalT": 1793574000000,
  "reportDay": "2026-11-02",
  "version": 1,
- "lastRun": 1793578020426,
+ "lastRun": 1793578920812,
  "lastBarT": 1793577600000,
- "price": 157.7333,
- "equity": 98136.88943019768,
- "unreal": 3073.4200000000837,
+ "price": 157.76896,
+ "equity": 98426.25359295643,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -3588,17 +3593,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 99677.33437518678,
@@ -4316,7 +4311,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100604.6943751868
+  "equity": 100747.33437518672
  },
  "skipReview": {
   "n": 163,

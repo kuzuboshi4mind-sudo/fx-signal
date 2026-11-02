@@ -3551,11 +3551,11 @@
   "wouldWin": 54
  },
  "version": 1,
- "lastRun": 1793578022224,
+ "lastRun": 1793578922086,
  "lastBarT": 1793577600000,
- "price": 88.70776,
- "equity": 109513.82674766204,
- "unreal": -46.930000000116934,
+ "price": 88.74493,
+ "equity": 109997.03674766209,
+ "unreal": 436.2799999999254,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -3625,7 +3625,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1878,
+  "events": 1880,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3715,14 +3715,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
