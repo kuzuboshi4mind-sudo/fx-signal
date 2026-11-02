@@ -195,7 +195,7 @@
    "entry": 177.18848,
    "sl": 176.93267786767163,
    "tp": 177.70008426465674,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3887,14 +3887,14 @@
  },
  "reportDay": "2026-11-02",
  "skipReview": {
-  "n": 187,
-  "wouldLose": 142,
+  "n": 188,
+  "wouldLose": 143,
   "wouldWin": 45
  },
  "version": 1,
- "lastRun": 1793617621082,
+ "lastRun": 1793618521033,
  "lastBarT": 1793617200000,
- "price": 177.04354,
+ "price": 177.04725,
  "equity": 110510.00980066622,
  "unreal": 0,
  "config": {
@@ -3966,7 +3966,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1814,
+  "events": 1815,
   "win": [
    {
     "name": "陽の包み足",
@@ -4048,26 +4048,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
