@@ -222,7 +222,7 @@
    "entry": 88.70776,
    "sl": 88.55477541271723,
    "tp": 89.01372917456551,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -3599,11 +3599,11 @@
   "wouldWin": 54
  },
  "version": 1,
- "lastRun": 1793597533517,
+ "lastRun": 1793597822360,
  "lastBarT": 1793595600000,
- "price": 88.56377,
- "equity": 107641.9567476622,
- "unreal": -1918.799999999962,
+ "price": 88.57118,
+ "equity": 107738.2867476621,
+ "unreal": -1822.4700000000526,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -3734,18 +3734,18 @@
   ]
  },
  "review": {
+  "macd_up": {
+   "n": 2,
+   "wins": 0,
+   "recentLosses": 2,
+   "streak": 2,
+   "suspended": false
+  },
   "bb_break_dn": {
    "n": 6,
    "wins": 3,
    "recentLosses": 2,
    "streak": 2,
-   "suspended": false
-  },
-  "macd_up": {
-   "n": 1,
-   "wins": 0,
-   "recentLosses": 1,
-   "streak": 1,
    "suspended": false
   },
   "ema_cross_up": {
