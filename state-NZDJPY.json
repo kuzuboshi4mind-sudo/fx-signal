@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 109560.75674766216,
+  "balance": 113530.77353341923,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "long",
-   "pattern": "macd_up",
-   "name": "MACD買いクロス",
-   "units": 13000,
-   "entry": 88.71137,
-   "sl": 88.54367704670165,
-   "tp": 89.0167559065967,
-   "barT": 1793566800000,
-   "openT": 1793567222354,
-   "deadline": 1793653622354
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "macd_up",
+    "name": "MACD買いクロス",
+    "units": 13000,
+    "entry": 88.71137,
+    "sl": 88.54367704670165,
+    "tp": 89.0167559065967,
+    "barT": 1793566800000,
+    "openT": 1793567222354,
+    "deadline": 1793653622354,
+    "exit": 89.0167559065967,
+    "closeT": 1793610000000,
+    "reason": "tp",
+    "pnl": 3970.0167857570677
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -205,7 +210,7 @@
    "entry": 88.69472,
    "sl": 88.56103214455328,
    "tp": 88.96209571089344,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -3674,11 +3679,11 @@
   "wouldWin": 55
  },
  "version": 1,
- "lastRun": 1793610422206,
+ "lastRun": 1793611321557,
  "lastBarT": 1793610000000,
- "price": 88.95815,
- "equity": 112768.89674766218,
- "unreal": 3208.1400000000144,
+ "price": 89.03581,
+ "equity": 113530.77353341923,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -3748,7 +3753,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1885,
+  "events": 1886,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3762,9 +3767,9 @@
     "name": "MACD買いクロス",
     "dir": "long",
     "key": "against|range",
-    "n": 33,
-    "winRate": 0.45454545454545453,
-    "avgR": 0.3233632932014156
+    "n": 34,
+    "winRate": 0.47058823529411764,
+    "avgR": 0.3717148719030436
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -3810,10 +3815,10 @@
  },
  "review": {
   "macd_up": {
-   "n": 2,
-   "wins": 0,
+   "n": 3,
+   "wins": 1,
    "recentLosses": 2,
-   "streak": 2,
+   "streak": 0,
    "suspended": false
   },
   "bb_break_dn": {
@@ -3838,25 +3843,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
