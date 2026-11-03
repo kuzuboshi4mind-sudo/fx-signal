@@ -156,6 +156,38 @@
  },
  "log": [
   {
+   "t": 1793689200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 176.85724,
+   "sl": 176.68376129444616,
+   "tp": 177.20419741110766,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793689200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 176.85724,
+   "sl": 176.68376129444616,
+   "tp": 177.20419741110766,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793682000000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -3625,7 +3657,7 @@
    ]
   }
  ],
- "lastEvalT": 1793685600000,
+ "lastEvalT": 1793689200000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4002,9 +4034,9 @@
   "wouldWin": 47
  },
  "version": 1,
- "lastRun": 1793692321423,
- "lastBarT": 1793689200000,
- "price": 176.73293,
+ "lastRun": 1793693221562,
+ "lastBarT": 1793692800000,
+ "price": 176.85724,
  "equity": 110510.00980066622,
  "unreal": 0,
  "config": {
@@ -4084,7 +4116,7 @@
     "key": "against|range",
     "n": 41,
     "winRate": 0.5121951219512195,
-    "avgR": 0.5193371345982746
+    "avgR": 0.5193371345952662
    },
    {
     "name": "ボリバン上限から回帰",
@@ -4116,7 +4148,7 @@
     "key": "*",
     "n": 101,
     "winRate": 0.38613861386138615,
-    "avgR": 0.1423505886613082
+    "avgR": 0.14235058865914463
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4158,7 +4190,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
