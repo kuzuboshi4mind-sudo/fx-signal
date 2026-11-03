@@ -74,7 +74,7 @@
       stoch56[i] = h === l ? 50 : 100 * (c[i].c - l) / (h - l);
     }
     const ema312 = E.ema(close, 312);
-    return { stoch56, ema312, er24, prevClose, prevHigh, prevLow, prevNR7, hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
+    return { stoch56, ema312, er24, prevClose, prevHigh, prevLow, prevNR7, hh20: hh(20), ll20: ll(20), hh10: hh(10), ll10: ll(10), sma50: E.sma(close, 50), sma210: E.sma(close, 210), hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
   }
 
   // 五十日（ごとおび）：5・10・15・20・25日と月末。土日なら直前の金曜
@@ -337,10 +337,44 @@
         if (c[i].c < l4 && c[i - 1].c >= l4 && x.dayKey[i - 1] === x.dayKey[i]) return 'short';
         return null;
       } },
+    // ---- 2026-11-03 追加（第7弾：日足の順張りを「流れが続く限り持つ」出口で）----
+    { id: 'turtle1_trail', name: 'タートル・システム1（20日抜け・10日で手じまい）', source: 'R.デニスのタートルズ（C.フェイス『Way of the Turtle』2007）：20本の高値（安値）を抜けたら順張り、10本の安値（高値）を割ったら手じまい、最初の損切りは ATR×2。直前の勝ちトレード後は見送る規則は省略',
+      exit: { type: 'rule', sl: 2, maxBars: 250, when: (c, d, x, j, dir) => (dir === 'long' ? c[j].c < x.ll10[j] : c[j].c > x.hh10[j]) },
+      signal: (c, d, x, i) => (isNaN(x.hh20[i]) ? null : c[i].c > x.hh20[i] && c[i - 1].c <= x.hh20[i - 1] ? 'long' : c[i].c < x.ll20[i] && c[i - 1].c >= x.ll20[i - 1] ? 'short' : null) },
+    { id: 'turtle2_trail', name: 'タートル・システム2（55日抜け・20日で手じまい）', source: 'タートルズのシステム2：55本の高値（安値）抜けで順張り、20本の反対側を割ったら手じまい、最初の損切りは ATR×2',
+      exit: { type: 'rule', sl: 2, maxBars: 500, when: (c, d, x, j, dir) => (dir === 'long' ? c[j].c < x.ll20[j] : c[j].c > x.hh20[j]) },
+      signal: (c, d, x, i) => (isNaN(x.hh55[i]) ? null : c[i].c > x.hh55[i] && c[i - 1].c <= x.hh55[i - 1] ? 'long' : c[i].c < x.ll55[i] && c[i - 1].c >= x.ll55[i - 1] ? 'short' : null) },
+    { id: 'faber_sma', name: 'フェイバーの10か月線（月末判定）', source: 'M.フェイバー「A Quantitative Approach to Tactical Asset Allocation」(2007)：月末の終値が10か月移動平均（約210日）より上なら買い、下なら売り。判定は月末だけ',
+      exit: { type: 'rule', sl: 3, maxBars: 400, when: (c, d, x, j, dir) => isMonthEnd(c, j) && (dir === 'long' ? c[j].c < x.sma210[j] : c[j].c > x.sma210[j]) },
+      signal: (c, d, x, i) => (!isMonthEnd(c, i) || isNaN(x.sma210[i]) ? null : c[i].c > x.sma210[i] ? 'long' : 'short') },
+    { id: 'tsmom12', name: '12か月の時系列モメンタム（月替わり）', source: 'Moskowitz・Ooi・Pedersen「Time Series Momentum」(2012)：過去12か月（約252日）の値動きの向きに1か月持ち、月末ごとに見直す',
+      exit: { type: 'rule', sl: 3, maxBars: 30, when: (c, d, x, j, dir) => isMonthEnd(c, j) },
+      signal: (c, d, x, i) => (!isMonthEnd(c, i) || i < 253 ? null : c[i].c > c[i - 252].c ? 'long' : 'short') },
+    { id: 'ma_cross_trail', name: '50日・200日線のクロス（反対のクロスまで持つ）', source: '古典的なゴールデンクロス／デッドクロス：50本の移動平均が200本を上抜けたら買い、下抜けで売りに転じるまで持つ',
+      exit: { type: 'rule', sl: 3, maxBars: 1000, when: (c, d, x, j, dir) => (dir === 'long' ? x.sma50[j] < x.sma200[j] : x.sma50[j] > x.sma200[j]) },
+      signal: (c, d, x, i) => (isNaN(x.sma200[i - 1]) ? null : x.sma50[i - 1] <= x.sma200[i - 1] && x.sma50[i] > x.sma200[i] ? 'long' : x.sma50[i - 1] >= x.sma200[i - 1] && x.sma50[i] < x.sma200[i] ? 'short' : null) },
   ];
 
+  // 月の最後の足か（次の足が別の月）。最後の足は判定しない
+  function isMonthEnd(c, i) { return i + 1 < c.length && new Date(c[i + 1].t).getUTCMonth() !== new Date(c[i].t).getUTCMonth(); }
+
   // 手法ごとの出口ルールで1回分の取引を模擬（i 本目確定でシグナル → 次の足の始値で入る）
-  function simulateStrategy(c, d, i, dir, exit, o) {
+  function simulateStrategy(c, d, i, dir, exit, o, x) {
+    // 'rule'：流れが崩れたら手じまう（例：10日安値割れ）。最初の損切りは ATR×sl。損切りは足の途中で判定し、窓を開けたら始値で決済
+    if (exit.type === 'rule') {
+      if (i + 1 >= c.length || isNaN(d.atr[i])) return null;
+      const s = dir === 'long' ? 1 : -1, cost = o.spreadPips * E.pipSize(o.symbol);
+      const entry = c[i + 1].o + s * cost / 2, slDist = d.atr[i] * exit.sl, sl = entry - s * slDist;
+      for (let j = i + 1; j < c.length && j <= i + exit.maxBars; j++) {
+        if (s > 0 ? c[j].o <= sl : c[j].o >= sl) return { r: s * (c[j].o - s * cost / 2 - entry) / slDist, outcome: 'loss', bars: j - i };
+        if (s > 0 ? c[j].l <= sl : c[j].h >= sl) return { r: -1 - cost / 2 / slDist, outcome: 'loss', bars: j - i };
+        if (exit.when(c, d, x, j, dir) || j === i + exit.maxBars) {
+          const r = s * (c[j].c - s * cost / 2 - entry) / slDist;
+          return { r, outcome: r > 0 ? 'win' : 'loss', bars: j - i };
+        }
+      }
+      return null; // まだ決着していない
+    }
     if (exit.type === 'atr') return E.simulate(c, d, i, dir, { tpAtr: exit.tp, slAtr: exit.sl, maxBars: exit.maxBars, spreadPips: o.spreadPips, symbol: o.symbol });
     if (i + exit.bars >= c.length || isNaN(d.atr[i])) return null;
     const s = dir === 'long' ? 1 : -1, cost = o.spreadPips * E.pipSize(o.symbol);

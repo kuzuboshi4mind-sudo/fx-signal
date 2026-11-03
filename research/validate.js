@@ -16,6 +16,9 @@ const [out, ...pairArgs] = process.argv.slice(2);
 const TF = process.env.TF || '1h';
 const LIST = S.STRATEGIES.filter(st => TF === '1h' || !S.isIntraday(st))
   .concat(process.env.PATTERNS ? E.PATTERNS.map(S.patternStrategy) : []);
+// ONLY=id1,id2 で審査する手法を絞る（新しく追加した手法だけを審査するとき）
+const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
+if (ONLY) LIST.splice(0, LIST.length, ...LIST.filter(st => ONLY.includes(st.id)));
 const NULLS = Number(process.env.NULLS || 10);
 const SPREADS = { 'USD/JPY': 0.5, 'EUR/JPY': 0.6, 'GBP/JPY': 1.0, 'AUD/JPY': 0.6, 'NZD/JPY': 1.0, 'EUR/USD': 0.4, 'GBP/USD': 0.9, 'AUD/USD': 0.6 };
 // 1周の長さ（年）。日足など取引の少ない時間足では長くする（例 ROUND_YEARS=5 で、直近15年を5年×3周）
@@ -50,10 +53,10 @@ function trades(c, symbol, st) {
     if (i <= busy) continue;
     const dir = st.signal(c, d, x, i);
     if (!dir) continue;
-    const r = S.simulateStrategy(c, d, i, dir, st.exit, o);
+    const r = S.simulateStrategy(c, d, i, dir, st.exit, o, x);
     if (!r) continue;
     out.push({ t: c[i].t, dir, r: r.r });
-    busy = i + r.bars;
+    busy = i + r.bars - (st.exit.type === 'rule' ? 1 : 0); // ルールで手じまう手法は、手じまった足の判定から次に入れる（入るのは次の足の始値）
   }
   return out;
 }

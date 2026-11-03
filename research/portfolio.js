@@ -32,7 +32,7 @@ function trades(c, symbol, w) {
   for (let i = 250; i < c.length - 1; i++) {
     if (i <= busy) continue;
     const dir = st.signal(c, d, x, i); if (!dir) continue;
-    const r = S.simulateStrategy(c, d, i, dir, st.exit, o); if (!r) continue;
+    const r = S.simulateStrategy(c, d, i, dir, st.exit, o, x); if (!r) continue;
     res.push({ t: c[i].t, r: r.r * w }); busy = i + r.bars;
   }
   return res;
