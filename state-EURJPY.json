@@ -156,6 +156,38 @@
  },
  "log": [
   {
+   "t": 1793660400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 176.77256,
+   "sl": 176.56939575591565,
+   "tp": 177.1788884881687,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793660400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 176.77256,
+   "sl": 176.56939575591565,
+   "tp": 177.1788884881687,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793642400000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -3545,7 +3577,7 @@
    ]
   }
  ],
- "lastEvalT": 1793656800000,
+ "lastEvalT": 1793660400000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -3922,9 +3954,9 @@
   "wouldWin": 45
  },
  "version": 1,
- "lastRun": 1793663521045,
- "lastBarT": 1793660400000,
- "price": 176.70035,
+ "lastRun": 1793664421173,
+ "lastBarT": 1793664000000,
+ "price": 176.77256,
  "equity": 110510.00980066622,
  "unreal": 0,
  "config": {
@@ -3996,15 +4028,15 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1812,
+  "events": 1810,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 39,
-    "winRate": 0.5384615384615384,
-    "avgR": 0.5984137229575415
+    "n": 41,
+    "winRate": 0.5121951219512195,
+    "avgR": 0.5193371345976259
    },
    {
     "name": "ボリバン上限から回帰",
@@ -4036,7 +4068,7 @@
     "key": "*",
     "n": 101,
     "winRate": 0.38613861386138615,
-    "avgR": 0.14235058866070754
+    "avgR": 0.14235058866084163
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4078,7 +4110,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

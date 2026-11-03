@@ -204,6 +204,22 @@
  },
  "log": [
   {
+   "t": 1793660400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 211.78158,
+   "sl": 211.5647642008925,
+   "tp": 212.21521159821495,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793646000000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -3378,7 +3394,7 @@
    ]
   }
  ],
- "lastEvalT": 1793656800000,
+ "lastEvalT": 1793660400000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4112,9 +4128,9 @@
   "wouldWin": 52
  },
  "version": 1,
- "lastRun": 1793663521438,
- "lastBarT": 1793660400000,
- "price": 211.71913,
+ "lastRun": 1793664421464,
+ "lastBarT": 1793664000000,
+ "price": 211.78158,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -4186,7 +4202,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1789,
+  "events": 1788,
   "win": [
    {
     "name": "陽の包み足",
@@ -4218,7 +4234,7 @@
     "key": "*",
     "n": 95,
     "winRate": 0.37894736842105264,
-    "avgR": 0.13245008856456264
+    "avgR": 0.13245008856411
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4226,7 +4242,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.391304347826087,
-    "avgR": 0.1450246076370654
+    "avgR": 0.14502460763519584
    }
   ]
  },
@@ -4260,7 +4276,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4276,7 +4302,7 @@
   "startT": 1793332320795,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-02",
+  "lastDay": "2026-11-03",
   "strategies": [
    "pat_bb_revert_up"
   ],
