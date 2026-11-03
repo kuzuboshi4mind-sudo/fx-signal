@@ -356,7 +356,7 @@
    "entry": 157.98879,
    "sl": 157.8558786898514,
    "tp": 158.25461262029717,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -412,7 +412,7 @@
    "entry": 157.90591,
    "sl": 157.74071144621013,
    "tp": 158.23630710757973,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -428,7 +428,7 @@
    "entry": 157.90591,
    "sl": 157.74071144621013,
    "tp": 158.23630710757973,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -445,7 +445,7 @@
    "entry": 157.89069,
    "sl": 157.7120790343198,
    "tp": 158.2479119313604,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -461,7 +461,7 @@
    "entry": 157.89069,
    "sl": 157.7120790343198,
    "tp": 158.2479119313604,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -541,7 +541,7 @@
    "entry": 157.77633,
    "sl": 157.55723516293472,
    "tp": 158.2145196741306,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3683,9 +3683,9 @@
  "lastEvalT": 1793700000000,
  "reportDay": "2026-11-03",
  "version": 1,
- "lastRun": 1793704020098,
+ "lastRun": 1793704921018,
  "lastBarT": 1793703600000,
- "price": 158.1998,
+ "price": 158.2471,
  "equity": 99280.98359295659,
  "unreal": 0,
  "config": {
@@ -3757,7 +3757,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1897,
+  "events": 1899,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3771,17 +3771,17 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 269,
-    "winRate": 0.37174721189591076,
-    "avgR": 0.2011137617602514
+    "n": 271,
+    "winRate": 0.3763837638376384,
+    "avgR": 0.21427114248514692
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|range",
-    "n": 216,
-    "winRate": 0.37037037037037035,
-    "avgR": 0.19760438633814714
+    "n": 218,
+    "winRate": 0.3761467889908257,
+    "avgR": 0.21399277591287602
    },
    {
     "name": "上昇トレンドの押し目",
@@ -3811,11 +3811,11 @@
  },
  "review": {
   "pullback_up": {
-   "n": 12,
-   "wins": 3,
-   "recentLosses": 4,
+   "n": 14,
+   "wins": 5,
+   "recentLosses": 2,
    "streak": 0,
-   "suspended": true
+   "suspended": false
   },
   "ema_cross_up": {
    "n": 1,
@@ -3874,17 +3874,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 101118.93437518679,
@@ -4612,9 +4602,9 @@
   "equity": 101118.93437518679
  },
  "skipReview": {
-  "n": 168,
+  "n": 172,
   "wouldLose": 131,
-  "wouldWin": 37
+  "wouldWin": 41
  },
  "latest": {
   "start": 100000,

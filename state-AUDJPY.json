@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 95931.70619622874,
+  "balance": 94017.44041093983,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "short",
-   "pattern": "pullback_dn",
-   "name": "下降トレンドの戻り",
-   "units": 10000,
-   "entry": 110.21183,
-   "sl": 110.4032565785289,
-   "tp": 109.84697684294221,
-   "barT": 1793678400000,
-   "openT": 1793678822769,
-   "deadline": 1793765222769
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "units": 10000,
+    "entry": 110.21183,
+    "sl": 110.4032565785289,
+    "tp": 109.84697684294221,
+    "barT": 1793678400000,
+    "openT": 1793678822769,
+    "deadline": 1793765222769,
+    "exit": 110.4032565785289,
+    "closeT": 1793703600000,
+    "reason": "sl",
+    "pnl": -1914.2657852889045
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -374,7 +379,7 @@
    "entry": 110.21783,
    "sl": 110.4032565785289,
    "tp": 109.84697684294221,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -390,7 +395,7 @@
    "entry": 110.21783,
    "sl": 110.4032565785289,
    "tp": 109.84697684294221,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -402,7 +407,7 @@
    "entry": 110.21783,
    "sl": 110.4032565785289,
    "tp": 109.84697684294221,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4014,16 +4019,16 @@
  },
  "reportDay": "2026-11-03",
  "skipReview": {
-  "n": 186,
-  "wouldLose": 131,
+  "n": 188,
+  "wouldLose": 133,
   "wouldWin": 55
  },
  "version": 1,
- "lastRun": 1793704021072,
+ "lastRun": 1793704921989,
  "lastBarT": 1793703600000,
- "price": 110.35406,
- "equity": 94509.40619622877,
- "unreal": -1422.2999999999786,
+ "price": 110.41855,
+ "equity": 94017.44041093983,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4167,6 +4172,13 @@
    "recentLosses": 3,
    "streak": 3,
    "suspended": true
+  },
+  "pullback_dn": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
   },
   "engulf_up": {
    "n": 3,
