@@ -4037,7 +4037,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 101404.82805924905
+  "equity": 101341.91805924903
  },
  "reportDay": "2026-11-03",
  "skipReview": {
@@ -4046,11 +4046,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793711221728,
+ "lastRun": 1793712122850,
  "lastBarT": 1793710800000,
- "price": 89.02704,
- "equity": 112264.4422263422,
- "unreal": 963.300000000018,
+ "price": 89.00607,
+ "equity": 111991.83222634213,
+ "unreal": 690.6899999999467,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4210,17 +4210,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
