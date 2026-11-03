@@ -167,6 +167,21 @@
  },
  "log": [
   {
+   "t": 1793743200000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 177.50708,
+   "sl": 177.66890748969735,
+   "tp": 177.1834250206053,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793739600000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -3902,7 +3917,7 @@
    ]
   }
  ],
- "lastEvalT": 1793739600000,
+ "lastEvalT": 1793743200000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4279,11 +4294,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793746320877,
- "lastBarT": 1793743200000,
- "price": 177.54703,
- "equity": 111416.24980066602,
- "unreal": 906.2399999997979,
+ "lastRun": 1793747221422,
+ "lastBarT": 1793746800000,
+ "price": 177.50708,
+ "equity": 111895.64980066607,
+ "unreal": 1385.639999999853,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4353,7 +4368,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1811,
+  "events": 1810,
   "win": [
    {
     "name": "陽の包み足",
@@ -4361,7 +4376,7 @@
     "key": "against|range",
     "n": 43,
     "winRate": 0.4883720930232558,
-    "avgR": 0.4474517947903279
+    "avgR": 0.44745179477655334
    },
    {
     "name": "ボリバン上限から回帰",
@@ -4393,7 +4408,7 @@
     "key": "*",
     "n": 101,
     "winRate": 0.38613861386138615,
-    "avgR": 0.142350588664433
+    "avgR": 0.14235058865421238
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4435,7 +4450,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

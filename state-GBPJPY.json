@@ -226,7 +226,7 @@
    "entry": 212.97028,
    "sl": 212.76443237280824,
    "tp": 213.3819752543835,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -242,7 +242,7 @@
    "entry": 212.97028,
    "sl": 212.76443237280824,
    "tp": 213.3819752543835,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3632,7 +3632,7 @@
    ]
   }
  ],
- "lastEvalT": 1793739600000,
+ "lastEvalT": 1793743200000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4361,14 +4361,14 @@
  },
  "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 184,
-  "wouldLose": 123,
+  "n": 186,
+  "wouldLose": 125,
   "wouldWin": 61
  },
  "version": 1,
- "lastRun": 1793746321241,
- "lastBarT": 1793743200000,
- "price": 212.81709,
+ "lastRun": 1793747221771,
+ "lastBarT": 1793746800000,
+ "price": 212.78518,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -4440,7 +4440,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1790,
+  "events": 1789,
   "win": [
    {
     "name": "陽の包み足",
@@ -4472,7 +4472,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.1984559542081773
+    "avgR": 0.19845595418453923
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4480,7 +4480,7 @@
     "key": "*",
     "n": 95,
     "winRate": 0.37894736842105264,
-    "avgR": 0.1324500885659649
+    "avgR": 0.13245008856047796
    }
   ]
  },
