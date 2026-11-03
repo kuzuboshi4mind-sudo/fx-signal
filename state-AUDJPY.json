@@ -307,7 +307,7 @@
    "entry": 110.51458,
    "sl": 110.68550557891133,
    "tp": 110.17272884217734,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -323,7 +323,7 @@
    "entry": 110.65842,
    "sl": 110.84104239137935,
    "tp": 110.29317521724133,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3903,14 +3903,14 @@
  },
  "reportDay": "2026-11-03",
  "skipReview": {
-  "n": 183,
+  "n": 185,
   "wouldLose": 130,
-  "wouldWin": 53
+  "wouldWin": 55
  },
  "version": 1,
- "lastRun": 1793676303882,
+ "lastRun": 1793677022429,
  "lastBarT": 1793674800000,
- "price": 110.46104,
+ "price": 110.34615,
  "equity": 95931.70619622874,
  "unreal": 0,
  "config": {
@@ -3982,7 +3982,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1856,
+  "events": 1860,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -4023,6 +4023,14 @@
     "n": 73,
     "winRate": 0.3835616438356164,
     "avgR": 0.1459439516880979
+   },
+   {
+    "name": "下降トレンドの戻り",
+    "dir": "short",
+    "key": "with|range",
+    "n": 74,
+    "winRate": 0.3783783783783784,
+    "avgR": 0.11573816982452548
    },
    {
     "name": "RSI買われすぎ反落",
