@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 111301.14222634218,
+  "balance": 109233.03884655861,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "long",
-   "pattern": "ema_cross_up",
-   "name": "ゴールデンクロス(EMA20/50)",
-   "units": 13000,
-   "entry": 88.95294,
-   "sl": 88.79385512463203,
-   "tp": 89.24110975073593,
-   "barT": 1793703600000,
-   "openT": 1793704021347,
-   "deadline": 1793790421347
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 13000,
+    "entry": 88.95294,
+    "sl": 88.79385512463203,
+    "tp": 89.24110975073593,
+    "barT": 1793703600000,
+    "openT": 1793704021347,
+    "deadline": 1793790421347,
+    "exit": 88.79385512463203,
+    "closeT": 1793739600000,
+    "reason": "sl",
+    "pnl": -2068.1033797835653
+   },
    {
     "dir": "long",
     "pattern": "macd_up",
@@ -206,7 +211,7 @@
    "entry": 89.11618,
    "sl": 88.97095739188302,
    "tp": 89.40662521623398,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -222,7 +227,7 @@
    "entry": 89.02704,
    "sl": 89.17648277518973,
    "tp": 88.72815444962055,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -270,7 +275,7 @@
    "entry": 88.94294,
    "sl": 88.79385512463203,
    "tp": 89.24110975073593,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -286,7 +291,7 @@
    "entry": 88.94294,
    "sl": 88.79385512463203,
    "tp": 89.24110975073593,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -298,7 +303,7 @@
    "entry": 88.88094,
    "sl": 88.73135321114218,
    "tp": 89.18011357771562,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3657,9 +3662,10 @@
  "lastEvalT": 1793736000000,
  "adaptive": {
   "start": 100000,
-  "balance": 101182.52805924905,
+  "balance": 100511.6461200932,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_up|long|2|1.5",
     "dir": "long",
@@ -3671,10 +3677,12 @@
     "tp": 89.25110975073594,
     "barT": 1793703600000,
     "openT": 1793704021347,
-    "deadline": 1793790421347
-   }
-  ],
-  "trades": [
+    "deadline": 1793790421347,
+    "exit": 88.72931268694805,
+    "closeT": 1793739600000,
+    "reason": "sl",
+    "pnl": -670.8819391558478
+   },
    {
     "key": "ema_cross_dn|short|3|1",
     "dir": "short",
@@ -4053,20 +4061,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 101506.34805924904
+  "equity": 100511.6461200932
  },
  "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 191,
-  "wouldLose": 132,
-  "wouldWin": 59
+  "n": 195,
+  "wouldLose": 135,
+  "wouldWin": 60
  },
  "version": 1,
- "lastRun": 1793741822221,
+ "lastRun": 1793742722184,
  "lastBarT": 1793739600000,
- "price": 89.06088,
- "equity": 112704.36222634217,
- "unreal": 1403.2199999999903,
+ "price": 88.66602,
+ "equity": 109233.03884655861,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4136,7 +4144,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1884,
+  "events": 1886,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4197,6 +4205,13 @@
   ]
  },
  "review": {
+  "ema_cross_up": {
+   "n": 4,
+   "wins": 2,
+   "recentLosses": 2,
+   "streak": 1,
+   "suspended": false
+  },
   "macd_up": {
    "n": 4,
    "wins": 1,
@@ -4209,13 +4224,6 @@
    "wins": 3,
    "recentLosses": 2,
    "streak": 2,
-   "suspended": false
-  },
-  "ema_cross_up": {
-   "n": 3,
-   "wins": 2,
-   "recentLosses": 1,
-   "streak": 0,
    "suspended": false
   },
   "donchian_dn": {
