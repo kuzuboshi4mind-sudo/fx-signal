@@ -6,7 +6,18 @@
   "balance": 113530.77353341923,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "units": 15000,
+   "entry": 88.83094,
+   "sl": 88.68229791286153,
+   "tp": 89.09822417427692,
+   "barT": 1793685600000,
+   "openT": 1793686022374,
+   "deadline": 1793772422374
+  },
   "trades": [
    {
     "dir": "long",
@@ -171,6 +182,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793682000000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 88.82094,
+   "sl": 88.68229791286153,
+   "tp": 89.09822417427692,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793671200000,
    "pattern": "bb_revert_up",
@@ -3491,7 +3514,7 @@
    ]
   }
  ],
- "lastEvalT": 1793678400000,
+ "lastEvalT": 1793682000000,
  "adaptive": {
   "start": 100000,
   "balance": 101182.52805924905,
@@ -3885,11 +3908,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793685122512,
- "lastBarT": 1793682000000,
- "price": 88.83756,
- "equity": 113530.77353341923,
- "unreal": 0,
+ "lastRun": 1793686022374,
+ "lastBarT": 1793685600000,
+ "price": 88.82094,
+ "equity": 113380.77353341915,
+ "unreal": -150.00000000007674,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -3959,7 +3982,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1887,
+  "events": 1886,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3983,7 +4006,7 @@
     "key": "*",
     "n": 32,
     "winRate": 0.4375,
-    "avgR": 0.2715147666506321
+    "avgR": 0.271514766650656
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -3991,7 +4014,7 @@
     "key": "against|range",
     "n": 21,
     "winRate": 0.42857142857142855,
-    "avgR": 0.2412115626659489
+    "avgR": 0.24121156267738322
    },
    {
     "name": "20本高値ブレイク",
@@ -4007,7 +4030,7 @@
     "key": "with|trend",
     "n": 26,
     "winRate": 0.38461538461538464,
-    "avgR": 0.13476944466065102
+    "avgR": 0.1347694446606519
    },
    {
     "name": "20本安値ブレイク",
@@ -4015,7 +4038,7 @@
     "key": "against|range",
     "n": 29,
     "winRate": 0.3793103448275862,
-    "avgR": 0.09216361411255153
+    "avgR": 0.09216361412102775
    }
   ]
  },
@@ -4049,7 +4072,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
