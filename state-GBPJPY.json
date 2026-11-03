@@ -204,6 +204,22 @@
  },
  "log": [
   {
+   "t": 1793710800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 212.25523,
+   "sl": 212.06252645620367,
+   "tp": 212.6406370875927,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793707200000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -3522,7 +3538,7 @@
    ]
   }
  ],
- "lastEvalT": 1793707200000,
+ "lastEvalT": 1793710800000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4256,9 +4272,9 @@
   "wouldWin": 57
  },
  "version": 1,
- "lastRun": 1793713921058,
- "lastBarT": 1793710800000,
- "price": 212.15325,
+ "lastRun": 1793714821731,
+ "lastBarT": 1793714400000,
+ "price": 212.25523,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -4330,7 +4346,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1792,
+  "events": 1791,
   "win": [
    {
     "name": "陽の包み足",
@@ -4359,18 +4375,18 @@
    {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
-    "key": "*",
-    "n": 95,
-    "winRate": 0.37894736842105264,
-    "avgR": 0.13245008856770774
+    "key": "against|range",
+    "n": 22,
+    "winRate": 0.4090909090909091,
+    "avgR": 0.19845595422241422
    },
    {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
-    "key": "against|range",
-    "n": 23,
-    "winRate": 0.391304347826087,
-    "avgR": 0.1450246076500559
+    "key": "*",
+    "n": 95,
+    "winRate": 0.37894736842105264,
+    "avgR": 0.13245008856926965
    }
   ]
  },
@@ -4404,7 +4420,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
