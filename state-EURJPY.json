@@ -156,6 +156,22 @@
  },
  "log": [
   {
+   "t": 1793703600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 176.98663,
+   "sl": 176.81391070545286,
+   "tp": 177.3320685890943,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793700000000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -3704,7 +3720,7 @@
    ]
   }
  ],
- "lastEvalT": 1793700000000,
+ "lastEvalT": 1793703600000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4081,9 +4097,9 @@
   "wouldWin": 48
  },
  "version": 1,
- "lastRun": 1793706720934,
- "lastBarT": 1793703600000,
- "price": 176.94419,
+ "lastRun": 1793707620683,
+ "lastBarT": 1793707200000,
+ "price": 176.98663,
  "equity": 110510.00980066622,
  "unreal": 0,
  "config": {
@@ -4163,7 +4179,7 @@
     "key": "against|range",
     "n": 42,
     "winRate": 0.5,
-    "avgR": 0.48259055051249333
+    "avgR": 0.4825905505146829
    },
    {
     "name": "ボリバン上限から回帰",
@@ -4195,7 +4211,7 @@
     "key": "*",
     "n": 101,
     "winRate": 0.38613861386138615,
-    "avgR": 0.1423505886633465
+    "avgR": 0.14235058866494
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4237,7 +4253,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
