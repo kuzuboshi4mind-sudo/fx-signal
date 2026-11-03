@@ -303,7 +303,7 @@
    "entry": 157.86972,
    "sl": 157.72962198415084,
    "tp": 158.14991603169835,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -319,7 +319,7 @@
    "entry": 157.86972,
    "sl": 157.72962198415084,
    "tp": 158.14991603169835,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -448,7 +448,7 @@
    "entry": 157.74111,
    "sl": 157.54464481735943,
    "tp": 158.13404036528115,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -3618,9 +3618,9 @@
  "lastEvalT": 1793692800000,
  "reportDay": "2026-11-03",
  "version": 1,
- "lastRun": 1793698620687,
+ "lastRun": 1793699520368,
  "lastBarT": 1793696400000,
- "price": 158.07182,
+ "price": 158.15465,
  "equity": 99280.98359295659,
  "unreal": 0,
  "config": {
@@ -3746,11 +3746,18 @@
  },
  "review": {
   "pullback_up": {
-   "n": 11,
-   "wins": 2,
-   "recentLosses": 5,
-   "streak": 7,
+   "n": 12,
+   "wins": 3,
+   "recentLosses": 4,
+   "streak": 0,
    "suspended": true
+  },
+  "ema_cross_up": {
+   "n": 1,
+   "wins": 1,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
   },
   "macd_up": {
    "n": 6,
@@ -4530,9 +4537,9 @@
   "equity": 101118.93437518679
  },
  "skipReview": {
-  "n": 166,
+  "n": 167,
   "wouldLose": 131,
-  "wouldWin": 35
+  "wouldWin": 36
  },
  "latest": {
   "start": 100000,

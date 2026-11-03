@@ -318,7 +318,7 @@
    "entry": 110.04958,
    "sl": 110.24405316298963,
    "tp": 109.66063367402076,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -330,7 +330,7 @@
    "entry": 110.04958,
    "sl": 110.24405316298963,
    "tp": 109.66063367402076,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -4003,11 +4003,11 @@
   "wouldWin": 55
  },
  "version": 1,
- "lastRun": 1793698621592,
+ "lastRun": 1793699521849,
  "lastBarT": 1793696400000,
- "price": 110.20791,
- "equity": 95970.90619622883,
- "unreal": 39.20000000007917,
+ "price": 110.29863,
+ "equity": 95063.70619622877,
+ "unreal": -867.9999999999666,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4077,7 +4077,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1857,
+  "events": 1859,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -4115,9 +4115,9 @@
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "with|trend",
-    "n": 73,
-    "winRate": 0.3835616438356164,
-    "avgR": 0.1459439516880978
+    "n": 74,
+    "winRate": 0.3783783783783784,
+    "avgR": 0.13024975919182033
    },
    {
     "name": "下降トレンドの戻り",
@@ -4134,24 +4134,23 @@
     "n": 29,
     "winRate": 0.3793103448275862,
     "avgR": 0.11399419423673568
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "*",
-    "n": 93,
-    "winRate": 0.3548387096774194,
-    "avgR": 0.04880993722902341
    }
   ]
  },
  "review": {
-  "bb_break_dn": {
-   "n": 3,
-   "wins": 1,
-   "recentLosses": 2,
-   "streak": 2,
+  "donchian_dn": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
    "suspended": false
+  },
+  "bb_break_dn": {
+   "n": 4,
+   "wins": 1,
+   "recentLosses": 3,
+   "streak": 3,
+   "suspended": true
   },
   "engulf_up": {
    "n": 3,
