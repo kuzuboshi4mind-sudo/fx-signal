@@ -259,7 +259,7 @@
    "entry": 211.73208,
    "sl": 211.54651812773693,
    "tp": 212.10320374452613,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -275,7 +275,7 @@
    "entry": 211.69118,
    "sl": 211.49797721448593,
    "tp": 212.07758557102815,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -323,7 +323,7 @@
    "entry": 211.8851,
    "sl": 212.13868647375267,
    "tp": 211.37792705249464,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -355,7 +355,7 @@
    "entry": 211.81024,
    "sl": 212.07926968592994,
    "tp": 211.27218062814012,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -371,7 +371,7 @@
    "entry": 211.81024,
    "sl": 212.07926968592994,
    "tp": 211.27218062814012,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -387,7 +387,7 @@
    "entry": 211.81024,
    "sl": 212.07926968592994,
    "tp": 211.27218062814012,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4203,14 +4203,14 @@
  },
  "reportDay": "2026-11-03",
  "skipReview": {
-  "n": 169,
-  "wouldLose": 117,
-  "wouldWin": 52
+  "n": 175,
+  "wouldLose": 121,
+  "wouldWin": 54
  },
  "version": 1,
- "lastRun": 1793697721451,
+ "lastRun": 1793698621300,
  "lastBarT": 1793696400000,
- "price": 212.05628,
+ "price": 212.14377,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -4282,7 +4282,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1790,
+  "events": 1791,
   "win": [
    {
     "name": "陽の包み足",
