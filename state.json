@@ -473,7 +473,7 @@
    "entry": 157.89348,
    "sl": 157.70569030504032,
    "tp": 158.26905938991942,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -3683,9 +3683,9 @@
  "lastEvalT": 1793700000000,
  "reportDay": "2026-11-03",
  "version": 1,
- "lastRun": 1793704921018,
+ "lastRun": 1793705809252,
  "lastBarT": 1793703600000,
- "price": 158.2471,
+ "price": 158.26617,
  "equity": 99280.98359295659,
  "unreal": 0,
  "config": {
@@ -3757,7 +3757,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1899,
+  "events": 1901,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3771,17 +3771,17 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 271,
-    "winRate": 0.3763837638376384,
-    "avgR": 0.21427114248514692
+    "n": 272,
+    "winRate": 0.3786764705882353,
+    "avgR": 0.22078486291359556
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|range",
-    "n": 218,
-    "winRate": 0.3761467889908257,
-    "avgR": 0.21399277591287602
+    "n": 219,
+    "winRate": 0.3789954337899543,
+    "avgR": 0.22208414725127923
    },
    {
     "name": "上昇トレンドの押し目",
@@ -3811,9 +3811,9 @@
  },
  "review": {
   "pullback_up": {
-   "n": 14,
-   "wins": 5,
-   "recentLosses": 2,
+   "n": 15,
+   "wins": 6,
+   "recentLosses": 1,
    "streak": 0,
    "suspended": false
   },
