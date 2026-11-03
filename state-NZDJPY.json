@@ -3908,11 +3908,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793692048091,
+ "lastRun": 1793692323183,
  "lastBarT": 1793689200000,
- "price": 88.82692,
- "equity": 113470.47353341927,
- "unreal": -60.29999999995539,
+ "price": 88.84042,
+ "equity": 113672.97353341916,
+ "unreal": 142.1999999999457,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
