@@ -4053,7 +4053,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 101392.28805924904
+  "equity": 101505.29805924905
  },
  "reportDay": "2026-11-04",
  "skipReview": {
@@ -4062,11 +4062,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793740022268,
+ "lastRun": 1793740922314,
  "lastBarT": 1793739600000,
- "price": 89.02286,
- "equity": 112210.10222634213,
- "unreal": 908.9599999999507,
+ "price": 89.06053,
+ "equity": 112699.81222634221,
+ "unreal": 1398.6700000000242,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",

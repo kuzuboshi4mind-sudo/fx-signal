@@ -4264,11 +4264,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793740021285,
+ "lastRun": 1793740921119,
  "lastBarT": 1793739600000,
- "price": 177.63143,
- "equity": 110403.44980066616,
- "unreal": -106.56000000005861,
+ "price": 177.65648,
+ "equity": 110102.84980066624,
+ "unreal": -407.1599999999762,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
