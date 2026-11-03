@@ -3714,9 +3714,9 @@
  "lastEvalT": 1793710800000,
  "reportDay": "2026-11-03",
  "version": 1,
- "lastRun": 1793714820482,
+ "lastRun": 1793715720340,
  "lastBarT": 1793714400000,
- "price": 158.19572,
+ "price": 158.20194,
  "equity": 99280.98359295659,
  "unreal": 0,
  "config": {
@@ -3905,16 +3905,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 101118.93437518679,

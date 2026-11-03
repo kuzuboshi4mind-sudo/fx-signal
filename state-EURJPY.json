@@ -4161,9 +4161,9 @@
   "wouldWin": 50
  },
  "version": 1,
- "lastRun": 1793714821014,
+ "lastRun": 1793715720757,
  "lastBarT": 1793714400000,
- "price": 176.95609,
+ "price": 176.99173,
  "equity": 110510.00980066622,
  "unreal": 0,
  "config": {
@@ -4317,35 +4317,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
