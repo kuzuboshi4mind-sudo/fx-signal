@@ -4294,11 +4294,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793747221422,
+ "lastRun": 1793748120916,
  "lastBarT": 1793746800000,
- "price": 177.50708,
- "equity": 111895.64980066607,
- "unreal": 1385.639999999853,
+ "price": 177.617,
+ "equity": 110576.6098006662,
+ "unreal": 66.599999999994,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4450,16 +4450,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
