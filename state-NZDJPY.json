@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 113530.77353341923,
+  "balance": 111301.14222634218,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "long",
-   "pattern": "macd_up",
-   "name": "MACD買いクロス",
-   "units": 15000,
-   "entry": 88.83094,
-   "sl": 88.68229791286153,
-   "tp": 89.09822417427692,
-   "barT": 1793685600000,
-   "openT": 1793686022374,
-   "deadline": 1793772422374
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "macd_up",
+    "name": "MACD買いクロス",
+    "units": 15000,
+    "entry": 88.83094,
+    "sl": 88.68229791286153,
+    "tp": 89.09822417427692,
+    "barT": 1793685600000,
+    "openT": 1793686022374,
+    "deadline": 1793772422374,
+    "exit": 88.68229791286153,
+    "closeT": 1793692800000,
+    "reason": "sl",
+    "pnl": -2229.6313070770425
+   },
    {
     "dir": "long",
     "pattern": "macd_up",
@@ -190,7 +195,7 @@
    "entry": 88.82094,
    "sl": 88.68229791286153,
    "tp": 89.09822417427692,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -3908,11 +3913,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793695022550,
+ "lastRun": 1793695922374,
  "lastBarT": 1793692800000,
- "price": 88.69478,
- "equity": 111488.37353341917,
- "unreal": -2042.4000000000574,
+ "price": 88.65045,
+ "equity": 111301.14222634218,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -3982,7 +3987,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1886,
+  "events": 1887,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -3996,9 +4001,9 @@
     "name": "MACD買いクロス",
     "dir": "long",
     "key": "against|range",
-    "n": 34,
-    "winRate": 0.47058823529411764,
-    "avgR": 0.3717148719030436
+    "n": 35,
+    "winRate": 0.45714285714285713,
+    "avgR": 0.33149261599464785
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -4044,10 +4049,10 @@
  },
  "review": {
   "macd_up": {
-   "n": 3,
+   "n": 4,
    "wins": 1,
-   "recentLosses": 2,
-   "streak": 0,
+   "recentLosses": 3,
+   "streak": 1,
    "suspended": false
   },
   "bb_break_dn": {
