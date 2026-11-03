@@ -6,7 +6,18 @@
   "balance": 111301.14222634218,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "units": 13000,
+   "entry": 88.95294,
+   "sl": 88.79385512463203,
+   "tp": 89.24110975073593,
+   "barT": 1793703600000,
+   "openT": 1793704021347,
+   "deadline": 1793790421347
+  },
   "trades": [
    {
     "dir": "long",
@@ -187,6 +198,34 @@
   ]
  },
  "log": [
+  {
+   "t": 1793700000000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 88.94294,
+   "sl": 88.79385512463203,
+   "tp": 89.24110975073593,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793700000000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 88.94294,
+   "sl": 88.79385512463203,
+   "tp": 89.24110975073593,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793696400000,
    "pattern": "engulf_up",
@@ -3551,12 +3590,26 @@
    ]
   }
  ],
- "lastEvalT": 1793696400000,
+ "lastEvalT": 1793700000000,
  "adaptive": {
   "start": 100000,
   "balance": 101182.52805924905,
   "startT": 1791967923493,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_up|long|2|1.5",
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 3000,
+    "entry": 88.95294,
+    "sl": 88.72931268694805,
+    "tp": 89.25110975073594,
+    "barT": 1793703600000,
+    "openT": 1793704021347,
+    "deadline": 1793790421347
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_dn|short|3|1",
@@ -3936,7 +3989,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 101182.52805924905
+  "equity": 101152.52805924903
  },
  "reportDay": "2026-11-03",
  "skipReview": {
@@ -3945,11 +3998,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793703121584,
- "lastBarT": 1793700000000,
- "price": 88.93641,
- "equity": 111301.14222634218,
- "unreal": 0,
+ "lastRun": 1793704021347,
+ "lastBarT": 1793703600000,
+ "price": 88.94294,
+ "equity": 111171.14222634211,
+ "unreal": -130.0000000000665,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4043,7 +4096,7 @@
     "key": "*",
     "n": 32,
     "winRate": 0.4375,
-    "avgR": 0.27151476665051855
+    "avgR": 0.27151476665049024
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4051,7 +4104,7 @@
     "key": "against|range",
     "n": 20,
     "winRate": 0.45,
-    "avgR": 0.30500115568380465
+    "avgR": 0.30500115568081076
    },
    {
     "name": "20本高値ブレイク",
@@ -4067,7 +4120,7 @@
     "key": "against|range",
     "n": 28,
     "winRate": 0.39285714285714285,
-    "avgR": 0.13240446810457238
+    "avgR": 0.1324044681021923
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4075,7 +4128,7 @@
     "key": "with|trend",
     "n": 26,
     "winRate": 0.38461538461538464,
-    "avgR": 0.13476944466064686
+    "avgR": 0.1347694446606458
    }
   ]
  },
@@ -4109,7 +4162,23 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
