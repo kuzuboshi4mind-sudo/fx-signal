@@ -156,6 +156,22 @@
  },
  "log": [
   {
+   "t": 1793714400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 177.29484,
+   "sl": 177.1079265378571,
+   "tp": 177.66866692428576,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793710800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -163,7 +179,7 @@
    "entry": 176.95609,
    "sl": 176.78068627153843,
    "tp": 177.30689745692314,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -179,7 +195,7 @@
    "entry": 176.95609,
    "sl": 176.78068627153843,
    "tp": 177.30689745692314,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -195,7 +211,7 @@
    "entry": 176.95609,
    "sl": 176.78068627153843,
    "tp": 177.30689745692314,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -243,7 +259,7 @@
    "entry": 176.87678,
    "sl": 176.70038999048768,
    "tp": 177.2295600190246,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -274,7 +290,7 @@
    "entry": 176.92096,
    "sl": 176.74511075898675,
    "tp": 177.27265848202651,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -290,7 +306,7 @@
    "entry": 176.85724,
    "sl": 176.68376129444616,
    "tp": 177.20419741110766,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -306,7 +322,7 @@
    "entry": 176.85724,
    "sl": 176.68376129444616,
    "tp": 177.20419741110766,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3784,7 +3800,7 @@
    ]
   }
  ],
- "lastEvalT": 1793710800000,
+ "lastEvalT": 1793714400000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4154,16 +4170,16 @@
   "pickTried": "2026-11-01",
   "equity": 105529.65063667537
  },
- "reportDay": "2026-11-03",
+ "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 201,
+  "n": 208,
   "wouldLose": 151,
-  "wouldWin": 50
+  "wouldWin": 57
  },
  "version": 1,
- "lastRun": 1793717520635,
- "lastBarT": 1793714400000,
- "price": 177.17979,
+ "lastRun": 1793718420711,
+ "lastBarT": 1793718000000,
+ "price": 177.29484,
  "equity": 110510.00980066622,
  "unreal": 0,
  "config": {
@@ -4235,15 +4251,15 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1815,
+  "events": 1816,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 42,
-    "winRate": 0.5,
-    "avgR": 0.4825905505200254
+    "n": 43,
+    "winRate": 0.4883720930232558,
+    "avgR": 0.4474517947955113
    },
    {
     "name": "ボリバン上限から回帰",
@@ -4275,7 +4291,7 @@
     "key": "*",
     "n": 101,
     "winRate": 0.38613861386138615,
-    "avgR": 0.14235058866882805
+    "avgR": 0.14235058866827904
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4317,7 +4333,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

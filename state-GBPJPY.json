@@ -204,6 +204,38 @@
  },
  "log": [
   {
+   "t": 1793714400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 212.68802,
+   "sl": 212.47870528076052,
+   "tp": 213.1066494384789,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793714400000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 212.68802,
+   "sl": 212.47870528076052,
+   "tp": 213.1066494384789,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793710800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -211,7 +243,7 @@
    "entry": 212.25523,
    "sl": 212.06252645620367,
    "tp": 212.6406370875927,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3538,7 +3570,7 @@
    ]
   }
  ],
- "lastEvalT": 1793710800000,
+ "lastEvalT": 1793714400000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4265,16 +4297,16 @@
   "pickTried": "2026-11-01",
   "equity": 91562.18378857682
  },
- "reportDay": "2026-11-03",
+ "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 182,
+  "n": 183,
   "wouldLose": 122,
-  "wouldWin": 60
+  "wouldWin": 61
  },
  "version": 1,
- "lastRun": 1793717521000,
- "lastBarT": 1793714400000,
- "price": 212.58288,
+ "lastRun": 1793718421258,
+ "lastBarT": 1793718000000,
+ "price": 212.68802,
  "equity": 105762.34546069396,
  "unreal": 0,
  "config": {
@@ -4346,7 +4378,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1795,
+  "events": 1796,
   "win": [
    {
     "name": "陽の包み足",
@@ -4378,7 +4410,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.4090909090909091,
-    "avgR": 0.19845595422241422
+    "avgR": 0.19845595422024118
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4386,7 +4418,7 @@
     "key": "*",
     "n": 95,
     "winRate": 0.37894736842105264,
-    "avgR": 0.13245008856926965
+    "avgR": 0.13245008856876522
    }
   ]
  },
@@ -4420,7 +4452,26 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
