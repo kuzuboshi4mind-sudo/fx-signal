@@ -4446,7 +4446,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 94450.4712782284
+  "equity": 94568.17127822842
  },
  "reportDay": "2026-11-05",
  "skipReview": {
@@ -4455,11 +4455,11 @@
   "wouldWin": 60
  },
  "version": 1,
- "lastRun": 1793830021330,
+ "lastRun": 1793830921832,
  "lastBarT": 1793829600000,
- "price": 110.91877,
- "equity": 94136.01189709353,
- "unreal": -1364.3000000000284,
+ "price": 110.97762,
+ "equity": 94547.96189709358,
+ "unreal": -952.3499999999814,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4684,17 +4684,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
