@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 94017.44041093983,
+  "balance": 97300.16920404568,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "short",
-   "pattern": "pullback_dn",
-   "name": "下降トレンドの戻り",
-   "units": 11000,
-   "entry": 110.50423,
-   "sl": 110.66244494514119,
-   "tp": 110.20580010971766,
-   "barT": 1793746800000,
-   "openT": 1793747222180,
-   "deadline": 1793833622180
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "units": 11000,
+    "entry": 110.50423,
+    "sl": 110.66244494514119,
+    "tp": 110.20580010971766,
+    "barT": 1793746800000,
+    "openT": 1793747222180,
+    "deadline": 1793833622180,
+    "exit": 110.20580010971766,
+    "closeT": 1793754000000,
+    "reason": "tp",
+    "pnl": 3282.7287931058463
+   },
    {
     "dir": "short",
     "pattern": "pullback_dn",
@@ -334,7 +339,7 @@
    "entry": 110.51001,
    "sl": 110.66780102048823,
    "tp": 110.19442795902353,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -346,7 +351,7 @@
    "entry": 110.51023,
    "sl": 110.66244494514119,
    "tp": 110.20580010971766,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -402,7 +407,7 @@
    "entry": 110.33041,
    "sl": 110.12972706293822,
    "tp": 110.73177587412358,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4098,16 +4103,16 @@
  },
  "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 190,
-  "wouldLose": 134,
+  "n": 191,
+  "wouldLose": 135,
   "wouldWin": 56
  },
  "version": 1,
- "lastRun": 1793756222774,
+ "lastRun": 1793757121956,
  "lastBarT": 1793754000000,
- "price": 110.22798,
- "equity": 97056.19041093987,
- "unreal": 3038.75000000005,
+ "price": 110.02121,
+ "equity": 97300.16920404568,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4177,7 +4182,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1860,
+  "events": 1861,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -4220,24 +4225,31 @@
     "avgR": 0.1302497591918202
    },
    {
+    "name": "下降トレンドの戻り",
+    "dir": "short",
+    "key": "with|range",
+    "n": 77,
+    "winRate": 0.37662337662337664,
+    "avgR": 0.11051589865556652
+   },
+   {
     "name": "RSI買われすぎ反落",
     "dir": "short",
     "key": "against|trend",
     "n": 29,
     "winRate": 0.3793103448275862,
     "avgR": 0.11399419423669832
-   },
-   {
-    "name": "下降トレンドの戻り",
-    "dir": "short",
-    "key": "with|range",
-    "n": 76,
-    "winRate": 0.3684210526315789,
-    "avgR": 0.08590443006864058
    }
   ]
  },
  "review": {
+  "pullback_dn": {
+   "n": 3,
+   "wins": 2,
+   "recentLosses": 1,
+   "streak": 0,
+   "suspended": false
+  },
   "engulf_up": {
    "n": 4,
    "wins": 0,
@@ -4258,13 +4270,6 @@
    "recentLosses": 3,
    "streak": 3,
    "suspended": true
-  },
-  "pullback_dn": {
-   "n": 1,
-   "wins": 0,
-   "recentLosses": 1,
-   "streak": 1,
-   "suspended": false
   },
   "rsi_fall": {
    "n": 1,
