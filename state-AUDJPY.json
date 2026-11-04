@@ -4365,7 +4365,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 94690.87127822843
+  "equity": 94568.45127822841
  },
  "reportDay": "2026-11-04",
  "skipReview": {
@@ -4374,11 +4374,11 @@
   "wouldWin": 59
  },
  "version": 1,
- "lastRun": 1793794022690,
+ "lastRun": 1793794921903,
  "lastBarT": 1793793600000,
- "price": 111.03897,
- "equity": 94977.41189709361,
- "unreal": -522.8999999999502,
+ "price": 110.97776,
+ "equity": 94548.9418970936,
+ "unreal": -951.3699999999687,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4603,23 +4603,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
