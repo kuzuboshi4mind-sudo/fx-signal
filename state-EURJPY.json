@@ -172,6 +172,36 @@
  },
  "log": [
   {
+   "t": 1793754000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 177.14703,
+   "sl": 177.35472536984878,
+   "tp": 176.73163926030244,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1793754000000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 177.14703,
+   "sl": 177.35472536984878,
+   "tp": 176.73163926030244,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793743200000,
    "pattern": "rsi_fall",
    "name": "RSI買われすぎ反落",
@@ -3922,7 +3952,7 @@
    ]
   }
  ],
- "lastEvalT": 1793750400000,
+ "lastEvalT": 1793754000000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4299,9 +4329,9 @@
   "wouldWin": 61
  },
  "version": 1,
- "lastRun": 1793757120925,
- "lastBarT": 1793754000000,
- "price": 177.43139,
+ "lastRun": 1793758020950,
+ "lastBarT": 1793757600000,
+ "price": 177.14703,
  "equity": 108361.72505749196,
  "unreal": 0,
  "config": {
@@ -4381,7 +4411,7 @@
     "key": "against|range",
     "n": 43,
     "winRate": 0.4883720930232558,
-    "avgR": 0.44745179476658775
+    "avgR": 0.44745179476734337
    },
    {
     "name": "陰の包み足",
@@ -4421,7 +4451,7 @@
     "key": "*",
     "n": 100,
     "winRate": 0.38,
-    "avgR": 0.12395951382330697
+    "avgR": 0.12395951382356031
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4470,7 +4500,24 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
