@@ -4018,11 +4018,11 @@
  "lastEvalT": 1793790000000,
  "reportDay": "2026-11-04",
  "version": 1,
- "lastRun": 1793794920323,
+ "lastRun": 1793795820362,
  "lastBarT": 1793793600000,
- "price": 158.32249,
- "equity": 97926.1535929566,
- "unreal": 710.6400000000122,
+ "price": 158.30213,
+ "equity": 97763.27359295674,
+ "unreal": 547.760000000153,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4092,7 +4092,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1911,
+  "events": 1912,
   "win": [
    {
     "name": "20本高値ブレイク",
