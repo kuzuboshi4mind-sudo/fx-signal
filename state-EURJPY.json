@@ -172,6 +172,38 @@
  },
  "log": [
   {
+   "t": 1793768400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 177.5753,
+   "sl": 177.34335363967483,
+   "tp": 178.0391927206503,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793768400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 177.5753,
+   "sl": 177.34335363967483,
+   "tp": 178.0391927206503,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793757600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -3968,7 +4000,7 @@
    ]
   }
  ],
- "lastEvalT": 1793764800000,
+ "lastEvalT": 1793768400000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4345,9 +4377,9 @@
   "wouldWin": 61
  },
  "version": 1,
- "lastRun": 1793771521230,
- "lastBarT": 1793768400000,
- "price": 177.45963,
+ "lastRun": 1793772421113,
+ "lastBarT": 1793772000000,
+ "price": 177.5753,
  "equity": 108361.72505749196,
  "unreal": 0,
  "config": {
@@ -4419,7 +4451,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1812,
+  "events": 1813,
   "win": [
    {
     "name": "陽の包み足",
@@ -4427,7 +4459,7 @@
     "key": "against|range",
     "n": 43,
     "winRate": 0.4883720930232558,
-    "avgR": 0.4474517947534143
+    "avgR": 0.44745179476105923
    },
    {
     "name": "陰の包み足",
@@ -4467,7 +4499,7 @@
     "key": "*",
     "n": 99,
     "winRate": 0.3838383838383838,
-    "avgR": 0.13550055570716069
+    "avgR": 0.1355005557071723
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4516,7 +4548,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

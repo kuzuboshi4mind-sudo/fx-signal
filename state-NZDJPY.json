@@ -275,7 +275,7 @@
    "entry": 88.36643,
    "sl": 88.55342947286529,
    "tp": 87.99243105426942,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -291,7 +291,7 @@
    "entry": 88.36643,
    "sl": 88.55342947286529,
    "tp": 87.99243105426942,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -306,7 +306,7 @@
    "entry": 88.36643,
    "sl": 88.55342947286529,
    "tp": 87.99243105426942,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3817,7 +3817,7 @@
    ]
   }
  ],
- "lastEvalT": 1793764800000,
+ "lastEvalT": 1793768400000,
  "adaptive": {
   "start": 100000,
   "balance": 100511.6461200932,
@@ -4223,14 +4223,14 @@
  },
  "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 200,
-  "wouldLose": 140,
+  "n": 203,
+  "wouldLose": 143,
   "wouldWin": 60
  },
  "version": 1,
- "lastRun": 1793771522761,
- "lastBarT": 1793768400000,
- "price": 88.49378,
+ "lastRun": 1793772422639,
+ "lastBarT": 1793772000000,
+ "price": 88.56534,
  "equity": 109233.03884655861,
  "unreal": 0,
  "config": {
@@ -4302,7 +4302,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1885,
+  "events": 1889,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4310,7 +4310,7 @@
     "key": "against|trend",
     "n": 20,
     "winRate": 0.6,
-    "avgR": 0.7666314979808978
+    "avgR": 0.7666314979808976
    },
    {
     "name": "MACD買いクロス",
@@ -4326,7 +4326,7 @@
     "key": "against|range",
     "n": 20,
     "winRate": 0.45,
-    "avgR": 0.3050011556697287
+    "avgR": 0.30500115564428726
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -4334,7 +4334,7 @@
     "key": "*",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.2319677148534189
+    "avgR": 0.23196771485318557
    },
    {
     "name": "20本高値ブレイク",
@@ -4350,15 +4350,7 @@
     "key": "against|range",
     "n": 28,
     "winRate": 0.39285714285714285,
-    "avgR": 0.1324044680933826
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "with|trend",
-    "n": 26,
-    "winRate": 0.38461538461538464,
-    "avgR": 0.13476944466064195
+    "avgR": 0.1324044680731578
    }
   ]
  },
