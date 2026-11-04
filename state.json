@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 97215.51359295659,
+  "balance": 100807.0453039898,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 8000,
-   "entry": 158.23366,
-   "sl": 158.00168926806043,
-   "tp": 158.68260146387914,
-   "barT": 1793782800000,
-   "openT": 1793783220256,
-   "deadline": 1793869620256
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 8000,
+    "entry": 158.23366,
+    "sl": 158.00168926806043,
+    "tp": 158.68260146387914,
+    "barT": 1793782800000,
+    "openT": 1793783220256,
+    "deadline": 1793869620256,
+    "exit": 158.68260146387914,
+    "closeT": 1793804400000,
+    "reason": "tp",
+    "pnl": 3591.5317110332126
+   },
    {
     "dir": "long",
     "pattern": "pullback_up",
@@ -347,7 +352,7 @@
    "entry": 158.22866,
    "sl": 158.00168926806043,
    "tp": 158.68260146387914,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -4030,11 +4035,11 @@
  "lastEvalT": 1793800800000,
  "reportDay": "2026-11-05",
  "version": 1,
- "lastRun": 1793805720669,
+ "lastRun": 1793806620211,
  "lastBarT": 1793804400000,
- "price": 158.59596,
- "equity": 100113.91359295663,
- "unreal": 2898.400000000038,
+ "price": 158.60647,
+ "equity": 100807.0453039898,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4104,7 +4109,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1911,
+  "events": 1912,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4118,9 +4123,9 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 269,
-    "winRate": 0.379182156133829,
-    "avgR": 0.2234224902695828
+    "n": 270,
+    "winRate": 0.3814814814814815,
+    "avgR": 0.2299616120240578
    },
    {
     "name": "上昇トレンドの押し目",
@@ -4134,9 +4139,9 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|trend",
-    "n": 53,
-    "winRate": 0.37735849056603776,
-    "avgR": 0.21541612196302315
+    "n": 54,
+    "winRate": 0.3888888888888889,
+    "avgR": 0.24825999681514918
    },
    {
     "name": "陰の包み足",
@@ -4166,10 +4171,10 @@
  },
  "review": {
   "pullback_up": {
-   "n": 16,
-   "wins": 6,
+   "n": 17,
+   "wins": 7,
    "recentLosses": 1,
-   "streak": 1,
+   "streak": 0,
    "suspended": false
   },
   "ema_cross_up": {
