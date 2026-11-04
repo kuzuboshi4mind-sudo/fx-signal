@@ -307,7 +307,7 @@
    "entry": 158.66751,
    "sl": 158.80552752155492,
    "tp": 158.39147495689014,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -322,7 +322,7 @@
    "entry": 158.73292,
    "sl": 158.8781373309053,
    "tp": 158.44248533818939,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3871,9 +3871,9 @@
  "lastEvalT": 1793746800000,
  "reportDay": "2026-11-04",
  "version": 1,
- "lastRun": 1793750820105,
+ "lastRun": 1793751720200,
  "lastBarT": 1793750400000,
- "price": 158.54716,
+ "price": 158.38044,
  "equity": 99280.98359295659,
  "unreal": 0,
  "config": {
@@ -3945,7 +3945,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1908,
+  "events": 1910,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4062,17 +4062,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 101118.93437518679,
@@ -4800,15 +4790,16 @@
   "equity": 101118.93437518679
  },
  "skipReview": {
-  "n": 185,
+  "n": 187,
   "wouldLose": 142,
-  "wouldWin": 43
+  "wouldWin": 45
  },
  "latest": {
   "start": 100000,
-  "balance": 101362.88463013161,
+  "balance": 100835.44463013153,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "long",
@@ -4820,10 +4811,12 @@
     "tp": 174.3294460792192,
     "barT": 1793721600000,
     "openT": 1793722021036,
-    "deadline": 1793750821036
-   }
-  ],
-  "trades": [
+    "deadline": 1793750821036,
+    "exit": 158.38044,
+    "closeT": 1793751720200,
+    "reason": "time",
+    "pnl": -527.4400000000696
+   },
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -4913,6 +4906,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 102169.20463013153
+  "equity": 100835.44463013153
  }
 }
