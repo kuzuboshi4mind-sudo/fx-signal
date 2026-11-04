@@ -6,7 +6,18 @@
   "balance": 108361.72505749196,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "units": 8000,
+   "entry": 178.30288,
+   "sl": 178.55877678928394,
+   "tp": 177.80908642143208,
+   "barT": 1793797200000,
+   "openT": 1793797620660,
+   "deadline": 1793884020660
+  },
   "trades": [
    {
     "dir": "short",
@@ -171,6 +182,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793793600000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 178.30888,
+   "sl": 178.55877678928394,
+   "tp": 177.80908642143208,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793782800000,
    "pattern": "donchian_up",
@@ -4064,7 +4087,7 @@
    ]
   }
  ],
- "lastEvalT": 1793790000000,
+ "lastEvalT": 1793793600000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4441,11 +4464,11 @@
   "wouldWin": 64
  },
  "version": 1,
- "lastRun": 1793797185439,
- "lastBarT": 1793793600000,
- "price": 178.29454,
- "equity": 108361.72505749196,
- "unreal": 0,
+ "lastRun": 1793797620660,
+ "lastBarT": 1793797200000,
+ "price": 178.30888,
+ "equity": 108313.72505749196,
+ "unreal": -48.00000000000182,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4523,7 +4546,7 @@
     "key": "against|range",
     "n": 43,
     "winRate": 0.4883720930232558,
-    "avgR": 0.44745179480750324
+    "avgR": 0.44745179482630176
    },
    {
     "name": "陰の包み足",
@@ -4555,7 +4578,7 @@
     "key": "against|trend",
     "n": 44,
     "winRate": 0.36363636363636365,
-    "avgR": 0.19835194283019966
+    "avgR": 0.1983519428301997
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4563,7 +4586,7 @@
     "key": "*",
     "n": 99,
     "winRate": 0.3838383838383838,
-    "avgR": 0.1355005557072428
+    "avgR": 0.13550055570727132
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4612,7 +4635,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
