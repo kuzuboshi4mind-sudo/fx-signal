@@ -4430,7 +4430,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 94657.23127822841
+  "equity": 94607.2512782284
  },
  "reportDay": "2026-11-05",
  "skipReview": {
@@ -4439,11 +4439,11 @@
   "wouldWin": 60
  },
  "version": 1,
- "lastRun": 1793827324871,
+ "lastRun": 1793828222481,
  "lastBarT": 1793826000000,
- "price": 111.02215,
- "equity": 94859.67189709355,
- "unreal": -640.640000000019,
+ "price": 110.99716,
+ "equity": 94684.74189709353,
+ "unreal": -815.5700000000365,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
