@@ -4464,11 +4464,11 @@
   "wouldWin": 64
  },
  "version": 1,
- "lastRun": 1793797620660,
+ "lastRun": 1793798521032,
  "lastBarT": 1793797200000,
- "price": 178.30888,
- "equity": 108313.72505749196,
- "unreal": -48.00000000000182,
+ "price": 178.33409,
+ "equity": 108112.04505749184,
+ "unreal": -249.6800000001258,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4635,14 +4635,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
