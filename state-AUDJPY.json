@@ -355,7 +355,7 @@
    "entry": 110.14829,
    "sl": 109.92403544568458,
    "tp": 110.59679910863085,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -367,7 +367,7 @@
    "entry": 110.14829,
    "sl": 109.92403544568458,
    "tp": 110.59679910863085,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -383,7 +383,7 @@
    "entry": 110.14829,
    "sl": 109.92403544568458,
    "tp": 110.59679910863085,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4240,14 +4240,14 @@
  },
  "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 195,
+  "n": 197,
   "wouldLose": 139,
-  "wouldWin": 56
+  "wouldWin": 58
  },
  "version": 1,
- "lastRun": 1793776922015,
+ "lastRun": 1793778621567,
  "lastBarT": 1793775600000,
- "price": 110.47973,
+ "price": 110.64468,
  "equity": 95500.31189709356,
  "unreal": 0,
  "config": {
@@ -4396,19 +4396,19 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 5,
+   "wins": 1,
+   "recentLosses": 4,
+   "streak": 0,
+   "suspended": true
+  },
   "pullback_dn": {
    "n": 4,
    "wins": 2,
    "recentLosses": 2,
    "streak": 1,
    "suspended": false
-  },
-  "engulf_up": {
-   "n": 4,
-   "wins": 0,
-   "recentLosses": 4,
-   "streak": 4,
-   "suspended": true
   },
   "donchian_dn": {
    "n": 1,
