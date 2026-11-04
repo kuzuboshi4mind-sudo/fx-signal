@@ -4405,11 +4405,11 @@
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793758021253,
+ "lastRun": 1793758920738,
  "lastBarT": 1793757600000,
- "price": 212.29299,
- "equity": 105682.34546069404,
- "unreal": -79.99999999992724,
+ "price": 212.33778,
+ "equity": 105324.02546069399,
+ "unreal": -438.31999999997606,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -4561,23 +4561,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

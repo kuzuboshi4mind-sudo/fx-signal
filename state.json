@@ -3963,9 +3963,9 @@
  "lastEvalT": 1793754000000,
  "reportDay": "2026-11-04",
  "version": 1,
- "lastRun": 1793758020116,
+ "lastRun": 1793758920218,
  "lastBarT": 1793757600000,
- "price": 157.74335,
+ "price": 157.7551,
  "equity": 97215.51359295659,
  "unreal": 0,
  "config": {
@@ -4154,44 +4154,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 101118.93437518679,
@@ -5049,6 +5012,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 100805.44463013156
+  "equity": 100734.94463013152
  }
 }
