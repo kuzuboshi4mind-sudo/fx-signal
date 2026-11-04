@@ -4593,11 +4593,11 @@
   "wouldWin": 64
  },
  "version": 1,
- "lastRun": 1793815621518,
+ "lastRun": 1793816521822,
  "lastBarT": 1793815200000,
- "price": 213.28442,
- "equity": 105420.67236738767,
- "unreal": 1598.029999999909,
+ "price": 213.36877,
+ "equity": 104830.22236738766,
+ "unreal": 1007.5799999999049,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -4772,18 +4772,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
