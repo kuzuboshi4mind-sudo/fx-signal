@@ -222,7 +222,7 @@
    "entry": 89.2976,
    "sl": 89.09697898929097,
    "tp": 89.69884202141806,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3888,7 +3888,7 @@
    ]
   }
  ],
- "lastEvalT": 1793800800000,
+ "lastEvalT": 1793804400000,
  "adaptive": {
   "start": 100000,
   "balance": 100511.6461200932,
@@ -4304,20 +4304,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100278.3861200932
+  "equity": 100156.56612009318
  },
  "reportDay": "2026-11-05",
  "skipReview": {
-  "n": 205,
-  "wouldLose": 143,
+  "n": 206,
+  "wouldLose": 144,
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793807522669,
- "lastBarT": 1793804400000,
- "price": 89.13848,
- "equity": 108066.73884655861,
- "unreal": -1166.3000000000068,
+ "lastRun": 1793808790600,
+ "lastBarT": 1793808000000,
+ "price": 89.07757,
+ "equity": 107457.63884655853,
+ "unreal": -1775.4000000000758,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4387,7 +4387,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1892,
+  "events": 1891,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4395,7 +4395,7 @@
     "key": "against|trend",
     "n": 20,
     "winRate": 0.6,
-    "avgR": 0.7666314979808978
+    "avgR": 0.7666314979808979
    },
    {
     "name": "MACD買いクロス",
@@ -4409,9 +4409,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "against|range",
-    "n": 20,
-    "winRate": 0.45,
-    "avgR": 0.30500115574993913
+    "n": 19,
+    "winRate": 0.42105263157894735,
+    "avgR": 0.21831521521381636
    },
    {
     "name": "20本高値ブレイク",
@@ -4427,7 +4427,7 @@
     "key": "against|range",
     "n": 28,
     "winRate": 0.39285714285714285,
-    "avgR": 0.13240446815714627
+    "avgR": 0.13240446818284962
    }
   ]
  },
