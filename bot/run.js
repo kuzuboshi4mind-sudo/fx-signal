@@ -40,8 +40,14 @@ async function fetchBars(interval = CONFIG.interval, outputsize = 5000) {
   u.search = new URLSearchParams({ symbol: CONFIG.symbol, interval, outputsize, timezone: 'UTC', apikey: KEY });
   let res, j;
   for (let attempt = 0; ; attempt++) {
-    res = await fetch(u);
-    j = await res.json();
+    try {
+      res = await fetch(u);
+      j = await res.json();
+    } catch (e) {
+      // 通信が一時的に切れたら（接続リセットなど）5秒待ってやり直す（2回まで）
+      if (attempt < 2) { await new Promise(r => setTimeout(r, 5000)); continue; }
+      throw e;
+    }
     // 無料プランの「1分8回まで」に当たったら、1分待ってやり直す（2回まで）
     if (j.status !== 'ok' && attempt < 2 && /current minute/i.test(j.message || '')) { await new Promise(r => setTimeout(r, 61000)); continue; }
     break;
