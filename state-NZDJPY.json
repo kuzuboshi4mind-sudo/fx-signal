@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 109233.03884655861,
+  "balance": 107080.70892673344,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "long",
-   "pattern": "ema_cross_up",
-   "name": "ゴールデンクロス(EMA20/50)",
-   "units": 10000,
-   "entry": 89.25511,
-   "sl": 89.03987700801748,
-   "tp": 89.65557598396501,
-   "barT": 1793790000000,
-   "openT": 1793790422261,
-   "deadline": 1793876822261
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 10000,
+    "entry": 89.25511,
+    "sl": 89.03987700801748,
+    "tp": 89.65557598396501,
+    "barT": 1793790000000,
+    "openT": 1793790422261,
+    "deadline": 1793876822261,
+    "exit": 89.03987700801748,
+    "closeT": 1793808000000,
+    "reason": "sl",
+    "pnl": -2152.329919825178
+   },
    {
     "dir": "long",
     "pattern": "ema_cross_up",
@@ -238,7 +243,7 @@
    "entry": 89.24511,
    "sl": 89.03987700801748,
    "tp": 89.65557598396501,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -250,7 +255,7 @@
    "entry": 89.23381,
    "sl": 89.027136777865,
    "tp": 89.64715644427002,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4304,20 +4309,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100122.66612009318
+  "equity": 99997.66612009318
  },
  "reportDay": "2026-11-05",
  "skipReview": {
-  "n": 206,
-  "wouldLose": 144,
+  "n": 207,
+  "wouldLose": 145,
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793809323217,
+ "lastRun": 1793810222848,
  "lastBarT": 1793808000000,
- "price": 89.06062,
- "equity": 107288.13884655859,
- "unreal": -1944.9000000000183,
+ "price": 88.99812,
+ "equity": 107080.70892673344,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4433,10 +4438,10 @@
  },
  "review": {
   "ema_cross_up": {
-   "n": 4,
+   "n": 5,
    "wins": 2,
-   "recentLosses": 2,
-   "streak": 1,
+   "recentLosses": 3,
+   "streak": 2,
    "suspended": false
   },
   "macd_up": {
