@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 99280.98359295659,
+  "balance": 97215.51359295659,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 11000,
-   "entry": 158.33244,
-   "sl": 158.16277528248682,
-   "tp": 158.65676943502638,
-   "barT": 1793754000000,
-   "openT": 1793754420284,
-   "deadline": 1793840820284
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 11000,
+    "entry": 158.33244,
+    "sl": 158.16277528248682,
+    "tp": 158.65676943502638,
+    "barT": 1793754000000,
+    "openT": 1793754420284,
+    "deadline": 1793840820284,
+    "exit": 158.14467,
+    "closeT": 1793755320732,
+    "reason": "sl",
+    "pnl": -2065.470000000005
+   },
    {
     "dir": "long",
     "pattern": "ema_cross_up",
@@ -302,7 +307,7 @@
    "entry": 158.32744,
    "sl": 158.16277528248682,
    "tp": 158.65676943502638,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -314,7 +319,7 @@
    "entry": 158.54716,
    "sl": 158.69743046501418,
    "tp": 158.2466190699716,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3894,11 +3899,11 @@
  "lastEvalT": 1793750400000,
  "reportDay": "2026-11-04",
  "version": 1,
- "lastRun": 1793754420284,
+ "lastRun": 1793755320732,
  "lastBarT": 1793754000000,
- "price": 158.32744,
- "equity": 99225.98359295663,
- "unreal": -54.99999999994998,
+ "price": 158.14467,
+ "equity": 97215.51359295659,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -3968,7 +3973,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1912,
+  "events": 1913,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4022,10 +4027,10 @@
  },
  "review": {
   "pullback_up": {
-   "n": 15,
+   "n": 16,
    "wins": 6,
    "recentLosses": 1,
-   "streak": 0,
+   "streak": 1,
    "suspended": false
   },
   "ema_cross_up": {
@@ -4085,14 +4090,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 101118.93437518679,
@@ -4820,9 +4818,9 @@
   "equity": 101118.93437518679
  },
  "skipReview": {
-  "n": 187,
+  "n": 188,
   "wouldLose": 142,
-  "wouldWin": 45
+  "wouldWin": 46
  },
  "latest": {
   "start": 100000,
