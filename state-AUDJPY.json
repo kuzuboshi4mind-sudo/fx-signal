@@ -4397,7 +4397,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 95025.55127822842
+  "equity": 94982.57127822842
  },
  "reportDay": "2026-11-05",
  "skipReview": {
@@ -4406,11 +4406,11 @@
   "wouldWin": 60
  },
  "version": 1,
- "lastRun": 1793804822669,
+ "lastRun": 1793805721873,
  "lastBarT": 1793804400000,
- "price": 111.20631,
- "equity": 96148.79189709359,
- "unreal": 648.4800000000206,
+ "price": 111.18482,
+ "equity": 95998.36189709358,
+ "unreal": 498.05000000002053,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4635,16 +4635,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
