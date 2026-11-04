@@ -6,7 +6,18 @@
   "balance": 109233.03884655861,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "units": 10000,
+   "entry": 89.25511,
+   "sl": 89.03987700801748,
+   "tp": 89.65557598396501,
+   "barT": 1793790000000,
+   "openT": 1793790422261,
+   "deadline": 1793876822261
+  },
   "trades": [
    {
     "dir": "long",
@@ -203,6 +214,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793786400000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 89.24511,
+   "sl": 89.03987700801748,
+   "tp": 89.65557598396501,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793782800000,
    "pattern": "donchian_up",
@@ -3849,12 +3872,26 @@
    ]
   }
  ],
- "lastEvalT": 1793782800000,
+ "lastEvalT": 1793786400000,
  "adaptive": {
   "start": 100000,
   "balance": 100511.6461200932,
   "startT": 1791967923493,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_up|long|2|1.5",
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 2000,
+    "entry": 89.25511,
+    "sl": 88.94726051202623,
+    "tp": 89.66557598396501,
+    "barT": 1793790000000,
+    "openT": 1793790422261,
+    "deadline": 1793876822261
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_up|long|2|1.5",
@@ -4251,7 +4288,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100511.6461200932
+  "equity": 100491.64612009318
  },
  "reportDay": "2026-11-04",
  "skipReview": {
@@ -4260,11 +4297,11 @@
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793789576491,
- "lastBarT": 1793786400000,
- "price": 89.23381,
- "equity": 109233.03884655861,
- "unreal": 0,
+ "lastRun": 1793790422261,
+ "lastBarT": 1793790000000,
+ "price": 89.24511,
+ "equity": 109133.03884655856,
+ "unreal": -100.00000000005116,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4358,7 +4395,7 @@
     "key": "against|range",
     "n": 20,
     "winRate": 0.45,
-    "avgR": 0.3050011557043151
+    "avgR": 0.3050011557035647
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -4366,7 +4403,7 @@
     "key": "*",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.23196771485373613
+    "avgR": 0.23196771485372925
    },
    {
     "name": "20本高値ブレイク",
@@ -4382,7 +4419,7 @@
     "key": "against|range",
     "n": 28,
     "winRate": 0.39285714285714285,
-    "avgR": 0.13240446812087717
+    "avgR": 0.1324044681202807
    }
   ]
  },
@@ -4418,13 +4455,10 @@
  },
  "lastSignals": [
   {
-   "name": "20本高値ブレイク",
+   "name": "ゴールデンクロス(EMA20/50)",
    "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
+   "blocked": false,
+   "reasons": []
   }
  ],
  "latest": {
