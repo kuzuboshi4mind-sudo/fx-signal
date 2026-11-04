@@ -172,6 +172,54 @@
  },
  "log": [
   {
+   "t": 1793779200000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 177.98599,
+   "sl": 177.73809396004577,
+   "tp": 178.4817820799084,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793779200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 177.98599,
+   "sl": 177.73809396004577,
+   "tp": 178.4817820799084,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793779200000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 177.98599,
+   "sl": 177.73809396004577,
+   "tp": 178.4817820799084,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793768400000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -4000,7 +4048,7 @@
    ]
   }
  ],
- "lastEvalT": 1793775600000,
+ "lastEvalT": 1793779200000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4377,9 +4425,9 @@
   "wouldWin": 64
  },
  "version": 1,
- "lastRun": 1793782324969,
- "lastBarT": 1793779200000,
- "price": 178.08802,
+ "lastRun": 1793783223762,
+ "lastBarT": 1793782800000,
+ "price": 177.98599,
  "equity": 108361.72505749196,
  "unreal": 0,
  "config": {
@@ -4459,7 +4507,7 @@
     "key": "against|range",
     "n": 43,
     "winRate": 0.4883720930232558,
-    "avgR": 0.4474517947768098
+    "avgR": 0.4474517947771552
    },
    {
     "name": "陰の包み足",
@@ -4499,7 +4547,7 @@
     "key": "*",
     "n": 99,
     "winRate": 0.3838383838383838,
-    "avgR": 0.13550055570719619
+    "avgR": 0.1355005557071967
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4548,7 +4596,35 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
