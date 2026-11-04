@@ -179,7 +179,7 @@
    "entry": 177.5753,
    "sl": 177.34335363967483,
    "tp": 178.0391927206503,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -195,7 +195,7 @@
    "entry": 177.5753,
    "sl": 177.34335363967483,
    "tp": 178.0391927206503,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4372,14 +4372,14 @@
  },
  "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 219,
+  "n": 221,
   "wouldLose": 157,
-  "wouldWin": 62
+  "wouldWin": 64
  },
  "version": 1,
- "lastRun": 1793781421248,
+ "lastRun": 1793782324969,
  "lastBarT": 1793779200000,
- "price": 177.80212,
+ "price": 178.08802,
  "equity": 108361.72505749196,
  "unreal": 0,
  "config": {
@@ -4451,7 +4451,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1812,
+  "events": 1814,
   "win": [
    {
     "name": "陽の包み足",
