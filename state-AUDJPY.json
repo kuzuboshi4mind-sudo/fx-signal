@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 97300.16920404568,
+  "balance": 95500.31189709356,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "short",
-   "pattern": "pullback_dn",
-   "name": "下降トレンドの戻り",
-   "units": 9000,
-   "entry": 109.92154,
-   "sl": 110.1215241452169,
-   "tp": 109.5395717095662,
-   "barT": 1793757600000,
-   "openT": 1793758021565,
-   "deadline": 1793844421565
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "units": 9000,
+    "entry": 109.92154,
+    "sl": 110.1215241452169,
+    "tp": 109.5395717095662,
+    "barT": 1793757600000,
+    "openT": 1793758021565,
+    "deadline": 1793844421565,
+    "exit": 110.1215241452169,
+    "closeT": 1793768400000,
+    "reason": "sl",
+    "pnl": -1799.8573069521199
+   },
    {
     "dir": "short",
     "pattern": "pullback_dn",
@@ -343,6 +348,50 @@
  },
  "log": [
   {
+   "t": 1793764800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 110.14829,
+   "sl": 109.92403544568458,
+   "tp": 110.59679910863085,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
+  {
+   "t": 1793764800000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 110.14829,
+   "sl": 109.92403544568458,
+   "tp": 110.59679910863085,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793764800000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 110.14829,
+   "sl": 109.92403544568458,
+   "tp": 110.59679910863085,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793761200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -350,7 +399,7 @@
    "entry": 109.69617,
    "sl": 109.9011841354166,
    "tp": 109.28614172916677,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -366,7 +415,7 @@
    "entry": 109.79087,
    "sl": 109.98780599198712,
    "tp": 109.39699801602576,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -382,7 +431,7 @@
    "entry": 109.92754,
    "sl": 110.1215241452169,
    "tp": 109.5395717095662,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -394,7 +443,7 @@
    "entry": 109.92754,
    "sl": 110.1215241452169,
    "tp": 109.5395717095662,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -410,7 +459,7 @@
    "entry": 109.92754,
    "sl": 110.1215241452169,
    "tp": 109.5395717095662,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3989,7 +4038,7 @@
    ]
   }
  ],
- "lastEvalT": 1793761200000,
+ "lastEvalT": 1793764800000,
  "adaptive": {
   "start": 100000,
   "balance": 94702.87127822843,
@@ -4191,16 +4240,16 @@
  },
  "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 191,
-  "wouldLose": 135,
+  "n": 195,
+  "wouldLose": 139,
   "wouldWin": 56
  },
  "version": 1,
- "lastRun": 1793767921710,
- "lastBarT": 1793764800000,
- "price": 109.86304,
- "equity": 97826.66920404564,
- "unreal": 526.499999999956,
+ "lastRun": 1793768822468,
+ "lastBarT": 1793768400000,
+ "price": 110.14829,
+ "equity": 95500.31189709356,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4270,7 +4319,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1859,
+  "events": 1860,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -4278,7 +4327,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.5217391304347826,
-    "avgR": 0.5399212082464764
+    "avgR": 0.539921208246401
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -4286,7 +4335,7 @@
     "key": "*",
     "n": 26,
     "winRate": 0.5,
-    "avgR": 0.4785963899091375
+    "avgR": 0.47859638990874387
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -4294,7 +4343,7 @@
     "key": "with|range",
     "n": 58,
     "winRate": 0.43103448275862066,
-    "avgR": 0.34362965046568233
+    "avgR": 0.3436296504653876
    },
    {
     "name": "陽の包み足",
@@ -4302,7 +4351,7 @@
     "key": "against|trend",
     "n": 41,
     "winRate": 0.4146341463414634,
-    "avgR": 0.3071495714429317
+    "avgR": 0.3071495714429316
    },
    {
     "name": "20本安値ブレイク",
@@ -4310,7 +4359,7 @@
     "key": "with|trend",
     "n": 74,
     "winRate": 0.3783783783783784,
-    "avgR": 0.13024975919182008
+    "avgR": 0.13024975919181978
    },
    {
     "name": "下降トレンドの戻り",
@@ -4326,16 +4375,16 @@
     "key": "against|trend",
     "n": 29,
     "winRate": 0.3793103448275862,
-    "avgR": 0.11399419423665813
+    "avgR": 0.11399419423657471
    }
   ]
  },
  "review": {
   "pullback_dn": {
-   "n": 3,
+   "n": 4,
    "wins": 2,
-   "recentLosses": 1,
-   "streak": 0,
+   "recentLosses": 2,
+   "streak": 1,
    "suspended": false
   },
   "engulf_up": {
@@ -4409,7 +4458,34 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

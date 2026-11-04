@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 105762.34546069396,
+  "balance": 103822.64236738776,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "short",
-   "pattern": "rsi_fall",
-   "name": "RSI買われすぎ反落",
-   "units": 8000,
-   "entry": 212.28299,
-   "sl": 212.5254528866633,
-   "tp": 211.82806422667343,
-   "barT": 1793757600000,
-   "openT": 1793758021253,
-   "deadline": 1793844421253
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落",
+    "units": 8000,
+    "entry": 212.28299,
+    "sl": 212.5254528866633,
+    "tp": 211.82806422667343,
+    "barT": 1793757600000,
+    "openT": 1793758021253,
+    "deadline": 1793844421253,
+    "exit": 212.5254528866633,
+    "closeT": 1793768400000,
+    "reason": "sl",
+    "pnl": -1939.703093306207
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -222,7 +227,7 @@
    "entry": 212.29299,
    "sl": 212.5254528866633,
    "tp": 211.82806422667343,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -238,7 +243,7 @@
    "entry": 212.29299,
    "sl": 212.5254528866633,
    "tp": 211.82806422667343,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -3671,7 +3676,7 @@
    ]
   }
  ],
- "lastEvalT": 1793761200000,
+ "lastEvalT": 1793764800000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4400,16 +4405,16 @@
  },
  "reportDay": "2026-11-04",
  "skipReview": {
-  "n": 189,
-  "wouldLose": 127,
+  "n": 190,
+  "wouldLose": 128,
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793767921198,
- "lastBarT": 1793764800000,
- "price": 212.30945,
- "equity": 105550.66546069407,
- "unreal": -211.6799999998875,
+ "lastRun": 1793768821467,
+ "lastBarT": 1793768400000,
+ "price": 212.52136,
+ "equity": 103822.64236738776,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -4479,7 +4484,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1790,
+  "events": 1789,
   "win": [
    {
     "name": "陽の包み足",
@@ -4487,7 +4492,7 @@
     "key": "against|range",
     "n": 30,
     "winRate": 0.5666666666666667,
-    "avgR": 0.7154630614748243
+    "avgR": 0.7154630614748247
    },
    {
     "name": "RSI買われすぎ反落",
@@ -4527,11 +4532,18 @@
     "key": "*",
     "n": 94,
     "winRate": 0.3829787234042553,
-    "avgR": 0.14475461677755774
+    "avgR": 0.14475461677755821
    }
   ]
  },
  "review": {
+  "rsi_fall": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "bb_break_dn": {
    "n": 6,
    "wins": 3,

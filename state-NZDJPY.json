@@ -204,6 +204,38 @@
  },
  "log": [
   {
+   "t": 1793764800000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 88.37326,
+   "sl": 88.1885081042693,
+   "tp": 88.7427637914614,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793764800000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 88.37326,
+   "sl": 88.1885081042693,
+   "tp": 88.7427637914614,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793761200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -3785,7 +3817,7 @@
    ]
   }
  ],
- "lastEvalT": 1793761200000,
+ "lastEvalT": 1793764800000,
  "adaptive": {
   "start": 100000,
   "balance": 100511.6461200932,
@@ -4196,9 +4228,9 @@
   "wouldWin": 60
  },
  "version": 1,
- "lastRun": 1793767922404,
- "lastBarT": 1793764800000,
- "price": 88.23805,
+ "lastRun": 1793768823169,
+ "lastBarT": 1793768400000,
+ "price": 88.37326,
  "equity": 109233.03884655861,
  "unreal": 0,
  "config": {
@@ -4294,7 +4326,7 @@
     "key": "against|range",
     "n": 20,
     "winRate": 0.45,
-    "avgR": 0.3050011556892855
+    "avgR": 0.3050011556697287
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -4302,15 +4334,7 @@
     "key": "*",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.23196771485359827
-   },
-   {
-    "name": "20本安値ブレイク",
-    "dir": "short",
-    "key": "against|range",
-    "n": 27,
-    "winRate": 0.4074074074074074,
-    "avgR": 0.17594013313071674
+    "avgR": 0.2319677148534189
    },
    {
     "name": "20本高値ブレイク",
@@ -4321,12 +4345,20 @@
     "avgR": 0.11236285900018629
    },
    {
+    "name": "20本安値ブレイク",
+    "dir": "short",
+    "key": "against|range",
+    "n": 28,
+    "winRate": 0.39285714285714285,
+    "avgR": 0.1324044680933826
+   },
+   {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "with|trend",
     "n": 26,
     "winRate": 0.38461538461538464,
-    "avgR": 0.13476944466064872
+    "avgR": 0.13476944466064195
    }
   ]
  },
@@ -4360,7 +4392,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
