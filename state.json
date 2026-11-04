@@ -322,7 +322,7 @@
    "entry": 157.74335,
    "sl": 157.9546672376908,
    "tp": 157.32071552461835,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -338,7 +338,7 @@
    "entry": 157.74335,
    "sl": 157.9546672376908,
    "tp": 157.32071552461835,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -354,7 +354,7 @@
    "entry": 157.74335,
    "sl": 157.9546672376908,
    "tp": 157.32071552461835,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -370,7 +370,7 @@
    "entry": 157.74335,
    "sl": 157.9546672376908,
    "tp": 157.32071552461835,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -3978,9 +3978,9 @@
  "lastEvalT": 1793764800000,
  "reportDay": "2026-11-04",
  "version": 1,
- "lastRun": 1793768820389,
+ "lastRun": 1793769720972,
  "lastBarT": 1793768400000,
- "price": 157.94193,
+ "price": 157.9588,
  "equity": 97215.51359295659,
  "unreal": 0,
  "config": {
@@ -4905,8 +4905,8 @@
   "equity": 101118.93437518679
  },
  "skipReview": {
-  "n": 189,
-  "wouldLose": 143,
+  "n": 193,
+  "wouldLose": 147,
   "wouldWin": 46
  },
  "latest": {
@@ -5035,6 +5035,6 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 99613.96463013144
+  "equity": 99512.74463013154
  }
 }
