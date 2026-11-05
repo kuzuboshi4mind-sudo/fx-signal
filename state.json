@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 100807.0453039898,
+  "balance": 99005.01679846142,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 8000,
-   "entry": 158.43818,
-   "sl": 158.21292643680894,
-   "tp": 158.8736871263821,
-   "barT": 1793818800000,
-   "openT": 1793819220702,
-   "deadline": 1793905620702
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 8000,
+    "entry": 158.43818,
+    "sl": 158.21292643680894,
+    "tp": 158.8736871263821,
+    "barT": 1793818800000,
+    "openT": 1793819220702,
+    "deadline": 1793905620702,
+    "exit": 158.21292643680894,
+    "closeT": 1793836800000,
+    "reason": "sl",
+    "pnl": -1802.0285055283694
+   },
    {
     "dir": "long",
     "pattern": "pullback_up",
@@ -362,7 +367,7 @@
    "entry": 158.43318,
    "sl": 158.21292643680894,
    "tp": 158.8736871263821,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -4086,11 +4091,11 @@
  "lastEvalT": 1793833200000,
  "reportDay": "2026-11-05",
  "version": 1,
- "lastRun": 1793839920568,
+ "lastRun": 1793840366022,
  "lastBarT": 1793836800000,
- "price": 158.26092,
- "equity": 99388.96530398988,
- "unreal": -1418.079999999918,
+ "price": 158.13097,
+ "equity": 99005.01679846142,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4156,11 +4161,18 @@
    "enabled": true,
    "start": 100000,
    "riskPct": 2
+  },
+  "newsfree": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2,
+   "beforeH": 2,
+   "afterH": 2
   }
  },
  "learned": {
   "bars": 3559,
-  "events": 1907,
+  "events": 1908,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4174,17 +4186,17 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 270,
-    "winRate": 0.3814814814814815,
-    "avgR": 0.2299847369564867
+    "n": 271,
+    "winRate": 0.3800738007380074,
+    "avgR": 0.22540416392650192
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|range",
-    "n": 216,
-    "winRate": 0.37962962962962965,
-    "avgR": 0.22541592199122423
+    "n": 217,
+    "winRate": 0.3778801843317972,
+    "avgR": 0.21971653730845644
    },
    {
     "name": "上昇トレンドの押し目",
@@ -4230,10 +4242,10 @@
  },
  "review": {
   "pullback_up": {
-   "n": 18,
+   "n": 19,
    "wins": 7,
-   "recentLosses": 2,
-   "streak": 1,
+   "recentLosses": 3,
+   "streak": 2,
    "suspended": false
   },
   "ema_cross_up": {
@@ -5155,5 +5167,14 @@
    "vol_breakout"
   ],
   "equity": 98933.58949091415
+ },
+ "newsfree": {
+  "start": 100000,
+  "balance": 100000,
+  "riskPct": 2,
+  "startT": 1793840366022,
+  "pos": null,
+  "trades": [],
+  "equity": 100000
  }
 }

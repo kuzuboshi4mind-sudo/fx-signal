@@ -238,7 +238,7 @@
    "entry": 213.53114,
    "sl": 213.31205194139739,
    "tp": 213.96931611720524,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4604,16 +4604,16 @@
  },
  "reportDay": "2026-11-05",
  "skipReview": {
-  "n": 194,
-  "wouldLose": 130,
+  "n": 195,
+  "wouldLose": 131,
   "wouldWin": 64
  },
  "version": 1,
- "lastRun": 1793839921571,
+ "lastRun": 1793840366893,
  "lastBarT": 1793836800000,
- "price": 213.40899,
- "equity": 104548.68236738782,
- "unreal": 726.0400000000686,
+ "price": 213.25843,
+ "equity": 105602.60236738772,
+ "unreal": 1779.95999999996,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -4679,6 +4679,13 @@
    "enabled": true,
    "start": 100000,
    "riskPct": 2
+  },
+  "newsfree": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2,
+   "beforeH": 2,
+   "afterH": 2
   }
  },
  "learned": {
@@ -4800,6 +4807,15 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
+  "equity": 100000
+ },
+ "newsfree": {
+  "start": 100000,
+  "balance": 100000,
+  "riskPct": 2,
+  "startT": 1793840366893,
+  "pos": null,
+  "trades": [],
   "equity": 100000
  }
 }

@@ -4373,7 +4373,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100288.70612009321
+  "equity": 100224.2861200932
  },
  "reportDay": "2026-11-05",
  "skipReview": {
@@ -4382,9 +4382,9 @@
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793839922607,
+ "lastRun": 1793840367577,
  "lastBarT": 1793836800000,
- "price": 89.14364,
+ "price": 89.11143,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4452,6 +4452,13 @@
    "enabled": true,
    "start": 100000,
    "riskPct": 2
+  },
+  "newsfree": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2,
+   "beforeH": 2,
+   "afterH": 2
   }
  },
  "learned": {
@@ -4550,6 +4557,15 @@
   "strategies": [
    "trend_stoch"
   ],
+  "equity": 100000
+ },
+ "newsfree": {
+  "start": 100000,
+  "balance": 100000,
+  "riskPct": 2,
+  "startT": 1793840367577,
+  "pos": null,
+  "trades": [],
   "equity": 100000
  }
 }

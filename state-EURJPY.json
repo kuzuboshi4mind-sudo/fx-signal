@@ -4564,9 +4564,9 @@
   "wouldWin": 68
  },
  "version": 1,
- "lastRun": 1793839921113,
+ "lastRun": 1793840366495,
  "lastBarT": 1793836800000,
- "price": 177.92821,
+ "price": 177.84374,
  "equity": 112312.07368603519,
  "unreal": 0,
  "config": {
@@ -4634,6 +4634,13 @@
    "enabled": true,
    "start": 100000,
    "riskPct": 2
+  },
+  "newsfree": {
+   "enabled": true,
+   "start": 100000,
+   "riskPct": 2,
+   "beforeH": 2,
+   "afterH": 2
   }
  },
  "learned": {
@@ -4743,6 +4750,15 @@
   "positions": [],
   "trades": [],
   "strategies": [],
+  "equity": 100000
+ },
+ "newsfree": {
+  "start": 100000,
+  "balance": 100000,
+  "riskPct": 2,
+  "startT": 1793840366495,
+  "pos": null,
+  "trades": [],
   "equity": 100000
  }
 }
