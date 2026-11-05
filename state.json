@@ -343,6 +343,35 @@
  },
  "log": [
   {
+   "t": 1793869200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 158.31897,
+   "sl": 158.12405270096178,
+   "tp": 158.70880459807643,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1793869200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 158.31897,
+   "sl": 158.12405270096178,
+   "tp": 158.70880459807643,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793865600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -4170,14 +4199,14 @@
    ]
   }
  ],
- "lastEvalT": 1793865600000,
+ "lastEvalT": 1793869200000,
  "reportDay": "2026-11-05",
  "version": 1,
- "lastRun": 1793872320659,
- "lastBarT": 1793869200000,
- "price": 158.32579,
- "equity": 99879.54679846147,
- "unreal": 874.5300000000498,
+ "lastRun": 1793873220872,
+ "lastBarT": 1793872800000,
+ "price": 158.31897,
+ "equity": 99818.16679846143,
+ "unreal": 813.1500000000074,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4253,8 +4282,8 @@
   }
  },
  "learned": {
-  "bars": 3564,
-  "events": 1908,
+  "bars": 3565,
+  "events": 1909,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4386,7 +4415,24 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 102261.87147639989,
@@ -5142,7 +5188,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 103519.95147639992
+  "equity": 103499.49147639991
  },
  "skipReview": {
   "n": 198,
@@ -5298,6 +5344,6 @@
    "deadline": 1793956020991
   },
   "trades": [],
-  "equity": 100874.53000000006
+  "equity": 100813.15000000001
  }
 }
