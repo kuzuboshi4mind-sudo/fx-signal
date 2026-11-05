@@ -4646,9 +4646,9 @@
   "wouldWin": 66
  },
  "version": 1,
- "lastRun": 1793852521201,
+ "lastRun": 1793853421009,
  "lastBarT": 1793851200000,
- "price": 213.05079,
+ "price": 213.08834,
  "equity": 107249.94303283232,
  "unreal": 0,
  "config": {
@@ -4727,7 +4727,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1788,
+  "events": 1789,
   "win": [
    {
     "name": "陽の包み足",
@@ -4738,20 +4738,20 @@
     "avgR": 0.715463061475036
    },
    {
+    "name": "RSI買われすぎ反落",
+    "dir": "short",
+    "key": "against|trend",
+    "n": 28,
+    "winRate": 0.4642857142857143,
+    "avgR": 0.36785780014343417
+   },
+   {
     "name": "陰の包み足",
     "dir": "short",
     "key": "with|trend",
     "n": 32,
     "winRate": 0.4375,
     "avgR": 0.33268031372010637
-   },
-   {
-    "name": "RSI買われすぎ反落",
-    "dir": "short",
-    "key": "against|trend",
-    "n": 27,
-    "winRate": 0.4444444444444444,
-    "avgR": 0.30814940150705195
    },
    {
     "name": "ボリバン下抜けブレイク",
