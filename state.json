@@ -4202,11 +4202,11 @@
  "lastEvalT": 1793876400000,
  "reportDay": "2026-11-05",
  "version": 1,
- "lastRun": 1793881320058,
+ "lastRun": 1793882585218,
  "lastBarT": 1793880000000,
- "price": 158.4043,
- "equity": 100586.13679846142,
- "unreal": 1581.1199999999985,
+ "price": 158.46275,
+ "equity": 101112.18679846136,
+ "unreal": 2107.1699999999396,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4418,9 +4418,10 @@
  "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 102261.87147639989,
+  "balance": 103976.2771282195,
   "startT": 1791916832223,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -4432,10 +4433,12 @@
     "tp": 158.47789855060654,
     "barT": 1793862000000,
     "openT": 1793862420539,
-    "deadline": 1793948820539
-   }
-  ],
-  "trades": [
+    "deadline": 1793948820539,
+    "exit": 158.47789855060654,
+    "closeT": 1793880000000,
+    "reason": "tp",
+    "pnl": 1714.405651819618
+   },
    {
     "key": "ema_cross_dn|long|2|1",
     "dir": "long",
@@ -5171,7 +5174,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 103755.4814763999
+  "equity": 103976.2771282195
  },
  "skipReview": {
   "n": 198,
@@ -5327,6 +5330,6 @@
    "deadline": 1793956020991
   },
   "trades": [],
-  "equity": 101581.12
+  "equity": 102107.16999999994
  }
 }
