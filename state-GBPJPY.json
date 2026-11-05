@@ -299,7 +299,7 @@
    "entry": 213.61265,
    "sl": 213.86013082041882,
    "tp": 213.1176883591624,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -345,7 +345,7 @@
    "entry": 213.40205,
    "sl": 213.13784151597818,
    "tp": 213.93046696804367,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -361,7 +361,7 @@
    "entry": 213.40205,
    "sl": 213.13784151597818,
    "tp": 213.93046696804367,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -377,7 +377,7 @@
    "entry": 213.40205,
    "sl": 213.13784151597818,
    "tp": 213.93046696804367,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4604,16 +4604,16 @@
  },
  "reportDay": "2026-11-05",
  "skipReview": {
-  "n": 195,
-  "wouldLose": 131,
-  "wouldWin": 64
+  "n": 199,
+  "wouldLose": 134,
+  "wouldWin": 65
  },
  "version": 1,
- "lastRun": 1793840820868,
+ "lastRun": 1793841720815,
  "lastBarT": 1793840400000,
- "price": 213.23959,
- "equity": 105734.4823673878,
- "unreal": 1911.8400000000406,
+ "price": 213.08785,
+ "equity": 106796.66236738773,
+ "unreal": 2974.0199999999677,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -4690,7 +4690,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1785,
+  "events": 1788,
   "win": [
    {
     "name": "陽の包み足",
@@ -4736,9 +4736,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "*",
-    "n": 125,
-    "winRate": 0.376,
-    "avgR": 0.12688191528473594
+    "n": 126,
+    "winRate": 0.38095238095238093,
+    "avgR": 0.14158758591070075
    },
    {
     "name": "MACD買いクロス",

@@ -339,7 +339,7 @@
    "entry": 158.43034,
    "sl": 158.61379422786618,
    "tp": 158.06343154426764,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -355,7 +355,7 @@
    "entry": 158.46949,
    "sl": 158.678286031527,
    "tp": 158.05189793694606,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -4091,9 +4091,9 @@
  "lastEvalT": 1793836800000,
  "reportDay": "2026-11-05",
  "version": 1,
- "lastRun": 1793840820071,
+ "lastRun": 1793841720078,
  "lastBarT": 1793840400000,
- "price": 158.14969,
+ "price": 157.94816,
  "equity": 99005.01679846142,
  "unreal": 0,
  "config": {
@@ -4172,7 +4172,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1908,
+  "events": 1910,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4210,9 +4210,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "against|range",
-    "n": 53,
-    "winRate": 0.39622641509433965,
-    "avgR": 0.16677520599503845
+    "n": 54,
+    "winRate": 0.4074074074074074,
+    "avgR": 0.2005020835202345
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -4241,6 +4241,13 @@
   ]
  },
  "review": {
+  "engulf_dn": {
+   "n": 1,
+   "wins": 1,
+   "recentLosses": 0,
+   "streak": 0,
+   "suspended": false
+  },
   "pullback_up": {
    "n": 19,
    "wins": 7,
@@ -5033,9 +5040,9 @@
   "equity": 101118.93437518679
  },
  "skipReview": {
-  "n": 194,
+  "n": 195,
   "wouldLose": 148,
-  "wouldWin": 46
+  "wouldWin": 47
  },
  "latest": {
   "start": 100000,
