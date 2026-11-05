@@ -332,6 +332,22 @@
  },
  "log": [
   {
+   "t": 1793851200000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 157.89088,
+   "sl": 157.69333647747757,
+   "tp": 158.2859670450449,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793844000000,
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
@@ -4103,12 +4119,12 @@
    ]
   }
  ],
- "lastEvalT": 1793847600000,
+ "lastEvalT": 1793851200000,
  "reportDay": "2026-11-05",
  "version": 1,
- "lastRun": 1793854320796,
- "lastBarT": 1793851200000,
- "price": 157.99393,
+ "lastRun": 1793855220631,
+ "lastBarT": 1793854800000,
+ "price": 157.89088,
  "equity": 99005.01679846142,
  "unreal": 0,
  "config": {
@@ -4186,7 +4202,7 @@
   }
  },
  "learned": {
-  "bars": 3559,
+  "bars": 3560,
   "events": 1906,
   "win": [
    {
@@ -4319,7 +4335,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 101118.93437518679,
