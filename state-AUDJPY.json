@@ -371,7 +371,7 @@
    "entry": 110.2927,
    "sl": 110.50016895068718,
    "tp": 109.87776209862562,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -387,7 +387,7 @@
    "entry": 110.2927,
    "sl": 110.50016895068718,
    "tp": 109.87776209862562,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -403,7 +403,7 @@
    "entry": 110.2927,
    "sl": 110.50016895068718,
    "tp": 109.87776209862562,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4679,14 +4679,14 @@
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 217,
+  "n": 220,
   "wouldLose": 153,
-  "wouldWin": 64
+  "wouldWin": 67
  },
  "version": 1,
- "lastRun": 1793893021490,
+ "lastRun": 1793894342095,
  "lastBarT": 1793890800000,
- "price": 110.15122,
+ "price": 109.90665,
  "equity": 93791.8845110378,
  "unreal": 0,
  "config": {
@@ -4765,7 +4765,7 @@
  },
  "learned": {
   "bars": 3570,
-  "events": 1882,
+  "events": 1885,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -4808,6 +4808,14 @@
     "avgR": 0.13024975919182658
    },
    {
+    "name": "20本安値ブレイク",
+    "dir": "short",
+    "key": "*",
+    "n": 160,
+    "winRate": 0.36875,
+    "avgR": 0.0919793226605647
+   },
+   {
     "name": "下降トレンドの戻り",
     "dir": "short",
     "key": "with|range",
@@ -4822,14 +4830,6 @@
     "n": 29,
     "winRate": 0.3793103448275862,
     "avgR": 0.11399419423846618
-   },
-   {
-    "name": "20本安値ブレイク",
-    "dir": "short",
-    "key": "*",
-    "n": 159,
-    "winRate": 0.36477987421383645,
-    "avgR": 0.08007013597950012
    },
    {
     "name": "陰の包み足",
