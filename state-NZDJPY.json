@@ -220,6 +220,22 @@
  },
  "log": [
   {
+   "t": 1793898000000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 88.51336,
+   "sl": 88.68522427396682,
+   "tp": 88.16963145206637,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793894400000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -4132,7 +4148,7 @@
    ]
   }
  ],
- "lastEvalT": 1793894400000,
+ "lastEvalT": 1793898000000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4560,9 +4576,9 @@
   "wouldWin": 66
  },
  "version": 1,
- "lastRun": 1793901123466,
- "lastBarT": 1793898000000,
- "price": 88.53151,
+ "lastRun": 1793901703453,
+ "lastBarT": 1793901600000,
+ "price": 88.51336,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4640,7 +4656,7 @@
   }
  },
  "learned": {
-  "bars": 3572,
+  "bars": 3573,
   "events": 1896,
   "win": [
    {
@@ -4715,7 +4731,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
