@@ -4560,9 +4560,9 @@
   "wouldWin": 66
  },
  "version": 1,
- "lastRun": 1793898705180,
+ "lastRun": 1793899322772,
  "lastBarT": 1793898000000,
- "price": 88.54433,
+ "price": 88.56927,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4715,17 +4715,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
