@@ -375,6 +375,18 @@
  },
  "log": [
   {
+   "t": 1793908800000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 109.41642,
+   "sl": 109.6637760611049,
+   "tp": 108.92170787779023,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1793905200000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -4542,7 +4554,7 @@
    ]
   }
  ],
- "lastEvalT": 1793905200000,
+ "lastEvalT": 1793908800000,
  "adaptive": {
   "start": 100000,
   "balance": 93268.20552666966,
@@ -4800,11 +4812,11 @@
   "wouldWin": 67
  },
  "version": 1,
- "lastRun": 1793911921802,
- "lastBarT": 1793908800000,
- "price": 109.41866,
- "equity": 94095.89451103781,
- "unreal": 304.0100000000052,
+ "lastRun": 1793912821309,
+ "lastBarT": 1793912400000,
+ "price": 109.41642,
+ "equity": 94111.5745110378,
+ "unreal": 319.69000000000847,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4880,7 +4892,7 @@
   }
  },
  "learned": {
-  "bars": 3575,
+  "bars": 3576,
   "events": 1885,
   "win": [
    {
@@ -5044,7 +5056,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5072,6 +5091,6 @@
    "deadline": 1793992022335
   },
   "trades": [],
-  "equity": 100304.01000000001
+  "equity": 100319.69
  }
 }
