@@ -348,6 +348,22 @@
  },
  "log": [
   {
+   "t": 1793894400000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 157.73573,
+   "sl": 157.95008222908513,
+   "tp": 157.30702554182974,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793890800000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -4220,12 +4236,12 @@
    ]
   }
  ],
- "lastEvalT": 1793890800000,
+ "lastEvalT": 1793894400000,
  "reportDay": "2026-11-06",
  "version": 1,
- "lastRun": 1793897520907,
- "lastBarT": 1793894400000,
- "price": 157.81185,
+ "lastRun": 1793898701829,
+ "lastBarT": 1793898000000,
+ "price": 157.73573,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4303,7 +4319,7 @@
   }
  },
  "learned": {
-  "bars": 3571,
+  "bars": 3572,
   "events": 1913,
   "win": [
    {
@@ -4436,12 +4452,49 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103976.2771282195,
   "startT": 1791916832223,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_dn|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 157.74072999999999,
+    "sl": 157.52637777091485,
+    "tp": 158.38378668725537,
+    "barT": 1793898000000,
+    "openT": 1793898701829,
+    "deadline": 1793985101829
+   },
+   {
+    "key": "ema_cross_dn|long|2|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 157.74072999999999,
+    "sl": 157.52637777091485,
+    "tp": 158.16943445817023,
+    "barT": 1793898000000,
+    "openT": 1793898701829,
+    "deadline": 1793985101829
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_dn|long|3|1",
@@ -5195,7 +5248,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 103976.2771282195
+  "equity": 103946.27712821953
  },
  "skipReview": {
   "n": 199,
