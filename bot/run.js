@@ -152,6 +152,42 @@ async function main() {
     }
   }
 
+  // 3a') 通常＋発表停止の仮想口座（比較用）：通常口座と同じシグナルで売買するが、FOMC・日銀会合・米雇用統計の
+  //      前後（既定 前2時間〜後2時間）は新しく入らない。通常口座と並べて、発表前後の停止が効くかを実相場で確かめる
+  const NF = CONFIG.newsfree;
+  if (NF && NF.enabled) {
+    const N = (state.newsfree ||= { start: NF.start, balance: NF.start, riskPct: NF.riskPct, startT: now, pos: null, trades: [] });
+    if (N.pos) {
+      const x = E.checkExit(N.pos, c, now, price);
+      if (x) {
+        const pnl = E.positionPnl(N.pos, x.price);
+        N.balance += pnl;
+        N.trades.unshift({ ...N.pos, exit: x.price, closeT: x.t, reason: x.reason, pnl });
+        note(`FX 発表停止 決済 ${REASON[x.reason]} ${signedYen(pnl)}`, `${N.pos.dir === 'long' ? '買い' : '売り'} ${fmt(N.pos.entry)} → ${fmt(x.price)}（${N.pos.name}）\n残高 ${yen(N.balance)}`);
+        N.pos = null;
+      }
+    }
+    if (signalsChecked && !N.pos) {
+      let evs = [];
+      try { evs = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'events.json'), 'utf8')).events.map(e => e.t); } catch {}
+      evs = evs.concat(E.scheduledEvents(now, 1).map(e => e.t), (CONFIG.events || []).map(e => Date.parse(e.time)));
+      const near = evs.some(t => now >= t - NF.beforeH * 3600e3 && now <= t + NF.afterH * 3600e3);
+      const go = signals.filter(x => !x.blocked).sort((a, b) => b.stat.all.shrunkR - a.stat.all.shrunkR);
+      if (go.length && near) N.lastSkip = { t: now, name: go[0].name };
+      if (go.length && !near) {
+        const s = go[0], dir = s.dir === 'long' ? 1 : -1;
+        const entry = s.entry + dir * CONFIG.spreadPips * E.pipSize(CONFIG.symbol);
+        const units = E.positionUnits({ balance: N.balance, riskPct: N.riskPct, entry, sl: s.sl, leverage: LEVERAGE });
+        if (units) {
+          N.pos = { dir: s.dir, pattern: s.pattern, name: s.name, units, entry, sl: s.sl, tp: s.tp, barT: c[c.length - 1].t, openT: now, deadline: E.addMarketTime(now, CONFIG.maxBars * IV_MS) };
+          note(`FX 発表停止 ${s.dir === 'long' ? '買い' : '売り'}エントリー`, `${CONFIG.symbol} ${units.toLocaleString()}通貨 @${fmt(entry)}\n${s.name}`);
+        }
+      }
+    }
+    N.trades = N.trades.slice(0, 300);
+    N.equity = N.balance + (N.pos ? E.positionPnl(N.pos, price) : 0);
+  }
+
   // 3b) 適応型の仮想口座：毎月、直近6か月で成績のよい戦略（最大3つ）に入れ替えて売買する
   const AD = CONFIG.adaptive;
   if (AD && AD.enabled) {

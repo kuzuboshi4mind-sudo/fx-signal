@@ -63,5 +63,12 @@
     "enabled": true,
     "start": 100000,
     "riskPct": 2
+  },
+  "newsfree": {
+    "enabled": true,
+    "start": 100000,
+    "riskPct": 2,
+    "beforeH": 2,
+    "afterH": 2
   }
 }
