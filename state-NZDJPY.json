@@ -4056,9 +4056,10 @@
  "lastEvalT": 1793872800000,
  "adaptive": {
   "start": 100000,
-  "balance": 100511.6461200932,
+  "balance": 100429.88612009319,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_up|long|2|1.5",
     "dir": "long",
@@ -4070,10 +4071,12 @@
     "tp": 89.66557598396501,
     "barT": 1793790000000,
     "openT": 1793790422261,
-    "deadline": 1793876822261
-   }
-  ],
-  "trades": [
+    "deadline": 1793876822261,
+    "exit": 89.21423,
+    "closeT": 1793877722012,
+    "reason": "time",
+    "pnl": -81.76000000000272
+   },
    {
     "key": "ema_cross_up|long|2|1.5",
     "dir": "long",
@@ -4469,7 +4472,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100503.76612009319
+  "equity": 100429.88612009319
  },
  "reportDay": "2026-11-05",
  "skipReview": {
@@ -4478,9 +4481,9 @@
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793876821998,
+ "lastRun": 1793877722012,
  "lastBarT": 1793876400000,
- "price": 89.25117,
+ "price": 89.21423,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4633,17 +4636,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
