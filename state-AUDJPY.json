@@ -434,7 +434,7 @@
    "entry": 109.70804,
    "sl": 109.9544791972762,
    "tp": 109.2151616054476,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -449,7 +449,7 @@
    "entry": 109.73672,
    "sl": 109.98485759706668,
    "tp": 109.24044480586666,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4807,16 +4807,16 @@
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 220,
+  "n": 222,
   "wouldLose": 153,
-  "wouldWin": 67
+  "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793913722008,
+ "lastRun": 1793914621613,
  "lastBarT": 1793912400000,
- "price": 109.32005,
- "equity": 94786.16451103786,
- "unreal": 994.2800000000602,
+ "price": 109.22589,
+ "equity": 95445.28451103778,
+ "unreal": 1653.3999999999764,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -5091,6 +5091,6 @@
    "deadline": 1793992022335
   },
   "trades": [],
-  "equity": 100994.28000000006
+  "equity": 101653.39999999998
  }
 }

@@ -206,7 +206,7 @@
    "entry": 177.17843,
    "sl": 176.95794693476606,
    "tp": 177.61939613046786,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -4762,7 +4762,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106103.01063667533
+  "equity": 106259.01063667539
  },
  "reportDay": "2026-11-06",
  "skipReview": {
@@ -4771,11 +4771,11 @@
   "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793913721015,
+ "lastRun": 1793914620695,
  "lastBarT": 1793912400000,
- "price": 176.98131,
- "equity": 114967.34368603516,
- "unreal": 2655.269999999973,
+ "price": 176.92931,
+ "equity": 115435.34368603535,
+ "unreal": 3123.2700000001614,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4852,7 +4852,7 @@
  },
  "learned": {
   "bars": 3576,
-  "events": 1820,
+  "events": 1821,
   "win": [
    {
     "name": "陽の包み足",
@@ -4903,24 +4903,31 @@
     "avgR": 0.13550055570753358
    },
    {
-    "name": "ボリバン下限から回帰",
-    "dir": "long",
-    "key": "with|range",
-    "n": 17,
-    "winRate": 0.35294117647058826,
-    "avgR": 0.12996731386478402
-   },
-   {
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "with|range",
     "n": 41,
     "winRate": 0.36585365853658536,
     "avgR": 0.0813632020866682
+   },
+   {
+    "name": "ボリバン下限から回帰",
+    "dir": "long",
+    "key": "with|range",
+    "n": 18,
+    "winRate": 0.3333333333333333,
+    "avgR": 0.0664354360290919
    }
   ]
  },
  "review": {
+  "bb_revert_up": {
+   "n": 1,
+   "wins": 0,
+   "recentLosses": 1,
+   "streak": 1,
+   "suspended": false
+  },
   "bb_revert_dn": {
    "n": 2,
    "wins": 1,
@@ -4985,6 +4992,6 @@
    "deadline": 1793977622538
   },
   "trades": [],
-  "equity": 102360.23999999998
+  "equity": 102776.24000000014
  }
 }
