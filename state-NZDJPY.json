@@ -220,6 +220,22 @@
  },
  "log": [
   {
+   "t": 1793840400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 89.14187,
+   "sl": 88.97798735119349,
+   "tp": 89.469635297613,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793833200000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -3957,7 +3973,7 @@
    ]
   }
  ],
- "lastEvalT": 1793836800000,
+ "lastEvalT": 1793840400000,
  "adaptive": {
   "start": 100000,
   "balance": 100511.6461200932,
@@ -4373,7 +4389,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100261.44612009318
+  "equity": 100285.16612009318
  },
  "reportDay": "2026-11-05",
  "skipReview": {
@@ -4382,9 +4398,9 @@
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793843521537,
- "lastBarT": 1793840400000,
- "price": 89.13001,
+ "lastRun": 1793844544815,
+ "lastBarT": 1793844000000,
+ "price": 89.14187,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4463,7 +4479,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1888,
+  "events": 1885,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4485,17 +4501,9 @@
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "against|range",
-    "n": 26,
-    "winRate": 0.4230769230769231,
-    "avgR": 0.22288350316477526
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "against|range",
-    "n": 19,
-    "winRate": 0.42105263157894735,
-    "avgR": 0.21831521533165615
+    "n": 25,
+    "winRate": 0.4,
+    "avgR": 0.1534877188373489
    },
    {
     "name": "20本高値ブレイク",
@@ -4504,6 +4512,14 @@
     "n": 71,
     "winRate": 0.38028169014084506,
     "avgR": 0.11236285900018629
+   },
+   {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "against|range",
+    "n": 18,
+    "winRate": 0.3888888888888889,
+    "avgR": 0.12167838777506862
    }
   ]
  },
@@ -4537,7 +4553,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
