@@ -4576,9 +4576,9 @@
   "wouldWin": 66
  },
  "version": 1,
- "lastRun": 1793901703453,
+ "lastRun": 1793902023399,
  "lastBarT": 1793901600000,
- "price": 88.51336,
+ "price": 88.41129,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4657,7 +4657,7 @@
  },
  "learned": {
   "bars": 3573,
-  "events": 1896,
+  "events": 1897,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4731,17 +4731,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

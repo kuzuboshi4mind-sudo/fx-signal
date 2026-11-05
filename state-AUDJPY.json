@@ -4510,22 +4510,10 @@
  "lastEvalT": 1793898000000,
  "adaptive": {
   "start": 100000,
-  "balance": 94253.96231577446,
+  "balance": 93268.20552666966,
   "startT": 1791967922952,
-  "positions": [
-   {
-    "key": "ema_cross_dn|long|2|1",
-    "dir": "long",
-    "pattern": "ema_cross_dn",
-    "name": "デッドクロス(EMA20/50)（逆向き）",
-    "units": 2000,
-    "entry": 109.71404,
-    "sl": 109.4676008027238,
-    "tp": 110.20691839455239,
-    "barT": 1793898000000,
-    "openT": 1793898704156,
-    "deadline": 1793985104156
-   },
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -4537,10 +4525,29 @@
     "tp": 110.45335759182859,
     "barT": 1793898000000,
     "openT": 1793898704156,
-    "deadline": 1793985104156
-   }
-  ],
-  "trades": [
+    "deadline": 1793985104156,
+    "exit": 109.4676008027238,
+    "closeT": 1793901600000,
+    "reason": "sl",
+    "pnl": -492.878394552406
+   },
+   {
+    "key": "ema_cross_dn|long|2|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 2000,
+    "entry": 109.71404,
+    "sl": 109.4676008027238,
+    "tp": 110.20691839455239,
+    "barT": 1793898000000,
+    "openT": 1793898704156,
+    "deadline": 1793985104156,
+    "exit": 109.4676008027238,
+    "closeT": 1793901600000,
+    "reason": "sl",
+    "pnl": -492.878394552406
+   },
    {
     "key": "ema_cross_up|long|3|1",
     "dir": "long",
@@ -4749,7 +4756,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 93793.56231577447
+  "equity": 93268.20552666966
  },
  "reportDay": "2026-11-06",
  "skipReview": {
@@ -4758,9 +4765,9 @@
   "wouldWin": 67
  },
  "version": 1,
- "lastRun": 1793901702904,
+ "lastRun": 1793902022327,
  "lastBarT": 1793901600000,
- "price": 109.59894,
+ "price": 109.45325,
  "equity": 93791.8845110378,
  "unreal": 0,
  "config": {
@@ -5002,17 +5009,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
