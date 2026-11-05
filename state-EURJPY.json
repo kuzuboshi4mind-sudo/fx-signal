@@ -6,7 +6,18 @@
   "balance": 112312.07368603519,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 9000,
+   "entry": 177.27634,
+   "sl": 177.50857834364336,
+   "tp": 176.82986331271326,
+   "barT": 1793890800000,
+   "openT": 1793891222538,
+   "deadline": 1793977622538
+  },
   "trades": [
    {
     "dir": "short",
@@ -187,6 +198,34 @@
   ]
  },
  "log": [
+  {
+   "t": 1793887200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 177.28234,
+   "sl": 177.50857834364336,
+   "tp": 176.82986331271326,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793887200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 177.28234,
+   "sl": 177.50857834364336,
+   "tp": 176.82986331271326,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793865600000,
    "pattern": "pullback_up",
@@ -4282,7 +4321,7 @@
    ]
   }
  ],
- "lastEvalT": 1793883600000,
+ "lastEvalT": 1793887200000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4652,18 +4691,18 @@
   "pickTried": "2026-11-01",
   "equity": 105529.65063667537
  },
- "reportDay": "2026-11-05",
+ "reportDay": "2026-11-06",
  "skipReview": {
   "n": 237,
   "wouldLose": 168,
   "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793890320999,
- "lastBarT": 1793887200000,
- "price": 177.39027,
- "equity": 112312.07368603519,
- "unreal": 0,
+ "lastRun": 1793891222538,
+ "lastBarT": 1793890800000,
+ "price": 177.28234,
+ "equity": 112258.07368603519,
+ "unreal": -54.000000000002046,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4739,7 +4778,7 @@
   }
  },
  "learned": {
-  "bars": 3569,
+  "bars": 3570,
   "events": 1820,
   "win": [
    {
@@ -4845,7 +4884,23 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4860,8 +4915,19 @@
   "balance": 100000,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 8000,
+   "entry": 177.27634,
+   "sl": 177.50857834364336,
+   "tp": 176.82986331271326,
+   "barT": 1793890800000,
+   "openT": 1793891222538,
+   "deadline": 1793977622538
+  },
   "trades": [],
-  "equity": 100000
+  "equity": 99952
  }
 }

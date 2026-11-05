@@ -236,6 +236,21 @@
  },
  "log": [
   {
+   "t": 1793887200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 212.73827,
+   "sl": 213.01805334823183,
+   "tp": 212.17870330353637,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793880000000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -3976,7 +3991,7 @@
    ]
   }
  ],
- "lastEvalT": 1793883600000,
+ "lastEvalT": 1793887200000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4703,16 +4718,16 @@
   "pickTried": "2026-11-01",
   "equity": 91562.18378857682
  },
- "reportDay": "2026-11-05",
+ "reportDay": "2026-11-06",
  "skipReview": {
   "n": 207,
   "wouldLose": 140,
   "wouldWin": 67
  },
  "version": 1,
- "lastRun": 1793890321325,
- "lastBarT": 1793887200000,
- "price": 213.04205,
+ "lastRun": 1793891223259,
+ "lastBarT": 1793890800000,
+ "price": 212.73827,
  "equity": 107249.94303283232,
  "unreal": 0,
  "config": {
@@ -4790,7 +4805,7 @@
   }
  },
  "learned": {
-  "bars": 3569,
+  "bars": 3570,
   "events": 1795,
   "win": [
    {
@@ -4880,7 +4895,16 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

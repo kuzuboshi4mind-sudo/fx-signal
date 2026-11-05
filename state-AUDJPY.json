@@ -364,6 +364,55 @@
  },
  "log": [
   {
+   "t": 1793887200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 110.2927,
+   "sl": 110.50016895068718,
+   "tp": 109.87776209862562,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793887200000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 110.2927,
+   "sl": 110.50016895068718,
+   "tp": 109.87776209862562,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793887200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 110.2927,
+   "sl": 110.50016895068718,
+   "tp": 109.87776209862562,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793883600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -4411,7 +4460,7 @@
    ]
   }
  ],
- "lastEvalT": 1793883600000,
+ "lastEvalT": 1793887200000,
  "adaptive": {
   "start": 100000,
   "balance": 94253.96231577446,
@@ -4628,16 +4677,16 @@
   "pickTried": "2026-11-01",
   "equity": 94253.96231577446
  },
- "reportDay": "2026-11-05",
+ "reportDay": "2026-11-06",
  "skipReview": {
   "n": 217,
   "wouldLose": 153,
   "wouldWin": 64
  },
  "version": 1,
- "lastRun": 1793890321736,
- "lastBarT": 1793887200000,
- "price": 110.49129,
+ "lastRun": 1793891223781,
+ "lastBarT": 1793890800000,
+ "price": 110.2927,
  "equity": 93791.8845110378,
  "unreal": 0,
  "config": {
@@ -4715,7 +4764,7 @@
   }
  },
  "learned": {
-  "bars": 3569,
+  "bars": 3570,
   "events": 1882,
   "win": [
    {
@@ -4879,7 +4928,36 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
