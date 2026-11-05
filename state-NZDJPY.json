@@ -220,6 +220,22 @@
  },
  "log": [
   {
+   "t": 1793833200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 89.06809,
+   "sl": 88.90690320020074,
+   "tp": 89.3904635995985,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793826000000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -3941,7 +3957,7 @@
    ]
   }
  ],
- "lastEvalT": 1793829600000,
+ "lastEvalT": 1793833200000,
  "adaptive": {
   "start": 100000,
   "balance": 100511.6461200932,
@@ -4357,7 +4373,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100149.9061200932
+  "equity": 100137.60612009319
  },
  "reportDay": "2026-11-05",
  "skipReview": {
@@ -4366,9 +4382,9 @@
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793836322171,
- "lastBarT": 1793833200000,
- "price": 89.07424,
+ "lastRun": 1793837223005,
+ "lastBarT": 1793836800000,
+ "price": 89.06809,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4448,7 +4464,7 @@
     "key": "against|trend",
     "n": 20,
     "winRate": 0.6,
-    "avgR": 0.7666314979808984
+    "avgR": 0.7666314979808985
    },
    {
     "name": "MACD買いクロス",
@@ -4464,7 +4480,7 @@
     "key": "against|range",
     "n": 26,
     "winRate": 0.4230769230769231,
-    "avgR": 0.22288350311860733
+    "avgR": 0.2228835031362862
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4472,7 +4488,7 @@
     "key": "against|range",
     "n": 19,
     "winRate": 0.42105263157894735,
-    "avgR": 0.21831521526780903
+    "avgR": 0.21831521529225767
    },
    {
     "name": "20本高値ブレイク",
@@ -4514,7 +4530,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4530,7 +4556,7 @@
   "startT": 1793332321641,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-04",
+  "lastDay": "2026-11-05",
   "strategies": [
    "trend_stoch"
   ],
