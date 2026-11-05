@@ -236,6 +236,22 @@
  },
  "log": [
   {
+   "t": 1793872800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 213.19488,
+   "sl": 212.9683216639588,
+   "tp": 213.64799667208248,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793865600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -3944,7 +3960,7 @@
    ]
   }
  ],
- "lastEvalT": 1793869200000,
+ "lastEvalT": 1793872800000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4678,9 +4694,9 @@
   "wouldWin": 66
  },
  "version": 1,
- "lastRun": 1793875921053,
- "lastBarT": 1793872800000,
- "price": 213.21643,
+ "lastRun": 1793876821326,
+ "lastBarT": 1793876400000,
+ "price": 213.19488,
  "equity": 107249.94303283232,
  "unreal": 0,
  "config": {
@@ -4758,7 +4774,7 @@
   }
  },
  "learned": {
-  "bars": 3565,
+  "bars": 3566,
   "events": 1792,
   "win": [
    {
@@ -4848,7 +4864,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
