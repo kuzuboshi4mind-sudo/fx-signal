@@ -6,7 +6,18 @@
   "balance": 93791.8845110378,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "units": 7000,
+   "entry": 109.46209,
+   "sl": 109.71213282826366,
+   "tp": 108.98000434347269,
+   "barT": 1793905200000,
+   "openT": 1793905622335,
+   "deadline": 1793992022335
+  },
   "trades": [
    {
     "dir": "long",
@@ -363,6 +374,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793901600000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 109.46809,
+   "sl": 109.71213282826366,
+   "tp": 108.98000434347269,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793898000000,
    "pattern": "donchian_dn",
@@ -4507,7 +4530,7 @@
    ]
   }
  ],
- "lastEvalT": 1793898000000,
+ "lastEvalT": 1793901600000,
  "adaptive": {
   "start": 100000,
   "balance": 93268.20552666966,
@@ -4765,11 +4788,11 @@
   "wouldWin": 67
  },
  "version": 1,
- "lastRun": 1793904722444,
- "lastBarT": 1793901600000,
- "price": 109.53464,
- "equity": 93791.8845110378,
- "unreal": 0,
+ "lastRun": 1793905622335,
+ "lastBarT": 1793905200000,
+ "price": 109.46809,
+ "equity": 93749.8845110378,
+ "unreal": -42.00000000000159,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -4845,7 +4868,7 @@
   }
  },
  "learned": {
-  "bars": 3573,
+  "bars": 3574,
   "events": 1885,
   "win": [
    {
@@ -5009,7 +5032,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5024,8 +5054,19 @@
   "balance": 100000,
   "riskPct": 2,
   "startT": 1793840367240,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "units": 7000,
+   "entry": 109.46209,
+   "sl": 109.71213282826366,
+   "tp": 108.98000434347269,
+   "barT": 1793905200000,
+   "openT": 1793905622335,
+   "deadline": 1793992022335
+  },
   "trades": [],
-  "equity": 100000
+  "equity": 99958
  }
 }

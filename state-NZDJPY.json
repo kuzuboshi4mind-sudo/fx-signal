@@ -220,6 +220,22 @@
  },
  "log": [
   {
+   "t": 1793901600000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 88.37077,
+   "sl": 88.54018325439776,
+   "tp": 88.03194349120447,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793898000000,
    "pattern": "ema_cross_dn",
    "name": "デッドクロス(EMA20/50)",
@@ -243,7 +259,7 @@
    "entry": 88.54433,
    "sl": 88.36930001265112,
    "tp": 88.89438997469777,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4148,7 +4164,7 @@
    ]
   }
  ],
- "lastEvalT": 1793898000000,
+ "lastEvalT": 1793901600000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4571,14 +4587,14 @@
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 221,
-  "wouldLose": 155,
+  "n": 222,
+  "wouldLose": 156,
   "wouldWin": 66
  },
  "version": 1,
- "lastRun": 1793904723090,
- "lastBarT": 1793901600000,
- "price": 88.41971,
+ "lastRun": 1793905622939,
+ "lastBarT": 1793905200000,
+ "price": 88.37077,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4656,7 +4672,7 @@
   }
  },
  "learned": {
-  "bars": 3573,
+  "bars": 3574,
   "events": 1897,
   "win": [
    {
@@ -4731,7 +4747,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
