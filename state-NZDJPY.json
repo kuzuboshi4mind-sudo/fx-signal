@@ -4528,9 +4528,9 @@
   "wouldWin": 63
  },
  "version": 1,
- "lastRun": 1793891224330,
+ "lastRun": 1793892121837,
  "lastBarT": 1793890800000,
- "price": 88.79559,
+ "price": 88.76039,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4683,34 +4683,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
