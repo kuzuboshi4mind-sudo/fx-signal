@@ -4405,7 +4405,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100387.1061200932
+  "equity": 100336.1461200932
  },
  "reportDay": "2026-11-05",
  "skipReview": {
@@ -4414,9 +4414,9 @@
   "wouldWin": 62
  },
  "version": 1,
- "lastRun": 1793852210229,
+ "lastRun": 1793852522325,
  "lastBarT": 1793851200000,
- "price": 89.19284,
+ "price": 89.16736,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4569,17 +4569,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
