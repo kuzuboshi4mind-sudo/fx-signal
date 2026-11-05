@@ -199,6 +199,33 @@
  },
  "log": [
   {
+   "t": 1793905200000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 177.17843,
+   "sl": 176.95794693476606,
+   "tp": 177.61939613046786,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1793905200000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 177.17843,
+   "sl": 177.39891306523393,
+   "tp": 176.73746386953212,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793901600000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -4353,12 +4380,26 @@
    ]
   }
  ],
- "lastEvalT": 1793901600000,
+ "lastEvalT": 1793905200000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
   "startT": 1791953874927,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_dn|short|3|1",
+    "dir": "short",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "units": 3000,
+    "entry": 177.17243,
+    "sl": 177.39291306523393,
+    "tp": 176.51098080429819,
+    "barT": 1793908800000,
+    "openT": 1793909221350,
+    "deadline": 1793995621350
+   }
+  ],
   "trades": [
    {
     "key": "pullback_dn|long|3|1",
@@ -4721,7 +4762,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105529.65063667537
+  "equity": 105511.65063667537
  },
  "reportDay": "2026-11-06",
  "skipReview": {
@@ -4730,11 +4771,11 @@
   "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793908379971,
- "lastBarT": 1793905200000,
- "price": 177.14563,
- "equity": 113488.46368603513,
- "unreal": 1176.389999999941,
+ "lastRun": 1793909221350,
+ "lastBarT": 1793908800000,
+ "price": 177.17843,
+ "equity": 113193.26368603531,
+ "unreal": 881.1900000001174,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4810,7 +4851,7 @@
   }
  },
  "learned": {
-  "bars": 3574,
+  "bars": 3575,
   "events": 1820,
   "win": [
    {
@@ -4916,7 +4957,22 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4944,6 +5000,6 @@
    "deadline": 1793977622538
   },
   "trades": [],
-  "equity": 101045.67999999995
+  "equity": 100783.2800000001
  }
 }
