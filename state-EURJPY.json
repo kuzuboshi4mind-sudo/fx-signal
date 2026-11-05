@@ -4659,9 +4659,9 @@
   "wouldWin": 68
  },
  "version": 1,
- "lastRun": 1793869622074,
+ "lastRun": 1793870520615,
  "lastBarT": 1793869200000,
- "price": 177.99198,
+ "price": 177.90383,
  "equity": 112312.07368603519,
  "unreal": 0,
  "config": {
@@ -4845,17 +4845,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
