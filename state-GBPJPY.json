@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 103822.64236738776,
+  "balance": 107249.94303283232,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "short",
-   "pattern": "rsi_fall",
-   "name": "RSI買われすぎ反落",
-   "units": 7000,
-   "entry": 213.51271,
-   "sl": 213.7725171903889,
-   "tp": 213.0230956192222,
-   "barT": 1793808000000,
-   "openT": 1793808788797,
-   "deadline": 1793895188797
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落",
+    "units": 7000,
+    "entry": 213.51271,
+    "sl": 213.7725171903889,
+    "tp": 213.0230956192222,
+    "barT": 1793808000000,
+    "openT": 1793808788797,
+    "deadline": 1793895188797,
+    "exit": 213.0230956192222,
+    "closeT": 1793840400000,
+    "reason": "tp",
+    "pnl": 3427.3006654445626
+   },
    {
     "dir": "short",
     "pattern": "rsi_fall",
@@ -254,7 +259,7 @@
    "entry": 213.28442,
    "sl": 213.03393609604223,
    "tp": 213.78538780791555,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -287,7 +292,7 @@
    "entry": 213.52271,
    "sl": 213.7725171903889,
    "tp": 213.0230956192222,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -314,7 +319,7 @@
    "entry": 213.58035,
    "sl": 213.8478920624621,
    "tp": 213.04526587507584,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4604,16 +4609,16 @@
  },
  "reportDay": "2026-11-05",
  "skipReview": {
-  "n": 199,
-  "wouldLose": 134,
-  "wouldWin": 65
+  "n": 201,
+  "wouldLose": 135,
+  "wouldWin": 66
  },
  "version": 1,
- "lastRun": 1793841720815,
+ "lastRun": 1793842620991,
  "lastBarT": 1793840400000,
- "price": 213.08785,
- "equity": 106796.66236738773,
- "unreal": 2974.0199999999677,
+ "price": 213.20698,
+ "equity": 107249.94303283232,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -4690,7 +4695,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1788,
+  "events": 1792,
   "win": [
    {
     "name": "陽の包み足",
@@ -4739,23 +4744,15 @@
     "n": 126,
     "winRate": 0.38095238095238093,
     "avgR": 0.14158758591070075
-   },
-   {
-    "name": "MACD買いクロス",
-    "dir": "long",
-    "key": "*",
-    "n": 120,
-    "winRate": 0.325,
-    "avgR": 0.04663492004487302
    }
   ]
  },
  "review": {
   "rsi_fall": {
-   "n": 1,
-   "wins": 0,
+   "n": 2,
+   "wins": 1,
    "recentLosses": 1,
-   "streak": 1,
+   "streak": 0,
    "suspended": false
   },
   "bb_break_dn": {
