@@ -236,6 +236,36 @@
  },
  "log": [
   {
+   "t": 1793912400000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 212.18765,
+   "sl": 212.47896746287572,
+   "tp": 211.6050150742485,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1793912400000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 212.18765,
+   "sl": 212.47896746287572,
+   "tp": 211.6050150742485,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793901600000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -4033,12 +4063,26 @@
    ]
   }
  ],
- "lastEvalT": 1793908800000,
+ "lastEvalT": 1793912400000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
   "startT": 1791953875407,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_dn|short|2|1.5",
+    "dir": "short",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "units": 1000,
+    "entry": 212.17765,
+    "sl": 212.61462619431362,
+    "tp": 211.59501507424852,
+    "barT": 1793916000000,
+    "openT": 1793916421648,
+    "deadline": 1794175621648
+   }
+  ],
   "trades": [
    {
     "key": "pullback_up|short|3|1",
@@ -4758,7 +4802,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91562.18378857682
+  "equity": 91552.18378857683
  },
  "reportDay": "2026-11-06",
  "skipReview": {
@@ -4767,9 +4811,9 @@
   "wouldWin": 68
  },
  "version": 1,
- "lastRun": 1793915522112,
- "lastBarT": 1793912400000,
- "price": 212.08816,
+ "lastRun": 1793916421648,
+ "lastBarT": 1793916000000,
+ "price": 212.18765,
  "equity": 107249.94303283232,
  "unreal": 0,
  "config": {
@@ -4847,7 +4891,7 @@
   }
  },
  "learned": {
-  "bars": 3576,
+  "bars": 3577,
   "events": 1798,
   "win": [
    {
@@ -4937,7 +4981,24 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
