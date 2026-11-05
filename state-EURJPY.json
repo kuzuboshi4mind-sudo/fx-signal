@@ -4714,11 +4714,11 @@
   "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793894820627,
+ "lastRun": 1793895720936,
  "lastBarT": 1793894400000,
- "price": 177.11329,
- "equity": 113779.52368603517,
- "unreal": 1467.4499999999853,
+ "price": 177.2488,
+ "equity": 112559.93368603534,
+ "unreal": 247.86000000014496,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4900,17 +4900,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4938,6 +4928,6 @@
    "deadline": 1793977622538
   },
   "trades": [],
-  "equity": 101304.4
+  "equity": 100220.32000000012
  }
 }
