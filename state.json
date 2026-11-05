@@ -6,7 +6,18 @@
   "balance": 99005.01679846142,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "units": 9000,
+   "entry": 158.22862,
+   "sl": 158.02850444718962,
+   "tp": 158.61385110562077,
+   "barT": 1793869200000,
+   "openT": 1793869620991,
+   "deadline": 1793956020991
+  },
   "trades": [
    {
     "dir": "long",
@@ -331,6 +342,30 @@
   ]
  },
  "log": [
+  {
+   "t": 1793865600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 158.22362,
+   "sl": 158.02850444718962,
+   "tp": 158.61385110562077,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1793865600000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 158.22362,
+   "sl": 158.02850444718962,
+   "tp": 158.61385110562077,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793858400000,
    "pattern": "ema_cross_dn",
@@ -4135,14 +4170,14 @@
    ]
   }
  ],
- "lastEvalT": 1793862000000,
+ "lastEvalT": 1793865600000,
  "reportDay": "2026-11-05",
  "version": 1,
- "lastRun": 1793868720907,
- "lastBarT": 1793865600000,
- "price": 158.24175,
- "equity": 99005.01679846142,
- "unreal": 0,
+ "lastRun": 1793869620991,
+ "lastBarT": 1793869200000,
+ "price": 158.22362,
+ "equity": 98960.01679846147,
+ "unreal": -44.99999999995907,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4218,7 +4253,7 @@
   }
  },
  "learned": {
-  "bars": 3563,
+  "bars": 3564,
   "events": 1908,
   "win": [
    {
@@ -4351,7 +4386,20 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 101118.93437518679,
@@ -5103,7 +5151,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 103130.85437518675
+  "equity": 103022.07437518684
  },
  "skipReview": {
   "n": 197,
@@ -5246,8 +5294,19 @@
   "balance": 100000,
   "riskPct": 2,
   "startT": 1793840366022,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "units": 9000,
+   "entry": 158.22862,
+   "sl": 158.02850444718962,
+   "tp": 158.61385110562077,
+   "barT": 1793869200000,
+   "openT": 1793869620991,
+   "deadline": 1793956020991
+  },
   "trades": [],
-  "equity": 100000
+  "equity": 99955.00000000004
  }
 }
