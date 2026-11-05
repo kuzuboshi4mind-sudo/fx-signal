@@ -4255,9 +4255,9 @@
  "lastEvalT": 1793916000000,
  "reportDay": "2026-11-06",
  "version": 1,
- "lastRun": 1793920020957,
+ "lastRun": 1793920723157,
  "lastBarT": 1793919600000,
- "price": 157.57097,
+ "price": 157.52467,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4336,7 +4336,7 @@
  },
  "learned": {
   "bars": 3578,
-  "events": 1913,
+  "events": 1914,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4471,22 +4471,10 @@
  "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 103976.2771282195,
+  "balance": 102690.1637537087,
   "startT": 1791916832223,
-  "positions": [
-   {
-    "key": "ema_cross_dn|long|3|1",
-    "dir": "long",
-    "pattern": "ema_cross_dn",
-    "name": "デッドクロス(EMA20/50)（逆向き）",
-    "units": 3000,
-    "entry": 157.74072999999999,
-    "sl": 157.52637777091485,
-    "tp": 158.38378668725537,
-    "barT": 1793898000000,
-    "openT": 1793898701829,
-    "deadline": 1793985101829
-   },
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|long|2|1",
     "dir": "long",
@@ -4498,10 +4486,29 @@
     "tp": 158.16943445817023,
     "barT": 1793898000000,
     "openT": 1793898701829,
-    "deadline": 1793985101829
-   }
-  ],
-  "trades": [
+    "deadline": 1793985101829,
+    "exit": 157.52637777091485,
+    "closeT": 1793919600000,
+    "reason": "sl",
+    "pnl": -643.0566872554095
+   },
+   {
+    "key": "ema_cross_dn|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 157.74072999999999,
+    "sl": 157.52637777091485,
+    "tp": 158.38378668725537,
+    "barT": 1793898000000,
+    "openT": 1793898701829,
+    "deadline": 1793985101829,
+    "exit": 157.52637777091485,
+    "closeT": 1793919600000,
+    "reason": "sl",
+    "pnl": -643.0566872554095
+   },
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -5254,7 +5261,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 102957.71712821952
+  "equity": 102690.1637537087
  },
  "skipReview": {
   "n": 199,
