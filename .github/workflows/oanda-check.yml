@@ -1,0 +1,26 @@
+name: OANDA connection check
+
+# OANDA口座を「見るだけ」で確認し、結果を LINE にだけ送る（注文はしない）
+# このリポジトリは公開なので、残高や口座番号は実行記録に出さない
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Check (read-only)
+        env:
+          OANDA_TOKEN: ${{ secrets.OANDA_TOKEN }}
+          OANDA_ACCOUNT_ID: ${{ secrets.OANDA_ACCOUNT_ID }}
+          LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: node bot/oanda-check.js
