@@ -4384,9 +4384,9 @@
  "lastEvalT": 1793955600000,
  "reportDay": "2026-11-06",
  "version": 1,
- "lastRun": 1793961420105,
+ "lastRun": 1793961938166,
  "lastBarT": 1793959200000,
- "price": 158.25721,
+ "price": 158.27615,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -5404,7 +5404,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 103982.89375370865
+  "equity": 104039.71375370868
  },
  "skipReview": {
   "n": 209,
@@ -5554,7 +5554,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 98392.53949091407
+  "equity": 98487.23949091416
  },
  "newsfree": {
   "start": 100000,
