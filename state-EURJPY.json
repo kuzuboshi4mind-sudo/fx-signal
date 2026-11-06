@@ -4993,9 +4993,9 @@
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1793981220630,
+ "lastRun": 1793982120706,
  "lastBarT": 1793980800000,
- "price": 176.4255,
+ "price": 176.48805,
  "equity": 114075.9494194363,
  "unreal": 0,
  "config": {
@@ -5200,26 +5200,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
