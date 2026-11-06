@@ -2,7 +2,7 @@
 // 使い方: OANDA_TOKEN=... OANDA_ACCOUNT_ID=... LINE_TOKEN=... LINE_USER_ID=... node bot/oanda-check.js
 'use strict';
 const { client, toInstrument } = require('./oanda.js');
-const { OANDA_TOKEN, OANDA_ACCOUNT_ID, OANDA_ENV = 'live', LINE_TOKEN, LINE_USER_ID } = process.env;
+const { OANDA_TOKEN, OANDA_ACCOUNT_ID, OANDA_ACCOUNT_ID_NORMAL, OANDA_ENV = 'live', LINE_TOKEN, LINE_USER_ID } = process.env;
 
 async function sendLine(text) {
   if (!LINE_TOKEN || !LINE_USER_ID) throw new Error('LINE_TOKEN と LINE_USER_ID を GitHub の Secrets に登録してください');
@@ -19,10 +19,14 @@ const yen = (v) => `${Math.round(Number(v)).toLocaleString('ja-JP')}円`;
 async function main() {
   const lines = ['【OANDA 接続確認（見るだけ・注文はしません）】'];
   let ok = true;
+  const targets = [['ボラ・ブレイクアウト用（…-001）', OANDA_ACCOUNT_ID], ['通常取引用 normal', OANDA_ACCOUNT_ID_NORMAL]].filter(([, id]) => id);
+  if (!targets.length) targets.push(['口座', OANDA_ACCOUNT_ID]);
+  for (const [label, accountId] of targets) {
+  lines.push('', `■${label}`);
   try {
-    const o = client({ token: OANDA_TOKEN, accountId: OANDA_ACCOUNT_ID, env: OANDA_ENV });
+    const o = client({ token: OANDA_TOKEN, accountId, env: OANDA_ENV });
     const list = await o.accounts();
-    const seen = (list.accounts || []).some(a => a.id === OANDA_ACCOUNT_ID);
+    const seen = (list.accounts || []).some(a => a.id === accountId);
     lines.push(`鍵：使えます（この鍵で見える口座 ${(list.accounts || []).length}件、登録した口座番号は${seen ? '含まれています' : '含まれていません ← 口座番号を確認してください'}）`);
     const s = (await o.summary()).account;
     lines.push(`口座の通貨：${s.currency}`);
@@ -43,6 +47,7 @@ async function main() {
     ok = false;
     lines.push(`失敗：${e.message}`);
     if (/401|403/.test(e.message)) lines.push('→ 鍵が正しくないか、APIの条件（ゴールド会員・プロコース・NYサーバー残高25万円以上）を満たしていない可能性があります');
+  }
   }
   await sendLine(lines.join('\n'));
   console.log(ok ? '接続確認：成功（内容は LINE に送りました）' : '接続確認：失敗（理由は LINE に送りました）');

@@ -21,6 +21,7 @@ jobs:
         env:
           OANDA_TOKEN: ${{ secrets.OANDA_TOKEN }}
           OANDA_ACCOUNT_ID: ${{ secrets.OANDA_ACCOUNT_ID }}
+          OANDA_ACCOUNT_ID_NORMAL: ${{ secrets.OANDA_ACCOUNT_ID_NORMAL }}
           LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
         run: node bot/oanda-check.js
