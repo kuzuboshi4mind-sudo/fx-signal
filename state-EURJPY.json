@@ -234,7 +234,7 @@
    "entry": 176.93993,
    "sl": 176.6780332382536,
    "tp": 177.46372352349283,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4919,16 +4919,16 @@
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 247,
-  "wouldLose": 173,
+  "n": 248,
+  "wouldLose": 174,
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1793970420641,
+ "lastRun": 1793971320993,
  "lastBarT": 1793970000000,
- "price": 176.85232,
- "equity": 115616.04387161587,
- "unreal": -714.3200000000434,
+ "price": 176.77232,
+ "equity": 114976.043871616,
+ "unreal": -1354.319999999916,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -5125,14 +5125,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5177,6 +5170,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 102946.78349829394
+  "equity": 102386.78349829405
  }
 }
