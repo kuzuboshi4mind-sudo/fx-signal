@@ -236,6 +236,21 @@
  },
  "log": [
   {
+   "t": 1793930400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 212.14457,
+   "sl": 212.45317743703055,
+   "tp": 211.52735512593887,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793923200000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -4127,7 +4142,7 @@
    ]
   }
  ],
- "lastEvalT": 1793926800000,
+ "lastEvalT": 1793930400000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4866,7 +4881,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91447.48378857682
+  "equity": 91595.26378857683
  },
  "reportDay": "2026-11-06",
  "skipReview": {
@@ -4875,9 +4890,9 @@
   "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793933521806,
- "lastBarT": 1793930400000,
- "price": 212.29235,
+ "lastRun": 1793934581358,
+ "lastBarT": 1793934000000,
+ "price": 212.14457,
  "equity": 107249.94303283232,
  "unreal": 0,
  "config": {
@@ -4955,7 +4970,7 @@
   }
  },
  "learned": {
-  "bars": 3581,
+  "bars": 3582,
   "events": 1803,
   "win": [
    {
@@ -5045,7 +5060,16 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

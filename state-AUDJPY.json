@@ -387,7 +387,7 @@
    "entry": 109.41896,
    "sl": 109.13535700330027,
    "tp": 109.98616599339945,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -399,7 +399,7 @@
    "entry": 109.41896,
    "sl": 109.13535700330027,
    "tp": 109.98616599339945,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4615,7 +4615,7 @@
    ]
   }
  ],
- "lastEvalT": 1793926800000,
+ "lastEvalT": 1793930400000,
  "adaptive": {
   "start": 100000,
   "balance": 93268.20552666966,
@@ -4868,14 +4868,14 @@
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 223,
-  "wouldLose": 153,
+  "n": 224,
+  "wouldLose": 154,
   "wouldWin": 70
  },
  "version": 1,
- "lastRun": 1793933522316,
- "lastBarT": 1793930400000,
- "price": 109.28123,
+ "lastRun": 1793934581923,
+ "lastBarT": 1793934000000,
+ "price": 109.0717,
  "equity": 97166.48410672903,
  "unreal": 0,
  "config": {
@@ -4953,8 +4953,8 @@
   }
  },
  "learned": {
-  "bars": 3581,
-  "events": 1892,
+  "bars": 3582,
+  "events": 1894,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -4973,20 +4973,20 @@
     "avgR": 0.42333853329331034
    },
    {
-    "name": "陽の包み足",
-    "dir": "long",
-    "key": "against|trend",
-    "n": 42,
-    "winRate": 0.42857142857142855,
-    "avgR": 0.3471370184387374
-   },
-   {
     "name": "ボリバン上抜けブレイク",
     "dir": "long",
     "key": "with|range",
     "n": 59,
     "winRate": 0.423728813559322,
     "avgR": 0.32064267657896367
+   },
+   {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 43,
+    "winRate": 0.4186046511627907,
+    "avgR": 0.3155622466729327
    },
    {
     "name": "20本安値ブレイク",
@@ -5039,6 +5039,13 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 6,
+   "wins": 1,
+   "recentLosses": 4,
+   "streak": 1,
+   "suspended": true
+  },
   "bb_revert_up": {
    "n": 1,
    "wins": 0,
@@ -5073,13 +5080,6 @@
    "recentLosses": 3,
    "streak": 1,
    "suspended": false
-  },
-  "engulf_up": {
-   "n": 5,
-   "wins": 1,
-   "recentLosses": 4,
-   "streak": 0,
-   "suspended": true
   },
   "pullback_dn": {
    "n": 4,
