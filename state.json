@@ -348,6 +348,22 @@
  },
  "log": [
   {
+   "t": 1793955600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 158.36042,
+   "sl": 158.10917834293582,
+   "tp": 158.8629033141284,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793944800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -4365,12 +4381,12 @@
    ]
   }
  ],
- "lastEvalT": 1793952000000,
+ "lastEvalT": 1793955600000,
  "reportDay": "2026-11-06",
  "version": 1,
- "lastRun": 1793958720368,
- "lastBarT": 1793955600000,
- "price": 158.29024,
+ "lastRun": 1793959620352,
+ "lastBarT": 1793959200000,
+ "price": 158.36042,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4448,7 +4464,7 @@
   }
  },
  "learned": {
-  "bars": 3588,
+  "bars": 3589,
   "events": 1923,
   "win": [
    {
@@ -4581,7 +4597,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 102690.1637537087,
@@ -5388,7 +5414,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 104081.98375370872
+  "equity": 104292.5237537087
  },
  "skipReview": {
   "n": 209,
@@ -5399,7 +5425,21 @@
   "start": 100000,
   "balance": 98933.58949091415,
   "startT": 1792033735611,
-  "positions": [],
+  "positions": [
+   {
+    "key": "vol_breakout",
+    "dir": "long",
+    "pattern": "vol_breakout",
+    "name": "ボラティリティ・ブレイクアウト",
+    "units": 5000,
+    "entry": 158.36542,
+    "sl": 157.9885575144037,
+    "tp": 183.4895857064193,
+    "barT": 1793959200000,
+    "openT": 1793959620352,
+    "deadline": 1793988420352
+   }
+  ],
   "trades": [
    {
     "key": "vol_breakout",
@@ -5524,7 +5564,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 98933.58949091415
+  "equity": 98908.58949091418
  },
  "newsfree": {
   "start": 100000,

@@ -6,7 +6,18 @@
   "balance": 116330.36387161592,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "units": 8000,
+   "entry": 176.94161,
+   "sl": 176.65980819347755,
+   "tp": 177.48721361304493,
+   "barT": 1793959200000,
+   "openT": 1793959621171,
+   "deadline": 1794218821171
+  },
   "trades": [
    {
     "dir": "short",
@@ -203,6 +214,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1793955600000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 176.93561,
+   "sl": 176.65980819347755,
+   "tp": 177.48721361304493,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1793944800000,
    "pattern": "engulf_up",
@@ -4479,7 +4502,7 @@
    ]
   }
  ],
- "lastEvalT": 1793952000000,
+ "lastEvalT": 1793955600000,
  "adaptive": {
   "start": 100000,
   "balance": 107513.9982237808,
@@ -4873,11 +4896,11 @@
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1793958720927,
- "lastBarT": 1793955600000,
- "price": 176.9041,
- "equity": 116330.36387161592,
- "unreal": 0,
+ "lastRun": 1793959621171,
+ "lastBarT": 1793959200000,
+ "price": 176.93561,
+ "equity": 116282.36387161592,
+ "unreal": -48.00000000000182,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4953,7 +4976,7 @@
   }
  },
  "learned": {
-  "bars": 3588,
+  "bars": 3589,
   "events": 1832,
   "win": [
    {
@@ -5074,7 +5097,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5089,7 +5119,18 @@
   "balance": 103571.81349829398,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "units": 7000,
+   "entry": 176.94161,
+   "sl": 176.65980819347755,
+   "tp": 177.48721361304493,
+   "barT": 1793959200000,
+   "openT": 1793959621171,
+   "deadline": 1794218821171
+  },
   "trades": [
    {
     "dir": "short",
@@ -5108,6 +5149,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 103571.81349829398
+  "equity": 103529.81349829398
  }
 }
