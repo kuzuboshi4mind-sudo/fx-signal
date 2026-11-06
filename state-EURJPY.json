@@ -220,6 +220,22 @@
  },
  "log": [
   {
+   "t": 1793988000000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 176.54261,
+   "sl": 176.28039443674749,
+   "tp": 177.067041126505,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793980800000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -4615,7 +4631,7 @@
    ]
   }
  ],
- "lastEvalT": 1793984400000,
+ "lastEvalT": 1793988000000,
  "adaptive": {
   "start": 100000,
   "balance": 107513.9982237808,
@@ -5009,9 +5025,9 @@
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1793991121471,
- "lastBarT": 1793988000000,
- "price": 176.53011,
+ "lastRun": 1793992020747,
+ "lastBarT": 1793991600000,
+ "price": 176.54261,
  "equity": 114075.9494194363,
  "unreal": 0,
  "config": {
@@ -5089,7 +5105,7 @@
   }
  },
  "learned": {
-  "bars": 3597,
+  "bars": 3598,
   "events": 1836,
   "win": [
    {
@@ -5147,14 +5163,6 @@
     "n": 41,
     "winRate": 0.36585365853658536,
     "avgR": 0.0813632020866682
-   },
-   {
-    "name": "下降トレンドの戻り",
-    "dir": "short",
-    "key": "with|trend",
-    "n": 83,
-    "winRate": 0.3493975903614458,
-    "avgR": 0.06671092501452232
    },
    {
     "name": "ボリバン下限から回帰",
@@ -5224,7 +5232,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

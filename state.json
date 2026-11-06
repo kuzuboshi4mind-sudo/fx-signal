@@ -348,6 +348,18 @@
  },
  "log": [
   {
+   "t": 1793988000000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 158.41121,
+   "sl": 158.17988505949197,
+   "tp": 158.87385988101607,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
+  {
    "t": 1793984400000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -4455,12 +4467,12 @@
    ]
   }
  ],
- "lastEvalT": 1793984400000,
+ "lastEvalT": 1793988000000,
  "reportDay": "2026-11-07",
  "version": 1,
- "lastRun": 1793991120945,
- "lastBarT": 1793988000000,
- "price": 158.378,
+ "lastRun": 1793992020085,
+ "lastBarT": 1793991600000,
+ "price": 158.41121,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4538,7 +4550,7 @@
   }
  },
  "learned": {
-  "bars": 3597,
+  "bars": 3598,
   "events": 1927,
   "win": [
    {
@@ -4564,6 +4576,14 @@
     "n": 272,
     "winRate": 0.3786764705882353,
     "avgR": 0.2208755593434042
+   },
+   {
+    "name": "MACD買いクロス",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 20,
+    "winRate": 0.4,
+    "avgR": 0.31944652113141203
    },
    {
     "name": "上昇トレンドの押し目",
@@ -4663,7 +4683,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 104720.44589881673,
