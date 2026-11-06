@@ -4430,9 +4430,9 @@
  "lastEvalT": 1793973600000,
  "reportDay": "2026-11-07",
  "version": 1,
- "lastRun": 1793977620941,
+ "lastRun": 1793978520986,
  "lastBarT": 1793977200000,
- "price": 158.27529,
+ "price": 158.26956,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -5603,7 +5603,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 98482.93949091421
+  "equity": 98454.2894909142
  },
  "newsfree": {
   "start": 100000,
