@@ -348,6 +348,22 @@
  },
  "log": [
   {
+   "t": 1793970000000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 158.32976,
+   "sl": 158.1004957107088,
+   "tp": 158.78828857858238,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793966400000,
    "pattern": "ema_cross_up",
    "name": "ゴールデンクロス(EMA20/50)",
@@ -4411,12 +4427,12 @@
    ]
   }
  ],
- "lastEvalT": 1793966400000,
+ "lastEvalT": 1793970000000,
  "reportDay": "2026-11-06",
  "version": 1,
- "lastRun": 1793973372678,
- "lastBarT": 1793970000000,
- "price": 158.38184,
+ "lastRun": 1793974020629,
+ "lastBarT": 1793973600000,
+ "price": 158.32976,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4494,7 +4510,7 @@
   }
  },
  "learned": {
-  "bars": 3592,
+  "bars": 3593,
   "events": 1924,
   "win": [
    {
@@ -4627,7 +4643,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 104720.44589881673,
@@ -5587,7 +5613,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 99015.6894909142
+  "equity": 98755.28949091412
  },
  "newsfree": {
   "start": 100000,
