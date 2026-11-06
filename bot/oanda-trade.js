@@ -7,17 +7,19 @@
 'use strict';
 
 const HOSTS = { live: 'https://api-fxtrade.oanda.com', practice: 'https://api-fxpractice.oanda.com' };
-const DEFAULT_LIMITS = { riskPct: 0.5, dailyLossPct: 1.5, weeklyLossPct: 3, maxUnits: 100000 };
+const DEFAULT_LIMITS = { riskPct: 0.5, dailyLossPct: 1.5, weeklyLossPct: 3, maxUnits: 100000, maxLeverage: 10 };
 
 const toInstrument = (symbol) => symbol.replace('/', '_');
 const priceDigits = (instrument) => (instrument.endsWith('_JPY') ? 3 : 5);
 const fmt = (instrument, p) => Number(p).toFixed(priceDigits(instrument));
 
 // 数量：1回の損失が口座の riskPct% になるように（円の通貨ペアは 1通貨あたりの損益＝値幅（円））
-function planUnits({ equity, riskPct = DEFAULT_LIMITS.riskPct, entry, sl, maxUnits = DEFAULT_LIMITS.maxUnits }) {
+// レバレッジの上限（既定10倍、国内の法定上限は25倍）：損切りが近すぎて数量が膨らむときは、リスク%より少なくする
+function planUnits({ equity, riskPct = DEFAULT_LIMITS.riskPct, entry, sl, maxUnits = DEFAULT_LIMITS.maxUnits, maxLeverage = DEFAULT_LIMITS.maxLeverage }) {
   const dist = Math.abs(entry - sl);
-  if (!(equity > 0) || !(dist > 0)) return 0;
-  return Math.max(0, Math.min(maxUnits, Math.floor((equity * riskPct / 100) / dist)));
+  if (!(equity > 0) || !(dist > 0) || !(entry > 0)) return 0;
+  const byLev = Math.floor(equity * maxLeverage / entry);
+  return Math.max(0, Math.min(maxUnits, byLev, Math.floor((equity * riskPct / 100) / dist)));
 }
 
 // 損失上限：dayStartEquity（その日の始まり、日本時間7時＝NYクローズ基準）と weekStartEquity から今の減り具合を見る

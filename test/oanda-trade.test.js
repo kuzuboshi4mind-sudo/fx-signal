@@ -6,6 +6,8 @@ const T = require('../bot/oanda-trade.js');
 test('数量は口座のリスク%から決まり、上限で止まる', () => {
   assert.strictEqual(T.planUnits({ equity: 100000, riskPct: 0.5, entry: 157.5, sl: 157.3 }), 2500);
   assert.strictEqual(T.planUnits({ equity: 1e9, riskPct: 1, entry: 157.5, sl: 157.49, maxUnits: 100000 }), 100000);
+  // 損切りが近すぎる（5銭）と 0.5% リスクでは 10,000通貨＝約16倍 → 10倍の上限で 6,349通貨に抑える
+  assert.strictEqual(T.planUnits({ equity: 100000, riskPct: 0.5, entry: 157.5, sl: 157.45 }), 6349);
   assert.strictEqual(T.planUnits({ equity: 100000, entry: 157.5, sl: 157.5 }), 0);
 });
 
