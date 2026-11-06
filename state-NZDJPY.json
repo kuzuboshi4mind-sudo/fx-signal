@@ -231,6 +231,33 @@
  },
  "log": [
   {
+   "t": 1793941200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 87.73034,
+   "sl": 87.91851296053018,
+   "tp": 87.35399407893964,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1793941200000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 87.73034,
+   "sl": 87.91851296053018,
+   "tp": 87.35399407893964,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793934000000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -4280,7 +4307,7 @@
    ]
   }
  ],
- "lastEvalT": 1793937600000,
+ "lastEvalT": 1793941200000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4708,11 +4735,11 @@
   "wouldWin": 72
  },
  "version": 1,
- "lastRun": 1793944322396,
- "lastBarT": 1793941200000,
- "price": 87.73703,
- "equity": 107624.40892673335,
- "unreal": 543.6999999999159,
+ "lastRun": 1793945222018,
+ "lastBarT": 1793944800000,
+ "price": 87.73034,
+ "equity": 107691.30892673341,
+ "unreal": 610.5999999999767,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4788,7 +4815,7 @@
   }
  },
  "learned": {
-  "bars": 3584,
+  "bars": 3585,
   "events": 1906,
   "win": [
    {
@@ -4871,7 +4898,22 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4911,6 +4953,6 @@
    "deadline": 1794197709932
   },
   "trades": [],
-  "equity": 100543.69999999991
+  "equity": 100610.59999999998
  }
 }
