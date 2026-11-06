@@ -236,6 +236,38 @@
  },
  "log": [
   {
+   "t": 1793923200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 212.2733,
+   "sl": 211.95685066474564,
+   "tp": 212.90619867050876,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793923200000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 212.2733,
+   "sl": 211.95685066474564,
+   "tp": 212.90619867050876,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793919600000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -4095,7 +4127,7 @@
    ]
   }
  ],
- "lastEvalT": 1793919600000,
+ "lastEvalT": 1793923200000,
  "adaptive": {
   "start": 100000,
   "balance": 91562.18378857682,
@@ -4834,7 +4866,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91555.47378857683
+  "equity": 91466.53378857681
  },
  "reportDay": "2026-11-06",
  "skipReview": {
@@ -4843,9 +4875,9 @@
   "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793926321485,
- "lastBarT": 1793923200000,
- "price": 212.18436,
+ "lastRun": 1793926925243,
+ "lastBarT": 1793926800000,
+ "price": 212.2733,
  "equity": 107249.94303283232,
  "unreal": 0,
  "config": {
@@ -4923,7 +4955,7 @@
   }
  },
  "learned": {
-  "bars": 3579,
+  "bars": 3580,
   "events": 1801,
   "win": [
    {
@@ -4948,7 +4980,7 @@
     "key": "with|trend",
     "n": 32,
     "winRate": 0.4375,
-    "avgR": 0.33268031372010637
+    "avgR": 0.3326803137201063
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -5013,7 +5045,26 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

@@ -204,6 +204,38 @@
  },
  "log": [
   {
+   "t": 1793923200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 177.00903,
+   "sl": 176.7730063591437,
+   "tp": 177.48107728171263,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1793923200000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 177.00903,
+   "sl": 176.7730063591437,
+   "tp": 177.48107728171263,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793919600000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -4415,7 +4447,7 @@
    ]
   }
  ],
- "lastEvalT": 1793919600000,
+ "lastEvalT": 1793923200000,
  "adaptive": {
   "start": 100000,
   "balance": 105529.65063667537,
@@ -4797,7 +4829,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106161.7806366753
+  "equity": 106019.85063667536
  },
  "reportDay": "2026-11-06",
  "skipReview": {
@@ -4806,9 +4838,9 @@
   "wouldWin": 73
  },
  "version": 1,
- "lastRun": 1793926321137,
- "lastBarT": 1793923200000,
- "price": 176.96172,
+ "lastRun": 1793926924703,
+ "lastBarT": 1793926800000,
+ "price": 177.00903,
  "equity": 116330.36387161592,
  "unreal": 0,
  "config": {
@@ -4886,7 +4918,7 @@
   }
  },
  "learned": {
-  "bars": 3579,
+  "bars": 3580,
   "events": 1827,
   "win": [
    {
@@ -4903,7 +4935,7 @@
     "key": "with|trend",
     "n": 43,
     "winRate": 0.4186046511627907,
-    "avgR": 0.3170337599433525
+    "avgR": 0.31703375994335253
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -4944,6 +4976,14 @@
     "n": 41,
     "winRate": 0.36585365853658536,
     "avgR": 0.0813632020866682
+   },
+   {
+    "name": "下降トレンドの戻り",
+    "dir": "short",
+    "key": "with|trend",
+    "n": 83,
+    "winRate": 0.3493975903614458,
+    "avgR": 0.06671092501452232
    },
    {
     "name": "ボリバン下限から回帰",
@@ -4999,7 +5039,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
