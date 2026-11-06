@@ -4467,12 +4467,12 @@
    ]
   }
  ],
- "lastEvalT": 1793988000000,
+ "lastEvalT": 1793991600000,
  "reportDay": "2026-11-07",
  "version": 1,
- "lastRun": 1793994720952,
- "lastBarT": 1793991600000,
- "price": 158.51286,
+ "lastRun": 1793995620618,
+ "lastBarT": 1793995200000,
+ "price": 158.51989,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4550,7 +4550,7 @@
   }
  },
  "learned": {
-  "bars": 3598,
+  "bars": 3599,
   "events": 1927,
   "win": [
    {
