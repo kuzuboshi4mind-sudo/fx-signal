@@ -243,7 +243,7 @@
    "entry": 211.93783,
    "sl": 211.62068329292404,
    "tp": 212.5721234141519,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -274,7 +274,7 @@
    "entry": 212.14457,
    "sl": 212.45317743703055,
    "tp": 211.52735512593887,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -353,7 +353,7 @@
    "entry": 212.18765,
    "sl": 212.47896746287572,
    "tp": 211.6050150742485,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -368,7 +368,7 @@
    "entry": 212.18765,
    "sl": 212.47896746287572,
    "tp": 211.6050150742485,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4176,9 +4176,10 @@
  "lastEvalT": 1793944800000,
  "adaptive": {
   "start": 100000,
-  "balance": 91562.18378857682,
+  "balance": 92144.8187143283,
   "startT": 1791953875407,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|short|2|1.5",
     "dir": "short",
@@ -4190,10 +4191,12 @@
     "tp": 211.59501507424852,
     "barT": 1793916000000,
     "openT": 1793916421648,
-    "deadline": 1794175621648
-   }
-  ],
-  "trades": [
+    "deadline": 1794175621648,
+    "exit": 211.59501507424852,
+    "closeT": 1793948400000,
+    "reason": "tp",
+    "pnl": 582.6349257514778
+   },
    {
     "key": "pullback_up|short|3|1",
     "dir": "short",
@@ -4912,18 +4915,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91802.00378857683
+  "equity": 92144.8187143283
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 215,
-  "wouldLose": 146,
-  "wouldWin": 69
+  "n": 219,
+  "wouldLose": 147,
+  "wouldWin": 72
  },
  "version": 1,
- "lastRun": 1793948822053,
+ "lastRun": 1793950778709,
  "lastBarT": 1793948400000,
- "price": 211.93783,
+ "price": 211.37303,
  "equity": 107249.94303283232,
  "unreal": 0,
  "config": {
@@ -5002,7 +5005,7 @@
  },
  "learned": {
   "bars": 3586,
-  "events": 1806,
+  "events": 1808,
   "win": [
    {
     "name": "陽の包み足",
@@ -5048,9 +5051,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "*",
-    "n": 128,
-    "winRate": 0.375,
-    "avgR": 0.12344986371606026
+    "n": 129,
+    "winRate": 0.3798449612403101,
+    "avgR": 0.1378711685473464
    }
   ]
  },
@@ -5091,17 +5094,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

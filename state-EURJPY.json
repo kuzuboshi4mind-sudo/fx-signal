@@ -211,7 +211,7 @@
    "entry": 176.75096,
    "sl": 176.51206075689683,
    "tp": 177.22875848620632,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -227,7 +227,7 @@
    "entry": 176.84948,
    "sl": 176.61132354054308,
    "tp": 177.32579291891383,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -275,7 +275,7 @@
    "entry": 176.96841,
    "sl": 177.2011339209222,
    "tp": 176.50296215815564,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4482,9 +4482,10 @@
  "lastEvalT": 1793944800000,
  "adaptive": {
   "start": 100000,
-  "balance": 105529.65063667537,
+  "balance": 107513.9982237808,
   "startT": 1791953874927,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|short|3|1",
     "dir": "short",
@@ -4496,10 +4497,12 @@
     "tp": 176.51098080429819,
     "barT": 1793908800000,
     "openT": 1793909221350,
-    "deadline": 1793995621350
-   }
-  ],
-  "trades": [
+    "deadline": 1793995621350,
+    "exit": 176.51098080429819,
+    "closeT": 1793948400000,
+    "reason": "tp",
+    "pnl": 1984.3475871054181
+   },
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -4861,18 +4864,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106794.06063667538
+  "equity": 107513.9982237808
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 244,
-  "wouldLose": 171,
-  "wouldWin": 73
+  "n": 247,
+  "wouldLose": 173,
+  "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1793948821581,
+ "lastRun": 1793950778073,
  "lastBarT": 1793948400000,
- "price": 176.75096,
+ "price": 176.21917,
  "equity": 116330.36387161592,
  "unreal": 0,
  "config": {
@@ -4951,7 +4954,7 @@
  },
  "learned": {
   "bars": 3586,
-  "events": 1830,
+  "events": 1832,
   "win": [
    {
     "name": "陽の包み足",
@@ -5071,17 +5074,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
