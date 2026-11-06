@@ -215,6 +215,22 @@
  },
  "log": [
   {
+   "t": 1793962800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 176.93993,
+   "sl": 176.6780332382536,
+   "tp": 177.46372352349283,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793955600000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -4502,7 +4518,7 @@
    ]
   }
  ],
- "lastEvalT": 1793959200000,
+ "lastEvalT": 1793962800000,
  "adaptive": {
   "start": 100000,
   "balance": 107513.9982237808,
@@ -4896,11 +4912,11 @@
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1793965921146,
- "lastBarT": 1793962800000,
- "price": 176.88234,
- "equity": 115856.20387161593,
- "unreal": -474.1599999999835,
+ "lastRun": 1793966821558,
+ "lastBarT": 1793966400000,
+ "price": 176.93993,
+ "equity": 116316.92387161597,
+ "unreal": -13.43999999994594,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -4976,7 +4992,7 @@
   }
  },
  "learned": {
-  "bars": 3590,
+  "bars": 3591,
   "events": 1832,
   "win": [
    {
@@ -5097,7 +5113,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5142,6 +5168,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 103156.923498294
+  "equity": 103560.05349829403
  }
 }
