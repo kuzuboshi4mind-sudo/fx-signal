@@ -348,6 +348,21 @@
  },
  "log": [
   {
+   "t": 1793966400000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 158.31849,
+   "sl": 158.09553999614795,
+   "tp": 158.7643900077041,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "指標前後: 米雇用統計"
+   ]
+  },
+  {
    "t": 1793959200000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -4396,12 +4411,12 @@
    ]
   }
  ],
- "lastEvalT": 1793962800000,
+ "lastEvalT": 1793966400000,
  "reportDay": "2026-11-06",
  "version": 1,
- "lastRun": 1793969520938,
- "lastBarT": 1793966400000,
- "price": 158.34063,
+ "lastRun": 1793970420181,
+ "lastBarT": 1793970000000,
+ "price": 158.31849,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4479,7 +4494,7 @@
   }
  },
  "learned": {
-  "bars": 3591,
+  "bars": 3592,
   "events": 1923,
   "win": [
    {
@@ -4612,7 +4627,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "指標前後: 米雇用統計"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 102690.1637537087,
@@ -5419,7 +5443,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 104233.1537537087
+  "equity": 104166.73375370867
  },
  "skipReview": {
   "n": 209,
@@ -5569,7 +5593,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 98809.63949091417
+  "equity": 98698.93949091413
  },
  "newsfree": {
   "start": 100000,
