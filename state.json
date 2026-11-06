@@ -4430,9 +4430,9 @@
  "lastEvalT": 1793970000000,
  "reportDay": "2026-11-06",
  "version": 1,
- "lastRun": 1793974020629,
+ "lastRun": 1793974920703,
  "lastBarT": 1793973600000,
- "price": 158.32976,
+ "price": 158.41743,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4643,17 +4643,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 104720.44589881673,
@@ -5613,7 +5603,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 98755.28949091412
+  "equity": 99193.63949091412
  },
  "newsfree": {
   "start": 100000,

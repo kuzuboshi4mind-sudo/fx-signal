@@ -419,7 +419,7 @@
    "entry": 108.87656,
    "sl": 108.58422845465613,
    "tp": 109.46122309068774,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -431,7 +431,7 @@
    "entry": 108.87656,
    "sl": 108.58422845465613,
    "tp": 109.46122309068774,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -447,7 +447,7 @@
    "entry": 108.87656,
    "sl": 108.58422845465613,
    "tp": 109.46122309068774,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4984,14 +4984,14 @@
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 226,
-  "wouldLose": 155,
+  "n": 228,
+  "wouldLose": 157,
   "wouldWin": 71
  },
  "version": 1,
- "lastRun": 1793974022257,
+ "lastRun": 1793974922257,
  "lastBarT": 1793973600000,
- "price": 108.66724,
+ "price": 108.63846,
  "equity": 100624.31058085135,
  "unreal": 0,
  "config": {
@@ -5155,19 +5155,19 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 7,
+   "wins": 1,
+   "recentLosses": 4,
+   "streak": 2,
+   "suspended": true
+  },
   "donchian_dn": {
    "n": 6,
    "wins": 4,
    "recentLosses": 1,
    "streak": 1,
    "suspended": false
-  },
-  "engulf_up": {
-   "n": 6,
-   "wins": 1,
-   "recentLosses": 4,
-   "streak": 1,
-   "suspended": true
   },
   "bb_revert_up": {
    "n": 1,
@@ -5240,17 +5240,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
