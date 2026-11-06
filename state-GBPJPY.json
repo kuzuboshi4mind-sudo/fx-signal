@@ -252,6 +252,22 @@
  },
  "log": [
   {
+   "t": 1793973600000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 211.47317,
+   "sl": 211.82261615845354,
+   "tp": 210.77427768309295,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793970000000,
    "pattern": "bb_break_dn",
    "name": "ボリバン下抜けブレイク",
@@ -4247,7 +4263,7 @@
    ]
   }
  ],
- "lastEvalT": 1793970000000,
+ "lastEvalT": 1793973600000,
  "adaptive": {
   "start": 100000,
   "balance": 92144.8187143283,
@@ -4991,16 +5007,16 @@
   "pickTried": "2026-11-01",
   "equity": 92144.8187143283
  },
- "reportDay": "2026-11-06",
+ "reportDay": "2026-11-07",
  "skipReview": {
   "n": 220,
   "wouldLose": 148,
   "wouldWin": 72
  },
  "version": 1,
- "lastRun": 1793976864589,
- "lastBarT": 1793973600000,
- "price": 211.69435,
+ "lastRun": 1793977622119,
+ "lastBarT": 1793977200000,
+ "price": 211.47317,
  "equity": 105412.50832140826,
  "unreal": 0,
  "config": {
@@ -5078,7 +5094,7 @@
   }
  },
  "learned": {
-  "bars": 3593,
+  "bars": 3594,
   "events": 1810,
   "win": [
    {
@@ -5167,7 +5183,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
