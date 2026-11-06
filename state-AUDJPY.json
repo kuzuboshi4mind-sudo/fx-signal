@@ -398,7 +398,7 @@
    "entry": 108.55968,
    "sl": 108.8495984838974,
    "tp": 107.97984303220521,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -410,7 +410,7 @@
    "entry": 108.55968,
    "sl": 108.8495984838974,
    "tp": 107.97984303220521,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4919,16 +4919,16 @@
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 225,
-  "wouldLose": 154,
+  "n": 226,
+  "wouldLose": 155,
   "wouldWin": 71
  },
  "version": 1,
- "lastRun": 1793947022455,
+ "lastRun": 1793947922227,
  "lastBarT": 1793944800000,
- "price": 108.73192,
- "equity": 97827.74410672899,
- "unreal": 661.2599999999702,
+ "price": 108.88727,
+ "equity": 96895.644106729,
+ "unreal": -270.84000000002106,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -5090,19 +5090,19 @@
   ]
  },
  "review": {
+  "donchian_dn": {
+   "n": 5,
+   "wins": 3,
+   "recentLosses": 2,
+   "streak": 1,
+   "suspended": false
+  },
   "engulf_up": {
    "n": 6,
    "wins": 1,
    "recentLosses": 4,
    "streak": 1,
    "suspended": true
-  },
-  "donchian_dn": {
-   "n": 4,
-   "wins": 3,
-   "recentLosses": 1,
-   "streak": 0,
-   "suspended": false
   },
   "bb_revert_up": {
    "n": 1,
@@ -5220,6 +5220,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 104035.85959569119
+  "equity": 103103.7595956912
  }
 }
