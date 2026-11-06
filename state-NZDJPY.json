@@ -6,7 +6,18 @@
   "balance": 107080.70892673344,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "units": 10000,
+   "entry": 87.7914,
+   "sl": 87.99015958736044,
+   "tp": 87.42388082527911,
+   "barT": 1793937600000,
+   "openT": 1793938509932,
+   "deadline": 1794197709932
+  },
   "trades": [
    {
     "dir": "long",
@@ -220,6 +231,18 @@
  },
  "log": [
   {
+   "t": 1793934000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 87.8014,
+   "sl": 87.99015958736044,
+   "tp": 87.42388082527911,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1793923200000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -259,7 +282,7 @@
    "entry": 88.16779,
    "sl": 88.34013872546615,
    "tp": 87.8230925490677,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4257,7 +4280,7 @@
    ]
   }
  ],
- "lastEvalT": 1793930400000,
+ "lastEvalT": 1793934000000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4680,16 +4703,16 @@
  },
  "reportDay": "2026-11-06",
  "skipReview": {
-  "n": 230,
+  "n": 231,
   "wouldLose": 159,
-  "wouldWin": 71
+  "wouldWin": 72
  },
  "version": 1,
- "lastRun": 1793937122722,
- "lastBarT": 1793934000000,
- "price": 87.8554,
- "equity": 107080.70892673344,
- "unreal": 0,
+ "lastRun": 1793938509932,
+ "lastBarT": 1793937600000,
+ "price": 87.8014,
+ "equity": 106980.70892673338,
+ "unreal": -100.00000000005116,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4765,7 +4788,7 @@
   }
  },
  "learned": {
-  "bars": 3582,
+  "bars": 3583,
   "events": 1906,
   "win": [
    {
@@ -4848,7 +4871,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4875,8 +4905,19 @@
   "balance": 100000,
   "riskPct": 2,
   "startT": 1793840367577,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "units": 10000,
+   "entry": 87.7914,
+   "sl": 87.99015958736044,
+   "tp": 87.42388082527911,
+   "barT": 1793937600000,
+   "openT": 1793938509932,
+   "deadline": 1794197709932
+  },
   "trades": [],
-  "equity": 100000
+  "equity": 99899.99999999994
  }
 }
