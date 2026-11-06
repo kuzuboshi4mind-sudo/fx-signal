@@ -4873,9 +4873,9 @@
   "wouldWin": 70
  },
  "version": 1,
- "lastRun": 1793926925871,
+ "lastRun": 1793927222289,
  "lastBarT": 1793926800000,
- "price": 109.41896,
+ "price": 109.37318,
  "equity": 97166.48410672903,
  "unreal": 0,
  "config": {
@@ -5124,25 +5124,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

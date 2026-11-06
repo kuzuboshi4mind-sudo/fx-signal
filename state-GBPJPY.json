@@ -4866,7 +4866,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91466.53378857681
+  "equity": 91415.6537885768
  },
  "reportDay": "2026-11-06",
  "skipReview": {
@@ -4875,9 +4875,9 @@
   "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793926925243,
+ "lastRun": 1793927221663,
  "lastBarT": 1793926800000,
- "price": 212.2733,
+ "price": 212.32418,
  "equity": 107249.94303283232,
  "unreal": 0,
  "config": {
@@ -5045,26 +5045,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
