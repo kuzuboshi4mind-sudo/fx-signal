@@ -4384,9 +4384,9 @@
  "lastEvalT": 1793955600000,
  "reportDay": "2026-11-06",
  "version": 1,
- "lastRun": 1793959620352,
+ "lastRun": 1793960520930,
  "lastBarT": 1793959200000,
- "price": 158.36042,
+ "price": 158.328,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4597,17 +4597,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 102690.1637537087,
@@ -5414,7 +5404,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 104292.5237537087
+  "equity": 104195.2637537087
  },
  "skipReview": {
   "n": 209,
@@ -5564,7 +5554,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 98908.58949091418
+  "equity": 98746.48949091416
  },
  "newsfree": {
   "start": 100000,
