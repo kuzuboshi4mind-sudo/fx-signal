@@ -4458,9 +4458,9 @@
  "lastEvalT": 1793984400000,
  "reportDay": "2026-11-07",
  "version": 1,
- "lastRun": 1793988420198,
+ "lastRun": 1793989321028,
  "lastBarT": 1793988000000,
- "price": 158.18253,
+ "price": 158.26771,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4663,25 +4663,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 104720.44589881673,
@@ -5500,9 +5482,10 @@
  },
  "latest": {
   "start": 100000,
-  "balance": 98933.58949091415,
+  "balance": 98445.03949091412,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "long",
@@ -5514,10 +5497,12 @@
     "tp": 183.4895857064193,
     "barT": 1793959200000,
     "openT": 1793959620352,
-    "deadline": 1793988420352
-   }
-  ],
-  "trades": [
+    "deadline": 1793988420352,
+    "exit": 158.26771,
+    "closeT": 1793989321028,
+    "reason": "time",
+    "pnl": -488.550000000032
+   },
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -5641,7 +5626,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 98019.13949091423
+  "equity": 98445.03949091412
  },
  "newsfree": {
   "start": 100000,
