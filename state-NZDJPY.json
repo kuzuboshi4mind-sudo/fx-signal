@@ -220,6 +220,21 @@
  },
  "log": [
   {
+   "t": 1793919600000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 88.16779,
+   "sl": 88.34013872546615,
+   "tp": 87.8230925490677,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1793912400000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -4210,7 +4225,7 @@
    ]
   }
  ],
- "lastEvalT": 1793916000000,
+ "lastEvalT": 1793919600000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4638,9 +4653,9 @@
   "wouldWin": 69
  },
  "version": 1,
- "lastRun": 1793922721699,
- "lastBarT": 1793919600000,
- "price": 88.08626,
+ "lastRun": 1793923621896,
+ "lastBarT": 1793923200000,
+ "price": 88.16779,
  "equity": 107080.70892673344,
  "unreal": 0,
  "config": {
@@ -4718,7 +4733,7 @@
   }
  },
  "learned": {
-  "bars": 3578,
+  "bars": 3579,
   "events": 1901,
   "win": [
    {
@@ -4793,7 +4808,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4809,7 +4833,7 @@
   "startT": 1793332321641,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-05",
+  "lastDay": "2026-11-06",
   "strategies": [
    "trend_stoch"
   ],
