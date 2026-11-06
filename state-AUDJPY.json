@@ -396,6 +396,22 @@
  },
  "log": [
   {
+   "t": 1793977200000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 108.8262,
+   "sl": 109.13495905264907,
+   "tp": 108.20868189470188,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793970000000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -4731,7 +4747,7 @@
    ]
   }
  ],
- "lastEvalT": 1793973600000,
+ "lastEvalT": 1793977200000,
  "adaptive": {
   "start": 100000,
   "balance": 93268.20552666966,
@@ -4989,9 +5005,9 @@
   "wouldWin": 71
  },
  "version": 1,
- "lastRun": 1793980321415,
- "lastBarT": 1793977200000,
- "price": 108.83602,
+ "lastRun": 1793981221328,
+ "lastBarT": 1793980800000,
+ "price": 108.8262,
  "equity": 100624.31058085135,
  "unreal": 0,
  "config": {
@@ -5069,7 +5085,7 @@
   }
  },
  "learned": {
-  "bars": 3594,
+  "bars": 3595,
   "events": 1899,
   "win": [
    {
@@ -5240,7 +5256,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
