@@ -236,6 +236,22 @@
  },
  "log": [
   {
+   "t": 1793998800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 88.09666,
+   "sl": 87.92584700940995,
+   "tp": 88.4382859811801,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793966400000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -4376,7 +4392,7 @@
    ]
   }
  ],
- "lastEvalT": 1793995200000,
+ "lastEvalT": 1793998800000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4804,9 +4820,9 @@
   "wouldWin": 72
  },
  "version": 1,
- "lastRun": 1794166622885,
- "lastBarT": 1793998800000,
- "price": 87.90774,
+ "lastRun": 1794177098888,
+ "lastBarT": 1794175200000,
+ "price": 88.09666,
  "equity": 105093.11305312901,
  "unreal": 0,
  "config": {
@@ -4884,8 +4900,8 @@
   }
  },
  "learned": {
-  "bars": 3561,
-  "events": 1894,
+  "bars": 3559,
+  "events": 1888,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4893,7 +4909,7 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.5714285714285714,
-    "avgR": 0.6806440261317677
+    "avgR": 0.6806440261317571
    },
    {
     "name": "MACD買いクロス",
@@ -4909,7 +4925,7 @@
     "key": "with|trend",
     "n": 70,
     "winRate": 0.38571428571428573,
-    "avgR": 0.1288124057123373
+    "avgR": 0.12881240571233699
    },
    {
     "name": "20本安値ブレイク",
@@ -4925,7 +4941,7 @@
     "key": "against|range",
     "n": 18,
     "winRate": 0.3888888888888889,
-    "avgR": 0.12167838774077439
+    "avgR": 0.12167838772310752
    }
   ]
  },
@@ -4959,7 +4975,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -4975,7 +5001,7 @@
   "startT": 1793332321641,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-06",
+  "lastDay": "2026-11-08",
   "strategies": [
    "trend_stoch"
   ],
