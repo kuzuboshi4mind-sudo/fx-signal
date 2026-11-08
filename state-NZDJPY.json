@@ -236,6 +236,22 @@
  },
  "log": [
   {
+   "t": 1794175200000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 88.09786,
+   "sl": 87.91479936588067,
+   "tp": 88.46398126823867,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1793998800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -4392,7 +4408,7 @@
    ]
   }
  ],
- "lastEvalT": 1793998800000,
+ "lastEvalT": 1794175200000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4820,9 +4836,9 @@
   "wouldWin": 72
  },
  "version": 1,
- "lastRun": 1794178322320,
- "lastBarT": 1794175200000,
- "price": 88.13735,
+ "lastRun": 1794179222914,
+ "lastBarT": 1794178800000,
+ "price": 88.09786,
  "equity": 105093.11305312901,
  "unreal": 0,
  "config": {
@@ -4909,7 +4925,7 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.5714285714285714,
-    "avgR": 0.6806440261317571
+    "avgR": 0.6806440261317575
    },
    {
     "name": "MACD買いクロス",
@@ -4941,7 +4957,7 @@
     "key": "against|range",
     "n": 18,
     "winRate": 0.3888888888888889,
-    "avgR": 0.12167838772310752
+    "avgR": 0.12167838772390066
    }
   ]
  },
@@ -4975,7 +4991,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
