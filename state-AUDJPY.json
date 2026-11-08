@@ -403,7 +403,7 @@
    "entry": 108.72372,
    "sl": 108.45526362033358,
    "tp": 109.26063275933284,
-   "status": "open",
+   "status": "expired",
    "shadow": true,
    "skipped": false
   },
@@ -5029,9 +5029,9 @@
   "wouldWin": 71
  },
  "version": 1,
- "lastRun": 1794177098474,
+ "lastRun": 1794177422251,
  "lastBarT": 1794175200000,
- "price": 108.72372,
+ "price": 108.72337,
  "equity": 100624.31058085135,
  "unreal": 0,
  "config": {
@@ -5272,16 +5272,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
