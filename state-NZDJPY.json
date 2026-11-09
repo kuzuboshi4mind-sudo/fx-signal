@@ -4957,7 +4957,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100737.72612009324
+  "equity": 101188.68612009313
  },
  "reportDay": "2026-11-10",
  "skipReview": {
@@ -4966,11 +4966,11 @@
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1794265621461,
+ "lastRun": 1794266521544,
  "lastBarT": 1794265200000,
- "price": 88.92521,
- "equity": 107812.3130531291,
- "unreal": 2719.200000000086,
+ "price": 88.98158,
+ "equity": 108376.01305312896,
+ "unreal": 3282.899999999955,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -5121,17 +5121,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5188,6 +5178,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 100731.60412639566
+  "equity": 101295.30412639552
  }
 }
