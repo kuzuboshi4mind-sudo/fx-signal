@@ -6,7 +6,18 @@
   "balance": 105093.11305312901,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "units": 10000,
+   "entry": 88.65329,
+   "sl": 88.46178594667883,
+   "tp": 89.00629810664232,
+   "barT": 1794218400000,
+   "openT": 1794218822369,
+   "deadline": 1794305222369
+  },
   "trades": [
    {
     "dir": "short",
@@ -235,6 +246,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1794214800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 88.64329,
+   "sl": 88.46178594667883,
+   "tp": 89.00629810664232,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1794182400000,
    "pattern": "engulf_up",
@@ -4440,7 +4463,7 @@
    ]
   }
  ],
- "lastEvalT": 1794211200000,
+ "lastEvalT": 1794214800000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4868,11 +4891,11 @@
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1794217922271,
- "lastBarT": 1794214800000,
- "price": 88.6024,
- "equity": 105093.11305312901,
- "unreal": 0,
+ "lastRun": 1794218822369,
+ "lastBarT": 1794218400000,
+ "price": 88.64329,
+ "equity": 104993.11305312895,
+ "unreal": -100.00000000005116,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4949,7 +4972,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1885,
+  "events": 1887,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4957,7 +4980,7 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.5714285714285714,
-    "avgR": 0.6806440261317864
+    "avgR": 0.6806440261317933
    },
    {
     "name": "MACD買いクロス",
@@ -4973,7 +4996,7 @@
     "key": "with|trend",
     "n": 70,
     "winRate": 0.38571428571428573,
-    "avgR": 0.1288124057123378
+    "avgR": 0.12881240571233799
    },
    {
     "name": "20本安値ブレイク",
@@ -4989,7 +5012,7 @@
     "key": "against|range",
     "n": 18,
     "winRate": 0.3888888888888889,
-    "avgR": 0.1216783877717495
+    "avgR": 0.12167838778330323
    }
   ]
  },
@@ -5023,7 +5046,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5050,7 +5080,18 @@
   "balance": 98012.40412639557,
   "riskPct": 2,
   "startT": 1793840367577,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "units": 10000,
+   "entry": 88.65329,
+   "sl": 88.46178594667883,
+   "tp": 89.00629810664232,
+   "barT": 1794218400000,
+   "openT": 1794218822369,
+   "deadline": 1794305222369
+  },
   "trades": [
    {
     "dir": "short",
@@ -5069,6 +5110,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 98012.40412639557
+  "equity": 97912.40412639552
  }
 }
