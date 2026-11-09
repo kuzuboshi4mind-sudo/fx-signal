@@ -4593,9 +4593,9 @@
  "lastEvalT": 1794250800000,
  "reportDay": "2026-11-10",
  "version": 1,
- "lastRun": 1794255097176,
+ "lastRun": 1794255720177,
  "lastBarT": 1794254400000,
- "price": 157.78596,
+ "price": 157.84858,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4806,44 +4806,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 104720.44589881673,
@@ -5667,7 +5630,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 104705.44589881675
+  "equity": 104893.30589881678
  },
  "skipReview": {
   "n": 216,
