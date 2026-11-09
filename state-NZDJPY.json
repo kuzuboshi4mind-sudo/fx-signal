@@ -4440,7 +4440,7 @@
    ]
   }
  ],
- "lastEvalT": 1794182400000,
+ "lastEvalT": 1794186000000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4868,9 +4868,9 @@
   "wouldWin": 72
  },
  "version": 1,
- "lastRun": 1794189310179,
- "lastBarT": 1794186000000,
- "price": 88.13554,
+ "lastRun": 1794190021948,
+ "lastBarT": 1794189600000,
+ "price": 88.24332,
  "equity": 105093.11305312901,
  "unreal": 0,
  "config": {
@@ -4949,7 +4949,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1889,
+  "events": 1887,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4957,7 +4957,7 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.5714285714285714,
-    "avgR": 0.6806440261317626
+    "avgR": 0.6806440261317622
    },
    {
     "name": "MACD買いクロス",
@@ -4989,7 +4989,7 @@
     "key": "against|range",
     "n": 18,
     "winRate": 0.3888888888888889,
-    "avgR": 0.12167838773221797
+    "avgR": 0.12167838773170755
    }
   ]
  },
@@ -5023,26 +5023,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
