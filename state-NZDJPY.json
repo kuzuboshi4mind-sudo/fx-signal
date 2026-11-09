@@ -236,6 +236,38 @@
  },
  "log": [
   {
+   "t": 1794182400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 88.13554,
+   "sl": 87.94227521853996,
+   "tp": 88.52206956292008,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794182400000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 88.13554,
+   "sl": 87.94227521853996,
+   "tp": 88.52206956292008,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794175200000,
    "pattern": "bb_break_up",
    "name": "ボリバン上抜けブレイク",
@@ -243,7 +275,7 @@
    "entry": 88.09786,
    "sl": 87.91479936588067,
    "tp": 88.46398126823867,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4408,7 +4440,7 @@
    ]
   }
  ],
- "lastEvalT": 1794175200000,
+ "lastEvalT": 1794182400000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4831,14 +4863,14 @@
  },
  "reportDay": "2026-11-09",
  "skipReview": {
-  "n": 236,
-  "wouldLose": 164,
+  "n": 237,
+  "wouldLose": 165,
   "wouldWin": 72
  },
  "version": 1,
- "lastRun": 1794180122614,
- "lastBarT": 1794178800000,
- "price": 88.13811,
+ "lastRun": 1794189310179,
+ "lastBarT": 1794186000000,
+ "price": 88.13554,
  "equity": 105093.11305312901,
  "unreal": 0,
  "config": {
@@ -4917,7 +4949,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1888,
+  "events": 1889,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4925,7 +4957,7 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.5714285714285714,
-    "avgR": 0.6806440261317575
+    "avgR": 0.6806440261317626
    },
    {
     "name": "MACD買いクロス",
@@ -4941,7 +4973,7 @@
     "key": "with|trend",
     "n": 70,
     "winRate": 0.38571428571428573,
-    "avgR": 0.12881240571233699
+    "avgR": 0.12881240571233707
    },
    {
     "name": "20本安値ブレイク",
@@ -4957,7 +4989,7 @@
     "key": "against|range",
     "n": 18,
     "winRate": 0.3888888888888889,
-    "avgR": 0.12167838772390066
+    "avgR": 0.12167838773221797
    }
   ]
  },
@@ -4991,7 +5023,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5007,7 +5058,7 @@
   "startT": 1793332321641,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-08",
+  "lastDay": "2026-11-09",
   "strategies": [
    "trend_stoch"
   ],
