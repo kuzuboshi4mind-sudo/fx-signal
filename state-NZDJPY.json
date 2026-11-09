@@ -247,6 +247,38 @@
  },
  "log": [
   {
+   "t": 1794250800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 88.87673,
+   "sl": 89.01611652112113,
+   "tp": 88.5979569577577,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794250800000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 88.87673,
+   "sl": 89.01611652112113,
+   "tp": 88.5979569577577,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794214800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -4463,12 +4495,39 @@
    ]
   }
  ],
- "lastEvalT": 1794214800000,
+ "lastEvalT": 1794250800000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
   "startT": 1791967923493,
-  "positions": [],
+  "positions": [
+   {
+    "key": "rsi_fall|long|3|1",
+    "dir": "long",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落（逆向き）",
+    "units": 4000,
+    "entry": 88.88673,
+    "sl": 88.74734347887886,
+    "tp": 89.30488956336343,
+    "barT": 1794254400000,
+    "openT": 1794255100049,
+    "deadline": 1794341500049
+   },
+   {
+    "key": "rsi_fall|long|2|1",
+    "dir": "long",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落（逆向き）",
+    "units": 4000,
+    "entry": 88.88673,
+    "sl": 88.74734347887886,
+    "tp": 89.16550304224229,
+    "barT": 1794254400000,
+    "openT": 1794255100049,
+    "deadline": 1794341500049
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_up|long|2|1.5",
@@ -4882,20 +4941,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100429.88612009319
+  "equity": 100349.88612009314
  },
- "reportDay": "2026-11-09",
+ "reportDay": "2026-11-10",
  "skipReview": {
   "n": 239,
   "wouldLose": 165,
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1794219722284,
- "lastBarT": 1794218400000,
- "price": 88.6426,
- "equity": 104986.21305312905,
- "unreal": -106.89999999996758,
+ "lastRun": 1794255100049,
+ "lastBarT": 1794254400000,
+ "price": 88.87673,
+ "equity": 107327.51305312898,
+ "unreal": 2234.399999999965,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -4972,15 +5031,15 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1887,
+  "events": 1888,
   "win": [
    {
     "name": "20本高値ブレイク",
     "dir": "long",
     "key": "against|trend",
-    "n": 21,
-    "winRate": 0.5714285714285714,
-    "avgR": 0.6806440261317933
+    "n": 24,
+    "winRate": 0.625,
+    "avgR": 0.8422466809086154
    },
    {
     "name": "MACD買いクロス",
@@ -4988,7 +5047,7 @@
     "key": "against|range",
     "n": 35,
     "winRate": 0.45714285714285713,
-    "avgR": 0.33149261599464785
+    "avgR": 0.33149261599464797
    },
    {
     "name": "20本高値ブレイク",
@@ -4996,7 +5055,7 @@
     "key": "with|trend",
     "n": 70,
     "winRate": 0.38571428571428573,
-    "avgR": 0.12881240571233799
+    "avgR": 0.1288124057123389
    },
    {
     "name": "20本安値ブレイク",
@@ -5005,14 +5064,6 @@
     "n": 25,
     "winRate": 0.4,
     "avgR": 0.1534877188373489
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "against|range",
-    "n": 18,
-    "winRate": 0.3888888888888889,
-    "avgR": 0.12167838778330323
    }
   ]
  },
@@ -5046,7 +5097,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5103,6 +5173,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 97905.50412639561
+  "equity": 100246.80412639554
  }
 }
