@@ -243,7 +243,7 @@
    "entry": 88.13554,
    "sl": 87.94227521853996,
    "tp": 88.52206956292008,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -259,7 +259,7 @@
    "entry": 88.13554,
    "sl": 87.94227521853996,
    "tp": 88.52206956292008,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4440,7 +4440,7 @@
    ]
   }
  ],
- "lastEvalT": 1794186000000,
+ "lastEvalT": 1794211200000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4863,14 +4863,14 @@
  },
  "reportDay": "2026-11-09",
  "skipReview": {
-  "n": 237,
+  "n": 239,
   "wouldLose": 165,
-  "wouldWin": 72
+  "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1794191821805,
- "lastBarT": 1794189600000,
- "price": 88.33696,
+ "lastRun": 1794217089565,
+ "lastBarT": 1794214800000,
+ "price": 88.53089,
  "equity": 105093.11305312901,
  "unreal": 0,
  "config": {
@@ -4949,7 +4949,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1887,
+  "events": 1885,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4957,7 +4957,7 @@
     "key": "against|trend",
     "n": 21,
     "winRate": 0.5714285714285714,
-    "avgR": 0.6806440261317622
+    "avgR": 0.6806440261317864
    },
    {
     "name": "MACD買いクロス",
@@ -4973,7 +4973,7 @@
     "key": "with|trend",
     "n": 70,
     "winRate": 0.38571428571428573,
-    "avgR": 0.12881240571233707
+    "avgR": 0.1288124057123378
    },
    {
     "name": "20本安値ブレイク",
@@ -4989,7 +4989,7 @@
     "key": "against|range",
     "n": 18,
     "winRate": 0.3888888888888889,
-    "avgR": 0.12167838773170755
+    "avgR": 0.1216783877717495
    }
   ]
  },
