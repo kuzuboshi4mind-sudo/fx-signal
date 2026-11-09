@@ -2,8 +2,9 @@ name: FX bot
 
 on:
   schedule:
-    # 15分ごとに起動を試みる（混雑する00分を避ける）。1回の起動で約55分間、15分ごとに回し続けるので、
+    # 15分ごとに起動を試みる（混雑する00分を避ける）。1回の起動で約5時間40分、15分ごとに回し続けるので、
     # 起動が遅れたり飛ばされたりしても止まりにくい。実行中に来た起動は待機し、終わったらすぐ次が始まる
+    # （2026-11-09：GitHub の定期起動が7〜10時間あくことがあり、55分では大半の時間を取りこぼしたため延長）
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
     inputs:
@@ -22,7 +23,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v5
 
@@ -40,11 +41,11 @@ jobs:
             git worktree add --orphan -b bot-data data
           fi
 
-      - name: Run bot (about 55 minutes, every 15 minutes)
+      - name: Run bot (about 5h40m, every 15 minutes)
         env:
           TWELVEDATA_KEY: ${{ secrets.TWELVEDATA_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           RESET: ${{ inputs.reset }}
         # 通貨ペアごとに順番に実行し、毎回 bot-data に保存する（1つ失敗しても他は続ける）
-        run: bash bot/loop.sh 55
+        run: bash bot/loop.sh 340
         shell: bash
