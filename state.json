@@ -4773,11 +4773,11 @@
  "lastEvalT": 1794348000000,
  "reportDay": "2026-11-11",
  "version": 1,
- "lastRun": 1794352020475,
+ "lastRun": 1794352920186,
  "lastBarT": 1794351600000,
- "price": 158.70874,
- "equity": 98754.31682316794,
- "unreal": 1550.3400000000056,
+ "price": 158.71276,
+ "equity": 98798.5368231679,
+ "unreal": 1594.559999999973,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4986,17 +4986,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -6030,6 +6020,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 99749.30002470652
+  "equity": 99793.52002470648
  }
 }
