@@ -268,6 +268,22 @@
  },
  "log": [
   {
+   "t": 1794319200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 88.98239,
+   "sl": 88.84439507138384,
+   "tp": 89.2583798572323,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794301200000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -4663,7 +4679,7 @@
    ]
   }
  ],
- "lastEvalT": 1794315600000,
+ "lastEvalT": 1794319200000,
  "adaptive": {
   "start": 100000,
   "balance": 100977.93981149423,
@@ -5130,18 +5146,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 101443.09981149426
+  "equity": 101360.57981149422
  },
- "reportDay": "2026-11-10",
+ "reportDay": "2026-11-11",
  "skipReview": {
   "n": 247,
   "wouldLose": 173,
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1794322322321,
- "lastBarT": 1794319200000,
- "price": 89.00302,
+ "lastRun": 1794323222764,
+ "lastBarT": 1794322800000,
+ "price": 88.98239,
  "equity": 106486.11702416558,
  "unreal": 0,
  "config": {
@@ -5220,7 +5236,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1899,
+  "events": 1898,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5228,7 +5244,7 @@
     "key": "against|trend",
     "n": 24,
     "winRate": 0.6666666666666666,
-    "avgR": 0.9677282566037856
+    "avgR": 0.9677282566036803
    },
    {
     "name": "MACD買いクロス",
@@ -5252,7 +5268,7 @@
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.1955979337123503
+    "avgR": 0.19559793371234613
    },
    {
     "name": "20本安値ブレイク",
@@ -5268,7 +5284,7 @@
     "key": "with|trend",
     "n": 76,
     "winRate": 0.3815789473684211,
-    "avgR": 0.11583299308493362
+    "avgR": 0.11583299308493045
    }
   ]
  },
@@ -5309,7 +5325,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
