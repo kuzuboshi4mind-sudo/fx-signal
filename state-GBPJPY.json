@@ -6,7 +6,18 @@
   "balance": 105412.50832140826,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 8000,
+   "entry": 211.79973999999999,
+   "sl": 211.53760029000824,
+   "tp": 212.29401941998347,
+   "barT": 1794333600000,
+   "openT": 1794334228698,
+   "deadline": 1794420628698
+  },
   "trades": [
    {
     "dir": "short",
@@ -251,6 +262,65 @@
   ]
  },
  "log": [
+  {
+   "t": 1794330000000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 211.78974,
+   "sl": 211.53760029000824,
+   "tp": 212.29401941998347,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1794330000000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 211.78974,
+   "sl": 211.53760029000824,
+   "tp": 212.29401941998347,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794330000000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 211.78974,
+   "sl": 211.53760029000824,
+   "tp": 212.29401941998347,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794330000000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 211.78974,
+   "sl": 212.04187970999175,
+   "tp": 211.28546058001652,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
   {
    "t": 1794322800000,
    "pattern": "donchian_dn",
@@ -4533,12 +4603,26 @@
    ]
   }
  ],
- "lastEvalT": 1794322800000,
+ "lastEvalT": 1794330000000,
  "adaptive": {
   "start": 100000,
   "balance": 92144.8187143283,
   "startT": 1791953875407,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_dn|short|2|1.5",
+    "dir": "short",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "units": 1000,
+    "entry": 211.77974,
+    "sl": 212.15794956498763,
+    "tp": 211.27546058001653,
+    "barT": 1794333600000,
+    "openT": 1794334228698,
+    "deadline": 1794420628698
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_dn|short|2|1.5",
@@ -5275,7 +5359,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 92144.8187143283
+  "equity": 92134.81871432831
  },
  "reportDay": "2026-11-11",
  "skipReview": {
@@ -5284,11 +5368,11 @@
   "wouldWin": 75
  },
  "version": 1,
- "lastRun": 1794326821614,
- "lastBarT": 1794326400000,
- "price": 211.67262,
- "equity": 105412.50832140826,
- "unreal": 0,
+ "lastRun": 1794334228698,
+ "lastBarT": 1794333600000,
+ "price": 211.78974,
+ "equity": 105332.50832140833,
+ "unreal": -79.99999999992724,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -5365,7 +5449,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1789,
+  "events": 1790,
   "win": [
    {
     "name": "陽の包み足",
@@ -5397,7 +5481,15 @@
     "key": "with|trend",
     "n": 33,
     "winRate": 0.42424242424242425,
-    "avgR": 0.29187222770304344
+    "avgR": 0.2918722277030614
+   },
+   {
+    "name": "20本高値ブレイク",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 21,
+    "winRate": 0.38095238095238093,
+    "avgR": 0.2728399737160317
    },
    {
     "name": "陰の包み足",
@@ -5405,15 +5497,7 @@
     "key": "*",
     "n": 125,
     "winRate": 0.4,
-    "avgR": 0.19945591728737025
-   },
-   {
-    "name": "20本高値ブレイク",
-    "dir": "long",
-    "key": "against|trend",
-    "n": 22,
-    "winRate": 0.36363636363636365,
-    "avgR": 0.21376281708597808
+    "avgR": 0.19945591728765197
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -5421,7 +5505,7 @@
     "key": "*",
     "n": 97,
     "winRate": 0.38144329896907214,
-    "avgR": 0.1399028296837596
+    "avgR": 0.13990282968381942
    },
    {
     "name": "陽の包み足",
@@ -5429,7 +5513,7 @@
     "key": "against|trend",
     "n": 52,
     "winRate": 0.3269230769230769,
-    "avgR": 0.07916185975727014
+    "avgR": 0.0791618597572865
    }
   ]
  },
@@ -5479,7 +5563,7 @@
  },
  "lastSignals": [
   {
-   "name": "ボリバン下抜けブレイク",
+   "name": "デッドクロス(EMA20/50)",
    "dir": "short",
    "blocked": true,
    "reasons": [
@@ -5487,13 +5571,28 @@
    ]
   },
   {
-   "name": "20本安値ブレイク",
-   "dir": "short",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
    "blocked": true,
    "reasons": [
-    "過去の負けパターン",
+    "優位性なし",
     "勝率が基準未満"
    ]
+  },
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
   }
  ],
  "latest": {
@@ -5522,7 +5621,18 @@
   "balance": 98162.56528857593,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 7000,
+   "entry": 211.79973999999999,
+   "sl": 211.53760029000824,
+   "tp": 212.29401941998347,
+   "barT": 1794333600000,
+   "openT": 1794334228698,
+   "deadline": 1794420628698
+  },
   "trades": [
    {
     "dir": "short",
@@ -5541,6 +5651,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 98162.56528857593
+  "equity": 98092.56528857599
  }
 }
