@@ -4725,11 +4725,11 @@
  "lastEvalT": 1794315600000,
  "reportDay": "2026-11-10",
  "version": 1,
- "lastRun": 1794319620877,
+ "lastRun": 1794320520934,
  "lastBarT": 1794319200000,
- "price": 158.5628,
- "equity": 97148.97682316798,
- "unreal": -54.99999999994998,
+ "price": 158.46696,
+ "equity": 96094.73682316787,
+ "unreal": -1109.2400000000566,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4938,40 +4938,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -5965,7 +5932,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 98405.03949091415
+  "equity": 97638.31949091407
  },
  "newsfree": {
   "start": 100000,
@@ -6002,6 +5969,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 98143.96002470655
+  "equity": 97089.72002470645
  }
 }
