@@ -371,7 +371,7 @@
    "entry": 157.9788,
    "sl": 158.13516946167914,
    "tp": 157.66606107664177,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4642,9 +4642,9 @@
  "lastEvalT": 1794297600000,
  "reportDay": "2026-11-10",
  "version": 1,
- "lastRun": 1794301620715,
+ "lastRun": 1794302520831,
  "lastBarT": 1794301200000,
- "price": 158.1034,
+ "price": 158.10058,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4855,17 +4855,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 104720.44589881673,
@@ -5689,11 +5679,11 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105657.76589881675
+  "equity": 105649.3058988168
  },
  "skipReview": {
-  "n": 221,
-  "wouldLose": 166,
+  "n": 222,
+  "wouldLose": 167,
   "wouldWin": 55
  },
  "latest": {
