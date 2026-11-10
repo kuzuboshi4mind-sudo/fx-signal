@@ -5323,9 +5323,9 @@
   "wouldWin": 75
  },
  "version": 1,
- "lastRun": 1794323222080,
+ "lastRun": 1794324122306,
  "lastBarT": 1794322800000,
- "price": 109.15195,
+ "price": 109.05502,
  "equity": 101810.19403051118,
  "unreal": 0,
  "config": {
@@ -5574,17 +5574,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
