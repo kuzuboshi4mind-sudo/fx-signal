@@ -5168,7 +5168,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 93244.20552666966
+  "equity": 93059.48552666962
  },
  "reportDay": "2026-11-10",
  "skipReview": {
@@ -5177,11 +5177,11 @@
   "wouldWin": 71
  },
  "version": 1,
- "lastRun": 1794312421665,
+ "lastRun": 1794313321595,
  "lastBarT": 1794312000000,
- "price": 109.35455,
- "equity": 99935.3905808513,
- "unreal": -688.9200000000528,
+ "price": 109.30837,
+ "equity": 100489.55058085138,
+ "unreal": -134.75999999997157,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -5420,26 +5420,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "直近の実績不振で一時停止",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5500,6 +5481,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 106086.09606981349
+  "equity": 106686.43606981357
  }
 }
