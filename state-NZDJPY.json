@@ -268,6 +268,37 @@
  },
  "log": [
   {
+   "t": 1794322800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 88.79614,
+   "sl": 88.94836600514355,
+   "tp": 88.49168798971286,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794322800000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 88.79614,
+   "sl": 88.94836600514355,
+   "tp": 88.49168798971286,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1794319200000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -4679,7 +4710,7 @@
    ]
   }
  ],
- "lastEvalT": 1794319200000,
+ "lastEvalT": 1794322800000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -5158,9 +5189,9 @@
   "wouldWin": 75
  },
  "version": 1,
- "lastRun": 1794325922473,
- "lastBarT": 1794322800000,
- "price": 88.74013,
+ "lastRun": 1794326822689,
+ "lastBarT": 1794326400000,
+ "price": 88.79614,
  "equity": 106486.11702416558,
  "unreal": 0,
  "config": {
@@ -5239,7 +5270,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1902,
+  "events": 1899,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5247,7 +5278,7 @@
     "key": "against|trend",
     "n": 24,
     "winRate": 0.6666666666666666,
-    "avgR": 0.9677282566036803
+    "avgR": 0.9677282566036411
    },
    {
     "name": "MACD買いクロス",
@@ -5271,7 +5302,7 @@
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.19559793371234613
+    "avgR": 0.19559793371234457
    },
    {
     "name": "20本安値ブレイク",
@@ -5287,7 +5318,7 @@
     "key": "with|trend",
     "n": 77,
     "winRate": 0.37662337662337664,
-    "avgR": 0.10088619110707914
+    "avgR": 0.10088619110707799
    }
   ]
  },
@@ -5328,7 +5359,25 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
