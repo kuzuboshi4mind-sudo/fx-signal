@@ -5396,9 +5396,9 @@
   "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794334228411,
+ "lastRun": 1794334921052,
  "lastBarT": 1794333600000,
- "price": 177.18953,
+ "price": 177.16312,
  "equity": 116182.3183694694,
  "unreal": 0,
  "config": {
@@ -5603,26 +5603,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

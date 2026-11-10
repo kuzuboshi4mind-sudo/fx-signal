@@ -5359,7 +5359,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 92134.81871432831
+  "equity": 92139.94871432832
  },
  "reportDay": "2026-11-11",
  "skipReview": {
@@ -5368,11 +5368,11 @@
   "wouldWin": 75
  },
  "version": 1,
- "lastRun": 1794334228698,
+ "lastRun": 1794334921358,
  "lastBarT": 1794333600000,
- "price": 211.78974,
- "equity": 105332.50832140833,
- "unreal": -79.99999999992724,
+ "price": 211.78461,
+ "equity": 105291.46832140826,
+ "unreal": -121.0399999999936,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -5561,40 +5561,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5651,6 +5618,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 98092.56528857599
+  "equity": 98056.65528857594
  }
 }
