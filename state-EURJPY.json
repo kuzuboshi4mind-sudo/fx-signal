@@ -243,7 +243,7 @@
    "entry": 177.69477,
    "sl": 177.5413712666586,
    "tp": 178.00156746668281,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -259,7 +259,7 @@
    "entry": 177.69477,
    "sl": 177.5413712666586,
    "tp": 178.00156746668281,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -321,7 +321,7 @@
    "entry": 177.37067,
    "sl": 177.20057313908296,
    "tp": 177.71086372183407,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5237,14 +5237,14 @@
  },
  "reportDay": "2026-11-10",
  "skipReview": {
-  "n": 257,
-  "wouldLose": 178,
-  "wouldWin": 79
+  "n": 260,
+  "wouldLose": 180,
+  "wouldWin": 80
  },
  "version": 1,
- "lastRun": 1794298021133,
+ "lastRun": 1794298921174,
  "lastBarT": 1794297600000,
- "price": 177.69477,
+ "price": 177.59681,
  "equity": 111991.81666384634,
  "unreal": 0,
  "config": {
@@ -5323,7 +5323,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1823,
+  "events": 1824,
   "win": [
    {
     "name": "陽の包み足",
@@ -5449,25 +5449,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

@@ -5093,7 +5093,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 102886.25828906235
+  "equity": 102863.45828906227
  },
  "reportDay": "2026-11-10",
  "skipReview": {
@@ -5102,11 +5102,11 @@
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1794298022658,
+ "lastRun": 1794298922814,
  "lastBarT": 1794297600000,
- "price": 89.14189,
- "equity": 110210.7941195522,
- "unreal": 1587.5999999999806,
+ "price": 89.13904,
+ "equity": 110170.89411955207,
+ "unreal": 1547.6999999998498,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -5272,17 +5272,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5355,6 +5345,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 103016.68519281877
+  "equity": 102979.63519281865
  }
 }
