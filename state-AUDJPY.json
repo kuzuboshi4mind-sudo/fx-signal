@@ -428,6 +428,22 @@
  },
  "log": [
   {
+   "t": 1794344400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 109.04589,
+   "sl": 109.21688886242927,
+   "tp": 108.70389227514147,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794330000000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -468,7 +484,7 @@
    "entry": 108.87333,
    "sl": 109.0744437592041,
    "tp": 108.47110248159179,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -484,7 +500,7 @@
    "entry": 108.87333,
    "sl": 109.0744437592041,
    "tp": 108.47110248159179,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -500,7 +516,7 @@
    "entry": 108.87333,
    "sl": 109.0744437592041,
    "tp": 108.47110248159179,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5096,7 +5112,7 @@
    ]
   }
  ],
- "lastEvalT": 1794340800000,
+ "lastEvalT": 1794344400000,
  "adaptive": {
   "start": 100000,
   "balance": 90367.75868326995,
@@ -5400,14 +5416,14 @@
  },
  "reportDay": "2026-11-11",
  "skipReview": {
-  "n": 239,
-  "wouldLose": 164,
+  "n": 242,
+  "wouldLose": 167,
   "wouldWin": 75
  },
  "version": 1,
- "lastRun": 1794347521390,
- "lastBarT": 1794344400000,
- "price": 109.03758,
+ "lastRun": 1794348421948,
+ "lastBarT": 1794348000000,
+ "price": 109.04589,
  "equity": 101810.19403051118,
  "unreal": 0,
  "config": {
@@ -5502,7 +5518,7 @@
     "key": "against|trend",
     "n": 46,
     "winRate": 0.41304347826086957,
-    "avgR": 0.3497730323549193
+    "avgR": 0.3497730323547137
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -5510,7 +5526,7 @@
     "key": "*",
     "n": 27,
     "winRate": 0.4444444444444444,
-    "avgR": 0.3123940830264064
+    "avgR": 0.31239408302640154
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -5526,7 +5542,7 @@
     "key": "with|trend",
     "n": 79,
     "winRate": 0.3924050632911392,
-    "avgR": 0.17191568057248682
+    "avgR": 0.17191568057156267
    },
    {
     "name": "20本安値ブレイク",
@@ -5534,7 +5550,7 @@
     "key": "*",
     "n": 168,
     "winRate": 0.38095238095238093,
-    "avgR": 0.12874051570357958
+    "avgR": 0.12874051570028056
    },
    {
     "name": "下降トレンドの戻り",
@@ -5543,14 +5559,6 @@
     "n": 81,
     "winRate": 0.38271604938271603,
     "avgR": 0.12885024751702126
-   },
-   {
-    "name": "陰の包み足",
-    "dir": "short",
-    "key": "against|trend",
-    "n": 34,
-    "winRate": 0.35294117647058826,
-    "avgR": 0.09552266871390377
    },
    {
     "name": "RSI買われすぎ反落",
@@ -5648,7 +5656,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
