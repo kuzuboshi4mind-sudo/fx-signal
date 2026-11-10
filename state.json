@@ -355,7 +355,7 @@
    "entry": 158.10232,
    "sl": 157.9462229175386,
    "tp": 158.41451416492276,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -371,7 +371,7 @@
    "entry": 158.1034,
    "sl": 158.25397608880456,
    "tp": 157.80224782239085,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4658,9 +4658,9 @@
  "lastEvalT": 1794312000000,
  "reportDay": "2026-11-10",
  "version": 1,
- "lastRun": 1794316920305,
+ "lastRun": 1794317820206,
  "lastBarT": 1794315600000,
- "price": 158.22869,
+ "price": 158.39736,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4739,7 +4739,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1911,
+  "events": 1912,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -4874,9 +4874,10 @@
  "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 104720.44589881673,
+  "balance": 106329.01883997084,
   "startT": 1791916832223,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -4888,10 +4889,12 @@
     "tp": 158.3271509803847,
     "barT": 1794254400000,
     "openT": 1794255097176,
-    "deadline": 1794341497176
-   }
-  ],
-  "trades": [
+    "deadline": 1794341497176,
+    "exit": 158.3271509803847,
+    "closeT": 1794315600000,
+    "reason": "tp",
+    "pnl": 1608.572941154108
+   },
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -5695,12 +5698,12 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106033.63589881678
+  "equity": 106329.01883997084
  },
  "skipReview": {
-  "n": 222,
-  "wouldLose": 167,
-  "wouldWin": 55
+  "n": 224,
+  "wouldLose": 168,
+  "wouldWin": 56
  },
  "latest": {
   "start": 100000,

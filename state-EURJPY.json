@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 111991.81666384634,
+  "balance": 116182.3183694694,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_revert_dn",
-   "name": "ボリバン上限から回帰",
-   "units": 13000,
-   "entry": 177.38594,
-   "sl": 177.55611314252397,
-   "tp": 177.06359371495208,
-   "barT": 1794304800000,
-   "openT": 1794306588407,
-   "deadline": 1794392988407
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_revert_dn",
+    "name": "ボリバン上限から回帰",
+    "units": 13000,
+    "entry": 177.38594,
+    "sl": 177.55611314252397,
+    "tp": 177.06359371495208,
+    "barT": 1794304800000,
+    "openT": 1794306588407,
+    "deadline": 1794392988407,
+    "exit": 177.06359371495208,
+    "closeT": 1794315600000,
+    "reason": "tp",
+    "pnl": 4190.501705623064
+   },
    {
     "dir": "long",
     "pattern": "macd_up",
@@ -254,7 +259,7 @@
    "entry": 177.41107,
    "sl": 177.5726050598124,
    "tp": 177.08799988037524,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -270,7 +275,7 @@
    "entry": 177.39194,
    "sl": 177.55611314252397,
    "tp": 177.06359371495208,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -282,7 +287,7 @@
    "entry": 177.39194,
    "sl": 177.55611314252397,
    "tp": 177.06359371495208,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5307,16 +5312,16 @@
  },
  "reportDay": "2026-11-10",
  "skipReview": {
-  "n": 261,
+  "n": 263,
   "wouldLose": 181,
-  "wouldWin": 80
+  "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794316920692,
+ "lastRun": 1794317820799,
  "lastBarT": 1794315600000,
- "price": 177.3958,
- "equity": 111863.63666384631,
- "unreal": -128.18000000004304,
+ "price": 177.09107,
+ "equity": 116182.3183694694,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -5393,7 +5398,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1826,
+  "events": 1829,
   "win": [
    {
     "name": "陽の包み足",
@@ -5423,9 +5428,9 @@
     "name": "ボリバン上限から回帰",
     "dir": "short",
     "key": "against|trend",
-    "n": 24,
-    "winRate": 0.375,
-    "avgR": 0.25845405344839517
+    "n": 25,
+    "winRate": 0.4,
+    "avgR": 0.32738495567656
    },
    {
     "name": "MACD買いクロス",
@@ -5462,6 +5467,13 @@
   ]
  },
  "review": {
+  "bb_revert_dn": {
+   "n": 3,
+   "wins": 2,
+   "recentLosses": 1,
+   "streak": 0,
+   "suspended": false
+  },
   "engulf_dn": {
    "n": 1,
    "wins": 1,
@@ -5486,13 +5498,6 @@
   "bb_break_dn": {
    "n": 3,
    "wins": 2,
-   "recentLosses": 1,
-   "streak": 0,
-   "suspended": false
-  },
-  "bb_revert_dn": {
-   "n": 2,
-   "wins": 1,
    "recentLosses": 1,
    "streak": 0,
    "suspended": false
@@ -5531,22 +5536,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 99775.5846914956,
+  "balance": 103321.39382702281,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_revert_dn",
-   "name": "ボリバン上限から回帰",
-   "units": 11000,
-   "entry": 177.38594,
-   "sl": 177.55611314252397,
-   "tp": 177.06359371495208,
-   "barT": 1794304800000,
-   "openT": 1794306588407,
-   "deadline": 1794392988407
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_revert_dn",
+    "name": "ボリバン上限から回帰",
+    "units": 11000,
+    "entry": 177.38594,
+    "sl": 177.55611314252397,
+    "tp": 177.06359371495208,
+    "barT": 1794304800000,
+    "openT": 1794306588407,
+    "deadline": 1794392988407,
+    "exit": 177.06359371495208,
+    "closeT": 1794315600000,
+    "reason": "tp",
+    "pnl": 3545.809135527207
+   },
    {
     "dir": "long",
     "pattern": "macd_up",
@@ -5596,6 +5606,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 99667.12469149557
+  "equity": 103321.39382702281
  }
 }
