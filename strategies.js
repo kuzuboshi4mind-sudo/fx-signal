@@ -74,7 +74,14 @@
       stoch56[i] = h === l ? 50 : 100 * (c[i].c - l) / (h - l);
     }
     const ema312 = E.ema(close, 312);
-    return { stoch56, ema312, er24, prevClose, prevHigh, prevLow, prevNR7, hh20: hh(20), ll20: ll(20), hh10: hh(10), ll10: ll(10), sma50: E.sma(close, 50), sma210: E.sma(close, 210), hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
+    // 終値の直近7本（今の足を含む）の最安・最高（コナーズの Double 7 用）
+    const cmin7 = new Array(n).fill(NaN), cmax7 = new Array(n).fill(NaN);
+    for (let i = 6; i < n; i++) { let a = Infinity, b = -Infinity; for (let j = i - 6; j <= i; j++) { a = Math.min(a, close[j]); b = Math.max(b, close[j]); } cmin7[i] = a; cmax7[i] = b; }
+    // 平均足（ヘイキンアシ）：haC＝(始+高+安+終)/4、haO＝前の (haO+haC)/2。陽線なら +1、陰線なら −1
+    const haDir = new Array(n).fill(0);
+    { let hO = c[0].o, hC = (c[0].o + c[0].h + c[0].l + c[0].c) / 4;
+      for (let i = 1; i < n; i++) { hO = (hO + hC) / 2; hC = (c[i].o + c[i].h + c[i].l + c[i].c) / 4; haDir[i] = hC > hO ? 1 : hC < hO ? -1 : 0; } }
+    return { cmin7, cmax7, haDir, stoch56, ema312, er24, prevClose, prevHigh, prevLow, prevNR7, hh20: hh(20), ll20: ll(20), hh10: hh(10), ll10: ll(10), sma50: E.sma(close, 50), sma210: E.sma(close, 210), hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
   }
 
   // 五十日（ごとおび）：5・10・15・20・25日と月末。土日なら直前の金曜
@@ -353,6 +360,29 @@
     { id: 'ma_cross_trail', name: '50日・200日線のクロス（反対のクロスまで持つ）', source: '古典的なゴールデンクロス／デッドクロス：50本の移動平均が200本を上抜けたら買い、下抜けで売りに転じるまで持つ',
       exit: { type: 'rule', sl: 3, maxBars: 1000, when: (c, d, x, j, dir) => (dir === 'long' ? x.sma50[j] < x.sma200[j] : x.sma50[j] > x.sma200[j]) },
       signal: (c, d, x, i) => (isNaN(x.sma200[i - 1]) ? null : x.sma50[i - 1] <= x.sma200[i - 1] && x.sma50[i] > x.sma200[i] ? 'long' : x.sma50[i - 1] >= x.sma200[i - 1] && x.sma50[i] < x.sma200[i] ? 'short' : null) },
+    // 2026-11-10 追加（火曜リサーチ第8弾）
+    { id: 'double7', name: 'ダブル7（コナーズ）', source: 'L.コナーズ『Short Term Trading Strategies That Work』：長期線より上で終値が直近7本の最安になったら買い、直近7本の最高で手じまう（売りは逆）。1時間足に当てはめ、長期線は210本、最初の損切り ATR×2',
+      exit: { type: 'rule', sl: 2, maxBars: 72, when: (c, d, x, j, dir) => (dir === 'long' ? c[j].c >= x.cmax7[j] : c[j].c <= x.cmin7[j]) },
+      signal: (c, d, x, i) => (isNaN(x.sma210[i]) || isNaN(x.cmin7[i]) ? null : c[i].c > x.sma210[i] && c[i].c <= x.cmin7[i] && c[i - 1].c > x.cmin7[i - 1] ? 'long' : c[i].c < x.sma210[i] && c[i].c >= x.cmax7[i] && c[i - 1].c < x.cmax7[i - 1] ? 'short' : null) },
+    { id: 'ha_flip', name: '平均足の色変わり（流れの方向だけ）', source: '平均足（ヘイキンアシ）の定番：3本以上続いた逆向きの色が、長期線（210本）の方向に変わったら入り、色が戻ったら手じまう。最初の損切り ATR×1.5',
+      exit: { type: 'rule', sl: 1.5, maxBars: 48, when: (c, d, x, j, dir) => x.haDir[j] === (dir === 'long' ? -1 : 1) },
+      signal: (c, d, x, i) => {
+        if (isNaN(x.sma210[i])) return null;
+        const prev3 = (v) => x.haDir[i - 1] === v && x.haDir[i - 2] === v && x.haDir[i - 3] === v;
+        if (x.haDir[i] === 1 && prev3(-1) && c[i].c > x.sma210[i]) return 'long';
+        if (x.haDir[i] === -1 && prev3(1) && c[i].c < x.sma210[i]) return 'short';
+        return null;
+      } },
+    { id: 'pinbar_extreme', name: 'ピンバー（20本の安値・高値で）', source: 'プライスアクションの定番（ピンバー）：直近20本の安値を下に抜けたあと長い下ひげ（足の2/3以上）を残して上の方で終わったら買い（高値側は売り）。足の値幅は ATR 以上に限る',
+      exit: { type: 'atr', tp: 2, sl: 1, maxBars: 24 },
+      signal: (c, d, x, i) => {
+        const b = c[i], r = b.h - b.l, a = d.atr[i - 1];
+        if (isNaN(x.ll20[i]) || isNaN(a) || r < a) return null;
+        const lowWick = Math.min(b.o, b.c) - b.l, upWick = b.h - Math.max(b.o, b.c);
+        if (b.l < x.ll20[i] && lowWick >= r * 2 / 3 && b.c > b.l + r * 2 / 3) return 'long';
+        if (b.h > x.hh20[i] && upWick >= r * 2 / 3 && b.c < b.h - r * 2 / 3) return 'short';
+        return null;
+      } },
   ];
 
   // 月の最後の足か（次の足が別の月）。最後の足は判定しない
