@@ -441,7 +441,7 @@
    "entry": 109.35455,
    "sl": 109.20635828915007,
    "tp": 109.65093342169988,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -458,7 +458,7 @@
    "entry": 109.35455,
    "sl": 109.20635828915007,
    "tp": 109.65093342169988,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -5225,20 +5225,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 92627.43868326994
+  "equity": 92610.55868326992
  },
  "reportDay": "2026-11-10",
  "skipReview": {
-  "n": 230,
-  "wouldLose": 159,
+  "n": 231,
+  "wouldLose": 160,
   "wouldWin": 71
  },
  "version": 1,
- "lastRun": 1794316021592,
+ "lastRun": 1794316921543,
  "lastBarT": 1794315600000,
- "price": 109.22255,
- "equity": 101519.39058085135,
- "unreal": 895.0800000000072,
+ "price": 109.22044,
+ "equity": 101544.71058085137,
+ "unreal": 920.4000000000292,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -5400,6 +5400,13 @@
   ]
  },
  "review": {
+  "ema_cross_up": {
+   "n": 4,
+   "wins": 0,
+   "recentLosses": 4,
+   "streak": 4,
+   "suspended": true
+  },
   "engulf_up": {
    "n": 7,
    "wins": 1,
@@ -5426,13 +5433,6 @@
    "wins": 1,
    "recentLosses": 4,
    "streak": 4,
-   "suspended": true
-  },
-  "ema_cross_up": {
-   "n": 3,
-   "wins": 0,
-   "recentLosses": 3,
-   "streak": 3,
    "suspended": true
   },
   "bb_break_up": {
@@ -5485,22 +5485,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5561,6 +5546,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 107802.09606981356
+  "equity": 107829.52606981358
  }
 }
