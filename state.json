@@ -4658,9 +4658,9 @@
  "lastEvalT": 1794301200000,
  "reportDay": "2026-11-10",
  "version": 1,
- "lastRun": 1794306587828,
+ "lastRun": 1794307020938,
  "lastBarT": 1794304800000,
- "price": 158.10232,
+ "price": 158.14587,
  "equity": 97203.97682316793,
  "unreal": 0,
  "config": {
@@ -4871,17 +4871,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 104720.44589881673,
@@ -5705,7 +5695,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105654.52589881675
+  "equity": 105785.17589881679
  },
  "skipReview": {
   "n": 222,
