@@ -6,7 +6,18 @@
   "balance": 108623.19411955222,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "units": 14000,
+   "entry": 89.02849,
+   "sl": 88.87584163604382,
+   "tp": 89.30378672791238,
+   "barT": 1794268800000,
+   "openT": 1794269222191,
+   "deadline": 1794355622191
+  },
   "trades": [
    {
     "dir": "long",
@@ -251,6 +262,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1794265200000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 89.01849,
+   "sl": 88.87584163604382,
+   "tp": 89.30378672791238,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1794261600000,
    "pattern": "rsi_fall",
@@ -4516,7 +4539,7 @@
    ]
   }
  ],
- "lastEvalT": 1794261600000,
+ "lastEvalT": 1794265200000,
  "adaptive": {
   "start": 100000,
   "balance": 100429.88612009319,
@@ -4962,7 +4985,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 101604.60612009317
+  "equity": 101483.96612009319
  },
  "reportDay": "2026-11-10",
  "skipReview": {
@@ -4971,11 +4994,11 @@
   "wouldWin": 74
  },
  "version": 1,
- "lastRun": 1794268321897,
- "lastBarT": 1794265200000,
- "price": 89.03357,
- "equity": 108623.19411955222,
- "unreal": 0,
+ "lastRun": 1794269222191,
+ "lastBarT": 1794268800000,
+ "price": 89.01849,
+ "equity": 108483.19411955215,
+ "unreal": -140.00000000007162,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -5060,7 +5083,7 @@
     "key": "against|trend",
     "n": 25,
     "winRate": 0.64,
-    "avgR": 0.8874549099056623
+    "avgR": 0.8874549099056597
    },
    {
     "name": "MACD買いクロス",
@@ -5076,7 +5099,7 @@
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.19559793371235215
+    "avgR": 0.19559793371235204
    },
    {
     "name": "20本高値ブレイク",
@@ -5084,7 +5107,7 @@
     "key": "with|trend",
     "n": 71,
     "winRate": 0.39436619718309857,
-    "avgR": 0.1546927166960252
+    "avgR": 0.15469271669602508
    },
    {
     "name": "20本安値ブレイク",
@@ -5133,7 +5156,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5149,7 +5179,7 @@
   "startT": 1793332321641,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-09",
+  "lastDay": "2026-11-10",
   "strategies": [
    "trend_stoch"
   ],
@@ -5160,7 +5190,18 @@
   "balance": 101542.48519281879,
   "riskPct": 2,
   "startT": 1793840367577,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "units": 13000,
+   "entry": 89.02849,
+   "sl": 88.87584163604382,
+   "tp": 89.30378672791238,
+   "barT": 1794268800000,
+   "openT": 1794269222191,
+   "deadline": 1794355622191
+  },
   "trades": [
    {
     "dir": "long",
@@ -5195,6 +5236,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 101542.48519281879
+  "equity": 101412.48519281871
  }
 }
