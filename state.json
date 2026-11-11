@@ -387,7 +387,7 @@
    "entry": 159.20167,
    "sl": 159.07212600362496,
    "tp": 159.46075799275013,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -403,7 +403,7 @@
    "entry": 159.13272,
    "sl": 159.00060877313456,
    "tp": 159.3969424537309,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -419,7 +419,7 @@
    "entry": 159.13272,
    "sl": 159.00060877313456,
    "tp": 159.3969424537309,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4983,9 +4983,9 @@
  "lastEvalT": 1794398400000,
  "reportDay": "2026-11-11",
  "version": 1,
- "lastRun": 1794404220799,
+ "lastRun": 1794405120507,
  "lastBarT": 1794402000000,
- "price": 159.38158,
+ "price": 159.55758,
  "equity": 104324.03382964747,
  "unreal": 0,
  "config": {
@@ -5064,7 +5064,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1910,
+  "events": 1911,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -6018,9 +6018,9 @@
   "equity": 106329.01883997084
  },
  "skipReview": {
-  "n": 237,
+  "n": 240,
   "wouldLose": 176,
-  "wouldWin": 61
+  "wouldWin": 64
  },
  "latest": {
   "start": 100000,
