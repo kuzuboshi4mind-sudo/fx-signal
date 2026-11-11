@@ -490,7 +490,7 @@
    "entry": 158.82811,
    "sl": 158.68841294490323,
    "tp": 159.10750411019356,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4929,11 +4929,11 @@
  "lastEvalT": 1794391200000,
  "reportDay": "2026-11-11",
  "version": 1,
- "lastRun": 1794395220454,
+ "lastRun": 1794396120387,
  "lastBarT": 1794394800000,
- "price": 159.0574,
- "equity": 101864.49055723567,
- "unreal": 1112.9999999999427,
+ "price": 159.13193,
+ "equity": 102907.91055723581,
+ "unreal": 2156.4200000000824,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -5010,7 +5010,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1905,
+  "events": 1907,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5142,17 +5142,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -5982,9 +5972,9 @@
   "equity": 106329.01883997084
  },
  "skipReview": {
-  "n": 235,
+  "n": 236,
   "wouldLose": 176,
-  "wouldWin": 59
+  "wouldWin": 60
  },
  "latest": {
   "start": 100000,
@@ -6202,6 +6192,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 102938.97375877424
+  "equity": 104056.92375877438
  }
 }
