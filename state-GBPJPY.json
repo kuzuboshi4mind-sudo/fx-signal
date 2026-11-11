@@ -5436,7 +5436,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 92376.80914934064
+  "equity": 92853.24914934066
  },
  "reportDay": "2026-11-11",
  "skipReview": {
@@ -5445,11 +5445,11 @@
   "wouldWin": 75
  },
  "version": 1,
- "lastRun": 1794366421116,
+ "lastRun": 1794367320875,
  "lastBarT": 1794366000000,
- "price": 212.01547,
- "equity": 107138.34832140832,
- "unreal": 1725.840000000062,
+ "price": 212.13458,
+ "equity": 108091.22832140837,
+ "unreal": 2678.720000000112,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -5630,26 +5630,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5706,6 +5687,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99672.67528857599
+  "equity": 100506.44528857603
  }
 }
