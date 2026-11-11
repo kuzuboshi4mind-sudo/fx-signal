@@ -5580,7 +5580,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 90698.95868326997
+  "equity": 90491.43868326998
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5589,9 +5589,9 @@
   "wouldWin": 78
  },
  "version": 1,
- "lastRun": 1794431221727,
+ "lastRun": 1794432121476,
  "lastBarT": 1794430800000,
- "price": 109.49558,
+ "price": 109.4437,
  "equity": 99797.63907397969,
  "unreal": 0,
  "config": {
@@ -5832,17 +5832,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
