@@ -451,7 +451,7 @@
    "entry": 109.49558,
    "sl": 109.62186174271268,
    "tp": 109.24301651457463,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -467,7 +467,7 @@
    "entry": 109.49692,
    "sl": 109.64207955484916,
    "tp": 109.20660089030169,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -515,7 +515,7 @@
    "entry": 109.40678,
    "sl": 109.25697825284202,
    "tp": 109.70638349431596,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -5269,9 +5269,10 @@
  "lastEvalT": 1794434400000,
  "adaptive": {
   "start": 100000,
-  "balance": 90367.75868326995,
+  "balance": 89768.55169463802,
   "startT": 1791967922952,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_up|long|3|1",
     "dir": "long",
@@ -5283,10 +5284,12 @@
     "tp": 109.86218524147395,
     "barT": 1794409200000,
     "openT": 1794409621399,
-    "deadline": 1794496021399
-   }
-  ],
-  "trades": [
+    "deadline": 1794496021399,
+    "exit": 109.26297825284202,
+    "closeT": 1794438000000,
+    "reason": "sl",
+    "pnl": -599.20698863192
+   },
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -5580,18 +5583,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 89808.39868326997
+  "equity": 89768.55169463802
  },
  "reportDay": "2026-11-12",
  "skipReview": {
-  "n": 250,
+  "n": 252,
   "wouldLose": 172,
-  "wouldWin": 78
+  "wouldWin": 80
  },
  "version": 1,
- "lastRun": 1794438421055,
+ "lastRun": 1794439321907,
  "lastBarT": 1794438000000,
- "price": 109.27294,
+ "price": 109.21503,
  "equity": 99797.63907397969,
  "unreal": 0,
  "config": {
@@ -5670,7 +5673,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1884,
+  "events": 1887,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -5697,20 +5700,20 @@
     "avgR": 0.34977303235615903
    },
    {
-    "name": "ゴールデンクロス(EMA20/50)",
-    "dir": "long",
-    "key": "*",
-    "n": 27,
-    "winRate": 0.4444444444444444,
-    "avgR": 0.312394083026436
-   },
-   {
     "name": "ボリバン上抜けブレイク",
     "dir": "long",
     "key": "with|range",
     "n": 57,
     "winRate": 0.40350877192982454,
     "avgR": 0.26258211627091077
+   },
+   {
+    "name": "ゴールデンクロス(EMA20/50)",
+    "dir": "long",
+    "key": "*",
+    "n": 28,
+    "winRate": 0.42857142857142855,
+    "avgR": 0.26480763475065033
    },
    {
     "name": "20本安値ブレイク",
@@ -5747,19 +5750,19 @@
   ]
  },
  "review": {
+  "ema_cross_up": {
+   "n": 5,
+   "wins": 0,
+   "recentLosses": 5,
+   "streak": 5,
+   "suspended": true
+  },
   "pullback_dn": {
    "n": 8,
    "wins": 4,
    "recentLosses": 3,
    "streak": 2,
    "suspended": false
-  },
-  "ema_cross_up": {
-   "n": 4,
-   "wins": 0,
-   "recentLosses": 4,
-   "streak": 4,
-   "suspended": true
   },
   "engulf_up": {
    "n": 7,
