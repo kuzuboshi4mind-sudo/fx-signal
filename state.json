@@ -4913,11 +4913,11 @@
  "lastEvalT": 1794387600000,
  "reportDay": "2026-11-11",
  "version": 1,
- "lastRun": 1794391620264,
+ "lastRun": 1794392520685,
  "lastBarT": 1794391200000,
- "price": 158.9729,
- "equity": 100681.49055723578,
- "unreal": -69.99999999993634,
+ "price": 158.96041,
+ "equity": 100506.63055723559,
+ "unreal": -244.86000000013064,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -4994,7 +4994,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1904,
+  "events": 1905,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5126,14 +5126,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -6183,6 +6176,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 101671.47375877437
+  "equity": 101484.12375877416
  }
 }
