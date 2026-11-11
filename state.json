@@ -403,7 +403,7 @@
    "entry": 158.8599,
    "sl": 158.72276998820738,
    "tp": 159.13416002358525,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -4890,9 +4890,9 @@
  "lastEvalT": 1794369600000,
  "reportDay": "2026-11-11",
  "version": 1,
- "lastRun": 1794373620701,
+ "lastRun": 1794374520738,
  "lastBarT": 1794373200000,
- "price": 158.72874,
+ "price": 158.74308,
  "equity": 100751.49055723572,
  "unreal": 0,
  "config": {
@@ -5103,26 +5103,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -5952,8 +5933,8 @@
   "equity": 106329.01883997084
  },
  "skipReview": {
-  "n": 228,
-  "wouldLose": 170,
+  "n": 229,
+  "wouldLose": 171,
   "wouldWin": 58
  },
  "latest": {
