@@ -5546,7 +5546,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 90667.7250920881
+  "equity": 91056.84509208803
  },
  "reportDay": "2026-11-11",
  "skipReview": {
@@ -5555,11 +5555,11 @@
   "wouldWin": 75
  },
  "version": 1,
- "lastRun": 1794398821219,
+ "lastRun": 1794399720984,
  "lastBarT": 1794398400000,
- "price": 211.81333,
- "equity": 102836.19064147455,
- "unreal": -479.19999999976426,
+ "price": 211.91061,
+ "equity": 103614.43064147442,
+ "unreal": 299.04000000010456,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -5748,17 +5748,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5831,6 +5821,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 95848.38731863396
+  "equity": 96626.62731863384
  }
 }
