@@ -5516,7 +5516,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 90596.71868326998
+  "equity": 90846.51868326997
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5525,9 +5525,9 @@
   "wouldWin": 77
  },
  "version": 1,
- "lastRun": 1794411421034,
+ "lastRun": 1794412321779,
  "lastBarT": 1794409200000,
- "price": 109.47002,
+ "price": 109.53247,
  "equity": 99797.63907397969,
  "unreal": 0,
  "config": {
@@ -5606,7 +5606,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1886,
+  "events": 1888,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
