@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 105412.50832140826,
+  "balance": 103315.39064147431,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 8000,
-   "entry": 211.79973999999999,
-   "sl": 211.53760029000824,
-   "tp": 212.29401941998347,
-   "barT": 1794333600000,
-   "openT": 1794334228698,
-   "deadline": 1794420628698
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 8000,
+    "entry": 211.79973999999999,
+    "sl": 211.53760029000824,
+    "tp": 212.29401941998347,
+    "barT": 1794333600000,
+    "openT": 1794334228698,
+    "deadline": 1794420628698,
+    "exit": 211.53760029000824,
+    "closeT": 1794387600000,
+    "reason": "sl",
+    "pnl": -2097.1176799339446
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -349,7 +354,7 @@
    "entry": 211.78974,
    "sl": 211.53760029000824,
    "tp": 212.29401941998347,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -361,7 +366,7 @@
    "entry": 211.78974,
    "sl": 211.53760029000824,
    "tp": 212.29401941998347,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -377,7 +382,7 @@
    "entry": 211.78974,
    "sl": 211.53760029000824,
    "tp": 212.29401941998347,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5479,16 +5484,16 @@
  },
  "reportDay": "2026-11-11",
  "skipReview": {
-  "n": 238,
-  "wouldLose": 163,
+  "n": 240,
+  "wouldLose": 165,
   "wouldWin": 75
  },
  "version": 1,
- "lastRun": 1794388020988,
+ "lastRun": 1794388920802,
  "lastBarT": 1794387600000,
- "price": 211.59389,
- "equity": 103765.70832140827,
- "unreal": -1646.7999999999847,
+ "price": 211.63169,
+ "equity": 103315.39064147431,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -5634,6 +5639,13 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 3,
+   "wins": 1,
+   "recentLosses": 2,
+   "streak": 1,
+   "suspended": false
+  },
   "engulf_dn": {
    "n": 1,
    "wins": 0,
@@ -5649,13 +5661,6 @@
    "suspended": false
   },
   "rsi_fall": {
-   "n": 2,
-   "wins": 1,
-   "recentLosses": 1,
-   "streak": 0,
-   "suspended": false
-  },
-  "engulf_up": {
    "n": 2,
    "wins": 1,
    "recentLosses": 1,
@@ -5701,22 +5706,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 98162.56528857593,
+  "balance": 96327.58731863373,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 7000,
-   "entry": 211.79973999999999,
-   "sl": 211.53760029000824,
-   "tp": 212.29401941998347,
-   "barT": 1794333600000,
-   "openT": 1794334228698,
-   "deadline": 1794420628698
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 7000,
+    "entry": 211.79973999999999,
+    "sl": 211.53760029000824,
+    "tp": 212.29401941998347,
+    "barT": 1794333600000,
+    "openT": 1794334228698,
+    "deadline": 1794420628698,
+    "exit": 211.53760029000824,
+    "closeT": 1794387600000,
+    "reason": "sl",
+    "pnl": -1834.9779699422015
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -5734,6 +5744,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 96721.61528857595
+  "equity": 96327.58731863373
  }
 }
