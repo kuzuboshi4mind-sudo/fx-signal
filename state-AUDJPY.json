@@ -5564,7 +5564,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 90704.31868326997
+  "equity": 90669.87868326994
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5573,9 +5573,9 @@
   "wouldWin": 78
  },
  "version": 1,
- "lastRun": 1794420488434,
+ "lastRun": 1794421321081,
  "lastBarT": 1794420000000,
- "price": 109.49692,
+ "price": 109.48831,
  "equity": 99797.63907397969,
  "unreal": 0,
  "config": {
@@ -5824,17 +5824,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
