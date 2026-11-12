@@ -263,6 +263,22 @@
  },
  "log": [
   {
+   "t": 1794456000000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 176.95362,
+   "sl": 176.7648706952569,
+   "tp": 177.33111860948625,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794448800000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -5198,7 +5214,7 @@
    ]
   }
  ],
- "lastEvalT": 1794452400000,
+ "lastEvalT": 1794456000000,
  "adaptive": {
   "start": 100000,
   "balance": 107513.9982237808,
@@ -5623,7 +5639,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 107331.8382237808
+  "equity": 107409.17822378078
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5632,11 +5648,11 @@
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794459120899,
- "lastBarT": 1794456000000,
- "price": 176.92784,
- "equity": 116586.23836946943,
- "unreal": 403.9200000000278,
+ "lastRun": 1794460021006,
+ "lastBarT": 1794459600000,
+ "price": 176.95362,
+ "equity": 116302.65836946946,
+ "unreal": 120.34000000005562,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -5712,7 +5728,7 @@
   }
  },
  "learned": {
-  "bars": 3559,
+  "bars": 3560,
   "events": 1813,
   "win": [
    {
@@ -5831,7 +5847,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5924,6 +5950,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 103688.59382702284
+  "equity": 103430.79382702286
  }
 }
