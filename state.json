@@ -380,6 +380,22 @@
  },
  "log": [
   {
+   "t": 1794463200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 159.78374,
+   "sl": 159.63092718620248,
+   "tp": 160.08936562759504,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794452400000,
    "pattern": "rsi_fall",
    "name": "RSI買われすぎ反落",
@@ -387,7 +403,7 @@
    "entry": 159.73861,
    "sl": 159.89592594495238,
    "tp": 159.42397811009522,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5120,12 +5136,12 @@
    ]
   }
  ],
- "lastEvalT": 1794459600000,
+ "lastEvalT": 1794463200000,
  "reportDay": "2026-11-12",
  "version": 1,
- "lastRun": 1794464520483,
- "lastBarT": 1794463200000,
- "price": 159.77567,
+ "lastRun": 1794469705136,
+ "lastBarT": 1794466800000,
+ "price": 159.78374,
  "equity": 104324.03382964747,
  "unreal": 0,
  "config": {
@@ -5203,8 +5219,8 @@
   }
  },
  "learned": {
-  "bars": 3561,
-  "events": 1902,
+  "bars": 3562,
+  "events": 1904,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5328,7 +5344,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -6158,8 +6184,8 @@
   "equity": 106329.01883997084
  },
  "skipReview": {
-  "n": 247,
-  "wouldLose": 181,
+  "n": 248,
+  "wouldLose": 182,
   "wouldWin": 66
  },
  "latest": {
