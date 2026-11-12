@@ -284,6 +284,70 @@
  },
  "log": [
   {
+   "t": 1794499200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 88.51983,
+   "sl": 88.65424466773692,
+   "tp": 88.25100066452616,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794499200000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 88.51983,
+   "sl": 88.65424466773692,
+   "tp": 88.25100066452616,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794499200000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 88.51983,
+   "sl": 88.65424466773692,
+   "tp": 88.25100066452616,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794499200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 88.51983,
+   "sl": 88.65424466773692,
+   "tp": 88.25100066452616,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1794484800000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -5053,7 +5117,7 @@
    ]
   }
  ],
- "lastEvalT": 1794495600000,
+ "lastEvalT": 1794499200000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -5532,9 +5596,9 @@
   "wouldWin": 79
  },
  "version": 1,
- "lastRun": 1794502322971,
- "lastBarT": 1794499200000,
- "price": 88.59947,
+ "lastRun": 1794503223343,
+ "lastBarT": 1794502800000,
+ "price": 88.51983,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -5612,7 +5676,7 @@
   }
  },
  "learned": {
-  "bars": 3571,
+  "bars": 3572,
   "events": 1902,
   "win": [
    {
@@ -5686,7 +5750,44 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
