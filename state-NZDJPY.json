@@ -5484,9 +5484,9 @@
   "wouldWin": 78
  },
  "version": 1,
- "lastRun": 1794463622590,
+ "lastRun": 1794464522627,
  "lastBarT": 1794463200000,
- "price": 88.70976,
+ "price": 88.74441,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -5646,25 +5646,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
