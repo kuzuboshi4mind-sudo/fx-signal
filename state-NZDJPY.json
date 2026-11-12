@@ -307,7 +307,7 @@
    "entry": 88.70976,
    "sl": 88.82855483521422,
    "tp": 88.47217032957155,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -319,7 +319,7 @@
    "entry": 88.70976,
    "sl": 88.82855483521422,
    "tp": 88.47217032957155,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5495,14 +5495,14 @@
  },
  "reportDay": "2026-11-12",
  "skipReview": {
-  "n": 266,
-  "wouldLose": 188,
+  "n": 267,
+  "wouldLose": 189,
   "wouldWin": 78
  },
  "version": 1,
- "lastRun": 1794475322120,
+ "lastRun": 1794476222260,
  "lastBarT": 1794474000000,
- "price": 88.76627,
+ "price": 88.81826,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -5581,7 +5581,7 @@
  },
  "learned": {
   "bars": 3564,
-  "events": 1895,
+  "events": 1897,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5590,14 +5590,6 @@
     "n": 25,
     "winRate": 0.64,
     "avgR": 0.8874549099049126
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "with|range",
-    "n": 42,
-    "winRate": 0.40476190476190477,
-    "avgR": 0.20528146445641282
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -5627,10 +5619,10 @@
  },
  "review": {
   "bb_break_dn": {
-   "n": 7,
+   "n": 8,
    "wins": 3,
-   "recentLosses": 3,
-   "streak": 3,
+   "recentLosses": 4,
+   "streak": 4,
    "suspended": true
   },
   "donchian_up": {
