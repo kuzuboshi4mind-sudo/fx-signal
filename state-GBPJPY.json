@@ -295,6 +295,22 @@
  },
  "log": [
   {
+   "t": 1794477600000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 211.84284,
+   "sl": 212.06315222799145,
+   "tp": 211.40221554401708,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794474000000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -4914,7 +4930,7 @@
    ]
   }
  ],
- "lastEvalT": 1794474000000,
+ "lastEvalT": 1794477600000,
  "adaptive": {
   "start": 100000,
   "balance": 91628.46759065238,
@@ -5764,7 +5780,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91671.49759065239
+  "equity": 91604.83759065239
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5773,11 +5789,11 @@
   "wouldWin": 76
  },
  "version": 1,
- "lastRun": 1794480721242,
- "lastBarT": 1794477600000,
- "price": 211.86506,
- "equity": 105718.58235079069,
- "unreal": -1175.1999999999043,
+ "lastRun": 1794481621302,
+ "lastBarT": 1794481200000,
+ "price": 211.84284,
+ "equity": 105540.82235079067,
+ "unreal": -1352.959999999939,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -5853,7 +5869,7 @@
   }
  },
  "learned": {
-  "bars": 3565,
+  "bars": 3566,
   "events": 1783,
   "win": [
    {
@@ -5966,7 +5982,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6055,6 +6081,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 98730.7790279501
+  "equity": 98553.01902795008
  }
 }

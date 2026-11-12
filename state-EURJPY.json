@@ -268,6 +268,21 @@
  },
  "log": [
   {
+   "t": 1794477600000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 177.08533,
+   "sl": 177.25618086418976,
+   "tp": 176.7436282716205,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1794474000000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -5234,7 +5249,7 @@
    ]
   }
  ],
- "lastEvalT": 1794474000000,
+ "lastEvalT": 1794477600000,
  "adaptive": {
   "start": 100000,
   "balance": 106934.39638242607,
@@ -5663,7 +5678,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 107920.07638242602
+  "equity": 107587.01638242602
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5672,9 +5687,9 @@
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794480720862,
- "lastBarT": 1794477600000,
- "price": 177.14084,
+ "lastRun": 1794481620763,
+ "lastBarT": 1794481200000,
+ "price": 177.08533,
  "equity": 113991.11161783538,
  "unreal": 0,
  "config": {
@@ -5752,7 +5767,7 @@
   }
  },
  "learned": {
-  "bars": 3565,
+  "bars": 3566,
   "events": 1816,
   "win": [
    {
@@ -5871,7 +5886,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
