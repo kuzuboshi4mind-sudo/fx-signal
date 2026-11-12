@@ -387,7 +387,7 @@
    "entry": 159.63677,
    "sl": 159.4792187880918,
    "tp": 159.95187242381644,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -5176,12 +5176,12 @@
    ]
   }
  ],
- "lastEvalT": 1794484800000,
- "reportDay": "2026-11-12",
+ "lastEvalT": 1794495600000,
+ "reportDay": "2026-11-13",
  "version": 1,
- "lastRun": 1794489720334,
- "lastBarT": 1794488400000,
- "price": 159.75884,
+ "lastRun": 1794500464499,
+ "lastBarT": 1794499200000,
+ "price": 159.93898,
  "equity": 104324.03382964747,
  "unreal": 0,
  "config": {
@@ -5259,8 +5259,8 @@
   }
  },
  "learned": {
-  "bars": 3568,
-  "events": 1907,
+  "bars": 3571,
+  "events": 1909,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5281,18 +5281,10 @@
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
-    "key": "with|trend",
-    "n": 52,
-    "winRate": 0.38461538461538464,
-    "avgR": 0.23940666884338865
-   },
-   {
-    "name": "上昇トレンドの押し目",
-    "dir": "long",
     "key": "*",
-    "n": 271,
-    "winRate": 0.3726937269372694,
-    "avgR": 0.20344877587617904
+    "n": 272,
+    "winRate": 0.3713235294117647,
+    "avgR": 0.19896549213052434
    },
    {
     "name": "上昇トレンドの押し目",
@@ -5301,6 +5293,14 @@
     "n": 219,
     "winRate": 0.3698630136986301,
     "avgR": 0.19491082868761772
+   },
+   {
+    "name": "上昇トレンドの押し目",
+    "dir": "long",
+    "key": "with|trend",
+    "n": 53,
+    "winRate": 0.37735849056603776,
+    "avgR": 0.21571966748894922
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -5314,11 +5314,11 @@
  },
  "review": {
   "pullback_up": {
-   "n": 24,
-   "wins": 8,
-   "recentLosses": 4,
-   "streak": 1,
-   "suspended": true
+   "n": 25,
+   "wins": 9,
+   "recentLosses": 3,
+   "streak": 0,
+   "suspended": false
   },
   "bb_break_up": {
    "n": 3,
