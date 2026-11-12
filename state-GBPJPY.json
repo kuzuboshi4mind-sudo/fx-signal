@@ -4930,25 +4930,12 @@
    ]
   }
  ],
- "lastEvalT": 1794477600000,
+ "lastEvalT": 1794481200000,
  "adaptive": {
   "start": 100000,
-  "balance": 91628.46759065238,
+  "balance": 91665.54759065238,
   "startT": 1791953875407,
   "positions": [
-   {
-    "key": "pullback_dn|long|3|1",
-    "dir": "long",
-    "pattern": "pullback_dn",
-    "name": "下降トレンドの戻り（逆向き）",
-    "units": 2000,
-    "entry": 211.82333,
-    "sl": 211.59314437535892,
-    "tp": 212.51388687392324,
-    "barT": 1794398400000,
-    "openT": 1794398821219,
-    "deadline": 1794485221219
-   },
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -4977,6 +4964,23 @@
    }
   ],
   "trades": [
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 2000,
+    "entry": 211.82333,
+    "sl": 211.59314437535892,
+    "tp": 212.51388687392324,
+    "barT": 1794398400000,
+    "openT": 1794398821219,
+    "deadline": 1794485221219,
+    "exit": 211.84187,
+    "closeT": 1794485221304,
+    "reason": "time",
+    "pnl": 37.08000000000311
+   },
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -5780,7 +5784,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91780.51759065238
+  "equity": 91601.9275906524
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5789,11 +5793,11 @@
   "wouldWin": 76
  },
  "version": 1,
- "lastRun": 1794484321416,
- "lastBarT": 1794481200000,
- "price": 211.9014,
- "equity": 106009.30235079066,
- "unreal": -884.4799999999395,
+ "lastRun": 1794485221304,
+ "lastBarT": 1794484800000,
+ "price": 211.84187,
+ "equity": 105533.0623507907,
+ "unreal": -1360.7199999999011,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -5869,7 +5873,7 @@
   }
  },
  "learned": {
-  "bars": 3566,
+  "bars": 3567,
   "events": 1783,
   "win": [
    {
@@ -6071,6 +6075,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99021.49902795008
+  "equity": 98545.25902795012
  }
 }
