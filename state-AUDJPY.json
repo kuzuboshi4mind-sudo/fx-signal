@@ -484,7 +484,7 @@
    "entry": 108.99484,
    "sl": 109.15505869458484,
    "tp": 108.67440261083031,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -500,7 +500,7 @@
    "entry": 108.99484,
    "sl": 109.15505869458484,
    "tp": 108.67440261083031,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -515,7 +515,7 @@
    "entry": 108.98729,
    "sl": 109.1415609018606,
    "tp": 108.6787481962788,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -531,7 +531,7 @@
    "entry": 108.98729,
    "sl": 109.1415609018606,
    "tp": 108.6787481962788,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5751,14 +5751,14 @@
  },
  "reportDay": "2026-11-13",
  "skipReview": {
-  "n": 256,
+  "n": 260,
   "wouldLose": 176,
-  "wouldWin": 80
+  "wouldWin": 84
  },
  "version": 1,
- "lastRun": 1794501421843,
+ "lastRun": 1794502322464,
  "lastBarT": 1794499200000,
- "price": 108.92289,
+ "price": 108.79677,
  "equity": 99797.63907397969,
  "unreal": 0,
  "config": {
@@ -5837,7 +5837,7 @@
  },
  "learned": {
   "bars": 3571,
-  "events": 1889,
+  "events": 1891,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -5883,9 +5883,9 @@
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "*",
-    "n": 164,
-    "winRate": 0.38414634146341464,
-    "avgR": 0.13833851969918842
+    "n": 165,
+    "winRate": 0.3878787878787879,
+    "avgR": 0.14950346011667245
    },
    {
     "name": "下降トレンドの戻り",
