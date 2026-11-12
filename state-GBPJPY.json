@@ -5725,7 +5725,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91702.78759065243
+  "equity": 91334.68759065241
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5734,9 +5734,9 @@
   "wouldWin": 76
  },
  "version": 1,
- "lastRun": 1794452821943,
+ "lastRun": 1794453721283,
  "lastBarT": 1794452400000,
- "price": 211.87549,
+ "price": 211.75279,
  "equity": 106893.7823507906,
  "unreal": 0,
  "config": {
@@ -5815,7 +5815,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1780,
+  "events": 1782,
   "win": [
    {
     "name": "陽の包み足",
@@ -5927,26 +5927,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
