@@ -5658,9 +5658,9 @@
   "wouldWin": 80
  },
  "version": 1,
- "lastRun": 1794470822056,
+ "lastRun": 1794471721628,
  "lastBarT": 1794470400000,
- "price": 108.98729,
+ "price": 108.98764,
  "equity": 99797.63907397969,
  "unreal": 0,
  "config": {
@@ -5901,27 +5901,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
