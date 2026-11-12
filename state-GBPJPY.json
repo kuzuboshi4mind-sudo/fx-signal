@@ -6,7 +6,18 @@
   "balance": 104972.76023797393,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 9000,
+   "entry": 211.72977,
+   "sl": 211.9510220741355,
+   "tp": 211.31726585172902,
+   "barT": 1794488400000,
+   "openT": 1794488821145,
+   "deadline": 1794575221145
+  },
   "trades": [
    {
     "dir": "long",
@@ -299,6 +310,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1794484800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 211.73977,
+   "sl": 211.9510220741355,
+   "tp": 211.31726585172902,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1794477600000,
    "pattern": "pullback_dn",
@@ -4935,7 +4958,7 @@
    ]
   }
  ],
- "lastEvalT": 1794481200000,
+ "lastEvalT": 1794484800000,
  "adaptive": {
   "start": 100000,
   "balance": 91665.54759065238,
@@ -5789,7 +5812,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 91534.19759065239
+  "equity": 91499.82759065239
  },
  "reportDay": "2026-11-12",
  "skipReview": {
@@ -5798,11 +5821,11 @@
   "wouldWin": 76
  },
  "version": 1,
- "lastRun": 1794487922129,
- "lastBarT": 1794484800000,
- "price": 211.77414,
- "equity": 104972.76023797393,
- "unreal": 0,
+ "lastRun": 1794488821145,
+ "lastBarT": 1794488400000,
+ "price": 211.73977,
+ "equity": 104882.76023797401,
+ "unreal": -89.99999999991815,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -5878,8 +5901,8 @@
   }
  },
  "learned": {
-  "bars": 3567,
-  "events": 1783,
+  "bars": 3568,
+  "events": 1784,
   "win": [
    {
     "name": "陽の包み足",
@@ -5991,7 +6014,14 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6018,7 +6048,18 @@
   "balance": 97984.95691513334,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 8000,
+   "entry": 211.72977,
+   "sl": 211.9510220741355,
+   "tp": 211.31726585172902,
+   "barT": 1794488400000,
+   "openT": 1794488821145,
+   "deadline": 1794575221145
+  },
   "trades": [
    {
     "dir": "long",
@@ -6085,6 +6126,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 97984.95691513334
+  "equity": 97904.95691513341
  }
 }
