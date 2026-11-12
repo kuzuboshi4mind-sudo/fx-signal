@@ -455,6 +455,38 @@
  },
  "log": [
   {
+   "t": 1794502800000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 108.75587,
+   "sl": 108.57818029546691,
+   "tp": 109.11124940906618,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794502800000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 108.75587,
+   "sl": 108.57818029546691,
+   "tp": 109.11124940906618,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794499200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -5436,7 +5468,7 @@
    ]
   }
  ],
- "lastEvalT": 1794499200000,
+ "lastEvalT": 1794502800000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -5796,11 +5828,11 @@
   "wouldWin": 84
  },
  "version": 1,
- "lastRun": 1794505921969,
- "lastBarT": 1794502800000,
- "price": 108.72112,
- "equity": 99051.53907397976,
- "unreal": -746.0999999999274,
+ "lastRun": 1794506821977,
+ "lastBarT": 1794506400000,
+ "price": 108.75587,
+ "equity": 98704.03907397974,
+ "unreal": -1093.5999999999524,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -5876,7 +5908,7 @@
   }
  },
  "learned": {
-  "bars": 3572,
+  "bars": 3573,
   "events": 1891,
   "win": [
    {
@@ -6031,7 +6063,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6140,6 +6191,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 105265.22901708029
+  "equity": 104882.97901708026
  }
 }
