@@ -307,7 +307,7 @@
    "entry": 88.51983,
    "sl": 88.65424466773692,
    "tp": 88.25100066452616,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -323,7 +323,7 @@
    "entry": 88.51983,
    "sl": 88.65424466773692,
    "tp": 88.25100066452616,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -339,7 +339,7 @@
    "entry": 88.51983,
    "sl": 88.65424466773692,
    "tp": 88.25100066452616,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -355,7 +355,7 @@
    "entry": 88.51983,
    "sl": 88.65424466773692,
    "tp": 88.25100066452616,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5607,14 +5607,14 @@
  },
  "reportDay": "2026-11-13",
  "skipReview": {
-  "n": 270,
-  "wouldLose": 191,
+  "n": 274,
+  "wouldLose": 195,
   "wouldWin": 79
  },
  "version": 1,
- "lastRun": 1794514923357,
+ "lastRun": 1794515822422,
  "lastBarT": 1794513600000,
- "price": 88.64995,
+ "price": 88.66053,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
