@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 116182.3183694694,
+  "balance": 113991.11161783538,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 11000,
-   "entry": 176.96456,
-   "sl": 177.16376061378492,
-   "tp": 176.58415877243016,
-   "barT": 1794452400000,
-   "openT": 1794452820702,
-   "deadline": 1794539220702
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 11000,
+    "entry": 176.96456,
+    "sl": 177.16376061378492,
+    "tp": 176.58415877243016,
+    "barT": 1794452400000,
+    "openT": 1794452820702,
+    "deadline": 1794539220702,
+    "exit": 177.16376061378492,
+    "closeT": 1794470400000,
+    "reason": "sl",
+    "pnl": -2191.206751634013
+   },
    {
     "dir": "short",
     "pattern": "bb_revert_dn",
@@ -286,7 +291,7 @@
    "entry": 176.97056,
    "sl": 177.16376061378492,
    "tp": 176.58415877243016,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -302,7 +307,7 @@
    "entry": 176.97056,
    "sl": 177.16376061378492,
    "tp": 176.58415877243016,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -314,7 +319,7 @@
    "entry": 176.97056,
    "sl": 177.16376061378492,
    "tp": 176.58415877243016,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5643,20 +5648,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 107735.93638242607
+  "equity": 108189.29638242604
  },
  "reportDay": "2026-11-12",
  "skipReview": {
-  "n": 277,
-  "wouldLose": 192,
+  "n": 279,
+  "wouldLose": 194,
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794471720666,
+ "lastRun": 1794472621222,
  "lastBarT": 1794470400000,
- "price": 177.11015,
- "equity": 114580.82836946941,
- "unreal": -1601.489999999984,
+ "price": 177.18571,
+ "equity": 113991.11161783538,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -5733,7 +5738,7 @@
  },
  "learned": {
   "bars": 3563,
-  "events": 1813,
+  "events": 1816,
   "win": [
    {
     "name": "陽の包み足",
@@ -5779,9 +5784,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 101,
-    "winRate": 0.36633663366336633,
-    "avgR": 0.08320976711748766
+    "n": 102,
+    "winRate": 0.3627450980392157,
+    "avgR": 0.07243782919496976
    },
    {
     "name": "ボリバン下限から回帰",
@@ -5794,6 +5799,13 @@
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 4,
+   "wins": 2,
+   "recentLosses": 2,
+   "streak": 1,
+   "suspended": false
+  },
   "bb_revert_dn": {
    "n": 3,
    "wins": 2,
@@ -5820,13 +5832,6 @@
    "wins": 0,
    "recentLosses": 1,
    "streak": 1,
-   "suspended": false
-  },
-  "bb_break_dn": {
-   "n": 3,
-   "wins": 2,
-   "recentLosses": 1,
-   "streak": 0,
    "suspended": false
   },
   "engulf_up": {
@@ -5863,22 +5868,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 103321.39382702281,
+  "balance": 101329.3876891737,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 10000,
-   "entry": 176.96456,
-   "sl": 177.16376061378492,
-   "tp": 176.58415877243016,
-   "barT": 1794452400000,
-   "openT": 1794452820702,
-   "deadline": 1794539220702
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 10000,
+    "entry": 176.96456,
+    "sl": 177.16376061378492,
+    "tp": 176.58415877243016,
+    "barT": 1794452400000,
+    "openT": 1794452820702,
+    "deadline": 1794539220702,
+    "exit": 177.16376061378492,
+    "closeT": 1794470400000,
+    "reason": "sl",
+    "pnl": -1992.0061378491027
+   },
    {
     "dir": "short",
     "pattern": "bb_revert_dn",
@@ -5944,6 +5954,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 101865.49382702283
+  "equity": 101329.3876891737
  }
 }
