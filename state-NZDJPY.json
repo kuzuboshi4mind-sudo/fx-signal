@@ -286,7 +286,7 @@
    "entry": 88.77088,
    "sl": 88.88507855608442,
    "tp": 88.54248288783116,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -302,7 +302,7 @@
    "entry": 88.77088,
    "sl": 88.88507855608442,
    "tp": 88.54248288783116,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -5431,16 +5431,16 @@
  },
  "reportDay": "2026-11-12",
  "skipReview": {
-  "n": 264,
-  "wouldLose": 186,
+  "n": 265,
+  "wouldLose": 187,
   "wouldWin": 78
  },
  "version": 1,
- "lastRun": 1794445622685,
+ "lastRun": 1794446522416,
  "lastBarT": 1794445200000,
- "price": 88.77088,
- "equity": 106316.11702416549,
- "unreal": -170.00000000008697,
+ "price": 88.85412,
+ "equity": 104901.03702416568,
+ "unreal": -1585.0799999999053,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -5517,7 +5517,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1894,
+  "events": 1896,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5539,9 +5539,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "with|range",
-    "n": 41,
-    "winRate": 0.4146341463414634,
-    "avgR": 0.2357464609239798
+    "n": 42,
+    "winRate": 0.40476190476190477,
+    "avgR": 0.20528146445641282
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -5570,6 +5570,13 @@
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 7,
+   "wins": 3,
+   "recentLosses": 3,
+   "streak": 3,
+   "suspended": true
+  },
   "donchian_up": {
    "n": 4,
    "wins": 1,
@@ -5597,32 +5604,9 @@
    "recentLosses": 3,
    "streak": 1,
    "suspended": false
-  },
-  "bb_break_dn": {
-   "n": 6,
-   "wins": 3,
-   "recentLosses": 2,
-   "streak": 2,
-   "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -5711,6 +5695,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 99398.05646138825
+  "equity": 98066.21646138842
  }
 }

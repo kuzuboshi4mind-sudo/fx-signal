@@ -5095,9 +5095,9 @@
  "lastEvalT": 1794441600000,
  "reportDay": "2026-11-12",
  "version": 1,
- "lastRun": 1794445620285,
+ "lastRun": 1794446520085,
  "lastBarT": 1794445200000,
- "price": 159.60025,
+ "price": 159.58968,
  "equity": 104324.03382964747,
  "unreal": 0,
  "config": {
@@ -5300,26 +5300,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
