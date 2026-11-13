@@ -5281,11 +5281,11 @@
  "lastEvalT": 1794571200000,
  "reportDay": "2026-11-13",
  "version": 1,
- "lastRun": 1794575220704,
+ "lastRun": 1794576120159,
  "lastBarT": 1794574800000,
- "price": 160.00358,
- "equity": 105537.35382964753,
- "unreal": 1213.320000000067,
+ "price": 159.95263,
+ "equity": 104925.95382964754,
+ "unreal": 601.9200000000637,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -5496,14 +5496,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -6586,6 +6579,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 106787.51869350123
+  "equity": 106176.11869350122
  }
 }
