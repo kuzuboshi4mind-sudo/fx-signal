@@ -471,6 +471,22 @@
  },
  "log": [
   {
+   "t": 1794578400000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 108.52065,
+   "sl": 108.35139606408268,
+   "tp": 108.85915787183465,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794567600000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -490,7 +506,7 @@
    "entry": 108.64875,
    "sl": 108.47075377337273,
    "tp": 109.00474245325454,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5605,7 +5621,7 @@
    ]
   }
  ],
- "lastEvalT": 1794574800000,
+ "lastEvalT": 1794578400000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -5958,18 +5974,18 @@
   "pickTried": "2026-11-01",
   "equity": 88807.23952712897
  },
- "reportDay": "2026-11-13",
+ "reportDay": "2026-11-14",
  "skipReview": {
-  "n": 266,
-  "wouldLose": 180,
+  "n": 267,
+  "wouldLose": 181,
   "wouldWin": 86
  },
  "version": 1,
- "lastRun": 1794581522469,
- "lastBarT": 1794578400000,
- "price": 108.6389,
- "equity": 98301.46533285403,
- "unreal": 368.39999999997985,
+ "lastRun": 1794582422910,
+ "lastBarT": 1794582000000,
+ "price": 108.52065,
+ "equity": 99483.96533285406,
+ "unreal": 1550.9000000000128,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -6047,8 +6063,8 @@
   }
  },
  "learned": {
-  "bars": 3593,
-  "events": 1901,
+  "bars": 3594,
+  "events": 1902,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -6070,9 +6086,9 @@
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|trend",
-    "n": 46,
-    "winRate": 0.41304347826086957,
-    "avgR": 0.3497730323553703
+    "n": 47,
+    "winRate": 0.40425531914893614,
+    "avgR": 0.32066574395924013
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -6202,7 +6218,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6327,6 +6353,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 104440.14790184198
+  "equity": 105740.89790184202
  }
 }

@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 104324.03382964747,
+  "balance": 102347.08696318482,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 12000,
-   "entry": 159.90247,
-   "sl": 159.73772442779477,
-   "tp": 160.21696114441042,
-   "barT": 1794556800000,
-   "openT": 1794557220986,
-   "deadline": 1794816420986
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 12000,
+    "entry": 159.90247,
+    "sl": 159.73772442779477,
+    "tp": 160.21696114441042,
+    "barT": 1794556800000,
+    "openT": 1794557220986,
+    "deadline": 1794816420986,
+    "exit": 159.73772442779477,
+    "closeT": 1794582000000,
+    "reason": "sl",
+    "pnl": -1976.9468664626402
+   },
    {
     "dir": "long",
     "pattern": "bb_break_up",
@@ -442,7 +447,7 @@
    "entry": 159.91628,
    "sl": 159.76580603785172,
    "tp": 160.21722792429654,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -466,7 +471,7 @@
    "entry": 159.9115,
    "sl": 159.7543126829523,
    "tp": 160.2258746340954,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -478,7 +483,7 @@
    "entry": 159.89747,
    "sl": 159.73772442779477,
    "tp": 160.21696114441042,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -5310,14 +5315,14 @@
    ]
   }
  ],
- "lastEvalT": 1794574800000,
- "reportDay": "2026-11-13",
+ "lastEvalT": 1794578400000,
+ "reportDay": "2026-11-14",
  "version": 1,
- "lastRun": 1794581520200,
- "lastBarT": 1794578400000,
- "price": 159.82405,
- "equity": 103382.99382964753,
- "unreal": -941.0399999999299,
+ "lastRun": 1794582420234,
+ "lastBarT": 1794582000000,
+ "price": 159.84217,
+ "equity": 102347.08696318482,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -5395,8 +5400,8 @@
   }
  },
  "learned": {
-  "bars": 3593,
-  "events": 1915,
+  "bars": 3594,
+  "events": 1918,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5418,25 +5423,17 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|range",
-    "n": 219,
-    "winRate": 0.3698630136986301,
-    "avgR": 0.19491082868761772
+    "n": 221,
+    "winRate": 0.3665158371040724,
+    "avgR": 0.18395158526752683
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 276,
-    "winRate": 0.3695652173913043,
-    "avgR": 0.1922431049903054
-   },
-   {
-    "name": "上昇トレンドの押し目",
-    "dir": "long",
-    "key": "with|trend",
-    "n": 57,
-    "winRate": 0.3684210526315789,
-    "avgR": 0.18199342973221022
+    "n": 279,
+    "winRate": 0.3655913978494624,
+    "avgR": 0.17924842892035023
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -5457,11 +5454,11 @@
    "suspended": false
   },
   "pullback_up": {
-   "n": 26,
+   "n": 29,
    "wins": 10,
-   "recentLosses": 2,
-   "streak": 0,
-   "suspended": false
+   "recentLosses": 3,
+   "streak": 3,
+   "suspended": true
   },
   "ema_cross_up": {
    "n": 3,
@@ -6538,22 +6535,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 105574.19869350117,
+  "balance": 103597.25182703853,
   "riskPct": 2,
   "startT": 1793840366022,
-  "pos": {
-   "dir": "long",
-   "pattern": "pullback_up",
-   "name": "上昇トレンドの押し目",
-   "units": 12000,
-   "entry": 159.90247,
-   "sl": 159.73772442779477,
-   "tp": 160.21696114441042,
-   "barT": 1794556800000,
-   "openT": 1794557220986,
-   "deadline": 1794816420986
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "pullback_up",
+    "name": "上昇トレンドの押し目",
+    "units": 12000,
+    "entry": 159.90247,
+    "sl": 159.73772442779477,
+    "tp": 160.21696114441042,
+    "barT": 1794556800000,
+    "openT": 1794557220986,
+    "deadline": 1794816420986,
+    "exit": 159.73772442779477,
+    "closeT": 1794582000000,
+    "reason": "sl",
+    "pnl": -1976.9468664626402
+   },
    {
     "dir": "long",
     "pattern": "bb_break_up",
@@ -6603,6 +6605,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 104633.15869350123
+  "equity": 103597.25182703853
  }
 }
