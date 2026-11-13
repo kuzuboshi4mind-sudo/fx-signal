@@ -460,6 +460,22 @@
  },
  "log": [
   {
+   "t": 1794535200000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 108.9286,
+   "sl": 109.08437861125738,
+   "tp": 108.61704277748527,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794531600000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -5489,7 +5505,7 @@
    ]
   }
  ],
- "lastEvalT": 1794531600000,
+ "lastEvalT": 1794535200000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -5849,9 +5865,9 @@
   "wouldWin": 84
  },
  "version": 1,
- "lastRun": 1794538321199,
- "lastBarT": 1794535200000,
- "price": 108.89862,
+ "lastRun": 1794539221947,
+ "lastBarT": 1794538800000,
+ "price": 108.9286,
  "equity": 97933.06533285405,
  "unreal": 0,
  "config": {
@@ -5929,7 +5945,7 @@
   }
  },
  "learned": {
-  "bars": 3581,
+  "bars": 3582,
   "events": 1893,
   "win": [
    {
@@ -6084,7 +6100,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
