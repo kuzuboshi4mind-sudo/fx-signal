@@ -391,6 +391,18 @@
  },
  "log": [
   {
+   "t": 1794571200000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 160.00358,
+   "sl": 159.85942908365786,
+   "tp": 160.29188183268425,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1794564000000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -5266,14 +5278,14 @@
    ]
   }
  ],
- "lastEvalT": 1794567600000,
+ "lastEvalT": 1794571200000,
  "reportDay": "2026-11-13",
  "version": 1,
- "lastRun": 1794574320255,
- "lastBarT": 1794571200000,
- "price": 160.04583,
- "equity": 106044.35382964749,
- "unreal": 1720.3200000000152,
+ "lastRun": 1794575220704,
+ "lastBarT": 1794574800000,
+ "price": 160.00358,
+ "equity": 105537.35382964753,
+ "unreal": 1213.320000000067,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -5351,7 +5363,7 @@
   }
  },
  "learned": {
-  "bars": 3591,
+  "bars": 3592,
   "events": 1914,
   "win": [
    {
@@ -5484,7 +5496,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -6567,6 +6586,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 107294.51869350119
+  "equity": 106787.51869350123
  }
 }
