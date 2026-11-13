@@ -168,9 +168,13 @@ async function main() {
       }
     }
     if (signalsChecked && !N.pos) {
+      // 2026-11-13 の検証（3周とも改善）で、米CPIを加え、そのペアに含まれる通貨の発表だけで止める形に更新（NF.cpi・NF.ccyOnly）
+      const ccys = CONFIG.symbol.split('/');
+      const keep = (e) => !NF.ccyOnly || !e.ccy || ccys.includes(e.ccy);
       let evs = [];
-      try { evs = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'events.json'), 'utf8')).events.map(e => e.t); } catch {}
-      evs = evs.concat(E.scheduledEvents(now, 1).map(e => e.t), (CONFIG.events || []).map(e => Date.parse(e.time)));
+      try { evs = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'events.json'), 'utf8')).events.filter(keep).map(e => e.t); } catch {}
+      if (NF.cpi) try { evs = evs.concat(JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'events-cpi.json'), 'utf8')).events.filter(keep).map(e => e.t)); } catch {}
+      evs = evs.concat(E.scheduledEvents(now, 1).filter(keep).map(e => e.t), (CONFIG.events || []).filter(keep).map(e => Date.parse(e.time)));
       const near = evs.some(t => now >= t - NF.beforeH * 3600e3 && now <= t + NF.afterH * 3600e3);
       const go = signals.filter(x => !x.blocked).sort((a, b) => b.stat.all.shrunkR - a.stat.all.shrunkR);
       if (go.length && near) N.lastSkip = { t: now, name: go[0].name };

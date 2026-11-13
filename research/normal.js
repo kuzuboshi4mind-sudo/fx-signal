@@ -49,7 +49,7 @@ const VARIANTS = {
 
 function run(c, symbol) {
   const d = E.computeIndicators(c), er = er24(d.close), lastT = c[c.length - 1].t, start = lastT - 3 * YEAR;
-  const events = EV.loadEvents(c[0].t, lastT);
+  const events = EV.loadEvents(c[0].t, lastT, symbol);
   const res = {};
   for (const [vk, v] of Object.entries(VARIANTS)) {
     const o = { symbol, tpAtr: v.tp, slAtr: v.sl, maxBars: v.maxBars, spreadPips: SPREADS[symbol] ?? 1, minSamples: 15 };

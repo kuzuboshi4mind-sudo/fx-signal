@@ -4,9 +4,14 @@ const fs = require('fs');
 const path = require('path');
 const E = require('../engine.js');
 
-function loadEvents(fromMs, toMs) {
-  const ev = JSON.parse(fs.readFileSync(path.join(__dirname, 'events.json'), 'utf8')).events.map(e => e.t);
-  for (let t = fromMs; t < toMs; t += 28 * 86400e3) for (const x of E.scheduledEvents(t, 1)) ev.push(x.t); // 米雇用統計（毎月第1金曜）
+// symbol を渡し EVENTS_CCY=1 のときは、そのペアに含まれる通貨の発表だけを使う（例：米CPIはドル円には効くがユーロ円には使わない）
+function loadEvents(fromMs, toMs, symbol) {
+  const only = process.env.EVENTS_CCY === '1' && symbol ? symbol.split('/') : null;
+  const keep = (e) => !only || !e.ccy || only.includes(e.ccy);
+  const ev = JSON.parse(fs.readFileSync(path.join(__dirname, 'events.json'), 'utf8')).events.filter(keep).map(e => e.t);
+  // EVENTS_CPI=1 のとき米CPIも加える（2026-11-13 の検証用、events-cpi.json）
+  if (process.env.EVENTS_CPI === '1') for (const e of JSON.parse(fs.readFileSync(path.join(__dirname, 'events-cpi.json'), 'utf8')).events) if (keep(e)) ev.push(e.t);
+  for (let t = fromMs; t < toMs; t += 28 * 86400e3) for (const x of E.scheduledEvents(t, 1)) if (keep(x)) ev.push(x.t); // 米雇用統計（毎月第1金曜）
   return [...new Set(ev)].filter(t => t >= fromMs - 86400e3 && t <= toMs + 86400e3).sort((a, b) => a - b);
 }
 // i 本目の確定後に入るとき（入るのは i+1 本目の始値）、発表の前 before 時間〜後 after 時間に入るなら true
