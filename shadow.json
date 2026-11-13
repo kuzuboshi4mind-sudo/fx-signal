@@ -3,7 +3,25 @@
  "startT": 1794521959845,
  "accounts": {
   "normal": {
-   "open": [],
+   "open": [
+    {
+     "symbol": "EUR/JPY",
+     "dir": "long",
+     "name": "MACD買いクロス",
+     "openT": 1794535621169,
+     "entry": 176.88077,
+     "sl": 176.68520709401736,
+     "tp": 177.25389581196535,
+     "riskFrac": 1,
+     "leverage": 4.5,
+     "oanda": {
+      "bid": 176.842,
+      "ask": 176.862,
+      "spread": 2,
+      "gap": -1.9
+     }
+    }
+   ],
    "closed": []
   },
   "vol": {
