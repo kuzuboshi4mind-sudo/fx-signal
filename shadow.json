@@ -3,7 +3,25 @@
  "startT": 1794521959845,
  "accounts": {
   "normal": {
-   "open": [],
+   "open": [
+    {
+     "symbol": "USD/JPY",
+     "dir": "long",
+     "name": "上昇トレンドの押し目",
+     "openT": 1794557220986,
+     "entry": 159.90247,
+     "sl": 159.73772442779477,
+     "tp": 160.21696114441042,
+     "riskFrac": 1,
+     "leverage": 4.9,
+     "oanda": {
+      "bid": 159.898,
+      "ask": 159.906,
+      "spread": 0.8,
+      "gap": 0.4
+     }
+    }
+   ],
    "closed": [
     {
      "symbol": "EUR/JPY",
