@@ -348,6 +348,22 @@
  },
  "log": [
   {
+   "t": 1794600000000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 210.98572,
+   "sl": 210.74889079394617,
+   "tp": 211.45937841210764,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794596400000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -5241,7 +5257,7 @@
    ]
   }
  ],
- "lastEvalT": 1794596400000,
+ "lastEvalT": 1794600000000,
  "adaptive": {
   "start": 100000,
   "balance": 92123.13189066605,
@@ -6162,9 +6178,9 @@
   "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794603121630,
- "lastBarT": 1794600000000,
- "price": 211.15682,
+ "lastRun": 1794604021245,
+ "lastBarT": 1794603600000,
+ "price": 210.98572,
  "equity": 104465.72161783196,
  "unreal": 0,
  "config": {
@@ -6244,7 +6260,7 @@
   }
  },
  "learned": {
-  "bars": 3599,
+  "bars": 3600,
   "events": 1804,
   "win": [
    {
@@ -6365,7 +6381,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
