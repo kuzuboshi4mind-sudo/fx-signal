@@ -6050,11 +6050,11 @@
   "wouldWin": 92
  },
  "version": 1,
- "lastRun": 1794604020687,
+ "lastRun": 1794604921279,
  "lastBarT": 1794603600000,
- "price": 175.99493,
- "equity": 115501.31965202618,
- "unreal": 3661.4000000000146,
+ "price": 176.11812,
+ "equity": 114269.41965202625,
+ "unreal": 2429.5000000000755,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -6251,26 +6251,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6395,6 +6376,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 102669.01862934716
+  "equity": 101560.30862934722
  }
 }
