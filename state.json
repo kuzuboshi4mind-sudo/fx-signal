@@ -391,6 +391,18 @@
  },
  "log": [
   {
+   "t": 1794564000000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 159.91628,
+   "sl": 159.76580603785172,
+   "tp": 160.21722792429654,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1794560400000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -5254,14 +5266,14 @@
    ]
   }
  ],
- "lastEvalT": 1794560400000,
+ "lastEvalT": 1794564000000,
  "reportDay": "2026-11-13",
  "version": 1,
- "lastRun": 1794567120724,
- "lastBarT": 1794564000000,
- "price": 159.95839,
- "equity": 104995.07382964765,
- "unreal": 671.0400000001755,
+ "lastRun": 1794568020744,
+ "lastBarT": 1794567600000,
+ "price": 159.91628,
+ "equity": 104489.75382964754,
+ "unreal": 165.72000000007847,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -5339,7 +5351,7 @@
   }
  },
  "learned": {
-  "bars": 3589,
+  "bars": 3590,
   "events": 1914,
   "win": [
    {
@@ -5472,7 +5484,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -6555,6 +6574,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 106245.23869350133
+  "equity": 105739.91869350124
  }
 }
