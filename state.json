@@ -391,6 +391,38 @@
  },
  "log": [
   {
+   "t": 1794574800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 159.92373,
+   "sl": 160.074983708032,
+   "tp": 159.62122258393606,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794574800000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 159.92373,
+   "sl": 160.074983708032,
+   "tp": 159.62122258393606,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794571200000,
    "pattern": "bb_break_up",
    "name": "ボリバン上抜けブレイク",
@@ -5278,14 +5310,14 @@
    ]
   }
  ],
- "lastEvalT": 1794571200000,
+ "lastEvalT": 1794574800000,
  "reportDay": "2026-11-13",
  "version": 1,
- "lastRun": 1794577920621,
- "lastBarT": 1794574800000,
- "price": 159.9376,
- "equity": 104745.59382964758,
- "unreal": 421.5600000001132,
+ "lastRun": 1794578820842,
+ "lastBarT": 1794578400000,
+ "price": 159.92373,
+ "equity": 104579.1538296476,
+ "unreal": 255.12000000014723,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -5363,7 +5395,7 @@
   }
  },
  "learned": {
-  "bars": 3592,
+  "bars": 3593,
   "events": 1915,
   "win": [
    {
@@ -5488,7 +5520,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -6571,6 +6622,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 105995.75869350128
+  "equity": 105829.31869350131
  }
 }
