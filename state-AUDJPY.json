@@ -471,6 +471,18 @@
  },
  "log": [
   {
+   "t": 1794567600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 108.6965,
+   "sl": 108.5322920936927,
+   "tp": 109.02491581261461,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
+  {
    "t": 1794553200000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -5593,7 +5605,7 @@
    ]
   }
  ],
- "lastEvalT": 1794564000000,
+ "lastEvalT": 1794567600000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -5953,11 +5965,11 @@
   "wouldWin": 86
  },
  "version": 1,
- "lastRun": 1794570722353,
- "lastBarT": 1794567600000,
- "price": 108.6413,
- "equity": 98277.46533285409,
- "unreal": 344.4000000000358,
+ "lastRun": 1794571622896,
+ "lastBarT": 1794571200000,
+ "price": 108.6965,
+ "equity": 97725.46533285409,
+ "unreal": -207.5999999999567,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -6035,7 +6047,7 @@
   }
  },
  "learned": {
-  "bars": 3590,
+  "bars": 3591,
   "events": 1901,
   "win": [
    {
@@ -6190,7 +6202,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6315,6 +6336,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 104413.74790184204
+  "equity": 103806.54790184204
  }
 }
