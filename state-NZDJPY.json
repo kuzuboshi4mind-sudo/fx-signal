@@ -5148,7 +5148,7 @@
    ]
   }
  ],
- "lastEvalT": 1794520800000,
+ "lastEvalT": 1794524400000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -5627,9 +5627,9 @@
   "wouldWin": 79
  },
  "version": 1,
- "lastRun": 1794527521885,
- "lastBarT": 1794524400000,
- "price": 88.60846,
+ "lastRun": 1794528422392,
+ "lastBarT": 1794528000000,
+ "price": 88.6058,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -5707,7 +5707,7 @@
   }
  },
  "learned": {
-  "bars": 3578,
+  "bars": 3579,
   "events": 1906,
   "win": [
    {
@@ -5797,7 +5797,7 @@
   "startT": 1793332321641,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-12",
+  "lastDay": "2026-11-13",
   "strategies": [
    "trend_stoch"
   ],
