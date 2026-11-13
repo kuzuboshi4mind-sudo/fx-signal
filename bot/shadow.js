@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 const RULES = {
-  normal: { src: 'paper', pairs: ['USD/JPY', 'EUR/JPY'], riskPct: 0.5 },
+  normal: { src: 'newsfree', pairs: ['USD/JPY', 'EUR/JPY'], riskPct: 0.5 }, // 2026-11-13 ユーザー了承：「通常＋発表停止」（米CPI追加・ペアの通貨の発表だけ）を写す
   vol: { src: 'latest', pairs: ['USD/JPY'], riskPct: 1, only: 'vol_breakout' },
 };
 // 守り（R＝1回分のリスク）：1日 −3R（0.5%なら −1.5%）、1週間 −6R、同じ「円の向き」の同時保有は合計 2R まで、レバレッジ10倍まで

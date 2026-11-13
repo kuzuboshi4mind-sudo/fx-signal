@@ -5,14 +5,14 @@ const { step } = require('../bot/shadow.js');
 
 const T0 = Date.UTC(2026, 10, 12, 1);
 const pos = (o) => ({ dir: 'long', pattern: 'x', name: 'n', entry: 158, sl: 157.8, tp: 158.4, openT: T0 + 1000, ...o });
-const st = (paper, latest = []) => ({ paper: { pos: paper, trades: [] }, latest: { positions: latest, trades: [] } });
+const st = (paper, latest = []) => ({ newsfree: { pos: paper, trades: [] }, latest: { positions: latest, trades: [] } });
 
 test('仮想口座の新規を写し、決済でRを計算する', () => {
   const book = { startT: T0 };
   const s = { 'USD/JPY': st(pos()) };
   let ev = step(book, s, T0 + 2000);
   assert.strictEqual(ev[0].type, 'open'); assert.strictEqual(book.accounts.normal.open.length, 1);
-  s['USD/JPY'] = { paper: { pos: null, trades: [{ ...pos(), exit: 158.4, closeT: T0 + 5000, reason: 'tp' }] }, latest: { positions: [], trades: [] } };
+  s['USD/JPY'] = { newsfree: { pos: null, trades: [{ ...pos(), exit: 158.4, closeT: T0 + 5000, reason: 'tp' }] }, latest: { positions: [], trades: [] } };
   ev = step(book, s, T0 + 6000);
   assert.strictEqual(ev[0].type, 'close'); assert.ok(Math.abs(ev[0].r - 2) < 1e-9);
 });
