@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 113991.11161783538,
+  "balance": 111839.91965202618,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "long",
-   "pattern": "macd_up",
-   "name": "MACD買いクロス",
-   "units": 11000,
-   "entry": 176.88077,
-   "sl": 176.68520709401736,
-   "tp": 177.25389581196535,
-   "barT": 1794535200000,
-   "openT": 1794535621169,
-   "deadline": 1794794821169
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "macd_up",
+    "name": "MACD買いクロス",
+    "units": 11000,
+    "entry": 176.88077,
+    "sl": 176.68520709401736,
+    "tp": 177.25389581196535,
+    "barT": 1794535200000,
+    "openT": 1794535621169,
+    "deadline": 1794794821169,
+    "exit": 176.68520709401736,
+    "closeT": 1794549600000,
+    "reason": "sl",
+    "pnl": -2151.191965809204
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -286,7 +291,7 @@
    "entry": 176.87477,
    "sl": 176.68520709401736,
    "tp": 177.25389581196535,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -5850,7 +5855,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 108322.69554347395
+  "equity": 108019.99554347397
  },
  "reportDay": "2026-11-13",
  "skipReview": {
@@ -5859,11 +5864,11 @@
   "wouldWin": 88
  },
  "version": 1,
- "lastRun": 1794551820562,
+ "lastRun": 1794552721225,
  "lastBarT": 1794549600000,
- "price": 176.86282,
- "equity": 113793.66161783524,
- "unreal": -197.45000000014556,
+ "price": 176.76192,
+ "equity": 111839.91965202618,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -5940,7 +5945,7 @@
  },
  "learned": {
   "bars": 3585,
-  "events": 1827,
+  "events": 1828,
   "win": [
    {
     "name": "陽の包み足",
@@ -5978,9 +5983,9 @@
     "name": "MACD買いクロス",
     "dir": "long",
     "key": "against|trend",
-    "n": 46,
-    "winRate": 0.3695652173913043,
-    "avgR": 0.21097437081730272
+    "n": 47,
+    "winRate": 0.3617021276595745,
+    "avgR": 0.18487223779902615
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -6001,6 +6006,13 @@
   ]
  },
  "review": {
+  "macd_up": {
+   "n": 2,
+   "wins": 0,
+   "recentLosses": 2,
+   "streak": 2,
+   "suspended": false
+  },
   "bb_break_dn": {
    "n": 4,
    "wins": 2,
@@ -6020,13 +6032,6 @@
    "wins": 1,
    "recentLosses": 0,
    "streak": 0,
-   "suspended": false
-  },
-  "macd_up": {
-   "n": 1,
-   "wins": 0,
-   "recentLosses": 1,
-   "streak": 1,
    "suspended": false
   },
   "bb_revert_up": {
@@ -6070,22 +6075,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 101329.3876891737,
+  "balance": 99373.75862934715,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": {
-   "dir": "long",
-   "pattern": "macd_up",
-   "name": "MACD買いクロス",
-   "units": 10000,
-   "entry": 176.88077,
-   "sl": 176.68520709401736,
-   "tp": 177.25389581196535,
-   "barT": 1794535200000,
-   "openT": 1794535621169,
-   "deadline": 1794794821169
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "macd_up",
+    "name": "MACD買いクロス",
+    "units": 10000,
+    "entry": 176.88077,
+    "sl": 176.68520709401736,
+    "tp": 177.25389581196535,
+    "barT": 1794535200000,
+    "openT": 1794535621169,
+    "deadline": 1794794821169,
+    "exit": 176.68520709401736,
+    "closeT": 1794549600000,
+    "reason": "sl",
+    "pnl": -1955.629059826549
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -6167,6 +6177,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 101149.88768917357
+  "equity": 99373.75862934715
  }
 }

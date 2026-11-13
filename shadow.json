@@ -3,7 +3,8 @@
  "startT": 1794521959845,
  "accounts": {
   "normal": {
-   "open": [
+   "open": [],
+   "closed": [
     {
      "symbol": "EUR/JPY",
      "dir": "long",
@@ -19,10 +20,13 @@
       "ask": 176.862,
       "spread": 2,
       "gap": -1.9
-     }
+     },
+     "exit": 176.68520709401736,
+     "closeT": 1794549600000,
+     "reason": "sl",
+     "r": -1
     }
-   ],
-   "closed": []
+   ]
   },
   "vol": {
    "open": [],
