@@ -396,6 +396,21 @@
  },
  "log": [
   {
+   "t": 1794596400000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 159.75895,
+   "sl": 159.59895047531984,
+   "tp": 160.07894904936032,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1794592800000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -5363,12 +5378,12 @@
    ]
   }
  ],
- "lastEvalT": 1794592800000,
+ "lastEvalT": 1794596400000,
  "reportDay": "2026-11-14",
  "version": 1,
- "lastRun": 1794599520302,
- "lastBarT": 1794596400000,
- "price": 159.75201,
+ "lastRun": 1794600420762,
+ "lastBarT": 1794600000000,
+ "price": 159.75895,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5448,7 +5463,7 @@
   }
  },
  "learned": {
-  "bars": 3598,
+  "bars": 3599,
   "events": 1922,
   "win": [
    {
@@ -5481,7 +5496,7 @@
     "key": "*",
     "n": 281,
     "winRate": 0.36298932384341637,
-    "avgR": 0.17074181299211807
+    "avgR": 0.17074181299211805
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -5565,7 +5580,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
