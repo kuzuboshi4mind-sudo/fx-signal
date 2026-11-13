@@ -6038,7 +6038,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 93308.16928675653
+  "equity": 93958.24928675653
  },
  "reportDay": "2026-11-13",
  "skipReview": {
@@ -6047,9 +6047,9 @@
   "wouldWin": 79
  },
  "version": 1,
- "lastRun": 1794557221974,
+ "lastRun": 1794558121029,
  "lastBarT": 1794556800000,
- "price": 211.60333,
+ "price": 211.76585,
  "equity": 106586.50582258987,
  "unreal": 0,
  "config": {
@@ -6128,7 +6128,7 @@
  },
  "learned": {
   "bars": 3587,
-  "events": 1795,
+  "events": 1796,
   "win": [
    {
     "name": "陽の包み足",
