@@ -284,6 +284,22 @@
  },
  "log": [
   {
+   "t": 1794560400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 88.52976,
+   "sl": 88.65251005637835,
+   "tp": 88.2842598872433,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794556800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -291,7 +307,7 @@
    "entry": 88.62011,
    "sl": 88.49952763159254,
    "tp": 88.8612747368149,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5259,7 +5275,7 @@
    ]
   }
  ],
- "lastEvalT": 1794556800000,
+ "lastEvalT": 1794560400000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -5733,14 +5749,14 @@
  },
  "reportDay": "2026-11-13",
  "skipReview": {
-  "n": 278,
-  "wouldLose": 199,
+  "n": 279,
+  "wouldLose": 200,
   "wouldWin": 79
  },
  "version": 1,
- "lastRun": 1794561721751,
- "lastBarT": 1794560400000,
- "price": 88.59859,
+ "lastRun": 1794564318040,
+ "lastBarT": 1794564000000,
+ "price": 88.52976,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -5814,11 +5830,13 @@
    "start": 100000,
    "riskPct": 2,
    "beforeH": 2,
-   "afterH": 2
+   "afterH": 2,
+   "cpi": true,
+   "ccyOnly": true
   }
  },
  "learned": {
-  "bars": 3588,
+  "bars": 3589,
   "events": 1910,
   "win": [
    {
@@ -5892,7 +5910,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

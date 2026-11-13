@@ -332,6 +332,22 @@
  },
  "log": [
   {
+   "t": 1794560400000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 211.57919,
+   "sl": 211.80757163979789,
+   "tp": 211.12242672040426,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794549600000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -5133,7 +5149,7 @@
    ]
   }
  ],
- "lastEvalT": 1794556800000,
+ "lastEvalT": 1794560400000,
  "adaptive": {
   "start": 100000,
   "balance": 92687.08928675647,
@@ -6038,7 +6054,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 93995.56928675655
+  "equity": 93211.60928675657
  },
  "reportDay": "2026-11-13",
  "skipReview": {
@@ -6047,9 +6063,9 @@
   "wouldWin": 79
  },
  "version": 1,
- "lastRun": 1794561721046,
- "lastBarT": 1794560400000,
- "price": 211.77518,
+ "lastRun": 1794564316947,
+ "lastBarT": 1794564000000,
+ "price": 211.57919,
  "equity": 106586.50582258987,
  "unreal": 0,
  "config": {
@@ -6123,11 +6139,13 @@
    "start": 100000,
    "riskPct": 2,
    "beforeH": 2,
-   "afterH": 2
+   "afterH": 2,
+   "cpi": true,
+   "ccyOnly": true
   }
  },
  "learned": {
-  "bars": 3588,
+  "bars": 3589,
   "events": 1796,
   "win": [
    {
@@ -6185,14 +6203,6 @@
     "n": 21,
     "winRate": 0.38095238095238093,
     "avgR": 0.27283997371501634
-   },
-   {
-    "name": "陽の包み足",
-    "dir": "long",
-    "key": "against|trend",
-    "n": 52,
-    "winRate": 0.3269230769230769,
-    "avgR": 0.07916185975543169
    }
   ]
  },
@@ -6240,7 +6250,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
