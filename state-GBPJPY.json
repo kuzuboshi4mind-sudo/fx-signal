@@ -6,7 +6,18 @@
   "balance": 108685.29757241278,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 10000,
+   "entry": 211.59413,
+   "sl": 211.8040091749823,
+   "tp": 211.20437165003543,
+   "barT": 1794542400000,
+   "openT": 1794542821813,
+   "deadline": 1794802021813
+  },
   "trades": [
    {
     "dir": "short",
@@ -315,6 +326,34 @@
   ]
  },
  "log": [
+  {
+   "t": 1794538800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 211.60413,
+   "sl": 211.8040091749823,
+   "tp": 211.20437165003543,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1794538800000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 211.60413,
+   "sl": 211.8040091749823,
+   "tp": 211.20437165003543,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
   {
    "t": 1794531600000,
    "pattern": "macd_up",
@@ -5057,7 +5096,7 @@
    ]
   }
  ],
- "lastEvalT": 1794535200000,
+ "lastEvalT": 1794538800000,
  "adaptive": {
   "start": 100000,
   "balance": 91665.54759065241,
@@ -5945,7 +5984,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 93208.90759065241
+  "equity": 92995.50759065244
  },
  "reportDay": "2026-11-13",
  "skipReview": {
@@ -5954,11 +5993,11 @@
   "wouldWin": 79
  },
  "version": 1,
- "lastRun": 1794541920804,
- "lastBarT": 1794538800000,
- "price": 211.65748,
- "equity": 108685.29757241278,
- "unreal": 0,
+ "lastRun": 1794542821813,
+ "lastBarT": 1794542400000,
+ "price": 211.60413,
+ "equity": 108585.29757241286,
+ "unreal": -99.99999999990905,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -6034,7 +6073,7 @@
   }
  },
  "learned": {
-  "bars": 3582,
+  "bars": 3583,
   "events": 1791,
   "win": [
    {
@@ -6147,7 +6186,23 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6174,7 +6229,18 @@
   "balance": 101284.99010130121,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 9000,
+   "entry": 211.59413,
+   "sl": 211.8040091749823,
+   "tp": 211.20437165003543,
+   "barT": 1794542400000,
+   "openT": 1794542821813,
+   "deadline": 1794802021813
+  },
   "trades": [
    {
     "dir": "short",
@@ -6257,6 +6323,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 101284.99010130121
+  "equity": 101194.9901013013
  }
 }
