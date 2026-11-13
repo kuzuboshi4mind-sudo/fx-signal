@@ -338,7 +338,7 @@
    "entry": 88.55565,
    "sl": 88.4348271452656,
    "tp": 88.79729570946878,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -354,7 +354,7 @@
    "entry": 88.55565,
    "sl": 88.4348271452656,
    "tp": 88.79729570946878,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -434,7 +434,7 @@
    "entry": 88.61361,
    "sl": 88.73374345685124,
    "tp": 88.3733430862975,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -450,7 +450,7 @@
    "entry": 88.64609,
    "sl": 88.7548405771766,
    "tp": 88.42858884564681,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -466,7 +466,7 @@
    "entry": 88.64609,
    "sl": 88.7548405771766,
    "tp": 88.42858884564681,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5370,7 +5370,7 @@
    ]
   }
  ],
- "lastEvalT": 1794578400000,
+ "lastEvalT": 1794585600000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -5844,14 +5844,14 @@
  },
  "reportDay": "2026-11-14",
  "skipReview": {
-  "n": 282,
-  "wouldLose": 203,
-  "wouldWin": 79
+  "n": 287,
+  "wouldLose": 205,
+  "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794584223284,
- "lastBarT": 1794582000000,
- "price": 88.48932,
+ "lastRun": 1794591682820,
+ "lastBarT": 1794589200000,
+ "price": 88.37075,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -5931,8 +5931,8 @@
   }
  },
  "learned": {
-  "bars": 3594,
-  "events": 1915,
+  "bars": 3596,
+  "events": 1919,
   "win": [
    {
     "name": "20本高値ブレイク",

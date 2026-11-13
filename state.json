@@ -396,6 +396,22 @@
  },
  "log": [
   {
+   "t": 1794585600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 159.93094,
+   "sl": 159.77673639703124,
+   "tp": 160.2393472059375,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1794574800000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -5315,12 +5331,12 @@
    ]
   }
  ],
- "lastEvalT": 1794578400000,
+ "lastEvalT": 1794585600000,
  "reportDay": "2026-11-14",
  "version": 1,
- "lastRun": 1794584220457,
- "lastBarT": 1794582000000,
- "price": 159.85526,
+ "lastRun": 1794591678592,
+ "lastBarT": 1794589200000,
+ "price": 159.93094,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5400,7 +5416,7 @@
   }
  },
  "learned": {
-  "bars": 3594,
+  "bars": 3596,
   "events": 1918,
   "win": [
    {
@@ -5517,7 +5533,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,

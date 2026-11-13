@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 97933.06533285405,
+  "balance": 101359.0763679028,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "short",
-   "pattern": "donchian_dn",
-   "name": "20本安値ブレイク",
-   "units": 10000,
-   "entry": 108.67574,
-   "sl": 108.85604055175244,
-   "tp": 108.33313889649513,
-   "barT": 1794553200000,
-   "openT": 1794553621307,
-   "deadline": 1794812821307
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "donchian_dn",
+    "name": "20本安値ブレイク",
+    "units": 10000,
+    "entry": 108.67574,
+    "sl": 108.85604055175244,
+    "tp": 108.33313889649513,
+    "barT": 1794553200000,
+    "openT": 1794553621307,
+    "deadline": 1794812821307,
+    "exit": 108.33313889649513,
+    "closeT": 1794582000000,
+    "reason": "tp",
+    "pnl": 3426.0110350487594
+   },
    {
     "dir": "short",
     "pattern": "donchian_dn",
@@ -471,6 +476,22 @@
  },
  "log": [
   {
+   "t": 1794585600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 108.41324,
+   "sl": 108.23604604505088,
+   "tp": 108.76762790989825,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794578400000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -478,7 +499,7 @@
    "entry": 108.52065,
    "sl": 108.35139606408268,
    "tp": 108.85915787183465,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -522,7 +543,7 @@
    "entry": 108.68174,
    "sl": 108.85604055175244,
    "tp": 108.33313889649513,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -534,7 +555,7 @@
    "entry": 108.68174,
    "sl": 108.85604055175244,
    "tp": 108.33313889649513,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -550,7 +571,7 @@
    "entry": 108.68174,
    "sl": 108.85604055175244,
    "tp": 108.33313889649513,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5621,7 +5642,7 @@
    ]
   }
  ],
- "lastEvalT": 1794578400000,
+ "lastEvalT": 1794585600000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -5976,16 +5997,16 @@
  },
  "reportDay": "2026-11-14",
  "skipReview": {
-  "n": 267,
-  "wouldLose": 181,
-  "wouldWin": 86
+  "n": 270,
+  "wouldLose": 182,
+  "wouldWin": 88
  },
  "version": 1,
- "lastRun": 1794584222724,
- "lastBarT": 1794582000000,
- "price": 108.45728,
- "equity": 100117.66533285413,
- "unreal": 2184.600000000074,
+ "lastRun": 1794591681794,
+ "lastBarT": 1794589200000,
+ "price": 108.41324,
+ "equity": 101359.0763679028,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -6063,7 +6084,7 @@
   }
  },
  "learned": {
-  "bars": 3594,
+  "bars": 3596,
   "events": 1904,
   "win": [
    {
@@ -6141,10 +6162,10 @@
    "suspended": true
   },
   "donchian_dn": {
-   "n": 7,
-   "wins": 4,
+   "n": 8,
+   "wins": 5,
    "recentLosses": 2,
-   "streak": 2,
+   "streak": 0,
    "suspended": false
   },
   "ema_cross_up": {
@@ -6218,7 +6239,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6230,22 +6261,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 104034.907901842,
+  "balance": 107803.52004039564,
   "riskPct": 2,
   "startT": 1793840367240,
-  "pos": {
-   "dir": "short",
-   "pattern": "donchian_dn",
-   "name": "20本安値ブレイク",
-   "units": 11000,
-   "entry": 108.67574,
-   "sl": 108.85604055175244,
-   "tp": 108.33313889649513,
-   "barT": 1794553200000,
-   "openT": 1794553621307,
-   "deadline": 1794812821307
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "donchian_dn",
+    "name": "20本安値ブレイク",
+    "units": 11000,
+    "entry": 108.67574,
+    "sl": 108.85604055175244,
+    "tp": 108.33313889649513,
+    "barT": 1794553200000,
+    "openT": 1794553621307,
+    "deadline": 1794812821307,
+    "exit": 108.33313889649513,
+    "closeT": 1794582000000,
+    "reason": "tp",
+    "pnl": 3768.6121385536353
+   },
    {
     "dir": "short",
     "pattern": "donchian_dn",
@@ -6343,6 +6379,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 106437.96790184209
+  "equity": 107803.52004039564
  }
 }

@@ -348,6 +348,22 @@
  },
  "log": [
   {
+   "t": 1794585600000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 211.20856,
+   "sl": 211.45454169671103,
+   "tp": 210.71659660657795,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794574800000,
    "pattern": "pullback_dn",
    "name": "下降トレンドの戻り",
@@ -355,7 +371,7 @@
    "entry": 211.61672,
    "sl": 211.84476624750798,
    "tp": 211.160627504984,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -399,7 +415,7 @@
    "entry": 211.61448,
    "sl": 211.8333786980452,
    "tp": 211.17668260390954,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -415,7 +431,7 @@
    "entry": 211.67686,
    "sl": 211.86962398251023,
    "tp": 211.29133203497952,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -475,7 +491,7 @@
    "entry": 211.47003,
    "sl": 211.22469501703878,
    "tp": 211.96069996592243,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -491,7 +507,7 @@
    "entry": 211.47003,
    "sl": 211.22469501703878,
    "tp": 211.96069996592243,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5193,25 +5209,13 @@
    ]
   }
  ],
- "lastEvalT": 1794578400000,
+ "lastEvalT": 1794585600000,
  "adaptive": {
   "start": 100000,
-  "balance": 92687.08928675647,
+  "balance": 92123.13189066605,
   "startT": 1791953875407,
-  "positions": [
-   {
-    "key": "pullback_dn|long|3|1",
-    "dir": "long",
-    "pattern": "pullback_dn",
-    "name": "下降トレンドの戻り（逆向き）",
-    "units": 2000,
-    "entry": 211.27164,
-    "sl": 211.01625457597396,
-    "tp": 212.03779627207805,
-    "barT": 1794502800000,
-    "openT": 1794503221607,
-    "deadline": 1794589621607
-   },
+  "positions": [],
+  "trades": [
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -5223,10 +5227,29 @@
     "tp": 212.06227739609042,
     "barT": 1794553200000,
     "openT": 1794553620923,
-    "deadline": 1794812820923
-   }
-  ],
-  "trades": [
+    "deadline": 1794812820923,
+    "exit": 211.40558130195475,
+    "closeT": 1794582000000,
+    "reason": "sl",
+    "pnl": -437.79739609044555
+   },
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 2000,
+    "entry": 211.27164,
+    "sl": 211.01625457597396,
+    "tp": 212.03779627207805,
+    "barT": 1794502800000,
+    "openT": 1794503221607,
+    "deadline": 1794589621607,
+    "exit": 211.20856,
+    "closeT": 1794591680667,
+    "reason": "time",
+    "pnl": -126.1599999999703
+   },
    {
     "key": "pullback_dn|long|2|1",
     "dir": "long",
@@ -6098,18 +6121,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 93090.76928675653
+  "equity": 92123.13189066605
  },
  "reportDay": "2026-11-14",
  "skipReview": {
-  "n": 261,
-  "wouldLose": 182,
-  "wouldWin": 79
+  "n": 266,
+  "wouldLose": 184,
+  "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794584221510,
- "lastBarT": 1794582000000,
- "price": 211.54898,
+ "lastRun": 1794591680667,
+ "lastBarT": 1794589200000,
+ "price": 211.20856,
  "equity": 104465.72161783196,
  "unreal": 0,
  "config": {
@@ -6189,8 +6212,8 @@
   }
  },
  "learned": {
-  "bars": 3594,
-  "events": 1797,
+  "bars": 3596,
+  "events": 1800,
   "win": [
    {
     "name": "陽の包み足",
@@ -6302,7 +6325,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
