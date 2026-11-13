@@ -403,7 +403,7 @@
    "entry": 159.93094,
    "sl": 159.77673639703124,
    "tp": 160.2393472059375,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -419,7 +419,7 @@
    "entry": 159.92373,
    "sl": 160.074983708032,
    "tp": 159.62122258393606,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -435,7 +435,7 @@
    "entry": 159.92373,
    "sl": 160.074983708032,
    "tp": 159.62122258393606,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -475,7 +475,7 @@
    "entry": 159.85878,
    "sl": 159.7050903484557,
    "tp": 160.1661593030886,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -527,7 +527,7 @@
    "entry": 159.80657,
    "sl": 159.60833479235646,
    "tp": 160.20304041528706,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5334,9 +5334,9 @@
  "lastEvalT": 1794589200000,
  "reportDay": "2026-11-14",
  "version": 1,
- "lastRun": 1794593220126,
+ "lastRun": 1794594120223,
  "lastBarT": 1794592800000,
- "price": 159.91701,
+ "price": 159.64259,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5417,7 +5417,7 @@
  },
  "learned": {
   "bars": 3597,
-  "events": 1918,
+  "events": 1922,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5439,17 +5439,17 @@
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "with|range",
-    "n": 221,
-    "winRate": 0.3665158371040724,
-    "avgR": 0.18395158526752683
+    "n": 222,
+    "winRate": 0.36486486486486486,
+    "avgR": 0.1785479750364233
    },
    {
     "name": "上昇トレンドの押し目",
     "dir": "long",
     "key": "*",
-    "n": 279,
-    "winRate": 0.3655913978494624,
-    "avgR": 0.17924842892035023
+    "n": 281,
+    "winRate": 0.36298932384341637,
+    "avgR": 0.17074181299211807
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -5470,10 +5470,10 @@
    "suspended": false
   },
   "pullback_up": {
-   "n": 29,
+   "n": 30,
    "wins": 10,
-   "recentLosses": 3,
-   "streak": 3,
+   "recentLosses": 4,
+   "streak": 4,
    "suspended": true
   },
   "ema_cross_up": {
@@ -6363,9 +6363,9 @@
   "equity": 106329.01883997084
  },
  "skipReview": {
-  "n": 251,
-  "wouldLose": 185,
-  "wouldWin": 66
+  "n": 255,
+  "wouldLose": 187,
+  "wouldWin": 68
  },
  "latest": {
   "start": 100000,
