@@ -5802,9 +5802,9 @@
   "wouldWin": 79
  },
  "version": 1,
- "lastRun": 1794571623607,
+ "lastRun": 1794572522570,
  "lastBarT": 1794571200000,
- "price": 88.55565,
+ "price": 88.60137,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -5885,7 +5885,7 @@
  },
  "learned": {
   "bars": 3591,
-  "events": 1911,
+  "events": 1912,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5958,26 +5958,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
