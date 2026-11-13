@@ -6,7 +6,18 @@
   "balance": 111839.91965202618,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 10000,
+   "entry": 176.36107,
+   "sl": 176.57051731002247,
+   "tp": 175.9601753799551,
+   "barT": 1794592800000,
+   "openT": 1794593220668,
+   "deadline": 1794852420668
+  },
   "trades": [
    {
     "dir": "long",
@@ -283,6 +294,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1794589200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 176.36707,
+   "sl": 176.57051731002247,
+   "tp": 175.9601753799551,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1794585600000,
    "pattern": "bb_revert_up",
@@ -5483,7 +5506,7 @@
    ]
   }
  ],
- "lastEvalT": 1794585600000,
+ "lastEvalT": 1794589200000,
  "adaptive": {
   "start": 100000,
   "balance": 106331.28966342902,
@@ -5979,11 +6002,11 @@
   "wouldWin": 92
  },
  "version": 1,
- "lastRun": 1794592321547,
- "lastBarT": 1794589200000,
- "price": 176.37708,
- "equity": 111839.91965202618,
- "unreal": 0,
+ "lastRun": 1794593220668,
+ "lastBarT": 1794592800000,
+ "price": 176.36707,
+ "equity": 111779.91965202618,
+ "unreal": -60.000000000002274,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -6061,7 +6084,7 @@
   }
  },
  "learned": {
-  "bars": 3596,
+  "bars": 3597,
   "events": 1835,
   "win": [
    {
@@ -6180,7 +6203,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6195,7 +6225,18 @@
   "balance": 99373.75862934715,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 9000,
+   "entry": 176.36107,
+   "sl": 176.57051731002247,
+   "tp": 175.9601753799551,
+   "barT": 1794592800000,
+   "openT": 1794593220668,
+   "deadline": 1794852420668
+  },
   "trades": [
    {
     "dir": "long",
@@ -6294,6 +6335,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 99373.75862934715
+  "equity": 99319.75862934715
  }
 }

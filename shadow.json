@@ -3,7 +3,25 @@
  "startT": 1794521959845,
  "accounts": {
   "normal": {
-   "open": [],
+   "open": [
+    {
+     "symbol": "EUR/JPY",
+     "dir": "short",
+     "name": "ボリバン下抜けブレイク",
+     "openT": 1794593220668,
+     "entry": 176.36107,
+     "sl": 176.57051731002247,
+     "tp": 175.9601753799551,
+     "riskFrac": 1,
+     "leverage": 4.2,
+     "oanda": {
+      "bid": 176.359,
+      "ask": 176.374,
+      "spread": 1.5,
+      "gap": -0.2
+     }
+    }
+   ],
    "closed": [
     {
      "symbol": "EUR/JPY",
