@@ -284,6 +284,21 @@
  },
  "log": [
   {
+   "t": 1794592800000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 88.22834,
+   "sl": 88.36088962358333,
+   "tp": 87.96324075283336,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1794578400000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -5370,7 +5385,7 @@
    ]
   }
  ],
- "lastEvalT": 1794589200000,
+ "lastEvalT": 1794592800000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -5849,9 +5864,9 @@
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794595922326,
- "lastBarT": 1794592800000,
- "price": 88.25327,
+ "lastRun": 1794596822788,
+ "lastBarT": 1794596400000,
+ "price": 88.22834,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -5931,7 +5946,7 @@
   }
  },
  "learned": {
-  "bars": 3597,
+  "bars": 3598,
   "events": 1922,
   "win": [
    {
@@ -6005,7 +6020,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
