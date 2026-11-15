@@ -291,7 +291,7 @@
    "entry": 88.33729,
    "sl": 88.2096252132142,
    "tp": 88.5926195735716,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5907,14 +5907,14 @@
  },
  "reportDay": "2026-11-16",
  "skipReview": {
-  "n": 290,
-  "wouldLose": 205,
+  "n": 291,
+  "wouldLose": 206,
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794784022024,
+ "lastRun": 1794784922434,
  "lastBarT": 1794783600000,
- "price": 88.33729,
+ "price": 88.29787,
  "equity": 104374.74157073039,
  "unreal": 0,
  "config": {
@@ -6068,17 +6068,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
