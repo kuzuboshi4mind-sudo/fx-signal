@@ -403,7 +403,7 @@
    "entry": 159.64428,
    "sl": 159.80409086566812,
    "tp": 159.32465826866382,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -418,7 +418,7 @@
    "entry": 159.64428,
    "sl": 159.80409086566812,
    "tp": 159.32465826866382,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5411,9 +5411,9 @@
  "lastEvalT": 1794603600000,
  "reportDay": "2026-11-16",
  "version": 1,
- "lastRun": 1794780420393,
+ "lastRun": 1794781320104,
  "lastBarT": 1794780000000,
- "price": 159.64428,
+ "price": 159.63819,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5494,7 +5494,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1906,
+  "events": 1907,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5610,24 +5610,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,

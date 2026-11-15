@@ -483,7 +483,7 @@
    "entry": 108.16617,
    "sl": 108.33316376990413,
    "tp": 107.83218246019172,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6079,9 +6079,9 @@
   "wouldWin": 88
  },
  "version": 1,
- "lastRun": 1794780422585,
+ "lastRun": 1794781321421,
  "lastBarT": 1794780000000,
- "price": 108.16617,
+ "price": 108.18289,
  "equity": 101359.0763679028,
  "unreal": 0,
  "config": {
@@ -6316,17 +6316,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
