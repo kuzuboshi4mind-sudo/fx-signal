@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 104374.74157073039,
+  "balance": 107885.24050815534,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "short",
-   "pattern": "donchian_dn",
-   "name": "20本安値ブレイク",
-   "units": 14000,
-   "entry": 88.0756,
-   "sl": 88.2159749620509,
-   "tp": 87.82485007589821,
-   "barT": 1794801600000,
-   "openT": 1794802022846,
-   "deadline": 1794888422846
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "donchian_dn",
+    "name": "20本安値ブレイク",
+    "units": 14000,
+    "entry": 88.0756,
+    "sl": 88.2159749620509,
+    "tp": 87.82485007589821,
+    "barT": 1794801600000,
+    "openT": 1794802022846,
+    "deadline": 1794888422846,
+    "exit": 87.82485007589821,
+    "closeT": 1794841200000,
+    "reason": "tp",
+    "pnl": 3510.4989374249553
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -295,6 +300,22 @@
  },
  "log": [
   {
+   "t": 1794841200000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 87.92852,
+   "sl": 87.79887485041058,
+   "tp": 88.18781029917885,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794826800000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -349,7 +370,7 @@
    "entry": 88.02562,
    "sl": 88.15639254380919,
    "tp": 87.76407491238162,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -361,7 +382,7 @@
    "entry": 88.02562,
    "sl": 88.15639254380919,
    "tp": 87.76407491238162,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -373,7 +394,7 @@
    "entry": 88.0856,
    "sl": 88.2159749620509,
    "tp": 87.82485007589821,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -5527,7 +5548,7 @@
    ]
   }
  ],
- "lastEvalT": 1794830400000,
+ "lastEvalT": 1794841200000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -5999,18 +6020,18 @@
   "pickTried": "2026-11-01",
   "equity": 100420.39372700968
  },
- "reportDay": "2026-11-16",
+ "reportDay": "2026-11-17",
  "skipReview": {
   "n": 293,
   "wouldLose": 208,
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794836222757,
- "lastBarT": 1794834000000,
- "price": 87.99561,
- "equity": 105494.60157073032,
- "unreal": 1119.8599999999317,
+ "lastRun": 1794845033246,
+ "lastBarT": 1794844800000,
+ "price": 87.92852,
+ "equity": 107885.24050815534,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6097,7 +6118,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1908,
+  "events": 1909,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -6105,7 +6126,7 @@
     "key": "against|trend",
     "n": 24,
     "winRate": 0.6666666666666666,
-    "avgR": 0.9674894387246251
+    "avgR": 0.967489438742334
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -6113,15 +6134,15 @@
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.19559793370250333
+    "avgR": 0.1955979337047606
    },
    {
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "with|trend",
-    "n": 64,
-    "winRate": 0.390625,
-    "avgR": 0.1443825081974741
+    "n": 65,
+    "winRate": 0.4,
+    "avgR": 0.1723404554252486
    },
    {
     "name": "20本安値ブレイク",
@@ -6129,7 +6150,7 @@
     "key": "against|range",
     "n": 25,
     "winRate": 0.4,
-    "avgR": 0.15348771883734763
+    "avgR": 0.1534877188373479
    },
    {
     "name": "20本高値ブレイク",
@@ -6137,16 +6158,23 @@
     "key": "with|trend",
     "n": 76,
     "winRate": 0.3815789473684211,
-    "avgR": 0.11588608059903618
+    "avgR": 0.11588608060075252
    }
   ]
  },
  "review": {
+  "donchian_dn": {
+   "n": 6,
+   "wins": 4,
+   "recentLosses": 2,
+   "streak": 0,
+   "suspended": false
+  },
   "bb_break_dn": {
-   "n": 8,
-   "wins": 3,
+   "n": 9,
+   "wins": 4,
    "recentLosses": 4,
-   "streak": 4,
+   "streak": 0,
    "suspended": true
   },
   "donchian_up": {
@@ -6155,13 +6183,6 @@
    "recentLosses": 3,
    "streak": 3,
    "suspended": true
-  },
-  "donchian_dn": {
-   "n": 4,
-   "wins": 2,
-   "recentLosses": 2,
-   "streak": 2,
-   "suspended": false
   },
   "ema_cross_up": {
    "n": 5,
@@ -6178,7 +6199,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6202,22 +6233,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 97570.87956403758,
+  "balance": 100830.62857736075,
   "riskPct": 2,
   "startT": 1793840367577,
-  "pos": {
-   "dir": "short",
-   "pattern": "donchian_dn",
-   "name": "20本安値ブレイク",
-   "units": 13000,
-   "entry": 88.0756,
-   "sl": 88.2159749620509,
-   "tp": 87.82485007589821,
-   "barT": 1794801600000,
-   "openT": 1794802022846,
-   "deadline": 1794888422846
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "donchian_dn",
+    "name": "20本安値ブレイク",
+    "units": 13000,
+    "entry": 88.0756,
+    "sl": 88.2159749620509,
+    "tp": 87.82485007589821,
+    "barT": 1794801600000,
+    "openT": 1794802022846,
+    "deadline": 1794888422846,
+    "exit": 87.82485007589821,
+    "closeT": 1794841200000,
+    "reason": "tp",
+    "pnl": 3259.749013323173
+   },
    {
     "dir": "short",
     "pattern": "bb_break_dn",
@@ -6283,6 +6319,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 98610.74956403751
+  "equity": 100830.62857736075
  }
 }
