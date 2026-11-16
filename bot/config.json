@@ -72,5 +72,13 @@
     "afterH": 2,
     "cpi": true,
     "ccyOnly": true
+  },
+  "live": {
+    "enabled": true,
+    "account": "normal",
+    "units": 1000,
+    "maxAgeMin": 30,
+    "maxOpen": 2,
+    "note": "段階1：最小単位の動作確認。実際に送るのは GitHub Secrets の OANDA_LIVE が yes のときだけ"
   }
 }

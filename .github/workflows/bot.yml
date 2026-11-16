@@ -47,6 +47,10 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           OANDA_TOKEN: ${{ secrets.OANDA_TOKEN }}
           OANDA_ACCOUNT_ID: ${{ secrets.OANDA_ACCOUNT_ID }}
+          OANDA_ACCOUNT_ID_NORMAL: ${{ secrets.OANDA_ACCOUNT_ID_NORMAL }}
+          OANDA_LIVE: ${{ secrets.OANDA_LIVE }}
+          LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           RESET: ${{ inputs.reset }}
         # 通貨ペアごとに順番に実行し、毎回 bot-data に保存する（1つ失敗しても他は続ける）
         run: bash bot/loop.sh 340

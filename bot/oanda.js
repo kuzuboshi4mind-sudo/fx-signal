@@ -24,6 +24,7 @@ function client({ token, accountId, env = 'live', fetchFn = fetch } = {}) {
     accounts: () => get('/v3/accounts'),
     summary: () => get(`${acct}/summary`),
     openTrades: () => get(`${acct}/openTrades`),
+    trade: (id) => get(`${acct}/trades/${encodeURIComponent(id)}`),
     pricing: (instruments) => get(`${acct}/pricing?instruments=${encodeURIComponent(instruments.join(','))}`),
   };
 }

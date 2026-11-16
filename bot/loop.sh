@@ -22,6 +22,7 @@ run_once() {
     SYMBOL="$sym" STATE_FILE="data/$file" node bot/run.js || fail=1
   done < <(node -e "for (const p of require('./bot/config.json').pairs) console.log(p.symbol + ' ' + p.file)")
   node bot/shadow.js || true   # 本番の試し運転（注文は送らない）
+  node bot/live.js || true     # 本番の注文（OANDA_LIVE=yes のときだけ送る）
   save_state
   RESET=   # リセット指定は最初の1回だけ
   export RESET

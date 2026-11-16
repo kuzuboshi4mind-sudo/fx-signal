@@ -9,7 +9,7 @@ test('OANDA部品は GET しか送らない・鍵がなければ止まる', asyn
   const o = client({ token: 't', accountId: '001-1', fetchFn: fake });
   await o.accounts(); await o.summary(); await o.openTrades(); await o.pricing(['USD_JPY']);
   assert.ok(calls.every(c => c.opt.method === 'GET'));
-  assert.deepStrictEqual(Object.keys(o).sort(), ['accounts', 'openTrades', 'pricing', 'summary']);
+  assert.deepStrictEqual(Object.keys(o).sort(), ['accounts', 'openTrades', 'pricing', 'summary', 'trade']);
   assert.throws(() => client({ token: '', accountId: 'x' }));
   assert.strictEqual(toInstrument('USD/JPY'), 'USD_JPY');
 });
