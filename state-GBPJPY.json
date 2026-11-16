@@ -6295,11 +6295,11 @@
   "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794827221367,
+ "lastRun": 1794828121680,
  "lastBarT": 1794826800000,
- "price": 210.53667,
- "equity": 103685.7816178321,
- "unreal": -779.9399999998684,
+ "price": 210.49805,
+ "equity": 103956.12161783196,
+ "unreal": -509.60000000000605,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -6514,17 +6514,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6677,6 +6667,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 96730.99601112035
+  "equity": 97001.33601112022
  }
 }

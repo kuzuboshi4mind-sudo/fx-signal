@@ -6219,11 +6219,11 @@
   "wouldWin": 88
  },
  "version": 1,
- "lastRun": 1794827221922,
+ "lastRun": 1794828122340,
  "lastBarT": 1794826800000,
- "price": 107.83694,
- "equity": 101696.27636790283,
- "unreal": 337.20000000002415,
+ "price": 107.80025,
+ "equity": 102063.17636790275,
+ "unreal": 704.0999999999542,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -6464,25 +6464,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6623,6 +6605,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 108174.44004039567
+  "equity": 108578.03004039559
  }
 }
