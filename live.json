@@ -1,6 +1,21 @@
 {
- "open": [],
+ "open": [
+  {
+   "key": "EUR/JPY|1794823622095",
+   "symbol": "EUR/JPY",
+   "dir": "short",
+   "units": 1000,
+   "tradeID": "5",
+   "price": 175.667,
+   "plannedEntry": 175.67001,
+   "sl": 175.87865762582595,
+   "tp": 175.27071474834807,
+   "openT": 1794823625314
+  }
+ ],
  "closed": [],
  "failed": [],
- "seen": []
+ "seen": [
+  "EUR/JPY|1794823622095"
+ ]
 }
