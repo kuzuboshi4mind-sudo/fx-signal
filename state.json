@@ -5505,9 +5505,9 @@
  "lastEvalT": 1794819600000,
  "reportDay": "2026-11-16",
  "version": 1,
- "lastRun": 1794823620975,
+ "lastRun": 1794824520146,
  "lastBarT": 1794823200000,
- "price": 159.57301,
+ "price": 159.64845,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5712,26 +5712,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106329.01883997084,
@@ -6585,7 +6566,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106299.01883997087
+  "equity": 106751.65883997078
  },
  "skipReview": {
   "n": 258,
