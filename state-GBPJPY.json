@@ -6178,9 +6178,9 @@
   "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794800221797,
+ "lastRun": 1794801121428,
  "lastBarT": 1794798000000,
- "price": 210.83751,
+ "price": 210.81371,
  "equity": 104465.72161783196,
  "unreal": 0,
  "config": {
@@ -6269,7 +6269,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1789,
+  "events": 1790,
   "win": [
    {
     "name": "陽の包み足",
