@@ -6178,9 +6178,9 @@
   "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794796620560,
+ "lastRun": 1794797522408,
  "lastBarT": 1794794400000,
- "price": 211.06042,
+ "price": 211.02173,
  "equity": 104465.72161783196,
  "unreal": 0,
  "config": {
@@ -6257,6 +6257,14 @@
    "afterH": 2,
    "cpi": true,
    "ccyOnly": true
+  },
+  "live": {
+   "enabled": true,
+   "account": "normal",
+   "units": 1000,
+   "maxAgeMin": 30,
+   "maxOpen": 2,
+   "note": "段階1：最小単位の動作確認。実際に送るのは GitHub Secrets の OANDA_LIVE が yes のときだけ"
   }
  },
  "learned": {
