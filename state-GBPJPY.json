@@ -366,7 +366,7 @@
    "entry": 210.43525,
    "sl": 210.68716327271645,
    "tp": 209.93142345456712,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -6279,11 +6279,11 @@
   "wouldWin": 82
  },
  "version": 1,
- "lastRun": 1794824521207,
+ "lastRun": 1794825421894,
  "lastBarT": 1794823200000,
- "price": 210.64446,
- "equity": 102931.25161783193,
- "unreal": -1534.4700000000273,
+ "price": 210.6714,
+ "equity": 102742.67161783196,
+ "unreal": -1723.0500000000006,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -6370,7 +6370,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1789,
+  "events": 1790,
   "win": [
    {
     "name": "陽の包み足",
@@ -6408,17 +6408,17 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "with|trend",
-    "n": 31,
-    "winRate": 0.45161290322580644,
-    "avgR": 0.34612584925897116
+    "n": 32,
+    "winRate": 0.4375,
+    "avgR": 0.30343916332331683
    },
    {
     "name": "陰の包み足",
     "dir": "short",
     "key": "*",
-    "n": 126,
-    "winRate": 0.4126984126984127,
-    "avgR": 0.22990672173140111
+    "n": 127,
+    "winRate": 0.4094488188976378,
+    "avgR": 0.22006613257853994
    },
    {
     "name": "RSI買われすぎ反落",
@@ -6455,18 +6455,18 @@
   ]
  },
  "review": {
+  "engulf_dn": {
+   "n": 4,
+   "wins": 1,
+   "recentLosses": 3,
+   "streak": 2,
+   "suspended": false
+  },
   "engulf_up": {
    "n": 6,
    "wins": 2,
    "recentLosses": 3,
    "streak": 2,
-   "suspended": false
-  },
-  "engulf_dn": {
-   "n": 3,
-   "wins": 1,
-   "recentLosses": 2,
-   "streak": 1,
    "suspended": false
   },
   "bb_break_dn": {
@@ -6651,6 +6651,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 95976.4660111202
+  "equity": 95787.88601112022
  }
 }
