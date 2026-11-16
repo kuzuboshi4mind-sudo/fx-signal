@@ -419,7 +419,7 @@
    "entry": 159.57301,
    "sl": 159.39381065723114,
    "tp": 159.93140868553775,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5521,9 +5521,9 @@
  "lastEvalT": 1794826800000,
  "reportDay": "2026-11-16",
  "version": 1,
- "lastRun": 1794831720393,
+ "lastRun": 1794832620570,
  "lastBarT": 1794830400000,
- "price": 159.46854,
+ "price": 159.45076,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5612,7 +5612,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1915,
+  "events": 1916,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5731,22 +5731,10 @@
  "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 106329.01883997084,
+  "balance": 105253.82278335764,
   "startT": 1791916832223,
-  "positions": [
-   {
-    "key": "ema_cross_dn|long|3|1",
-    "dir": "long",
-    "pattern": "ema_cross_dn",
-    "name": "デッドクロス(EMA20/50)（逆向き）",
-    "units": 3000,
-    "entry": 159.57801,
-    "sl": 159.39881065723114,
-    "tp": 160.1156080283066,
-    "barT": 1794823200000,
-    "openT": 1794823620975,
-    "deadline": 1794910020975
-   },
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|long|2|1",
     "dir": "long",
@@ -5758,10 +5746,29 @@
     "tp": 159.93640868553774,
     "barT": 1794823200000,
     "openT": 1794823620975,
-    "deadline": 1794910020975
-   }
-  ],
-  "trades": [
+    "deadline": 1794910020975,
+    "exit": 159.39881065723114,
+    "closeT": 1794830400000,
+    "reason": "sl",
+    "pnl": -537.5980283066042
+   },
+   {
+    "key": "ema_cross_dn|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 159.57801,
+    "sl": 159.39881065723114,
+    "tp": 160.1156080283066,
+    "barT": 1794823200000,
+    "openT": 1794823620975,
+    "deadline": 1794910020975,
+    "exit": 159.39881065723114,
+    "closeT": 1794830400000,
+    "reason": "sl",
+    "pnl": -537.5980283066042
+   },
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -6582,11 +6589,11 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105672.19883997075
+  "equity": 105253.82278335764
  },
  "skipReview": {
-  "n": 258,
-  "wouldLose": 190,
+  "n": 259,
+  "wouldLose": 191,
   "wouldWin": 68
  },
  "latest": {

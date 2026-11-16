@@ -494,7 +494,7 @@
    "entry": 107.83694,
    "sl": 107.6434359699968,
    "tp": 108.22394806000639,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -506,7 +506,7 @@
    "entry": 107.83694,
    "sl": 107.6434359699968,
    "tp": 108.22394806000639,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -538,7 +538,7 @@
    "entry": 107.84236,
    "sl": 107.64566597703771,
    "tp": 108.23574804592458,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -550,7 +550,7 @@
    "entry": 107.80109,
    "sl": 107.60312947632777,
    "tp": 108.19701104734449,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6214,16 +6214,16 @@
  },
  "reportDay": "2026-11-16",
  "skipReview": {
-  "n": 273,
-  "wouldLose": 185,
+  "n": 275,
+  "wouldLose": 187,
   "wouldWin": 88
  },
  "version": 1,
- "lastRun": 1794831722128,
+ "lastRun": 1794832622590,
  "lastBarT": 1794830400000,
- "price": 107.74877,
- "equity": 102577.97636790288,
- "unreal": 1218.900000000076,
+ "price": 107.68086,
+ "equity": 103257.07636790286,
+ "unreal": 1898.000000000053,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -6310,7 +6310,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1903,
+  "events": 1907,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -6329,20 +6329,20 @@
     "avgR": 0.4152393864421562
    },
    {
-    "name": "陽の包み足",
-    "dir": "long",
-    "key": "against|trend",
-    "n": 46,
-    "winRate": 0.391304347826087,
-    "avgR": 0.28397883981375727
-   },
-   {
     "name": "ボリバン上抜けブレイク",
     "dir": "long",
     "key": "with|range",
     "n": 57,
     "winRate": 0.40350877192982454,
     "avgR": 0.26258211627091077
+   },
+   {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 48,
+    "winRate": 0.375,
+    "avgR": 0.22983897838818482
    },
    {
     "name": "20本安値ブレイク",
@@ -6379,19 +6379,19 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 10,
+   "wins": 1,
+   "recentLosses": 5,
+   "streak": 5,
+   "suspended": true
+  },
   "donchian_dn": {
    "n": 9,
    "wins": 5,
    "recentLosses": 3,
    "streak": 1,
    "suspended": false
-  },
-  "engulf_up": {
-   "n": 8,
-   "wins": 1,
-   "recentLosses": 4,
-   "streak": 3,
-   "suspended": true
   },
   "ema_cross_up": {
    "n": 5,
@@ -6605,6 +6605,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 109144.31004039572
+  "equity": 109891.3200403957
  }
 }
