@@ -6006,11 +6006,11 @@
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794830822949,
+ "lastRun": 1794831722618,
  "lastBarT": 1794830400000,
- "price": 87.9918,
- "equity": 105547.94157073034,
- "unreal": 1173.1999999999516,
+ "price": 88.01783,
+ "equity": 105183.52157073026,
+ "unreal": 808.7799999998708,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6178,16 +6178,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6292,6 +6283,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 98660.27956403753
+  "equity": 98321.88956403745
  }
 }
