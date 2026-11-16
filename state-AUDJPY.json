@@ -6095,9 +6095,9 @@
   "wouldWin": 88
  },
  "version": 1,
- "lastRun": 1794787622025,
+ "lastRun": 1794788521656,
  "lastBarT": 1794787200000,
- "price": 108.31063,
+ "price": 108.15389,
  "equity": 101359.0763679028,
  "unreal": 0,
  "config": {
@@ -6178,7 +6178,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1897,
+  "events": 1898,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -6332,17 +6332,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
