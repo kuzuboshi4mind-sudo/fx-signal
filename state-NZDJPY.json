@@ -317,7 +317,7 @@
    "entry": 88.06458,
    "sl": 87.93280692360575,
    "tp": 88.3281261527885,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -333,7 +333,7 @@
    "entry": 88.06458,
    "sl": 87.93280692360575,
    "tp": 88.3281261527885,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6001,16 +6001,16 @@
  },
  "reportDay": "2026-11-16",
  "skipReview": {
-  "n": 291,
-  "wouldLose": 206,
+  "n": 293,
+  "wouldLose": 208,
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794835323674,
+ "lastRun": 1794836222757,
  "lastBarT": 1794834000000,
- "price": 87.99217,
- "equity": 105542.76157073029,
- "unreal": 1168.019999999899,
+ "price": 87.99561,
+ "equity": 105494.60157073032,
+ "unreal": 1119.8599999999317,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6283,6 +6283,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 98655.46956403748
+  "equity": 98610.74956403751
  }
 }
