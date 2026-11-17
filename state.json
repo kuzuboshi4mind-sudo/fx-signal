@@ -548,7 +548,7 @@
    "entry": 159.48942,
    "sl": 159.3158977257361,
    "tp": 159.83646454852777,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5618,9 +5618,9 @@
  "lastEvalT": 1794880800000,
  "reportDay": "2026-11-17",
  "version": 1,
- "lastRun": 1794884820173,
+ "lastRun": 1794885720108,
  "lastBarT": 1794884400000,
- "price": 159.35779,
+ "price": 159.35862,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5709,7 +5709,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1912,
+  "events": 1913,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5817,26 +5817,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -6700,8 +6681,8 @@
   "equity": 105253.82278335764
  },
  "skipReview": {
-  "n": 261,
-  "wouldLose": 193,
+  "n": 262,
+  "wouldLose": 194,
   "wouldWin": 68
  },
  "latest": {
