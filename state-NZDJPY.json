@@ -6145,11 +6145,11 @@
   "wouldWin": 86
  },
  "version": 1,
- "lastRun": 1794874231457,
+ "lastRun": 1794874921483,
  "lastBarT": 1794873600000,
- "price": 87.67668,
- "equity": 108023.69050815517,
- "unreal": 138.44999999982122,
+ "price": 87.66654,
+ "equity": 108175.79050815527,
+ "unreal": 290.54999999992503,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6317,17 +6317,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6448,6 +6438,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 100959.84857736058
+  "equity": 101101.80857736069
  }
 }
