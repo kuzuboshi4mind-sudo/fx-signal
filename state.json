@@ -516,7 +516,7 @@
    "entry": 159.60251,
    "sl": 159.77935862696464,
    "tp": 159.2488127460707,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5650,9 +5650,9 @@
  "lastEvalT": 1794884400000,
  "reportDay": "2026-11-17",
  "version": 1,
- "lastRun": 1794888420924,
+ "lastRun": 1794889320905,
  "lastBarT": 1794888000000,
- "price": 159.30745,
+ "price": 159.24579,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5741,7 +5741,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1911,
+  "events": 1912,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -5849,26 +5849,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -6732,9 +6713,9 @@
   "equity": 105253.82278335764
  },
  "skipReview": {
-  "n": 262,
+  "n": 263,
   "wouldLose": 194,
-  "wouldWin": 68
+  "wouldWin": 69
  },
  "latest": {
   "start": 100000,
