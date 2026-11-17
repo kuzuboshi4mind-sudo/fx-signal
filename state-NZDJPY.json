@@ -318,7 +318,7 @@
    "entry": 87.67668,
    "sl": 87.55667164769838,
    "tp": 87.91669670460324,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -365,7 +365,7 @@
    "entry": 87.73439,
    "sl": 87.60612542410914,
    "tp": 87.99091915178174,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6140,16 +6140,16 @@
  },
  "reportDay": "2026-11-17",
  "skipReview": {
-  "n": 298,
-  "wouldLose": 212,
+  "n": 300,
+  "wouldLose": 214,
   "wouldWin": 86
  },
  "version": 1,
- "lastRun": 1794881221298,
+ "lastRun": 1794882121584,
  "lastBarT": 1794880800000,
- "price": 87.64991,
- "equity": 108425.24050815516,
- "unreal": 539.9999999998073,
+ "price": 87.58622,
+ "equity": 109380.59050815528,
+ "unreal": 1495.3499999999308,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6236,7 +6236,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1907,
+  "events": 1911,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -6247,20 +6247,28 @@
     "avgR": 0.8249975514820639
    },
    {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "with|trend",
+    "n": 27,
+    "winRate": 0.4444444444444444,
+    "avgR": 0.3128942994179547
+   },
+   {
+    "name": "20本安値ブレイク",
+    "dir": "short",
+    "key": "with|trend",
+    "n": 66,
+    "winRate": 0.4090909090909091,
+    "avgR": 0.19942349833421202
+   },
+   {
     "name": "ゴールデンクロス(EMA20/50)",
     "dir": "long",
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
     "avgR": 0.19559793369839293
-   },
-   {
-    "name": "20本安値ブレイク",
-    "dir": "short",
-    "key": "with|trend",
-    "n": 65,
-    "winRate": 0.4,
-    "avgR": 0.17234045542524853
    },
    {
     "name": "20本安値ブレイク",
@@ -6438,6 +6446,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 101334.62857736058
+  "equity": 102226.28857736068
  }
 }
