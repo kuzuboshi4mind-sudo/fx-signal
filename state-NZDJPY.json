@@ -311,6 +311,22 @@
  },
  "log": [
   {
+   "t": 1794870000000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 87.67668,
+   "sl": 87.55667164769838,
+   "tp": 87.91669670460324,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794859200000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -318,7 +334,7 @@
    "entry": 87.65758,
    "sl": 87.78128067761294,
    "tp": 87.4101786447741,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -333,7 +349,7 @@
    "entry": 87.65758,
    "sl": 87.78128067761294,
    "tp": 87.4101786447741,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5650,7 +5666,7 @@
    ]
   }
  ],
- "lastEvalT": 1794859200000,
+ "lastEvalT": 1794870000000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -6124,16 +6140,16 @@
  },
  "reportDay": "2026-11-17",
  "skipReview": {
-  "n": 296,
-  "wouldLose": 210,
+  "n": 298,
+  "wouldLose": 212,
   "wouldWin": 86
  },
  "version": 1,
- "lastRun": 1794865022837,
- "lastBarT": 1794862800000,
- "price": 87.66025,
- "equity": 108270.14050815516,
- "unreal": 384.89999999981706,
+ "lastRun": 1794874231457,
+ "lastBarT": 1794873600000,
+ "price": 87.67668,
+ "equity": 108023.69050815517,
+ "unreal": 138.44999999982122,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6220,15 +6236,15 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1910,
+  "events": 1908,
   "win": [
    {
     "name": "20本高値ブレイク",
     "dir": "long",
     "key": "against|trend",
-    "n": 24,
-    "winRate": 0.6666666666666666,
-    "avgR": 0.9674894385863197
+    "n": 23,
+    "winRate": 0.6521739130434783,
+    "avgR": 0.9240951127337808
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -6236,7 +6252,7 @@
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.19559793368487396
+    "avgR": 0.19559793368378434
    },
    {
     "name": "20本安値ブレイク",
@@ -6252,7 +6268,7 @@
     "key": "against|range",
     "n": 25,
     "winRate": 0.4,
-    "avgR": 0.15348771883734522
+    "avgR": 0.15348771883734508
    },
    {
     "name": "20本高値ブレイク",
@@ -6260,7 +6276,7 @@
     "key": "with|trend",
     "n": 76,
     "winRate": 0.3815789473684211,
-    "avgR": 0.11588608058563227
+    "avgR": 0.11588608058480383
    }
   ]
  },
@@ -6301,7 +6317,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6317,7 +6343,7 @@
   "startT": 1793332321641,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-16",
+  "lastDay": "2026-11-17",
   "strategies": [
    "trend_stoch"
   ],
@@ -6422,6 +6448,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 101189.86857736058
+  "equity": 100959.84857736058
  }
 }
