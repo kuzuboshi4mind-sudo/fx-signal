@@ -515,7 +515,7 @@
    "entry": 107.17236,
    "sl": 107.0160457367037,
    "tp": 107.48498852659259,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -527,7 +527,7 @@
    "entry": 107.17236,
    "sl": 107.0160457367037,
    "tp": 107.48498852659259,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6388,14 +6388,14 @@
  },
  "reportDay": "2026-11-17",
  "skipReview": {
-  "n": 283,
-  "wouldLose": 193,
+  "n": 284,
+  "wouldLose": 194,
   "wouldWin": 90
  },
  "version": 1,
- "lastRun": 1794907322344,
+ "lastRun": 1794908222115,
  "lastBarT": 1794906000000,
- "price": 107.0312,
+ "price": 106.9997,
  "equity": 108664.32548919777,
  "unreal": 0,
  "config": {
@@ -6553,19 +6553,19 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 11,
+   "wins": 1,
+   "recentLosses": 5,
+   "streak": 6,
+   "suspended": true
+  },
   "donchian_dn": {
    "n": 11,
    "wins": 7,
    "recentLosses": 2,
    "streak": 0,
    "suspended": false
-  },
-  "engulf_up": {
-   "n": 10,
-   "wins": 1,
-   "recentLosses": 5,
-   "streak": 5,
-   "suspended": true
   },
   "ema_cross_up": {
    "n": 5,
