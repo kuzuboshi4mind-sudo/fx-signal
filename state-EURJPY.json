@@ -316,6 +316,37 @@
  },
  "log": [
   {
+   "t": 1794902400000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 174.92437,
+   "sl": 175.10700994653598,
+   "tp": 174.55909010692804,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1794902400000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 174.92437,
+   "sl": 175.10700994653598,
+   "tp": 174.55909010692804,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794870000000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -371,7 +402,7 @@
    "entry": 175.35988,
    "sl": 175.55672296772244,
    "tp": 174.96619406455517,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5745,7 +5776,7 @@
    ]
   }
  ],
- "lastEvalT": 1794898800000,
+ "lastEvalT": 1794902400000,
  "adaptive": {
   "start": 100000,
   "balance": 106331.28966342902,
@@ -6236,14 +6267,14 @@
  },
  "reportDay": "2026-11-17",
  "skipReview": {
-  "n": 304,
+  "n": 305,
   "wouldLose": 211,
-  "wouldWin": 93
+  "wouldWin": 94
  },
  "version": 1,
- "lastRun": 1794905521426,
- "lastBarT": 1794902400000,
- "price": 175.09841,
+ "lastRun": 1794906421384,
+ "lastBarT": 1794906000000,
+ "price": 174.92437,
  "equity": 120241.1136206464,
  "unreal": 0,
  "config": {
@@ -6332,7 +6363,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1809,
+  "events": 1810,
   "win": [
    {
     "name": "陽の包み足",
@@ -6340,15 +6371,15 @@
     "key": "against|range",
     "n": 31,
     "winRate": 0.5483870967741935,
-    "avgR": 0.6295324115155857
+    "avgR": 0.6295324115158046
    },
    {
     "name": "陰の包み足",
     "dir": "short",
     "key": "with|trend",
-    "n": 45,
-    "winRate": 0.4444444444444444,
-    "avgR": 0.36602325471802977
+    "n": 44,
+    "winRate": 0.45454545454545453,
+    "avgR": 0.39752275066725784
    },
    {
     "name": "ボリバン上限から回帰",
@@ -6356,7 +6387,7 @@
     "key": "against|trend",
     "n": 25,
     "winRate": 0.4,
-    "avgR": 0.3273849556765602
+    "avgR": 0.32738495567656156
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -6370,17 +6401,25 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "*",
-    "n": 136,
-    "winRate": 0.38235294117647056,
-    "avgR": 0.16162463359233348
+    "n": 135,
+    "winRate": 0.3851851851851852,
+    "avgR": 0.17037707211559533
    },
    {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 103,
-    "winRate": 0.36893203883495146,
-    "avgR": 0.09089809762212461
+    "n": 104,
+    "winRate": 0.375,
+    "avgR": 0.10911385224462752
+   },
+   {
+    "name": "20本安値ブレイク",
+    "dir": "short",
+    "key": "*",
+    "n": 126,
+    "winRate": 0.36507936507936506,
+    "avgR": 0.07959757782745108
    },
    {
     "name": "ボリバン下限から回帰",
@@ -6450,7 +6489,25 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

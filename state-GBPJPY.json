@@ -375,6 +375,36 @@
  },
  "log": [
   {
+   "t": 1794902400000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 209.78189,
+   "sl": 209.99253631604677,
+   "tp": 209.36059736790648,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1794902400000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 209.78189,
+   "sl": 209.99253631604677,
+   "tp": 209.36059736790648,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1794873600000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -382,7 +412,7 @@
    "entry": 210.28838,
    "sl": 210.50326161059417,
    "tp": 209.85861677881167,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -5493,7 +5523,7 @@
    ]
   }
  ],
- "lastEvalT": 1794898800000,
+ "lastEvalT": 1794902400000,
  "adaptive": {
   "start": 100000,
   "balance": 92123.13189066605,
@@ -6414,11 +6444,11 @@
   "wouldWin": 85
  },
  "version": 1,
- "lastRun": 1794905521918,
- "lastBarT": 1794902400000,
- "price": 209.94593,
- "equity": 104524.9687088169,
- "unreal": 1892.6400000000285,
+ "lastRun": 1794906421953,
+ "lastBarT": 1794906000000,
+ "price": 209.78189,
+ "equity": 105837.2887088169,
+ "unreal": 3204.9600000000282,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -6513,7 +6543,15 @@
     "key": "against|range",
     "n": 33,
     "winRate": 0.5454545454545454,
-    "avgR": 0.6485850055189084
+    "avgR": 0.6485850055191454
+   },
+   {
+    "name": "陰の包み足",
+    "dir": "short",
+    "key": "with|trend",
+    "n": 33,
+    "winRate": 0.48484848484848486,
+    "avgR": 0.4451051702212128
    },
    {
     "name": "20本高値ブレイク",
@@ -6521,7 +6559,7 @@
     "key": "against|range",
     "n": 30,
     "winRate": 0.4666666666666667,
-    "avgR": 0.3768035279165398
+    "avgR": 0.3768035279168726
    },
    {
     "name": "RSI買われすぎ反落",
@@ -6542,18 +6580,18 @@
    {
     "name": "陰の包み足",
     "dir": "short",
-    "key": "with|trend",
-    "n": 32,
-    "winRate": 0.4375,
-    "avgR": 0.3034391633335751
+    "key": "*",
+    "n": 128,
+    "winRate": 0.421875,
+    "avgR": 0.25724075178459793
    },
    {
-    "name": "陰の包み足",
+    "name": "RSI買われすぎ反落",
     "dir": "short",
     "key": "*",
-    "n": 127,
-    "winRate": 0.4094488188976378,
-    "avgR": 0.22006613258112495
+    "n": 48,
+    "winRate": 0.3958333333333333,
+    "avgR": 0.18134873266064488
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -6561,24 +6599,16 @@
     "key": "*",
     "n": 99,
     "winRate": 0.3838383838383838,
-    "avgR": 0.14665714880556366
-   },
-   {
-    "name": "RSI買われすぎ反落",
-    "dir": "short",
-    "key": "*",
-    "n": 49,
-    "winRate": 0.3877551020408163,
-    "avgR": 0.1567475361831134
+    "avgR": 0.146657148806524
    }
   ]
  },
  "review": {
   "engulf_dn": {
-   "n": 4,
-   "wins": 1,
+   "n": 5,
+   "wins": 2,
    "recentLosses": 3,
-   "streak": 2,
+   "streak": 0,
    "suspended": false
   },
   "engulf_up": {
@@ -6617,7 +6647,24 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6786,6 +6833,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 97570.18310210516
+  "equity": 98882.50310210517
  }
 }
