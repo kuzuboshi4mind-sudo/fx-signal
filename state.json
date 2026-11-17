@@ -396,6 +396,38 @@
  },
  "log": [
   {
+   "t": 1794880800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 159.35779,
+   "sl": 159.51223047333406,
+   "tp": 159.04890905333187,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1794880800000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 159.35779,
+   "sl": 159.51223047333406,
+   "tp": 159.04890905333187,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794877200000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -403,7 +435,7 @@
    "entry": 159.52461,
    "sl": 159.36772487487102,
    "tp": 159.83838025025798,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -5583,12 +5615,12 @@
    ]
   }
  ],
- "lastEvalT": 1794877200000,
+ "lastEvalT": 1794880800000,
  "reportDay": "2026-11-17",
  "version": 1,
- "lastRun": 1794883920179,
- "lastBarT": 1794880800000,
- "price": 159.45392,
+ "lastRun": 1794884820173,
+ "lastBarT": 1794884400000,
+ "price": 159.35779,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -5685,7 +5717,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.5652173913043478,
-    "avgR": 0.7717859468667017
+    "avgR": 0.77178594686675
    },
    {
     "name": "MACD買いクロス",
@@ -5693,7 +5725,7 @@
     "key": "against|trend",
     "n": 19,
     "winRate": 0.42105263157894735,
-    "avgR": 0.38924937414017363
+    "avgR": 0.38924937414034655
    },
    {
     "name": "上昇トレンドの押し目",
@@ -5701,7 +5733,7 @@
     "key": "with|range",
     "n": 222,
     "winRate": 0.36486486486486486,
-    "avgR": 0.17854797503647118
+    "avgR": 0.1785479750364593
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -5709,7 +5741,7 @@
     "key": "*",
     "n": 36,
     "winRate": 0.3888888888888889,
-    "avgR": 0.18543309071221453
+    "avgR": 0.18543309071225958
    }
   ]
  },
@@ -5785,7 +5817,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -6649,8 +6700,8 @@
   "equity": 105253.82278335764
  },
  "skipReview": {
-  "n": 260,
-  "wouldLose": 192,
+  "n": 261,
+  "wouldLose": 193,
   "wouldWin": 68
  },
  "latest": {
