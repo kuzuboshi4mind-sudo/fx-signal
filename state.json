@@ -5729,9 +5729,9 @@
  "lastEvalT": 1794913200000,
  "reportDay": "2026-11-17",
  "version": 1,
- "lastRun": 1794917220481,
+ "lastRun": 1794918120405,
  "lastBarT": 1794916800000,
- "price": 159.24039,
+ "price": 159.27795,
  "equity": 102347.08696318482,
  "unreal": 0,
  "config": {
@@ -6806,9 +6806,10 @@
  },
  "latest": {
   "start": 100000,
-  "balance": 101249.67949091396,
+  "balance": 99444.4932044153,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -6820,10 +6821,12 @@
     "tp": 141.80545965239406,
     "barT": 1794906000000,
     "openT": 1794906420499,
-    "deadline": 1794935220499
-   }
-  ],
-  "trades": [
+    "deadline": 1794935220499,
+    "exit": 159.2555937552141,
+    "closeT": 1794916800000,
+    "reason": "sl",
+    "pnl": -1805.1862864986674
+   },
    {
     "key": "vol_breakout",
     "dir": "long",
@@ -6998,7 +7001,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 99550.91949091411
+  "equity": 99444.4932044153
  },
  "newsfree": {
   "start": 100000,

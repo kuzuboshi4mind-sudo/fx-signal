@@ -92,7 +92,8 @@
    ]
   },
   "vol": {
-   "open": [
+   "open": [],
+   "closed": [
     {
      "symbol": "USD/JPY",
      "dir": "short",
@@ -108,10 +109,13 @@
       "ask": 158.998,
       "spread": 0.8,
       "gap": -0.8
-     }
+     },
+     "exit": 159.2555937552141,
+     "closeT": 1794916800000,
+     "reason": "sl",
+     "r": -1
     }
-   ],
-   "closed": []
+   ]
   }
  }
 }
