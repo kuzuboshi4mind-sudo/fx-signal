@@ -531,7 +531,7 @@
    "entry": 107.27661,
    "sl": 107.4512873745456,
    "tp": 106.92725525090883,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6492,14 +6492,14 @@
  },
  "reportDay": "2026-11-18",
  "skipReview": {
-  "n": 285,
-  "wouldLose": 195,
+  "n": 286,
+  "wouldLose": 196,
   "wouldWin": 90
  },
  "version": 1,
- "lastRun": 1794956822633,
+ "lastRun": 1794959790206,
  "lastBarT": 1794956400000,
- "price": 107.43349,
+ "price": 107.52986,
  "equity": 106625.10729549933,
  "unreal": 0,
  "config": {
@@ -6588,7 +6588,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1902,
+  "events": 1906,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -6623,20 +6623,20 @@
     "avgR": 0.2014410962079022
    },
    {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 49,
+    "winRate": 0.3673469387755102,
+    "avgR": 0.20435478639385046
+   },
+   {
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "*",
     "n": 171,
     "winRate": 0.391812865497076,
     "avgR": 0.1612176525191611
-   },
-   {
-    "name": "陽の包み足",
-    "dir": "long",
-    "key": "against|trend",
-    "n": 48,
-    "winRate": 0.3541666666666667,
-    "avgR": 0.16732321443400278
    },
    {
     "name": "下降トレンドの戻り",
