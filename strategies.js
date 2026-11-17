@@ -383,6 +383,23 @@
         if (b.h > x.hh20[i] && upWick >= r * 2 / 3 && b.c < b.h - r * 2 / 3) return 'short';
         return null;
       } },
+    // 2026-11-17 追加（火曜リサーチ第9弾）：Osler（NY連銀 2000/2003）「利確注文はキリ番に集まり、そこで値動きが止まりやすい」
+    { id: 'rn_fade1', jpyOnly: true, name: 'キリ番（1円）手前の反落', source: 'C.Osler「Support for Resistance」(NY連銀 2000)・「Currency Orders and Exchange Rate Dynamics」(Journal of Finance 2003)：利確注文が1円刻みに集まり、上昇はその手前で止まりやすい。直近24本で上げてきて1円刻みの手前5銭以内で終えたら売り（下げは逆）',
+      exit: { type: 'time', bars: 4, sl: 1 },
+      signal: (c, d, x, i) => {
+        const q = c[i].c, up = Math.ceil(q) - q, dn = q - Math.floor(q);
+        if (up > 0 && up <= 0.05 && q > c[i - 24].c) return 'short';
+        if (dn > 0 && dn <= 0.05 && q < c[i - 24].c) return 'long';
+        return null;
+      } },
+    { id: 'rn_fade5', jpyOnly: true, name: 'キリ番（5円）手前の反落', source: '同上。大きな節目（5円刻み：150・155・160円など）の手前20銭以内まで上げてきたら売り（下げは逆）。大きな節目ほど注文が厚いという考え',
+      exit: { type: 'time', bars: 8, sl: 1 },
+      signal: (c, d, x, i) => {
+        const q = c[i].c, up = Math.ceil(q / 5) * 5 - q, dn = q - Math.floor(q / 5) * 5;
+        if (up > 0 && up <= 0.2 && q > c[i - 24].c && c[i - 1].c < q) return 'short';
+        if (dn > 0 && dn <= 0.2 && q < c[i - 24].c && c[i - 1].c > q) return 'long';
+        return null;
+      } },
   ];
 
   // 月の最後の足か（次の足が別の月）。最後の足は判定しない

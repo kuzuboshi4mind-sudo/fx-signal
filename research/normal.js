@@ -45,7 +45,15 @@ const VARIANTS = {
   with24: { tp: 2, sl: 1, maxBars: 24, minER: 0, with24: true }, // 直近24時間の値動きと同じ向きだけ
   evskip: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip' }, // 重要発表の前後2時間は入らない
   evflat: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'flat' }, // 上に加え、保有中に発表が来るなら1時間前に手じまう
+  // 2026-11-17：キリ番の手前では入らない（Osler 2000/2003：利確注文はキリ番に集まり、そこで値動きが止まりやすい）。発表停止と組み合わせて比べる
+  ev_rn5: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', rn: { step: 5, dist: 0.3 } }, // 5円刻み（150・155・160円）の手前0.3円以内へ向かう取引は見送る
+  ev_rn1: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', rn: { step: 1, dist: 0.1 } }, // 1円刻みの手前0.1円以内へ向かう取引は見送る
 };
+// 入る向きの先、dist 以内にキリ番（step 刻み）があるか
+function nearRound(price, dir, rn) {
+  const next = dir === 'long' ? Math.ceil(price / rn.step) * rn.step : Math.floor(price / rn.step) * rn.step;
+  return Math.abs(next - price) <= rn.dist && next !== price;
+}
 
 function run(c, symbol) {
   const d = E.computeIndicators(c), er = er24(d.close), lastT = c[c.length - 1].t, start = lastT - 3 * YEAR;
@@ -68,6 +76,7 @@ function run(c, symbol) {
           if (!best || st.all.shrunkR > best.st.all.shrunkR) best = { p, st };
         }
         if (!best) continue;
+        if (v.rn && nearRound(c[i].c, best.p.dir, v.rn)) continue;
         if (v.ev && EV.nearEvent(events, c[i + 1] ? c[i + 1].t : c[i].t)) continue;
         const cut = v.ev === 'flat' ? EV.barsUntilEvent(events, c, i, o.maxBars) : null;
         const r = E.simulate(c, d, i, best.p.dir, cut ? { ...o, maxBars: Math.min(o.maxBars, cut) } : o);
