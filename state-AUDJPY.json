@@ -595,7 +595,7 @@
    "entry": 107.29134,
    "sl": 107.12586621120192,
    "tp": 107.62228757759618,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -607,7 +607,7 @@
    "entry": 107.29134,
    "sl": 107.12586621120192,
    "tp": 107.62228757759618,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -623,7 +623,7 @@
    "entry": 107.29134,
    "sl": 107.12586621120192,
    "tp": 107.62228757759618,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6540,14 +6540,14 @@
  },
  "reportDay": "2026-11-18",
  "skipReview": {
-  "n": 288,
-  "wouldLose": 197,
+  "n": 290,
+  "wouldLose": 199,
   "wouldWin": 91
  },
  "version": 1,
- "lastRun": 1794969421738,
+ "lastRun": 1794970321591,
  "lastBarT": 1794967200000,
- "price": 107.23078,
+ "price": 107.11376,
  "equity": 106625.10729549933,
  "unreal": 0,
  "config": {
@@ -6636,7 +6636,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1907,
+  "events": 1908,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -6697,19 +6697,19 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 12,
+   "wins": 1,
+   "recentLosses": 5,
+   "streak": 7,
+   "suspended": true
+  },
   "donchian_dn": {
    "n": 12,
    "wins": 7,
    "recentLosses": 2,
    "streak": 1,
    "suspended": false
-  },
-  "engulf_up": {
-   "n": 11,
-   "wins": 1,
-   "recentLosses": 5,
-   "streak": 6,
-   "suspended": true
   },
   "ema_cross_up": {
    "n": 5,
