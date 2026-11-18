@@ -412,6 +412,22 @@
  },
  "log": [
   {
+   "t": 1795021200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 159.27615,
+   "sl": 159.1244918510166,
+   "tp": 159.57946629796683,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795014000000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -5850,12 +5866,12 @@
    ]
   }
  ],
- "lastEvalT": 1795017600000,
+ "lastEvalT": 1795021200000,
  "reportDay": "2026-11-19",
  "version": 1,
- "lastRun": 1795024320177,
- "lastBarT": 1795021200000,
- "price": 159.29681,
+ "lastRun": 1795025220256,
+ "lastBarT": 1795024800000,
+ "price": 159.27615,
  "equity": 100326.83101708765,
  "unreal": 0,
  "config": {
@@ -5952,7 +5968,7 @@
     "key": "against|range",
     "n": 23,
     "winRate": 0.5652173913043478,
-    "avgR": 0.7717859468756622
+    "avgR": 0.7717859468766255
    },
    {
     "name": "ボリバン下限から回帰",
@@ -5968,7 +5984,7 @@
     "key": "*",
     "n": 36,
     "winRate": 0.3888888888888889,
-    "avgR": 0.1854330907205506
+    "avgR": 0.18543309072144687
    }
   ]
  },
@@ -6044,7 +6060,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
