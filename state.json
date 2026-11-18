@@ -5853,9 +5853,9 @@
  "lastEvalT": 1795014000000,
  "reportDay": "2026-11-19",
  "version": 1,
- "lastRun": 1795019566669,
+ "lastRun": 1795019820641,
  "lastBarT": 1795017600000,
- "price": 159.26416,
+ "price": 159.30184,
  "equity": 100326.83101708765,
  "unreal": 0,
  "config": {
@@ -6044,17 +6044,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
