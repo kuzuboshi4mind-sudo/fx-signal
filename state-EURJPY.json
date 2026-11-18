@@ -6601,9 +6601,9 @@
   "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1794996421096,
+ "lastRun": 1794997321224,
  "lastBarT": 1794996000000,
- "price": 174.79888,
+ "price": 174.72405,
  "equity": 129171.91895405155,
  "unreal": 0,
  "config": {
@@ -6818,26 +6818,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
