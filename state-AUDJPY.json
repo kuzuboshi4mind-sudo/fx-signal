@@ -524,6 +524,22 @@
  },
  "log": [
   {
+   "t": 1794963600000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 107.23957,
+   "sl": 107.41509554751488,
+   "tp": 106.88851890497024,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1794960000000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -531,7 +547,7 @@
    "entry": 107.49685,
    "sl": 107.66389982040064,
    "tp": 107.16275035919871,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -547,7 +563,7 @@
    "entry": 107.46789,
    "sl": 107.30371557803008,
    "tp": 107.79623884393985,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6169,7 +6185,7 @@
    ]
   }
  ],
- "lastEvalT": 1794960000000,
+ "lastEvalT": 1794963600000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -6524,14 +6540,14 @@
  },
  "reportDay": "2026-11-18",
  "skipReview": {
-  "n": 286,
-  "wouldLose": 196,
-  "wouldWin": 90
+  "n": 288,
+  "wouldLose": 197,
+  "wouldWin": 91
  },
  "version": 1,
- "lastRun": 1794966722009,
- "lastBarT": 1794963600000,
- "price": 107.33565,
+ "lastRun": 1794967621747,
+ "lastBarT": 1794967200000,
+ "price": 107.23957,
  "equity": 106625.10729549933,
  "unreal": 0,
  "config": {
@@ -6628,7 +6644,7 @@
     "key": "against|range",
     "n": 22,
     "winRate": 0.5454545454545454,
-    "avgR": 0.6112007710584089
+    "avgR": 0.6112007710584046
    },
    {
     "name": "20本安値ブレイク",
@@ -6636,7 +6652,7 @@
     "key": "against|range",
     "n": 25,
     "winRate": 0.48,
-    "avgR": 0.4152393864420974
+    "avgR": 0.41523938644209424
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -6652,7 +6668,7 @@
     "key": "with|trend",
     "n": 82,
     "winRate": 0.4024390243902439,
-    "avgR": 0.20144109620790193
+    "avgR": 0.20144109620790188
    },
    {
     "name": "陽の包み足",
@@ -6660,7 +6676,7 @@
     "key": "against|trend",
     "n": 49,
     "winRate": 0.3673469387755102,
-    "avgR": 0.20435478692500775
+    "avgR": 0.20435478694715228
    },
    {
     "name": "20本安値ブレイク",
@@ -6668,7 +6684,7 @@
     "key": "*",
     "n": 171,
     "winRate": 0.391812865497076,
-    "avgR": 0.16121765251914985
+    "avgR": 0.1612176525191494
    },
    {
     "name": "下降トレンドの戻り",
@@ -6766,7 +6782,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
