@@ -423,6 +423,21 @@
  },
  "log": [
   {
+   "t": 1795064400000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 159.55473,
+   "sl": 159.6879277076872,
+   "tp": 159.28833458462557,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795060800000,
    "pattern": "ema_cross_up",
    "name": "ゴールデンクロス(EMA20/50)",
@@ -5969,14 +5984,14 @@
    ]
   }
  ],
- "lastEvalT": 1795060800000,
+ "lastEvalT": 1795064400000,
  "reportDay": "2026-11-19",
  "version": 1,
- "lastRun": 1795067520362,
- "lastBarT": 1795064400000,
- "price": 159.51509,
- "equity": 99258.35101708751,
- "unreal": -1068.480000000136,
+ "lastRun": 1795068420564,
+ "lastBarT": 1795068000000,
+ "price": 159.55473,
+ "equity": 99813.31101708779,
+ "unreal": -513.5199999998576,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6062,7 +6077,7 @@
   }
  },
  "learned": {
-  "bars": 3560,
+  "bars": 3561,
   "events": 1914,
   "win": [
    {
@@ -6171,7 +6186,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7337,6 +7361,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 100508.51588094122
+  "equity": 101063.4758809415
  }
 }
