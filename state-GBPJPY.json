@@ -6,7 +6,18 @@
   "balance": 103462.20080538634,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "units": 7000,
+   "entry": 210.42642,
+   "sl": 210.6898353062732,
+   "tp": 209.92958938745355,
+   "barT": 1795089600000,
+   "openT": 1795092909355,
+   "deadline": 1795179309355
+  },
   "trades": [
    {
     "dir": "short",
@@ -444,6 +455,34 @@
  },
  "log": [
   {
+   "t": 1795086000000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 210.43642,
+   "sl": 210.6898353062732,
+   "tp": 209.92958938745355,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795086000000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 210.43642,
+   "sl": 210.6898353062732,
+   "tp": 209.92958938745355,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1795075200000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -467,7 +506,7 @@
    "entry": 210.05774,
    "sl": 209.8312409934599,
    "tp": 210.5107380130802,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -483,7 +522,7 @@
    "entry": 210.05774,
    "sl": 209.8312409934599,
    "tp": 210.5107380130802,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6036,7 +6075,7 @@
    ]
   }
  ],
- "lastEvalT": 1795078800000,
+ "lastEvalT": 1795086000000,
  "adaptive": {
   "start": 100000,
   "balance": 93128.8175660963,
@@ -7020,16 +7059,16 @@
  },
  "reportDay": "2026-11-19",
  "skipReview": {
-  "n": 301,
+  "n": 303,
   "wouldLose": 204,
-  "wouldWin": 97
+  "wouldWin": 99
  },
  "version": 1,
- "lastRun": 1795082821147,
- "lastBarT": 1795082400000,
- "price": 210.29427,
- "equity": 103462.20080538634,
- "unreal": 0,
+ "lastRun": 1795092909355,
+ "lastBarT": 1795089600000,
+ "price": 210.43642,
+ "equity": 103392.2008053864,
+ "unreal": -69.99999999993634,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7115,8 +7154,8 @@
   }
  },
  "learned": {
-  "bars": 3565,
-  "events": 1802,
+  "bars": 3567,
+  "events": 1806,
   "win": [
    {
     "name": "陽の包み足",
@@ -7244,7 +7283,23 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7271,7 +7326,18 @@
   "balance": 97228.47829209639,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "units": 7000,
+   "entry": 210.42642,
+   "sl": 210.6898353062732,
+   "tp": 209.92958938745355,
+   "barT": 1795089600000,
+   "openT": 1795092909355,
+   "deadline": 1795179309355
+  },
   "trades": [
    {
     "dir": "short",
@@ -7482,6 +7548,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 97228.47829209639
+  "equity": 97158.47829209645
  }
 }

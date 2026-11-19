@@ -380,6 +380,22 @@
  },
  "log": [
   {
+   "t": 1795086000000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 175.83499,
+   "sl": 176.0458326505939,
+   "tp": 175.41330469881223,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795078800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -6240,7 +6256,7 @@
    ]
   }
  ],
- "lastEvalT": 1795078800000,
+ "lastEvalT": 1795086000000,
  "adaptive": {
   "start": 100000,
   "balance": 106747.8753732452,
@@ -6838,9 +6854,9 @@
   "wouldWin": 106
  },
  "version": 1,
- "lastRun": 1795082820831,
- "lastBarT": 1795082400000,
- "price": 175.81304,
+ "lastRun": 1795092908970,
+ "lastBarT": 1795089600000,
+ "price": 175.83499,
  "equity": 124261.95760050492,
  "unreal": 0,
  "config": {
@@ -6928,8 +6944,8 @@
   }
  },
  "learned": {
-  "bars": 3565,
-  "events": 1812,
+  "bars": 3567,
+  "events": 1815,
   "win": [
    {
     "name": "陽の包み足",
@@ -7072,11 +7088,11 @@
  },
  "lastSignals": [
   {
-   "name": "20本高値ブレイク",
-   "dir": "long",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
    "blocked": true,
    "reasons": [
-    "過去の負けパターン",
+    "優位性なし",
     "勝率が基準未満"
    ]
   }
