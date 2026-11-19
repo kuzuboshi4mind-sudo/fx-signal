@@ -6055,9 +6055,9 @@
  "lastEvalT": 1795096800000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795102621023,
+ "lastRun": 1795103520957,
  "lastBarT": 1795100400000,
- "price": 159.77087,
+ "price": 159.69227,
  "equity": 104046.36804888683,
  "unreal": 0,
  "config": {
@@ -6147,7 +6147,7 @@
  },
  "learned": {
   "bars": 3570,
-  "events": 1922,
+  "events": 1923,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -7334,7 +7334,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 99700.0032044153
+  "equity": 98992.60320441535
  },
  "newsfree": {
   "start": 100000,
