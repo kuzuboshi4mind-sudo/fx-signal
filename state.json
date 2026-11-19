@@ -6071,9 +6071,9 @@
  "lastEvalT": 1795100400000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795104420160,
+ "lastRun": 1795105320133,
  "lastBarT": 1795104000000,
- "price": 159.79858,
+ "price": 159.83891,
  "equity": 104046.36804888683,
  "unreal": 0,
  "config": {
@@ -6271,17 +6271,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7151,9 +7141,10 @@
  },
  "latest": {
   "start": 100000,
-  "balance": 99444.4932044153,
+  "balance": 100312.36320441528,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "long",
@@ -7165,10 +7156,12 @@
     "tp": 173.27911908119316,
     "barT": 1795075200000,
     "openT": 1795075620497,
-    "deadline": 1795104420497
-   }
-  ],
-  "trades": [
+    "deadline": 1795104420497,
+    "exit": 159.83891,
+    "closeT": 1795105320133,
+    "reason": "time",
+    "pnl": 867.8699999999822
+   },
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -7360,7 +7353,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 99949.39320441517
+  "equity": 100312.36320441528
  },
  "newsfree": {
   "start": 100000,
