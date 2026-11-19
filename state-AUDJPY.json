@@ -547,7 +547,7 @@
    "entry": 106.97082,
    "sl": 107.15422617497659,
    "tp": 106.60400765004684,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -563,7 +563,7 @@
    "entry": 107.05636,
    "sl": 106.86638319351827,
    "tp": 107.43631361296343,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -6661,14 +6661,14 @@
  },
  "reportDay": "2026-11-19",
  "skipReview": {
-  "n": 296,
-  "wouldLose": 204,
+  "n": 297,
+  "wouldLose": 205,
   "wouldWin": 92
  },
  "version": 1,
- "lastRun": 1795047721384,
+ "lastRun": 1795048622039,
  "lastBarT": 1795046400000,
- "price": 107.10734,
+ "price": 106.68965,
  "equity": 106625.10729549933,
  "unreal": 0,
  "config": {
@@ -6757,7 +6757,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1907,
+  "events": 1911,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -6792,20 +6792,20 @@
     "avgR": 0.20144109620790132
    },
    {
-    "name": "陽の包み足",
-    "dir": "long",
-    "key": "against|trend",
-    "n": 48,
-    "winRate": 0.375,
-    "avgR": 0.1884483649772426
-   },
-   {
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "*",
     "n": 171,
     "winRate": 0.391812865497076,
     "avgR": 0.1612176525191302
+   },
+   {
+    "name": "陽の包み足",
+    "dir": "long",
+    "key": "against|trend",
+    "n": 49,
+    "winRate": 0.3673469387755102,
+    "avgR": 0.16387204321528429
    },
    {
     "name": "下降トレンドの戻り",
@@ -6819,10 +6819,10 @@
  },
  "review": {
   "engulf_up": {
-   "n": 13,
+   "n": 14,
    "wins": 1,
    "recentLosses": 5,
-   "streak": 8,
+   "streak": 9,
    "suspended": true
   },
   "donchian_dn": {
