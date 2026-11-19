@@ -6862,11 +6862,11 @@
   "wouldWin": 96
  },
  "version": 1,
- "lastRun": 1795046821725,
+ "lastRun": 1795047721078,
  "lastBarT": 1795046400000,
- "price": 209.55772,
- "equity": 106677.61320605312,
- "unreal": -953.6799999998493,
+ "price": 209.55437,
+ "equity": 106704.413206053,
+ "unreal": -926.8799999999828,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7081,17 +7081,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7308,6 +7298,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 100071.05991285373
+  "equity": 100094.50991285361
  }
 }
