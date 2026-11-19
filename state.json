@@ -423,6 +423,38 @@
  },
  "log": [
   {
+   "t": 1795071600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 159.73748,
+   "sl": 159.60211360918808,
+   "tp": 160.00821278162388,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795071600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 159.73748,
+   "sl": 159.60211360918808,
+   "tp": 160.00821278162388,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795064400000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -5984,14 +6016,14 @@
    ]
   }
  ],
- "lastEvalT": 1795068000000,
+ "lastEvalT": 1795071600000,
  "reportDay": "2026-11-19",
  "version": 1,
- "lastRun": 1795074720077,
- "lastBarT": 1795071600000,
- "price": 159.72402,
- "equity": 102183.37101708764,
- "unreal": 1856.5399999999954,
+ "lastRun": 1795075620497,
+ "lastBarT": 1795075200000,
+ "price": 159.73748,
+ "equity": 102371.81101708778,
+ "unreal": 2044.9800000001233,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6077,7 +6109,7 @@
   }
  },
  "learned": {
-  "bars": 3562,
+  "bars": 3563,
   "events": 1916,
   "win": [
    {
@@ -6186,7 +6218,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7058,7 +7109,21 @@
   "start": 100000,
   "balance": 99444.4932044153,
   "startT": 1792033735611,
-  "positions": [],
+  "positions": [
+   {
+    "key": "vol_breakout",
+    "dir": "long",
+    "pattern": "vol_breakout",
+    "name": "ボラティリティ・ブレイクアウト",
+    "units": 9000,
+    "entry": 159.74248,
+    "sl": 159.5394304137821,
+    "tp": 173.27911908119316,
+    "barT": 1795075200000,
+    "openT": 1795075620497,
+    "deadline": 1795104420497
+   }
+  ],
   "trades": [
    {
     "key": "vol_breakout",
@@ -7251,7 +7316,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 99444.4932044153
+  "equity": 99399.49320441534
  },
  "newsfree": {
   "start": 100000,
@@ -7352,6 +7417,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103433.53588094136
+  "equity": 103621.97588094149
  }
 }
