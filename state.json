@@ -6,7 +6,18 @@
   "balance": 100326.83101708765,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "units": 14000,
+   "entry": 159.59141,
+   "sl": 159.45106939172146,
+   "tp": 159.85709121655708,
+   "barT": 1795064400000,
+   "openT": 1795064821028,
+   "deadline": 1795151221028
+  },
   "trades": [
    {
     "dir": "long",
@@ -411,6 +422,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1795060800000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 159.58641,
+   "sl": 159.45106939172146,
+   "tp": 159.85709121655708,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1795057200000,
    "pattern": "donchian_up",
@@ -5946,14 +5969,14 @@
    ]
   }
  ],
- "lastEvalT": 1795057200000,
+ "lastEvalT": 1795060800000,
  "reportDay": "2026-11-19",
  "version": 1,
- "lastRun": 1795063920461,
- "lastBarT": 1795060800000,
- "price": 159.5795,
- "equity": 100326.83101708765,
- "unreal": 0,
+ "lastRun": 1795064821028,
+ "lastBarT": 1795064400000,
+ "price": 159.58641,
+ "equity": 100256.83101708771,
+ "unreal": -69.99999999993634,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6039,7 +6062,7 @@
   }
  },
  "learned": {
-  "bars": 3559,
+  "bars": 3560,
   "events": 1914,
   "win": [
    {
@@ -6148,7 +6171,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7220,7 +7250,18 @@
   "balance": 101576.99588094137,
   "riskPct": 2,
   "startT": 1793840366022,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "units": 14000,
+   "entry": 159.59141,
+   "sl": 159.45106939172146,
+   "tp": 159.85709121655708,
+   "barT": 1795064400000,
+   "openT": 1795064821028,
+   "deadline": 1795151221028
+  },
   "trades": [
    {
     "dir": "long",
@@ -7303,6 +7344,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 101576.99588094137
+  "equity": 101506.99588094142
  }
 }
