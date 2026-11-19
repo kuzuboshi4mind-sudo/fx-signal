@@ -505,7 +505,7 @@
    "entry": 159.50964,
    "sl": 159.3706210105172,
    "tp": 159.78767797896558,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -521,7 +521,7 @@
    "entry": 159.50964,
    "sl": 159.3706210105172,
    "tp": 159.78767797896558,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6019,11 +6019,11 @@
  "lastEvalT": 1795071600000,
  "reportDay": "2026-11-19",
  "version": 1,
- "lastRun": 1795075620497,
+ "lastRun": 1795076520517,
  "lastBarT": 1795075200000,
- "price": 159.73748,
- "equity": 102371.81101708778,
- "unreal": 2044.9800000001233,
+ "price": 159.78389,
+ "equity": 103021.5510170879,
+ "unreal": 2694.7200000002454,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6218,26 +6218,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7101,9 +7082,9 @@
   "equity": 105253.82278335764
  },
  "skipReview": {
-  "n": 285,
+  "n": 287,
   "wouldLose": 204,
-  "wouldWin": 81
+  "wouldWin": 83
  },
  "latest": {
   "start": 100000,
@@ -7316,7 +7297,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 99399.49320441534
+  "equity": 99817.18320441541
  },
  "newsfree": {
   "start": 100000,
@@ -7417,6 +7398,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103621.97588094149
+  "equity": 104271.71588094161
  }
 }
