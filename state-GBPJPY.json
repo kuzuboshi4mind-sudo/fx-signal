@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 103462.20080538634,
+  "balance": 106940.01509321156,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "short",
-   "pattern": "rsi_fall",
-   "name": "RSI買われすぎ反落",
-   "units": 7000,
-   "entry": 210.42642,
-   "sl": 210.6898353062732,
-   "tp": 209.92958938745355,
-   "barT": 1795089600000,
-   "openT": 1795092909355,
-   "deadline": 1795179309355
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落",
+    "units": 7000,
+    "entry": 210.42642,
+    "sl": 210.6898353062732,
+    "tp": 209.92958938745355,
+    "barT": 1795089600000,
+    "openT": 1795092909355,
+    "deadline": 1795179309355,
+    "exit": 209.92958938745355,
+    "closeT": 1795100400000,
+    "reason": "tp",
+    "pnl": 3477.8142878252256
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -462,7 +467,7 @@
    "entry": 210.43642,
    "sl": 210.6898353062732,
    "tp": 209.92958938745355,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -478,7 +483,7 @@
    "entry": 210.43642,
    "sl": 210.6898353062732,
    "tp": 209.92958938745355,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -490,7 +495,7 @@
    "entry": 210.28422,
    "sl": 210.0603480653556,
    "tp": 210.7319638692888,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7059,16 +7064,16 @@
  },
  "reportDay": "2026-11-20",
  "skipReview": {
-  "n": 303,
-  "wouldLose": 204,
-  "wouldWin": 99
+  "n": 305,
+  "wouldLose": 205,
+  "wouldWin": 100
  },
  "version": 1,
- "lastRun": 1795100822635,
+ "lastRun": 1795101721071,
  "lastBarT": 1795100400000,
- "price": 210.10551,
- "equity": 105708.57080538632,
- "unreal": 2246.3699999999844,
+ "price": 209.75035,
+ "equity": 106940.01509321156,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7156,7 +7161,7 @@
  },
  "learned": {
   "bars": 3570,
-  "events": 1806,
+  "events": 1808,
   "win": [
    {
     "name": "陽の包み足",
@@ -7215,6 +7220,14 @@
     "avgR": 0.17672053839804786
    },
    {
+    "name": "RSI買われすぎ反落",
+    "dir": "short",
+    "key": "*",
+    "n": 48,
+    "winRate": 0.3958333333333333,
+    "avgR": 0.18148990198976303
+   },
+   {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "with|range",
@@ -7229,18 +7242,17 @@
     "n": 32,
     "winRate": 0.375,
     "avgR": 0.1631014551813215
-   },
-   {
-    "name": "RSI買われすぎ反落",
-    "dir": "short",
-    "key": "*",
-    "n": 47,
-    "winRate": 0.3829787234042553,
-    "avgR": 0.1432179947507186
    }
   ]
  },
  "review": {
+  "rsi_fall": {
+   "n": 3,
+   "wins": 2,
+   "recentLosses": 1,
+   "streak": 0,
+   "suspended": false
+  },
   "engulf_dn": {
    "n": 10,
    "wins": 4,
@@ -7259,13 +7271,6 @@
    "n": 7,
    "wins": 4,
    "recentLosses": 3,
-   "streak": 0,
-   "suspended": false
-  },
-  "rsi_fall": {
-   "n": 2,
-   "wins": 1,
-   "recentLosses": 1,
    "streak": 0,
    "suspended": false
   },
@@ -7308,22 +7313,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 97228.47829209639,
+  "balance": 100706.29257992162,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": {
-   "dir": "short",
-   "pattern": "rsi_fall",
-   "name": "RSI買われすぎ反落",
-   "units": 7000,
-   "entry": 210.42642,
-   "sl": 210.6898353062732,
-   "tp": 209.92958938745355,
-   "barT": 1795089600000,
-   "openT": 1795092909355,
-   "deadline": 1795179309355
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落",
+    "units": 7000,
+    "entry": 210.42642,
+    "sl": 210.6898353062732,
+    "tp": 209.92958938745355,
+    "barT": 1795089600000,
+    "openT": 1795092909355,
+    "deadline": 1795179309355,
+    "exit": 209.92958938745355,
+    "closeT": 1795100400000,
+    "reason": "tp",
+    "pnl": 3477.8142878252256
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -7533,6 +7543,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99474.84829209637
+  "equity": 100706.29257992162
  }
 }

@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 111715.83449847563,
+  "balance": 109495.06802647201,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "long",
-   "pattern": "ema_cross_up",
-   "name": "ゴールデンクロス(EMA20/50)",
-   "units": 14000,
-   "entry": 88.29434,
-   "sl": 88.13571382342832,
-   "tp": 88.58159235314336,
-   "barT": 1795078800000,
-   "openT": 1795079221929,
-   "deadline": 1795165621929
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 14000,
+    "entry": 88.29434,
+    "sl": 88.13571382342832,
+    "tp": 88.58159235314336,
+    "barT": 1795078800000,
+    "openT": 1795079221929,
+    "deadline": 1795165621929,
+    "exit": 88.13571382342832,
+    "closeT": 1795100400000,
+    "reason": "sl",
+    "pnl": -2220.7664720036178
+   },
    {
     "dir": "short",
     "pattern": "donchian_dn",
@@ -350,7 +355,7 @@
    "entry": 88.39448,
    "sl": 88.54131908941753,
    "tp": 88.10080182116494,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -366,7 +371,7 @@
    "entry": 88.39448,
    "sl": 88.54131908941753,
    "tp": 88.10080182116494,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -393,7 +398,7 @@
    "entry": 88.28434,
    "sl": 88.13571382342832,
    "tp": 88.58159235314336,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -405,7 +410,7 @@
    "entry": 88.28434,
    "sl": 88.13571382342832,
    "tp": 88.58159235314336,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -6186,21 +6191,26 @@
  "lastEvalT": 1795096800000,
  "adaptive": {
   "start": 100000,
-  "balance": 100420.39372700968,
+  "balance": 98463.57593243709,
   "startT": 1791967923493,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
-    "key": "ema_cross_up|long|2|1.5",
+    "key": "rsi_fall|long|2|1",
     "dir": "long",
-    "pattern": "ema_cross_up",
-    "name": "ゴールデンクロス(EMA20/50)",
-    "units": 3000,
-    "entry": 88.29434,
-    "sl": 88.07140073514248,
-    "tp": 88.59159235314337,
-    "barT": 1795078800000,
-    "openT": 1795079221929,
-    "deadline": 1795165621929
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落（逆向き）",
+    "units": 4000,
+    "entry": 88.22181,
+    "sl": 88.07376558106347,
+    "tp": 88.51789883787309,
+    "barT": 1795100400000,
+    "openT": 1795100823387,
+    "deadline": 1795187223387,
+    "exit": 88.06081,
+    "closeT": 1795101721884,
+    "reason": "sl",
+    "pnl": -644.0000000000055
    },
    {
     "key": "rsi_fall|long|3|1",
@@ -6213,23 +6223,29 @@
     "tp": 88.66594325680963,
     "barT": 1795100400000,
     "openT": 1795100823387,
-    "deadline": 1795187223387
+    "deadline": 1795187223387,
+    "exit": 88.06081,
+    "closeT": 1795101721884,
+    "reason": "sl",
+    "pnl": -644.0000000000055
    },
    {
-    "key": "rsi_fall|long|2|1",
+    "key": "ema_cross_up|long|2|1.5",
     "dir": "long",
-    "pattern": "rsi_fall",
-    "name": "RSI買われすぎ反落（逆向き）",
-    "units": 4000,
-    "entry": 88.22181,
-    "sl": 88.07376558106347,
-    "tp": 88.51789883787309,
-    "barT": 1795100400000,
-    "openT": 1795100823387,
-    "deadline": 1795187223387
-   }
-  ],
-  "trades": [
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 3000,
+    "entry": 88.29434,
+    "sl": 88.07140073514248,
+    "tp": 88.59159235314337,
+    "barT": 1795078800000,
+    "openT": 1795079221929,
+    "deadline": 1795165621929,
+    "exit": 88.07140073514248,
+    "closeT": 1795100400000,
+    "reason": "sl",
+    "pnl": -668.8177945725897
+   },
    {
     "key": "rsi_fall|long|3|1",
     "dir": "long",
@@ -6693,20 +6709,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100092.80372700962
+  "equity": 98463.57593243709
  },
  "reportDay": "2026-11-20",
  "skipReview": {
-  "n": 324,
+  "n": 326,
   "wouldLose": 231,
-  "wouldWin": 93
+  "wouldWin": 95
  },
  "version": 1,
- "lastRun": 1795100823387,
+ "lastRun": 1795101721884,
  "lastBarT": 1795100400000,
- "price": 88.21181,
- "equity": 110560.41449847555,
- "unreal": -1155.4200000000776,
+ "price": 88.06081,
+ "equity": 109495.06802647201,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6794,7 +6810,7 @@
  },
  "learned": {
   "bars": 3570,
-  "events": 1923,
+  "events": 1926,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -6840,9 +6856,9 @@
     "name": "20本高値ブレイク",
     "dir": "long",
     "key": "with|trend",
-    "n": 74,
-    "winRate": 0.3918918918918919,
-    "avgR": 0.14709129770320287
+    "n": 75,
+    "winRate": 0.38666666666666666,
+    "avgR": 0.13136051832538853
    },
    {
     "name": "20本安値ブレイク",
@@ -6864,18 +6880,25 @@
     "name": "20本高値ブレイク",
     "dir": "long",
     "key": "*",
-    "n": 212,
-    "winRate": 0.3632075471698113,
-    "avgR": 0.05311412621853092
+    "n": 213,
+    "winRate": 0.3615023474178404,
+    "avgR": 0.048016326773219174
    }
   ]
  },
  "review": {
   "donchian_up": {
-   "n": 6,
+   "n": 7,
    "wins": 1,
    "recentLosses": 5,
-   "streak": 5,
+   "streak": 6,
+   "suspended": true
+  },
+  "ema_cross_up": {
+   "n": 6,
+   "wins": 2,
+   "recentLosses": 4,
+   "streak": 3,
    "suspended": true
   },
   "bb_break_dn": {
@@ -6892,13 +6915,6 @@
    "streak": 1,
    "suspended": false
   },
-  "ema_cross_up": {
-   "n": 5,
-   "wins": 2,
-   "recentLosses": 3,
-   "streak": 2,
-   "suspended": false
-  },
   "macd_up": {
    "n": 4,
    "wins": 1,
@@ -6907,17 +6923,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6941,22 +6947,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 104405.84963499302,
+  "balance": 102343.70933956109,
   "riskPct": 2,
   "startT": 1793840367577,
-  "pos": {
-   "dir": "long",
-   "pattern": "ema_cross_up",
-   "name": "ゴールデンクロス(EMA20/50)",
-   "units": 13000,
-   "entry": 88.29434,
-   "sl": 88.13571382342832,
-   "tp": 88.58159235314336,
-   "barT": 1795078800000,
-   "openT": 1795079221929,
-   "deadline": 1795165621929
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 13000,
+    "entry": 88.29434,
+    "sl": 88.13571382342832,
+    "tp": 88.58159235314336,
+    "barT": 1795078800000,
+    "openT": 1795079221929,
+    "deadline": 1795165621929,
+    "exit": 88.13571382342832,
+    "closeT": 1795100400000,
+    "reason": "sl",
+    "pnl": -2062.140295431931
+   },
    {
     "dir": "short",
     "pattern": "donchian_dn",
@@ -7054,6 +7065,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 103332.95963499295
+  "equity": 102343.70933956109
  }
 }
