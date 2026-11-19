@@ -1,18 +1,6 @@
 {
  "open": [
   {
-   "key": "EUR/JPY|1795054020828",
-   "symbol": "EUR/JPY",
-   "dir": "short",
-   "units": 1000,
-   "tradeID": "36",
-   "price": 174.828,
-   "plannedEntry": 174.82276,
-   "sl": 175.0043378837417,
-   "tp": 174.4776042325166,
-   "openT": 1795054022441
-  },
-  {
    "key": "USD/JPY|1795064821028",
    "symbol": "USD/JPY",
    "dir": "long",
@@ -104,6 +92,22 @@
    "closeT": 1795043043265,
    "exit": 174.96,
    "pl": -211,
+   "by": "OANDA側（損切り・利食い）"
+  },
+  {
+   "key": "EUR/JPY|1795054020828",
+   "symbol": "EUR/JPY",
+   "dir": "short",
+   "units": 1000,
+   "tradeID": "36",
+   "price": 174.828,
+   "plannedEntry": 174.82276,
+   "sl": 175.0043378837417,
+   "tp": 174.4776042325166,
+   "openT": 1795054022441,
+   "closeT": 1795065723022,
+   "exit": 175.006,
+   "pl": -178,
    "by": "OANDA側（損切り・利食い）"
   }
  ],
