@@ -460,6 +460,22 @@
  },
  "log": [
   {
+   "t": 1795100400000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 209.6577,
+   "sl": 209.94776034132835,
+   "tp": 209.07757931734332,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795086000000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -6080,12 +6096,39 @@
    ]
   }
  ],
- "lastEvalT": 1795096800000,
+ "lastEvalT": 1795100400000,
  "adaptive": {
   "start": 100000,
   "balance": 93128.8175660963,
   "startT": 1791953875407,
-  "positions": [],
+  "positions": [
+   {
+    "key": "pullback_dn|long|2|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 2000,
+    "entry": 209.6677,
+    "sl": 209.37763965867165,
+    "tp": 210.24782068265668,
+    "barT": 1795104000000,
+    "openT": 1795104421346,
+    "deadline": 1795190821346
+   },
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 2000,
+    "entry": 209.6677,
+    "sl": 209.37763965867165,
+    "tp": 210.53788102398502,
+    "barT": 1795104000000,
+    "openT": 1795104421346,
+    "deadline": 1795190821346
+   }
+  ],
   "trades": [
    {
     "key": "pullback_dn|long|3|1",
@@ -7060,7 +7103,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 93128.8175660963
+  "equity": 93088.81756609635
  },
  "reportDay": "2026-11-20",
  "skipReview": {
@@ -7069,9 +7112,9 @@
   "wouldWin": 100
  },
  "version": 1,
- "lastRun": 1795103521623,
- "lastBarT": 1795100400000,
- "price": 209.51492,
+ "lastRun": 1795104421346,
+ "lastBarT": 1795104000000,
+ "price": 209.6577,
  "equity": 106940.01509321156,
  "unreal": 0,
  "config": {
@@ -7160,7 +7203,7 @@
   }
  },
  "learned": {
-  "bars": 3570,
+  "bars": 3571,
   "events": 1808,
   "win": [
    {
@@ -7289,7 +7332,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
