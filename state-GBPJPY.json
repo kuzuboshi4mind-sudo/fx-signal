@@ -490,7 +490,7 @@
    "entry": 209.55772,
    "sl": 209.34204930394878,
    "tp": 209.98906139210243,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6940,20 +6940,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 90861.15595218536
+  "equity": 90838.55595218534
  },
  "reportDay": "2026-11-19",
  "skipReview": {
-  "n": 298,
-  "wouldLose": 202,
+  "n": 299,
+  "wouldLose": 203,
   "wouldWin": 96
  },
  "version": 1,
- "lastRun": 1795054021250,
+ "lastRun": 1795054921028,
  "lastBarT": 1795053600000,
- "price": 209.42509,
- "equity": 105467.09625790617,
- "unreal": -89.99999999991815,
+ "price": 209.41944,
+ "equity": 105517.9462579062,
+ "unreal": -39.14999999989277,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7040,7 +7040,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1798,
+  "events": 1799,
   "win": [
    {
     "name": "陽の包み足",
@@ -7168,23 +7168,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7417,6 +7401,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99010.60758322514
+  "equity": 99055.80758322516
  }
 }
