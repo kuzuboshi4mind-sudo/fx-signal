@@ -327,6 +327,18 @@
  },
  "log": [
   {
+   "t": 1795078800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 88.36287,
+   "sl": 88.21004497889773,
+   "tp": 88.66852004220455,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
+  {
    "t": 1795075200000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -6124,7 +6136,7 @@
    ]
   }
  ],
- "lastEvalT": 1795075200000,
+ "lastEvalT": 1795078800000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -6608,7 +6620,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100537.27372700964
+  "equity": 100625.98372700966
  },
  "reportDay": "2026-11-19",
  "skipReview": {
@@ -6617,11 +6629,11 @@
   "wouldWin": 93
  },
  "version": 1,
- "lastRun": 1795081922221,
- "lastBarT": 1795078800000,
- "price": 88.3333,
- "equity": 112261.27449847547,
- "unreal": 545.4399999998429,
+ "lastRun": 1795082821840,
+ "lastBarT": 1795082400000,
+ "price": 88.36287,
+ "equity": 112675.25449847557,
+ "unreal": 959.4199999999375,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6707,7 +6719,7 @@
   }
  },
  "learned": {
-  "bars": 3564,
+  "bars": 3565,
   "events": 1920,
   "win": [
    {
@@ -6821,7 +6833,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6958,6 +6979,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 104912.32963499287
+  "equity": 105296.73963499296
  }
 }
