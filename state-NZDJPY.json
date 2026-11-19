@@ -6651,7 +6651,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100719.04372700966
+  "equity": 100893.22372700965
  },
  "reportDay": "2026-11-19",
  "skipReview": {
@@ -6660,11 +6660,11 @@
   "wouldWin": 93
  },
  "version": 1,
- "lastRun": 1795094521631,
+ "lastRun": 1795095421231,
  "lastBarT": 1795093200000,
- "price": 88.39389,
- "equity": 113109.53449847554,
- "unreal": 1393.6999999999102,
+ "price": 88.45195,
+ "equity": 113922.3744984755,
+ "unreal": 2206.5399999998763,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6746,7 +6746,8 @@
    "units": 1000,
    "maxAgeMin": 30,
    "maxOpen": 2,
-   "note": "段階1：最小単位の動作確認。実際に送るのは GitHub Secrets の OANDA_LIVE が yes のときだけ"
+   "note": "段階2（2026-11-19 ユーザー了承）：1回のリスク0.5%（口座の時価×0.5%÷損切り幅、レバレッジ10倍まで）。riskPct を消すと段階1（units 通貨固定）に戻る。実際に送るのは GitHub Secrets の OANDA_LIVE が yes のときだけ",
+   "riskPct": 0.5
   }
  },
  "learned": {
@@ -7001,6 +7002,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 105699.99963499294
+  "equity": 106454.77963499291
  }
 }

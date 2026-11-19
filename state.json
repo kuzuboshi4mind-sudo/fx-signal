@@ -6055,9 +6055,9 @@
  "lastEvalT": 1795089600000,
  "reportDay": "2026-11-19",
  "version": 1,
- "lastRun": 1795094520387,
+ "lastRun": 1795095420075,
  "lastBarT": 1795093200000,
- "price": 159.94276,
+ "price": 159.96402,
  "equity": 104046.36804888683,
  "unreal": 0,
  "config": {
@@ -6141,7 +6141,8 @@
    "units": 1000,
    "maxAgeMin": 30,
    "maxOpen": 2,
-   "note": "段階1：最小単位の動作確認。実際に送るのは GitHub Secrets の OANDA_LIVE が yes のときだけ"
+   "note": "段階2（2026-11-19 ユーザー了承）：1回のリスク0.5%（口座の時価×0.5%÷損切り幅、レバレッジ10倍まで）。riskPct を消すと段階1（units 通貨固定）に戻る。実際に送るのは GitHub Secrets の OANDA_LIVE が yes のときだけ",
+   "riskPct": 0.5
   }
  },
  "learned": {
@@ -7333,7 +7334,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 101247.01320441523
+  "equity": 101438.35320441534
  },
  "newsfree": {
   "start": 100000,

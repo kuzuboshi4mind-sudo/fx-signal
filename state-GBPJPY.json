@@ -7064,11 +7064,11 @@
   "wouldWin": 99
  },
  "version": 1,
- "lastRun": 1795094521062,
+ "lastRun": 1795095420674,
  "lastBarT": 1795093200000,
- "price": 210.32374,
- "equity": 104180.96080538648,
- "unreal": 718.7600000001453,
+ "price": 210.36539,
+ "equity": 103889.41080538646,
+ "unreal": 427.210000000116,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7150,7 +7150,8 @@
    "units": 1000,
    "maxAgeMin": 30,
    "maxOpen": 2,
-   "note": "段階1：最小単位の動作確認。実際に送るのは GitHub Secrets の OANDA_LIVE が yes のときだけ"
+   "note": "段階2（2026-11-19 ユーザー了承）：1回のリスク0.5%（口座の時価×0.5%÷損切り幅、レバレッジ10倍まで）。riskPct を消すと段階1（units 通貨固定）に戻る。実際に送るのは GitHub Secrets の OANDA_LIVE が yes のときだけ",
+   "riskPct": 0.5
   }
  },
  "learned": {
@@ -7532,6 +7533,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 97947.23829209653
+  "equity": 97655.68829209651
  }
 }
