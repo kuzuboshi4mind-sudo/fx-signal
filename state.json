@@ -428,6 +428,22 @@
  },
  "log": [
   {
+   "t": 1795107600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 159.79035,
+   "sl": 159.64687054675738,
+   "tp": 160.07730890648517,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795100400000,
    "pattern": "rsi_fall",
    "name": "RSI買われすぎ反落",
@@ -6068,12 +6084,12 @@
    ]
   }
  ],
- "lastEvalT": 1795104000000,
+ "lastEvalT": 1795107600000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795110720776,
- "lastBarT": 1795107600000,
- "price": 159.80084,
+ "lastRun": 1795111620795,
+ "lastBarT": 1795111200000,
+ "price": 159.79035,
  "equity": 104046.36804888683,
  "unreal": 0,
  "config": {
@@ -6162,7 +6178,7 @@
   }
  },
  "learned": {
-  "bars": 3572,
+  "bars": 3573,
   "events": 1923,
   "win": [
    {
@@ -6271,7 +6287,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
