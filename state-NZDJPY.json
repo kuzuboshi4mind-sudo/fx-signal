@@ -327,6 +327,22 @@
  },
  "log": [
   {
+   "t": 1795096800000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 88.21181,
+   "sl": 88.35985441893654,
+   "tp": 87.91572116212691,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795089600000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -6167,7 +6183,7 @@
    ]
   }
  ],
- "lastEvalT": 1795093200000,
+ "lastEvalT": 1795096800000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -6185,6 +6201,32 @@
     "barT": 1795078800000,
     "openT": 1795079221929,
     "deadline": 1795165621929
+   },
+   {
+    "key": "rsi_fall|long|3|1",
+    "dir": "long",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落（逆向き）",
+    "units": 4000,
+    "entry": 88.22181,
+    "sl": 88.07376558106347,
+    "tp": 88.66594325680963,
+    "barT": 1795100400000,
+    "openT": 1795100823387,
+    "deadline": 1795187223387
+   },
+   {
+    "key": "rsi_fall|long|2|1",
+    "dir": "long",
+    "pattern": "rsi_fall",
+    "name": "RSI買われすぎ反落（逆向き）",
+    "units": 4000,
+    "entry": 88.22181,
+    "sl": 88.07376558106347,
+    "tp": 88.51789883787309,
+    "barT": 1795100400000,
+    "openT": 1795100823387,
+    "deadline": 1795187223387
    }
   ],
   "trades": [
@@ -6651,20 +6693,20 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100261.12372700965
+  "equity": 100092.80372700962
  },
- "reportDay": "2026-11-19",
+ "reportDay": "2026-11-20",
  "skipReview": {
   "n": 324,
   "wouldLose": 231,
   "wouldWin": 93
  },
  "version": 1,
- "lastRun": 1795099921895,
- "lastBarT": 1795096800000,
- "price": 88.24125,
- "equity": 110972.57449847546,
- "unreal": -743.2600000001628,
+ "lastRun": 1795100823387,
+ "lastBarT": 1795100400000,
+ "price": 88.21181,
+ "equity": 110560.41449847555,
+ "unreal": -1155.4200000000776,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6751,7 +6793,7 @@
   }
  },
  "learned": {
-  "bars": 3569,
+  "bars": 3570,
   "events": 1923,
   "win": [
    {
@@ -6865,7 +6907,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7002,6 +7054,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 103715.67963499286
+  "equity": 103332.95963499295
  }
 }
