@@ -6608,7 +6608,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100390.39372700966
+  "equity": 100266.34372700968
  },
  "reportDay": "2026-11-19",
  "skipReview": {
@@ -6617,11 +6617,11 @@
   "wouldWin": 93
  },
  "version": 1,
- "lastRun": 1795079221929,
+ "lastRun": 1795080121557,
  "lastBarT": 1795078800000,
- "price": 88.28434,
- "equity": 111575.83449847555,
- "unreal": -140.00000000007162,
+ "price": 88.24299,
+ "equity": 110996.93449847563,
+ "unreal": -718.8999999999908,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6821,22 +6821,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6973,6 +6958,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 104275.84963499295
+  "equity": 103738.29963499303
  }
 }

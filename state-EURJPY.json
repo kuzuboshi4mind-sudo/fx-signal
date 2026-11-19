@@ -403,7 +403,7 @@
    "entry": 175.41758,
    "sl": 175.2331798636177,
    "tp": 175.78638027276457,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -418,7 +418,7 @@
    "entry": 175.41758,
    "sl": 175.2331798636177,
    "tp": 175.78638027276457,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6817,14 +6817,14 @@
  },
  "reportDay": "2026-11-19",
  "skipReview": {
-  "n": 323,
+  "n": 325,
   "wouldLose": 219,
-  "wouldWin": 104
+  "wouldWin": 106
  },
  "version": 1,
- "lastRun": 1795079220847,
+ "lastRun": 1795080120560,
  "lastBarT": 1795078800000,
- "price": 175.70092,
+ "price": 175.82064,
  "equity": 124261.95760050492,
  "unreal": 0,
  "config": {
@@ -6913,7 +6913,7 @@
  },
  "learned": {
   "bars": 3564,
-  "events": 1810,
+  "events": 1812,
   "win": [
    {
     "name": "陽の包み足",
@@ -7054,17 +7054,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
