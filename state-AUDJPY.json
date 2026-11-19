@@ -563,7 +563,7 @@
    "entry": 106.64018,
    "sl": 106.3934114567601,
    "tp": 107.1337170864798,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -579,7 +579,7 @@
    "entry": 106.64018,
    "sl": 106.3934114567601,
    "tp": 107.1337170864798,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6415,7 +6415,7 @@
    ]
   }
  ],
- "lastEvalT": 1795071600000,
+ "lastEvalT": 1795075200000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -6770,14 +6770,14 @@
  },
  "reportDay": "2026-11-19",
  "skipReview": {
-  "n": 299,
+  "n": 301,
   "wouldLose": 205,
-  "wouldWin": 94
+  "wouldWin": 96
  },
  "version": 1,
- "lastRun": 1795078321230,
- "lastBarT": 1795075200000,
- "price": 107.07659,
+ "lastRun": 1795079221530,
+ "lastBarT": 1795078800000,
+ "price": 107.25397,
  "equity": 110659.8209175773,
  "unreal": 0,
  "config": {
@@ -6865,7 +6865,7 @@
   }
  },
  "learned": {
-  "bars": 3563,
+  "bars": 3564,
   "events": 1916,
   "win": [
    {
