@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const { client } = require('./oanda.js');
-const { trader } = require('./oanda-trade.js');
+const { trader, planUnits } = require('./oanda-trade.js');
 
 async function step({ book, shadow, cfg, now, ro, tr }) {
   book.open ||= []; book.closed ||= []; book.failed ||= []; book.seen ||= [];
@@ -35,20 +35,32 @@ async function step({ book, shadow, cfg, now, ro, tr }) {
     }
   }
   // 3) 新規：試し運転が新しく入ったもの
+  // 段階2（cfg.riskPct あり）：数量＝口座の時価×リスク%×（試し運転の riskFrac）÷損切り幅。レバレッジ10倍まで、証拠金の余裕の8割まで
+  let acct = null;
+  const unitsFor = async (p) => {
+    if (!cfg.riskPct) return cfg.units;
+    acct ||= (await ro.summary()).account || {};
+    const nav = Number(acct.NAV), avail = Number(acct.marginAvailable);
+    let u = Math.floor(planUnits({ equity: nav, riskPct: cfg.riskPct, entry: p.entry, sl: p.sl }) * (p.riskFrac ?? 1));
+    if (avail > 0) u = Math.min(u, Math.floor(avail * 0.8 / (p.entry * 0.04)));
+    return Math.max(0, u);
+  };
   for (const p of S.open) {
     if (book.seen.includes(key(p))) continue;
     book.seen.push(key(p));
     if (now - p.openT > cfg.maxAgeMin * 60e3) { events.push({ type: 'skip', key: key(p), reason: '判断から時間が経ちすぎ' }); continue; }
     if (book.open.length >= cfg.maxOpen) { events.push({ type: 'skip', key: key(p), reason: '同時に持てる上限' }); continue; }
     try {
-      const r = await tr.marketOrder({ symbol: p.symbol, dir: p.dir, units: cfg.units, sl: p.sl, tp: p.tp });
+      const units = await unitsFor(p);
+      if (units < 1) { events.push({ type: 'skip', key: key(p), reason: '数量が0（証拠金不足など）' }); continue; }
+      const r = await tr.marketOrder({ symbol: p.symbol, dir: p.dir, units, sl: p.sl, tp: p.tp });
       const f = r.orderFillTransaction;
       if (!f || !f.tradeOpened) {
         const reason = (r.orderCancelTransaction && r.orderCancelTransaction.reason) || '約定せず';
         book.failed.push({ key: key(p), t: now, reason }); events.push({ type: 'fail', key: key(p), reason });
         continue;
       }
-      const L = { key: key(p), symbol: p.symbol, dir: p.dir, units: cfg.units, tradeID: f.tradeOpened.tradeID, price: Number(f.price), plannedEntry: p.entry, sl: p.sl, tp: p.tp, openT: now };
+      const L = { key: key(p), symbol: p.symbol, dir: p.dir, units, tradeID: f.tradeOpened.tradeID, price: Number(f.price), plannedEntry: p.entry, sl: p.sl, tp: p.tp, openT: now };
       book.open.push(L); events.push({ type: 'open', ...L });
     } catch (e) {
       book.failed.push({ key: key(p), t: now, reason: e.message }); events.push({ type: 'fail', key: key(p), reason: e.message });
@@ -58,8 +70,8 @@ async function step({ book, shadow, cfg, now, ro, tr }) {
 }
 
 const yen = (v) => `${v >= 0 ? '+' : '−'}${Math.abs(Math.round(v)).toLocaleString('ja-JP')}円`;
-function message(events) {
-  const L = ['【本番の注文（段階1・1,000通貨）】'];
+function message(events, label) {
+  const L = [`【本番の注文（${label}）】`];
   for (const e of events) {
     const name = `${e.symbol || ''} ${e.dir === 'long' ? '買い' : e.dir === 'short' ? '売り' : ''}`.trim();
     if (e.type === 'open') L.push(`・新規 ${name} ${e.units}通貨 約定 ${e.price}（試し運転の値段 ${e.plannedEntry.toFixed(3)}、ずれ ${((e.price - e.plannedEntry) * 100).toFixed(1)}銭）損切り ${e.sl.toFixed(3)}・利確 ${e.tp.toFixed(3)}`);
@@ -91,7 +103,7 @@ async function main() {
   const events = await step({ book, shadow, cfg, now: Date.now(), ro, tr });
   fs.writeFileSync(file, JSON.stringify(book, null, 1));
   console.log(`本番の注文：新規 ${events.filter(e => e.type === 'open').length}・決済 ${events.filter(e => e.type === 'close').length}・失敗 ${events.filter(e => e.type === 'fail').length}`);
-  if (events.length) await sendLine(message(events));
+  if (events.length) await sendLine(message(events, cfg.riskPct ? `段階2・1回のリスク${cfg.riskPct}%` : `段階1・${cfg.units}通貨`));
 }
 
 if (require.main === module) main().catch(e => { console.error('本番の注文でエラー：' + e.message); });

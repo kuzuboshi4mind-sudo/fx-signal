@@ -10,7 +10,7 @@ function fakes({ open = [], tradeInfo = {}, fill = true } = {}) {
   const calls = [];
   return {
     calls,
-    ro: { openTrades: async () => ({ trades: open.map(id => ({ id })) }), trade: async (id) => ({ trade: tradeInfo[id] || {} }) },
+    ro: { summary: async () => ({ account: { NAV: '170000', marginAvailable: '160000' } }), openTrades: async () => ({ trades: open.map(id => ({ id })) }), trade: async (id) => ({ trade: tradeInfo[id] || {} }) },
     tr: {
       marketOrder: async (o) => { calls.push(['order', o]); return fill ? { orderFillTransaction: { price: '158.005', tradeOpened: { tradeID: '101' } } } : { orderCancelTransaction: { reason: 'MARKET_HALTED' } }; },
       closeTrade: async (id) => { calls.push(['close', id]); return { orderFillTransaction: { price: '158.1', pl: '95' } }; },
@@ -47,4 +47,13 @@ test('古い判断・上限超え・約定しない注文は出さず、再送�
   assert.strictEqual((await step({ book, shadow: sh2, cfg, now: NOW + 60e3, ...f2 })).length, 0);
   assert.strictEqual(f2.calls.length, 1);
   assert.match(message([{ type: 'fail', key: 'k', reason: 'MARKET_HALTED' }]), /再送しません/);
+});
+
+test('段階2：数量は口座の時価×0.5%÷損切り幅、riskFrac と証拠金の余裕で抑える', async () => {
+  const shadow = { accounts: { normal: { open: [sp({ riskFrac: 0.5 })], closed: [] } } };
+  const f = fakes();
+  await step({ book: {}, shadow, cfg: { ...cfg, riskPct: 0.5 }, now: NOW, ...f });
+  // 170000×0.5%÷0.2＝4250 → riskFrac 0.5 で 2125
+  assert.strictEqual(f.calls[0][1].units, 2125);
+  assert.match(message([], '段階2・1回のリスク0.5%'), /段階2/);
 });
