@@ -1,0 +1,43 @@
+name: Volume for Gold
+
+# ゴールド会員を保つための取引量づくり。ユーザーが手動で起動したときだけ動く（確認語「実行」が必要）
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: '本物のお金で取引します。よければ「実行」と入力'
+        required: true
+      rounds:
+        description: '往復の回数（最大15）'
+        default: '13'
+      units:
+        description: '1回の数量（通貨、最大30000）'
+        default: '20000'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: volume
+  cancel-in-progress: false
+
+jobs:
+  volume:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Make volume (USD/JPY open and close)
+        env:
+          OANDA_TOKEN: ${{ secrets.OANDA_TOKEN }}
+          OANDA_ACCOUNT_ID_NORMAL: ${{ secrets.OANDA_ACCOUNT_ID_NORMAL }}
+          OANDA_LIVE: ${{ secrets.OANDA_LIVE }}
+          LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          CONFIRM: ${{ inputs.confirm }}
+          ROUNDS: ${{ inputs.rounds }}
+          UNITS: ${{ inputs.units }}
+        run: node bot/volume.js
