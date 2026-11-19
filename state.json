@@ -6052,12 +6052,12 @@
    ]
   }
  ],
- "lastEvalT": 1795086000000,
+ "lastEvalT": 1795089600000,
  "reportDay": "2026-11-19",
  "version": 1,
- "lastRun": 1795092908513,
- "lastBarT": 1795089600000,
- "price": 159.91709,
+ "lastRun": 1795093620084,
+ "lastBarT": 1795093200000,
+ "price": 159.94541,
  "equity": 104046.36804888683,
  "unreal": 0,
  "config": {
@@ -6145,7 +6145,7 @@
   }
  },
  "learned": {
-  "bars": 3567,
+  "bars": 3568,
   "events": 1920,
   "win": [
    {
@@ -6254,16 +6254,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7342,7 +7333,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 101015.9832044153
+  "equity": 101270.86320441538
  },
  "newsfree": {
   "start": 100000,

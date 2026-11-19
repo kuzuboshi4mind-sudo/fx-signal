@@ -327,6 +327,37 @@
  },
  "log": [
   {
+   "t": 1795089600000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 88.39448,
+   "sl": 88.54131908941753,
+   "tp": 88.10080182116494,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795089600000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 88.39448,
+   "sl": 88.54131908941753,
+   "tp": 88.10080182116494,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795078800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -6136,7 +6167,7 @@
    ]
   }
  ],
- "lastEvalT": 1795086000000,
+ "lastEvalT": 1795089600000,
  "adaptive": {
   "start": 100000,
   "balance": 100420.39372700968,
@@ -6620,7 +6651,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 100697.89372700968
+  "equity": 100720.81372700966
  },
  "reportDay": "2026-11-19",
  "skipReview": {
@@ -6629,11 +6660,11 @@
   "wouldWin": 93
  },
  "version": 1,
- "lastRun": 1795092910201,
- "lastBarT": 1795089600000,
- "price": 88.38684,
- "equity": 113010.83449847564,
- "unreal": 1295.000000000016,
+ "lastRun": 1795093621522,
+ "lastBarT": 1795093200000,
+ "price": 88.39448,
+ "equity": 113117.79449847557,
+ "unreal": 1401.9599999999457,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6719,7 +6750,7 @@
   }
  },
  "learned": {
-  "bars": 3567,
+  "bars": 3568,
   "events": 1922,
   "win": [
    {
@@ -6833,7 +6864,25 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6970,6 +7019,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 105608.34963499304
+  "equity": 105707.66963499297
  }
 }

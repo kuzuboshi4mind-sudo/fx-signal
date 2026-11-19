@@ -6075,7 +6075,7 @@
    ]
   }
  ],
- "lastEvalT": 1795086000000,
+ "lastEvalT": 1795089600000,
  "adaptive": {
   "start": 100000,
   "balance": 93128.8175660963,
@@ -7064,11 +7064,11 @@
   "wouldWin": 99
  },
  "version": 1,
- "lastRun": 1795092909355,
- "lastBarT": 1795089600000,
- "price": 210.43642,
- "equity": 103392.2008053864,
- "unreal": -69.99999999993634,
+ "lastRun": 1795093620903,
+ "lastBarT": 1795093200000,
+ "price": 210.38473,
+ "equity": 103754.03080538646,
+ "unreal": 291.83000000011816,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7154,7 +7154,7 @@
   }
  },
  "learned": {
-  "bars": 3567,
+  "bars": 3568,
   "events": 1806,
   "win": [
    {
@@ -7283,23 +7283,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7548,6 +7532,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 97158.47829209645
+  "equity": 97520.30829209651
  }
 }

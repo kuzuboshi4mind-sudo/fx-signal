@@ -6256,7 +6256,7 @@
    ]
   }
  ],
- "lastEvalT": 1795086000000,
+ "lastEvalT": 1795089600000,
  "adaptive": {
   "start": 100000,
   "balance": 106747.8753732452,
@@ -6854,9 +6854,9 @@
   "wouldWin": 106
  },
  "version": 1,
- "lastRun": 1795092908970,
- "lastBarT": 1795089600000,
- "price": 175.83499,
+ "lastRun": 1795093620492,
+ "lastBarT": 1795093200000,
+ "price": 175.83195,
  "equity": 124261.95760050492,
  "unreal": 0,
  "config": {
@@ -6944,7 +6944,7 @@
   }
  },
  "learned": {
-  "bars": 3567,
+  "bars": 3568,
   "events": 1815,
   "win": [
    {
@@ -7086,17 +7086,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
