@@ -460,6 +460,21 @@
  },
  "log": [
   {
+   "t": 1795122000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 208.9697,
+   "sl": 209.25314411468338,
+   "tp": 208.4028117706332,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795104000000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -6112,7 +6127,7 @@
    ]
   }
  ],
- "lastEvalT": 1795118400000,
+ "lastEvalT": 1795122000000,
  "adaptive": {
   "start": 100000,
   "balance": 91968.57620078295,
@@ -7135,9 +7150,9 @@
   "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1795125121703,
- "lastBarT": 1795122000000,
- "price": 208.96773,
+ "lastRun": 1795126021578,
+ "lastBarT": 1795125600000,
+ "price": 208.9697,
  "equity": 106940.01509321156,
  "unreal": 0,
  "config": {
@@ -7226,8 +7241,8 @@
   }
  },
  "learned": {
-  "bars": 3576,
-  "events": 1810,
+  "bars": 3577,
+  "events": 1811,
   "win": [
    {
     "name": "陽の包み足",
@@ -7355,7 +7370,16 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
