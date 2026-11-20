@@ -21,3 +21,20 @@ test('基準額やNAVがおかしいときは何も書かない', () => {
   assert.strictEqual(record(book, { nav: 1, base: 0, now: T }), false);
   assert.deepStrictEqual(book.points, []);
 });
+
+const { navGuard, dayStart, weekStart } = require('../bot/nav.js');
+test('1日の起点は日本時間7時、1週間の起点は月曜7時', () => {
+  const thu12 = Date.UTC(2026, 10, 19, 3, 0); // 11/19(木) 12:00 JST
+  assert.strictEqual(new Date(dayStart(thu12)).toISOString(), '2026-11-18T22:00:00.000Z');
+  assert.strictEqual(new Date(weekStart(thu12)).toISOString(), '2026-11-15T22:00:00.000Z');
+  const thu6 = Date.UTC(2026, 10, 18, 21, 0); // 11/19(木) 6:00 JST はまだ前日扱い
+  assert.strictEqual(new Date(dayStart(thu6)).toISOString(), '2026-11-17T22:00:00.000Z');
+});
+test('口座全体の損失上限：今日2%・今週4%以上減ったら新規を止める理由を返す', () => {
+  const thu12 = Date.UTC(2026, 10, 19, 3, 0), H = 3600e3;
+  const pts = (a, b) => [{ t: Date.UTC(2026, 10, 15, 23, 0), i: 1 }, { t: thu12 - 4 * H, i: a }, { t: thu12, i: b }];
+  assert.strictEqual(navGuard(pts(0.99, 0.98), thu12, { dayPct: 2, weekPct: 4 }), null);
+  assert.match(navGuard(pts(1.0, 0.975), thu12, { dayPct: 2, weekPct: 4 }), /今日 2.5%/);
+  assert.match(navGuard(pts(0.97, 0.955), thu12, { dayPct: 2, weekPct: 4 }), /今週 4.5%/);
+  assert.strictEqual(navGuard([], thu12, { dayPct: 2 }), null);
+});

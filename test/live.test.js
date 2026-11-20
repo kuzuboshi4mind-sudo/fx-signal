@@ -57,3 +57,12 @@ test('段階2：数量は口座の時価×0.5%÷損切り幅、riskFrac と証�
   assert.strictEqual(f.calls[0][1].units, 2125);
   assert.match(message([], '段階2・1回のリスク0.5%'), /段階2/);
 });
+
+test('口座全体の損失上限（navGuard）を超えたら新規を見送る。設定がなければ今まで通り', async () => {
+  const H = 3600e3, pts = [{ t: NOW - 3 * H, i: 1 }, { t: NOW - 60e3, i: 0.97 }];
+  const shadow = { accounts: { normal: { open: [sp()], closed: [] } } };
+  let f = fakes(); let ev = await step({ book: {}, shadow, cfg: { ...cfg, navGuard: { dayPct: 2 } }, now: NOW, ...f, navPoints: pts });
+  assert.strictEqual(ev[0].type, 'skip'); assert.strictEqual(f.calls.length, 0); // NOW は日本時間17時、3時間前の点は同じ日
+  f = fakes(); ev = await step({ book: {}, shadow, cfg, now: NOW, ...f, navPoints: pts });
+  assert.strictEqual(ev[0].type, 'open');
+});

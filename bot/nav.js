@@ -19,6 +19,24 @@ function record(book, { nav, base, now }) {
   return true;
 }
 
+// 口座全体の損失上限（本番の守り）：nav.json の比率だけで判断する（円の額は使わない）
+// 1日＝日本時間7時から、1週間＝月曜7時から。その起点の点と最新の点を比べ、落ち込みが上限以上なら新規を止める理由を返す
+const JST7 = 7 * HOUR, JST = 9 * HOUR;
+function dayStart(now) { return Math.floor((now + JST - JST7) / (24 * HOUR)) * 24 * HOUR - JST + JST7; }
+function weekStart(now) {
+  const d = dayStart(now), dow = new Date(d + JST).getUTCDay(); // 0=日曜
+  return d - ((dow + 6) % 7) * 24 * HOUR;
+}
+function navGuard(points, now, { dayPct, weekPct } = {}) {
+  if (!points || !points.length) return null;
+  const last = points[points.length - 1];
+  const drop = (from) => { const p0 = points.find(p => p.t >= from); return p0 && p0 !== last ? (p0.i - last.i) / p0.i * 100 : 0; };
+  const d = drop(dayStart(now)), w = drop(weekStart(now));
+  if (dayPct && d >= dayPct) return `口座の資産が今日 ${d.toFixed(1)}% 減（上限 ${dayPct}%）`;
+  if (weekPct && w >= weekPct) return `口座の資産が今週 ${w.toFixed(1)}% 減（上限 ${weekPct}%）`;
+  return null;
+}
+
 async function main() {
   const { OANDA_TOKEN, OANDA_ACCOUNT_ID_NORMAL, NAV_BASE } = process.env;
   if (!OANDA_TOKEN || !OANDA_ACCOUNT_ID_NORMAL || !(Number(NAV_BASE) > 0)) { console.log('資産の記録：設定がないため省略'); return; }
@@ -32,4 +50,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch(e => { console.error('資産の記録でエラー：' + e.message); });
-module.exports = { record };
+module.exports = { record, navGuard, dayStart, weekStart };

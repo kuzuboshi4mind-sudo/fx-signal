@@ -10,7 +10,8 @@ const EV = require('./events-lib.js');
 
 const [out, ...pairArgs] = process.argv.slice(2);
 const NULLS = Number(process.env.NULLS || 2);
-const SPREADS = { 'USD/JPY': 0.5, 'EUR/JPY': 0.6, 'GBP/JPY': 1.0, 'AUD/JPY': 0.6, 'NZD/JPY': 1.0 };
+// SPREADS_JSON='{"USD/JPY":0.8}' で上書き（実測スプレッドでの再審査用）。ONLY=base,evskip で調べる案を絞る
+const SPREADS = { 'USD/JPY': 0.5, 'EUR/JPY': 0.6, 'GBP/JPY': 1.0, 'AUD/JPY': 0.6, 'NZD/JPY': 1.0, ...JSON.parse(process.env.SPREADS_JSON || '{}') };
 const YEAR = 365.25 * 86400e3, MONTH = 30.44 * 86400e3;
 
 function load(file) {
@@ -59,7 +60,7 @@ function run(c, symbol) {
   const d = E.computeIndicators(c), er = er24(d.close), lastT = c[c.length - 1].t, start = lastT - 3 * YEAR;
   const events = EV.loadEvents(c[0].t, lastT, symbol);
   const res = {};
-  for (const [vk, v] of Object.entries(VARIANTS)) {
+  for (const [vk, v] of Object.entries(VARIANTS).filter(([k]) => !process.env.ONLY || process.env.ONLY.split(',').includes(k))) {
     const o = { symbol, tpAtr: v.tp, slAtr: v.sl, maxBars: v.maxBars, spreadPips: SPREADS[symbol] ?? 1, minSamples: 15 };
     const tr = []; let busy = -1;
     for (let mStart = start; mStart < lastT; mStart += MONTH) {

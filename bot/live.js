@@ -10,8 +10,9 @@ const fs = require('fs');
 const path = require('path');
 const { client } = require('./oanda.js');
 const { trader, planUnits } = require('./oanda-trade.js');
+const { navGuard } = require('./nav.js');
 
-async function step({ book, shadow, cfg, now, ro, tr }) {
+async function step({ book, shadow, cfg, now, ro, tr, navPoints }) {
   book.open ||= []; book.closed ||= []; book.failed ||= []; book.seen ||= [];
   const events = [];
   const S = (shadow.accounts && shadow.accounts[cfg.account]) || { open: [], closed: [] };
@@ -45,9 +46,12 @@ async function step({ book, shadow, cfg, now, ro, tr }) {
     if (avail > 0) u = Math.min(u, Math.floor(avail * 0.8 / (p.entry * 0.04)));
     return Math.max(0, u);
   };
+  // 口座全体の損失上限（cfg.navGuard があるときだけ）：試し運転の守りとは別に、実際の口座の資産で新規を止める
+  const stop = cfg.navGuard ? navGuard(navPoints, now, cfg.navGuard) : null;
   for (const p of S.open) {
     if (book.seen.includes(key(p))) continue;
     book.seen.push(key(p));
+    if (stop) { events.push({ type: 'skip', key: key(p), reason: stop }); continue; }
     if (now - p.openT > cfg.maxAgeMin * 60e3) { events.push({ type: 'skip', key: key(p), reason: '判断から時間が経ちすぎ' }); continue; }
     if (book.open.length >= cfg.maxOpen) { events.push({ type: 'skip', key: key(p), reason: '同時に持てる上限' }); continue; }
     try {
@@ -100,7 +104,8 @@ async function main() {
   let book = {}; try { book = JSON.parse(fs.readFileSync(file, 'utf8')); } catch {}
   const ro = client({ token: OANDA_TOKEN, accountId: OANDA_ACCOUNT_ID_NORMAL });
   const tr = trader({ token: OANDA_TOKEN, accountId: OANDA_ACCOUNT_ID_NORMAL, dryRun: false, live: true });
-  const events = await step({ book, shadow, cfg, now: Date.now(), ro, tr });
+  let navPoints = []; try { navPoints = JSON.parse(fs.readFileSync(path.join(dir, 'nav.json'), 'utf8')).points || []; } catch {}
+  const events = await step({ book, shadow, cfg, now: Date.now(), ro, tr, navPoints });
   fs.writeFileSync(file, JSON.stringify(book, null, 1));
   console.log(`本番の注文：新規 ${events.filter(e => e.type === 'open').length}・決済 ${events.filter(e => e.type === 'close').length}・失敗 ${events.filter(e => e.type === 'fail').length}`);
   if (events.length) await sendLine(message(events, cfg.riskPct ? `段階2・1回のリスク${cfg.riskPct}%` : `段階1・${cfg.units}通貨`));
