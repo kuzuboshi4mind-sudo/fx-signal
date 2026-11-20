@@ -439,6 +439,22 @@
  },
  "log": [
   {
+   "t": 1795154400000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 159.24694,
+   "sl": 159.08576522654005,
+   "tp": 159.56928954691986,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795150800000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -6202,14 +6218,14 @@
    ]
   }
  ],
- "lastEvalT": 1795150800000,
+ "lastEvalT": 1795154400000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795157520106,
- "lastBarT": 1795154400000,
- "price": 159.1436,
- "equity": 103524.8480488867,
- "unreal": -521.5200000001232,
+ "lastRun": 1795158420645,
+ "lastBarT": 1795158000000,
+ "price": 159.24694,
+ "equity": 104764.92804888674,
+ "unreal": 718.5599999999113,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6296,7 +6312,7 @@
   }
  },
  "learned": {
-  "bars": 3585,
+  "bars": 3586,
   "events": 1932,
   "win": [
    {
@@ -6405,7 +6421,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7293,7 +7319,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105271.26278335771
+  "equity": 106097.98278335774
  },
  "skipReview": {
   "n": 296,
@@ -7528,7 +7554,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 100658.68320441539
+  "equity": 99831.96320441535
  },
  "newsfree": {
   "start": 100000,
@@ -7645,6 +7671,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 104775.01291274042
+  "equity": 106015.09291274045
  }
 }
