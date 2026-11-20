@@ -7219,11 +7219,11 @@
   "wouldWin": 102
  },
  "version": 1,
- "lastRun": 1795144022466,
+ "lastRun": 1795144921154,
  "lastBarT": 1795143600000,
- "price": 208.46605,
- "equity": 106997.67509321163,
- "unreal": 57.660000000055334,
+ "price": 208.44498,
+ "equity": 107124.09509321167,
+ "unreal": 184.08000000010816,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7439,17 +7439,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7714,6 +7704,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 100763.95257992168
+  "equity": 100890.37257992172
  }
 }
