@@ -6,7 +6,18 @@
   "balance": 109495.06802647201,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 11000,
+   "entry": 87.45783,
+   "sl": 87.64294437143865,
+   "tp": 87.11760125712274,
+   "barT": 1795136400000,
+   "openT": 1795136822560,
+   "deadline": 1795396022560
+  },
   "trades": [
    {
     "dir": "long",
@@ -331,6 +342,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1795132800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 87.46783,
+   "sl": 87.64294437143865,
+   "tp": 87.11760125712274,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1795104000000,
    "pattern": "macd_dn",
@@ -6204,7 +6227,7 @@
    ]
   }
  ],
- "lastEvalT": 1795129200000,
+ "lastEvalT": 1795132800000,
  "adaptive": {
   "start": 100000,
   "balance": 98463.57593243709,
@@ -6734,11 +6757,11 @@
   "wouldWin": 96
  },
  "version": 1,
- "lastRun": 1795135922318,
- "lastBarT": 1795132800000,
- "price": 87.48294,
- "equity": 109495.06802647201,
- "unreal": 0,
+ "lastRun": 1795136822560,
+ "lastBarT": 1795136400000,
+ "price": 87.46783,
+ "equity": 109385.06802647196,
+ "unreal": -110.00000000005627,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6825,7 +6848,7 @@
   }
  },
  "learned": {
-  "bars": 3579,
+  "bars": 3580,
   "events": 1928,
   "win": [
    {
@@ -6939,7 +6962,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -6966,7 +6996,18 @@
   "balance": 102343.70933956109,
   "riskPct": 2,
   "startT": 1793840367577,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 11000,
+   "entry": 87.45783,
+   "sl": 87.64294437143865,
+   "tp": 87.11760125712274,
+   "barT": 1795136400000,
+   "openT": 1795136822560,
+   "deadline": 1795396022560
+  },
   "trades": [
    {
     "dir": "long",
@@ -7081,6 +7122,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 102343.70933956109
+  "equity": 102233.70933956103
  }
 }
