@@ -7033,11 +7033,11 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795208822325,
+ "lastRun": 1795209722227,
  "lastBarT": 1795208400000,
- "price": 86.65281,
- "equity": 108483.01994064687,
- "unreal": 1024.2099999999539,
+ "price": 86.68585,
+ "equity": 108119.57994064689,
+ "unreal": 660.7699999999568,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -7253,17 +7253,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7432,6 +7422,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 101238.55125373596
+  "equity": 100908.15125373597
  }
 }
