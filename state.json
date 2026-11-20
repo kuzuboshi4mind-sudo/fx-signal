@@ -6182,9 +6182,9 @@
  "lastEvalT": 1795147200000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795151220067,
+ "lastRun": 1795152120070,
  "lastBarT": 1795150800000,
- "price": 159.13642,
+ "price": 159.10261,
  "equity": 104046.36804888683,
  "unreal": 0,
  "config": {
@@ -6274,7 +6274,7 @@
  },
  "learned": {
   "bars": 3584,
-  "events": 1930,
+  "events": 1932,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -6382,17 +6382,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7280,7 +7270,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105213.82278335767
+  "equity": 104943.34278335777
  },
  "skipReview": {
   "n": 296,
@@ -7515,7 +7505,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 100716.12320441543
+  "equity": 100986.60320441533
  },
  "newsfree": {
   "start": 100000,
