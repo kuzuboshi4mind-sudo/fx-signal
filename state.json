@@ -6,7 +6,18 @@
   "balance": 102036.61097648158,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 11000,
+   "entry": 158.96969,
+   "sl": 159.14747819752415,
+   "tp": 158.62911360495175,
+   "barT": 1795165200000,
+   "openT": 1795165620256,
+   "deadline": 1795424820256
+  },
   "trades": [
    {
     "dir": "long",
@@ -443,6 +454,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1795161600000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 158.97469,
+   "sl": 159.14747819752415,
+   "tp": 158.62911360495175,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1795154400000,
    "pattern": "rsi_rebound",
@@ -6223,14 +6246,14 @@
    ]
   }
  ],
- "lastEvalT": 1795158000000,
+ "lastEvalT": 1795161600000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795164834687,
- "lastBarT": 1795161600000,
- "price": 159.03203,
- "equity": 102036.61097648158,
- "unreal": 0,
+ "lastRun": 1795165620256,
+ "lastBarT": 1795165200000,
+ "price": 158.97469,
+ "equity": 101981.61097648162,
+ "unreal": -54.99999999994998,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6317,7 +6340,7 @@
   }
  },
  "learned": {
-  "bars": 3587,
+  "bars": 3588,
   "events": 1935,
   "win": [
    {
@@ -6433,7 +6456,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
@@ -7563,14 +7593,25 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 101551.24320441538
+  "equity": 102009.96320441524
  },
  "newsfree": {
   "start": 100000,
   "balance": 103286.7758403353,
   "riskPct": 2,
   "startT": 1793840366022,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 11000,
+   "entry": 158.96969,
+   "sl": 159.14747819752415,
+   "tp": 158.62911360495175,
+   "barT": 1795165200000,
+   "openT": 1795165620256,
+   "deadline": 1795424820256
+  },
   "trades": [
    {
     "dir": "long",
@@ -7685,6 +7726,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103286.7758403353
+  "equity": 103231.77584033534
  }
 }
