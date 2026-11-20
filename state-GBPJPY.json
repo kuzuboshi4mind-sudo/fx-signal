@@ -7294,11 +7294,11 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795169221257,
+ "lastRun": 1795170120743,
  "lastBarT": 1795168800000,
- "price": 208.18013,
- "equity": 105673.00423792124,
- "unreal": 684.060000000045,
+ "price": 208.01779,
+ "equity": 106647.04423792125,
+ "unreal": 1658.1000000000472,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7514,16 +7514,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7804,6 +7795,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99439.28172463129
+  "equity": 100413.3217246313
  }
 }
