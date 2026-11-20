@@ -355,7 +355,7 @@
    "entry": 86.99345,
    "sl": 86.82341658425469,
    "tp": 87.33351683149061,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -415,7 +415,7 @@
    "entry": 87.00175,
    "sl": 86.82849325747881,
    "tp": 87.34826348504237,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -431,7 +431,7 @@
    "entry": 87.11471,
    "sl": 87.28593956886897,
    "tp": 86.77225086226207,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -447,7 +447,7 @@
    "entry": 87.11471,
    "sl": 87.28593956886897,
    "tp": 86.77225086226207,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -459,7 +459,7 @@
    "entry": 87.20449,
    "sl": 87.37709739531776,
    "tp": 86.8592752093645,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -475,7 +475,7 @@
    "entry": 87.29421,
    "sl": 87.47310411803451,
    "tp": 86.93642176393101,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6957,14 +6957,14 @@
  },
  "reportDay": "2026-11-21",
  "skipReview": {
-  "n": 332,
-  "wouldLose": 234,
-  "wouldWin": 98
+  "n": 337,
+  "wouldLose": 236,
+  "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1795202523036,
+ "lastRun": 1795203422813,
  "lastBarT": 1795201200000,
- "price": 86.93816,
+ "price": 86.74518,
  "equity": 107458.80994064693,
  "unreal": 0,
  "config": {
@@ -7054,7 +7054,7 @@
  },
  "learned": {
   "bars": 3598,
-  "events": 1933,
+  "events": 1939,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -7097,6 +7097,22 @@
     "avgR": 0.16163333418738954
    },
    {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "with|range",
+    "n": 46,
+    "winRate": 0.391304347826087,
+    "avgR": 0.1624294984962995
+   },
+   {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "*",
+    "n": 104,
+    "winRate": 0.38461538461538464,
+    "avgR": 0.1304045830867759
+   },
+   {
     "name": "20本高値ブレイク",
     "dir": "long",
     "key": "with|trend",
@@ -7113,22 +7129,6 @@
     "avgR": 0.15348771883743495
    },
    {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "*",
-    "n": 103,
-    "winRate": 0.3786407766990291,
-    "avgR": 0.11253667189432527
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "with|range",
-    "n": 45,
-    "winRate": 0.37777777777777777,
-    "avgR": 0.12224349988712417
-   },
-   {
     "name": "20本高値ブレイク",
     "dir": "long",
     "key": "*",
@@ -7139,6 +7139,13 @@
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 12,
+   "wins": 5,
+   "recentLosses": 3,
+   "streak": 0,
+   "suspended": false
+  },
   "engulf_dn": {
    "n": 1,
    "wins": 0,
@@ -7158,13 +7165,6 @@
    "wins": 2,
    "recentLosses": 4,
    "streak": 3,
-   "suspended": true
-  },
-  "bb_break_dn": {
-   "n": 11,
-   "wins": 4,
-   "recentLosses": 4,
-   "streak": 2,
    "suspended": true
   },
   "donchian_dn": {
