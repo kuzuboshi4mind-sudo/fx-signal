@@ -567,6 +567,22 @@
  },
  "log": [
   {
+   "t": 1795183200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 105.87312,
+   "sl": 105.61258477597066,
+   "tp": 106.39419044805868,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795168800000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -6562,7 +6578,7 @@
    ]
   }
  ],
- "lastEvalT": 1795179600000,
+ "lastEvalT": 1795183200000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -6915,18 +6931,18 @@
   "pickTried": "2026-11-01",
   "equity": 88807.23952712897
  },
- "reportDay": "2026-11-20",
+ "reportDay": "2026-11-21",
  "skipReview": {
   "n": 306,
   "wouldLose": 209,
   "wouldWin": 97
  },
  "version": 1,
- "lastRun": 1795186322058,
- "lastBarT": 1795183200000,
- "price": 105.80227,
- "equity": 108468.46713260742,
- "unreal": -83.01999999999055,
+ "lastRun": 1795187222814,
+ "lastBarT": 1795186800000,
+ "price": 105.87312,
+ "equity": 107972.51713260736,
+ "unreal": -578.9700000000408,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7013,7 +7029,7 @@
   }
  },
  "learned": {
-  "bars": 3593,
+  "bars": 3594,
   "events": 1925,
   "win": [
    {
@@ -7160,7 +7176,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7381,6 +7407,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 115461.64086775488
+  "equity": 114894.84086775481
  }
 }
