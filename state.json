@@ -455,6 +455,18 @@
  },
  "log": [
   {
+   "t": 1795168800000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 158.86206,
+   "sl": 158.66969247254298,
+   "tp": 159.24679505491406,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1795165200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -6278,14 +6290,14 @@
    ]
   }
  ],
- "lastEvalT": 1795165200000,
+ "lastEvalT": 1795168800000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795171920883,
- "lastBarT": 1795168800000,
- "price": 158.92271,
- "equity": 102553.3909764818,
- "unreal": 516.7800000002103,
+ "lastRun": 1795172820099,
+ "lastBarT": 1795172400000,
+ "price": 158.86206,
+ "equity": 103220.54097648158,
+ "unreal": 1183.9300000000037,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6372,7 +6384,7 @@
   }
  },
  "learned": {
-  "bars": 3589,
+  "bars": 3590,
   "events": 1938,
   "win": [
    {
@@ -6488,7 +6500,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
@@ -7618,7 +7637,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 102425.80320441537
+  "equity": 102911.0032044152
  },
  "newsfree": {
   "start": 100000,
@@ -7751,6 +7770,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103803.55584033551
+  "equity": 104470.7058403353
  }
 }
