@@ -38,12 +38,13 @@ function navGuard(points, now, { dayPct, weekPct } = {}) {
 }
 
 async function main() {
-  const { OANDA_TOKEN, OANDA_ACCOUNT_ID_NORMAL, NAV_BASE } = process.env;
-  if (!OANDA_TOKEN || !OANDA_ACCOUNT_ID_NORMAL || !(Number(NAV_BASE) > 0)) { console.log('資産の記録：設定がないため省略'); return; }
+  const { OANDA_TOKEN, OANDA_ACCOUNT_ID_NORMAL } = process.env;
+  const base = Number(String(process.env.NAV_BASE || '').replace(/[^0-9.]/g, '')); // 「270,000」「270000円」も読めるように
+  if (!OANDA_TOKEN || !OANDA_ACCOUNT_ID_NORMAL || !(base > 0)) { console.log(`資産の記録：省略（NAV_BASE ${process.env.NAV_BASE ? '読めない形式' : '未設定'}）`); return; }
   const file = path.join(__dirname, '..', 'data', 'nav.json');
   let book = {}; try { book = JSON.parse(fs.readFileSync(file, 'utf8')); } catch {}
   const acct = (await client({ token: OANDA_TOKEN, accountId: OANDA_ACCOUNT_ID_NORMAL }).summary()).account || {};
-  if (record(book, { nav: Number(acct.NAV), base: Number(NAV_BASE), now: Date.now() })) {
+  if (record(book, { nav: Number(acct.NAV), base, now: Date.now() })) {
     fs.writeFileSync(file, JSON.stringify(book));
     console.log(`資産の記録：${book.points.length}点`);
   }
