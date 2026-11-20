@@ -403,7 +403,7 @@
    "entry": 174.68107,
    "sl": 174.9136359250228,
    "tp": 174.21593814995447,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -418,7 +418,7 @@
    "entry": 174.68107,
    "sl": 174.9136359250228,
    "tp": 174.21593814995447,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -434,7 +434,7 @@
    "entry": 174.68107,
    "sl": 174.9136359250228,
    "tp": 174.21593814995447,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6337,9 +6337,10 @@
  "lastEvalT": 1795150800000,
  "adaptive": {
   "start": 100000,
-  "balance": 106747.8753732452,
+  "balance": 106050.17759817686,
   "startT": 1791953874927,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|short|3|1",
     "dir": "short",
@@ -6351,10 +6352,12 @@
     "tp": 173.97737222493168,
     "barT": 1795140000000,
     "openT": 1795140421113,
-    "deadline": 1795399621113
-   }
-  ],
-  "trades": [
+    "deadline": 1795399621113,
+    "exit": 174.9076359250228,
+    "closeT": 1795154400000,
+    "reason": "sl",
+    "pnl": -697.6977750683488
+   },
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -6937,18 +6940,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106411.15537324524
+  "equity": 106050.17759817686
  },
  "reportDay": "2026-11-20",
  "skipReview": {
-  "n": 329,
-  "wouldLose": 221,
+  "n": 332,
+  "wouldLose": 224,
   "wouldWin": 108
  },
  "version": 1,
- "lastRun": 1795154821310,
+ "lastRun": 1795155720471,
  "lastBarT": 1795154400000,
- "price": 174.78731,
+ "price": 174.91495,
  "equity": 124261.95760050492,
  "unreal": 0,
  "config": {
@@ -7038,7 +7041,7 @@
  },
  "learned": {
   "bars": 3585,
-  "events": 1819,
+  "events": 1822,
   "win": [
    {
     "name": "陽の包み足",
@@ -7100,9 +7103,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 104,
-    "winRate": 0.375,
-    "avgR": 0.10896708026745626
+    "n": 105,
+    "winRate": 0.37142857142857144,
+    "avgR": 0.09828263599678103
    },
    {
     "name": "ボリバン下限から回帰",

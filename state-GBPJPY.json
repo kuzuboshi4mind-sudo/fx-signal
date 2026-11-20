@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 106940.01509321156,
+  "balance": 104988.9442379212,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 6000,
-   "entry": 208.47566,
-   "sl": 208.80083847588173,
-   "tp": 207.85530304823655,
-   "barT": 1795140000000,
-   "openT": 1795140421586,
-   "deadline": 1795399621586
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 6000,
+    "entry": 208.47566,
+    "sl": 208.80083847588173,
+    "tp": 207.85530304823655,
+    "barT": 1795140000000,
+    "openT": 1795140421586,
+    "deadline": 1795399621586,
+    "exit": 208.80083847588173,
+    "closeT": 1795154400000,
+    "reason": "sl",
+    "pnl": -1951.070855290368
+   },
    {
     "dir": "short",
     "pattern": "rsi_fall",
@@ -510,7 +515,7 @@
    "entry": 208.48566,
    "sl": 208.80083847588173,
    "tp": 207.85530304823655,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -525,7 +530,7 @@
    "entry": 208.48566,
    "sl": 208.80083847588173,
    "tp": 207.85530304823655,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -7230,16 +7235,16 @@
  },
  "reportDay": "2026-11-20",
  "skipReview": {
-  "n": 308,
-  "wouldLose": 206,
+  "n": 309,
+  "wouldLose": 207,
   "wouldWin": 102
  },
  "version": 1,
- "lastRun": 1795154821573,
+ "lastRun": 1795155720781,
  "lastBarT": 1795154400000,
- "price": 208.69523,
- "equity": 105622.59509321154,
- "unreal": -1317.420000000027,
+ "price": 208.82058,
+ "equity": 104988.9442379212,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7327,7 +7332,7 @@
  },
  "learned": {
   "bars": 3585,
-  "events": 1811,
+  "events": 1813,
   "win": [
    {
     "name": "陽の包み足",
@@ -7378,20 +7383,20 @@
     "avgR": 0.22796216093741375
    },
    {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "*",
-    "n": 99,
-    "winRate": 0.3939393939393939,
-    "avgR": 0.17672053839804786
-   },
-   {
     "name": "RSI買われすぎ反落",
     "dir": "short",
     "key": "*",
     "n": 48,
     "winRate": 0.3958333333333333,
     "avgR": 0.18148990198976303
+   },
+   {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "*",
+    "n": 100,
+    "winRate": 0.39,
+    "avgR": 0.16479469273934644
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -7405,13 +7410,20 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "with|trend",
-    "n": 32,
-    "winRate": 0.375,
-    "avgR": 0.1631014551813215
+    "n": 33,
+    "winRate": 0.36363636363636365,
+    "avgR": 0.12737522843424834
    }
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 8,
+   "wins": 4,
+   "recentLosses": 4,
+   "streak": 1,
+   "suspended": true
+  },
   "rsi_fall": {
    "n": 3,
    "wins": 2,
@@ -7431,13 +7443,6 @@
    "wins": 2,
    "recentLosses": 3,
    "streak": 2,
-   "suspended": false
-  },
-  "bb_break_dn": {
-   "n": 7,
-   "wins": 4,
-   "recentLosses": 3,
-   "streak": 0,
    "suspended": false
   },
   "macd_dn": {
@@ -7479,22 +7484,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 100706.29257992162,
+  "balance": 98755.22172463125,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 6000,
-   "entry": 208.47566,
-   "sl": 208.80083847588173,
-   "tp": 207.85530304823655,
-   "barT": 1795140000000,
-   "openT": 1795140421586,
-   "deadline": 1795399621586
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 6000,
+    "entry": 208.47566,
+    "sl": 208.80083847588173,
+    "tp": 207.85530304823655,
+    "barT": 1795140000000,
+    "openT": 1795140421586,
+    "deadline": 1795399621586,
+    "exit": 208.80083847588173,
+    "closeT": 1795154400000,
+    "reason": "sl",
+    "pnl": -1951.070855290368
+   },
    {
     "dir": "short",
     "pattern": "rsi_fall",
@@ -7720,6 +7730,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99388.87257992159
+  "equity": 98755.22172463125
  }
 }
