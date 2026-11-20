@@ -428,6 +428,38 @@
  },
  "log": [
   {
+   "t": 1795129200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 159.79194,
+   "sl": 159.65793328978884,
+   "tp": 160.05995342042232,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795129200000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 159.79194,
+   "sl": 159.65793328978884,
+   "tp": 160.05995342042232,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795107600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -6084,12 +6116,12 @@
    ]
   }
  ],
- "lastEvalT": 1795125600000,
+ "lastEvalT": 1795129200000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795132320333,
- "lastBarT": 1795129200000,
- "price": 159.67871,
+ "lastRun": 1795133220812,
+ "lastBarT": 1795132800000,
+ "price": 159.79194,
  "equity": 104046.36804888683,
  "unreal": 0,
  "config": {
@@ -6178,7 +6210,7 @@
   }
  },
  "learned": {
-  "bars": 3578,
+  "bars": 3579,
   "events": 1926,
   "win": [
    {
@@ -6287,7 +6319,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
