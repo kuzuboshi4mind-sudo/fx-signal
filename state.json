@@ -6249,11 +6249,11 @@
  "lastEvalT": 1795161600000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795165620256,
+ "lastRun": 1795166520680,
  "lastBarT": 1795165200000,
- "price": 158.97469,
- "equity": 101981.61097648162,
- "unreal": -54.99999999994998,
+ "price": 159.03933,
+ "equity": 101270.57097648166,
+ "unreal": -766.0399999999186,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6456,14 +6456,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
@@ -7593,7 +7586,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 102009.96320441524
+  "equity": 101492.84320441526
  },
  "newsfree": {
   "start": 100000,
@@ -7726,6 +7719,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103231.77584033534
+  "equity": 102520.73584033537
  }
 }
