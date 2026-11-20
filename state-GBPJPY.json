@@ -6,7 +6,18 @@
   "balance": 108652.59922795155,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 6000,
+   "entry": 207.36862000000002,
+   "sl": 207.71473268181117,
+   "tp": 206.70639463637767,
+   "barT": 1795204800000,
+   "openT": 1795205221752,
+   "deadline": 1795464421752
+  },
   "trades": [
    {
     "dir": "short",
@@ -492,6 +503,61 @@
  },
  "log": [
   {
+   "t": 1795201200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 207.37862,
+   "sl": 207.71473268181117,
+   "tp": 206.70639463637767,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1795201200000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 207.37862,
+   "sl": 207.71473268181117,
+   "tp": 206.70639463637767,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1795201200000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 207.37862,
+   "sl": 207.71473268181117,
+   "tp": 206.70639463637767,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795201200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 207.37862,
+   "sl": 207.71473268181117,
+   "tp": 206.70639463637767,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
+  {
    "t": 1795197600000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -559,7 +625,7 @@
    "entry": 208.03396,
    "sl": 208.36896152979523,
    "tp": 207.3639569404096,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -6348,7 +6414,7 @@
    ]
   }
  ],
- "lastEvalT": 1795197600000,
+ "lastEvalT": 1795201200000,
  "adaptive": {
   "start": 100000,
   "balance": 91968.57620078295,
@@ -7371,11 +7437,11 @@
   "wouldWin": 104
  },
  "version": 1,
- "lastRun": 1795204322060,
- "lastBarT": 1795201200000,
- "price": 207.54681,
- "equity": 108652.59922795155,
- "unreal": 0,
+ "lastRun": 1795205221752,
+ "lastBarT": 1795204800000,
+ "price": 207.37862,
+ "equity": 108592.5992279516,
+ "unreal": -59.99999999994543,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7462,8 +7528,8 @@
   }
  },
  "learned": {
-  "bars": 3598,
-  "events": 1822,
+  "bars": 3599,
+  "events": 1823,
   "win": [
    {
     "name": "陽の包み足",
@@ -7477,9 +7543,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "with|trend",
-    "n": 37,
-    "winRate": 0.4594594594594595,
-    "avgR": 0.36779957489258636
+    "n": 38,
+    "winRate": 0.47368421052631576,
+    "avgR": 0.41035944647496214
    },
    {
     "name": "陰の包み足",
@@ -7517,9 +7583,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "*",
-    "n": 132,
-    "winRate": 0.4166666666666667,
-    "avgR": 0.24126462031933893
+    "n": 133,
+    "winRate": 0.42105263157894735,
+    "avgR": 0.2543759742644783
    },
    {
     "name": "RSI買われすぎ反落",
@@ -7549,9 +7615,9 @@
  },
  "review": {
   "engulf_dn": {
-   "n": 11,
-   "wins": 5,
-   "recentLosses": 3,
+   "n": 12,
+   "wins": 6,
+   "recentLosses": 2,
    "streak": 0,
    "suspended": false
   },
@@ -7591,7 +7657,39 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  },
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7618,7 +7716,18 @@
   "balance": 102418.8767146616,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 5000,
+   "entry": 207.36862000000002,
+   "sl": 207.71473268181117,
+   "tp": 206.70639463637767,
+   "barT": 1795204800000,
+   "openT": 1795205221752,
+   "deadline": 1795464421752
+  },
   "trades": [
    {
     "dir": "short",
@@ -7877,6 +7986,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 102418.8767146616
+  "equity": 102368.87671466164
  }
 }

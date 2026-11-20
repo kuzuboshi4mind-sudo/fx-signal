@@ -6,7 +6,18 @@
   "balance": 124261.95760050492,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 9000,
+   "entry": 173.83401,
+   "sl": 174.09765934416774,
+   "tp": 173.32471131166457,
+   "barT": 1795204800000,
+   "openT": 1795205221079,
+   "deadline": 1795464421079
+  },
   "trades": [
    {
     "dir": "short",
@@ -380,6 +391,49 @@
  },
  "log": [
   {
+   "t": 1795201200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 173.84001,
+   "sl": 174.09765934416774,
+   "tp": 173.32471131166457,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1795201200000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 173.84001,
+   "sl": 174.09765934416774,
+   "tp": 173.32471131166457,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1795201200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 173.84001,
+   "sl": 174.09765934416774,
+   "tp": 173.32471131166457,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795176000000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -450,7 +504,7 @@
    "entry": 174.30779,
    "sl": 174.55343811405848,
    "tp": 173.8164937718831,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -465,7 +519,7 @@
    "entry": 174.30779,
    "sl": 174.55343811405848,
    "tp": 173.8164937718831,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6443,7 +6497,7 @@
    ]
   }
  ],
- "lastEvalT": 1795197600000,
+ "lastEvalT": 1795201200000,
  "adaptive": {
   "start": 100000,
   "balance": 106050.17759817686,
@@ -7053,16 +7107,16 @@
  },
  "reportDay": "2026-11-21",
  "skipReview": {
-  "n": 338,
+  "n": 340,
   "wouldLose": 229,
-  "wouldWin": 109
+  "wouldWin": 111
  },
  "version": 1,
- "lastRun": 1795204321365,
- "lastBarT": 1795201200000,
- "price": 173.91065,
- "equity": 124261.95760050492,
- "unreal": 0,
+ "lastRun": 1795205221079,
+ "lastBarT": 1795204800000,
+ "price": 173.84001,
+ "equity": 124207.95760050492,
+ "unreal": -54.000000000002046,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -7149,7 +7203,7 @@
   }
  },
  "learned": {
-  "bars": 3598,
+  "bars": 3599,
   "events": 1830,
   "win": [
    {
@@ -7291,7 +7345,31 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7306,7 +7384,18 @@
   "balance": 110135.08931491099,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "units": 8000,
+   "entry": 173.83401,
+   "sl": 174.09765934416774,
+   "tp": 173.32471131166457,
+   "barT": 1795204800000,
+   "openT": 1795205221079,
+   "deadline": 1795464421079
+  },
   "trades": [
    {
     "dir": "short",
@@ -7501,6 +7590,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 110135.08931491099
+  "equity": 110087.08931491099
  }
 }

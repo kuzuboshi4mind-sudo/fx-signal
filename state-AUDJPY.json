@@ -583,6 +583,51 @@
  },
  "log": [
   {
+   "t": 1795201200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 104.88276,
+   "sl": 105.18034729618896,
+   "tp": 104.2875854076221,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1795201200000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 104.88276,
+   "sl": 105.18034729618896,
+   "tp": 104.2875854076221,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795201200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 104.88276,
+   "sl": 105.18034729618896,
+   "tp": 104.2875854076221,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795197600000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -642,7 +687,7 @@
    "entry": 105.40928,
    "sl": 105.69127913659867,
    "tp": 104.84528172680265,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -654,7 +699,7 @@
    "entry": 105.40928,
    "sl": 105.69127913659867,
    "tp": 104.84528172680265,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -670,7 +715,7 @@
    "entry": 105.40928,
    "sl": 105.69127913659867,
    "tp": 104.84528172680265,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6691,7 +6736,7 @@
    ]
   }
  ],
- "lastEvalT": 1795197600000,
+ "lastEvalT": 1795201200000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -7046,16 +7091,16 @@
  },
  "reportDay": "2026-11-21",
  "skipReview": {
-  "n": 310,
+  "n": 312,
   "wouldLose": 212,
-  "wouldWin": 98
+  "wouldWin": 100
  },
  "version": 1,
- "lastRun": 1795204322626,
- "lastBarT": 1795201200000,
- "price": 104.9571,
- "equity": 113664.72471978788,
- "unreal": 1412.3200000000509,
+ "lastRun": 1795205222513,
+ "lastBarT": 1795204800000,
+ "price": 104.88276,
+ "equity": 114185.10471978782,
+ "unreal": 1932.699999999997,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7142,7 +7187,7 @@
   }
  },
  "learned": {
-  "bars": 3598,
+  "bars": 3599,
   "events": 1932,
   "win": [
    {
@@ -7152,6 +7197,14 @@
     "n": 22,
     "winRate": 0.5454545454545454,
     "avgR": 0.6112007710588284
+   },
+   {
+    "name": "20本安値ブレイク",
+    "dir": "short",
+    "key": "against|range",
+    "n": 25,
+    "winRate": 0.48,
+    "avgR": 0.4152393864424127
    },
    {
     "name": "ボリバン上抜けブレイク",
@@ -7175,7 +7228,7 @@
     "key": "*",
     "n": 175,
     "winRate": 0.38857142857142857,
-    "avgR": 0.1515514478380587
+    "avgR": 0.15155144783805868
    },
    {
     "name": "陰の包み足",
@@ -7200,14 +7253,6 @@
     "n": 82,
     "winRate": 0.3780487804878049,
     "avgR": 0.11483793138367969
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "*",
-    "n": 107,
-    "winRate": 0.3644859813084112,
-    "avgR": 0.07785463128794104
    }
   ]
  },
@@ -7220,8 +7265,8 @@
    "suspended": true
   },
   "donchian_dn": {
-   "n": 15,
-   "wins": 9,
+   "n": 16,
+   "wins": 10,
    "recentLosses": 2,
    "streak": 0,
    "suspended": false
@@ -7297,7 +7342,33 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7534,6 +7605,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 121400.22096738969
+  "equity": 121994.94096738963
  }
 }
