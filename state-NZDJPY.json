@@ -350,7 +350,7 @@
    "entry": 87.35285,
    "sl": 87.53141834490731,
    "tp": 86.99571331018541,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -366,7 +366,7 @@
    "entry": 87.35285,
    "sl": 87.53141834490731,
    "tp": 86.99571331018541,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6784,16 +6784,16 @@
  },
  "reportDay": "2026-11-20",
  "skipReview": {
-  "n": 328,
-  "wouldLose": 232,
+  "n": 330,
+  "wouldLose": 234,
   "wouldWin": 96
  },
  "version": 1,
- "lastRun": 1795149421053,
+ "lastRun": 1795150321536,
  "lastBarT": 1795147200000,
- "price": 87.47403,
- "equity": 109316.86802647203,
- "unreal": -178.1999999999755,
+ "price": 87.49624,
+ "equity": 109072.55802647202,
+ "unreal": -422.5099999999884,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6881,7 +6881,7 @@
  },
  "learned": {
   "bars": 3583,
-  "events": 1928,
+  "events": 1930,
   "win": [
    {
     "name": "20本高値ブレイク",
@@ -7147,6 +7147,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 102165.5093395611
+  "equity": 101921.19933956109
  }
 }
