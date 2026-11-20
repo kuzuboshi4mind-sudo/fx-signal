@@ -6293,11 +6293,11 @@
  "lastEvalT": 1795168800000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795172820099,
+ "lastRun": 1795173720690,
  "lastBarT": 1795172400000,
- "price": 158.86206,
- "equity": 103220.54097648158,
- "unreal": 1183.9300000000037,
+ "price": 158.75372,
+ "equity": 104412.28097648188,
+ "unreal": 2375.670000000298,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6500,14 +6500,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
@@ -7411,9 +7404,10 @@
  },
  "latest": {
   "start": 100000,
-  "balance": 100312.36320441528,
+  "balance": 103777.72320441542,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -7425,10 +7419,12 @@
     "tp": 142.5949628012426,
     "barT": 1795143600000,
     "openT": 1795144021044,
-    "deadline": 1795172821044
-   }
-  ],
-  "trades": [
+    "deadline": 1795172821044,
+    "exit": 158.75372,
+    "closeT": 1795173720690,
+    "reason": "time",
+    "pnl": 3465.360000000146
+   },
    {
     "key": "vol_breakout",
     "dir": "long",
@@ -7637,7 +7633,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 102911.0032044152
+  "equity": 103777.72320441542
  },
  "newsfree": {
   "start": 100000,
@@ -7770,6 +7766,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 104470.7058403353
+  "equity": 105662.4458403356
  }
 }
