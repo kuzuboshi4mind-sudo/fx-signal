@@ -380,6 +380,38 @@
  },
  "log": [
   {
+   "t": 1795176000000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 174.42755,
+   "sl": 174.17477978258512,
+   "tp": 174.93309043482975,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795176000000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 174.42755,
+   "sl": 174.17477978258512,
+   "tp": 174.93309043482975,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795172400000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -6411,7 +6443,7 @@
    ]
   }
  ],
- "lastEvalT": 1795172400000,
+ "lastEvalT": 1795176000000,
  "adaptive": {
   "start": 100000,
   "balance": 106050.17759817686,
@@ -7026,9 +7058,9 @@
   "wouldWin": 108
  },
  "version": 1,
- "lastRun": 1795179120740,
- "lastBarT": 1795176000000,
- "price": 174.28204,
+ "lastRun": 1795180021383,
+ "lastBarT": 1795179600000,
+ "price": 174.42755,
  "equity": 124261.95760050492,
  "unreal": 0,
  "config": {
@@ -7117,8 +7149,8 @@
   }
  },
  "learned": {
-  "bars": 3591,
-  "events": 1823,
+  "bars": 3592,
+  "events": 1824,
   "win": [
    {
     "name": "陽の包み足",
@@ -7259,7 +7291,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
