@@ -359,6 +359,22 @@
  },
  "log": [
   {
+   "t": 1795204800000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 86.65281,
+   "sl": 86.83655488398448,
+   "tp": 86.28532023203105,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795201200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -6487,7 +6503,7 @@
    ]
   }
  ],
- "lastEvalT": 1795201200000,
+ "lastEvalT": 1795204800000,
  "adaptive": {
   "start": 100000,
   "balance": 98463.57593243709,
@@ -7017,11 +7033,11 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795207922393,
- "lastBarT": 1795204800000,
- "price": 86.64836,
- "equity": 108531.96994064694,
- "unreal": 1073.1600000000158,
+ "lastRun": 1795208822325,
+ "lastBarT": 1795208400000,
+ "price": 86.65281,
+ "equity": 108483.01994064687,
+ "unreal": 1024.2099999999539,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -7108,7 +7124,7 @@
   }
  },
  "learned": {
-  "bars": 3599,
+  "bars": 3600,
   "events": 1942,
   "win": [
    {
@@ -7237,7 +7253,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7406,6 +7432,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 101283.05125373602
+  "equity": 101238.55125373596
  }
 }
