@@ -551,6 +551,22 @@
  },
  "log": [
   {
+   "t": 1795143600000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 106.1398,
+   "sl": 105.88076339806946,
+   "tp": 106.65787320386104,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795132800000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -6470,7 +6486,7 @@
    ]
   }
  ],
- "lastEvalT": 1795140000000,
+ "lastEvalT": 1795143600000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -6830,11 +6846,11 @@
   "wouldWin": 97
  },
  "version": 1,
- "lastRun": 1795146721233,
- "lastBarT": 1795143600000,
- "price": 106.09973,
- "equity": 110087.42091757739,
- "unreal": -572.3999999999023,
+ "lastRun": 1795147621231,
+ "lastBarT": 1795147200000,
+ "price": 106.1398,
+ "equity": 109766.86091757739,
+ "unreal": -892.9599999999027,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -6921,7 +6937,7 @@
   }
  },
  "learned": {
-  "bars": 3582,
+  "bars": 3583,
   "events": 1920,
   "win": [
    {
@@ -7068,7 +7084,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7273,6 +7299,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 117092.45465272485
+  "equity": 116771.89465272485
  }
 }

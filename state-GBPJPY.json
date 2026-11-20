@@ -471,6 +471,22 @@
  },
  "log": [
   {
+   "t": 1795143600000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 208.69686,
+   "sl": 208.38842146722442,
+   "tp": 209.31373706555112,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795140000000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -6196,7 +6212,7 @@
    ]
   }
  ],
- "lastEvalT": 1795140000000,
+ "lastEvalT": 1795143600000,
  "adaptive": {
   "start": 100000,
   "balance": 91968.57620078295,
@@ -7219,11 +7235,11 @@
   "wouldWin": 102
  },
  "version": 1,
- "lastRun": 1795146720985,
- "lastBarT": 1795143600000,
- "price": 208.66813,
- "equity": 105785.19509321165,
- "unreal": -1154.8199999999156,
+ "lastRun": 1795147620947,
+ "lastBarT": 1795147200000,
+ "price": 208.69686,
+ "equity": 105612.81509321167,
+ "unreal": -1327.1999999998911,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7310,7 +7326,7 @@
   }
  },
  "learned": {
-  "bars": 3582,
+  "bars": 3583,
   "events": 1811,
   "win": [
    {
@@ -7439,7 +7455,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7704,6 +7730,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99551.4725799217
+  "equity": 99379.09257992172
  }
 }
