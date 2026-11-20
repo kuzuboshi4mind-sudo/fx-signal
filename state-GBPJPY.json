@@ -7334,11 +7334,11 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795190822023,
+ "lastRun": 1795191722016,
  "lastBarT": 1795190400000,
- "price": 207.96179,
- "equity": 106983.04423792115,
- "unreal": 1994.0999999999462,
+ "price": 208.05703,
+ "equity": 106411.6042379212,
+ "unreal": 1422.6600000000076,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7554,14 +7554,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7842,6 +7835,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 100749.3217246312
+  "equity": 100177.88172463125
  }
 }
