@@ -6,7 +6,18 @@
   "balance": 112252.40471978782,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "units": 7000,
+   "entry": 105.15886,
+   "sl": 105.44711940859784,
+   "tp": 104.60034118280433,
+   "barT": 1795197600000,
+   "openT": 1795198022721,
+   "deadline": 1795457222721
+  },
   "trades": [
    {
     "dir": "short",
@@ -571,6 +582,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1795194000000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 105.16486,
+   "sl": 105.44711940859784,
+   "tp": 104.60034118280433,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1795190400000,
    "pattern": "donchian_dn",
@@ -6640,7 +6663,7 @@
    ]
   }
  ],
- "lastEvalT": 1795190400000,
+ "lastEvalT": 1795194000000,
  "adaptive": {
   "start": 100000,
   "balance": 88807.23952712897,
@@ -7000,11 +7023,11 @@
   "wouldWin": 98
  },
  "version": 1,
- "lastRun": 1795197121770,
- "lastBarT": 1795194000000,
- "price": 105.25137,
- "equity": 112252.40471978782,
- "unreal": 0,
+ "lastRun": 1795198022721,
+ "lastBarT": 1795197600000,
+ "price": 105.16486,
+ "equity": 112210.40471978782,
+ "unreal": -42.00000000000159,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7091,7 +7114,7 @@
   }
  },
  "learned": {
-  "bars": 3596,
+  "bars": 3597,
   "events": 1927,
   "win": [
    {
@@ -7238,7 +7261,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7253,7 +7283,18 @@
   "balance": 119786.14096738963,
   "riskPct": 2,
   "startT": 1793840367240,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "units": 8000,
+   "entry": 105.15886,
+   "sl": 105.44711940859784,
+   "tp": 104.60034118280433,
+   "barT": 1795197600000,
+   "openT": 1795198022721,
+   "deadline": 1795457222721
+  },
   "trades": [
    {
     "dir": "short",
@@ -7464,6 +7505,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 119786.14096738963
+  "equity": 119738.14096738963
  }
 }
