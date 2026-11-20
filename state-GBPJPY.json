@@ -487,6 +487,18 @@
  },
  "log": [
   {
+   "t": 1795172400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 208.03396,
+   "sl": 208.36896152979523,
+   "tp": 207.3639569404096,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1795165200000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -6271,7 +6283,7 @@
    ]
   }
  ],
- "lastEvalT": 1795168800000,
+ "lastEvalT": 1795172400000,
  "adaptive": {
   "start": 100000,
   "balance": 91968.57620078295,
@@ -7294,11 +7306,11 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795175521537,
- "lastBarT": 1795172400000,
- "price": 208.11508,
- "equity": 106063.30423792115,
- "unreal": 1074.359999999956,
+ "lastRun": 1795176420969,
+ "lastBarT": 1795176000000,
+ "price": 208.03396,
+ "equity": 106550.02423792114,
+ "unreal": 1561.0799999999472,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7385,7 +7397,7 @@
   }
  },
  "learned": {
-  "bars": 3590,
+  "bars": 3591,
   "events": 1818,
   "win": [
    {
@@ -7514,7 +7526,14 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7795,6 +7814,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99829.5817246312
+  "equity": 100316.3017246312
  }
 }
