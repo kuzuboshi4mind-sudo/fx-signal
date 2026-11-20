@@ -348,6 +348,22 @@
  },
  "log": [
   {
+   "t": 1795158000000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 87.59096,
+   "sl": 87.76192151565165,
+   "tp": 87.2490369686967,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795136400000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -6264,7 +6280,7 @@
    ]
   }
  ],
- "lastEvalT": 1795154400000,
+ "lastEvalT": 1795158000000,
  "adaptive": {
   "start": 100000,
   "balance": 98463.57593243709,
@@ -6794,9 +6810,9 @@
   "wouldWin": 96
  },
  "version": 1,
- "lastRun": 1795161121572,
- "lastBarT": 1795158000000,
- "price": 87.65419,
+ "lastRun": 1795162021814,
+ "lastBarT": 1795161600000,
+ "price": 87.59096,
  "equity": 107458.80994064693,
  "unreal": 0,
  "config": {
@@ -6885,7 +6901,7 @@
   }
  },
  "learned": {
-  "bars": 3586,
+  "bars": 3587,
   "events": 1931,
   "win": [
    {
@@ -7006,7 +7022,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
