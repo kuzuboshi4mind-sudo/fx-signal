@@ -7017,11 +7017,11 @@
   "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1795205222875,
+ "lastRun": 1795206122136,
  "lastBarT": 1795204800000,
- "price": 86.75592,
- "equity": 107348.80994064687,
- "unreal": -110.00000000005627,
+ "price": 86.74584,
+ "equity": 107459.68994064689,
+ "unreal": 0.8799999999666852,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -7237,32 +7237,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7431,6 +7406,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 100207.45125373594
+  "equity": 100308.25125373597
  }
 }

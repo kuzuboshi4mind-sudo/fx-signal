@@ -7096,11 +7096,11 @@
   "wouldWin": 100
  },
  "version": 1,
- "lastRun": 1795205222513,
+ "lastRun": 1795206121767,
  "lastBarT": 1795204800000,
- "price": 104.88276,
- "equity": 114185.10471978782,
- "unreal": 1932.699999999997,
+ "price": 104.88089,
+ "equity": 114198.19471978789,
+ "unreal": 1945.7900000000734,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7342,33 +7342,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7605,6 +7579,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 121994.94096738963
+  "equity": 122009.90096738971
  }
 }

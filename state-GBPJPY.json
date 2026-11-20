@@ -597,7 +597,7 @@
    "entry": 207.96179,
    "sl": 208.28904517889632,
    "tp": 207.30727964220736,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -7437,11 +7437,11 @@
   "wouldWin": 104
  },
  "version": 1,
- "lastRun": 1795205221752,
+ "lastRun": 1795206121371,
  "lastBarT": 1795204800000,
- "price": 207.37862,
- "equity": 108592.5992279516,
- "unreal": -59.99999999994543,
+ "price": 207.36082,
+ "equity": 108699.39922795174,
+ "unreal": 46.80000000018936,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7529,7 +7529,7 @@
  },
  "learned": {
   "bars": 3599,
-  "events": 1823,
+  "events": 1824,
   "win": [
    {
     "name": "陽の包み足",
@@ -7543,9 +7543,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "with|trend",
-    "n": 38,
-    "winRate": 0.47368421052631576,
-    "avgR": 0.41035944647496214
+    "n": 39,
+    "winRate": 0.48717948717948717,
+    "avgR": 0.45072770177004645
    },
    {
     "name": "陰の包み足",
@@ -7583,9 +7583,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "*",
-    "n": 133,
-    "winRate": 0.42105263157894735,
-    "avgR": 0.2543759742644783
+    "n": 134,
+    "winRate": 0.4253731343283582,
+    "avgR": 0.26728899985193183
    },
    {
     "name": "RSI買われすぎ反落",
@@ -7615,8 +7615,8 @@
  },
  "review": {
   "engulf_dn": {
-   "n": 12,
-   "wins": 6,
+   "n": 13,
+   "wins": 7,
    "recentLosses": 2,
    "streak": 0,
    "suspended": false
@@ -7657,39 +7657,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  },
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "20本安値ブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7986,6 +7954,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 102368.87671466164
+  "equity": 102457.87671466176
  }
 }
