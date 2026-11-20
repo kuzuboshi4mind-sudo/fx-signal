@@ -6,7 +6,18 @@
   "balance": 106940.01509321156,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 6000,
+   "entry": 208.47566,
+   "sl": 208.80083847588173,
+   "tp": 207.85530304823655,
+   "barT": 1795140000000,
+   "openT": 1795140421586,
+   "deadline": 1795399621586
+  },
   "trades": [
    {
     "dir": "short",
@@ -459,6 +470,33 @@
   ]
  },
  "log": [
+  {
+   "t": 1795136400000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 208.48566,
+   "sl": 208.80083847588173,
+   "tp": 207.85530304823655,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1795136400000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 208.48566,
+   "sl": 208.80083847588173,
+   "tp": 207.85530304823655,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1795132800000,
    "pattern": "donchian_dn",
@@ -6142,7 +6180,7 @@
    ]
   }
  ],
- "lastEvalT": 1795132800000,
+ "lastEvalT": 1795136400000,
  "adaptive": {
   "start": 100000,
   "balance": 91968.57620078295,
@@ -7165,11 +7203,11 @@
   "wouldWin": 102
  },
  "version": 1,
- "lastRun": 1795139520884,
- "lastBarT": 1795136400000,
- "price": 208.52818,
- "equity": 106940.01509321156,
- "unreal": 0,
+ "lastRun": 1795140421586,
+ "lastBarT": 1795140000000,
+ "price": 208.48566,
+ "equity": 106880.01509321162,
+ "unreal": -59.99999999994543,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7256,7 +7294,7 @@
   }
  },
  "learned": {
-  "bars": 3580,
+  "bars": 3581,
   "events": 1811,
   "win": [
    {
@@ -7385,7 +7423,22 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7412,7 +7465,18 @@
   "balance": 100706.29257992162,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "units": 6000,
+   "entry": 208.47566,
+   "sl": 208.80083847588173,
+   "tp": 207.85530304823655,
+   "barT": 1795140000000,
+   "openT": 1795140421586,
+   "deadline": 1795399621586
+  },
   "trades": [
    {
     "dir": "short",
@@ -7639,6 +7703,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 100706.29257992162
+  "equity": 100646.29257992168
  }
 }

@@ -380,6 +380,52 @@
  },
  "log": [
   {
+   "t": 1795136400000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 174.68107,
+   "sl": 174.9136359250228,
+   "tp": 174.21593814995447,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1795136400000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 174.68107,
+   "sl": 174.9136359250228,
+   "tp": 174.21593814995447,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795136400000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 174.68107,
+   "sl": 174.9136359250228,
+   "tp": 174.21593814995447,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795096800000,
    "pattern": "rsi_fall",
    "name": "RSI買われすぎ反落",
@@ -6272,12 +6318,26 @@
    ]
   }
  ],
- "lastEvalT": 1795132800000,
+ "lastEvalT": 1795136400000,
  "adaptive": {
   "start": 100000,
   "balance": 106747.8753732452,
   "startT": 1791953874927,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_dn|short|3|1",
+    "dir": "short",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)",
+    "units": 3000,
+    "entry": 174.67507,
+    "sl": 174.9076359250228,
+    "tp": 173.97737222493168,
+    "barT": 1795140000000,
+    "openT": 1795140421113,
+    "deadline": 1795399621113
+   }
+  ],
   "trades": [
    {
     "key": "pullback_dn|long|3|1",
@@ -6861,7 +6921,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106747.8753732452
+  "equity": 106729.8753732452
  },
  "reportDay": "2026-11-20",
  "skipReview": {
@@ -6870,9 +6930,9 @@
   "wouldWin": 108
  },
  "version": 1,
- "lastRun": 1795139520579,
- "lastBarT": 1795136400000,
- "price": 174.72267,
+ "lastRun": 1795140421113,
+ "lastBarT": 1795140000000,
+ "price": 174.68107,
  "equity": 124261.95760050492,
  "unreal": 0,
  "config": {
@@ -6961,7 +7021,7 @@
   }
  },
  "learned": {
-  "bars": 3580,
+  "bars": 3581,
   "events": 1819,
   "win": [
    {
@@ -7103,7 +7163,33 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

@@ -343,6 +343,38 @@
  },
  "log": [
   {
+   "t": 1795136400000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 87.35285,
+   "sl": 87.53141834490731,
+   "tp": 86.99571331018541,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795136400000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 87.35285,
+   "sl": 87.53141834490731,
+   "tp": 86.99571331018541,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795132800000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -6227,7 +6259,7 @@
    ]
   }
  ],
- "lastEvalT": 1795132800000,
+ "lastEvalT": 1795136400000,
  "adaptive": {
   "start": 100000,
   "balance": 98463.57593243709,
@@ -6757,11 +6789,11 @@
   "wouldWin": 96
  },
  "version": 1,
- "lastRun": 1795139521635,
- "lastBarT": 1795136400000,
- "price": 87.38936,
- "equity": 110248.23802647207,
- "unreal": 753.1700000000541,
+ "lastRun": 1795140422609,
+ "lastBarT": 1795140000000,
+ "price": 87.35285,
+ "equity": 110649.84802647198,
+ "unreal": 1154.7799999999738,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -6848,7 +6880,7 @@
   }
  },
  "learned": {
-  "bars": 3580,
+  "bars": 3581,
   "events": 1928,
   "win": [
    {
@@ -6962,7 +6994,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7115,6 +7166,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 103096.87933956114
+  "equity": 103498.48933956106
  }
 }
