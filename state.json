@@ -6,7 +6,18 @@
   "balance": 104046.36804888683,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "units": 12000,
+   "entry": 159.18706,
+   "sl": 159.01958024396623,
+   "tp": 159.50701951206756,
+   "barT": 1795154400000,
+   "openT": 1795154820957,
+   "deadline": 1795414020957
+  },
   "trades": [
    {
     "dir": "long",
@@ -427,6 +438,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1795150800000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 159.18206,
+   "sl": 159.01958024396623,
+   "tp": 159.50701951206756,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1795147200000,
    "pattern": "ema_cross_dn",
@@ -6179,14 +6202,14 @@
    ]
   }
  ],
- "lastEvalT": 1795147200000,
+ "lastEvalT": 1795150800000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795153920111,
- "lastBarT": 1795150800000,
- "price": 159.16265,
- "equity": 104046.36804888683,
- "unreal": 0,
+ "lastRun": 1795154820957,
+ "lastBarT": 1795154400000,
+ "price": 159.18206,
+ "equity": 103986.36804888688,
+ "unreal": -59.99999999994543,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6273,7 +6296,7 @@
   }
  },
  "learned": {
-  "bars": 3584,
+  "bars": 3585,
   "events": 1932,
   "win": [
    {
@@ -6382,7 +6405,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7270,7 +7300,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105423.66278335788
+  "equity": 105578.94278335784
  },
  "skipReview": {
   "n": 296,
@@ -7505,14 +7535,25 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 100506.28320441522
+  "equity": 100351.00320441526
  },
  "newsfree": {
   "start": 100000,
   "balance": 105296.53291274054,
   "riskPct": 2,
   "startT": 1793840366022,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "units": 12000,
+   "entry": 159.18706,
+   "sl": 159.01958024396623,
+   "tp": 159.50701951206756,
+   "barT": 1795154400000,
+   "openT": 1795154820957,
+   "deadline": 1795414020957
+  },
   "trades": [
    {
     "dir": "long",
@@ -7611,6 +7652,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 105296.53291274054
+  "equity": 105236.5329127406
  }
 }

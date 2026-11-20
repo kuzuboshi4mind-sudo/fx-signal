@@ -3,7 +3,25 @@
  "startT": 1794521959845,
  "accounts": {
   "normal": {
-   "open": [],
+   "open": [
+    {
+     "symbol": "USD/JPY",
+     "dir": "long",
+     "name": "ボリバン下限から回帰",
+     "openT": 1795154820957,
+     "entry": 159.18706,
+     "sl": 159.01958024396623,
+     "tp": 159.50701951206756,
+     "riskFrac": 1,
+     "leverage": 4.8,
+     "oanda": {
+      "bid": 159.214,
+      "ask": 159.222,
+      "spread": 0.8,
+      "gap": 3.5
+     }
+    }
+   ],
    "closed": [
     {
      "symbol": "EUR/JPY",
