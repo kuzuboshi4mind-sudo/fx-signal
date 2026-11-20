@@ -455,6 +455,38 @@
  },
  "log": [
   {
+   "t": 1795165200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 158.82506,
+   "sl": 159.01084118341527,
+   "tp": 158.4534976331695,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795165200000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 158.82506,
+   "sl": 159.01084118341527,
+   "tp": 158.4534976331695,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795161600000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -502,7 +534,7 @@
    "entry": 159.13642,
    "sl": 159.3003181988056,
    "tp": 158.80862360238876,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6246,14 +6278,14 @@
    ]
   }
  ],
- "lastEvalT": 1795161600000,
+ "lastEvalT": 1795165200000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795168320271,
- "lastBarT": 1795165200000,
- "price": 158.8454,
- "equity": 103403.8009764816,
- "unreal": 1367.190000000022,
+ "lastRun": 1795169220567,
+ "lastBarT": 1795168800000,
+ "price": 158.82506,
+ "equity": 103627.54097648164,
+ "unreal": 1590.9300000000712,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6340,7 +6372,7 @@
   }
  },
  "learned": {
-  "bars": 3588,
+  "bars": 3589,
   "events": 1936,
   "win": [
    {
@@ -6456,7 +6488,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
@@ -7354,9 +7405,9 @@
   "equity": 103942.63719291275
  },
  "skipReview": {
-  "n": 300,
+  "n": 301,
   "wouldLose": 211,
-  "wouldWin": 89
+  "wouldWin": 90
  },
  "latest": {
   "start": 100000,
@@ -7586,7 +7637,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 103044.28320441522
+  "equity": 103207.00320441526
  },
  "newsfree": {
   "start": 100000,
@@ -7719,6 +7770,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 104653.96584033531
+  "equity": 104877.70584033536
  }
 }

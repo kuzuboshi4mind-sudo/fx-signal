@@ -487,6 +487,21 @@
  },
  "log": [
   {
+   "t": 1795165200000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 208.18013,
+   "sl": 208.50542496946662,
+   "tp": 207.5295400610667,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795161600000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -538,7 +553,7 @@
    "entry": 208.46605,
    "sl": 208.15391927239554,
    "tp": 209.0903114552089,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -581,7 +596,7 @@
    "entry": 208.63198,
    "sl": 208.9413522047957,
    "tp": 208.01323559040858,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6256,7 +6271,7 @@
    ]
   }
  ],
- "lastEvalT": 1795161600000,
+ "lastEvalT": 1795165200000,
  "adaptive": {
   "start": 100000,
   "balance": 91968.57620078295,
@@ -7274,16 +7289,16 @@
  },
  "reportDay": "2026-11-20",
  "skipReview": {
-  "n": 311,
-  "wouldLose": 209,
-  "wouldWin": 102
+  "n": 313,
+  "wouldLose": 210,
+  "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795168320866,
- "lastBarT": 1795165200000,
- "price": 208.27882,
- "equity": 105080.86423792121,
- "unreal": 91.92000000001599,
+ "lastRun": 1795169221257,
+ "lastBarT": 1795168800000,
+ "price": 208.18013,
+ "equity": 105673.00423792124,
+ "unreal": 684.060000000045,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7370,8 +7385,8 @@
   }
  },
  "learned": {
-  "bars": 3588,
-  "events": 1815,
+  "bars": 3589,
+  "events": 1817,
   "win": [
    {
     "name": "陽の包み足",
@@ -7499,7 +7514,16 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7780,6 +7804,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 98847.14172463126
+  "equity": 99439.28172463129
  }
 }
