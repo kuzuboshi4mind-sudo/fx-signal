@@ -487,6 +487,22 @@
  },
  "log": [
   {
+   "t": 1795179600000,
+   "pattern": "rsi_rebound",
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "entry": 208.16131,
+   "sl": 207.83258653808474,
+   "tp": 208.8187569238305,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795172400000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -6283,7 +6299,7 @@
    ]
   }
  ],
- "lastEvalT": 1795176000000,
+ "lastEvalT": 1795179600000,
  "adaptive": {
   "start": 100000,
   "balance": 91968.57620078295,
@@ -7306,11 +7322,11 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795182721676,
- "lastBarT": 1795179600000,
- "price": 208.21523,
- "equity": 105462.40423792125,
- "unreal": 473.4600000000455,
+ "lastRun": 1795183621332,
+ "lastBarT": 1795183200000,
+ "price": 208.16131,
+ "equity": 105785.92423792128,
+ "unreal": 796.980000000076,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7397,7 +7413,7 @@
   }
  },
  "learned": {
-  "bars": 3592,
+  "bars": 3593,
   "events": 1818,
   "win": [
    {
@@ -7526,7 +7542,17 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI売られすぎ反発",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7807,6 +7833,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99228.6817246313
+  "equity": 99552.20172463133
  }
 }
