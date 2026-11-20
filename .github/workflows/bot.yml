@@ -49,6 +49,7 @@ jobs:
           OANDA_ACCOUNT_ID: ${{ secrets.OANDA_ACCOUNT_ID }}
           OANDA_ACCOUNT_ID_NORMAL: ${{ secrets.OANDA_ACCOUNT_ID_NORMAL }}
           OANDA_LIVE: ${{ secrets.OANDA_LIVE }}
+          NAV_BASE: ${{ secrets.NAV_BASE }}
           LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           RESET: ${{ inputs.reset }}
