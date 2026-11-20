@@ -39,7 +39,7 @@ function navGuard(points, now, { dayPct, weekPct } = {}) {
 
 async function main() {
   const { OANDA_TOKEN, OANDA_ACCOUNT_ID_NORMAL } = process.env;
-  const base = Number(String(process.env.NAV_BASE || '').replace(/[^0-9.]/g, '')); // 「270,000」「270000円」も読めるように
+  const base = Number(String(process.env.NAV_BASE || '').normalize('NFKC').replace(/[^0-9.]/g, '')); // 「270,000」「270000円」や全角の「２７００００」も読めるように
   if (!OANDA_TOKEN || !OANDA_ACCOUNT_ID_NORMAL || !(base > 0)) { console.log(`資産の記録：省略（NAV_BASE ${process.env.NAV_BASE ? '読めない形式' : '未設定'}）`); return; }
   const file = path.join(__dirname, '..', 'data', 'nav.json');
   let book = {}; try { book = JSON.parse(fs.readFileSync(file, 'utf8')); } catch {}
