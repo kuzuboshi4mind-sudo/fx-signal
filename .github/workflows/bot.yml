@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # 終わる直前に次の回を自分で予約するため
 
 concurrency:
   group: fx-bot
@@ -56,3 +57,11 @@ jobs:
         # 通貨ペアごとに順番に実行し、毎回 bot-data に保存する（1つ失敗しても他は続ける）
         run: bash bot/loop.sh 340
         shell: bash
+
+      # 2026-11-21：定期起動が2.5〜4時間あく日が週に数回あったため、終わる直前に次の回を予約してつなぐ
+      # （同じグループの実行は1つずつなので重ならない。止めたいときは Actions で「FX bot」を Disable workflow にする）
+      - name: Queue next run
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run bot.yml --ref main || echo "次の回の予約に失敗（定期起動を待つ）"

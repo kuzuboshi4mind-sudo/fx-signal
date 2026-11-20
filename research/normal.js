@@ -49,7 +49,32 @@ const VARIANTS = {
   // 2026-11-17：キリ番の手前では入らない（Osler 2000/2003：利確注文はキリ番に集まり、そこで値動きが止まりやすい）。発表停止と組み合わせて比べる
   ev_rn5: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', rn: { step: 5, dist: 0.3 } }, // 5円刻み（150・155・160円）の手前0.3円以内へ向かう取引は見送る
   ev_rn1: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', rn: { step: 1, dist: 0.1 } }, // 1円刻みの手前0.1円以内へ向かう取引は見送る
+  // 2026-11-21：週末の持ち越し（月曜の窓開けで損切りを飛び越えた分も数える gap 計算）。本番の形（発表停止）と比べる
+  ev_gap: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true }, // 今と同じ（窓開けを正しく数えるだけ）
+  ev_wkskip: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true, wk: 'skip' }, // 金曜 UTC15時（日本時間 土曜0時）以降は新規を入れない
+  ev_wkflat: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true, wk: 'flat' }, // 上に加え、週末をまたぐポジションは閉場前の最後の足で手じまう
 };
+const WEEKEND = 24 * 3600e3;
+// 窓開けを数える版：足の始値がすでに損切り・利確を越えていたら始値で約定。wk='flat' なら週末前の最後の足の終値で手じまう
+function simulateGap(c, d, i, dir, o, flat) {
+  if (i + 1 >= c.length || isNaN(d.atr[i])) return null;
+  const cost = o.spreadPips * (o.symbol.endsWith('JPY') ? 0.01 : 0.0001);
+  const slDist = d.atr[i] * o.slAtr, tpDist = d.atr[i] * o.tpAtr, s = dir === 'long' ? 1 : -1;
+  const entry = c[i + 1].o + s * cost / 2, sl = entry - s * slDist, tp = entry + s * tpDist;
+  const last = Math.min(c.length - 1, i + o.maxBars);
+  const close = (px, j, outcome) => ({ r: s * (px - s * cost / 2 - entry) / slDist, outcome, bars: j - i });
+  for (let j = i + 1; j <= last; j++) {
+    const b = c[j];
+    if (j > i + 1 && (s > 0 ? b.o <= sl : b.o >= sl)) return close(b.o, j, 'loss'); // 窓で損切りを飛び越えた
+    if (j > i + 1 && (s > 0 ? b.o >= tp : b.o <= tp)) return close(b.o, j, 'win');
+    if (s > 0 ? b.l <= sl : b.h >= sl) return close(sl, j, 'loss');
+    if (s > 0 ? b.h >= tp : b.l <= tp) return close(tp, j, 'win');
+    if (flat && c[j + 1] && c[j + 1].t - b.t > WEEKEND) return close(b.c, j, 'flat');
+  }
+  if (last < i + o.maxBars) return null;
+  return close(c[last].c, last, 'timeout');
+}
+const friLate = (t) => { const x = new Date(t); return x.getUTCDay() === 5 && x.getUTCHours() >= 15; };
 // 入る向きの先、dist 以内にキリ番（step 刻み）があるか
 function nearRound(price, dir, rn) {
   const next = dir === 'long' ? Math.ceil(price / rn.step) * rn.step : Math.floor(price / rn.step) * rn.step;
@@ -79,15 +104,17 @@ function run(c, symbol) {
         if (!best) continue;
         if (v.rn && nearRound(c[i].c, best.p.dir, v.rn)) continue;
         if (v.ev && EV.nearEvent(events, c[i + 1] ? c[i + 1].t : c[i].t)) continue;
+        if (v.wk && c[i + 1] && friLate(c[i + 1].t)) continue;
         const cut = v.ev === 'flat' ? EV.barsUntilEvent(events, c, i, o.maxBars) : null;
-        const r = E.simulate(c, d, i, best.p.dir, cut ? { ...o, maxBars: Math.min(o.maxBars, cut) } : o);
+        const oo = cut ? { ...o, maxBars: Math.min(o.maxBars, cut) } : o;
+        const r = v.gap ? simulateGap(c, d, i, best.p.dir, oo, v.wk === 'flat') : E.simulate(c, d, i, best.p.dir, oo);
         if (!r) continue;
-        tr.push({ t: c[i].t, r: r.r }); busy = i + r.bars;
+        tr.push({ t: c[i].t, r: r.r, wkGap: r.r < -1.05 }); busy = i + r.bars;
       }
     }
     const rounds = [3, 2, 1].map(k => tr.filter(x => x.t >= lastT - k * YEAR && x.t < lastT - (k - 1) * YEAR).reduce((a, x) => a + x.r, 0));
     let eq = 0, pk = 0, dd = 0; for (const x of tr) { eq += x.r; pk = Math.max(pk, eq); dd = Math.max(dd, pk - eq); }
-    res[vk] = { n: tr.length, sumR: tr.reduce((a, x) => a + x.r, 0), rounds, maxDD: dd };
+    res[vk] = { n: tr.length, sumR: tr.reduce((a, x) => a + x.r, 0), rounds, maxDD: dd, bigLoss: tr.filter(x => x.wkGap).length, worst: Math.min(0, ...tr.map(x => x.r)) };
   }
   return res;
 }
