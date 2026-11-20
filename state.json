@@ -6163,12 +6163,12 @@
    ]
   }
  ],
- "lastEvalT": 1795136400000,
+ "lastEvalT": 1795140000000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795143120512,
- "lastBarT": 1795140000000,
- "price": 159.17497,
+ "lastRun": 1795144021044,
+ "lastBarT": 1795143600000,
+ "price": 159.19189,
  "equity": 104046.36804888683,
  "unreal": 0,
  "config": {
@@ -6257,7 +6257,7 @@
   }
  },
  "learned": {
-  "bars": 3581,
+  "bars": 3582,
   "events": 1930,
   "win": [
    {
@@ -7238,7 +7238,21 @@
   "start": 100000,
   "balance": 100312.36320441528,
   "startT": 1792033735611,
-  "positions": [],
+  "positions": [
+   {
+    "key": "vol_breakout",
+    "dir": "short",
+    "pattern": "vol_breakout",
+    "name": "ボラティリティ・ブレイクアウト",
+    "units": 8000,
+    "entry": 159.18689,
+    "sl": 159.43576890798136,
+    "tp": 142.5949628012426,
+    "barT": 1795143600000,
+    "openT": 1795144021044,
+    "deadline": 1795172821044
+   }
+  ],
   "trades": [
    {
     "key": "vol_breakout",
@@ -7448,7 +7462,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 100312.36320441528
+  "equity": 100272.3632044153
  },
  "newsfree": {
   "start": 100000,

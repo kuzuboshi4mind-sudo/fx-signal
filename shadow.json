@@ -218,7 +218,25 @@
    ]
   },
   "vol": {
-   "open": [],
+   "open": [
+    {
+     "symbol": "USD/JPY",
+     "dir": "short",
+     "name": "ボラティリティ・ブレイクアウト",
+     "openT": 1795144021044,
+     "entry": 159.18689,
+     "sl": 159.43576890798136,
+     "tp": 142.5949628012426,
+     "riskFrac": 1,
+     "leverage": 6.4,
+     "oanda": {
+      "bid": 159.192,
+      "ask": 159.2,
+      "spread": 0.8,
+      "gap": 0.5
+     }
+    }
+   ],
    "closed": [
     {
      "symbol": "USD/JPY",
