@@ -6221,11 +6221,11 @@
  "lastEvalT": 1795154400000,
  "reportDay": "2026-11-20",
  "version": 1,
- "lastRun": 1795158420645,
+ "lastRun": 1795159320280,
  "lastBarT": 1795158000000,
- "price": 159.24694,
- "equity": 104764.92804888674,
- "unreal": 718.5599999999113,
+ "price": 159.17588,
+ "equity": 103912.20804888688,
+ "unreal": -134.15999999995165,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6421,17 +6421,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105253.82278335764,
@@ -7319,7 +7309,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106097.98278335774
+  "equity": 105529.50278335784
  },
  "skipReview": {
   "n": 296,
@@ -7554,7 +7544,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 99831.96320441535
+  "equity": 100400.44320441526
  },
  "newsfree": {
   "start": 100000,
@@ -7671,6 +7661,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 106015.09291274045
+  "equity": 105162.3729127406
  }
 }
