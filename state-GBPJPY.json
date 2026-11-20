@@ -487,6 +487,18 @@
  },
  "log": [
   {
+   "t": 1795186800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 207.96179,
+   "sl": 208.28904517889632,
+   "tp": 207.30727964220736,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1795179600000,
    "pattern": "rsi_rebound",
    "name": "RSI売られすぎ反発",
@@ -6299,7 +6311,7 @@
    ]
   }
  ],
- "lastEvalT": 1795183200000,
+ "lastEvalT": 1795186800000,
  "adaptive": {
   "start": 100000,
   "balance": 91968.57620078295,
@@ -7322,11 +7334,11 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795189921932,
- "lastBarT": 1795186800000,
- "price": 208.06846,
- "equity": 106343.02423792126,
- "unreal": 1354.0800000000672,
+ "lastRun": 1795190822023,
+ "lastBarT": 1795190400000,
+ "price": 207.96179,
+ "equity": 106983.04423792115,
+ "unreal": 1994.0999999999462,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7413,7 +7425,7 @@
   }
  },
  "learned": {
-  "bars": 3594,
+  "bars": 3595,
   "events": 1818,
   "win": [
    {
@@ -7542,7 +7554,14 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7823,6 +7842,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 100109.30172463131
+  "equity": 100749.3217246312
  }
 }
