@@ -403,7 +403,7 @@
    "entry": 173.97697,
    "sl": 173.7352304124268,
    "tp": 174.46044917514635,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -419,7 +419,7 @@
    "entry": 173.97697,
    "sl": 173.7352304124268,
    "tp": 174.46044917514635,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7165,9 +7165,9 @@
   "wouldWin": 111
  },
  "version": 1,
- "lastRun": 1795385221303,
+ "lastRun": 1795386121270,
  "lastBarT": 1795384800000,
- "price": 173.97697,
+ "price": 173.98951,
  "equity": 121889.11350299533,
  "unreal": 0,
  "config": {
@@ -7398,26 +7398,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

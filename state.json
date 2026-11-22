@@ -478,7 +478,7 @@
    "entry": 158.59619,
    "sl": 158.3897956469461,
    "tp": 159.0089787061078,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -494,7 +494,7 @@
    "entry": 158.59619,
    "sl": 158.3897956469461,
    "tp": 159.0089787061078,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6401,11 +6401,11 @@
  "lastEvalT": 1795208400000,
  "reportDay": "2026-11-23",
  "version": 1,
- "lastRun": 1795385220337,
+ "lastRun": 1795386120692,
  "lastBarT": 1795384800000,
- "price": 158.59619,
- "equity": 104791.42132201233,
- "unreal": -991.5300000000968,
+ "price": 158.62498,
+ "equity": 104532.31132201247,
+ "unreal": -1250.6399999999758,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6608,26 +6608,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
@@ -7909,6 +7890,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 106041.58618586605
+  "equity": 105782.47618586618
  }
 }

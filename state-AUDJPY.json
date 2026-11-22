@@ -590,7 +590,7 @@
    "entry": 105.03774,
    "sl": 104.75230610685749,
    "tp": 105.60860778628502,
-   "status": "open",
+   "status": "expired",
    "shadow": true,
    "skipped": false
   },
@@ -602,7 +602,7 @@
    "entry": 105.03774,
    "sl": 104.75230610685749,
    "tp": 105.60860778628502,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7136,11 +7136,11 @@
   "wouldWin": 100
  },
  "version": 1,
- "lastRun": 1795385222923,
+ "lastRun": 1795386122164,
  "lastBarT": 1795384800000,
- "price": 105.03774,
- "equity": 113100.24471978786,
- "unreal": 847.8400000000335,
+ "price": 105.02571,
+ "equity": 113184.45471978783,
+ "unreal": 932.0500000000038,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7382,25 +7382,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7637,6 +7619,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 120755.10096738966
+  "equity": 120851.34096738964
  }
 }

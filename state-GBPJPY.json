@@ -510,7 +510,7 @@
    "entry": 207.58038,
    "sl": 207.25869049374444,
    "tp": 208.2237590125111,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -526,7 +526,7 @@
    "entry": 207.58038,
    "sl": 207.25869049374444,
    "tp": 208.2237590125111,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -542,7 +542,7 @@
    "entry": 207.58038,
    "sl": 207.25869049374444,
    "tp": 208.2237590125111,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7485,11 +7485,11 @@
   "wouldWin": 104
  },
  "version": 1,
- "lastRun": 1795385222180,
+ "lastRun": 1795386121697,
  "lastBarT": 1795384800000,
- "price": 207.58038,
- "equity": 107382.03922795173,
- "unreal": -1270.5599999998185,
+ "price": 207.66374,
+ "equity": 106881.87922795174,
+ "unreal": -1770.7199999998124,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -7705,35 +7705,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8030,6 +8002,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 101360.07671466176
+  "equity": 100943.27671466176
  }
 }

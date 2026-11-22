@@ -366,7 +366,7 @@
    "entry": 86.77505,
    "sl": 86.59288403630012,
    "tp": 87.13938192739973,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -382,7 +382,7 @@
    "entry": 86.77505,
    "sl": 86.59288403630012,
    "tp": 87.13938192739973,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7065,11 +7065,11 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795385223406,
+ "lastRun": 1795386122594,
  "lastBarT": 1795384800000,
- "price": 86.77505,
- "equity": 107138.37994064698,
- "unreal": -320.4299999999449,
+ "price": 86.76105,
+ "equity": 107292.37994064693,
+ "unreal": -166.4299999999912,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -7157,7 +7157,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1921,
+  "events": 1922,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -7277,26 +7277,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI売られすぎ反発",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7465,6 +7446,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 100016.15125373605
+  "equity": 100156.15125373601
  }
 }
