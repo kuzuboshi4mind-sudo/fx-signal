@@ -478,7 +478,7 @@
    "entry": 158.49102,
    "sl": 158.70727392425184,
    "tp": 158.0585121514963,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -494,7 +494,7 @@
    "entry": 158.49102,
    "sl": 158.70727392425184,
    "tp": 158.0585121514963,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": false
   },
@@ -6369,7 +6369,7 @@
  "lastEvalT": 1795204800000,
  "reportDay": "2026-11-23",
  "version": 1,
- "lastRun": 1795373520321,
+ "lastRun": 1795374420808,
  "lastBarT": 1795208400000,
  "price": 158.54812,
  "equity": 105224.0513220123,
@@ -6460,7 +6460,7 @@
   }
  },
  "learned": {
-  "bars": 3562,
+  "bars": 3561,
   "events": 1911,
   "win": [
    {
@@ -6469,7 +6469,7 @@
     "key": "against|range",
     "n": 19,
     "winRate": 0.5789473684210527,
-    "avgR": 0.8325105616422598
+    "avgR": 0.83251056162028
    },
    {
     "name": "ボリバン下限から回帰",
