@@ -6535,9 +6535,9 @@
  "lastEvalT": 1795456800000,
  "reportDay": "2026-11-24",
  "version": 1,
- "lastRun": 1795460820175,
+ "lastRun": 1795461720332,
  "lastBarT": 1795460400000,
- "price": 159.12274,
+ "price": 159.059,
  "equity": 103791.66600374588,
  "unreal": 0,
  "config": {
@@ -6627,7 +6627,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1906,
+  "events": 1907,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -6734,17 +6734,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
