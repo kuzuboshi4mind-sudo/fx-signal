@@ -7245,11 +7245,11 @@
   "wouldWin": 104
  },
  "version": 1,
- "lastRun": 1795471623049,
+ "lastRun": 1795472522944,
  "lastBarT": 1795471200000,
- "price": 86.69188,
- "equity": 103048.5102632877,
- "unreal": -362.9699999999758,
+ "price": 86.67019,
+ "equity": 103243.72026328763,
+ "unreal": -167.76000000004387,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -7465,17 +7465,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7676,6 +7666,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 96088.70760528313
+  "equity": 96283.91760528306
  }
 }
