@@ -476,6 +476,22 @@
  },
  "log": [
   {
+   "t": 1795438800000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 159.36207,
+   "sl": 159.19085257739675,
+   "tp": 159.7045048452065,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795420800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -499,7 +515,7 @@
    "entry": 158.93678,
    "sl": 158.73015422330351,
    "tp": 159.35003155339297,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -515,7 +531,7 @@
    "entry": 158.97752,
    "sl": 158.7663669098668,
    "tp": 159.3998261802664,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -531,7 +547,7 @@
    "entry": 158.97752,
    "sl": 158.7663669098668,
    "tp": 159.3998261802664,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6468,12 +6484,12 @@
    ]
   }
  ],
- "lastEvalT": 1795435200000,
+ "lastEvalT": 1795438800000,
  "reportDay": "2026-11-23",
  "version": 1,
- "lastRun": 1795441920214,
- "lastBarT": 1795438800000,
- "price": 158.96121,
+ "lastRun": 1795442820555,
+ "lastBarT": 1795442400000,
+ "price": 159.36207,
  "equity": 103791.66600374588,
  "unreal": 0,
  "config": {
@@ -6670,7 +6686,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
@@ -7568,9 +7594,9 @@
   "equity": 103942.63719291275
  },
  "skipReview": {
-  "n": 305,
+  "n": 308,
   "wouldLose": 213,
-  "wouldWin": 92
+  "wouldWin": 95
  },
  "latest": {
   "start": 100000,
