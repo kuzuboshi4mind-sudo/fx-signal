@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 110234.58885960295,
+  "balance": 114195.01638806779,
   "riskPct": 2,
   "startT": 1791967922952,
-  "pos": {
-   "dir": "short",
-   "pattern": "pullback_dn",
-   "name": "下降トレンドの戻り",
-   "units": 9000,
-   "entry": 105.51788,
-   "sl": 105.74690375158139,
-   "tp": 105.07783249683725,
-   "barT": 1795435200000,
-   "openT": 1795435621824,
-   "deadline": 1795522021824
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "units": 9000,
+    "entry": 105.51788,
+    "sl": 105.74690375158139,
+    "tp": 105.07783249683725,
+    "barT": 1795435200000,
+    "openT": 1795435621824,
+    "deadline": 1795522021824,
+    "exit": 105.07783249683725,
+    "closeT": 1795438800000,
+    "reason": "tp",
+    "pnl": 3960.427528464834
+   },
    {
     "dir": "short",
     "pattern": "donchian_dn",
@@ -606,7 +611,7 @@
    "entry": 105.52388,
    "sl": 105.74690375158139,
    "tp": 105.07783249683725,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -7212,11 +7217,11 @@
   "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1795441022078,
+ "lastRun": 1795441921613,
  "lastBarT": 1795438800000,
- "price": 105.17625,
- "equity": 113309.25885960304,
- "unreal": 3074.670000000083,
+ "price": 105.03886,
+ "equity": 114195.01638806779,
+ "unreal": 0,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7304,7 +7309,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1921,
+  "events": 1922,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -7366,13 +7371,20 @@
     "name": "下降トレンドの戻り",
     "dir": "short",
     "key": "with|range",
-    "n": 82,
-    "winRate": 0.3780487804878049,
-    "avgR": 0.11483793138368076
+    "n": 83,
+    "winRate": 0.3855421686746988,
+    "avgR": 0.1373886613418314
    }
   ]
  },
  "review": {
+  "pullback_dn": {
+   "n": 9,
+   "wins": 5,
+   "recentLosses": 2,
+   "streak": 0,
+   "suspended": false
+  },
   "engulf_up": {
    "n": 15,
    "wins": 1,
@@ -7393,13 +7405,6 @@
    "recentLosses": 5,
    "streak": 5,
    "suspended": true
-  },
-  "pullback_dn": {
-   "n": 8,
-   "wins": 4,
-   "recentLosses": 3,
-   "streak": 2,
-   "suspended": false
   },
   "bb_revert_up": {
    "n": 1,
@@ -7470,22 +7475,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 117480.06569860692,
+  "balance": 121880.54073023451,
   "riskPct": 2,
   "startT": 1793840367240,
-  "pos": {
-   "dir": "short",
-   "pattern": "pullback_dn",
-   "name": "下降トレンドの戻り",
-   "units": 10000,
-   "entry": 105.51788,
-   "sl": 105.74690375158139,
-   "tp": 105.07783249683725,
-   "barT": 1795435200000,
-   "openT": 1795435621824,
-   "deadline": 1795522021824
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り",
+    "units": 10000,
+    "entry": 105.51788,
+    "sl": 105.74690375158139,
+    "tp": 105.07783249683725,
+    "barT": 1795435200000,
+    "openT": 1795435621824,
+    "deadline": 1795522021824,
+    "exit": 105.07783249683725,
+    "closeT": 1795438800000,
+    "reason": "tp",
+    "pnl": 4400.475031627593
+   },
    {
     "dir": "short",
     "pattern": "donchian_dn",
@@ -7711,6 +7721,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 120896.36569860701
+  "equity": 121880.54073023451
  }
 }
