@@ -476,6 +476,22 @@
  },
  "log": [
   {
+   "t": 1795460400000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 158.92617,
+   "sl": 159.10349673528597,
+   "tp": 158.57151652942807,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795456800000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -6532,12 +6548,12 @@
    ]
   }
  ],
- "lastEvalT": 1795456800000,
+ "lastEvalT": 1795460400000,
  "reportDay": "2026-11-24",
  "version": 1,
- "lastRun": 1795463520179,
- "lastBarT": 1795460400000,
- "price": 158.93961,
+ "lastRun": 1795464420197,
+ "lastBarT": 1795464000000,
+ "price": 158.92617,
  "equity": 103791.66600374588,
  "unreal": 0,
  "config": {
@@ -6627,7 +6643,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1907,
+  "events": 1906,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -6643,7 +6659,7 @@
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.256085519201825
+    "avgR": 0.25608551920182493
    },
    {
     "name": "陰の包み足",
@@ -6734,12 +6750,36 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
   "startT": 1791916832223,
-  "positions": [],
+  "positions": [
+   {
+    "key": "pullback_dn|long|3|1",
+    "dir": "long",
+    "pattern": "pullback_dn",
+    "name": "下降トレンドの戻り（逆向き）",
+    "units": 3000,
+    "entry": 158.93117,
+    "sl": 158.75384326471405,
+    "tp": 159.46315020585791,
+    "barT": 1795464000000,
+    "openT": 1795464420197,
+    "deadline": 1795550820197
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_dn|long|2|1",
@@ -7629,7 +7669,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 103942.63719291275
+  "equity": 103927.63719291276
  },
  "skipReview": {
   "n": 311,
