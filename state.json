@@ -476,6 +476,22 @@
  },
  "log": [
   {
+   "t": 1795395600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 158.93678,
+   "sl": 158.73015422330351,
+   "tp": 159.35003155339297,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795388400000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -6436,12 +6452,12 @@
    ]
   }
  ],
- "lastEvalT": 1795392000000,
+ "lastEvalT": 1795395600000,
  "reportDay": "2026-11-23",
  "version": 1,
- "lastRun": 1795398720062,
- "lastBarT": 1795395600000,
- "price": 158.93285,
+ "lastRun": 1795399620969,
+ "lastBarT": 1795399200000,
+ "price": 158.93678,
  "equity": 103791.66600374588,
  "unreal": 0,
  "config": {
@@ -6539,7 +6555,7 @@
     "key": "against|range",
     "n": 19,
     "winRate": 0.5789473684210527,
-    "avgR": 0.8325105613662571
+    "avgR": 0.8325105613582218
    },
    {
     "name": "ボリバン下限から回帰",
@@ -6646,7 +6662,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
