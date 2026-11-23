@@ -6439,9 +6439,9 @@
  "lastEvalT": 1795388400000,
  "reportDay": "2026-11-23",
  "version": 1,
- "lastRun": 1795392420351,
+ "lastRun": 1795393320209,
  "lastBarT": 1795392000000,
- "price": 158.97752,
+ "price": 158.9119,
  "equity": 103791.66600374588,
  "unreal": 0,
  "config": {
@@ -6646,27 +6646,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
