@@ -650,7 +650,7 @@
    "entry": 105.72608,
    "sl": 105.45180018358545,
    "tp": 106.2746396328291,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -7268,11 +7268,11 @@
   "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1795451822203,
+ "lastRun": 1795452722338,
  "lastBarT": 1795449600000,
- "price": 105.596,
- "equity": 114014.41638806777,
- "unreal": -180.60000000002674,
+ "price": 105.37745,
+ "equity": 115544.26638806782,
+ "unreal": 1349.2500000000264,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7429,19 +7429,19 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 16,
+   "wins": 1,
+   "recentLosses": 5,
+   "streak": 11,
+   "suspended": true
+  },
   "pullback_dn": {
    "n": 9,
    "wins": 5,
    "recentLosses": 2,
    "streak": 0,
    "suspended": false
-  },
-  "engulf_up": {
-   "n": 15,
-   "wins": 1,
-   "recentLosses": 5,
-   "streak": 10,
-   "suspended": true
   },
   "donchian_dn": {
    "n": 16,
@@ -7783,6 +7783,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 121699.94073023449
+  "equity": 123229.79073023454
  }
 }

@@ -6519,9 +6519,9 @@
  "lastEvalT": 1795446000000,
  "reportDay": "2026-11-24",
  "version": 1,
- "lastRun": 1795451820283,
+ "lastRun": 1795452720883,
  "lastBarT": 1795449600000,
- "price": 159.32677,
+ "price": 159.28408,
  "equity": 103791.66600374588,
  "unreal": 0,
  "config": {
@@ -6611,7 +6611,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1907,
+  "events": 1908,
   "win": [
    {
     "name": "ボリバン下限から回帰",
