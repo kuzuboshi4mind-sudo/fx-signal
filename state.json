@@ -476,6 +476,22 @@
  },
  "log": [
   {
+   "t": 1795456800000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 159.12274,
+   "sl": 159.29861340723104,
+   "tp": 158.77099318553792,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795446000000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -6516,12 +6532,12 @@
    ]
   }
  ],
- "lastEvalT": 1795453200000,
+ "lastEvalT": 1795456800000,
  "reportDay": "2026-11-24",
  "version": 1,
- "lastRun": 1795459920971,
- "lastBarT": 1795456800000,
- "price": 159.14353,
+ "lastRun": 1795460820175,
+ "lastBarT": 1795460400000,
+ "price": 159.12274,
  "equity": 103791.66600374588,
  "unreal": 0,
  "config": {
@@ -6611,7 +6627,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1907,
+  "events": 1906,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -6627,7 +6643,7 @@
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.2560855192018249
+    "avgR": 0.256085519201825
    },
    {
     "name": "陰の包み足",
@@ -6718,7 +6734,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
