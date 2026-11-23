@@ -7086,9 +7086,9 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795396023149,
+ "lastRun": 1795396922851,
  "lastBarT": 1795395600000,
- "price": 87.08138,
+ "price": 87.07853,
  "equity": 105351.69362267695,
  "unreal": 0,
  "config": {
@@ -7298,17 +7298,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
