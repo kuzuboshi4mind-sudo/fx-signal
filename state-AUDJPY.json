@@ -726,7 +726,7 @@
    "entry": 105.39313,
    "sl": 105.70128512633482,
    "tp": 104.77681974733034,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -7384,11 +7384,11 @@
   "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1795502222151,
+ "lastRun": 1795503121780,
  "lastBarT": 1795500000000,
- "price": 105.63759,
- "equity": 113723.28638806776,
- "unreal": -471.7300000000222,
+ "price": 105.64512,
+ "equity": 113670.57638806774,
+ "unreal": -524.4400000000411,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7476,7 +7476,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1917,
+  "events": 1918,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -7535,14 +7535,6 @@
     "avgR": 0.139906737721943
    },
    {
-    "name": "下降トレンドの戻り",
-    "dir": "short",
-    "key": "with|range",
-    "n": 83,
-    "winRate": 0.37349397590361444,
-    "avgR": 0.10132484520573676
-   },
-   {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
@@ -7554,10 +7546,10 @@
  },
  "review": {
   "pullback_dn": {
-   "n": 11,
+   "n": 12,
    "wins": 5,
    "recentLosses": 4,
-   "streak": 2,
+   "streak": 3,
    "suspended": true
   },
   "engulf_up": {
@@ -7907,6 +7899,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 121408.81073023449
+  "equity": 121356.10073023447
  }
 }
