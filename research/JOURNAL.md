@@ -51,6 +51,9 @@
 
 <!-- 毎週の振り返りをここに追記する（新しい週が上） -->
 
+### 2026-11-25（朝の評価：円安への切り返し）
+- 11/24 は円買い（円クロス売り）の流れが止まり円安に切り返した日。通常口座の5ペアがすべて損切り（売り4・買い1）、本番も2件とも損切り。一方、見送った40件は「入っていたら負け」32・勝ち8 → 見送りの仕組みは損を防いだ。金曜に「同時エントリー」「5時台」を検証予定
+
 ### 2026-11-24（火曜リサーチ第10弾：スーパートレンド・前日／前週の高値安値の抜け）
 - 出典：Supertrend（O.Seban 考案、ATR×3 の追いかけ線。公開の検証は株・暗号資産中心で短い足では弱いとの報告：Quantified Strategies https://quantifiedstrategies.substack.com/p/the-supertrend-indicator-backtested ほか）／C.Osler「Stop-loss orders and price cascades in currency markets」(J. of International Money and Finance 2005)：損切り注文は直近の高値・安値の外に集まり、抜けると加速しやすい
 - 新手法3つ：supertrend（向きが変わったら入り、反対に変わるまで持つ）、pdhl_bo（日本時間16〜24時に前日高値・安値を初めて抜けたら順張り）、pwhl_bo（前週高値・安値の抜け）。8ペア×3＝24通り → **合格0**（運だけで期待される合格数 0.0）
