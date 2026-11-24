@@ -3,25 +3,7 @@
  "startT": 1794521959845,
  "accounts": {
   "normal": {
-   "open": [
-    {
-     "symbol": "USD/JPY",
-     "dir": "long",
-     "name": "ゴールデンクロス(EMA20/50)",
-     "openT": 1795511220415,
-     "entry": 159.34094,
-     "sl": 159.1690310036405,
-     "tp": 159.66975799271898,
-     "riskFrac": 1,
-     "leverage": 4.6,
-     "oanda": {
-      "bid": 159.316,
-      "ask": 159.324,
-      "spread": 0.8,
-      "gap": -1.7
-     }
-    }
-   ],
+   "open": [],
    "closed": [
     {
      "symbol": "EUR/JPY",
@@ -356,6 +338,27 @@
      },
      "exit": 173.99872799013932,
      "closeT": 1795510800000,
+     "reason": "sl",
+     "r": -1
+    },
+    {
+     "symbol": "USD/JPY",
+     "dir": "long",
+     "name": "ゴールデンクロス(EMA20/50)",
+     "openT": 1795511220415,
+     "entry": 159.34094,
+     "sl": 159.1690310036405,
+     "tp": 159.66975799271898,
+     "riskFrac": 1,
+     "leverage": 4.6,
+     "oanda": {
+      "bid": 159.316,
+      "ask": 159.324,
+      "spread": 0.8,
+      "gap": -1.7
+     },
+     "exit": 159.1690310036405,
+     "closeT": 1795518000000,
      "reason": "sl",
      "r": -1
     }

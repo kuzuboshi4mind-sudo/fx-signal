@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 106575.92313708465,
+  "balance": 104529.84010005178,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "long",
-   "pattern": "donchian_up",
-   "name": "20本高値ブレイク",
-   "units": 6000,
-   "entry": 208.45757999999998,
-   "sl": 208.1165661604945,
-   "tp": 209.10960767901094,
-   "barT": 1795514400000,
-   "openT": 1795514821787,
-   "deadline": 1795601221787
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク",
+    "units": 6000,
+    "entry": 208.45757999999998,
+    "sl": 208.1165661604945,
+    "tp": 209.10960767901094,
+    "barT": 1795514400000,
+    "openT": 1795514821787,
+    "deadline": 1795601221787,
+    "exit": 208.1165661604945,
+    "closeT": 1795518000000,
+    "reason": "sl",
+    "pnl": -2046.0830370328722
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -7853,11 +7858,11 @@
   "wouldWin": 111
  },
  "version": 1,
- "lastRun": 1795518421925,
+ "lastRun": 1795519321885,
  "lastBarT": 1795518000000,
- "price": 208.18354,
- "equity": 104931.68313708474,
- "unreal": -1644.239999999911,
+ "price": 208.09022,
+ "equity": 104529.84010005178,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -8080,16 +8085,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8113,22 +8109,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 100688.31330560586,
+  "balance": 98983.24410807846,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": {
-   "dir": "long",
-   "pattern": "donchian_up",
-   "name": "20本高値ブレイク",
-   "units": 5000,
-   "entry": 208.45757999999998,
-   "sl": 208.1165661604945,
-   "tp": 209.10960767901094,
-   "barT": 1795514400000,
-   "openT": 1795514821787,
-   "deadline": 1795601221787
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "donchian_up",
+    "name": "20本高値ブレイク",
+    "units": 5000,
+    "entry": 208.45757999999998,
+    "sl": 208.1165661604945,
+    "tp": 209.10960767901094,
+    "barT": 1795514400000,
+    "openT": 1795514821787,
+    "deadline": 1795601221787,
+    "exit": 208.1165661604945,
+    "closeT": 1795518000000,
+    "reason": "sl",
+    "pnl": -1705.0691975273935
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -8402,6 +8403,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99318.11330560593
+  "equity": 98983.24410807846
  }
 }

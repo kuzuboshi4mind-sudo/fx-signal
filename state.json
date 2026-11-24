@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 103791.66600374588,
+  "balance": 101728.75804743198,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "ema_cross_up",
-   "name": "ゴールデンクロス(EMA20/50)",
-   "units": 12000,
-   "entry": 159.34094,
-   "sl": 159.1690310036405,
-   "tp": 159.66975799271898,
-   "barT": 1795510800000,
-   "openT": 1795511220415,
-   "deadline": 1795597620415
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 12000,
+    "entry": 159.34094,
+    "sl": 159.1690310036405,
+    "tp": 159.66975799271898,
+    "barT": 1795510800000,
+    "openT": 1795511220415,
+    "deadline": 1795597620415,
+    "exit": 159.1690310036405,
+    "closeT": 1795518000000,
+    "reason": "sl",
+    "pnl": -2062.907956313893
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -557,7 +562,7 @@
    "entry": 159.33594,
    "sl": 159.1690310036405,
    "tp": 159.66975799271898,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -569,7 +574,7 @@
    "entry": 159.32119,
    "sl": 159.15325317581974,
    "tp": 159.6570636483605,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6702,11 +6707,11 @@
  "lastEvalT": 1795514400000,
  "reportDay": "2026-11-24",
  "version": 1,
- "lastRun": 1795518420713,
+ "lastRun": 1795519320592,
  "lastBarT": 1795518000000,
- "price": 159.245,
- "equity": 102640.38600374607,
- "unreal": -1151.2799999998151,
+ "price": 159.16909,
+ "equity": 101728.75804743198,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6794,7 +6799,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1908,
+  "events": 1910,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -6808,9 +6813,9 @@
     "name": "ゴールデンクロス(EMA20/50)",
     "dir": "long",
     "key": "*",
-    "n": 34,
-    "winRate": 0.4117647058823529,
-    "avgR": 0.2560855192018329
+    "n": 35,
+    "winRate": 0.4,
+    "avgR": 0.21976941231056935
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -6831,6 +6836,13 @@
   ]
  },
  "review": {
+  "ema_cross_up": {
+   "n": 5,
+   "wins": 3,
+   "recentLosses": 2,
+   "streak": 1,
+   "suspended": false
+  },
   "bb_revert_up": {
    "n": 2,
    "wins": 0,
@@ -6842,13 +6854,6 @@
    "n": 2,
    "wins": 2,
    "recentLosses": 0,
-   "streak": 0,
-   "suspended": false
-  },
-  "ema_cross_up": {
-   "n": 4,
-   "wins": 3,
-   "recentLosses": 1,
    "streak": 0,
    "suspended": false
   },
@@ -6909,16 +6914,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,
@@ -7833,8 +7829,8 @@
   "equity": 105538.57781048647
  },
  "skipReview": {
-  "n": 319,
-  "wouldLose": 223,
+  "n": 320,
+  "wouldLose": 224,
   "wouldWin": 96
  },
  "latest": {
@@ -8072,22 +8068,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 105041.8308675996,
+  "balance": 102978.9229112857,
   "riskPct": 2,
   "startT": 1793840366022,
-  "pos": {
-   "dir": "long",
-   "pattern": "ema_cross_up",
-   "name": "ゴールデンクロス(EMA20/50)",
-   "units": 12000,
-   "entry": 159.34094,
-   "sl": 159.1690310036405,
-   "tp": 159.66975799271898,
-   "barT": 1795510800000,
-   "openT": 1795511220415,
-   "deadline": 1795597620415
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 12000,
+    "entry": 159.34094,
+    "sl": 159.1690310036405,
+    "tp": 159.66975799271898,
+    "barT": 1795510800000,
+    "openT": 1795511220415,
+    "deadline": 1795597620415,
+    "exit": 159.1690310036405,
+    "closeT": 1795518000000,
+    "reason": "sl",
+    "pnl": -2062.907956313893
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -8233,6 +8234,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103890.55086759978
+  "equity": 102978.9229112857
  }
 }
