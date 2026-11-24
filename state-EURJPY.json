@@ -7524,9 +7524,9 @@
   "wouldWin": 118
  },
  "version": 1,
- "lastRun": 1795543620550,
+ "lastRun": 1795544520935,
  "lastBarT": 1795543200000,
- "price": 174.72665,
+ "price": 174.69405,
  "equity": 124061.2558810728,
  "unreal": 0,
  "config": {
@@ -7765,17 +7765,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

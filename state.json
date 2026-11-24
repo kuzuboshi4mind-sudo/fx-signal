@@ -6755,9 +6755,9 @@
  "lastEvalT": 1795539600000,
  "reportDay": "2026-11-25",
  "version": 1,
- "lastRun": 1795543620056,
+ "lastRun": 1795544520608,
  "lastBarT": 1795543200000,
- "price": 159.22759,
+ "price": 159.27839,
  "equity": 101728.75804743198,
  "unreal": 0,
  "config": {
@@ -6970,17 +6970,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,

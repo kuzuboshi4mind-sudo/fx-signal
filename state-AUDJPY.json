@@ -7534,9 +7534,9 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795543621260,
+ "lastRun": 1795544521413,
  "lastBarT": 1795543200000,
- "price": 105.80317,
+ "price": 105.81217,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -7772,18 +7772,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "直近の実績不振で一時停止",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
