@@ -492,6 +492,38 @@
  },
  "log": [
   {
+   "t": 1795528800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 159.31069,
+   "sl": 159.12910188506052,
+   "tp": 159.67386622987897,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1795528800000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 159.31069,
+   "sl": 159.49227811493947,
+   "tp": 158.94751377012102,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795514400000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -6704,12 +6736,12 @@
    ]
   }
  ],
- "lastEvalT": 1795525200000,
- "reportDay": "2026-11-24",
+ "lastEvalT": 1795528800000,
+ "reportDay": "2026-11-25",
  "version": 1,
- "lastRun": 1795531920987,
- "lastBarT": 1795528800000,
- "price": 159.19383,
+ "lastRun": 1795532820243,
+ "lastBarT": 1795532400000,
+ "price": 159.31069,
  "equity": 101728.75804743198,
  "unreal": 0,
  "config": {
@@ -6799,7 +6831,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1910,
+  "events": 1909,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -6810,12 +6842,20 @@
     "avgR": 0.3260192726792819
    },
    {
+    "name": "陰の包み足",
+    "dir": "short",
+    "key": "against|range",
+    "n": 53,
+    "winRate": 0.41509433962264153,
+    "avgR": 0.22388857780826152
+   },
+   {
     "name": "ゴールデンクロス(EMA20/50)",
     "dir": "long",
     "key": "*",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.21976941231057423
+    "avgR": 0.21976941231057398
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -6823,7 +6863,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.21365704934190943
+    "avgR": 0.21365704934190893
    },
    {
     "name": "陰の包み足",
@@ -6914,7 +6954,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,
