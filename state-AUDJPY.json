@@ -622,7 +622,7 @@
    "entry": 105.49101,
    "sl": 105.73617487017329,
    "tp": 105.00068025965342,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -638,7 +638,7 @@
    "entry": 105.49101,
    "sl": 105.73617487017329,
    "tp": 105.00068025965342,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7427,16 +7427,16 @@
  },
  "reportDay": "2026-11-24",
  "skipReview": {
-  "n": 320,
-  "wouldLose": 218,
+  "n": 322,
+  "wouldLose": 220,
   "wouldWin": 102
  },
  "version": 1,
- "lastRun": 1795520222046,
+ "lastRun": 1795521121844,
  "lastBarT": 1795518000000,
- "price": 105.62071,
- "equity": 113841.44638806776,
- "unreal": -353.57000000001904,
+ "price": 105.73723,
+ "equity": 113025.80638806781,
+ "unreal": -1169.2099999999782,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7524,7 +7524,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1915,
+  "events": 1917,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -7939,6 +7939,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 121526.97073023449
+  "equity": 120711.33073023453
  }
 }
