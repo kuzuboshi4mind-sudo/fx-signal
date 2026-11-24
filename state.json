@@ -476,6 +476,22 @@
  },
  "log": [
   {
+   "t": 1795478400000,
+   "pattern": "pullback_dn",
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "entry": 158.92641,
+   "sl": 159.09452857866987,
+   "tp": 158.5901728426603,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795464000000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -6564,12 +6580,12 @@
    ]
   }
  ],
- "lastEvalT": 1795474800000,
+ "lastEvalT": 1795478400000,
  "reportDay": "2026-11-24",
  "version": 1,
- "lastRun": 1795481520820,
- "lastBarT": 1795478400000,
- "price": 159.0626,
+ "lastRun": 1795482420935,
+ "lastBarT": 1795482000000,
+ "price": 158.92641,
  "equity": 103791.66600374588,
  "unreal": 0,
  "config": {
@@ -6675,7 +6691,15 @@
     "key": "*",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.25608551920182476
+    "avgR": 0.2560855192018249
+   },
+   {
+    "name": "ボリバン下抜けブレイク",
+    "dir": "short",
+    "key": "against|range",
+    "n": 34,
+    "winRate": 0.4117647058823529,
+    "avgR": 0.2136570493418831
    },
    {
     "name": "陰の包み足",
@@ -6766,7 +6790,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "下降トレンドの戻り",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 103942.63719291275,
@@ -7675,7 +7709,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 104336.92719291273
+  "equity": 103928.35719291274
  },
  "skipReview": {
   "n": 313,
