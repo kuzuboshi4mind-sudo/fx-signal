@@ -7368,11 +7368,11 @@
   "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1795486022898,
+ "lastRun": 1795486921423,
  "lastBarT": 1795485600000,
- "price": 105.20509,
- "equity": 116750.78638806779,
- "unreal": 2555.7700000000095,
+ "price": 105.3231,
+ "equity": 115924.71638806781,
+ "unreal": 1729.7000000000226,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7622,32 +7622,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -7916,6 +7891,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 124436.31073023452
+  "equity": 123610.24073023454
  }
 }
