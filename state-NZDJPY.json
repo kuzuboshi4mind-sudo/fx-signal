@@ -459,7 +459,7 @@
    "entry": 86.69188,
    "sl": 86.51597430958397,
    "tp": 87.04369138083204,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7301,14 +7301,14 @@
  },
  "reportDay": "2026-11-24",
  "skipReview": {
-  "n": 344,
+  "n": 345,
   "wouldLose": 239,
-  "wouldWin": 105
+  "wouldWin": 106
  },
  "version": 1,
- "lastRun": 1795514823421,
+ "lastRun": 1795515722226,
  "lastBarT": 1795514400000,
- "price": 87.00055,
+ "price": 87.01651,
  "equity": 101512.62958325642,
  "unreal": 0,
  "config": {
@@ -7526,17 +7526,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
