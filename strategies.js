@@ -81,7 +81,26 @@
     const haDir = new Array(n).fill(0);
     { let hO = c[0].o, hC = (c[0].o + c[0].h + c[0].l + c[0].c) / 4;
       for (let i = 1; i < n; i++) { hO = (hO + hC) / 2; hC = (c[i].o + c[i].h + c[i].l + c[i].c) / 4; haDir[i] = hC > hO ? 1 : hC < hO ? -1 : 0; } }
-    return { cmin7, cmax7, haDir, stoch56, ema312, er24, prevClose, prevHigh, prevLow, prevNR7, hh20: hh(20), ll20: ll(20), hh10: hh(10), ll10: ll(10), sma50: E.sma(close, 50), sma210: E.sma(close, 210), hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
+    // 2026-11-24：スーパートレンド（ATR14×3、高安の中心から）の向き +1/−1
+    const stDir = new Array(n).fill(0);
+    { let up = NaN, dn = NaN, dir = 1;
+      for (let i = 1; i < n; i++) {
+        const a = d.atr[i]; if (isNaN(a)) continue;
+        const m = (c[i].h + c[i].l) / 2, bu = m - 3 * a, bd = m + 3 * a;
+        up = isNaN(up) || c[i - 1].c < up ? bu : Math.max(bu, up);
+        dn = isNaN(dn) || c[i - 1].c > dn ? bd : Math.min(bd, dn);
+        if (dir === 1 && c[i].c < up) dir = -1; else if (dir === -1 && c[i].c > dn) dir = 1;
+        stDir[i] = dir;
+      } }
+    // 2026-11-24：前の週（FXの週＝日本時間 月曜7時ごろ始まり）の高値・安値
+    const prevWkHigh = new Array(n).fill(NaN), prevWkLow = new Array(n).fill(NaN);
+    { let key = null, h = -Infinity, l = Infinity, ph = NaN, pl = NaN;
+      for (let i = 0; i < n; i++) {
+        const k = Math.floor((c[i].t + 2 * 3600e3 + 3 * 86400e3) / (7 * 86400e3));
+        if (k !== key) { if (key !== null) { ph = h; pl = l; } key = k; h = -Infinity; l = Infinity; }
+        prevWkHigh[i] = ph; prevWkLow[i] = pl; h = Math.max(h, c[i].h); l = Math.min(l, c[i].l);
+      } }
+    return { stDir, prevWkHigh, prevWkLow, cmin7, cmax7, haDir, stoch56, ema312, er24, prevClose, prevHigh, prevLow, prevNR7, hh20: hh(20), ll20: ll(20), hh10: hh(10), ll10: ll(10), sma50: E.sma(close, 50), sma210: E.sma(close, 210), hh24: hh(24), ll24: ll(24), hh80: hh(80), ll80: ll(80), tenkan, kijun, cloudTop, cloudBot, hh55: hh(55), ll55: ll(55), sma200: E.sma(close, 200), sma480: E.sma(close, 480), rsi2: E.rsi(close, 2), stoch, bbW, bbWMin120, rv24, rvMean, dayKey, dayOpen, prevRange };
   }
 
   // 五十日（ごとおび）：5・10・15・20・25日と月末。土日なら直前の金曜
@@ -400,6 +419,22 @@
         if (dn > 0 && dn <= 0.2 && q < c[i - 24].c && c[i - 1].c > q) return 'long';
         return null;
       } },
+    // 2026-11-24 追加（火曜リサーチ第10弾）
+    { id: 'supertrend', name: 'スーパートレンドの向き変わり（反対に変わるまで持つ）', source: 'O.Seban 考案の「Supertrend」（ATR×3 の追いかけ線）。TradingView 等で広く使われる。公開の検証は株・暗号資産中心で、FXの短い足では弱いとの報告もある（Quantified Strategies、TrendSpider の検証記事）。向きが変わったら入り、反対に変わったら手じまう。最初の損切り ATR×3',
+      exit: { type: 'rule', sl: 3, maxBars: 240, when: (c, d, x, j, dir) => x.stDir[j] === (dir === 'long' ? -1 : 1) },
+      signal: (c, d, x, i) => (x.stDir[i - 1] === -1 && x.stDir[i] === 1 ? 'long' : x.stDir[i - 1] === 1 && x.stDir[i] === -1 ? 'short' : null) },
+    { id: 'pdhl_bo', name: '前日高値・安値の抜け（ロンドン〜NY）', source: 'C.Osler「Stop-loss orders and price cascades in currency markets」(J. of International Money and Finance 2005)：損切り注文は直近の高値・安値のすぐ外に集まり、抜けると値動きが加速しやすい。日本時間16〜24時に、その日初めて前日の高値（安値）を終値で抜けたら順張り。利確 ATR×2・損切り ATR×1・24本',
+      exit: { type: 'atr', tp: 2, sl: 1, maxBars: 24 },
+      signal: (c, d, x, i) => {
+        const h = jst(c[i].t).getUTCHours();
+        if (h < 16 || isNaN(x.prevHigh[i]) || x.dayKey[i] !== x.dayKey[i - 1]) return null;
+        if (c[i].c > x.prevHigh[i] && c[i - 1].c <= x.prevHigh[i]) return 'long';
+        if (c[i].c < x.prevLow[i] && c[i - 1].c >= x.prevLow[i]) return 'short';
+        return null;
+      } },
+    { id: 'pwhl_bo', name: '前週高値・安値の抜け', source: '同じく Osler（2005）の考えを週の節目に当てはめる：前の週の高値（安値）を終値で初めて抜けたら順張り。利確 ATR×3・損切り ATR×1.5・120本',
+      exit: { type: 'atr', tp: 3, sl: 1.5, maxBars: 120 },
+      signal: (c, d, x, i) => (isNaN(x.prevWkHigh[i]) ? null : c[i].c > x.prevWkHigh[i] && c[i - 1].c <= x.prevWkHigh[i] ? 'long' : c[i].c < x.prevWkLow[i] && c[i - 1].c >= x.prevWkLow[i] ? 'short' : null) },
   ];
 
   // 月の最後の足か（次の足が別の月）。最後の足は判定しない
