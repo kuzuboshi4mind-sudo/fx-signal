@@ -622,7 +622,7 @@
    "entry": 105.20509,
    "sl": 105.45761282441265,
    "tp": 104.70004435117471,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -638,7 +638,7 @@
    "entry": 105.20509,
    "sl": 105.45761282441265,
    "tp": 104.70004435117471,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -650,7 +650,7 @@
    "entry": 105.20509,
    "sl": 105.45761282441265,
    "tp": 104.70004435117471,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7363,16 +7363,16 @@
  },
  "reportDay": "2026-11-24",
  "skipReview": {
-  "n": 315,
-  "wouldLose": 214,
+  "n": 317,
+  "wouldLose": 216,
   "wouldWin": 101
  },
  "version": 1,
- "lastRun": 1795496822058,
+ "lastRun": 1795497721304,
  "lastBarT": 1795496400000,
- "price": 105.39476,
- "equity": 115423.09638806774,
- "unreal": 1228.079999999963,
+ "price": 105.45729,
+ "equity": 114985.38638806778,
+ "unreal": 790.3699999999958,
  "config": {
   "symbol": "AUD/JPY",
   "interval": "1h",
@@ -7537,19 +7537,19 @@
   ]
  },
  "review": {
+  "pullback_dn": {
+   "n": 10,
+   "wins": 5,
+   "recentLosses": 3,
+   "streak": 1,
+   "suspended": false
+  },
   "engulf_up": {
    "n": 16,
    "wins": 1,
    "recentLosses": 5,
    "streak": 11,
    "suspended": true
-  },
-  "pullback_dn": {
-   "n": 9,
-   "wins": 5,
-   "recentLosses": 2,
-   "streak": 0,
-   "suspended": false
   },
   "donchian_dn": {
    "n": 16,
@@ -7891,6 +7891,6 @@
     "pnl": 3374.5995956912225
    }
   ],
-  "equity": 123108.62073023447
+  "equity": 122670.91073023451
  }
 }
