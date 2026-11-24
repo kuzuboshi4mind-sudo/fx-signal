@@ -494,7 +494,7 @@
    "entry": 159.53099,
    "sl": 159.3562073605233,
    "tp": 159.88055527895335,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -510,7 +510,7 @@
    "entry": 159.53099,
    "sl": 159.3562073605233,
    "tp": 159.88055527895335,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -526,7 +526,7 @@
    "entry": 159.53099,
    "sl": 159.3562073605233,
    "tp": 159.88055527895335,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6687,11 +6687,11 @@
  "lastEvalT": 1795510800000,
  "reportDay": "2026-11-24",
  "version": 1,
- "lastRun": 1795516620142,
+ "lastRun": 1795517520664,
  "lastBarT": 1795514400000,
- "price": 159.50735,
- "equity": 105788.58600374604,
- "unreal": 1996.9200000001592,
+ "price": 159.3632,
+ "equity": 104058.78600374608,
+ "unreal": 267.1200000002045,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -6779,7 +6779,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1905,
+  "events": 1908,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -7809,8 +7809,8 @@
   "equity": 105538.57781048647
  },
  "skipReview": {
-  "n": 316,
-  "wouldLose": 220,
+  "n": 319,
+  "wouldLose": 223,
   "wouldWin": 96
  },
  "latest": {
@@ -8209,6 +8209,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 107038.75086759975
+  "equity": 105308.9508675998
  }
 }
