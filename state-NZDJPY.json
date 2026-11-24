@@ -398,7 +398,7 @@
    "entry": 86.6226,
    "sl": 86.78007011447174,
    "tp": 86.30765977105654,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -486,7 +486,7 @@
    "entry": 86.60564,
    "sl": 86.80275232705515,
    "tp": 86.2114153458897,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -7285,11 +7285,11 @@
   "wouldWin": 104
  },
  "version": 1,
- "lastRun": 1795501321560,
+ "lastRun": 1795502222629,
  "lastBarT": 1795500000000,
- "price": 86.76924,
- "equity": 102352.2702632877,
- "unreal": -1059.2099999999646,
+ "price": 86.8313,
+ "equity": 101793.73026328768,
+ "unreal": -1617.7499999999868,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -7377,15 +7377,15 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1910,
+  "events": 1911,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "with|trend",
-    "n": 30,
-    "winRate": 0.43333333333333335,
-    "avgR": 0.27795817065912953
+    "n": 31,
+    "winRate": 0.41935483870967744,
+    "avgR": 0.2359154475047152
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -7423,9 +7423,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 106,
-    "winRate": 0.3867924528301887,
-    "avgR": 0.13684326212686698
+    "n": 107,
+    "winRate": 0.38317757009345793,
+    "avgR": 0.12598149101233816
    },
    {
     "name": "20本安値ブレイク",
@@ -7463,17 +7463,17 @@
  },
  "review": {
   "engulf_dn": {
-   "n": 3,
+   "n": 4,
    "wins": 0,
-   "recentLosses": 3,
-   "streak": 3,
+   "recentLosses": 4,
+   "streak": 4,
    "suspended": true
   },
   "bb_break_dn": {
-   "n": 13,
+   "n": 14,
    "wins": 6,
-   "recentLosses": 2,
-   "streak": 0,
+   "recentLosses": 3,
+   "streak": 1,
    "suspended": false
   },
   "donchian_up": {
@@ -7706,6 +7706,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 95392.46760528313
+  "equity": 94833.92760528311
  }
 }
