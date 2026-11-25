@@ -3,7 +3,25 @@
  "startT": 1794521959845,
  "accounts": {
   "normal": {
-   "open": [],
+   "open": [
+    {
+     "symbol": "USD/JPY",
+     "dir": "short",
+     "name": "陰の包み足",
+     "openT": 1795604820437,
+     "entry": 159.37105,
+     "sl": 159.5563481875412,
+     "tp": 159.01545362491754,
+     "riskFrac": 1,
+     "leverage": 4.3,
+     "oanda": {
+      "bid": 159.37,
+      "ask": 159.378,
+      "spread": 0.8,
+      "gap": -0.1
+     }
+    }
+   ],
    "closed": [
     {
      "symbol": "EUR/JPY",
