@@ -7000,11 +7000,11 @@
  "lastEvalT": 1795604400000,
  "reportDay": "2026-11-25",
  "version": 1,
- "lastRun": 1795608420469,
+ "lastRun": 1795609320723,
  "lastBarT": 1795608000000,
- "price": 159.25622,
- "equity": 100910.6566416338,
- "unreal": 1148.2999999998356,
+ "price": 159.2467,
+ "equity": 101005.85664163389,
+ "unreal": 1243.4999999999263,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7092,7 +7092,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1908,
+  "events": 1911,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -7215,17 +7215,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,
@@ -8572,6 +8562,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 102160.82150548752
+  "equity": 102256.0215054876
  }
 }

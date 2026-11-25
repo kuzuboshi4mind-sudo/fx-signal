@@ -7556,9 +7556,9 @@
   "wouldWin": 110
  },
  "version": 1,
- "lastRun": 1795608422192,
+ "lastRun": 1795609322121,
  "lastBarT": 1795608000000,
- "price": 86.94704,
+ "price": 87.01808,
  "equity": 98758.66958325641,
  "unreal": 0,
  "config": {
@@ -7760,26 +7760,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "デッドクロス(EMA20/50)",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
