@@ -7275,9 +7275,10 @@
  "lastEvalT": 1795568400000,
  "adaptive": {
   "start": 100000,
-  "balance": 88807.23952712897,
+  "balance": 88311.10512971754,
   "startT": 1791967922952,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_up|long|3|1",
     "dir": "long",
@@ -7289,10 +7290,12 @@
     "tp": 106.67746159611713,
     "barT": 1795568400000,
     "openT": 1795568822158,
-    "deadline": 1795655222158
-   }
-  ],
-  "trades": [
+    "deadline": 1795655222158,
+    "exit": 105.68519280129429,
+    "closeT": 1795572000000,
+    "reason": "sl",
+    "pnl": -496.1343974114243
+   },
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -7637,7 +7640,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 88343.67952712897
+  "equity": 88311.10512971754
  },
  "reportDay": "2026-11-25",
  "skipReview": {
@@ -7646,9 +7649,9 @@
   "wouldWin": 104
  },
  "version": 1,
- "lastRun": 1795572422115,
+ "lastRun": 1795573321519,
  "lastBarT": 1795572000000,
- "price": 105.70148,
+ "price": 105.58393,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -7884,17 +7887,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
