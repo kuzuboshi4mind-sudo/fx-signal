@@ -526,7 +526,7 @@
    "entry": 159.37125,
    "sl": 159.1973369066953,
    "tp": 159.71907618660939,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -542,7 +542,7 @@
    "entry": 159.34313,
    "sl": 159.17063589951803,
    "tp": 159.68811820096394,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -586,7 +586,7 @@
    "entry": 159.35546,
    "sl": 159.17708364048474,
    "tp": 159.7122127190305,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -602,7 +602,7 @@
    "entry": 159.35546,
    "sl": 159.17708364048474,
    "tp": 159.7122127190305,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -618,7 +618,7 @@
    "entry": 159.35546,
    "sl": 159.17708364048474,
    "tp": 159.7122127190305,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7032,11 +7032,11 @@
  "lastEvalT": 1795611600000,
  "reportDay": "2026-11-25",
  "version": 1,
- "lastRun": 1795617420146,
+ "lastRun": 1795618320847,
  "lastBarT": 1795615200000,
- "price": 159.29763,
- "equity": 100496.55664163394,
- "unreal": 734.1999999999871,
+ "price": 159.09382,
+ "equity": 102534.65664163399,
+ "unreal": 2772.3000000000297,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7124,7 +7124,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1910,
+  "events": 1912,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -8162,8 +8162,8 @@
   "equity": 105538.57781048647
  },
  "skipReview": {
-  "n": 332,
-  "wouldLose": 236,
+  "n": 337,
+  "wouldLose": 241,
   "wouldWin": 96
  },
  "latest": {
@@ -8594,6 +8594,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 101746.72150548766
+  "equity": 103784.82150548771
  }
 }
