@@ -627,7 +627,7 @@
    "entry": 105.63454,
    "sl": 105.85001929091383,
    "tp": 105.20358141817233,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -643,7 +643,7 @@
    "entry": 105.63454,
    "sl": 105.85001929091383,
    "tp": 105.20358141817233,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -660,7 +660,7 @@
    "entry": 105.74116,
    "sl": 105.52158153286202,
    "tp": 106.18031693427595,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -677,7 +677,7 @@
    "entry": 105.80317,
    "sl": 105.5352107584845,
    "tp": 106.339088483031,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7579,14 +7579,14 @@
  },
  "reportDay": "2026-11-25",
  "skipReview": {
-  "n": 329,
-  "wouldLose": 226,
-  "wouldWin": 103
+  "n": 333,
+  "wouldLose": 229,
+  "wouldWin": 104
  },
  "version": 1,
- "lastRun": 1795566121954,
+ "lastRun": 1795567021662,
  "lastBarT": 1795564800000,
- "price": 105.63902,
+ "price": 105.94909,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -7676,7 +7676,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1919,
+  "events": 1923,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
