@@ -524,6 +524,21 @@
  },
  "log": [
   {
+   "t": 1795626000000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 158.95303,
+   "sl": 158.73541149162133,
+   "tp": 159.38826701675737,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795622400000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -7066,12 +7081,12 @@
    ]
   }
  ],
- "lastEvalT": 1795622400000,
+ "lastEvalT": 1795626000000,
  "reportDay": "2026-11-26",
  "version": 1,
- "lastRun": 1795629120548,
- "lastBarT": 1795626000000,
- "price": 158.95601,
+ "lastRun": 1795630020212,
+ "lastBarT": 1795629600000,
+ "price": 158.95303,
  "equity": 103318.32039245853,
  "unreal": 0,
  "config": {
@@ -7167,9 +7182,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "against|range",
-    "n": 54,
-    "winRate": 0.4444444444444444,
-    "avgR": 0.31226065369539946
+    "n": 53,
+    "winRate": 0.4528301886792453,
+    "avgR": 0.33750180439177
    },
    {
     "name": "ボリバン下限から回帰",
@@ -7185,7 +7200,15 @@
     "key": "*",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.21976941231052602
+    "avgR": 0.21976941231052835
+   },
+   {
+    "name": "ボリバン上限から回帰",
+    "dir": "short",
+    "key": "against|range",
+    "n": 60,
+    "winRate": 0.4,
+    "avgR": 0.1985290626367972
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -7193,7 +7216,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.21365704934180954
+    "avgR": 0.21365704934181431
    },
    {
     "name": "陰の包み足",
@@ -7284,7 +7307,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,
