@@ -6853,9 +6853,9 @@
  "lastEvalT": 1795582800000,
  "reportDay": "2026-11-25",
  "version": 1,
- "lastRun": 1795586820415,
+ "lastRun": 1795587720656,
  "lastBarT": 1795586400000,
- "price": 159.42698,
+ "price": 159.46899,
  "equity": 101728.75804743198,
  "unreal": 0,
  "config": {
@@ -7068,17 +7068,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,
