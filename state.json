@@ -492,6 +492,38 @@
  },
  "log": [
   {
+   "t": 1795568400000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 159.29546,
+   "sl": 159.140568418286,
+   "tp": 159.60524316342796,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1795568400000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 159.29546,
+   "sl": 159.450351581714,
+   "tp": 158.98567683657203,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795557600000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -6769,12 +6801,12 @@
    ]
   }
  ],
- "lastEvalT": 1795564800000,
+ "lastEvalT": 1795568400000,
  "reportDay": "2026-11-25",
  "version": 1,
- "lastRun": 1795571520548,
- "lastBarT": 1795568400000,
- "price": 159.2567,
+ "lastRun": 1795572421005,
+ "lastBarT": 1795572000000,
+ "price": 159.29546,
  "equity": 101728.75804743198,
  "unreal": 0,
  "config": {
@@ -6864,7 +6896,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1903,
+  "events": 1901,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -6880,7 +6912,7 @@
     "key": "against|range",
     "n": 53,
     "winRate": 0.41509433962264153,
-    "avgR": 0.22388857747142518
+    "avgR": 0.223888577497802
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -6888,7 +6920,7 @@
     "key": "*",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.21976941231055205
+    "avgR": 0.21976941231055377
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -6896,7 +6928,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.21365704934186353
+    "avgR": 0.21365704934186708
    },
    {
     "name": "陰の包み足",
@@ -6987,7 +7019,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,
