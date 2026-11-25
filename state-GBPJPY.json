@@ -7938,9 +7938,9 @@
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795577821198,
+ "lastRun": 1795578721316,
  "lastBarT": 1795575600000,
- "price": 208.626,
+ "price": 208.51597,
  "equity": 104529.84010005178,
  "unreal": 0,
  "config": {
@@ -8191,7 +8191,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 99749.08000000002
+  "equity": 99639.05000000003
  },
  "newsfree": {
   "start": 100000,
