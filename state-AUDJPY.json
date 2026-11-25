@@ -7621,7 +7621,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 88795.23952712897
+  "equity": 88520.45952712894
  },
  "reportDay": "2026-11-25",
  "skipReview": {
@@ -7630,9 +7630,9 @@
   "wouldWin": 104
  },
  "version": 1,
- "lastRun": 1795568822158,
+ "lastRun": 1795569721632,
  "lastBarT": 1795568400000,
- "price": 105.92726,
+ "price": 105.78987,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -7868,26 +7868,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
