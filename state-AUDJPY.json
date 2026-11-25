@@ -7388,22 +7388,10 @@
  "lastEvalT": 1795582800000,
  "adaptive": {
   "start": 100000,
-  "balance": 88311.10512971754,
+  "balance": 87214.16193418151,
   "startT": 1791967922952,
-  "positions": [
-   {
-    "key": "ema_cross_dn|long|2|1",
-    "dir": "long",
-    "pattern": "ema_cross_dn",
-    "name": "デッドクロス(EMA20/50)（逆向き）",
-    "units": 2000,
-    "entry": 105.19763,
-    "sl": 104.923394201116,
-    "tp": 105.746101597768,
-    "barT": 1795575600000,
-    "openT": 1795576021413,
-    "deadline": 1795662421413
-   },
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -7415,10 +7403,29 @@
     "tp": 106.02033739665201,
     "barT": 1795575600000,
     "openT": 1795576021413,
-    "deadline": 1795662421413
-   }
-  ],
-  "trades": [
+    "deadline": 1795662421413,
+    "exit": 104.923394201116,
+    "closeT": 1795586400000,
+    "reason": "sl",
+    "pnl": -548.4715977680139
+   },
+   {
+    "key": "ema_cross_dn|long|2|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 2000,
+    "entry": 105.19763,
+    "sl": 104.923394201116,
+    "tp": 105.746101597768,
+    "barT": 1795575600000,
+    "openT": 1795576021413,
+    "deadline": 1795662421413,
+    "exit": 104.923394201116,
+    "closeT": 1795586400000,
+    "reason": "sl",
+    "pnl": -548.4715977680139
+   },
    {
     "key": "ema_cross_up|long|3|1",
     "dir": "long",
@@ -7780,7 +7787,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 87480.50512971754
+  "equity": 87214.16193418151
  },
  "reportDay": "2026-11-25",
  "skipReview": {
@@ -7789,9 +7796,9 @@
   "wouldWin": 105
  },
  "version": 1,
- "lastRun": 1795587721566,
+ "lastRun": 1795588621797,
  "lastBarT": 1795586400000,
- "price": 104.98998,
+ "price": 104.86996,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
