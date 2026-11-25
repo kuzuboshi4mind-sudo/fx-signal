@@ -7584,9 +7584,9 @@
   "wouldWin": 103
  },
  "version": 1,
- "lastRun": 1795565221675,
+ "lastRun": 1795566121954,
  "lastBarT": 1795564800000,
- "price": 105.63454,
+ "price": 105.63902,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -7822,27 +7822,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陰の包み足",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
