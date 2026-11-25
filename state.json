@@ -524,6 +524,22 @@
  },
  "log": [
   {
+   "t": 1795629600000,
+   "pattern": "ema_cross_dn",
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "entry": 159.14826,
+   "sl": 159.36786504349448,
+   "tp": 158.70904991301103,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795626000000,
    "pattern": "bb_revert_up",
    "name": "ボリバン下限から回帰",
@@ -7081,12 +7097,12 @@
    ]
   }
  ],
- "lastEvalT": 1795626000000,
+ "lastEvalT": 1795629600000,
  "reportDay": "2026-11-26",
  "version": 1,
- "lastRun": 1795632720591,
- "lastBarT": 1795629600000,
- "price": 159.12672,
+ "lastRun": 1795633620177,
+ "lastBarT": 1795633200000,
+ "price": 159.14826,
  "equity": 103318.32039245853,
  "unreal": 0,
  "config": {
@@ -7184,7 +7200,7 @@
     "key": "against|range",
     "n": 53,
     "winRate": 0.4528301886792453,
-    "avgR": 0.33750180439177
+    "avgR": 0.33750180439177574
    },
    {
     "name": "ボリバン下限から回帰",
@@ -7200,7 +7216,7 @@
     "key": "*",
     "n": 35,
     "winRate": 0.4,
-    "avgR": 0.21976941231052835
+    "avgR": 0.21976941231052965
    },
    {
     "name": "ボリバン上限から回帰",
@@ -7208,7 +7224,7 @@
     "key": "against|range",
     "n": 60,
     "winRate": 0.4,
-    "avgR": 0.1985290626367972
+    "avgR": 0.19852906263679806
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -7216,7 +7232,7 @@
     "key": "against|range",
     "n": 34,
     "winRate": 0.4117647058823529,
-    "avgR": 0.21365704934181431
+    "avgR": 0.21365704934181712
    },
    {
     "name": "陰の包み足",
@@ -7307,12 +7323,49 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "デッドクロス(EMA20/50)",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,
   "startT": 1791916832223,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_dn|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 159.15326,
+    "sl": 158.9336549565055,
+    "tp": 159.81207513048344,
+    "barT": 1795633200000,
+    "openT": 1795633620177,
+    "deadline": 1795720020177
+   },
+   {
+    "key": "ema_cross_dn|long|2|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 159.15326,
+    "sl": 158.9336549565055,
+    "tp": 159.59247008698895,
+    "barT": 1795633200000,
+    "openT": 1795633620177,
+    "deadline": 1795720020177
+   }
+  ],
   "trades": [
    {
     "key": "pullback_dn|long|3|1",
@@ -8219,7 +8272,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105538.57781048647
+  "equity": 105508.5778104865
  },
  "skipReview": {
   "n": 340,
