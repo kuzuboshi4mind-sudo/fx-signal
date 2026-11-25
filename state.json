@@ -563,7 +563,7 @@
    "entry": 159.25622,
    "sl": 159.43169903128828,
    "tp": 158.90526193742346,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7037,9 +7037,9 @@
  "lastEvalT": 1795618800000,
  "reportDay": "2026-11-26",
  "version": 1,
- "lastRun": 1795624620826,
+ "lastRun": 1795625520175,
  "lastBarT": 1795622400000,
- "price": 158.97739,
+ "price": 158.82827,
  "equity": 103318.32039245853,
  "unreal": 0,
  "config": {
@@ -7129,8 +7129,16 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1911,
+  "events": 1913,
   "win": [
+   {
+    "name": "陰の包み足",
+    "dir": "short",
+    "key": "against|range",
+    "n": 54,
+    "winRate": 0.4444444444444444,
+    "avgR": 0.3122606537148951
+   },
    {
     "name": "ボリバン下限から回帰",
     "dir": "long",
@@ -7138,14 +7146,6 @@
     "n": 31,
     "winRate": 0.41935483870967744,
     "avgR": 0.3260192726792819
-   },
-   {
-    "name": "陰の包み足",
-    "dir": "short",
-    "key": "against|range",
-    "n": 53,
-    "winRate": 0.4339622641509434,
-    "avgR": 0.28067813621222154
    },
    {
     "name": "ゴールデンクロス(EMA20/50)",
@@ -8167,9 +8167,9 @@
   "equity": 105538.57781048647
  },
  "skipReview": {
-  "n": 337,
+  "n": 338,
   "wouldLose": 241,
-  "wouldWin": 96
+  "wouldWin": 97
  },
  "latest": {
   "start": 100000,
