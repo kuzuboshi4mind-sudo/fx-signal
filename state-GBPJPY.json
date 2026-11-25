@@ -7977,11 +7977,11 @@
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795594021040,
+ "lastRun": 1795594921319,
  "lastBarT": 1795593600000,
- "price": 208.18999,
- "equity": 105087.88010005184,
- "unreal": 558.0400000000623,
+ "price": 208.28181,
+ "equity": 104445.14010005175,
+ "unreal": -84.70000000002642,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -8196,17 +8196,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下抜けブレイク",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止",
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8240,7 +8230,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 99313.07
+  "equity": 99404.89000000003
  },
  "newsfree": {
   "start": 100000,
@@ -8549,6 +8539,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 99541.28410807853
+  "equity": 98898.54410807844
  }
 }
