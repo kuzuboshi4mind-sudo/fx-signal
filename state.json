@@ -613,7 +613,7 @@
    "entry": 159.31069,
    "sl": 159.49227811493947,
    "tp": 158.94751377012102,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -6837,9 +6837,9 @@
  "lastEvalT": 1795579200000,
  "reportDay": "2026-11-25",
  "version": 1,
- "lastRun": 1795584120901,
+ "lastRun": 1795585020089,
  "lastBarT": 1795582800000,
- "price": 159.42359,
+ "price": 159.49559,
  "equity": 101728.75804743198,
  "unreal": 0,
  "config": {
@@ -6929,7 +6929,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1903,
+  "events": 1904,
   "win": [
    {
     "name": "ボリバン下限から回帰",
@@ -7967,8 +7967,8 @@
   "equity": 105538.57781048647
  },
  "skipReview": {
-  "n": 325,
-  "wouldLose": 229,
+  "n": 326,
+  "wouldLose": 230,
   "wouldWin": 96
  },
  "latest": {
