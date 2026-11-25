@@ -7892,9 +7892,9 @@
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795630021795,
+ "lastRun": 1795630921888,
  "lastBarT": 1795629600000,
- "price": 105.29074,
+ "price": 105.40949,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8138,26 +8138,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "直近の実績不振で一時停止",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
