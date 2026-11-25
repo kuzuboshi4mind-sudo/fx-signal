@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 101512.62958325642,
+  "balance": 98758.66958325641,
   "riskPct": 2,
   "startT": 1791967923493,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 11000,
-   "entry": 86.77963,
-   "sl": 86.96041299175343,
-   "tp": 86.44806401649316,
-   "barT": 1795593600000,
-   "openT": 1795594021669,
-   "deadline": 1795680421669
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 11000,
+    "entry": 86.77963,
+    "sl": 86.96041299175343,
+    "tp": 86.44806401649316,
+    "barT": 1795593600000,
+    "openT": 1795594021669,
+    "deadline": 1795680421669,
+    "exit": 87.02999,
+    "closeT": 1795595821510,
+    "reason": "sl",
+    "pnl": -2753.9600000000064
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -414,7 +419,7 @@
    "entry": 86.78963,
    "sl": 86.96041299175343,
    "tp": 86.44806401649316,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -430,7 +435,7 @@
    "entry": 86.78963,
    "sl": 86.96041299175343,
    "tp": 86.44806401649316,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -7498,16 +7503,16 @@
  },
  "reportDay": "2026-11-25",
  "skipReview": {
-  "n": 356,
-  "wouldLose": 246,
+  "n": 357,
+  "wouldLose": 247,
   "wouldWin": 110
  },
  "version": 1,
- "lastRun": 1795594921902,
+ "lastRun": 1795595821510,
  "lastBarT": 1795593600000,
- "price": 86.90505,
- "equity": 100133.00958325637,
- "unreal": -1379.6200000000595,
+ "price": 87.02999,
+ "equity": 98758.66958325641,
+ "unreal": 0,
  "config": {
   "symbol": "NZD/JPY",
   "interval": "1h",
@@ -7595,7 +7600,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1911,
+  "events": 1913,
   "win": [
    {
     "name": "20本安値ブレイク",
@@ -7612,14 +7617,6 @@
     "n": 31,
     "winRate": 0.41935483870967744,
     "avgR": 0.235915447503933
-   },
-   {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "with|range",
-    "n": 47,
-    "winRate": 0.40425531914893614,
-    "avgR": 0.20130561114302756
    },
    {
     "name": "20本安値ブレイク",
@@ -7649,9 +7646,9 @@
     "name": "ボリバン下抜けブレイク",
     "dir": "short",
     "key": "*",
-    "n": 107,
-    "winRate": 0.38317757009345793,
-    "avgR": 0.12598149101100511
+    "n": 108,
+    "winRate": 0.37962962962962965,
+    "avgR": 0.11528465387130547
    },
    {
     "name": "20本高値ブレイク",
@@ -7672,6 +7669,13 @@
   ]
  },
  "review": {
+  "bb_break_dn": {
+   "n": 15,
+   "wins": 6,
+   "recentLosses": 3,
+   "streak": 2,
+   "suspended": false
+  },
   "ema_cross_up": {
    "n": 7,
    "wins": 2,
@@ -7685,13 +7689,6 @@
    "recentLosses": 5,
    "streak": 5,
    "suspended": true
-  },
-  "bb_break_dn": {
-   "n": 14,
-   "wins": 6,
-   "recentLosses": 3,
-   "streak": 1,
-   "suspended": false
   },
   "donchian_up": {
    "n": 7,
@@ -7739,22 +7736,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 94552.82692525185,
+  "balance": 92049.22692525185,
   "riskPct": 2,
   "startT": 1793840367577,
-  "pos": {
-   "dir": "short",
-   "pattern": "bb_break_dn",
-   "name": "ボリバン下抜けブレイク",
-   "units": 10000,
-   "entry": 86.77963,
-   "sl": 86.96041299175343,
-   "tp": 86.44806401649316,
-   "barT": 1795593600000,
-   "openT": 1795594021669,
-   "deadline": 1795680421669
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "bb_break_dn",
+    "name": "ボリバン下抜けブレイク",
+    "units": 10000,
+    "entry": 86.77963,
+    "sl": 86.96041299175343,
+    "tp": 86.44806401649316,
+    "barT": 1795593600000,
+    "openT": 1795594021669,
+    "deadline": 1795680421669,
+    "exit": 87.02999,
+    "closeT": 1795595821510,
+    "reason": "sl",
+    "pnl": -2503.600000000006
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -7932,6 +7934,6 @@
     "pnl": -1987.5958736044197
    }
   ],
-  "equity": 93298.6269252518
+  "equity": 92049.22692525185
  }
 }

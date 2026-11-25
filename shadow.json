@@ -3,42 +3,7 @@
  "startT": 1794521959845,
  "accounts": {
   "normal": {
-   "open": [
-    {
-     "symbol": "USD/JPY",
-     "dir": "short",
-     "name": "陰の包み足",
-     "openT": 1795590420310,
-     "entry": 159.25082,
-     "sl": 159.4146867838165,
-     "tp": 158.93808643236696,
-     "riskFrac": 1,
-     "leverage": 4.9,
-     "oanda": {
-      "bid": 159.248,
-      "ask": 159.256,
-      "spread": 0.8,
-      "gap": -0.3
-     }
-    },
-    {
-     "symbol": "EUR/JPY",
-     "dir": "short",
-     "name": "陰の包み足",
-     "openT": 1795590420812,
-     "entry": 174.18264,
-     "sl": 174.3927096822769,
-     "tp": 173.7805006354462,
-     "riskFrac": 1,
-     "leverage": 4.1,
-     "oanda": {
-      "bid": 174.175,
-      "ask": 174.194,
-      "spread": 1.9,
-      "gap": -0.8
-     }
-    }
-   ],
+   "open": [],
    "closed": [
     {
      "symbol": "EUR/JPY",
@@ -394,6 +359,48 @@
      },
      "exit": 159.1690310036405,
      "closeT": 1795518000000,
+     "reason": "sl",
+     "r": -1
+    },
+    {
+     "symbol": "USD/JPY",
+     "dir": "short",
+     "name": "陰の包み足",
+     "openT": 1795590420310,
+     "entry": 159.25082,
+     "sl": 159.4146867838165,
+     "tp": 158.93808643236696,
+     "riskFrac": 1,
+     "leverage": 4.9,
+     "oanda": {
+      "bid": 159.248,
+      "ask": 159.256,
+      "spread": 0.8,
+      "gap": -0.3
+     },
+     "exit": 159.4146867838165,
+     "closeT": 1795593600000,
+     "reason": "sl",
+     "r": -1
+    },
+    {
+     "symbol": "EUR/JPY",
+     "dir": "short",
+     "name": "陰の包み足",
+     "openT": 1795590420812,
+     "entry": 174.18264,
+     "sl": 174.3927096822769,
+     "tp": 173.7805006354462,
+     "riskFrac": 1,
+     "leverage": 4.1,
+     "oanda": {
+      "bid": 174.175,
+      "ask": 174.194,
+      "spread": 1.9,
+      "gap": -0.8
+     },
+     "exit": 174.3927096822769,
+     "closeT": 1795593600000,
      "reason": "sl",
      "r": -1
     }
