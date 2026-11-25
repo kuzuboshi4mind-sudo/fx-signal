@@ -675,7 +675,7 @@
    "entry": 104.76731,
    "sl": 105.03836458589977,
    "tp": 104.22520082820043,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7855,14 +7855,14 @@
  },
  "reportDay": "2026-11-26",
  "skipReview": {
-  "n": 346,
-  "wouldLose": 234,
+  "n": 347,
+  "wouldLose": 235,
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795626421772,
+ "lastRun": 1795627322195,
  "lastBarT": 1795626000000,
- "price": 104.84836,
+ "price": 105.14433,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -7952,7 +7952,7 @@
  },
  "learned": {
   "bars": 3559,
-  "events": 1926,
+  "events": 1927,
   "win": [
    {
     "name": "ボリバン下抜けブレイク",
@@ -7990,9 +7990,9 @@
     "name": "20本安値ブレイク",
     "dir": "short",
     "key": "*",
-    "n": 182,
-    "winRate": 0.3956043956043956,
-    "avgR": 0.17285169746865864
+    "n": 183,
+    "winRate": 0.39344262295081966,
+    "avgR": 0.16638219157339632
    },
    {
     "name": "陰の包み足",
