@@ -7147,9 +7147,9 @@
  "lastEvalT": 1795644000000,
  "reportDay": "2026-11-26",
  "version": 1,
- "lastRun": 1795648020375,
+ "lastRun": 1795648920711,
  "lastBarT": 1795647600000,
- "price": 159.1605,
+ "price": 159.13603,
  "equity": 103318.32039245853,
  "unreal": 0,
  "config": {
@@ -7370,17 +7370,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "下降トレンドの戻り",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 105538.57781048647,
@@ -8332,7 +8322,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105464.77781048666
+  "equity": 105244.54781048659
  },
  "skipReview": {
   "n": 340,
