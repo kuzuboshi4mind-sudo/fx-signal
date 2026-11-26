@@ -455,6 +455,22 @@
  },
  "log": [
   {
+   "t": 1795716000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 174.73542,
+   "sl": 174.89591314238675,
+   "tp": 174.41443371522652,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795698000000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -7101,7 +7117,7 @@
    ]
   }
  ],
- "lastEvalT": 1795712400000,
+ "lastEvalT": 1795716000000,
  "adaptive": {
   "start": 100000,
   "balance": 104711.00656922643,
@@ -7750,11 +7766,11 @@
   "wouldWin": 119
  },
  "version": 1,
- "lastRun": 1795719121320,
- "lastBarT": 1795716000000,
- "price": 174.74032,
- "equity": 121307.44937602684,
- "unreal": -443.04000000011,
+ "lastRun": 1795720021348,
+ "lastBarT": 1795719600000,
+ "price": 174.73542,
+ "equity": 121248.64937602694,
+ "unreal": -501.8400000000156,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -7841,7 +7857,7 @@
   }
  },
  "learned": {
-  "bars": 3573,
+  "bars": 3574,
   "events": 1802,
   "win": [
    {
@@ -7991,7 +8007,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8276,6 +8302,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 107252.40128597229
+  "equity": 107198.50128597236
  }
 }

@@ -7338,14 +7338,14 @@
    ]
   }
  ],
- "lastEvalT": 1795712400000,
+ "lastEvalT": 1795716000000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795719120894,
- "lastBarT": 1795716000000,
- "price": 159.28718,
- "equity": 103209.26039245853,
- "unreal": -109.05999999999949,
+ "lastRun": 1795720020610,
+ "lastBarT": 1795719600000,
+ "price": 159.27454,
+ "equity": 103032.30039245846,
+ "unreal": -286.02000000006456,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7432,7 +7432,7 @@
   }
  },
  "learned": {
-  "bars": 3573,
+  "bars": 3574,
   "events": 1914,
   "win": [
    {
@@ -7575,35 +7575,9 @@
  "lastSignals": [],
  "adaptive": {
   "start": 100000,
-  "balance": 104964.75473407538,
+  "balance": 105692.43473407546,
   "startT": 1791916832223,
   "positions": [
-   {
-    "key": "ema_cross_dn|long|3|1",
-    "dir": "long",
-    "pattern": "ema_cross_dn",
-    "name": "デッドクロス(EMA20/50)（逆向き）",
-    "units": 3000,
-    "entry": 159.15326,
-    "sl": 158.9336549565055,
-    "tp": 159.81207513048344,
-    "barT": 1795633200000,
-    "openT": 1795633620177,
-    "deadline": 1795720020177
-   },
-   {
-    "key": "ema_cross_dn|long|2|1",
-    "dir": "long",
-    "pattern": "ema_cross_dn",
-    "name": "デッドクロス(EMA20/50)（逆向き）",
-    "units": 3000,
-    "entry": 159.15326,
-    "sl": 158.9336549565055,
-    "tp": 159.59247008698895,
-    "barT": 1795633200000,
-    "openT": 1795633620177,
-    "deadline": 1795720020177
-   },
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -7619,6 +7593,40 @@
    }
   ],
   "trades": [
+   {
+    "key": "ema_cross_dn|long|2|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 159.15326,
+    "sl": 158.9336549565055,
+    "tp": 159.59247008698895,
+    "barT": 1795633200000,
+    "openT": 1795633620177,
+    "deadline": 1795720020177,
+    "exit": 159.27454,
+    "closeT": 1795720020610,
+    "reason": "time",
+    "pnl": 363.8400000000388
+   },
+   {
+    "key": "ema_cross_dn|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_dn",
+    "name": "デッドクロス(EMA20/50)（逆向き）",
+    "units": 3000,
+    "entry": 159.15326,
+    "sl": 158.9336549565055,
+    "tp": 159.81207513048344,
+    "barT": 1795633200000,
+    "openT": 1795633620177,
+    "deadline": 1795720020177,
+    "exit": 159.27454,
+    "closeT": 1795720020610,
+    "reason": "time",
+    "pnl": 363.8400000000388
+   },
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -8541,7 +8549,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106605.93473407552
+  "equity": 106492.17473407548
  },
  "skipReview": {
   "n": 346,
@@ -8992,6 +9000,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 104459.42525631224
+  "equity": 104282.46525631218
  }
 }
