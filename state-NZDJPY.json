@@ -517,7 +517,7 @@
    "entry": 87.38726,
    "sl": 87.19649497994472,
    "tp": 87.76879004011056,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -534,7 +534,7 @@
    "entry": 87.38726,
    "sl": 87.19649497994472,
    "tp": 87.76879004011056,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -549,7 +549,7 @@
    "entry": 87.38726,
    "sl": 87.19649497994472,
    "tp": 87.76879004011056,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -565,7 +565,7 @@
    "entry": 87.38726,
    "sl": 87.19649497994472,
    "tp": 87.76879004011056,
-   "status": "open",
+   "status": "loss",
    "shadow": true,
    "skipped": false
   },
@@ -7751,18 +7751,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 97568.73805206905
+  "equity": 97530.09805206906
  },
  "reportDay": "2026-11-26",
  "skipReview": {
-  "n": 362,
-  "wouldLose": 252,
+  "n": 365,
+  "wouldLose": 255,
   "wouldWin": 110
  },
  "version": 1,
- "lastRun": 1795681322844,
+ "lastRun": 1795682222521,
  "lastBarT": 1795680000000,
- "price": 87.21977,
+ "price": 87.20045,
  "equity": 98758.66958325641,
  "unreal": 0,
  "config": {
@@ -7852,7 +7852,7 @@
  },
  "learned": {
   "bars": 3563,
-  "events": 1901,
+  "events": 1905,
   "win": [
    {
     "name": "20本安値ブレイク",
@@ -7879,20 +7879,20 @@
     "avgR": 0.1809891111979184
    },
    {
-    "name": "ゴールデンクロス(EMA20/50)",
-    "dir": "long",
-    "key": "*",
-    "n": 34,
-    "winRate": 0.4117647058823529,
-    "avgR": 0.19632819118235909
-   },
-   {
     "name": "ボリバン上限から回帰",
     "dir": "short",
     "key": "against|trend",
     "n": 29,
     "winRate": 0.41379310344827586,
     "avgR": 0.198592549796833
+   },
+   {
+    "name": "ゴールデンクロス(EMA20/50)",
+    "dir": "long",
+    "key": "*",
+    "n": 35,
+    "winRate": 0.4,
+    "avgR": 0.16139852126458462
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -7914,26 +7914,26 @@
     "name": "20本高値ブレイク",
     "dir": "long",
     "key": "*",
-    "n": 207,
-    "winRate": 0.36231884057971014,
-    "avgR": 0.050911959980095234
+    "n": 208,
+    "winRate": 0.3605769230769231,
+    "avgR": 0.04573348778817291
    }
   ]
  },
  "review": {
+  "ema_cross_up": {
+   "n": 8,
+   "wins": 2,
+   "recentLosses": 5,
+   "streak": 5,
+   "suspended": true
+  },
   "bb_break_dn": {
    "n": 15,
    "wins": 6,
    "recentLosses": 3,
    "streak": 2,
    "suspended": false
-  },
-  "ema_cross_up": {
-   "n": 7,
-   "wins": 2,
-   "recentLosses": 4,
-   "streak": 4,
-   "suspended": true
   },
   "engulf_dn": {
    "n": 5,
