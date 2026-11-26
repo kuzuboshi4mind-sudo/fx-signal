@@ -620,6 +620,39 @@
  },
  "log": [
   {
+   "t": 1795665600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 105.75511,
+   "sl": 105.52374907025673,
+   "tp": 106.21783185948655,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795665600000,
+   "pattern": "ema_cross_up",
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "entry": 105.75511,
+   "sl": 105.52374907025673,
+   "tp": 106.21783185948655,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795658400000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -7530,12 +7563,26 @@
    ]
   }
  ],
- "lastEvalT": 1795662000000,
+ "lastEvalT": 1795665600000,
  "adaptive": {
   "start": 100000,
   "balance": 87214.16193418151,
   "startT": 1791967922952,
-  "positions": [],
+  "positions": [
+   {
+    "key": "ema_cross_up|long|3|1",
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 2000,
+    "entry": 105.76111,
+    "sl": 105.52974907025673,
+    "tp": 106.45519278922983,
+    "barT": 1795669200000,
+    "openT": 1795669622027,
+    "deadline": 1795756022027
+   }
+  ],
   "trades": [
    {
     "key": "ema_cross_dn|long|3|1",
@@ -7932,7 +7979,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 87214.16193418151
+  "equity": 87202.16193418151
  },
  "reportDay": "2026-11-26",
  "skipReview": {
@@ -7941,9 +7988,9 @@
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795668721528,
- "lastBarT": 1795665600000,
- "price": 105.78655,
+ "lastRun": 1795669622027,
+ "lastBarT": 1795669200000,
+ "price": 105.75511,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8032,7 +8079,7 @@
   }
  },
  "learned": {
-  "bars": 3559,
+  "bars": 3560,
   "events": 1920,
   "win": [
    {
@@ -8179,7 +8226,27 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ゴールデンクロス(EMA20/50)",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
