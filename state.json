@@ -7297,11 +7297,11 @@
  "lastEvalT": 1795690800000,
  "reportDay": "2026-11-26",
  "version": 1,
- "lastRun": 1795694820221,
+ "lastRun": 1795695720097,
  "lastBarT": 1795694400000,
- "price": 159.28997,
- "equity": 103248.32039245858,
- "unreal": -69.99999999993634,
+ "price": 159.29435,
+ "equity": 103309.64039245856,
+ "unreal": -8.679999999969823,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7528,14 +7528,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ゴールデンクロス(EMA20/50)",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 104964.75473407538,
@@ -8504,7 +8497,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106631.04473407555
+  "equity": 106670.46473407553
  },
  "skipReview": {
   "n": 345,
@@ -8955,6 +8948,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 104498.4852563123
+  "equity": 104559.80525631228
  }
 }
