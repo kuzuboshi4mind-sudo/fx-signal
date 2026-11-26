@@ -524,6 +524,21 @@
  },
  "log": [
   {
+   "t": 1795676400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 159.16414,
+   "sl": 159.31959510438304,
+   "tp": 158.85322979123393,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795665600000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -7224,12 +7239,12 @@
    ]
   }
  ],
- "lastEvalT": 1795672800000,
+ "lastEvalT": 1795676400000,
  "reportDay": "2026-11-26",
  "version": 1,
- "lastRun": 1795679520531,
- "lastBarT": 1795676400000,
- "price": 159.21083,
+ "lastRun": 1795680420058,
+ "lastBarT": 1795680000000,
+ "price": 159.16414,
  "equity": 103318.32039245853,
  "unreal": 0,
  "config": {
@@ -7318,7 +7333,7 @@
   }
  },
  "learned": {
-  "bars": 3562,
+  "bars": 3563,
   "events": 1908,
   "win": [
    {
@@ -7368,6 +7383,14 @@
     "n": 26,
     "winRate": 0.38461538461538464,
     "avgR": 0.1435117199579543
+   },
+   {
+    "name": "ボリバン上抜けブレイク",
+    "dir": "long",
+    "key": "with|trend",
+    "n": 25,
+    "winRate": 0.36,
+    "avgR": 0.05781005840816419
    }
   ]
  },
@@ -7450,7 +7473,16 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 104964.75473407538,
@@ -8419,7 +8451,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105918.78473407534
+  "equity": 105498.57473407549
  },
  "skipReview": {
   "n": 343,
