@@ -535,6 +535,22 @@
  },
  "log": [
   {
+   "t": 1795701600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 159.20373,
+   "sl": 159.0783109464268,
+   "tp": 159.45456810714643,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795694400000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -7306,14 +7322,14 @@
    ]
   }
  ],
- "lastEvalT": 1795698000000,
- "reportDay": "2026-11-26",
+ "lastEvalT": 1795701600000,
+ "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795704720188,
- "lastBarT": 1795701600000,
- "price": 159.20113,
- "equity": 102004.56039245852,
- "unreal": -1313.760000000002,
+ "lastRun": 1795705620327,
+ "lastBarT": 1795705200000,
+ "price": 159.20373,
+ "equity": 102040.96039245854,
+ "unreal": -1277.3599999999874,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7400,7 +7416,7 @@
   }
  },
  "learned": {
-  "bars": 3569,
+  "bars": 3570,
   "events": 1911,
   "win": [
    {
@@ -7540,7 +7556,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 104964.75473407538,
@@ -8509,7 +8535,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 105831.48473407551
+  "equity": 105854.88473407552
  },
  "skipReview": {
   "n": 345,
@@ -8960,6 +8986,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103254.72525631223
+  "equity": 103291.12525631225
  }
 }
