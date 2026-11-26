@@ -620,6 +620,23 @@
  },
  "log": [
   {
+   "t": 1795719600000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 105.65112,
+   "sl": 105.51702710636062,
+   "tp": 105.91930578727879,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795705200000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -7643,7 +7660,7 @@
    ]
   }
  ],
- "lastEvalT": 1795716000000,
+ "lastEvalT": 1795719600000,
  "adaptive": {
   "start": 100000,
   "balance": 87214.16193418151,
@@ -8059,7 +8076,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 86989.9219341815
+  "equity": 86994.18193418151
  },
  "reportDay": "2026-11-27",
  "skipReview": {
@@ -8068,9 +8085,9 @@
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795722721804,
- "lastBarT": 1795719600000,
- "price": 105.64899,
+ "lastRun": 1795723621708,
+ "lastBarT": 1795723200000,
+ "price": 105.65112,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8159,8 +8176,8 @@
   }
  },
  "learned": {
-  "bars": 3574,
-  "events": 1922,
+  "bars": 3575,
+  "events": 1923,
   "win": [
    {
     "name": "20本安値ブレイク",
@@ -8306,7 +8323,18 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

@@ -412,6 +412,22 @@
  },
  "log": [
   {
+   "t": 1795719600000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 87.15023,
+   "sl": 87.05279955506866,
+   "tp": 87.34509088986266,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795716000000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -7278,7 +7294,7 @@
    ]
   }
  ],
- "lastEvalT": 1795716000000,
+ "lastEvalT": 1795719600000,
  "adaptive": {
   "start": 100000,
   "balance": 97401.33805206906,
@@ -7842,9 +7858,9 @@
   "wouldWin": 110
  },
  "version": 1,
- "lastRun": 1795722722159,
- "lastBarT": 1795719600000,
- "price": 87.13857,
+ "lastRun": 1795723622129,
+ "lastBarT": 1795723200000,
+ "price": 87.15023,
  "equity": 98758.66958325641,
  "unreal": 0,
  "config": {
@@ -7933,7 +7949,7 @@
   }
  },
  "learned": {
-  "bars": 3574,
+  "bars": 3575,
   "events": 1908,
   "win": [
    {
@@ -8038,7 +8054,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
