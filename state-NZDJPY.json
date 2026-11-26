@@ -412,6 +412,22 @@
  },
  "log": [
   {
+   "t": 1795730400000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 87.12424,
+   "sl": 87.2119818431174,
+   "tp": 86.9487563137652,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795726800000,
    "pattern": "engulf_dn",
    "name": "陰の包み足",
@@ -7311,7 +7327,7 @@
    ]
   }
  ],
- "lastEvalT": 1795726800000,
+ "lastEvalT": 1795730400000,
  "adaptive": {
   "start": 100000,
   "balance": 97401.33805206906,
@@ -7875,9 +7891,9 @@
   "wouldWin": 110
  },
  "version": 1,
- "lastRun": 1795733521664,
- "lastBarT": 1795730400000,
- "price": 87.12273,
+ "lastRun": 1795734422648,
+ "lastBarT": 1795734000000,
+ "price": 87.12424,
  "equity": 98758.66958325641,
  "unreal": 0,
  "config": {
@@ -7966,7 +7982,7 @@
   }
  },
  "learned": {
-  "bars": 3577,
+  "bars": 3578,
   "events": 1909,
   "win": [
    {
@@ -8071,7 +8087,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
