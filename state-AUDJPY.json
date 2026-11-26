@@ -8043,7 +8043,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 87057.04193418151
+  "equity": 86955.9619341815
  },
  "reportDay": "2026-11-27",
  "skipReview": {
@@ -8052,9 +8052,9 @@
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795705622156,
+ "lastRun": 1795706521346,
  "lastBarT": 1795705200000,
- "price": 105.68255,
+ "price": 105.63201,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8290,26 +8290,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD買いクロス",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "直近の実績不振で一時停止",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
