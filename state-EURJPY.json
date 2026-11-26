@@ -455,6 +455,22 @@
  },
  "log": [
   {
+   "t": 1795698000000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 174.91599,
+   "sl": 174.73288199227832,
+   "tp": 175.28220601544336,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795694400000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -7085,7 +7101,7 @@
    ]
   }
  ],
- "lastEvalT": 1795694400000,
+ "lastEvalT": 1795698000000,
  "adaptive": {
   "start": 100000,
   "balance": 104711.00656922643,
@@ -7734,11 +7750,11 @@
   "wouldWin": 119
  },
  "version": 1,
- "lastRun": 1795701121166,
- "lastBarT": 1795698000000,
- "price": 174.88826,
- "equity": 123082.72937602691,
- "unreal": 1332.2399999999561,
+ "lastRun": 1795702021051,
+ "lastBarT": 1795701600000,
+ "price": 174.91599,
+ "equity": 123415.4893760268,
+ "unreal": 1664.99999999985,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -7825,7 +7841,7 @@
   }
  },
  "learned": {
-  "bars": 3568,
+  "bars": 3569,
   "events": 1802,
   "win": [
    {
@@ -7975,7 +7991,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8260,6 +8286,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 108879.74128597234
+  "equity": 109184.77128597225
  }
 }
