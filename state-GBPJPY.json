@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 102625.58145557647,
+  "balance": 100604.65530414366,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": {
-   "dir": "short",
-   "pattern": "engulf_dn",
-   "name": "陰の包み足",
-   "units": 7000,
-   "entry": 208.57977,
-   "sl": 208.86847373591897,
-   "tp": 208.03236252816203,
-   "barT": 1795654800000,
-   "openT": 1795655221089,
-   "deadline": 1795741621089
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "engulf_dn",
+    "name": "陰の包み足",
+    "units": 7000,
+    "entry": 208.57977,
+    "sl": 208.86847373591897,
+    "tp": 208.03236252816203,
+    "barT": 1795654800000,
+    "openT": 1795655221089,
+    "deadline": 1795741621089,
+    "exit": 208.86847373591897,
+    "closeT": 1795687200000,
+    "reason": "sl",
+    "pnl": -2020.9261514328034
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -602,7 +607,7 @@
    "entry": 208.58977,
    "sl": 208.86847373591897,
    "tp": 208.03236252816203,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -8162,11 +8167,11 @@
   "wouldWin": 113
  },
  "version": 1,
- "lastRun": 1795688520981,
+ "lastRun": 1795689421893,
  "lastBarT": 1795687200000,
- "price": 208.81445,
- "equity": 100982.82145557649,
- "unreal": -1642.7599999999813,
+ "price": 208.90736,
+ "equity": 100604.65530414366,
+ "unreal": 0,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -8254,7 +8259,7 @@
  },
  "learned": {
   "bars": 3565,
-  "events": 1797,
+  "events": 1798,
   "win": [
    {
     "name": "陽の包み足",
@@ -8281,14 +8286,6 @@
     "avgR": 0.4774862460618626
    },
    {
-    "name": "陰の包み足",
-    "dir": "short",
-    "key": "with|range",
-    "n": 21,
-    "winRate": 0.47619047619047616,
-    "avgR": 0.4050555410141484
-   },
-   {
     "name": "RSI買われすぎ反落",
     "dir": "short",
     "key": "against|trend",
@@ -8300,9 +8297,17 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "*",
-    "n": 132,
-    "winRate": 0.42424242424242425,
-    "avgR": 0.2642797262665334
+    "n": 133,
+    "winRate": 0.42105263157894735,
+    "avgR": 0.25463897496180876
+   },
+   {
+    "name": "陰の包み足",
+    "dir": "short",
+    "key": "with|range",
+    "n": 22,
+    "winRate": 0.45454545454545453,
+    "avgR": 0.34037391654705773
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -8332,10 +8337,10 @@
  },
  "review": {
   "engulf_dn": {
-   "n": 14,
+   "n": 15,
    "wins": 7,
    "recentLosses": 2,
-   "streak": 1,
+   "streak": 2,
    "suspended": false
   },
   "donchian_up": {
@@ -8415,26 +8420,31 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 99937.53000000001
+  "equity": 100030.44000000003
  },
  "newsfree": {
   "start": 100000,
-  "balance": 97078.98546360315,
+  "balance": 95346.76304808933,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": {
-   "dir": "short",
-   "pattern": "engulf_dn",
-   "name": "陰の包み足",
-   "units": 6000,
-   "entry": 208.57977,
-   "sl": 208.86847373591897,
-   "tp": 208.03236252816203,
-   "barT": 1795654800000,
-   "openT": 1795655221089,
-   "deadline": 1795741621089
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "short",
+    "pattern": "engulf_dn",
+    "name": "陰の包み足",
+    "units": 6000,
+    "entry": 208.57977,
+    "sl": 208.86847373591897,
+    "tp": 208.03236252816203,
+    "barT": 1795654800000,
+    "openT": 1795655221089,
+    "deadline": 1795741621089,
+    "exit": 208.86847373591897,
+    "closeT": 1795687200000,
+    "reason": "sl",
+    "pnl": -1732.2224155138315
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -8740,6 +8750,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 95670.90546360317
+  "equity": 95346.76304808933
  }
 }
