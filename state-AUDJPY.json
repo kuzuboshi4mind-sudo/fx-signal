@@ -7643,7 +7643,7 @@
    ]
   }
  ],
- "lastEvalT": 1795705200000,
+ "lastEvalT": 1795708800000,
  "adaptive": {
   "start": 100000,
   "balance": 87214.16193418151,
@@ -8059,7 +8059,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 86949.7219341815
+  "equity": 86918.76193418152
  },
  "reportDay": "2026-11-27",
  "skipReview": {
@@ -8068,9 +8068,9 @@
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795711921847,
- "lastBarT": 1795708800000,
- "price": 105.62889,
+ "lastRun": 1795712822005,
+ "lastBarT": 1795712400000,
+ "price": 105.61341,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8159,8 +8159,8 @@
   }
  },
  "learned": {
-  "bars": 3571,
-  "events": 1920,
+  "bars": 3572,
+  "events": 1922,
   "win": [
    {
     "name": "20本安値ブレイク",
