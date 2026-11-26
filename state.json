@@ -535,6 +535,18 @@
  },
  "log": [
   {
+   "t": 1795694400000,
+   "pattern": "engulf_dn",
+   "name": "陰の包み足",
+   "dir": "short",
+   "entry": 159.2845,
+   "sl": 159.41886138757604,
+   "tp": 159.01577722484794,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
    "t": 1795690800000,
    "pattern": "ema_cross_up",
    "name": "ゴールデンクロス(EMA20/50)",
@@ -7294,14 +7306,14 @@
    ]
   }
  ],
- "lastEvalT": 1795690800000,
+ "lastEvalT": 1795694400000,
  "reportDay": "2026-11-26",
  "version": 1,
- "lastRun": 1795697520102,
- "lastBarT": 1795694400000,
- "price": 159.28604,
- "equity": 103193.30039245864,
- "unreal": -125.01999999989266,
+ "lastRun": 1795698420148,
+ "lastBarT": 1795698000000,
+ "price": 159.2845,
+ "equity": 103171.74039245855,
+ "unreal": -146.57999999997173,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7388,7 +7400,7 @@
   }
  },
  "learned": {
-  "bars": 3567,
+  "bars": 3568,
   "events": 1911,
   "win": [
    {
@@ -7528,7 +7540,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陰の包み足",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 104964.75473407538,
@@ -8497,7 +8516,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106595.67473407558
+  "equity": 106581.81473407554
  },
  "skipReview": {
   "n": 345,
@@ -8948,6 +8967,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 104443.46525631235
+  "equity": 104421.90525631227
  }
 }
