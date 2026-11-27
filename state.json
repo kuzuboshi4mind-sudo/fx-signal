@@ -7509,9 +7509,9 @@
  "lastEvalT": 1795766400000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795770420834,
+ "lastRun": 1795771320105,
  "lastBarT": 1795770000000,
- "price": 159.44938,
+ "price": 159.47067,
  "equity": 101287.86870285074,
  "unreal": 0,
  "config": {
@@ -7740,35 +7740,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上抜けブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "20本高値ブレイク",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106576.3247340755,
