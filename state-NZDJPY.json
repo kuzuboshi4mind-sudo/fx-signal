@@ -412,6 +412,22 @@
  },
  "log": [
   {
+   "t": 1795780800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 87.46787,
+   "sl": 87.3480531154217,
+   "tp": 87.7075037691566,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795748400000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -7425,7 +7441,7 @@
    ]
   }
  ],
- "lastEvalT": 1795777200000,
+ "lastEvalT": 1795780800000,
  "adaptive": {
   "start": 100000,
   "balance": 97401.33805206906,
@@ -7989,9 +8005,9 @@
   "wouldWin": 112
  },
  "version": 1,
- "lastRun": 1795783921641,
- "lastBarT": 1795780800000,
- "price": 87.47883,
+ "lastRun": 1795784822226,
+ "lastBarT": 1795784400000,
+ "price": 87.46787,
  "equity": 98758.66958325641,
  "unreal": 0,
  "config": {
@@ -8080,7 +8096,7 @@
   }
  },
  "learned": {
-  "bars": 3591,
+  "bars": 3592,
   "events": 1925,
   "win": [
    {
@@ -8177,7 +8193,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

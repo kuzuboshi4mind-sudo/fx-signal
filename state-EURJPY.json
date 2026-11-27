@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 121750.48937602695,
+  "balance": 122489.56937602689,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 12000,
-   "entry": 174.77724,
-   "sl": 174.58577291476126,
-   "tp": 175.14217417047746,
-   "barT": 1795698000000,
-   "openT": 1795698420629,
-   "deadline": 1795784820629
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 12000,
+    "entry": 174.77724,
+    "sl": 174.58577291476126,
+    "tp": 175.14217417047746,
+    "barT": 1795698000000,
+    "openT": 1795698420629,
+    "deadline": 1795784820629,
+    "exit": 174.83883,
+    "closeT": 1795784821111,
+    "reason": "time",
+    "pnl": 739.0799999999444
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -454,6 +459,38 @@
   ]
  },
  "log": [
+  {
+   "t": 1795780800000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 174.83883,
+   "sl": 174.68961206747886,
+   "tp": 175.13726586504225,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795780800000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 174.83883,
+   "sl": 174.68961206747886,
+   "tp": 175.13726586504225,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
   {
    "t": 1795777200000,
    "pattern": "macd_dn",
@@ -7212,7 +7249,7 @@
    ]
   }
  ],
- "lastEvalT": 1795777200000,
+ "lastEvalT": 1795780800000,
  "adaptive": {
   "start": 100000,
   "balance": 104711.00656922643,
@@ -7861,11 +7898,11 @@
   "wouldWin": 119
  },
  "version": 1,
- "lastRun": 1795783920670,
- "lastBarT": 1795780800000,
- "price": 174.88391,
- "equity": 123030.52937602671,
- "unreal": 1280.039999999758,
+ "lastRun": 1795784821111,
+ "lastBarT": 1795784400000,
+ "price": 174.83883,
+ "equity": 122489.56937602689,
+ "unreal": 0,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -7952,7 +7989,7 @@
   }
  },
  "learned": {
-  "bars": 3591,
+  "bars": 3592,
   "events": 1811,
   "win": [
    {
@@ -8102,7 +8139,26 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8114,22 +8170,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 107658.52128597238,
+  "balance": 108336.01128597233,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": {
-   "dir": "long",
-   "pattern": "engulf_up",
-   "name": "陽の包み足",
-   "units": 11000,
-   "entry": 174.77724,
-   "sl": 174.58577291476126,
-   "tp": 175.14217417047746,
-   "barT": 1795698000000,
-   "openT": 1795698420629,
-   "deadline": 1795784820629
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "engulf_up",
+    "name": "陽の包み足",
+    "units": 11000,
+    "entry": 174.77724,
+    "sl": 174.58577291476126,
+    "tp": 175.14217417047746,
+    "barT": 1795698000000,
+    "openT": 1795698420629,
+    "deadline": 1795784820629,
+    "exit": 174.83883,
+    "closeT": 1795784821111,
+    "reason": "time",
+    "pnl": 677.4899999999491
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -8387,6 +8448,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 108831.89128597216
+  "equity": 108336.01128597233
  }
 }
