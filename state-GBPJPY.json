@@ -8235,9 +8235,9 @@
   "wouldWin": 113
  },
  "version": 1,
- "lastRun": 1795745221226,
+ "lastRun": 1795746121567,
  "lastBarT": 1795744800000,
- "price": 208.88337,
+ "price": 208.81208,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8335,7 +8335,7 @@
     "key": "against|range",
     "n": 33,
     "winRate": 0.48484848484848486,
-    "avgR": 0.5231332258977228
+    "avgR": 0.5151696568431251
    },
    {
     "name": "陰の包み足",
@@ -8454,16 +8454,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "直近の実績不振で一時停止"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8497,7 +8488,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 100006.45000000003
+  "equity": 99935.16000000002
  },
  "newsfree": {
   "start": 100000,

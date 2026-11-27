@@ -7389,11 +7389,11 @@
  "lastEvalT": 1795741200000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795745220552,
+ "lastRun": 1795746120954,
  "lastBarT": 1795744800000,
- "price": 159.22734,
- "equity": 102371.5003924584,
- "unreal": -946.8200000001161,
+ "price": 159.18824,
+ "equity": 101824.10039245854,
+ "unreal": -1494.2199999999843,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7481,7 +7481,7 @@
  },
  "learned": {
   "bars": 3581,
-  "events": 1917,
+  "events": 1918,
   "win": [
    {
     "name": "陰の包み足",
@@ -7620,17 +7620,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "MACD売りクロス",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106576.3247340755,
@@ -9061,6 +9051,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103621.66525631212
+  "equity": 103074.26525631225
  }
 }
