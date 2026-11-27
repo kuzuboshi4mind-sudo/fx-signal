@@ -6,7 +6,18 @@
   "balance": 122489.56937602689,
   "riskPct": 2,
   "startT": 1791953874927,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 15000,
+   "entry": 174.48419,
+   "sl": 174.3303228363212,
+   "tp": 174.7739243273577,
+   "barT": 1795809600000,
+   "openT": 1795810021267,
+   "deadline": 1796069221267
+  },
   "trades": [
    {
     "dir": "long",
@@ -460,6 +471,34 @@
  },
  "log": [
   {
+   "t": 1795806000000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 174.47819,
+   "sl": 174.3303228363212,
+   "tp": 174.7739243273577,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
+  {
+   "t": 1795806000000,
+   "pattern": "bb_revert_up",
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "entry": 174.47819,
+   "sl": 174.3303228363212,
+   "tp": 174.7739243273577,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795791600000,
    "pattern": "donchian_dn",
    "name": "20本安値ブレイク",
@@ -701,7 +740,7 @@
    "entry": 174.79553,
    "sl": 175.0280140486414,
    "tp": 174.33056190271722,
-   "status": "open",
+   "status": "expired",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7280,7 +7319,7 @@
    ]
   }
  ],
- "lastEvalT": 1795802400000,
+ "lastEvalT": 1795806000000,
  "adaptive": {
   "start": 100000,
   "balance": 104711.00656922643,
@@ -7929,11 +7968,11 @@
   "wouldWin": 121
  },
  "version": 1,
- "lastRun": 1795809120873,
- "lastBarT": 1795806000000,
- "price": 174.50073,
- "equity": 122489.56937602689,
- "unreal": 0,
+ "lastRun": 1795810021267,
+ "lastBarT": 1795809600000,
+ "price": 174.47819,
+ "equity": 122399.56937602689,
+ "unreal": -90.00000000000341,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -8020,7 +8059,7 @@
   }
  },
  "learned": {
-  "bars": 3598,
+  "bars": 3599,
   "events": 1815,
   "win": [
    {
@@ -8170,7 +8209,23 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下限から回帰",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8185,7 +8240,18 @@
   "balance": 108336.01128597233,
   "riskPct": 2,
   "startT": 1793840366495,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 14000,
+   "entry": 174.48419,
+   "sl": 174.3303228363212,
+   "tp": 174.7739243273577,
+   "barT": 1795809600000,
+   "openT": 1795810021267,
+   "deadline": 1796069221267
+  },
   "trades": [
    {
     "dir": "long",
@@ -8460,6 +8526,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 108336.01128597233
+  "equity": 108252.01128597233
  }
 }

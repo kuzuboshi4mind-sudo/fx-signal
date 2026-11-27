@@ -6,7 +6,18 @@
   "balance": 98618.69375183244,
   "riskPct": 2,
   "startT": 1791953875407,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 9000,
+   "entry": 208.9331,
+   "sl": 208.71430586286434,
+   "tp": 209.34068827427137,
+   "barT": 1795809600000,
+   "openT": 1795810021580,
+   "deadline": 1796069221580
+  },
   "trades": [
    {
     "dir": "long",
@@ -571,6 +582,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1795806000000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 208.9231,
+   "sl": 208.71430586286434,
+   "tp": 209.34068827427137,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1795791600000,
    "pattern": "macd_dn",
@@ -7253,7 +7276,7 @@
    ]
   }
  ],
- "lastEvalT": 1795802400000,
+ "lastEvalT": 1795806000000,
  "adaptive": {
   "start": 100000,
   "balance": 88173.15739767066,
@@ -8395,11 +8418,11 @@
   "wouldWin": 116
  },
  "version": 1,
- "lastRun": 1795809121108,
- "lastBarT": 1795806000000,
- "price": 208.95562,
- "equity": 98618.69375183244,
- "unreal": 0,
+ "lastRun": 1795810021580,
+ "lastBarT": 1795809600000,
+ "price": 208.9231,
+ "equity": 98528.69375183253,
+ "unreal": -89.99999999991815,
  "config": {
   "symbol": "GBP/JPY",
   "interval": "1h",
@@ -8486,7 +8509,7 @@
   }
  },
  "learned": {
-  "bars": 3598,
+  "bars": 3599,
   "events": 1813,
   "win": [
    {
@@ -8614,7 +8637,14 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8648,14 +8678,25 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 100078.70000000003
+  "equity": 100046.18000000002
  },
  "newsfree": {
   "start": 100000,
   "balance": 93609.04668981701,
   "riskPct": 2,
   "startT": 1793840366893,
-  "pos": null,
+  "pos": {
+   "dir": "long",
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "units": 8000,
+   "entry": 208.9331,
+   "sl": 208.71430586286434,
+   "tp": 209.34068827427137,
+   "barT": 1795809600000,
+   "openT": 1795810021580,
+   "deadline": 1796069221580
+  },
   "trades": [
    {
     "dir": "long",
@@ -8994,6 +9035,6 @@
     "pnl": -1837.4347114240663
    }
   ],
-  "equity": 93609.04668981701
+  "equity": 93529.04668981709
  }
 }
