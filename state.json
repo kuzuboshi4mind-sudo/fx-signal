@@ -540,6 +540,22 @@
  },
  "log": [
   {
+   "t": 1795770000000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 159.54306,
+   "sl": 159.44832311540242,
+   "tp": 159.73253376919516,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795766400000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -595,7 +611,7 @@
    "entry": 159.33373,
    "sl": 159.24445763707976,
    "tp": 159.51227472584048,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -612,7 +628,7 @@
    "entry": 159.33549,
    "sl": 159.24410514762434,
    "tp": 159.51825970475127,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -766,7 +782,7 @@
    "entry": 159.24002,
    "sl": 159.09101003754728,
    "tp": 159.53803992490543,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -813,7 +829,7 @@
    "entry": 159.17399,
    "sl": 159.00939291013788,
    "tp": 159.50318417972423,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7506,12 +7522,12 @@
    ]
   }
  ],
- "lastEvalT": 1795766400000,
+ "lastEvalT": 1795770000000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795773120546,
- "lastBarT": 1795770000000,
- "price": 159.48085,
+ "lastRun": 1795774020907,
+ "lastBarT": 1795773600000,
+ "price": 159.54306,
  "equity": 101287.86870285074,
  "unreal": 0,
  "config": {
@@ -7600,8 +7616,8 @@
   }
  },
  "learned": {
-  "bars": 3588,
-  "events": 1927,
+  "bars": 3589,
+  "events": 1929,
   "win": [
    {
     "name": "陰の包み足",
@@ -7740,7 +7756,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106576.3247340755,
@@ -8723,15 +8749,29 @@
   "equity": 106576.3247340755
  },
  "skipReview": {
-  "n": 358,
+  "n": 362,
   "wouldLose": 257,
-  "wouldWin": 101
+  "wouldWin": 105
  },
  "latest": {
   "start": 100000,
   "balance": 103777.72320441542,
   "startT": 1792033735611,
-  "positions": [],
+  "positions": [
+   {
+    "key": "vol_breakout",
+    "dir": "long",
+    "pattern": "vol_breakout",
+    "name": "ボラティリティ・ブレイクアウト",
+    "units": 14000,
+    "entry": 159.54806,
+    "sl": 159.40595467310362,
+    "tp": 169.02174845975853,
+    "barT": 1795773600000,
+    "openT": 1795774020907,
+    "deadline": 1795802820907
+   }
+  ],
   "trades": [
    {
     "key": "vol_breakout",
@@ -8958,7 +8998,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 103777.72320441542
+  "equity": 103707.72320441548
  },
  "newsfree": {
   "start": 100000,
