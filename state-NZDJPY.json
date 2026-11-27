@@ -7327,7 +7327,7 @@
    ]
   }
  ],
- "lastEvalT": 1795730400000,
+ "lastEvalT": 1795734000000,
  "adaptive": {
   "start": 100000,
   "balance": 97401.33805206906,
@@ -7891,9 +7891,9 @@
   "wouldWin": 110
  },
  "version": 1,
- "lastRun": 1795737122026,
- "lastBarT": 1795734000000,
- "price": 87.1347,
+ "lastRun": 1795738022080,
+ "lastBarT": 1795737600000,
+ "price": 87.1253,
  "equity": 98758.66958325641,
  "unreal": 0,
  "config": {
@@ -7982,8 +7982,8 @@
   }
  },
  "learned": {
-  "bars": 3578,
-  "events": 1909,
+  "bars": 3579,
+  "events": 1910,
   "win": [
    {
     "name": "20本安値ブレイク",
@@ -8103,7 +8103,7 @@
   "startT": 1793332321641,
   "positions": [],
   "trades": [],
-  "lastDay": "2026-11-26",
+  "lastDay": "2026-11-27",
   "strategies": [
    "trend_stoch"
   ],
