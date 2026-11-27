@@ -7968,11 +7968,11 @@
   "wouldWin": 121
  },
  "version": 1,
- "lastRun": 1795810021267,
+ "lastRun": 1795810921156,
  "lastBarT": 1795809600000,
- "price": 174.47819,
- "equity": 122399.56937602689,
- "unreal": -90.00000000000341,
+ "price": 174.49072,
+ "equity": 122587.51937602686,
+ "unreal": 97.9499999999689,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -8209,23 +8209,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン下限から回帰",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8526,6 +8510,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 108252.01128597233
+  "equity": 108427.4312859723
  }
 }
