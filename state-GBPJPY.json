@@ -591,7 +591,7 @@
    "entry": 208.76746,
    "sl": 208.9733556095623,
    "tp": 208.3556687808754,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -607,7 +607,7 @@
    "entry": 208.77231,
    "sl": 208.98592065645173,
    "tp": 208.3450886870966,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -7093,7 +7093,7 @@
    ]
   }
  ],
- "lastEvalT": 1795741200000,
+ "lastEvalT": 1795744800000,
  "adaptive": {
   "start": 100000,
   "balance": 88173.15739767066,
@@ -8230,14 +8230,14 @@
  },
  "reportDay": "2026-11-27",
  "skipReview": {
-  "n": 345,
-  "wouldLose": 232,
+  "n": 346,
+  "wouldLose": 233,
   "wouldWin": 113
  },
  "version": 1,
- "lastRun": 1795747921275,
- "lastBarT": 1795744800000,
- "price": 208.93794,
+ "lastRun": 1795748821716,
+ "lastBarT": 1795748400000,
+ "price": 208.99578,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8326,8 +8326,8 @@
   }
  },
  "learned": {
-  "bars": 3581,
-  "events": 1800,
+  "bars": 3582,
+  "events": 1802,
   "win": [
    {
     "name": "陽の包み足",
@@ -8335,7 +8335,7 @@
     "key": "against|range",
     "n": 33,
     "winRate": 0.48484848484848486,
-    "avgR": 0.5292290593008543
+    "avgR": 0.5275836199380529
    },
    {
     "name": "陰の包み足",
@@ -8365,17 +8365,9 @@
     "name": "陰の包み足",
     "dir": "short",
     "key": "*",
-    "n": 133,
-    "winRate": 0.42105263157894735,
-    "avgR": 0.25463897496180876
-   },
-   {
-    "name": "陰の包み足",
-    "dir": "short",
-    "key": "with|range",
-    "n": 22,
-    "winRate": 0.45454545454545453,
-    "avgR": 0.34037391654705773
+    "n": 134,
+    "winRate": 0.417910447761194,
+    "avgR": 0.2451013178954722
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -8384,6 +8376,14 @@
     "n": 27,
     "winRate": 0.4444444444444444,
     "avgR": 0.31014724585265324
+   },
+   {
+    "name": "陰の包み足",
+    "dir": "short",
+    "key": "with|range",
+    "n": 23,
+    "winRate": 0.43478260869565216,
+    "avgR": 0.2810790909612167
    },
    {
     "name": "ボリバン下抜けブレイク",
@@ -8404,19 +8404,19 @@
   ]
  },
  "review": {
+  "engulf_dn": {
+   "n": 16,
+   "wins": 7,
+   "recentLosses": 3,
+   "streak": 3,
+   "suspended": true
+  },
   "engulf_up": {
    "n": 7,
    "wins": 2,
    "recentLosses": 4,
    "streak": 3,
    "suspended": true
-  },
-  "engulf_dn": {
-   "n": 15,
-   "wins": 7,
-   "recentLosses": 2,
-   "streak": 2,
-   "suspended": false
   },
   "donchian_up": {
    "n": 1,
@@ -8488,7 +8488,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 100061.02000000002
+  "equity": 100118.86000000002
  },
  "newsfree": {
   "start": 100000,
