@@ -462,7 +462,7 @@
    "entry": 174.94815,
    "sl": 174.81202276617105,
    "tp": 175.22040446765786,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -478,7 +478,7 @@
    "entry": 174.94815,
    "sl": 174.81202276617105,
    "tp": 175.22040446765786,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -493,7 +493,7 @@
    "entry": 174.94815,
    "sl": 174.81202276617105,
    "tp": 175.22040446765786,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7808,16 +7808,16 @@
  },
  "reportDay": "2026-11-27",
  "skipReview": {
-  "n": 367,
-  "wouldLose": 248,
+  "n": 370,
+  "wouldLose": 251,
   "wouldWin": 119
  },
  "version": 1,
- "lastRun": 1795764120481,
+ "lastRun": 1795765020732,
  "lastBarT": 1795762800000,
- "price": 174.88276,
- "equity": 123016.72937602676,
- "unreal": 1266.2399999998115,
+ "price": 174.83247,
+ "equity": 122413.24937602688,
+ "unreal": 662.7599999999347,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -8339,6 +8339,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 108819.24128597221
+  "equity": 108266.05128597232
  }
 }
