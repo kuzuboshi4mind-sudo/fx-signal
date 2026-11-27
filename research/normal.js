@@ -55,6 +55,9 @@ const VARIANTS = {
   ev_wkflat: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true, wk: 'flat' }, // 上に加え、週末をまたぐポジションは閉場前の最後の足で手じまう
   // 2026-11-27：日本時間5〜6時台（ニューヨーク終盤〜オセアニア、薄商い）に入る取引を見送る
   ev_noh5: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true, skipJstHours: [5, 6] },
+  // 2026-11-28：損切り幅を広げる（仮説2.5）。本番の形（発表停止・窓開け込み・実測コスト）で再審査
+  ev_sl15: { tp: 3, sl: 1.5, maxBars: 36, minER: 0, ev: 'skip', gap: true },
+  ev_sl2: { tp: 4, sl: 2, maxBars: 48, minER: 0, ev: 'skip', gap: true },
 };
 const WEEKEND = 24 * 3600e3;
 // 窓開けを数える版：足の始値がすでに損切り・利確を越えていたら始値で約定。wk='flat' なら週末前の最後の足の終値で手じまう
