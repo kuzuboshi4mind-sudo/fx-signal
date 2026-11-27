@@ -598,7 +598,7 @@
    "entry": 159.22118,
    "sl": 159.12764230138683,
    "tp": 159.40825539722636,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -694,7 +694,7 @@
    "entry": 159.2845,
    "sl": 159.41886138757604,
    "tp": 159.01577722484794,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -7461,9 +7461,9 @@
  "lastEvalT": 1795762800000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795767720712,
+ "lastRun": 1795768620992,
  "lastBarT": 1795766400000,
- "price": 159.35246,
+ "price": 159.42273,
  "equity": 101287.86870285074,
  "unreal": 0,
  "config": {
@@ -7553,15 +7553,15 @@
  },
  "learned": {
   "bars": 3587,
-  "events": 1922,
+  "events": 1924,
   "win": [
    {
     "name": "陰の包み足",
     "dir": "short",
     "key": "against|range",
-    "n": 53,
-    "winRate": 0.4528301886792453,
-    "avgR": 0.3375018043919582
+    "n": 54,
+    "winRate": 0.4444444444444444,
+    "avgR": 0.3123886869765954
    },
    {
     "name": "ボリバン下限から回帰",
@@ -7614,18 +7614,18 @@
   ]
  },
  "review": {
+  "engulf_dn": {
+   "n": 5,
+   "wins": 3,
+   "recentLosses": 2,
+   "streak": 1,
+   "suspended": false
+  },
   "ema_cross_up": {
    "n": 6,
    "wins": 3,
    "recentLosses": 3,
    "streak": 2,
-   "suspended": false
-  },
-  "engulf_dn": {
-   "n": 4,
-   "wins": 3,
-   "recentLosses": 1,
-   "streak": 0,
    "suspended": false
   },
   "bb_revert_up": {
@@ -8675,9 +8675,9 @@
   "equity": 106576.3247340755
  },
  "skipReview": {
-  "n": 355,
+  "n": 356,
   "wouldLose": 257,
-  "wouldWin": 98
+  "wouldWin": 99
  },
  "latest": {
   "start": 100000,

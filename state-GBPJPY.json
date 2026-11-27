@@ -643,7 +643,7 @@
    "entry": 208.88337,
    "sl": 208.6902689830428,
    "tp": 209.26957203391441,
-   "status": "open",
+   "status": "win",
    "shadow": true,
    "skipped": false
   },
@@ -8299,9 +8299,9 @@
   "wouldWin": 114
  },
  "version": 1,
- "lastRun": 1795767721380,
+ "lastRun": 1795768621645,
  "lastBarT": 1795766400000,
- "price": 209.21321,
+ "price": 209.20791,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8391,7 +8391,7 @@
  },
  "learned": {
   "bars": 3587,
-  "events": 1804,
+  "events": 1805,
   "win": [
    {
     "name": "陽の包み足",
@@ -8468,19 +8468,19 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 9,
+   "wins": 4,
+   "recentLosses": 3,
+   "streak": 0,
+   "suspended": false
+  },
   "engulf_dn": {
    "n": 16,
    "wins": 7,
    "recentLosses": 3,
    "streak": 3,
    "suspended": true
-  },
-  "engulf_up": {
-   "n": 8,
-   "wins": 3,
-   "recentLosses": 3,
-   "streak": 1,
-   "suspended": false
   },
   "donchian_up": {
    "n": 1,
@@ -8552,7 +8552,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 100336.29000000002
+  "equity": 100330.99000000002
  },
  "newsfree": {
   "start": 100000,
