@@ -7525,9 +7525,9 @@
  "lastEvalT": 1795773600000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795779420195,
+ "lastRun": 1795780320863,
  "lastBarT": 1795777200000,
- "price": 159.44915,
+ "price": 159.39033,
  "equity": 101287.86870285074,
  "unreal": 0,
  "config": {
@@ -7617,7 +7617,7 @@
  },
  "learned": {
   "bars": 3590,
-  "events": 1929,
+  "events": 1930,
   "win": [
    {
     "name": "陰の包み足",
@@ -8745,9 +8745,10 @@
  },
  "latest": {
   "start": 100000,
-  "balance": 103777.72320441542,
+  "balance": 101788.24862786624,
   "startT": 1792033735611,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "vol_breakout",
     "dir": "long",
@@ -8759,10 +8760,12 @@
     "tp": 169.02174845975853,
     "barT": 1795773600000,
     "openT": 1795774020907,
-    "deadline": 1795802820907
-   }
-  ],
-  "trades": [
+    "deadline": 1795802820907,
+    "exit": 159.40595467310362,
+    "closeT": 1795777200000,
+    "reason": "sl",
+    "pnl": -1989.4745765491848
+   },
    {
     "key": "vol_breakout",
     "dir": "short",
@@ -8988,7 +8991,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 102392.98320441558
+  "equity": 101788.24862786624
  },
  "newsfree": {
   "start": 100000,
