@@ -3,22 +3,27 @@
  "interval": "1h",
  "paper": {
   "start": 100000,
-  "balance": 103318.32039245853,
+  "balance": 101287.86870285074,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": {
-   "dir": "long",
-   "pattern": "ema_cross_up",
-   "name": "ゴールデンクロス(EMA20/50)",
-   "units": 14000,
-   "entry": 159.29497,
-   "sl": 159.1499377364566,
-   "tp": 159.57003452708685,
-   "barT": 1795694400000,
-   "openT": 1795694820221,
-   "deadline": 1795781220221
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 14000,
+    "entry": 159.29497,
+    "sl": 159.1499377364566,
+    "tp": 159.57003452708685,
+    "barT": 1795694400000,
+    "openT": 1795694820221,
+    "deadline": 1795781220221,
+    "exit": 159.1499377364566,
+    "closeT": 1795744800000,
+    "reason": "sl",
+    "pnl": -2030.451689607787
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -634,7 +639,7 @@
    "entry": 159.28997,
    "sl": 159.1499377364566,
    "tp": 159.57003452708685,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -7389,11 +7394,11 @@
  "lastEvalT": 1795741200000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795747020213,
+ "lastRun": 1795747920477,
  "lastBarT": 1795744800000,
- "price": 159.19038,
- "equity": 101854.0603924585,
- "unreal": -1464.2600000000243,
+ "price": 159.14798,
+ "equity": 101287.86870285074,
+ "unreal": 0,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7481,7 +7486,7 @@
  },
  "learned": {
   "bars": 3581,
-  "events": 1919,
+  "events": 1920,
   "win": [
    {
     "name": "陰の包み足",
@@ -7500,14 +7505,6 @@
     "avgR": 0.3260192726792819
    },
    {
-    "name": "ゴールデンクロス(EMA20/50)",
-    "dir": "long",
-    "key": "*",
-    "n": 35,
-    "winRate": 0.4,
-    "avgR": 0.219769412310573
-   },
-   {
     "name": "ボリバン上限から回帰",
     "dir": "short",
     "key": "against|range",
@@ -7522,6 +7519,14 @@
     "n": 34,
     "winRate": 0.4117647058823529,
     "avgR": 0.213657049341907
+   },
+   {
+    "name": "ゴールデンクロス(EMA20/50)",
+    "dir": "long",
+    "key": "*",
+    "n": 36,
+    "winRate": 0.3888888888888889,
+    "avgR": 0.18539101117535114
    },
    {
     "name": "陰の包み足",
@@ -7542,18 +7547,18 @@
   ]
  },
  "review": {
+  "ema_cross_up": {
+   "n": 6,
+   "wins": 3,
+   "recentLosses": 3,
+   "streak": 2,
+   "suspended": false
+  },
   "engulf_dn": {
    "n": 4,
    "wins": 3,
    "recentLosses": 1,
    "streak": 0,
-   "suspended": false
-  },
-  "ema_cross_up": {
-   "n": 5,
-   "wins": 3,
-   "recentLosses": 2,
-   "streak": 1,
    "suspended": false
   },
   "bb_revert_up": {
@@ -8842,22 +8847,27 @@
  },
  "newsfree": {
   "start": 100000,
-  "balance": 104568.48525631224,
+  "balance": 102538.03356670446,
   "riskPct": 2,
   "startT": 1793840366022,
-  "pos": {
-   "dir": "long",
-   "pattern": "ema_cross_up",
-   "name": "ゴールデンクロス(EMA20/50)",
-   "units": 14000,
-   "entry": 159.29497,
-   "sl": 159.1499377364566,
-   "tp": 159.57003452708685,
-   "barT": 1795694400000,
-   "openT": 1795694820221,
-   "deadline": 1795781220221
-  },
+  "pos": null,
   "trades": [
+   {
+    "dir": "long",
+    "pattern": "ema_cross_up",
+    "name": "ゴールデンクロス(EMA20/50)",
+    "units": 14000,
+    "entry": 159.29497,
+    "sl": 159.1499377364566,
+    "tp": 159.57003452708685,
+    "barT": 1795694400000,
+    "openT": 1795694820221,
+    "deadline": 1795781220221,
+    "exit": 159.1499377364566,
+    "closeT": 1795744800000,
+    "reason": "sl",
+    "pnl": -2030.451689607787
+   },
    {
     "dir": "short",
     "pattern": "engulf_dn",
@@ -9051,6 +9061,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103104.22525631222
+  "equity": 102538.03356670446
  }
 }
