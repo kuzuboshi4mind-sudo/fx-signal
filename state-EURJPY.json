@@ -467,7 +467,7 @@
    "entry": 174.83883,
    "sl": 174.68961206747886,
    "tp": 175.13726586504225,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -483,7 +483,7 @@
    "entry": 174.83883,
    "sl": 174.68961206747886,
    "tp": 175.13726586504225,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7893,14 +7893,14 @@
  },
  "reportDay": "2026-11-27",
  "skipReview": {
-  "n": 371,
-  "wouldLose": 252,
+  "n": 373,
+  "wouldLose": 254,
   "wouldWin": 119
  },
  "version": 1,
- "lastRun": 1795784821111,
+ "lastRun": 1795785721226,
  "lastBarT": 1795784400000,
- "price": 174.83883,
+ "price": 174.70339,
  "equity": 122489.56937602689,
  "unreal": 0,
  "config": {
@@ -7990,7 +7990,7 @@
  },
  "learned": {
   "bars": 3592,
-  "events": 1811,
+  "events": 1813,
   "win": [
    {
     "name": "陽の包み足",
@@ -8139,26 +8139,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "上昇トレンドの押し目",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  },
-  {
-   "name": "陽の包み足",
-   "dir": "long",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
