@@ -53,6 +53,8 @@ const VARIANTS = {
   ev_gap: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true }, // 今と同じ（窓開けを正しく数えるだけ）
   ev_wkskip: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true, wk: 'skip' }, // 金曜 UTC15時（日本時間 土曜0時）以降は新規を入れない
   ev_wkflat: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true, wk: 'flat' }, // 上に加え、週末をまたぐポジションは閉場前の最後の足で手じまう
+  // 2026-11-27：日本時間5〜6時台（ニューヨーク終盤〜オセアニア、薄商い）に入る取引を見送る
+  ev_noh5: { tp: 2, sl: 1, maxBars: 24, minER: 0, ev: 'skip', gap: true, skipJstHours: [5, 6] },
 };
 const WEEKEND = 24 * 3600e3;
 // 窓開けを数える版：足の始値がすでに損切り・利確を越えていたら始値で約定。wk='flat' なら週末前の最後の足の終値で手じまう
@@ -105,15 +107,17 @@ function run(c, symbol) {
         if (v.rn && nearRound(c[i].c, best.p.dir, v.rn)) continue;
         if (v.ev && EV.nearEvent(events, c[i + 1] ? c[i + 1].t : c[i].t)) continue;
         if (v.wk && c[i + 1] && friLate(c[i + 1].t)) continue;
+        if (v.skipJstHours && c[i + 1] && v.skipJstHours.includes(new Date(c[i + 1].t + 9 * 3600e3).getUTCHours())) continue;
         const cut = v.ev === 'flat' ? EV.barsUntilEvent(events, c, i, o.maxBars) : null;
         const oo = cut ? { ...o, maxBars: Math.min(o.maxBars, cut) } : o;
         const r = v.gap ? simulateGap(c, d, i, best.p.dir, oo, v.wk === 'flat') : E.simulate(c, d, i, best.p.dir, oo);
         if (!r) continue;
-        tr.push({ t: c[i].t, r: r.r, wkGap: r.r < -1.05 }); busy = i + r.bars;
+        tr.push({ t: c[i].t, r: r.r, dir: best.p.dir, wkGap: r.r < -1.05 }); busy = i + r.bars;
       }
     }
     const rounds = [3, 2, 1].map(k => tr.filter(x => x.t >= lastT - k * YEAR && x.t < lastT - (k - 1) * YEAR).reduce((a, x) => a + x.r, 0));
     let eq = 0, pk = 0, dd = 0; for (const x of tr) { eq += x.r; pk = Math.max(pk, eq); dd = Math.max(dd, pk - eq); }
+    if (process.env.TRADES_OUT && !NULL_RUN) (TRADES[symbol] ||= {})[vk] = tr.map(x => [x.t, x.dir === 'long' ? 1 : -1, +x.r.toFixed(4)]);
     res[vk] = { n: tr.length, sumR: tr.reduce((a, x) => a + x.r, 0), rounds, maxDD: dd, bigLoss: tr.filter(x => x.wkGap).length, worst: Math.min(0, ...tr.map(x => x.r)) };
   }
   return res;
@@ -127,6 +131,7 @@ function total(byPair) {
   return t;
 }
 
+const TRADES = {}; let NULL_RUN = false;
 const data = pairArgs.map(a => { const [symbol, file] = a.split('='); return { symbol, c: load(file) }; });
 const result = { generated: Date.now(), real: {}, nulls: [] };
 for (const { symbol, c } of data) {
@@ -134,6 +139,7 @@ for (const { symbol, c } of data) {
   console.log(symbol, Object.entries(result.real[symbol]).map(([k, r]) => `${k} ${r.sumR.toFixed(1)}R(${r.rounds.map(x => x.toFixed(1)).join('/')}) n${r.n}`).join(' | '));
 }
 result.realTotal = total(result.real);
+NULL_RUN = true;
 for (let k = 0; k < NULLS; k++) {
   const byPair = {};
   for (const { symbol, c } of data) byPair[symbol] = run(shuffled(c, 9100 + k), symbol);
@@ -143,3 +149,4 @@ const show = (lbl, t) => console.log(lbl + '\n   ' + Object.entries(t).map(([k, 
 show('合計', result.realTotal);
 result.nulls.forEach((t, i) => show(`運だけ${i + 1}`, t));
 fs.writeFileSync(out, JSON.stringify(result, null, 1));
+if (process.env.TRADES_OUT) fs.writeFileSync(process.env.TRADES_OUT, JSON.stringify(TRADES)); // 本物のデータの取引一覧（時刻・向き・R）。同時エントリーの分析用
