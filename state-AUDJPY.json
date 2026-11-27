@@ -8216,9 +8216,9 @@
   "wouldWin": 125
  },
  "version": 1,
- "lastRun": 1795766821771,
+ "lastRun": 1795767721625,
  "lastBarT": 1795766400000,
- "price": 106.30107,
+ "price": 106.3893,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8308,7 +8308,7 @@
  },
  "learned": {
   "bars": 3587,
-  "events": 1937,
+  "events": 1938,
   "win": [
    {
     "name": "20本安値ブレイク",
@@ -8462,16 +8462,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,

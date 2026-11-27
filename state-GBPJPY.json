@@ -695,7 +695,7 @@
    "entry": 208.75707,
    "sl": 208.523177869768,
    "tp": 209.22485426046399,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -8294,14 +8294,14 @@
  },
  "reportDay": "2026-11-27",
  "skipReview": {
-  "n": 346,
+  "n": 347,
   "wouldLose": 233,
-  "wouldWin": 113
+  "wouldWin": 114
  },
  "version": 1,
- "lastRun": 1795766821498,
+ "lastRun": 1795767721380,
  "lastBarT": 1795766400000,
- "price": 209.13561,
+ "price": 209.21321,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8391,15 +8391,15 @@
  },
  "learned": {
   "bars": 3587,
-  "events": 1802,
+  "events": 1804,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 33,
-    "winRate": 0.48484848484848486,
-    "avgR": 0.5275836199380529
+    "n": 34,
+    "winRate": 0.5,
+    "avgR": 0.570128419847003
    },
    {
     "name": "陰の包み足",
@@ -8518,17 +8518,7 @@
    "suspended": true
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "優位性なし",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8562,7 +8552,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 100258.69000000003
+  "equity": 100336.29000000002
  },
  "newsfree": {
   "start": 100000,
