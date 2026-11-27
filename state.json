@@ -6,7 +6,18 @@
   "balance": 101287.86870285074,
   "riskPct": 2,
   "startT": 1791866315262,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "units": 15000,
+   "entry": 159.39249,
+   "sl": 159.49321736478058,
+   "tp": 159.20603527043886,
+   "barT": 1795780800000,
+   "openT": 1795781220416,
+   "deadline": 1796040420416
+  },
   "trades": [
    {
     "dir": "long",
@@ -539,6 +550,18 @@
   ]
  },
  "log": [
+  {
+   "t": 1795777200000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 159.39749,
+   "sl": 159.49321736478058,
+   "tp": 159.20603527043886,
+   "status": "open",
+   "shadow": false,
+   "skipped": false
+  },
   {
    "t": 1795770000000,
    "pattern": "donchian_up",
@@ -7522,14 +7545,14 @@
    ]
   }
  ],
- "lastEvalT": 1795773600000,
+ "lastEvalT": 1795777200000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795780320863,
- "lastBarT": 1795777200000,
- "price": 159.39033,
- "equity": 101287.86870285074,
- "unreal": 0,
+ "lastRun": 1795781220416,
+ "lastBarT": 1795780800000,
+ "price": 159.39749,
+ "equity": 101212.86870285081,
+ "unreal": -74.99999999993179,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7616,7 +7639,7 @@
   }
  },
  "learned": {
-  "bars": 3590,
+  "bars": 3591,
   "events": 1930,
   "win": [
    {
@@ -7756,7 +7779,14 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": false,
+   "reasons": []
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106576.3247340755,
@@ -8998,7 +9028,18 @@
   "balance": 102538.03356670446,
   "riskPct": 2,
   "startT": 1793840366022,
-  "pos": null,
+  "pos": {
+   "dir": "short",
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "units": 16000,
+   "entry": 159.39249,
+   "sl": 159.49321736478058,
+   "tp": 159.20603527043886,
+   "barT": 1795780800000,
+   "openT": 1795781220416,
+   "deadline": 1796040420416
+  },
   "trades": [
    {
     "dir": "long",
@@ -9209,6 +9250,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 102538.03356670446
+  "equity": 102458.03356670453
  }
 }
