@@ -7205,7 +7205,7 @@
    ]
   }
  ],
- "lastEvalT": 1795770000000,
+ "lastEvalT": 1795773600000,
  "adaptive": {
   "start": 100000,
   "balance": 88173.15739767066,
@@ -8347,9 +8347,9 @@
   "wouldWin": 115
  },
  "version": 1,
- "lastRun": 1795776720794,
- "lastBarT": 1795773600000,
- "price": 209.42227,
+ "lastRun": 1795777621182,
+ "lastBarT": 1795777200000,
+ "price": 209.45832,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8438,7 +8438,7 @@
   }
  },
  "learned": {
-  "bars": 3589,
+  "bars": 3590,
   "events": 1806,
   "win": [
    {
@@ -8600,7 +8600,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 100545.35000000002
+  "equity": 100581.40000000001
  },
  "newsfree": {
   "start": 100000,

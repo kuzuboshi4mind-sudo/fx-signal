@@ -7522,12 +7522,12 @@
    ]
   }
  ],
- "lastEvalT": 1795770000000,
+ "lastEvalT": 1795773600000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795776720187,
- "lastBarT": 1795773600000,
- "price": 159.52901,
+ "lastRun": 1795777620573,
+ "lastBarT": 1795777200000,
+ "price": 159.47687,
  "equity": 101287.86870285074,
  "unreal": 0,
  "config": {
@@ -7616,7 +7616,7 @@
   }
  },
  "learned": {
-  "bars": 3589,
+  "bars": 3590,
   "events": 1929,
   "win": [
    {
@@ -8988,7 +8988,7 @@
   "strategies": [
    "vol_breakout"
   ],
-  "equity": 103511.02320441553
+  "equity": 102781.0632044154
  },
  "newsfree": {
   "start": 100000,
