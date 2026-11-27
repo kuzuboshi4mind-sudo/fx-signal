@@ -558,7 +558,7 @@
    "entry": 159.32586,
    "sl": 159.23722287140075,
    "tp": 159.50313425719852,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7373,11 +7373,11 @@
  "lastEvalT": 1795737600000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795743420211,
+ "lastRun": 1795744320391,
  "lastBarT": 1795741200000,
- "price": 159.28085,
- "equity": 103120.64039245826,
- "unreal": -197.6800000002754,
+ "price": 159.25305,
+ "equity": 102731.44039245846,
+ "unreal": -586.8800000000647,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -8587,8 +8587,8 @@
   "equity": 106576.3247340755
  },
  "skipReview": {
-  "n": 348,
-  "wouldLose": 251,
+  "n": 349,
+  "wouldLose": 252,
   "wouldWin": 97
  },
  "latest": {
@@ -9035,6 +9035,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 104370.80525631197
+  "equity": 103981.60525631218
  }
 }
