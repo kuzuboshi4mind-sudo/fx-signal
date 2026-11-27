@@ -8173,7 +8173,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 87722.36193418149
+  "equity": 87661.64193418149
  },
  "reportDay": "2026-11-27",
  "skipReview": {
@@ -8182,9 +8182,9 @@
   "wouldWin": 118
  },
  "version": 1,
- "lastRun": 1795752421446,
+ "lastRun": 1795753321923,
  "lastBarT": 1795752000000,
- "price": 106.01521,
+ "price": 105.98485,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8420,17 +8420,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "RSI買われすぎ反落",
-   "dir": "short",
-   "blocked": true,
-   "reasons": [
-    "過去の負けパターン",
-    "勝率が基準未満"
-   ]
-  }
- ],
+ "lastSignals": [],
  "latest": {
   "start": 100000,
   "balance": 100000,
