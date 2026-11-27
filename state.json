@@ -535,6 +535,22 @@
  },
  "log": [
   {
+   "t": 1795737600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 159.30259,
+   "sl": 159.21362552344354,
+   "tp": 159.48051895311292,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795734000000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -7354,14 +7370,14 @@
    ]
   }
  ],
- "lastEvalT": 1795734000000,
+ "lastEvalT": 1795737600000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795740720928,
- "lastBarT": 1795737600000,
- "price": 159.3725,
- "equity": 104403.74039245847,
- "unreal": 1085.4199999999423,
+ "lastRun": 1795741620581,
+ "lastBarT": 1795741200000,
+ "price": 159.30259,
+ "equity": 103425.00039245856,
+ "unreal": 106.68000000003985,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7448,7 +7464,7 @@
   }
  },
  "learned": {
-  "bars": 3579,
+  "bars": 3580,
   "events": 1916,
   "win": [
    {
@@ -7588,12 +7604,23 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
-  "balance": 105692.43473407546,
+  "balance": 106576.3247340755,
   "startT": 1791916832223,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "pullback_dn|long|3|1",
     "dir": "long",
@@ -7605,10 +7632,12 @@
     "tp": 159.56451291139769,
     "barT": 1795654800000,
     "openT": 1795655220263,
-    "deadline": 1795741620263
-   }
-  ],
-  "trades": [
+    "deadline": 1795741620263,
+    "exit": 159.30259,
+    "closeT": 1795741620581,
+    "reason": "time",
+    "pnl": 883.8900000000365
+   },
    {
     "key": "ema_cross_dn|long|2|1",
     "dir": "long",
@@ -8565,7 +8594,7 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 106786.05473407547
+  "equity": 106576.3247340755
  },
  "skipReview": {
   "n": 348,
@@ -9016,6 +9045,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 105653.90525631218
+  "equity": 104675.16525631228
  }
 }

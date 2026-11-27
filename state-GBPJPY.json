@@ -7081,7 +7081,7 @@
    ]
   }
  ],
- "lastEvalT": 1795734000000,
+ "lastEvalT": 1795737600000,
  "adaptive": {
   "start": 100000,
   "balance": 88173.15739767066,
@@ -8223,9 +8223,9 @@
   "wouldWin": 113
  },
  "version": 1,
- "lastRun": 1795740721511,
- "lastBarT": 1795737600000,
- "price": 208.68737,
+ "lastRun": 1795741621369,
+ "lastBarT": 1795741200000,
+ "price": 208.62723,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8314,16 +8314,16 @@
   }
  },
  "learned": {
-  "bars": 3579,
-  "events": 1798,
+  "bars": 3580,
+  "events": 1799,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 31,
-    "winRate": 0.5161290322580645,
-    "avgR": 0.5629871583786218
+    "n": 32,
+    "winRate": 0.5,
+    "avgR": 0.5134879727352109
    },
    {
     "name": "陰の包み足",
@@ -8476,7 +8476,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 99810.45
+  "equity": 99750.31000000001
  },
  "newsfree": {
   "start": 100000,
