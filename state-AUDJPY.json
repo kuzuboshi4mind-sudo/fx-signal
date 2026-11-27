@@ -620,6 +620,22 @@
  },
  "log": [
   {
+   "t": 1795788000000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 105.97365,
+   "sl": 106.13792449788397,
+   "tp": 105.64510100423207,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795777200000,
    "pattern": "rsi_fall",
    "name": "RSI買われすぎ反落",
@@ -627,7 +643,7 @@
    "entry": 106.31418,
    "sl": 106.46484736103486,
    "tp": 106.01284527793027,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7883,7 +7899,7 @@
    ]
   }
  ],
- "lastEvalT": 1795784400000,
+ "lastEvalT": 1795788000000,
  "adaptive": {
   "start": 100000,
   "balance": 88001.00193418149,
@@ -8304,16 +8320,16 @@
   "pickTried": "2026-11-01",
   "equity": 88001.00193418149
  },
- "reportDay": "2026-11-27",
+ "reportDay": "2026-11-28",
  "skipReview": {
-  "n": 373,
+  "n": 374,
   "wouldLose": 247,
-  "wouldWin": 126
+  "wouldWin": 127
  },
  "version": 1,
- "lastRun": 1795791121471,
- "lastBarT": 1795788000000,
- "price": 106.06336,
+ "lastRun": 1795792021950,
+ "lastBarT": 1795791600000,
+ "price": 105.97365,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8402,8 +8418,8 @@
   }
  },
  "learned": {
-  "bars": 3593,
-  "events": 1945,
+  "bars": 3594,
+  "events": 1946,
   "win": [
    {
     "name": "20本安値ブレイク",
@@ -8420,6 +8436,14 @@
     "n": 57,
     "winRate": 0.40350877192982454,
     "avgR": 0.26258211627091177
+   },
+   {
+    "name": "RSI買われすぎ反落",
+    "dir": "short",
+    "key": "against|trend",
+    "n": 25,
+    "winRate": 0.44,
+    "avgR": 0.29660817642603554
    },
    {
     "name": "陽の包み足",
@@ -8557,7 +8581,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

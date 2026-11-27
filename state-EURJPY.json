@@ -626,7 +626,7 @@
    "entry": 174.77124,
    "sl": 174.58577291476126,
    "tp": 175.14217417047746,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": false
   },
@@ -7249,7 +7249,7 @@
    ]
   }
  ],
- "lastEvalT": 1795784400000,
+ "lastEvalT": 1795788000000,
  "adaptive": {
   "start": 100000,
   "balance": 104711.00656922643,
@@ -7891,16 +7891,16 @@
   "pickTried": "2026-11-01",
   "equity": 104711.00656922643
  },
- "reportDay": "2026-11-27",
+ "reportDay": "2026-11-28",
  "skipReview": {
   "n": 374,
   "wouldLose": 254,
   "wouldWin": 120
  },
  "version": 1,
- "lastRun": 1795791120741,
- "lastBarT": 1795788000000,
- "price": 174.68853,
+ "lastRun": 1795792021160,
+ "lastBarT": 1795791600000,
+ "price": 174.56684,
  "equity": 122489.56937602689,
  "unreal": 0,
  "config": {
@@ -7989,7 +7989,7 @@
   }
  },
  "learned": {
-  "bars": 3593,
+  "bars": 3594,
   "events": 1814,
   "win": [
    {
@@ -8075,6 +8075,13 @@
   ]
  },
  "review": {
+  "engulf_up": {
+   "n": 5,
+   "wins": 2,
+   "recentLosses": 3,
+   "streak": 1,
+   "suspended": false
+  },
   "engulf_dn": {
    "n": 9,
    "wins": 5,
@@ -8115,13 +8122,6 @@
    "wins": 0,
    "recentLosses": 1,
    "streak": 1,
-   "suspended": false
-  },
-  "engulf_up": {
-   "n": 4,
-   "wins": 2,
-   "recentLosses": 2,
-   "streak": 0,
    "suspended": false
   },
   "ema_cross_dn": {
