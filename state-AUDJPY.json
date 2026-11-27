@@ -620,6 +620,71 @@
  },
  "log": [
   {
+   "t": 1795741200000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 106.00135,
+   "sl": 105.87209777759418,
+   "tp": 106.25985444481165,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795741200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 106.00135,
+   "sl": 105.87209777759418,
+   "tp": 106.25985444481165,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795741200000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 106.00135,
+   "sl": 105.87209777759418,
+   "tp": 106.25985444481165,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795741200000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 106.00135,
+   "sl": 105.87209777759418,
+   "tp": 106.25985444481165,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795719600000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -627,7 +692,7 @@
    "entry": 105.65112,
    "sl": 105.51702710636062,
    "tp": 105.91930578727879,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -806,7 +871,7 @@
    "entry": 105.29074,
    "sl": 104.98481894401156,
    "tp": 105.90258211197687,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -823,7 +888,7 @@
    "entry": 105.29074,
    "sl": 104.98481894401156,
    "tp": 105.90258211197687,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7660,7 +7725,7 @@
    ]
   }
  ],
- "lastEvalT": 1795737600000,
+ "lastEvalT": 1795741200000,
  "adaptive": {
   "start": 100000,
   "balance": 87214.16193418151,
@@ -8076,18 +8141,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 87427.84193418149
+  "equity": 87694.6419341815
  },
  "reportDay": "2026-11-27",
  "skipReview": {
-  "n": 351,
+  "n": 354,
   "wouldLose": 239,
-  "wouldWin": 112
+  "wouldWin": 115
  },
  "version": 1,
- "lastRun": 1795744321338,
- "lastBarT": 1795741200000,
- "price": 105.86795,
+ "lastRun": 1795745221550,
+ "lastBarT": 1795744800000,
+ "price": 106.00135,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8176,8 +8241,8 @@
   }
  },
  "learned": {
-  "bars": 3580,
-  "events": 1926,
+  "bars": 3581,
+  "events": 1928,
   "win": [
    {
     "name": "20本安値ブレイク",
@@ -8323,7 +8388,45 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止",
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,

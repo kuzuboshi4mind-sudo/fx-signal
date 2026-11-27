@@ -572,6 +572,18 @@
  },
  "log": [
   {
+   "t": 1795741200000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 208.88337,
+   "sl": 208.6902689830428,
+   "tp": 209.26957203391441,
+   "status": "open",
+   "shadow": true,
+   "skipped": false
+  },
+  {
    "t": 1795719600000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -7081,7 +7093,7 @@
    ]
   }
  ],
- "lastEvalT": 1795737600000,
+ "lastEvalT": 1795741200000,
  "adaptive": {
   "start": 100000,
   "balance": 88173.15739767066,
@@ -8223,9 +8235,9 @@
   "wouldWin": 113
  },
  "version": 1,
- "lastRun": 1795744320979,
- "lastBarT": 1795741200000,
- "price": 208.76815,
+ "lastRun": 1795745221226,
+ "lastBarT": 1795744800000,
+ "price": 208.88337,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8314,16 +8326,16 @@
   }
  },
  "learned": {
-  "bars": 3580,
-  "events": 1799,
+  "bars": 3581,
+  "events": 1800,
   "win": [
    {
     "name": "陽の包み足",
     "dir": "long",
     "key": "against|range",
-    "n": 32,
-    "winRate": 0.5,
-    "avgR": 0.5134879727352109
+    "n": 33,
+    "winRate": 0.48484848484848486,
+    "avgR": 0.5231332258977228
    },
    {
     "name": "陰の包み足",
@@ -8442,7 +8454,16 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "直近の実績不振で一時停止"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8476,7 +8497,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 99891.23000000001
+  "equity": 100006.45000000003
  },
  "newsfree": {
   "start": 100000,

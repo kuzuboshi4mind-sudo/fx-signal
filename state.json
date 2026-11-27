@@ -535,6 +535,22 @@
  },
  "log": [
   {
+   "t": 1795741200000,
+   "pattern": "macd_dn",
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "entry": 159.22734,
+   "sl": 159.31974058537386,
+   "tp": 159.0425388292523,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795737600000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -542,7 +558,7 @@
    "entry": 159.30259,
    "sl": 159.21362552344354,
    "tp": 159.48051895311292,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -574,7 +590,7 @@
    "entry": 159.34177,
    "sl": 159.21636373596772,
    "tp": 159.59258252806453,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7370,14 +7386,14 @@
    ]
   }
  ],
- "lastEvalT": 1795737600000,
+ "lastEvalT": 1795741200000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795744320391,
- "lastBarT": 1795741200000,
- "price": 159.25305,
- "equity": 102731.44039245846,
- "unreal": -586.8800000000647,
+ "lastRun": 1795745220552,
+ "lastBarT": 1795744800000,
+ "price": 159.22734,
+ "equity": 102371.5003924584,
+ "unreal": -946.8200000001161,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7464,7 +7480,7 @@
   }
  },
  "learned": {
-  "bars": 3580,
+  "bars": 3581,
   "events": 1917,
   "win": [
    {
@@ -7604,7 +7620,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "MACD売りクロス",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106576.3247340755,
@@ -8587,8 +8613,8 @@
   "equity": 106576.3247340755
  },
  "skipReview": {
-  "n": 349,
-  "wouldLose": 252,
+  "n": 351,
+  "wouldLose": 254,
   "wouldWin": 97
  },
  "latest": {
@@ -9035,6 +9061,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 103981.60525631218
+  "equity": 103621.66525631212
  }
 }
