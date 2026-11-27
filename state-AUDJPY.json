@@ -620,6 +620,22 @@
  },
  "log": [
   {
+   "t": 1795748400000,
+   "pattern": "rsi_fall",
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "entry": 106.01521,
+   "sl": 106.15726620197236,
+   "tp": 105.73109759605525,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795744800000,
    "pattern": "donchian_up",
    "name": "20本高値ブレイク",
@@ -627,7 +643,7 @@
    "entry": 106.13688,
    "sl": 106.00058793633745,
    "tp": 106.40946412732511,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7741,7 +7757,7 @@
    ]
   }
  ],
- "lastEvalT": 1795744800000,
+ "lastEvalT": 1795748400000,
  "adaptive": {
   "start": 100000,
   "balance": 87214.16193418151,
@@ -8157,18 +8173,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 87830.7219341815
+  "equity": 87722.36193418149
  },
  "reportDay": "2026-11-27",
  "skipReview": {
-  "n": 357,
-  "wouldLose": 239,
+  "n": 358,
+  "wouldLose": 240,
   "wouldWin": 118
  },
  "version": 1,
- "lastRun": 1795751522061,
- "lastBarT": 1795748400000,
- "price": 106.06939,
+ "lastRun": 1795752421446,
+ "lastBarT": 1795752000000,
+ "price": 106.01521,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8257,8 +8273,8 @@
   }
  },
  "learned": {
-  "bars": 3582,
-  "events": 1934,
+  "bars": 3583,
+  "events": 1936,
   "win": [
    {
     "name": "20本安値ブレイク",
@@ -8404,7 +8420,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "RSI買われすぎ反落",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
