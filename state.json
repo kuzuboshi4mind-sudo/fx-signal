@@ -540,6 +540,54 @@
  },
  "log": [
   {
+   "t": 1795766400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 159.44938,
+   "sl": 159.35388643197183,
+   "tp": 159.64036713605634,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795766400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 159.44938,
+   "sl": 159.35388643197183,
+   "tp": 159.64036713605634,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795766400000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 159.44938,
+   "sl": 159.35388643197183,
+   "tp": 159.64036713605634,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795759200000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -7458,12 +7506,12 @@
    ]
   }
  ],
- "lastEvalT": 1795762800000,
+ "lastEvalT": 1795766400000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795769520764,
- "lastBarT": 1795766400000,
- "price": 159.46758,
+ "lastRun": 1795770420834,
+ "lastBarT": 1795770000000,
+ "price": 159.44938,
  "equity": 101287.86870285074,
  "unreal": 0,
  "config": {
@@ -7552,8 +7600,8 @@
   }
  },
  "learned": {
-  "bars": 3587,
-  "events": 1926,
+  "bars": 3588,
+  "events": 1927,
   "win": [
    {
     "name": "陰の包み足",
@@ -7692,7 +7740,35 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "adaptive": {
   "start": 100000,
   "balance": 106576.3247340755,

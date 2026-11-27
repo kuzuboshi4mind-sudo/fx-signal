@@ -620,6 +620,55 @@
  },
  "log": [
   {
+   "t": 1795766400000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 106.45605,
+   "sl": 106.30368259049628,
+   "tp": 106.76078481900744,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795766400000,
+   "pattern": "engulf_up",
+   "name": "陽の包み足",
+   "dir": "long",
+   "entry": 106.45605,
+   "sl": 106.30368259049628,
+   "tp": 106.76078481900744,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795766400000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 106.45605,
+   "sl": 106.30368259049628,
+   "tp": 106.76078481900744,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795762800000,
    "pattern": "bb_revert_dn",
    "name": "ボリバン上限から回帰",
@@ -7788,7 +7837,7 @@
    ]
   }
  ],
- "lastEvalT": 1795762800000,
+ "lastEvalT": 1795766400000,
  "adaptive": {
   "start": 100000,
   "balance": 88001.00193418149,
@@ -8216,9 +8265,9 @@
   "wouldWin": 125
  },
  "version": 1,
- "lastRun": 1795769521669,
- "lastBarT": 1795766400000,
- "price": 106.44982,
+ "lastRun": 1795770421702,
+ "lastBarT": 1795770000000,
+ "price": 106.45605,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8307,7 +8356,7 @@
   }
  },
  "learned": {
-  "bars": 3587,
+  "bars": 3588,
   "events": 1939,
   "win": [
    {
@@ -8462,7 +8511,36 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "陽の包み足",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "直近の実績不振で一時停止",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
