@@ -460,6 +460,37 @@
  },
  "log": [
   {
+   "t": 1795791600000,
+   "pattern": "donchian_dn",
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "entry": 174.54449,
+   "sl": 174.71016902979187,
+   "tp": 174.21313194041622,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795791600000,
+   "pattern": "bb_break_dn",
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "entry": 174.54449,
+   "sl": 174.71016902979187,
+   "tp": 174.21313194041622,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
    "t": 1795780800000,
    "pattern": "engulf_up",
    "name": "陽の包み足",
@@ -7249,7 +7280,7 @@
    ]
   }
  ],
- "lastEvalT": 1795788000000,
+ "lastEvalT": 1795791600000,
  "adaptive": {
   "start": 100000,
   "balance": 104711.00656922643,
@@ -7898,9 +7929,9 @@
   "wouldWin": 121
  },
  "version": 1,
- "lastRun": 1795794720556,
- "lastBarT": 1795791600000,
- "price": 174.47651,
+ "lastRun": 1795795621111,
+ "lastBarT": 1795795200000,
+ "price": 174.54449,
  "equity": 122489.56937602689,
  "unreal": 0,
  "config": {
@@ -7989,7 +8020,7 @@
   }
  },
  "learned": {
-  "bars": 3594,
+  "bars": 3595,
   "events": 1815,
   "win": [
    {
@@ -8139,7 +8170,25 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン下抜けブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "20本安値ブレイク",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
