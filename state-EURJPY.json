@@ -455,6 +455,22 @@
  },
  "log": [
   {
+   "t": 1795762800000,
+   "pattern": "bb_revert_dn",
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "entry": 174.8787,
+   "sl": 175.0167287373321,
+   "tp": 174.60264252533582,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795755600000,
    "pattern": "pullback_up",
    "name": "上昇トレンドの押し目",
@@ -7164,7 +7180,7 @@
    ]
   }
  ],
- "lastEvalT": 1795759200000,
+ "lastEvalT": 1795762800000,
  "adaptive": {
   "start": 100000,
   "balance": 104711.00656922643,
@@ -7813,11 +7829,11 @@
   "wouldWin": 119
  },
  "version": 1,
- "lastRun": 1795765920925,
- "lastBarT": 1795762800000,
- "price": 174.88143,
- "equity": 123000.76937602682,
- "unreal": 1250.2799999998615,
+ "lastRun": 1795766821210,
+ "lastBarT": 1795766400000,
+ "price": 174.8787,
+ "equity": 122968.00937602698,
+ "unreal": 1217.520000000036,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -7904,7 +7920,7 @@
   }
  },
  "learned": {
-  "bars": 3586,
+  "bars": 3587,
   "events": 1806,
   "win": [
    {
@@ -8054,7 +8070,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上限から回帰",
+   "dir": "short",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8339,6 +8365,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 108804.61128597226
+  "equity": 108774.58128597241
  }
 }
