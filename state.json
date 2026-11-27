@@ -7548,11 +7548,11 @@
  "lastEvalT": 1795777200000,
  "reportDay": "2026-11-27",
  "version": 1,
- "lastRun": 1795781220416,
+ "lastRun": 1795782120715,
  "lastBarT": 1795780800000,
- "price": 159.39749,
- "equity": 101212.86870285081,
- "unreal": -74.99999999993179,
+ "price": 159.42967,
+ "equity": 100730.16870285106,
+ "unreal": -557.6999999996701,
  "config": {
   "symbol": "USD/JPY",
   "interval": "1h",
@@ -7779,14 +7779,7 @@
    "suspended": false
   }
  },
- "lastSignals": [
-  {
-   "name": "ボリバン上限から回帰",
-   "dir": "short",
-   "blocked": false,
-   "reasons": []
-  }
- ],
+ "lastSignals": [],
  "adaptive": {
   "start": 100000,
   "balance": 106576.3247340755,
@@ -9250,6 +9243,6 @@
     "pnl": -1801.0399752934916
    }
   ],
-  "equity": 102458.03356670453
+  "equity": 101943.1535667048
  }
 }
