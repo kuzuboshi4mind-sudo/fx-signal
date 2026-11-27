@@ -627,7 +627,7 @@
    "entry": 106.01521,
    "sl": 106.15726620197236,
    "tp": 105.73109759605525,
-   "status": "open",
+   "status": "loss",
    "shadow": false,
    "skipped": true,
    "reasons": [
@@ -7760,9 +7760,10 @@
  "lastEvalT": 1795752000000,
  "adaptive": {
   "start": 100000,
-  "balance": 87214.16193418151,
+  "balance": 88001.00193418149,
   "startT": 1791967922952,
-  "positions": [
+  "positions": [],
+  "trades": [
    {
     "key": "ema_cross_up|long|3|1",
     "dir": "long",
@@ -7774,10 +7775,12 @@
     "tp": 106.45519278922983,
     "barT": 1795669200000,
     "openT": 1795669622027,
-    "deadline": 1795756022027
-   }
-  ],
-  "trades": [
+    "deadline": 1795756022027,
+    "exit": 106.15453,
+    "closeT": 1795756921795,
+    "reason": "time",
+    "pnl": 786.8399999999838
+   },
    {
     "key": "ema_cross_dn|long|3|1",
     "dir": "long",
@@ -8173,18 +8176,18 @@
   ],
   "pickMonth": "2026-11",
   "pickTried": "2026-11-01",
-  "equity": 87923.8419341815
+  "equity": 88001.00193418149
  },
  "reportDay": "2026-11-27",
  "skipReview": {
-  "n": 358,
-  "wouldLose": 240,
+  "n": 359,
+  "wouldLose": 241,
   "wouldWin": 118
  },
  "version": 1,
- "lastRun": 1795756021315,
+ "lastRun": 1795756921795,
  "lastBarT": 1795755600000,
- "price": 106.11595,
+ "price": 106.15453,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8274,7 +8277,7 @@
  },
  "learned": {
   "bars": 3584,
-  "events": 1936,
+  "events": 1937,
   "win": [
    {
     "name": "20本安値ブレイク",
