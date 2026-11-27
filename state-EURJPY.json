@@ -455,6 +455,53 @@
  },
  "log": [
   {
+   "t": 1795755600000,
+   "pattern": "pullback_up",
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "entry": 174.94815,
+   "sl": 174.81202276617105,
+   "tp": 175.22040446765786,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795755600000,
+   "pattern": "macd_up",
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "entry": 174.94815,
+   "sl": 174.81202276617105,
+   "tp": 175.22040446765786,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "t": 1795755600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 174.94815,
+   "sl": 174.81202276617105,
+   "tp": 175.22040446765786,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795716000000,
    "pattern": "macd_dn",
    "name": "MACD売りクロス",
@@ -7117,7 +7164,7 @@
    ]
   }
  ],
- "lastEvalT": 1795752000000,
+ "lastEvalT": 1795755600000,
  "adaptive": {
   "start": 100000,
   "balance": 104711.00656922643,
@@ -7766,11 +7813,11 @@
   "wouldWin": 119
  },
  "version": 1,
- "lastRun": 1795758720601,
- "lastBarT": 1795755600000,
- "price": 174.92417,
- "equity": 123513.64937602692,
- "unreal": 1763.1599999999708,
+ "lastRun": 1795759620674,
+ "lastBarT": 1795759200000,
+ "price": 174.94815,
+ "equity": 123801.40937602686,
+ "unreal": 2050.9199999999055,
  "config": {
   "symbol": "EUR/JPY",
   "interval": "1h",
@@ -7857,7 +7904,7 @@
   }
  },
  "learned": {
-  "bars": 3584,
+  "bars": 3585,
   "events": 1806,
   "win": [
    {
@@ -8007,7 +8054,34 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "MACD買いクロス",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし"
+   ]
+  },
+  {
+   "name": "上昇トレンドの押し目",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8292,6 +8366,6 @@
     "pnl": 3571.8134982939773
    }
   ],
-  "equity": 109274.75128597235
+  "equity": 109538.53128597229
  }
 }

@@ -572,6 +572,38 @@
  },
  "log": [
   {
+   "t": 1795755600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 209.14211,
+   "sl": 208.94707872018654,
+   "tp": 209.53217255962696,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "t": 1795755600000,
+   "pattern": "bb_break_up",
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "entry": 209.14211,
+   "sl": 208.94707872018654,
+   "tp": 209.53217255962696,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795752000000,
    "pattern": "macd_up",
    "name": "MACD買いクロス",
@@ -7109,7 +7141,7 @@
    ]
   }
  ],
- "lastEvalT": 1795752000000,
+ "lastEvalT": 1795755600000,
  "adaptive": {
   "start": 100000,
   "balance": 88173.15739767066,
@@ -8251,9 +8283,9 @@
   "wouldWin": 113
  },
  "version": 1,
- "lastRun": 1795758720923,
- "lastBarT": 1795755600000,
- "price": 209.13952,
+ "lastRun": 1795759621054,
+ "lastBarT": 1795759200000,
+ "price": 209.14211,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8342,7 +8374,7 @@
   }
  },
  "learned": {
-  "bars": 3584,
+  "bars": 3585,
   "events": 1802,
   "win": [
    {
@@ -8386,14 +8418,6 @@
     "avgR": 0.2451013178954722
    },
    {
-    "name": "ボリバン下抜けブレイク",
-    "dir": "short",
-    "key": "with|range",
-    "n": 27,
-    "winRate": 0.4444444444444444,
-    "avgR": 0.31014724585265324
-   },
-   {
     "name": "陰の包み足",
     "dir": "short",
     "key": "with|range",
@@ -8416,6 +8440,14 @@
     "n": 99,
     "winRate": 0.3838383838383838,
     "avgR": 0.14661549743819938
+   },
+   {
+    "name": "下降トレンドの戻り",
+    "dir": "short",
+    "key": "with|range",
+    "n": 55,
+    "winRate": 0.36363636363636365,
+    "avgR": 0.06828483770635926
    }
   ]
  },
@@ -8470,7 +8502,26 @@
    "suspended": true
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "ボリバン上抜けブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "優位性なし",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
@@ -8504,7 +8555,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 100262.60000000002
+  "equity": 100265.19000000002
  },
  "newsfree": {
   "start": 100000,

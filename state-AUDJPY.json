@@ -620,6 +620,22 @@
  },
  "log": [
   {
+   "t": 1795755600000,
+   "pattern": "donchian_up",
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "entry": 106.30204,
+   "sl": 106.15112189727893,
+   "tp": 106.60387620544215,
+   "status": "open",
+   "shadow": false,
+   "skipped": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  },
+  {
    "t": 1795748400000,
    "pattern": "rsi_fall",
    "name": "RSI買われすぎ反落",
@@ -7757,7 +7773,7 @@
    ]
   }
  ],
- "lastEvalT": 1795752000000,
+ "lastEvalT": 1795755600000,
  "adaptive": {
   "start": 100000,
   "balance": 88001.00193418149,
@@ -8185,9 +8201,9 @@
   "wouldWin": 125
  },
  "version": 1,
- "lastRun": 1795758721230,
- "lastBarT": 1795755600000,
- "price": 106.30133,
+ "lastRun": 1795759621304,
+ "lastBarT": 1795759200000,
+ "price": 106.30204,
  "equity": 112049.77928185136,
  "unreal": 0,
  "config": {
@@ -8276,7 +8292,7 @@
   }
  },
  "learned": {
-  "bars": 3584,
+  "bars": 3585,
   "events": 1937,
   "win": [
    {
@@ -8431,7 +8447,17 @@
    "suspended": false
   }
  },
- "lastSignals": [],
+ "lastSignals": [
+  {
+   "name": "20本高値ブレイク",
+   "dir": "long",
+   "blocked": true,
+   "reasons": [
+    "過去の負けパターン",
+    "勝率が基準未満"
+   ]
+  }
+ ],
  "latest": {
   "start": 100000,
   "balance": 100000,
