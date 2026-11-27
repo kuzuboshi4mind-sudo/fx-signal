@@ -679,7 +679,7 @@
    "entry": 208.63085,
    "sl": 208.35957677872292,
    "tp": 209.17339644255418,
-   "status": "open",
+   "status": "win",
    "shadow": false,
    "skipped": false
   },
@@ -8251,9 +8251,9 @@
   "wouldWin": 113
  },
  "version": 1,
- "lastRun": 1795757821624,
+ "lastRun": 1795758720923,
  "lastBarT": 1795755600000,
- "price": 209.14137,
+ "price": 209.13952,
  "equity": 98618.69375183244,
  "unreal": 0,
  "config": {
@@ -8428,11 +8428,11 @@
    "suspended": true
   },
   "engulf_up": {
-   "n": 7,
-   "wins": 2,
-   "recentLosses": 4,
-   "streak": 3,
-   "suspended": true
+   "n": 8,
+   "wins": 3,
+   "recentLosses": 3,
+   "streak": 1,
+   "suspended": false
   },
   "donchian_up": {
    "n": 1,
@@ -8504,7 +8504,7 @@
   "strategies": [
    "pat_bb_revert_up"
   ],
-  "equity": 100264.45000000001
+  "equity": 100262.60000000002
  },
  "newsfree": {
   "start": 100000,
